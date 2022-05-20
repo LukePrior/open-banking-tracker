@@ -19,14 +19,13 @@ jobs:
         run: python main.py
 
       - name: Get changes
-        id: version
-        uses: notiz-dev/github-action-json-property@release
-        with: 
-            path: 'stats.json'
-            prop_path: 'changed_images'
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'stats.json'
+          prefix: stat
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Updated ${{steps.version.outputs.prop}} images
+          commit_message: Updated ${{ env.stat_changed_images }} images
           file_pattern: brands/logos/*
