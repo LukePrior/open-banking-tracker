@@ -4,8 +4,31 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
+  update-lists:
+    name: Fetch latest lists
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download latest list
+        run: python main.py
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updated lists
+          file_pattern: brands/*
+
   update-images:
     name: Fetch latest images
+    needs: update-lists
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -18,7 +41,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Download images
-        run: python main.py
+        run: python images.py
 
       - name: Get changes
         uses: antifree/json-to-variables@v1.0.1
