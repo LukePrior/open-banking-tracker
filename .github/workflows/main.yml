@@ -19,9 +19,9 @@ jobs:
         run: python main.py
 
       - name: Check changes
-        run: |
-          if [[ -z $(git status -s) ]]
-          then
-            echo "tree is clean"
-          else
-            echo "tree is dirty, please commit changes before running this"
+          id: check-changes
+          uses: mskri/check-uncommitted-changes-action@v1.0.1
+
+      - name: Commit changes
+          if: steps.check-changes.outputs.changes != ''
+          run: echo "There are uncommitted changes"
