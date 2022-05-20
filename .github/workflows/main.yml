@@ -21,10 +21,9 @@ jobs:
         run: python main.py
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: Updated lists
-          file_pattern: brands/*
+          message: Updated lists
 
   update-images:
     name: Fetch latest images
@@ -50,10 +49,9 @@ jobs:
           prefix: stat
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: Updated ${{ env.stat_changed_images }} images
-          file_pattern: brands/logos/*
+          message: Updated ${{ env.stat_changed_images }} images
 
   update-products:
     name: Fetch latest products
@@ -79,10 +77,9 @@ jobs:
           prefix: stat
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: Updated ${{ env.stat_changed_products }} product lists
-          file_pattern: brands/products/*
+          message: Updated ${{ env.stat_changed_products }} product lists
 
   update-product:
     name: Fetch latest product
@@ -108,7 +105,6 @@ jobs:
           prefix: stat
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: Updated ${{ env.stat_changed_product }} products
-          file_pattern: brands/product/*
+          message: Updated ${{ env.stat_changed_product }} products
