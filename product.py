@@ -41,6 +41,7 @@ for file in os.listdir('brands/products/'):
             response = get_data(url)
 
             flag = False
+            skip_update = False
 
             try:
                 for file in os.listdir('brands/product/' + id):
@@ -51,6 +52,8 @@ for file in os.listdir('brands/products/'):
                         raw_file.close()
                         if response != response_compare:
                             changed_product += 1
+                        else:
+                            skip_update = True
 
             except Exception as e:
                 print(e)
@@ -58,11 +61,11 @@ for file in os.listdir('brands/products/'):
             if flag == False:
                 changed_product += 1
 
-            path = 'brands/product/' + id + "/" + product['productId'] + ".json"
-
-            raw_file = open(path, "w")
-            json.dump(response, raw_file, indent = 4)
-            raw_file.close()
+            if (skip_update == True):
+                path = 'brands/product/' + id + "/" + product['productId'] + ".json"
+                raw_file = open(path, "w")
+                json.dump(response, raw_file, indent = 4)
+                raw_file.close()
 
             print(path)
 

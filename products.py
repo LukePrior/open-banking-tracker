@@ -32,6 +32,7 @@ for brand in brands:
         response = get_data(brands[brand]['productReferenceDataApi'])
 
         flag = False
+        skip_update = False
 
         try:
             for file in os.listdir('brands/products/'):
@@ -42,6 +43,8 @@ for brand in brands:
                     raw_file.close()
                     if response != response_compare:
                         changed_products += 1
+                    else:
+                        skip_update = True
 
         except Exception as e:
             print(e)
@@ -49,10 +52,11 @@ for brand in brands:
         if flag == False:
             changed_products += 1
 
-        path = 'brands/products/' + brand + ".json"
-        raw_file = open(path, "w")
-        json.dump(response, raw_file, indent = 4)
-        raw_file.close()
+        if (skip_update == True):
+            path = 'brands/products/' + brand + ".json"
+            raw_file = open(path, "w")
+            json.dump(response, raw_file, indent = 4)
+            raw_file.close()
 
         print(path)
 
