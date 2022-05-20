@@ -5,6 +5,22 @@ import json
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'x-v': '3'}
 
+def get_data(url):
+    r = requests.get(url, headers=headers)
+    response = r.json()
+
+    if 'links' in response and 'next' in response['links']:
+        temp = get_data(response['links']['next'])
+        response['data']['products'].extend(temp['data']['products'])
+    
+    if 'links' in response:
+        del response['links']
+
+    if 'meta' in response:
+        del response['meta']
+
+    return response
+
 raw_file = open("brands/brands.json", "r")
 brands = json.load(raw_file)
 raw_file.close()
@@ -13,15 +29,36 @@ changed_products = 0
 
 for brand in brands:
     try:
-        r = requests.get(brands[brand]['productReferenceDataApi']+'?page-size=1000', headers=headers)
-        response = r.json()
+        response = get_data(brands[brand]['productReferenceDataApi'])
+
+        flag = False
+
+        try:
+            for file in os.listdir('brands/products/'):
+                if file == (brand + ".json"):
+                    flag = True
+                    raw_file = open("brands/products/"+file, "r")
+                    response_compare = json.load(raw_file)
+                    raw_file.close()
+                    if response != response_compare:
+                        changed_products += 1
+
+        except Exception as e:
+            print(e)
+
+        if flag == False:
+            changed_products += 1
+
         path = 'brands/products/' + brand + ".json"
         raw_file = open(path, "w")
         json.dump(response, raw_file, indent = 4)
         raw_file.close()
-        changed_products += 1
+
+        print(path)
+
     except Exception as e:
         print(e)
+
 
 stats = {}
 stats['changed_products'] = changed_products
