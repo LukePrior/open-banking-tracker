@@ -25,7 +25,7 @@ jobs:
         with:
           message: Updated lists
           default_author: github_actions
-          pull: '--rebase --autostash ...'
+          pull: '--rebase --autostash'
 
   update-images:
     name: Fetch latest images
@@ -55,7 +55,7 @@ jobs:
         with:
           message: Updated ${{ env.stat_changed_images }} images
           default_author: github_actions
-          pull: '--rebase --autostash ...'
+          pull: '--rebase --autostash'
 
   update-products:
     name: Fetch latest products
@@ -85,7 +85,7 @@ jobs:
         with:
           message: Updated ${{ env.stat_changed_products }} product lists
           default_author: github_actions
-          pull: '--rebase --autostash ...'
+          pull: '--rebase --autostash'
 
   update-product:
     name: Fetch latest product
@@ -115,4 +115,4 @@ jobs:
         with:
           message: Updated ${{ env.stat_changed_product }} products
           default_author: github_actions
-          pull: '--rebase --autostash ...'
+          pull: '--rebase --autostash'
