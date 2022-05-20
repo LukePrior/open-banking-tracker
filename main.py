@@ -11,11 +11,15 @@ r = requests.get('https://api.cdr.gov.au/cdr-register/v1/banking/register')
 
 available_brands = r.json()
 
-raw_file = open("brands/raw.json", "w")
-   
-json.dump(available_brands, raw_file, indent = 4)
-   
-raw_file.close()
+try:
+    raw_file = open("brands/raw.json", "w")
+    
+    json.dump(available_brands, raw_file, indent = 4)
+    
+    raw_file.close()
+
+except Exception as e:
+    print(e)
 
 available_brands = available_brands['registerDetails']
 
@@ -38,11 +42,17 @@ for entity in available_brands:
             if 'brandDescription' in brand:
                 brands[brand['brandRef']]['brandDescription'] = brand['brandDescription']
 
-brands_file = open("brands/brands.json", "w")
-   
-json.dump(brands, brands_file, indent = 4)
-   
-brands_file.close()
+try:
+    brands_file = open("brands/brands.json", "w")
+    
+    json.dump(brands, brands_file, indent = 4)
+    
+    brands_file.close()
+
+except Exception as e:
+    print(e)
+
+changed_images = 0
 
 for brand in brands:
     try:
@@ -63,5 +73,21 @@ for brand in brands:
             f.write(r.content)
         if oldFile != "" and oldFile != path:
             os.remove(oldFile)
+        if oldFile != path:
+            changed_images += 1
+
     except Exception as e:
         print(e)
+
+stats = {}
+stats['changed_images'] = changed_images
+
+try:
+    raw_file = open("stats.json", "w")
+    
+    json.dump(stats, raw_file, indent = 4)
+    
+    raw_file.close()
+
+except Exception as e:
+    print(e)

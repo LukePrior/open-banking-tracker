@@ -18,8 +18,15 @@ jobs:
       - name: Download images
         run: python main.py
 
+      - name: Get changes
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'stats.json'
+            prop_path: 'changed_images'
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Updated images
+          commit_message: Updated ${{steps.version.outputs.prop}} images
           file_pattern: brands/logos/*
