@@ -81,5 +81,34 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Updated ${{ env.stat_changed_products }} products
-          file_pattern: brands/logos/*
+          commit_message: Updated ${{ env.stat_changed_products }} product lists
+          file_pattern: brands/products/*
+
+  update-product:
+    name: Fetch latest product
+    needs: update-products
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download Products
+        run: python product.py
+
+      - name: Get changes
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'stats.json'
+          prefix: stat
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updated ${{ env.stat_changed_product }} products
+          file_pattern: brands/product/*
