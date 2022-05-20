@@ -1,4 +1,5 @@
 from mimetypes import guess_extension
+import os
 import requests
 import json
 
@@ -51,10 +52,16 @@ for brand in brands:
             file_extension = '.webp'
         if file_extension == '.jpe':
             file_extension = '.jpg'
-        if file_extension == '.htm':
+        if file_extension == '.htm' or file_extension == '.html':
             continue
         path = 'brands/logos/' + brand + file_extension
+        oldFile = ""
+        for file in os.listdir('brands/logos/'):
+            if brand in file:
+                oldFile = 'brands/logos/' + file     
         with open(path, 'wb') as f:
             f.write(r.content)
-    except:
-        pass
+        if oldFile != "" and oldFile != path:
+            os.remove(oldFile)
+    except Exception as e:
+        print(e)
