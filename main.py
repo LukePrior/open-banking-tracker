@@ -1,4 +1,4 @@
-from mimetypes import guess_extension, guess_type
+from mimetypes import guess_extension
 import requests
 import json
 
