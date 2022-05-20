@@ -69,8 +69,6 @@ for file in os.listdir('brands/products/'):
     except Exception as e:
         print(e)
 
-    break
-
 stats = {}
 stats['changed_product'] = changed_product
 
