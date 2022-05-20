@@ -9,7 +9,7 @@ def get_data(url):
     r = requests.get(url, headers=headers)
     response = r.json()
 
-    if 'links' in response and 'next' in response['links']:
+    if 'links' in response and 'next' in response['links'] and response['links']['next'] != None:
         temp = get_data(response['links']['next'])
         response['data']['products'].extend(temp['data']['products'])
     
