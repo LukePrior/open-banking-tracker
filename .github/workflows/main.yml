@@ -18,10 +18,7 @@ jobs:
       - name: Download images
         run: python main.py
 
-      - name: Check changes
-          id: check-changes
-          uses: mskri/check-uncommitted-changes-action@v1.0.1
-
       - name: Commit changes
-          if: steps.check-changes.outputs.changes != ''
-          run: echo "There are uncommitted changes"
+          uses: stefanzweifel/git-auto-commit-action@v4
+          with:
+            commit_message: Updated images
