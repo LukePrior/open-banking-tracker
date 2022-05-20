@@ -54,3 +54,32 @@ jobs:
         with:
           commit_message: Updated ${{ env.stat_changed_images }} images
           file_pattern: brands/logos/*
+
+  update-products:
+    name: Fetch latest products
+    needs: update-lists
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download images
+        run: python products.py
+
+      - name: Get changes
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'stats.json'
+          prefix: stat
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updated ${{ env.stat_changed_products }} products
+          file_pattern: brands/logos/*
