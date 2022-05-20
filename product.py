@@ -61,7 +61,7 @@ for file in os.listdir('brands/products/'):
             if flag == False:
                 changed_product += 1
 
-            if (skip_update == True):
+            if (skip_update == False):
                 path = 'brands/product/' + id + "/" + product['productId'] + ".json"
                 raw_file = open(path, "w")
                 json.dump(response, raw_file, indent = 4)

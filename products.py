@@ -52,7 +52,7 @@ for brand in brands:
         if flag == False:
             changed_products += 1
 
-        if (skip_update == True):
+        if (skip_update == False):
             path = 'brands/products/' + brand + ".json"
             raw_file = open(path, "w")
             json.dump(response, raw_file, indent = 4)
