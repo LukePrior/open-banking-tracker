@@ -5,7 +5,7 @@ import json
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
-raw_file = open("brands/raw.json", "r")
+raw_file = open("brands/brands.json", "r")
 brands = json.load(raw_file)
 raw_file.close()
 
