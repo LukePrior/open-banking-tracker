@@ -21,6 +21,15 @@ def get_data(url):
 
     return response
 
+# https://stackoverflow.com/a/25851972/9389353
+def ordered(obj):
+    if isinstance(obj, dict):
+        return sorted((k, ordered(v)) for k, v in obj.items())
+    if isinstance(obj, list):
+        return sorted(ordered(x) for x in obj)
+    else:
+        return obj
+
 raw_file = open("brands/brands.json", "r")
 brands = json.load(raw_file)
 raw_file.close()
@@ -41,7 +50,7 @@ for brand in brands:
                     raw_file = open("brands/products/"+file, "r")
                     response_compare = json.load(raw_file)
                     raw_file.close()
-                    if response != response_compare:
+                    if ordered(response) != ordered(response_compare):
                         changed_products += 1
                     else:
                         skip_update = True
@@ -58,7 +67,7 @@ for brand in brands:
             json.dump(response, raw_file, indent = 4)
             raw_file.close()
 
-        print(path)
+            print(path)
 
     except Exception as e:
         print(e)

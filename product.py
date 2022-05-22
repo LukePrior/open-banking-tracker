@@ -11,6 +11,15 @@ def get_data(url):
 
     return response
 
+# https://stackoverflow.com/a/25851972/9389353
+def ordered(obj):
+    if isinstance(obj, dict):
+        return sorted((k, ordered(v)) for k, v in obj.items())
+    if isinstance(obj, list):
+        return sorted(ordered(x) for x in obj)
+    else:
+        return obj
+
 raw_file = open("brands/brands.json", "r")
 brands = json.load(raw_file)
 raw_file.close()
@@ -50,7 +59,7 @@ for file in os.listdir('brands/products/'):
                         raw_file = open("brands/product/"+id+"/"+file, "r")
                         response_compare = json.load(raw_file)
                         raw_file.close()
-                        if response != response_compare:
+                        if ordered(response) != ordered(response_compare):
                             changed_product += 1
                         else:
                             skip_update = True
