@@ -1,0 +1,121 @@
+{
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No Account Keeping Fee",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We'll notify you before your deposit matures",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "If you wish to withdraw your Term deposit before it matures, a reduced interest rate may apply",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Negotiated rates for balances above $250,000",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Option of having interest paid monthly or on maturity",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "250000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.00100",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P8M",
+                "tiers": [
+                    {
+                        "name": "TERM INVESTMENT_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    },
+                    {
+                        "name": "TERM INVESTMENT_Tier_1",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6.0,
+                        "maximumValue": 8.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalValue": "P8M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.00350",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P8M",
+                "tiers": [
+                    {
+                        "name": "TERM INVESTMENT_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    },
+                    {
+                        "name": "TERM INVESTMENT_Tier_2",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6.0,
+                        "maximumValue": 8.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalValue": "P8M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "6M",
+        "lastUpdated": "2022-05-17T20:11:22.000+10:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "TERM INVESTMENT",
+        "description": "TERM DEPOSIT - 6 month",
+        "brand": "HUME BANK LIMITED",
+        "brandName": "HUME BANK LIMITED",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.humebank.com.au/personal/savings-and-term-deposits/term-deposit",
+            "termsUri": "https://www.humebank.com.au/MediaLibraries/HB/Hume-Bank/Documents/Compliance%20documents/Product-Disclosure-Statement.pdf",
+            "eligibilityUri": "https://www.humebank.com.au/MediaLibraries/HB/Hume-Bank/Documents/Compliance%20documents/Product-Disclosure-Statement.pdf",
+            "feesAndPricingUri": "https://www.humebank.com.au/MediaLibraries/HB/Hume-Bank/Documents/Compliance%20documents/Fees-Charges.pdf",
+            "bundleUri": ""
+        }
+    },
+    "links": {
+        "self": "https://ibank.humebank.com.au/OpenBanking/cds-au/v1/banking/products/6M"
+    },
+    "meta": {}
+}
