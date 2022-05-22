@@ -61,13 +61,14 @@ for brand in brands:
         if flag == False:
             changed_products += 1
 
+        path = 'brands/products/' + brand + ".json"
+
         if (skip_update == False):
-            path = 'brands/products/' + brand + ".json"
             raw_file = open(path, "w")
             json.dump(response, raw_file, indent = 4)
             raw_file.close()
 
-            print(path)
+        print(path)
 
     except Exception as e:
         print(e)
