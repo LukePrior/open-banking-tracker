@@ -34,18 +34,9 @@
         ],
         "features": [
             {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "This account can be used to send an NPP payment."
-            },
-            {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Visa Debit with payWave",
                 "additionalInfo": "Visa Debit Card available to Australian Residents and members aged > 14 years"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Bank@Post",
-                "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply."
             },
             {
                 "featureType": "DIGITAL_WALLET",
@@ -53,28 +44,22 @@
                 "additionalInfo": "Apple, Samsung and Google Pay can be attached to the product on request."
             },
             {
+                "featureType": "OTHER",
+                "additionalValue": "Bank@Post",
+                "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply."
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "Bank 24/7 wherever you are and whenever you want with RAB mobile and internet banking."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time."
-            },
-            {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "6",
-                "additionalInfo": "Free Branch withdrawals per month"
-            },
-            {
-                "featureType": "INTEREST_FREE",
-                "additionalValue": "P55D",
-                "additionalInfo": "Up to 55 days interest free on purchases",
-                "additionalInfoUri": "https://www.regionalaustraliabank.com.au/-/media/communitymutual/files/documents/pdf/member/visa-conditions-of-use.pdf"
             },
             {
                 "featureType": "NPP_PAYID",
                 "additionalValue": "This account can be used as the target of an NPP PayID.",
                 "additionalInfo": "Speed isn\u2019t the only major advance of the NPP and Osko. Rather than needing hard-to-remember BSBs and account numbers, Osko users can make transactions using a \u2018PayID\u2019. This can be their mobile number, personal email or ABN."
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "This account can be used to send an NPP payment."
             },
             {
                 "featureType": "OTHER",
@@ -88,6 +73,12 @@
                 "additionalInfo": "Get in control of your finances and use additional accounts for budgeting."
             },
             {
+                "featureType": "INTEREST_FREE",
+                "additionalValue": "P55D",
+                "additionalInfo": "Up to 55 days interest free on purchases",
+                "additionalInfoUri": "https://www.regionalaustraliabank.com.au/-/media/communitymutual/files/documents/pdf/member/visa-conditions-of-use.pdf"
+            },
+            {
                 "featureType": "BILL_PAYMENT",
                 "additionalInfo": "Automatic payments can be scheduled to pay your bills and/or split your pay into designated savings accounts."
             },
@@ -97,8 +88,17 @@
                 "additionalInfo": "Track payments with SMS and email alerts"
             },
             {
+                "featureType": "OTHER",
+                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time."
+            },
+            {
                 "featureType": "ADDITIONAL_CARDS",
                 "additionalInfo": "Additional secondary cardholders are available where more than one card is required. An initial card on each account, replacements for defective cards and automatic card renewals are free. A fee applies for each additional card ordered at your request."
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalValue": "6",
+                "additionalInfo": "Free Branch withdrawals per month"
             }
         ],
         "constraints": [
@@ -139,13 +139,6 @@
         ],
         "fees": [
             {
-                "name": "Inward Telegraphic Transfer FEE (in AUD)",
-                "feeType": "DEPOSIT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
-            },
-            {
                 "name": "Secure Token Replacement Fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
@@ -161,6 +154,42 @@
                 "additionalInfo": "Applies annually if there are no transactions on your membership in the preceding 12 months. "
             },
             {
+                "name": "Foreign Currency Cheque Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured."
+            },
+            {
+                "name": "Over the Counter Fee",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
+                "discounts": [
+                    {
+                        "description": "Minimum Monthly Balance",
+                        "discountType": "BALANCE",
+                        "amount": "2.00",
+                        "additionalValue": "5000.00",
+                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt. "
+                    }
+                ]
+            },
+            {
+                "name": "Inward Telegraphic Transfer FEE (in AUD)",
+                "feeType": "DEPOSIT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
+            },
+            {
+                "name": "Emergency Visa Card Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "USD",
+                "additionalInfo": "Applies if you request us to issue you with an emergency replacement card whilst overseas."
+            },
+            {
                 "name": "Duplicate Copy of Statement",
                 "feeType": "EVENT",
                 "amount": "12.50",
@@ -173,13 +202,6 @@
                 "amount": "3.25",
                 "currency": "AUD",
                 "additionalInfo": "Applies when you perform a deposit or withdrawal on your account through a Bank@Post outlet. This fee also applies if your transaction is declined."
-            },
-            {
-                "name": "Declined Visa Dispute Fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you opt to dispute or request further information from the merchant about a Visa transaction. The fee will only apply to each dispute where evidence suggests you participated in or authorised the transaction, or failed to sufficiently protect your card details."
             },
             {
                 "name": "Default Notice Fee",
@@ -203,27 +225,6 @@
                 "additionalInfo": "Charged per hour, or part thereof, when you request us to retrieve historical documents related to your account.  "
             },
             {
-                "name": "Replacement Card Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
-            },
-            {
-                "name": "Transaction Listing Print Fee",
-                "feeType": "EVENT",
-                "amount": "2.50",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
-            },
-            {
-                "name": "Cheque Deposit Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "currency": "AUD",
-                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank."
-            },
-            {
                 "name": "Cheque Deposit Fee",
                 "feeType": "DEPOSIT",
                 "amount": "0.50",
@@ -231,32 +232,11 @@
                 "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque."
             },
             {
-                "name": "Interest on Over Limit Balances",
+                "name": "Declined Visa Dispute Fee",
                 "feeType": "EVENT",
-                "balanceRate": "0.1999",
+                "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "If your account becomes overdrawn default interest will apply on the amount that exceeds the available balance at an interest rate 3% above the Standard Overdraft rate. If your overdraft exceeds its credit limit an interest rate 3% above the existing overdraft rate will apply to the over limit amount for each day the account is over the limit."
-            },
-            {
-                "name": "Electronic Transfer Trace Fees",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
-            },
-            {
-                "name": "Emergency Visa Card Fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "USD",
-                "additionalInfo": "Applies if you request us to issue you with an emergency replacement card whilst overseas."
-            },
-            {
-                "name": "Electronic Transfer Recall Fees",
-                "feeType": "EVENT",
-                "amount": "25.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction"
+                "additionalInfo": "Applies where you opt to dispute or request further information from the merchant about a Visa transaction. The fee will only apply to each dispute where evidence suggests you participated in or authorised the transaction, or failed to sufficiently protect your card details."
             },
             {
                 "name": "Foreign Cheque Deposit Fee",
@@ -264,20 +244,6 @@
                 "amount": "10.00",
                 "currency": "AUD",
                 "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account."
-            },
-            {
-                "name": "Currency Conversion Fee",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.035",
-                "currency": "AUD",
-                "additionalInfo": "Applies to withdrawals and purchases made outside of Australia using your Regional Australia Bank Visa Debit or Access Card."
-            },
-            {
-                "name": "Over Limit Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "currency": "AUD",
-                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit."
             },
             {
                 "name": "Your Choice Visa Credit Card Annual Fee ",
@@ -302,26 +268,46 @@
                 ]
             },
             {
-                "name": "Over the Counter Fee",
+                "name": "Currency Conversion Fee",
                 "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
-                "discounts": [
-                    {
-                        "description": "Minimum Monthly Balance",
-                        "discountType": "BALANCE",
-                        "amount": "2.00",
-                        "additionalValue": "5000.00",
-                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt. "
-                    }
-                ]
+                "transactionRate": "0.035",
+                "currency": "AUD",
+                "additionalInfo": "Applies to withdrawals and purchases made outside of Australia using your Regional Australia Bank Visa Debit or Access Card."
             },
             {
-                "name": "Foreign Currency Cheque Dishonour Fee",
+                "name": "Over Limit Fee",
                 "feeType": "EVENT",
-                "amount": "30.00",
+                "amount": "12.50",
                 "currency": "AUD",
-                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured."
+                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit."
+            },
+            {
+                "name": "Electronic Transfer Recall Fees",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction"
+            },
+            {
+                "name": "Electronic Transfer Trace Fees",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
+            },
+            {
+                "name": "Cheque Deposit Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "currency": "AUD",
+                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank."
+            },
+            {
+                "name": "Transaction Listing Print Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
             },
             {
                 "name": "Direct Debit Dishonour Fee",
@@ -329,6 +315,20 @@
                 "amount": "12.50",
                 "currency": "AUD",
                 "additionalInfo": "Applies where a direct debit request is rejected by us due to insufficient funds in your account."
+            },
+            {
+                "name": "Replacement Card Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
+            },
+            {
+                "name": "Interest on Over Limit Balances",
+                "feeType": "EVENT",
+                "balanceRate": "0.1999",
+                "currency": "AUD",
+                "additionalInfo": "If your account becomes overdrawn default interest will apply on the amount that exceeds the available balance at an interest rate 3% above the Standard Overdraft rate. If your overdraft exceeds its credit limit an interest rate 3% above the existing overdraft rate will apply to the over limit amount for each day the account is over the limit."
             }
         ],
         "lendingRates": [

@@ -47,15 +47,15 @@
         ],
         "fees": [
             {
-                "name": "Direct debit dishonour - electronic",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
                 "name": "Retrieval of deposited cheque",
                 "feeType": "EVENT",
                 "amount": "45.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Direct debit dishonour - electronic",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
                 "currency": "AUD"
             },
             {
@@ -65,9 +65,41 @@
                 "currency": "AUD"
             },
             {
-                "name": "Bank Cheque",
+                "name": "Stopped bank cheque",
+                "feeType": "TRANSACTION",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Archive retrieval fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "A hourly fee applies plus any expenses incurred"
+            },
+            {
+                "name": "Deposited cheque dishonour fee",
                 "feeType": "EVENT",
-                "amount": "5.00",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Foreign Cash",
+                "feeType": "EVENT",
+                "transactionRate": "0.01",
+                "currency": "AUD",
+                "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies"
+            },
+            {
+                "name": "Encashment of Foreign Cash",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Minimum encashment of AU$50 applies"
+            },
+            {
+                "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
+                "feeType": "TRANSACTION",
+                "amount": "35.00",
                 "currency": "AUD"
             },
             {
@@ -119,6 +151,12 @@
                 ]
             },
             {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
                 "name": "Foreign Cheque encashment (>AU$5000)",
                 "feeType": "EVENT",
                 "amount": "50.00",
@@ -128,12 +166,6 @@
                 "name": "BPAY investigation request",
                 "feeType": "TRANSACTION",
                 "amount": "10.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Telegraphic transfers (foreign currency)",
-                "feeType": "TRANSACTION",
-                "amount": "30.00",
                 "currency": "AUD"
             },
             {
@@ -192,12 +224,6 @@
                 ]
             },
             {
-                "name": "EFT trace/recall of funds",
-                "feeType": "TRANSACTION",
-                "amount": "25.00",
-                "currency": "AUD"
-            },
-            {
                 "name": "Audit Certificate Fee",
                 "feeType": "EVENT",
                 "amount": "50.00",
@@ -211,13 +237,6 @@
                 "currency": "AUD"
             },
             {
-                "name": "Encashment of Foreign Cash",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Minimum encashment of AU$50 applies"
-            },
-            {
                 "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
                 "feeType": "PERIODIC",
                 "amount": "2.00",
@@ -225,45 +244,13 @@
                 "additionalValue": "P1M"
             },
             {
-                "name": "BPAY trace/BPAY error correction",
-                "feeType": "TRANSACTION",
-                "amount": "30.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Swift transfers",
+                "name": "EFT trace/recall of funds",
                 "feeType": "TRANSACTION",
                 "amount": "25.00",
-                "currency": "AUD",
-                "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions"
-            },
-            {
-                "name": "Deposited cheque dishonour fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Copies of statements (over 12 months) per page",
-                "feeType": "EVENT",
-                "amount": "5.00",
                 "currency": "AUD"
             },
             {
                 "name": "Telegraphic transfers (AUD)",
-                "feeType": "TRANSACTION",
-                "amount": "35.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Foreign Cash",
-                "feeType": "EVENT",
-                "transactionRate": "0.01",
-                "currency": "AUD",
-                "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies"
-            },
-            {
-                "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
                 "feeType": "TRANSACTION",
                 "amount": "35.00",
                 "currency": "AUD"
@@ -276,9 +263,16 @@
                 "additionalValue": "P1M"
             },
             {
-                "name": "Stopped bank cheque",
+                "name": "Swift transfers",
                 "feeType": "TRANSACTION",
-                "amount": "15.00",
+                "amount": "25.00",
+                "currency": "AUD",
+                "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions"
+            },
+            {
+                "name": "Copies of statements (over 12 months) per page",
+                "feeType": "EVENT",
+                "amount": "5.00",
                 "currency": "AUD"
             },
             {
@@ -294,10 +288,16 @@
                 "currency": "AUD"
             },
             {
-                "name": "Archive retrieval fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "A hourly fee applies plus any expenses incurred"
+                "name": "BPAY trace/BPAY error correction",
+                "feeType": "TRANSACTION",
+                "amount": "30.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Telegraphic transfers (foreign currency)",
+                "feeType": "TRANSACTION",
+                "amount": "30.00",
+                "currency": "AUD"
             }
         ],
         "depositRates": [

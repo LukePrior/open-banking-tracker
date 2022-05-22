@@ -34,12 +34,19 @@
         ],
         "fees": [
             {
-                "name": "DOMESTIC_ATM_ENQUIRY/DECLINED_TRANSACTION",
+                "name": "CHEQUE_COLLECTION",
                 "feeType": "TRANSACTION",
-                "amount": "1.00",
+                "amount": "0.50",
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "discounts": [
+                    {
+                        "description": "All Member Monthly Free Transactions",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "11.25",
+                        "additionalValue": "All Members Eligible",
+                        "additionalInfo": "All members receive 3 Free ATM or EFTPOS transactions, 5 free branch cheque deposits and 10 free Cheque Collection (deposits) items per month"
+                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -149,6 +156,13 @@
                 ]
             },
             {
+                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD"
+            },
+            {
                 "name": "BRANCH_CHEQUE_WITHDRAWAL",
                 "feeType": "TRANSACTION",
                 "amount": "5.00",
@@ -176,19 +190,12 @@
                 ]
             },
             {
-                "name": "CHEQUE_COLLECTION",
+                "name": "DOMESTIC_ATM_ENQUIRY/DECLINED_TRANSACTION",
                 "feeType": "TRANSACTION",
-                "amount": "0.50",
+                "amount": "1.00",
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "discounts": [
-                    {
-                        "description": "All Member Monthly Free Transactions",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "11.25",
-                        "additionalValue": "All Members Eligible",
-                        "additionalInfo": "All members receive 3 Free ATM or EFTPOS transactions, 5 free branch cheque deposits and 10 free Cheque Collection (deposits) items per month"
-                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -248,13 +255,6 @@
                         "additionalValue": "Excludes specially requested services charges"
                     }
                 ]
-            },
-            {
-                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "accrualFrequency": "P1M",
-                "currency": "AUD"
             },
             {
                 "name": "EFTPOS_TRANSACTION",

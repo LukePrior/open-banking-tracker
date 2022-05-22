@@ -70,6 +70,84 @@
         ],
         "fees": [
             {
+                "name": "Inactive Account Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Applies annually if there are no transactions on your membership in the preceding 12 months. "
+            },
+            {
+                "name": "Cheque Deposit Fee",
+                "feeType": "DEPOSIT",
+                "amount": "0.50",
+                "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque."
+            },
+            {
+                "name": "Foreign Currency Cheque Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured."
+            },
+            {
+                "name": "Overseas Draft Fee ",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies when you order a draft from us."
+            },
+            {
+                "name": "Overlimit Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit."
+            },
+            {
+                "name": "Transaction Listing Print Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
+            },
+            {
+                "name": "Inward Telegraphic Transfer AUD Fee",
+                "feeType": "DEPOSIT",
+                "amount": "15.00",
+                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
+            },
+            {
+                "name": "Cash Handling Fee - Members",
+                "feeType": "EVENT",
+                "transactionRate": "0.025",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you order bulk cash/coin from us. Minimum Fee Amount - $10.00",
+                "discounts": [
+                    {
+                        "description": "Cash Handling Fee Waiver",
+                        "discountType": "BALANCE",
+                        "transactionRate": "2.50",
+                        "additionalValue": "5000.00",
+                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt.",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "The monthly membership balance is calculated by adding together the minimum savings, investment and lending balances held in the membership during the course of the month. The Your Choice Visa and Lite Credit Card balances are not taken into account in assessing the monthly membership balance."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Foreign Cheque Deposit Fee",
+                "feeType": "DEPOSIT",
+                "amount": "10.00",
+                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account."
+            },
+            {
+                "name": "Online International Payment",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "additionalInfo": "Applies to each International Payment you perform through Internet Banking."
+            },
+            {
                 "name": "Access Fee",
                 "feeType": "PERIODIC",
                 "amount": "5.00",
@@ -101,120 +179,10 @@
                 ]
             },
             {
-                "name": "Cheque Deposit Fee",
-                "feeType": "DEPOSIT",
-                "amount": "0.50",
-                "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque."
-            },
-            {
-                "name": "Secure Token Replacement Fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "additionalInfo": "Secure Tokens are used to authorise large transactions initiated by Internet and Mobile Banking. The initial token is free, but this fee is levied to replace each broken or lost token."
-            },
-            {
-                "name": "Dormant Account Fee",
-                "feeType": "PERIODIC",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalValue": "P7Y",
-                "additionalInfo": "Applies if there is no member generated transaction activity on your account for a period of seven (7) years."
-            },
-            {
-                "name": "Foreign Currency Cheque Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "30.00",
-                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured."
-            },
-            {
-                "name": "Transaction Listing Print Fee",
-                "feeType": "EVENT",
-                "amount": "2.50",
-                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
-            },
-            {
-                "name": "Overlimit Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit."
-            },
-            {
-                "name": "Overseas Draft Cancellation Fee ",
-                "feeType": "EVENT",
-                "amount": "25.00",
-                "additionalInfo": "Applies when you ask us to cancel an overseas draft."
-            },
-            {
-                "name": "Cash Handling Fee - Members",
-                "feeType": "EVENT",
-                "transactionRate": "0.025",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you order bulk cash/coin from us. Minimum Fee Amount - $10.00",
-                "discounts": [
-                    {
-                        "description": "Cash Handling Fee Waiver",
-                        "discountType": "BALANCE",
-                        "transactionRate": "2.50",
-                        "additionalValue": "5000.00",
-                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt.",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "The monthly membership balance is calculated by adding together the minimum savings, investment and lending balances held in the membership during the course of the month. The Your Choice Visa and Lite Credit Card balances are not taken into account in assessing the monthly membership balance."
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Foreign Cheque Deposit Fee",
-                "feeType": "DEPOSIT",
-                "amount": "10.00",
-                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account."
-            },
-            {
-                "name": "Inactive Account Fee",
-                "feeType": "PERIODIC",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Applies annually if there are no transactions on your membership in the preceding 12 months. "
-            },
-            {
                 "name": "Electronic Transfer Recall Fees",
                 "feeType": "EVENT",
                 "amount": "10.00",
                 "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction"
-            },
-            {
-                "name": "Electronic Transfer Trace Fees",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
-            },
-            {
-                "name": "Overseas Draft Fee ",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies when you order a draft from us."
-            },
-            {
-                "name": "Online International Payment",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "additionalInfo": "Applies to each International Payment you perform through Internet Banking."
-            },
-            {
-                "name": "Inward Telegraphic Transfer AUD Fee",
-                "feeType": "DEPOSIT",
-                "amount": "15.00",
-                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
-            },
-            {
-                "name": "Duplicate Copy of Statement Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies if you request a duplicate copy of a formal account statement."
             },
             {
                 "name": "Interest on Over Limit Balances",
@@ -223,16 +191,48 @@
                 "additionalInfo": "If your account becomes overdrawn default interest will apply on the amount that exceeds the available balance at an interest rate 3% above the Standard Overdraft rate. If your overdraft exceeds its credit limit an interest rate 3% above the existing overdraft rate will apply to the over limit amount for each day the account is over the limit."
             },
             {
+                "name": "Electronic Transfer Trace Fees",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
+            },
+            {
+                "name": "Duplicate Copy of Statement Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies if you request a duplicate copy of a formal account statement."
+            },
+            {
+                "name": "Secure Token Replacement Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfo": "Secure Tokens are used to authorise large transactions initiated by Internet and Mobile Banking. The initial token is free, but this fee is levied to replace each broken or lost token."
+            },
+            {
                 "name": "Document Search Fee",
                 "feeType": "EVENT",
                 "amount": "50.00",
                 "additionalInfo": "Charged per hour, or part thereof, when you request us to retrieve historical documents related to your account.  "
             },
             {
+                "name": "Overseas Draft Cancellation Fee ",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "additionalInfo": "Applies when you ask us to cancel an overseas draft."
+            },
+            {
                 "name": "Cheque Deposit Dishonour Fee",
                 "feeType": "EVENT",
                 "amount": "12.50",
                 "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank."
+            },
+            {
+                "name": "Dormant Account Fee",
+                "feeType": "PERIODIC",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalValue": "P7Y",
+                "additionalInfo": "Applies if there is no member generated transaction activity on your account for a period of seven (7) years."
             }
         ],
         "depositRates": [
