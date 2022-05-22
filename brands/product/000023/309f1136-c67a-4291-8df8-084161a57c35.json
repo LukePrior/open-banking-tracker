@@ -91,6 +91,13 @@
                 "additionalInfo": "Applies when we are required to register a transfer of land relating to a property held as security for your loan."
             },
             {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you."
+            },
+            {
                 "name": "Owner Builder Loan Approval Fee",
                 "feeType": "UPFRONT",
                 "amount": "500.00",
@@ -98,11 +105,11 @@
                 "additionalInfo": "Applied on approval of your Owner Builder Facility loan, prior to the initial drawdown."
             },
             {
-                "name": "Default Notice Fee",
+                "name": "Discharge of Mortgage Preparation",
                 "feeType": "EVENT",
-                "amount": "30.00",
+                "amount": "250.00",
                 "currency": "AUD",
-                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you."
+                "additionalInfo": "Applies when we are required to prepare discharge of mortgage documentation relating  to a property held as security for your loan."
             },
             {
                 "name": "Loan Top Up Fee",
@@ -118,19 +125,6 @@
                 "additionalInfo": "Applies when we are required to register a mortgage relating to a property offered as security for your loan."
             },
             {
-                "name": "Property Valuation Costs",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to value each property offered or held as security at the commencement of your loan, and when required throughout the life of your loan."
-            },
-            {
-                "name": "Late Payment Notice Fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you fail to make your contracted repayments by the repayment due date."
-            },
-            {
                 "name": "Registration of Discharge of Mortgage",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
@@ -142,6 +136,19 @@
                 "amount": "250.00",
                 "currency": "AUD",
                 "additionalInfo": "Applies when we are required to prepare mortgage documentation relating to a property offered as security for your loan."
+            },
+            {
+                "name": "Property Valuation Costs",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we are required to value each property offered or held as security at the commencement of your loan, and when required throughout the life of your loan."
+            },
+            {
+                "name": "Late Payment Notice Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you fail to make your contracted repayments by the repayment due date."
             },
             {
                 "name": "Agency Settlement/Handing Fee",
@@ -162,48 +169,29 @@
                 "additionalInfo": "Applies when you request a replacement certificate of title relating to mortgaged property that is held as security for your loan."
             },
             {
+                "name": "Fixed Rate Break Cost",
+                "feeType": "VARIABLE",
+                "additionalInfo": "You may have to pay this if you pay your loan off in full, make an early or extra repayment, or make certain other changes to your loan, during any fixed-rate period. This is calculated specifically related to the individual event."
+            },
+            {
                 "name": "Title Search",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "Applies when we are required to perform a title search relating to a property offered, or held, as security for your loan."
-            },
-            {
-                "name": "Discharge of Mortgage Preparation",
-                "feeType": "EVENT",
-                "amount": "250.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to prepare discharge of mortgage documentation relating  to a property held as security for your loan."
-            },
-            {
-                "name": "Fixed Rate Break Cost",
-                "feeType": "VARIABLE",
-                "additionalInfo": "You may have to pay this if you pay your loan off in full, make an early or extra repayment, or make certain other changes to your loan, during any fixed-rate period. This is calculated specifically related to the individual event."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0389",
-                "comparisonRate": "0.0436",
+                "rate": "0.0409",
+                "comparisonRate": "0.0478",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
+                "loanPurpose": "INVESTMENT",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Interest is per annum (p.a.). 3 Year Fixed Rate for Owner Occupied Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0329",
-                "comparisonRate": "0.044",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Interest is per annum (p.a.). 1 Year Fixed Rate for Owner Occupied Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+                "additionalInfo": "Interest is per annum (p.a.). 3 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",
@@ -219,6 +207,30 @@
             },
             {
                 "lendingRateType": "FIXED",
+                "rate": "0.0539",
+                "comparisonRate": "0.0519",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0409",
+                "comparisonRate": "0.0485",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Interest is per annum (p.a.). 2 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
                 "rate": "0.0459",
                 "comparisonRate": "0.0456",
                 "calculationFrequency": "P1D",
@@ -228,6 +240,18 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P5Y",
                 "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Owner Occupied Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0329",
+                "comparisonRate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Interest is per annum (p.a.). 1 Year Fixed Rate for Owner Occupied Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",
@@ -243,18 +267,6 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0369",
-                "comparisonRate": "0.0477",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Interest is per annum (p.a.). 2 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
                 "rate": "0.0349",
                 "comparisonRate": "0.0487",
                 "calculationFrequency": "P1D",
@@ -264,18 +276,6 @@
                 "loanPurpose": "INVESTMENT",
                 "additionalValue": "P1Y",
                 "additionalInfo": "Interest is per annum (p.a.). 1 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0499",
-                "comparisonRate": "0.0473",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Owner Occupied Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",
@@ -291,15 +291,51 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0539",
-                "comparisonRate": "0.0519",
+                "rate": "0.0369",
+                "comparisonRate": "0.0477",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Interest is per annum (p.a.). 2 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0479",
+                "comparisonRate": "0.0495",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
+                "additionalValue": "P4Y",
+                "additionalInfo": "Interest is per annum (p.a.). 4 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0499",
+                "comparisonRate": "0.0502",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
                 "additionalValue": "P5Y",
-                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0499",
+                "comparisonRate": "0.0473",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Owner Occupied Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",
@@ -315,15 +351,15 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0409",
-                "comparisonRate": "0.0478",
+                "rate": "0.0389",
+                "comparisonRate": "0.0436",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
+                "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Interest is per annum (p.a.). 3 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+                "additionalInfo": "Interest is per annum (p.a.). 3 Year Fixed Rate for Owner Occupied Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",
@@ -372,42 +408,6 @@
                 "loanPurpose": "INVESTMENT",
                 "additionalValue": "P1Y",
                 "additionalInfo": "Interest is per annum (p.a.). 1 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0409",
-                "comparisonRate": "0.0485",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Interest is per annum (p.a.). 2 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0499",
-                "comparisonRate": "0.0502",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Interest is per annum (p.a.). 5 Year Fixed Rate for Investment Loan with Principal & Interest repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "comparisonRate": "0.0495",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P4Y",
-                "additionalInfo": "Interest is per annum (p.a.). 4 Year Fixed Rate for Investment Loan with Interest Only repayments. The Comparison rate is calculated on a secured loan amount of $150,000 over a term of 25 years with an initial interest only period equal in length to the specified fixed rate period. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             },
             {
                 "lendingRateType": "FIXED",

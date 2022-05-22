@@ -35,15 +35,15 @@
         ],
         "features": [
             {
-                "featureType": "DIGITAL_BANKING"
-            },
-            {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Visa Debit with no annual fee"
             },
             {
                 "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "Unlimited Visa Transactions"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
             },
             {
                 "featureType": "NPP_PAYID"
@@ -93,12 +93,6 @@
         ],
         "fees": [
             {
-                "name": "Overseas Visa card replacement\nBank processing fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "At cost plus $20 bank processing fee"
-            },
-            {
                 "name": "EFTPOS transactions (when pressing Savings)",
                 "feeType": "TRANSACTION",
                 "amount": "0.70",
@@ -119,35 +113,15 @@
                 "currency": "AUD"
             },
             {
-                "name": "Direct Debit",
-                "feeType": "TRANSACTION",
-                "amount": "0.50",
-                "currency": "AUD"
-            },
-            {
-                "name": "Periodical payment - insufficient funds rejection fee",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Foreign Cash",
+                "name": "Deposited cheque dishonour fee",
                 "feeType": "EVENT",
-                "transactionRate": "0.01",
-                "currency": "AUD",
-                "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies"
+                "amount": "15.00",
+                "currency": "AUD"
             },
             {
-                "name": "Paper statement fee (per statement)",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "P3M"
-            },
-            {
-                "name": "Telegraphic transfers (AUD)",
+                "name": "Telegraphic transfers (foreign currency)",
                 "feeType": "TRANSACTION",
-                "amount": "35.00",
+                "amount": "30.00",
                 "currency": "AUD"
             },
             {
@@ -157,15 +131,33 @@
                 "currency": "AUD"
             },
             {
-                "name": "Direct debit dishonour - electronic",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
+                "name": "Overseas Visa card replacement\nBank processing fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "At cost plus $20 bank processing fee"
+            },
+            {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
+                "amount": "5.00",
                 "currency": "AUD"
             },
             {
-                "name": "Foreign drafts",
+                "name": "Foreign Cheque encashment (>AU$5000)",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Copies of statements (up to 12 months) at branch",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "currency": "AUD"
+            },
+            {
+                "name": "Direct Debit",
                 "feeType": "TRANSACTION",
-                "amount": "20.00",
+                "amount": "0.50",
                 "currency": "AUD"
             },
             {
@@ -175,45 +167,28 @@
                 "additionalInfo": "At cost plus $20 bank processing fee"
             },
             {
-                "name": "Card transaction voucher retrieval",
-                "feeType": "EVENT",
-                "amount": "35.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Telegraphic transfers (online)",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Archive retrieval fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "A hourly fee applies plus any expenses incurred"
-            },
-            {
-                "name": "External transfer/BPAY (staff-assisted)",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
                 "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
                 "feeType": "TRANSACTION",
                 "amount": "35.00",
                 "currency": "AUD"
             },
             {
-                "name": "Retrieval of deposited cheque",
+                "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "name": "Card transaction voucher retrieval",
                 "feeType": "EVENT",
-                "amount": "45.00",
+                "amount": "35.00",
                 "currency": "AUD"
             },
             {
-                "name": "Copies of statements (up to 12 months) at branch",
-                "feeType": "EVENT",
-                "amount": "2.50",
+                "name": "BPAY - periodical payment (each time processed)",
+                "feeType": "TRANSACTION",
+                "amount": "0.60",
                 "currency": "AUD"
             },
             {
@@ -224,9 +199,15 @@
                 "additionalInfo": "If a Visa dispute lodged by you is declined and found that the claim was invalid"
             },
             {
-                "name": "BPAY - periodical payment (each time processed)",
+                "name": "Foreign Currency Conversion fee",
                 "feeType": "TRANSACTION",
-                "amount": "0.60",
+                "transactionRate": "0.0295",
+                "currency": "AUD"
+            },
+            {
+                "name": "Periodical payment - insufficient funds rejection fee",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
                 "currency": "AUD"
             },
             {
@@ -236,28 +217,18 @@
                 "currency": "AUD"
             },
             {
-                "name": "EFT trace/recall of funds",
-                "feeType": "TRANSACTION",
-                "amount": "25.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Foreign Currency Conversion fee",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.0295",
-                "currency": "AUD"
-            },
-            {
-                "name": "Bank Cheque",
+                "name": "Encashment of Foreign Cash",
                 "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD"
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Minimum encashment of AU$50 applies"
             },
             {
-                "name": "Copies of statements (over 12 months) per page",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD"
+                "name": "Inactive fee for accounts inactive 12 months\nor greater",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
             },
             {
                 "name": "BPAY investigation request",
@@ -266,16 +237,22 @@
                 "currency": "AUD"
             },
             {
-                "name": "Swift transfers",
-                "feeType": "TRANSACTION",
-                "amount": "25.00",
+                "name": "Paper statement fee (per statement)",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
                 "currency": "AUD",
-                "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions"
+                "additionalValue": "P3M"
             },
             {
-                "name": "Stopped bank cheque",
-                "feeType": "TRANSACTION",
+                "name": "Foreign Cheque encashment (<AU$5000)",
+                "feeType": "EVENT",
                 "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "EFT trace/recall of funds",
+                "feeType": "TRANSACTION",
+                "amount": "25.00",
                 "currency": "AUD"
             },
             {
@@ -295,30 +272,53 @@
                 ]
             },
             {
-                "name": "Telegraphic transfers (foreign currency)",
+                "name": "Archive retrieval fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "A hourly fee applies plus any expenses incurred"
+            },
+            {
+                "name": "Swift transfers",
+                "feeType": "TRANSACTION",
+                "amount": "25.00",
+                "currency": "AUD",
+                "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions"
+            },
+            {
+                "name": "Foreign drafts",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Direct debit dishonour - electronic",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "BPAY transaction (self-serve",
+                "feeType": "TRANSACTION",
+                "amount": "0.60",
+                "currency": "AUD"
+            },
+            {
+                "name": "External transfer/BPAY (staff-assisted)",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Copies of statements (over 12 months) per page",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "BPAY trace/BPAY error correction",
                 "feeType": "TRANSACTION",
                 "amount": "30.00",
                 "currency": "AUD"
-            },
-            {
-                "name": "Foreign Cheque encashment (>AU$5000)",
-                "feeType": "EVENT",
-                "amount": "50.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "P1M"
-            },
-            {
-                "name": "Inactive fee for accounts inactive 12 months\nor greater",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "P1M"
             },
             {
                 "name": "Audit Certificate Fee",
@@ -326,6 +326,19 @@
                 "amount": "50.00",
                 "currency": "AUD",
                 "additionalInfo": "Per audit certificate requested"
+            },
+            {
+                "name": "Foreign Cash",
+                "feeType": "EVENT",
+                "transactionRate": "0.01",
+                "currency": "AUD",
+                "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies"
+            },
+            {
+                "name": "Retrieval of deposited cheque",
+                "feeType": "EVENT",
+                "amount": "45.00",
+                "currency": "AUD"
             },
             {
                 "name": "Bank @ Post Withdrawals",
@@ -340,34 +353,21 @@
                 "currency": "AUD"
             },
             {
-                "name": "BPAY transaction (self-serve",
+                "name": "Stopped bank cheque",
                 "feeType": "TRANSACTION",
-                "amount": "0.60",
-                "currency": "AUD"
-            },
-            {
-                "name": "Deposited cheque dishonour fee",
-                "feeType": "EVENT",
                 "amount": "15.00",
                 "currency": "AUD"
             },
             {
-                "name": "Encashment of Foreign Cash",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Minimum encashment of AU$50 applies"
-            },
-            {
-                "name": "BPAY trace/BPAY error correction",
+                "name": "Telegraphic transfers (AUD)",
                 "feeType": "TRANSACTION",
-                "amount": "30.00",
+                "amount": "35.00",
                 "currency": "AUD"
             },
             {
-                "name": "Foreign Cheque encashment (<AU$5000)",
-                "feeType": "EVENT",
-                "amount": "15.00",
+                "name": "Telegraphic transfers (online)",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
                 "currency": "AUD"
             }
         ],

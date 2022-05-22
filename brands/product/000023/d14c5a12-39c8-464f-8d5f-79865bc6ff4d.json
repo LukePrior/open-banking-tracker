@@ -17,9 +17,8 @@
         },
         "features": [
             {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY & Automatic Transfers",
-                "additionalInfo": "Automatic payments can be scheduled to pay your bills and/or split your pay into designated savings accounts. "
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "This account can be used to send an NPP payment."
             },
             {
                 "featureType": "UNLIMITED_TXNS",
@@ -32,17 +31,22 @@
                 "additionalInfo": "Track payments with SMS and email alerts."
             },
             {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY & Automatic Transfers",
+                "additionalInfo": "Automatic payments can be scheduled to pay your bills and/or split your pay into designated savings accounts. "
+            },
+            {
                 "featureType": "FREE_TXNS",
                 "additionalValue": "6",
                 "additionalInfo": "6 Free Over the Counter (Branch) transactions per month."
             },
             {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "This account can be used to send an NPP payment."
-            },
-            {
                 "featureType": "OVERDRAFT",
                 "additionalInfo": "An approved Overdraft is included and can be accessed at any time."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time."
             },
             {
                 "featureType": "CARD_ACCESS",
@@ -50,16 +54,13 @@
                 "additionalInfo": "Visa Debit Card available to Australian Residents and members aged > 14 years"
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Bank 24/7 wherever you are and whenever you want with RAB mobile and internet banking."
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple, Samsung and Google Pay.",
+                "additionalInfo": "Apple, Samsung and Google Pay can be attached to the product on request."
             },
             {
                 "featureType": "NPP_PAYID",
                 "additionalInfo": "This account can be used as the target of an NPP PayID."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time."
             },
             {
                 "featureType": "ADDITIONAL_CARDS",
@@ -71,9 +72,8 @@
                 "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply."
             },
             {
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Apple, Samsung and Google Pay.",
-                "additionalInfo": "Apple, Samsung and Google Pay can be attached to the product on request."
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Bank 24/7 wherever you are and whenever you want with RAB mobile and internet banking."
             },
             {
                 "featureType": "OTHER",
@@ -120,13 +120,6 @@
         ],
         "fees": [
             {
-                "name": "Outward Telegraphic Transfer AUD Fee (to Australian account) ",
-                "feeType": "WITHDRAWAL",
-                "amount": "35.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies to Real Time Gross Settlement (RTGS)/ Telegraphic Transfers to an account within Australia."
-            },
-            {
                 "name": "Access Fee",
                 "feeType": "PERIODIC",
                 "amount": "5.00",
@@ -164,62 +157,11 @@
                 "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque."
             },
             {
-                "name": "Duplicate Copy of Statement Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies if you request a duplicate copy of a formal account statement."
-            },
-            {
-                "name": "Electronic Transfer Trace Fees",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
-            },
-            {
-                "name": "Currency Conversion Fee ",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.035",
-                "currency": "AUD",
-                "additionalInfo": "Applies as a percentage of the transaction value to withdrawals and purchases made outside of Australia using your Regional Australia Bank Visa Debit or Access Card."
-            },
-            {
-                "name": "Inward Telegraphic Transfer AUD Fee",
-                "feeType": "DEPOSIT",
-                "amount": "15.00",
-                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
-            },
-            {
-                "name": "Outward Telegraphic Transfer AUD Fee (to Foreign account) ",
+                "name": "Outward Telegraphic Transfer AUD Fee (to Australian account) ",
                 "feeType": "WITHDRAWAL",
-                "amount": "50.00",
+                "amount": "35.00",
                 "currency": "AUD",
-                "additionalInfo": "Applies to Real Time Gross Settlement (RTGS)/ Telegraphic Transfers to an account in a foreign country in Australian dollars. "
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "30.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you."
-            },
-            {
-                "name": "Registration of Discharge of Mortgage",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to register a discharge of mortgage relating to a property held as security for your loan."
-            },
-            {
-                "name": "Loan Restructure Fee",
-                "feeType": "UPFRONT",
-                "amount": "200.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you switch your existing Regional Australia Bank home loan to a different loan type, other than a Partnership Advantage."
-            },
-            {
-                "name": "Mortgage Documentation Preparation",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to prepare mortgage documentation relating to a property offered as security for your loan."
+                "additionalInfo": "Applies to Real Time Gross Settlement (RTGS)/ Telegraphic Transfers to an account within Australia."
             },
             {
                 "name": "Overseas Draft Fee ",
@@ -228,17 +170,16 @@
                 "additionalInfo": "Applies when you order a draft from us."
             },
             {
+                "name": "Agency Settlement/Handing Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies in the event that we require an agent to attend a settlement or handle documentation, relating to your loan."
+            },
+            {
                 "name": "Property Valuation Costs",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "Applies when we are required to value each property offered or held as security at the commencement of your loan, and when required throughout the life of your loan."
-            },
-            {
-                "name": "Electronic Transfer Recall Fees",
-                "feeType": "EVENT",
-                "amount": "25.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction"
             },
             {
                 "name": "Discharge of Mortgage Preparation",
@@ -247,190 +188,10 @@
                 "additionalInfo": "Applies when we are required to prepare discharge of mortgage documentation relating  to a property held as security for your loan."
             },
             {
-                "name": "Over the Counter Fee",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
-                "discounts": [
-                    {
-                        "description": "OTC Fee Waiver",
-                        "discountType": "BALANCE",
-                        "amount": "5.00",
-                        "additionalValue": "5000.00",
-                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt from paying the OTC Fee.",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "The monthly membership balance is calculated by adding together the minimum savings, investment and lending balances held in the membership during the course of the month. The Your Choice Visa and Lite Credit Card balances are not taken into account in assessing the monthly membership balance."
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Overseas Draft Cancellation Fee ",
-                "feeType": "EVENT",
-                "amount": "25.00",
-                "additionalInfo": "Applies when you ask us to cancel an overseas draft."
-            },
-            {
-                "name": "Replacement Card Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
-            },
-            {
                 "name": "Foreign Currency Cheque Dishonour Fee",
                 "feeType": "EVENT",
                 "amount": "30.00",
                 "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured."
-            },
-            {
-                "name": "Secure Token Replacement Fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "additionalInfo": "Secure Tokens are used to authorise large transactions initiated by Internet and Mobile Banking. The initial token is free, but this fee is levied to replace each broken or lost token."
-            },
-            {
-                "name": "Personal Cheque Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies to each personal cheque drawn from your account where there are insufficient funds in the account to cover the value of the cheque."
-            },
-            {
-                "name": "Replacement Certificate of Title",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you request a replacement certificate of title relating to mortgaged property that is held as security for your loan."
-            },
-            {
-                "name": "Temporary Overdraft Approval Fee",
-                "feeType": "EVENT",
-                "amount": "90.00",
-                "currency": "AUD",
-                "additionalInfo": "Where we allow you to draw on a temporary overdraft to assist with mortgage related costs this fee will apply."
-            },
-            {
-                "name": "Cheque Deposit Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank."
-            },
-            {
-                "name": "Direct Debit Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies where a direct debit request is rejected by us due to insufficient funds in your account."
-            },
-            {
-                "name": "Financial Institution Cheque Fee",
-                "feeType": "EVENT",
-                "amount": "11.00",
-                "additionalInfo": "Applies for each bank cheque you order from us."
-            },
-            {
-                "name": "Over Limit Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "currency": "AUD",
-                "additionalInfo": "Applicable if you exceed an approved overdraft limit linked to your account."
-            },
-            {
-                "name": "Document Search Fee",
-                "feeType": "EVENT",
-                "amount": "50.00",
-                "additionalInfo": "Charged per hour, or part thereof, when you request us to retrieve historical documents related to your account.  "
-            },
-            {
-                "name": "Foreign Cheque Deposit Fee",
-                "feeType": "DEPOSIT",
-                "amount": "10.00",
-                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account."
-            },
-            {
-                "name": "Registration of Mortgage",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to register a mortgage relating to a property offered as security for your loan."
-            },
-            {
-                "name": "Registration of Transfer",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we are required to register a transfer of land relating to a property held as security for your loan."
-            },
-            {
-                "name": "Transaction Listing Print Fee",
-                "feeType": "EVENT",
-                "amount": "2.50",
-                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
-            },
-            {
-                "name": "Cheque Copy or Trace Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "additionalInfo": "Applies where you request a copy of: a personal cheque you have written or deposited; a Regional Australia Bank cheque; or an ANZ deposit slip. Also applies where you wish to determine if a cheque you have written has been deposited or reached its intended destination."
-            },
-            {
-                "name": "Loan Top Up Fee",
-                "feeType": "EVENT",
-                "amount": "195.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies on approval of an additional borrowing against a property that we hold an existing mortgage over."
-            },
-            {
-                "name": "Online International Payment",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "additionalInfo": "Applies to each International Payment you perform through Internet Banking."
-            },
-            {
-                "name": "Foreign Cash Fee",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.01",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you purchase foreign cash from us or wish to deposit foreign cash into your account. Minimum fee of $10.00 applies."
-            },
-            {
-                "name": "Bank@Post Transaction Fee ",
-                "feeType": "TRANSACTION",
-                "amount": "3.25",
-                "currency": "AUD",
-                "additionalInfo": "Applies when you perform a deposit or withdrawal on your account through a Bank@Post outlet. This fee also applies if your transaction is declined."
-            },
-            {
-                "name": "Owner Builder Loan Approval Fee",
-                "feeType": "UPFRONT",
-                "amount": "500.00",
-                "currency": "AUD",
-                "additionalInfo": "Applied on approval of your Owner Builder Facility loan, prior to the initial drawdown."
-            },
-            {
-                "name": "PEXA Processing Fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies when we process a settlement relating to your loan through PEXA."
-            },
-            {
-                "name": "Agency Settlement/Handing Fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "Applies in the event that we require an agent to attend a settlement or handle documentation, relating to your loan."
-            },
-            {
-                "name": "Declined Visa Dispute Fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you opt to dispute or request further information from the merchant about a Visa transaction. The fee will only apply to each dispute where evidence suggests you participated in or authorised the transaction, or failed to sufficiently protect your card details."
-            },
-            {
-                "name": "Cheque Book Fee",
-                "feeType": "EVENT",
-                "amount": "0.80",
-                "currency": "AUD",
-                "additionalInfo": "~Not available for new customers~ Charged per cheque when you order a cheque book for your account. "
             },
             {
                 "name": "Cash Handling Fee - Members",
@@ -455,24 +216,11 @@
                 ]
             },
             {
-                "name": "Late Payment Notice Fee",
+                "name": "Temporary Overdraft Approval Fee",
                 "feeType": "EVENT",
-                "amount": "20.00",
+                "amount": "90.00",
                 "currency": "AUD",
-                "additionalInfo": "Applies when you fail to make your contracted repayments by the repayment due date."
-            },
-            {
-                "name": "Stop Payment on Cheque Fee",
-                "feeType": "EVENT",
-                "amount": "12.50",
-                "additionalInfo": "Applies where you request us to cancel a personal or Regional Australia Bank cheque drawn on your account. "
-            },
-            {
-                "name": "Emergency Visa Card Fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "USD",
-                "additionalInfo": "Applies if you request us to issue you with an emergency replacement card whilst overseas."
+                "additionalInfo": "Where we allow you to draw on a temporary overdraft to assist with mortgage related costs this fee will apply."
             },
             {
                 "name": "Outward Telegraphic Transfer Foreign Currency Fee",
@@ -482,10 +230,262 @@
                 "additionalInfo": "Applies to Real Time Gross Settlement (RTGS)/ Telegraphic Transfers to an account in a foreign country in the destination currency. "
             },
             {
+                "name": "Cheque Book Fee",
+                "feeType": "EVENT",
+                "amount": "0.80",
+                "currency": "AUD",
+                "additionalInfo": "~Not available for new customers~ Charged per cheque when you order a cheque book for your account. "
+            },
+            {
+                "name": "Declined Visa Dispute Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you opt to dispute or request further information from the merchant about a Visa transaction. The fee will only apply to each dispute where evidence suggests you participated in or authorised the transaction, or failed to sufficiently protect your card details."
+            },
+            {
+                "name": "Registration of Discharge of Mortgage",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we are required to register a discharge of mortgage relating to a property held as security for your loan."
+            },
+            {
+                "name": "Secure Token Replacement Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfo": "Secure Tokens are used to authorise large transactions initiated by Internet and Mobile Banking. The initial token is free, but this fee is levied to replace each broken or lost token."
+            },
+            {
+                "name": "Cheque Copy or Trace Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "additionalInfo": "Applies where you request a copy of: a personal cheque you have written or deposited; a Regional Australia Bank cheque; or an ANZ deposit slip. Also applies where you wish to determine if a cheque you have written has been deposited or reached its intended destination."
+            },
+            {
+                "name": "Foreign Cash Fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.01",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you purchase foreign cash from us or wish to deposit foreign cash into your account. Minimum fee of $10.00 applies."
+            },
+            {
+                "name": "Transaction Listing Print Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00."
+            },
+            {
+                "name": "Duplicate Copy of Statement Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies if you request a duplicate copy of a formal account statement."
+            },
+            {
+                "name": "Financial Institution Cheque Fee",
+                "feeType": "EVENT",
+                "amount": "11.00",
+                "additionalInfo": "Applies for each bank cheque you order from us."
+            },
+            {
+                "name": "Cheque Deposit Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank."
+            },
+            {
+                "name": "Registration of Transfer",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we are required to register a transfer of land relating to a property held as security for your loan."
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you."
+            },
+            {
+                "name": "Over Limit Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "currency": "AUD",
+                "additionalInfo": "Applicable if you exceed an approved overdraft limit linked to your account."
+            },
+            {
+                "name": "Personal Cheque Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies to each personal cheque drawn from your account where there are insufficient funds in the account to cover the value of the cheque."
+            },
+            {
+                "name": "Electronic Transfer Trace Fees",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction."
+            },
+            {
+                "name": "Replacement Certificate of Title",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you request a replacement certificate of title relating to mortgaged property that is held as security for your loan."
+            },
+            {
+                "name": "Inward Telegraphic Transfer AUD Fee",
+                "feeType": "DEPOSIT",
+                "amount": "15.00",
+                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account."
+            },
+            {
+                "name": "Over the Counter Fee",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
+                "discounts": [
+                    {
+                        "description": "OTC Fee Waiver",
+                        "discountType": "BALANCE",
+                        "amount": "5.00",
+                        "additionalValue": "5000.00",
+                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt from paying the OTC Fee.",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "The monthly membership balance is calculated by adding together the minimum savings, investment and lending balances held in the membership during the course of the month. The Your Choice Visa and Lite Credit Card balances are not taken into account in assessing the monthly membership balance."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Loan Restructure Fee",
+                "feeType": "UPFRONT",
+                "amount": "200.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you switch your existing Regional Australia Bank home loan to a different loan type, other than a Partnership Advantage."
+            },
+            {
                 "name": "Title Search",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "Applies when we are required to perform a title search relating to a property offered, or held, as security for your loan."
+            },
+            {
+                "name": "Mortgage Documentation Preparation",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we are required to prepare mortgage documentation relating to a property offered as security for your loan."
+            },
+            {
+                "name": "Replacement Card Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
+            },
+            {
+                "name": "Online International Payment",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "additionalInfo": "Applies to each International Payment you perform through Internet Banking."
+            },
+            {
+                "name": "Document Search Fee",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "additionalInfo": "Charged per hour, or part thereof, when you request us to retrieve historical documents related to your account.  "
+            },
+            {
+                "name": "Bank@Post Transaction Fee ",
+                "feeType": "TRANSACTION",
+                "amount": "3.25",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you perform a deposit or withdrawal on your account through a Bank@Post outlet. This fee also applies if your transaction is declined."
+            },
+            {
+                "name": "Foreign Cheque Deposit Fee",
+                "feeType": "DEPOSIT",
+                "amount": "10.00",
+                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account."
+            },
+            {
+                "name": "Electronic Transfer Recall Fees",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction"
+            },
+            {
+                "name": "Emergency Visa Card Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "USD",
+                "additionalInfo": "Applies if you request us to issue you with an emergency replacement card whilst overseas."
+            },
+            {
+                "name": "Late Payment Notice Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies when you fail to make your contracted repayments by the repayment due date."
+            },
+            {
+                "name": "PEXA Processing Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we process a settlement relating to your loan through PEXA."
+            },
+            {
+                "name": "Registration of Mortgage",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applies when we are required to register a mortgage relating to a property offered as security for your loan."
+            },
+            {
+                "name": "Currency Conversion Fee ",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.035",
+                "currency": "AUD",
+                "additionalInfo": "Applies as a percentage of the transaction value to withdrawals and purchases made outside of Australia using your Regional Australia Bank Visa Debit or Access Card."
+            },
+            {
+                "name": "Outward Telegraphic Transfer AUD Fee (to Foreign account) ",
+                "feeType": "WITHDRAWAL",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies to Real Time Gross Settlement (RTGS)/ Telegraphic Transfers to an account in a foreign country in Australian dollars. "
+            },
+            {
+                "name": "Stop Payment on Cheque Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies where you request us to cancel a personal or Regional Australia Bank cheque drawn on your account. "
+            },
+            {
+                "name": "Overseas Draft Cancellation Fee ",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "additionalInfo": "Applies when you ask us to cancel an overseas draft."
+            },
+            {
+                "name": "Loan Top Up Fee",
+                "feeType": "EVENT",
+                "amount": "195.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies on approval of an additional borrowing against a property that we hold an existing mortgage over."
+            },
+            {
+                "name": "Owner Builder Loan Approval Fee",
+                "feeType": "UPFRONT",
+                "amount": "500.00",
+                "currency": "AUD",
+                "additionalInfo": "Applied on approval of your Owner Builder Facility loan, prior to the initial drawdown."
+            },
+            {
+                "name": "Direct Debit Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "12.50",
+                "additionalInfo": "Applies where a direct debit request is rejected by us due to insufficient funds in your account."
             }
         ],
         "lendingRates": [

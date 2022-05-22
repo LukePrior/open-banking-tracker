@@ -79,11 +79,10 @@
         ],
         "fees": [
             {
-                "name": "Declined transactions (insufficient funds)",
-                "feeType": "TRANSACTION",
-                "amount": "0.80",
-                "currency": "AUD",
-                "additionalInfo": "ATM and EFTPOS within Australia"
+                "name": "Overseas ATM withdrawals",
+                "feeType": "WITHDRAWAL",
+                "amount": "4.50",
+                "currency": "AUD"
             },
             {
                 "name": "EFTPOS transactions (when pressing Savings)",
@@ -135,13 +134,62 @@
                 ]
             },
             {
-                "name": "Cash advance at other financial institution",
-                "feeType": "WITHDRAWAL",
-                "amount": "4.50",
-                "currency": "AUD"
+                "name": "Direct Debit",
+                "feeType": "TRANSACTION",
+                "amount": "0.50",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
+                        "discountType": "BALANCE",
+                        "amount": "5.00",
+                        "additionalValue": "5000.00",
+                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
+                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
+                    },
+                    {
+                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
+                        "discountType": "BALANCE",
+                        "amount": "10.00",
+                        "additionalValue": "20000.00",
+                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
+                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
+                    },
+                    {
+                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
+                        "discountType": "BALANCE",
+                        "amount": "20.00",
+                        "additionalValue": "50000.00",
+                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
+                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
+                    },
+                    {
+                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
+                        "discountType": "BALANCE",
+                        "amount": "35.00",
+                        "additionalValue": "100000.00",
+                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
+                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
+                    },
+                    {
+                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
+                        "discountType": "BALANCE",
+                        "amount": "50.00",
+                        "additionalValue": "200000.00",
+                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
+                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
+                    }
+                ]
             },
             {
-                "name": "Overseas ATM withdrawals",
+                "name": "Declined transactions (insufficient funds)",
+                "feeType": "TRANSACTION",
+                "amount": "0.80",
+                "currency": "AUD",
+                "additionalInfo": "ATM and EFTPOS within Australia"
+            },
+            {
+                "name": "Cash advance at other financial institution",
                 "feeType": "WITHDRAWAL",
                 "amount": "4.50",
                 "currency": "AUD"
@@ -150,43 +198,6 @@
                 "name": "BPAY trace/BPAY error correction",
                 "feeType": "TRANSACTION",
                 "amount": "30.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Deposited cheque dishonour fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Telegraphic transfers (online)",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Foreign drafts",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Trace member cheque",
-                "feeType": "EVENT",
-                "amount": "49.50",
-                "currency": "AUD"
-            },
-            {
-                "name": "Inactive fee for accounts inactive 12 months\nor greater",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "P1M"
-            },
-            {
-                "name": "Personal cheque book 25 cheques",
-                "feeType": "EVENT",
-                "amount": "25.00",
                 "currency": "AUD"
             },
             {
@@ -238,16 +249,40 @@
                 ]
             },
             {
-                "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
+                "name": "Foreign Cheque encashment (>AU$5000)",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Copies of statements (over 12 months) per page",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "External transfer/BPAY (staff-assisted)",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Dishonoured member cheque",
+                "feeType": "TRANSACTION",
+                "amount": "36.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Paper statement fee (per statement)",
                 "feeType": "PERIODIC",
                 "amount": "2.00",
                 "currency": "AUD",
-                "additionalValue": "P1M"
+                "additionalValue": "P3M"
             },
             {
-                "name": "Direct Debit",
+                "name": "BPAY - periodical payment (each time processed)",
                 "feeType": "TRANSACTION",
-                "amount": "0.50",
+                "amount": "0.60",
                 "currency": "AUD",
                 "discounts": [
                     {
@@ -293,15 +328,9 @@
                 ]
             },
             {
-                "name": "Large deposit book",
+                "name": "Foreign Cheque encashment (<AU$5000)",
                 "feeType": "EVENT",
-                "amount": "6.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Periodical payment - insufficient funds rejection fee",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
+                "amount": "15.00",
                 "currency": "AUD"
             },
             {
@@ -311,28 +340,64 @@
                 "additionalInfo": "At cost plus $20 bank processing fee"
             },
             {
+                "name": "Audit Certificate Fee",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "Per audit certificate requested"
+            },
+            {
+                "name": "Deposited cheque dishonour fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Personal cheque book 100 cheques",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Large deposit book",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD"
+            },
+            {
                 "name": "Emergency replacement Visa card (within Australia)\nBank processing fee",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "At cost plus $20 bank processing fee"
             },
             {
-                "name": "Copies of statements (over 12 months) per page",
+                "name": "Copies of statements (up to 12 months) at branch",
                 "feeType": "EVENT",
-                "amount": "5.00",
+                "amount": "2.50",
                 "currency": "AUD"
             },
             {
-                "name": "Other Bank Deposit Fee",
-                "feeType": "DEPOSIT",
-                "amount": "6.50",
-                "currency": "AUD",
-                "additionalInfo": "Cash and cheque deposit at NAB Branch"
+                "name": "Personal cheque book 25 cheques",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "currency": "AUD"
             },
             {
-                "name": "Stopped bank cheque",
+                "name": "Telegraphic transfers (online)",
                 "feeType": "TRANSACTION",
-                "amount": "15.00",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Direct debit dishonour - electronic",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
+                "amount": "5.00",
                 "currency": "AUD"
             },
             {
@@ -343,27 +408,9 @@
                 "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions"
             },
             {
-                "name": "Retrieval of deposited cheque",
-                "feeType": "EVENT",
-                "amount": "45.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Card transaction voucher retrieval",
-                "feeType": "EVENT",
-                "amount": "35.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Copy of member cheque",
-                "feeType": "EVENT",
-                "amount": "49.50",
-                "currency": "AUD"
-            },
-            {
-                "name": "Personal cheque book 100 cheques",
-                "feeType": "EVENT",
-                "amount": "100.00",
+                "name": "Telegraphic transfers (foreign currency)",
+                "feeType": "TRANSACTION",
+                "amount": "30.00",
                 "currency": "AUD"
             },
             {
@@ -372,6 +419,18 @@
                 "amount": "10.00",
                 "currency": "AUD",
                 "additionalInfo": "Minimum encashment of AU$50 applies"
+            },
+            {
+                "name": "Periodical payment - insufficient funds rejection fee",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Card transaction voucher retrieval",
+                "feeType": "EVENT",
+                "amount": "35.00",
+                "currency": "AUD"
             },
             {
                 "name": "Declined Visa dispute",
@@ -388,15 +447,27 @@
                 "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies"
             },
             {
-                "name": "BPAY investigation request",
+                "name": "Stopped member cheque",
                 "feeType": "TRANSACTION",
-                "amount": "10.00",
+                "amount": "36.00",
                 "currency": "AUD"
             },
             {
-                "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
+                "name": "Foreign Currency Conversion fee",
                 "feeType": "TRANSACTION",
-                "amount": "35.00",
+                "transactionRate": "0.0295",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank @ Post Deposits",
+                "feeType": "DEPOSIT",
+                "amount": "4.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "BPAY investigation request",
+                "feeType": "TRANSACTION",
+                "amount": "10.00",
                 "currency": "AUD"
             },
             {
@@ -448,16 +519,17 @@
                 ]
             },
             {
-                "name": "Foreign Currency Conversion fee",
+                "name": "Foreign drafts",
                 "feeType": "TRANSACTION",
-                "transactionRate": "0.0295",
+                "amount": "20.00",
                 "currency": "AUD"
             },
             {
-                "name": "Dishonoured member cheque",
-                "feeType": "TRANSACTION",
-                "amount": "36.00",
-                "currency": "AUD"
+                "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
             },
             {
                 "name": "Archive retrieval fee",
@@ -466,99 +538,22 @@
                 "additionalInfo": "A hourly fee applies plus any expenses incurred"
             },
             {
-                "name": "Direct debit dishonour - electronic",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD"
+                "name": "Inactive fee for accounts inactive 12 months\nor greater",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
             },
             {
-                "name": "Bank @ Post Deposits",
-                "feeType": "DEPOSIT",
-                "amount": "4.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Copies of statements (up to 12 months) at branch",
+                "name": "Copy of member cheque",
                 "feeType": "EVENT",
-                "amount": "2.50",
+                "amount": "49.50",
                 "currency": "AUD"
             },
             {
-                "name": "Telegraphic transfers (AUD)",
+                "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
                 "feeType": "TRANSACTION",
                 "amount": "35.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Bank Cheque",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "External transfer/BPAY (staff-assisted)",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "EFT trace/recall of funds",
-                "feeType": "TRANSACTION",
-                "amount": "25.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "BPAY - periodical payment (each time processed)",
-                "feeType": "TRANSACTION",
-                "amount": "0.60",
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
-                        "discountType": "BALANCE",
-                        "amount": "5.00",
-                        "additionalValue": "5000.00",
-                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
-                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
-                    },
-                    {
-                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
-                        "discountType": "BALANCE",
-                        "amount": "10.00",
-                        "additionalValue": "20000.00",
-                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
-                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
-                    },
-                    {
-                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
-                        "discountType": "BALANCE",
-                        "amount": "20.00",
-                        "additionalValue": "50000.00",
-                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
-                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
-                    },
-                    {
-                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
-                        "discountType": "BALANCE",
-                        "amount": "35.00",
-                        "additionalValue": "100000.00",
-                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
-                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
-                    },
-                    {
-                        "description": "You can earn Relationship Reward Rebates that can offset or eliminate your eligible fees. These allowances are dependent on the combined balance of your savings and loan accounts.",
-                        "discountType": "BALANCE",
-                        "amount": "50.00",
-                        "additionalValue": "200000.00",
-                        "additionalInfo": "Your monthly balances for calculating your free transactions allowance are the total closing balances on the last day of the previous month of all your deposit, loan, overdraft and credit card accounts. Unused limits on overdrafts and credit cards are not considered. Negative balances of deposit accounts are deducted from the total. Balances in joint accounts are considered towards the allowance for the primary account holder only. Any unused transaction allowance cannot be carried forward to offset fees in future months. The maximum rebate paid in any given month will not exceed the amount incurred in eligible fees.",
-                        "additionalInfoUri": "https://www.australianmilitarybank.com.au/faq/relationship-reward"
-                    }
-                ]
-            },
-            {
-                "name": "Stopped member cheque",
-                "feeType": "TRANSACTION",
-                "amount": "36.00",
                 "currency": "AUD"
             },
             {
@@ -568,41 +563,46 @@
                 "currency": "AUD"
             },
             {
-                "name": "Foreign Cheque encashment (>AU$5000)",
-                "feeType": "EVENT",
-                "amount": "50.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Audit Certificate Fee",
-                "feeType": "EVENT",
-                "amount": "50.00",
-                "currency": "AUD",
-                "additionalInfo": "Per audit certificate requested"
-            },
-            {
-                "name": "Paper statement fee (per statement)",
-                "feeType": "PERIODIC",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "P3M"
-            },
-            {
-                "name": "Telegraphic transfers (foreign currency)",
+                "name": "EFT trace/recall of funds",
                 "feeType": "TRANSACTION",
-                "amount": "30.00",
+                "amount": "25.00",
                 "currency": "AUD"
             },
             {
-                "name": "Foreign Cheque encashment (<AU$5000)",
-                "feeType": "EVENT",
-                "amount": "15.00",
+                "name": "Telegraphic transfers (AUD)",
+                "feeType": "TRANSACTION",
+                "amount": "35.00",
                 "currency": "AUD"
+            },
+            {
+                "name": "Retrieval of deposited cheque",
+                "feeType": "EVENT",
+                "amount": "45.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Other Bank Deposit Fee",
+                "feeType": "DEPOSIT",
+                "amount": "6.50",
+                "currency": "AUD",
+                "additionalInfo": "Cash and cheque deposit at NAB Branch"
             },
             {
                 "name": "Direct debit dishonour - member chequing",
                 "feeType": "TRANSACTION",
                 "amount": "40.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Trace member cheque",
+                "feeType": "EVENT",
+                "amount": "49.50",
+                "currency": "AUD"
+            },
+            {
+                "name": "Stopped bank cheque",
+                "feeType": "TRANSACTION",
+                "amount": "15.00",
                 "currency": "AUD"
             }
         ],
