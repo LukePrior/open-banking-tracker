@@ -4,8 +4,8 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  update-lists:
-    name: Fetch latest lists
+  update-data:
+    name: Fetch latest data
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,99 +20,17 @@ jobs:
       - name: Download latest list
         run: python main.py
 
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Updated lists
-          default_author: github_actions
-          pull: '--rebase --autostash'
-
-  update-images:
-    name: Fetch latest images
-    needs: update-lists
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v3
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Download images
         run: python images.py
 
-      - name: Get changes
-        uses: antifree/json-to-variables@v1.0.1
-        with:
-          filename: 'stats.json'
-          prefix: stat
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Updated ${{ env.stat_changed_images }} images
-          default_author: github_actions
-          pull: '--rebase --autostash'
-
-  update-products:
-    name: Fetch latest products
-    needs: update-lists
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v3
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Download Products
+      - name: Download Product Overviews
         run: python products.py
-
-      - name: Get changes
-        uses: antifree/json-to-variables@v1.0.1
-        with:
-          filename: 'stats.json'
-          prefix: stat
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Updated ${{ env.stat_changed_products }} product lists
-          default_author: github_actions
-          pull: '--rebase --autostash'
-
-  update-product:
-    name: Fetch latest product
-    needs: update-products
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v3
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
 
       - name: Download Products
         run: python product.py
 
-      - name: Get changes
-        uses: antifree/json-to-variables@v1.0.1
-        with:
-          filename: 'stats.json'
-          prefix: stat
-
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          message: Updated ${{ env.stat_changed_product }} products
+          message: Updated files
           default_author: github_actions
-          pull: '--rebase --autostash'

@@ -73,7 +73,7 @@ for file in os.listdir('brands/products/'):
         print(e)
 
 stats = {}
-stats['changed_product'] = changed_product
+stats['changed_files'] = changed_product
 
 raw_file = open("stats.json", "w")
 json.dump(stats, raw_file, indent = 4)

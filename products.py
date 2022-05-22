@@ -65,7 +65,7 @@ for brand in brands:
 
 
 stats = {}
-stats['changed_products'] = changed_products
+stats['changed_files'] = changed_products
 
 raw_file = open("stats.json", "w")
 json.dump(stats, raw_file, indent = 4)
