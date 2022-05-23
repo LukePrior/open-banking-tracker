@@ -5,7 +5,7 @@ on:
 
 jobs:
   update-data:
-    name: Fetch latest data
+    name: Daily update
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,6 +29,9 @@ jobs:
       - name: Download Products
         run: python product.py
 
+      - name: Generate website
+        run: python website.py
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
@@ -36,9 +39,9 @@ jobs:
           default_author: github_actions
 
   release-daily:
-    name: Generate Release
+    name: Generate release
     runs-on: ubuntu-latest
-    needs: update-data
+    needs: update-website
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
