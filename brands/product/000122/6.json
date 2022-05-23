@@ -1,0 +1,116 @@
+{
+    "data": {
+        "productId": "6",
+        "effectiveFrom": "2005-06-30T14:30:00.0000000Z",
+        "lastUpdated": "2022-05-11T04:00:40.6972045Z",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Term Deposit - 6 Months",
+        "description": "Make the most of your savings and invest with our 6 month Term Deposit.",
+        "brand": "Dnister",
+        "applicationUri": "https://www.dnister.com.au/wp-content/uploads/2020/07/MS-0720-Term-Deposit-Application.pdf",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.dnister.com.au/portfolio-items/term-deposits/",
+            "termsUri": "https://www.dnister.com.au/wp-content/uploads/2020/07/Dnister-PDS-FSG-July-20.pdf",
+            "eligibilityUri": "https://www.dnister.com.au/portfolio-items/term-deposits/",
+            "feesAndPricingUri": "https://www.dnister.com.au/interest-rates/"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Online renewal options avaliable on the same term."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Matuirty Letters",
+                "additionalInfo": "Letters are issued 2 weeks prior to maturity date with available options."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Term Deposit Certificates are issued at opening of account."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.0"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Resident",
+                "additionalInfo": "This product is only available to members who have a residential address in Australia."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "EVENT",
+                "amount": "4.00",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Only customers older than a minimum age receive the discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "75"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Only customers older than a minimum age receive the discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "75"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.005",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Interest Rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "For balances $1,000.00 - $1,000,000.00"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/6"
+    },
+    "meta": {}
+}

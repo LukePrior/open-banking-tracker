@@ -1,0 +1,82 @@
+{
+    "data": {
+        "productId": "11",
+        "effectiveFrom": "2017-07-24T14:30:00.0000000Z",
+        "lastUpdated": "2021-10-14T22:00:24.1453861Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Star Saver",
+        "description": "The Star Saver account is designed for our youngest members, encouraging savings with a Star Saver Savings Tracker Poster and no Monthly Account Service Fee.",
+        "brand": "Queensland Country Bank",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.queenslandcountry.bank/banking/savings-accounts/star-saver/",
+            "termsUri": "https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_account-access-facility.pdf",
+            "feesAndPricingUri": "https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf"
+        },
+        "eligibility": [
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "13"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Dormant Account",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y"
+            },
+            {
+                "name": "Coin Deposit Greater $100",
+                "feeType": "EVENT",
+                "transactionRate": "0.05",
+                "currency": "AUD",
+                "additionalInfo": "A fee of 5% of total coin deposit may be charged on coin deposits over $100"
+            },
+            {
+                "name": "Other Service Fees",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Refer to our Fees and Charges brochure for information on other transactions which may attract fees and charges",
+                "additionalInfoUri": "https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0135",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Account balance $1 - $5000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 5000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0035",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Account balance over $5000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
+            }
+        ]
+    },
+    "links": {
+        "self": "https://public.cdr-api.queenslandcountry.bank/cds-au/v1/banking/products/11"
+    },
+    "meta": {}
+}
