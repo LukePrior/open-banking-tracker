@@ -25,12 +25,14 @@ def get_image(id):
             return image
 
 with doc:
-    for brand in brands:
-        with div():
-            attr(id=brand)
-            p(brands[brand]['brandName'])
-            with img():
-                attr(src=get_image(brand), style="max-width:300px;max-height:300px")
+    with div():
+        attr(style="display:flex;flex-wrap:wrap;")
+        for brand in brands:
+            with div():
+                attr(id=brand, style="width:300px;height:300px;border-style:solid;margin:25px;padding:25px")
+                p(brands[brand]['brandName'])
+                with img():
+                    attr(src=get_image(brand), style="max-width:90%;max-height:70%")
 
 html_file = open("docs/index.html", "w")
 html_file.write(str(doc))
