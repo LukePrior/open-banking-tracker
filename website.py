@@ -91,8 +91,14 @@ for root, dirs, files in os.walk("brands/product/"):
             product = product['data']
         else:
             continue
+        
+        if "name" in product:
+            name = product["name"]
+        else:
+            continue
 
-        doc2 = dominate.document(title=product["name"])
+        doc2 = dominate.document(title=name)
+        
         with doc2:
             with div():
                 with textarea(str(json.dumps(product, indent = 4))):

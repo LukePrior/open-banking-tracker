@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farm Management Deposit account (At Call)</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Helps balance good and bad times, by allowing eligible customers to set aside their individual pre-tax income in good years as a cash reserve to withdraw from in less profitable years.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Flexibility to choose between a fixed term and at call investment option&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/business/pds/ADB2671.pdf&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Funds held in a FMD account will be deducted from your assessable income in the year in which the deposit is made. Withdrawals are considered assessable income for that year's tax return. Keep in mind, deposits in the FMD account must be kept for at least 12 months to be eligible for tax benefits.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;800000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Aggregate balance of all FMD Accounts must not exceed $800,000.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;$1,000.00 in any individual FMD Account at any time.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;At Call FMD Account - $1,000.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;To be eligible for the scheme and to maintain FMD status, the account holder must be an individual primary producer at the time when they open the account or make a deposit. Deposits must meet the criteria specified in the Income Tax Assessment Act 1997 and those outlined in the Terms and Conditions section of the Farm Management Deposit Accounts document. For further details on eligibility criteria refer to the Farm Management Deposits Law or visit the Department of Agriculture and Water Resources website at agriculture.gov.au. Account holders must also meet the FMD account eligibility criteria as set out by the ATO: https://www.ato.gov.au/business/primary-producers/in-detail/farm-management-deposits-scheme/&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Issue of recent statement/transaction list&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;additionalInfo&quot;: &quot;At Call FMD Account - on the date of request.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;At Call Option. Payment frequency - Quarterly in March, June, September and December. Rate is on Per Annum basis.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 29999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;At Call Option. Payment frequency - Quarterly in March, June, September and December. Rate is on Per Annum basis.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 30000.0,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;At Call Option. Payment frequency - Quarterly in March, June, September and December. Rate is on Per Annum basis.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;At Call Option. Payment frequency - Quarterly in March, June, September and December. Rate is on Per Annum basis.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;cea8baa02cca4e0990372984db2b0bf2&quot;,
+    &quot;effectiveFrom&quot;: &quot;2011-05-10T14:00:00Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-22T16:15:28.621628Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Farm Management Deposit account (At Call)&quot;,
+    &quot;description&quot;: &quot;A tax-effective investment that allows primary producers to set aside pre-tax income as a cash reserve for later years.&quot;,
+    &quot;brand&quot;: &quot;CBA&quot;,
+    &quot;brandName&quot;: &quot;CommBank&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html&quot;,
+        &quot;termsUri&quot;: &quot;https://www.commbank.com.au/business/pds/ADB2671.pdf&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.commbank.com.au/business/pds/ADB2671.pdf&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>
