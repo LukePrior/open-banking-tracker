@@ -27,23 +27,20 @@ raw_file.close()
 changed_product = 0
 
 for file in os.listdir('brands/products/'):
+    id = file.replace(".json","")
+
+    raw_file = open("brands/products/"+file, "r")
+    brand = json.load(raw_file)
+    raw_file.close()
+
+    if 'data' not in brand:
+        break
+
+    folder = "brands/product/" + id
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
     try:
-        id = file.replace(".json","")
-
-        raw_file = open("brands/products/"+file, "r")
-        brand = json.load(raw_file)
-        raw_file.close()
-
-        if id not in brands:
-            break
-
-        if 'data' not in brand:
-            break
-
-        folder = "brands/product/" + id
-        if not os.path.exists(folder):
-            os.makedirs(folder)
-
         for product in brand['data']['products']:
             url = (brands[id]['productReferenceDataApi'] + "/" + product['productId'])
 

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PENSIONER AWARE</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalInfo&quot;: &quot;Make instant payments from your account via Osko.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;Link your PayID to make instant payments from your account.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay, Google Pay or Samsung Pay&quot;,
+            &quot;additionalInfo&quot;: &quot;Tap and Pay with your phone using Apple Pay, Google Pay or Samsung Pay, it's easy.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Check your accounts and transact online 24/7.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Visa Debit Card&quot;,
+            &quot;additionalInfo&quot;: &quot;Link to a Visa Debit Card at any time.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalInfo&quot;: &quot;Add additional cards at any time.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPay&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Bank@Post&quot;,
+            &quot;additionalInfo&quot;: &quot;Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Individuals must be citizens or permanent residents of Australia.&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;PENSION_RECIPIENT&quot;,
+            &quot;additionalValue&quot;: &quot;Self-funded retirees and aged pensioners only.&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;You must be a member.&quot;,
+            &quot;additionalInfo&quot;: &quot;Membership is open to everyone. Visit our website for more details.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/become-a-member/&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;ATM_WITHDRAWAL_OVERSEAS&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;4.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;BANK@POST_WITHDRAWAL&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;BANK@POST_DISHONOUR&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;21.10&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;CHEQUE_BOOK_(25)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutualbank.ultracscms.com/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;CHEQUE_BOOK_50&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;DIRECT_DEBIT_DISHONOUR_FEE_DUE_TO&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;12.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Direct debit dishonour fee due to insufficient funds available&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;CURRENCY_CONVERSION&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: &quot;0.03000&quot;,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1D&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;INTERNET_BANKING_TELEGRAPHIC_TRANSFER&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;INWARD_DISHONOUR_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Inward dishonour fee - Payable when attempted cheque deposit payment is dishonoured$9.00 per dishonour&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;MEMBER_CHEQUE_DISHONOUR&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;12.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;* Includes fees payable to third party service providers&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;MEMBER_REQUEST_A_COPY_OF_A_PRESENTED_CHEQUE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;QUICK_DEBIT_DISHONOUR&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;17.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;STATEMENT_RETRIEVAL&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$2.00 per statement page&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;STOP_PAYMENT_OF_A_COUNTER_CHEQUE&quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;STOP_PAYMENT_OF_A_MEMBER_CHEQUE&quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
+            &quot;amount&quot;: &quot;12.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;SWIFT_PAYMENT_TO_ANOTHER_BANK&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;11.46&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;VISA_CARD_REPLACEMENT_FEE_(NOT_RENEWAL)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa card replacement fee (not renewal)&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutualbank.ultracscms.com/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;VISA_CASH_ADVANCE_FROM_ANY_FINANCIAL&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;VISA_INTERNATIONAL_CANCELLATION_FEE_FOR_AN&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa International Cancellation fee for an emergency casr or cash request. USD50&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;VISA_INTERNATIONAL_EMERGENCY_CARD&quot;,
+            &quot;feeType&quot;: &quot;PAYMENT&quot;,
+            &quot;amount&quot;: &quot;175.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa International Emergency Card whislt overseas. Fee per card USD175&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;VISA_INTERNATIONAL_EMERGENCY_CASH&quot;,
+            &quot;feeType&quot;: &quot;PAYMENT&quot;,
+            &quot;amount&quot;: &quot;175.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa International Emergency Cash whislt overseas. Fee USD175 per transaction&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;BUSINESS_ACC_-_DIRECT_DEBIT_EARLY_PRESENTATION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;BUSINESS_ACC_MEMBER_CHEQUE_EARLY_PRESENTATION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;STATEMENT_RETRIEVAL&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$2.00 per statement page&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00010&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;PENSIONER AWARE_Tier_1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 1999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Calculated daily, paid monthly&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00050&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;PENSIONER AWARE_Tier_2&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000.0,
+                    &quot;maximumValue&quot;: 49200.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Calculated daily, paid monthly&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00150&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;PENSIONER AWARE_Tier_3&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 49200.01,
+                    &quot;maximumValue&quot;: null,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Calculated daily, paid monthly&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;AMB_Pensioner_Aware_Single&quot;,
+    &quot;lastUpdated&quot;: &quot;2021-11-26T14:57:20.000+11:00&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;PENSIONER AWARE&quot;,
+    &quot;description&quot;: &quot;A transaction account earning higher interest for self-funded retirees and aged pensioners&quot;,
+    &quot;brand&quot;: &quot;A&quot;,
+    &quot;brandName&quot;: &quot;Australian Mutual Bank&quot;,
+    &quot;applicationUri&quot;: &quot;https://australianmutual.bank/banking/savings-accounts/pensioner-aware-account/&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://australianmutual.bank/banking/savings-accounts/pensioner-aware-account/&quot;,
+        &quot;termsUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://australianmutual.bank/banking/savings-accounts/pensioner-aware-account/&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://australianmutual.bank/about-us/disclosures-and-reports/&quot;,
+        &quot;bundleUri&quot;: &quot;&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>
