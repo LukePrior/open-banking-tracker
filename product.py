@@ -34,7 +34,7 @@ for file in os.listdir('brands/products/'):
     raw_file.close()
 
     if 'data' not in brand:
-        break
+        continue
 
     folder = "brands/product/" + id
     if not os.path.exists(folder):
@@ -42,39 +42,43 @@ for file in os.listdir('brands/products/'):
 
     try:
         for product in brand['data']['products']:
-            url = (brands[id]['productReferenceDataApi'] + "/" + product['productId'])
-
-            response = get_data(url)
-
-            flag = False
-            skip_update = False
-
             try:
-                for file in os.listdir('brands/product/' + id):
-                    if file == (product['productId'] + ".json"):
-                        flag = True
-                        raw_file = open("brands/product/"+id+"/"+file, "r")
-                        response_compare = json.load(raw_file)
-                        raw_file.close()
-                        if ordered(response) != ordered(response_compare):
-                            changed_product += 1
-                        else:
-                            skip_update = True
+                url = (brands[id]['productReferenceDataApi'] + "/" + product['productId'])
+
+                response = get_data(url)
+
+                flag = False
+                skip_update = False
+
+                try:
+                    for file in os.listdir('brands/product/' + id):
+                        if file == (product['productId'] + ".json"):
+                            flag = True
+                            raw_file = open("brands/product/"+id+"/"+file, "r")
+                            response_compare = json.load(raw_file)
+                            raw_file.close()
+                            if ordered(response) != ordered(response_compare):
+                                changed_product += 1
+                            else:
+                                skip_update = True
+
+                except Exception as e:
+                    print(e)
+
+                if flag == False:
+                    changed_product += 1
+
+                path = 'brands/product/' + id + "/" + product['productId'] + ".json"
+
+                if (skip_update == False):
+                    raw_file = open(path, "w")
+                    json.dump(response, raw_file, indent = 4)
+                    raw_file.close()
+
+                print(path)
 
             except Exception as e:
                 print(e)
-
-            if flag == False:
-                changed_product += 1
-
-            path = 'brands/product/' + id + "/" + product['productId'] + ".json"
-
-            if (skip_update == False):
-                raw_file = open(path, "w")
-                json.dump(response, raw_file, indent = 4)
-                raw_file.close()
-
-            print(path)
 
     except Exception as e:
         print(e)
