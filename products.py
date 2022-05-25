@@ -73,7 +73,6 @@ for brand in brands:
     except Exception as e:
         print(e)
 
-
 stats = {}
 stats['changed_files'] = changed_products
 
