@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S6 Business Plus</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;VISA Debit Card&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay and Google Pay&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian registered business&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;10MNTH&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;$0 monthly account fee if you meet one of the following criteria: you are under 21 or deposit at least $2k per month into the account or if you have $30k or more in deposits and/or loans with us&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-charges/&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over $2,000 monthly deposits - fee waived - business accounts&quot;,
+                    &quot;discountType&quot;: &quot;DEPOSITS&quot;,
+                    &quot;amount&quot;: &quot;0.00&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: null,
+                    &quot;additionalValue&quot;: &quot;2000&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Over $30,000 total customer balance - fee waived - business accounts&quot;,
+                    &quot;discountType&quot;: &quot;BALANCE&quot;,
+                    &quot;amount&quot;: &quot;0.00&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: null,
+                    &quot;additionalValue&quot;: &quot;30000&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Under 21 years old - fee waived - business accounts&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.00&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;MAX_AGE&quot;,
+                            &quot;additionalValue&quot;: &quot;21&quot;,
+                            &quot;additionalInfo&quot;: &quot;Under 21 years old&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        },
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;CHEQUES&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.60&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-charges/&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over $200k aggregate balance across membership - fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;S10 S55 S12 S3&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Not For Profit - Fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Not For Profit Member Type&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        },
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;Registered Charitable orgainsations&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;DIRECT_DEBIT&quot;,
+            &quot;feeType&quot;: &quot;PAYMENT&quot;,
+            &quot;amount&quot;: &quot;0.60&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-charges/&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over $200k aggregate balance across membership - fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;S10 S55 S12 S3&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Not For Profit - Fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Not For Profit Member Type&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        },
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;Registered Charitable orgainsations&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;E-TRANSFER_IN_BRANCH&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-charges/&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over $200k aggregate balance across membership - fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;S10 S55 S12 S3&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Not For Profit - Fee waived&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Not For Profit Member Type&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        },
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;Registered Charitable orgainsations&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;LOAN_VARIATION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When there is a variation made to the terms of an existing loan agreement. For example remaining loan term.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;OVERDRAFT_FACILITY_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1Y&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;OVERDRAFT_ESTABLISHMENT_FLAT&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;699.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;OVERDRAFT_ESTABLISHMENT_PERCENT&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: &quot;0.00250&quot;,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;OVERDRAFT_SECURITY_VARIATION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;LOAN_DISCHARGE_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Sometimes called a termination fee, this is charged when you pay out your loan. It covers the costs associated with releasing your title.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S6 Business Plus_Tier_1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 1999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/deposit-interest-rate-schedule/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S6 Business Plus_Tier_2&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000.0,
+                    &quot;maximumValue&quot;: 4999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/deposit-interest-rate-schedule/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S6 Business Plus_Tier_3&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000.0,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/deposit-interest-rate-schedule/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S6 Business Plus_Tier_4&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 19999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/deposit-interest-rate-schedule/&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S6 Business Plus_Tier_5&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;maximumValue&quot;: null,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/deposit-interest-rate-schedule/&quot;
+        }
+    ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fees apply for variations to security or contract&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;interestPaymentDue&quot;: null,
+            &quot;repaymentType&quot;: null,
+            &quot;loanPurpose&quot;: null
+        }
+    ],
+    &quot;productId&quot;: &quot;BUSINESS_PLUS&quot;,
+    &quot;lastUpdated&quot;: &quot;2021-10-22T17:47:00.000+11:00&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;S6 Business Plus&quot;,
+    &quot;description&quot;: &quot;S6 Business Plus&quot;,
+    &quot;brand&quot;: &quot;S&quot;,
+    &quot;brandName&quot;: &quot;SCCU&quot;,
+    &quot;applicationUri&quot;: &quot;&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.sccu.com.au/personal/everyday-banking/savings-accounts/&quot;,
+        &quot;termsUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;,
+        &quot;eligibilityUri&quot;: &quot;&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-charges/&quot;,
+        &quot;bundleUri&quot;: &quot;&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>

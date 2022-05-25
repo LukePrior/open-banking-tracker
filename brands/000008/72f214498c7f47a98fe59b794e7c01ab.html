@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoalSaver</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY View&quot;,
+            &quot;additionalInfo&quot;: &quot;See, track and easily pay your bills online in NetBank or on the go in the CommBank app.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/bpay-view.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;,
+            &quot;additionalInfo&quot;: &quot;Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Goal Tracker&quot;,
+            &quot;additionalInfo&quot;: &quot;Whether you have a savings goal in mind or want to build a buffer for those 'just in case' moments, Goal Tracker in the CommBank app helps you set and reach your goals.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/goal-tracker.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;The first staff assisted or telephone banking withdrawals when using an operator (including cheques issued on your account and cashed over-the-counter at a CommBank branch) are free. Every additional staff assisted withdrawal will have a charge of $3.00 each.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/banking/goal-saver.html&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Paper Statement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A fee charged when you ask us to give you an additional account statement outside the standard cycle. A fee charged when you ask us to issue past statements, or ordered statements.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Rejected transaction fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;We won't charge you if a payment transaction is rejected due to invalid destination account detail.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Account Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Paper Statement Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fees do not apply for statements issued as per the standard statement frequency.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Staff assisted withdrawals&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;You may qualify for a waiver of assisted withdrawal fees if&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;3.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;We will waive 1 assisted withdrawal fee per month (not available through ATM, EFTPOS, Agency, Cheque withdrawals).&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;description&quot;: &quot;You may qualify for a waiver of assisted withdrawal fees if&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;3.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;PENSION_RECIPIENT&quot;,
+                            &quot;additionalInfo&quot;: &quot;Your Australian Age, Service or Disability Pension is directly credited to your account, then we'll waive 2 extra assisted withdrawal fees each month.&quot;
+                        }
+                    ]
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;A fee charged on some accounts when you take money out: At a CommBank branch, a post office, agency, with telephone banking if using an operator or by cashing a cheque.&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The standard variable rate applies if the bonus conditions are not met.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;We pay bonus interest on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;We pay bonus interest on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000.0,
+                    &quot;maximumValue&quot;: 999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;We pay bonus interest on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;We pay bonus interest on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account.&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;72f214498c7f47a98fe59b794e7c01ab&quot;,
+    &quot;effectiveFrom&quot;: &quot;2010-10-28T13:00:00Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-24T16:15:28.09033Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;GoalSaver&quot;,
+    &quot;description&quot;: &quot;Be rewarded with a variable bonus interest rate for saving regularly each month.&quot;,
+    &quot;brand&quot;: &quot;CBA&quot;,
+    &quot;brandName&quot;: &quot;CommBank&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.commbank.com.au/banking/goal-saver.html#apply&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.commbank.com.au/banking/goal-saver.html&quot;,
+        &quot;termsUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/SavingsInvestment_ADB2852.pdf&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.commbank.com.au/banking/goal-saver.html#applyhow&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.commbank.com.au/banking/goal-saver.html#rates&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>

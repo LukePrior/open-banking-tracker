@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Term Deposit</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;7&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-12T06:56:04Z&quot;,
+    &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
+    &quot;name&quot;: &quot;Term Deposit&quot;,
+    &quot;description&quot;: &quot;A Term Deposit is an investment account where the interest rate is guaranteed not to change for the whole of the nominated term. It gives you the security of knowing that your interest income is protected against changes in market conditions.&quot;,
+    &quot;brand&quot;: &quot;RACQ Bank&quot;,
+    &quot;brandName&quot;: &quot;RACQ Bank&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;feesAndPricingUri&quot;: &quot;https://www.racq.com.au/banking/support-and-faqs/forms-documents&quot;
+    },
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalValue&quot;: &quot;Pre-maturity notification sent via letter. Members can also opt-in to notification via SMS and / or email.&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000000.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Resident&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;13&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Bank Guarantee Establishment&quot;,
+            &quot;amount&quot;: &quot;200.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Establishment of Bank Guarantee.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.racq.com.au/banking/support-and-faqs/forms-documents&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Bank Guarantee Maintenance&quot;,
+            &quot;transactionRate&quot;: &quot;0.01&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Maintenance of Bank Guarantee. 1.00% of the amount of the guarantee each half year in advance.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.racq.com.au/banking/support-and-faqs/forms-documents&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Early Redemption&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;If you withdraw your Term Deposit before the maturity date, an Early Redemption fee (i.e. Early redemption interest adjustment) will apply based on the proportion of the term completed. An early redemption notice period also applies.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.racq.com.au/banking/support-and-faqs/forms-documents&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;rate&quot;: &quot;0.0080&quot;,
+            &quot;applicationFrequency&quot;: &quot;P7M&quot;,
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;7 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0150&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;1 year&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 12,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0115&quot;,
+            &quot;applicationFrequency&quot;: &quot;P10M&quot;,
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;10 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2 years&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;4 years&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0090&quot;,
+            &quot;applicationFrequency&quot;: &quot;P8M&quot;,
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;8 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 8,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0070&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;6 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 6,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;5 years&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0025&quot;,
+            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 2,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0050&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4M&quot;,
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;4 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0200&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;3 years&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 36,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0005&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;1 month&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 1,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0045&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;3 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 3,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;9 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0060&quot;,
+            &quot;applicationFrequency&quot;: &quot;P5M&quot;,
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;5 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 5,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0130&quot;,
+            &quot;applicationFrequency&quot;: &quot;P11M&quot;,
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid at maturity or annually if term exceeds 12 months. Rates for deposits over $1m are available on request.&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;11 months&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 11,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>
