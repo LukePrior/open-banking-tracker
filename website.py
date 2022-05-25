@@ -12,10 +12,10 @@ raw_file.close()
 doc = dominate.document(title='Open Banking Brands')
 
 def get_image(id):
-    for file in os.listdir('brands/logos/'):
+    for file in os.listdir('logos/'):
         file_name = os.path.splitext(file)[0]
         if file_name == id:
-            raw_file = open('brands/logos/' + file, "rb")
+            raw_file = open('logos/' + file, "rb")
             encode = base64.b64encode(raw_file.read())
             raw_file.close()
             type = mimetypes.guess_type(file)[0]

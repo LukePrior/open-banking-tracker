@@ -17,10 +17,11 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H-%M-%S')"
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: nightly-${{ steps.date.outputs.date }}
+          body: Daily release of zipped data.
           files: data.zip
