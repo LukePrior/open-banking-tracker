@@ -52,6 +52,10 @@ with doc:
                 with img():
                     attr(src=get_image(brand), style="max-width:90%;max-height:70%")
 
+path = "docs"
+if not os.path.exists(path):
+    os.makedirs(path)
+
 html_file = open("docs/index.html", "w")
 html_file.write(str(doc))
 html_file.close()
@@ -76,6 +80,10 @@ for brand in brands:
                         source = get_image(brand)
                     with img():
                         attr(src=source, style="max-width:90%;max-height:70%")
+    
+    path = "docs/brands/" + brand
+    if not os.path.exists(path):
+        os.makedirs(path)
     
     html_file = open("docs/brands/" + brand + "/index.html", "w")
     html_file.write(str(doc1))
@@ -103,7 +111,7 @@ for root, dirs, files in os.walk("brands/product/"):
             with div():
                 with textarea(str(json.dumps(product, indent = 4))):
                     attr(style="width:90vw;height:90vh")
-
+        
         html_file = open("docs/brands/" + brand + "/" + id + ".html", "w")
         html_file.write(str(doc2))
         html_file.close()
