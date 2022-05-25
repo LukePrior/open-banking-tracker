@@ -9,9 +9,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Zip files
+        uses: papeloto/action-zip@v1
+        with:
+          files: brands/
+          dest: data.zip
+
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d%H:%M:%S')"
 
       - uses: rickstaa/action-create-tag@v1
         with:
@@ -20,4 +26,5 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: data.zip
