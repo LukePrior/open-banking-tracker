@@ -24,12 +24,12 @@ for brand in brands:
         if file_extension == '.htm' or file_extension == '.html':
             continue
 
-        path = 'brands/logos/' + brand + file_extension
+        path = 'logos/' + brand + file_extension
         oldFile = ""
 
-        for file in os.listdir('brands/logos/'):
+        for file in os.listdir('logos/'):
             if brand in file:
-                oldFile = 'brands/logos/' + file 
+                oldFile = 'logos/' + file 
 
         with open(path, 'wb') as f:
             f.write(r.content)
