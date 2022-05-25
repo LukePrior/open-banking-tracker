@@ -1,14 +1,13 @@
 {
     "data": {
         "productId": "CREDITUNIONSA_SAV_142",
-        "effectiveFrom": "2015-06-01T00:00:00.000+10:00",
-        "effectiveTo": "2099-06-01T00:00:00.000+10:00",
-        "lastUpdated": "2020-08-07T00:00:00.000+10:00",
+        "effectiveFrom": "1905-07-07T00:00:00.000+10:00",
+        "effectiveTo": "1905-09-29T00:00:00.000+10:00",
+        "lastUpdated": "1905-07-12T00:00:00.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Netsave Account",
-        "description": "Our Netsave account offers you with a high rate of interest regardless of your account balance. Interest is calculated daily and paid monthly, with funds at\u00a0call. Earn a high introductory variable interest rate for 3 months on balances up to $1 million for new Netsave Accounts. Available to all members.",
+        "description": "Our Netsave account offers you interest regardless of your account balance. Interest is calculated daily and paid monthly, with funds at\u00a0call. Earn a high introductory variable interest rate for 3 months on balances up to $1 million for new Netsave Accounts (introductory rate not currently available). Available to all members.",
         "brand": "Credit Union SA",
-        "brandName": "Savings account",
         "applicationUri": "https://apply.creditunionsa.com.au/cusa/servlet/SmartForm.html?formCode=membership-personal",
         "isTailored": false,
         "additionalInformation": {
@@ -86,60 +85,87 @@
                 "additionalValue": "Automatically save your \u2018spare change\u2019 when you make a purchase with your Visa card or digital wallet. Purchases will be rounded up to the nearest whole dollar and the difference will be transferred from your origin account to your nominated destination account.",
                 "additionalInfo": "Round-ups (destination account)",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/globalassets/pdfs/brc_1095.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Ability to register for Business Banking facility to allow for bacth paymemts",
+                "additionalInfo": "Business Banking can be attached to the product",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/business-banking"
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
-                "additionalInfo": "No minimum balance is required",
+                "additionalValue": "No minimum balance is required",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/savings-accounts-and-term-deposits/netsave/"
             },
             {
                 "constraintType": "MAX_BALANCE",
-                "additionalInfo": "No maximum balance is required",
+                "additionalValue": "No maximum balance is required",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/savings-accounts-and-term-deposits/netsave/"
             },
             {
                 "constraintType": "OPENING_BALANCE",
-                "additionalInfo": "No minimum opening balance",
+                "additionalValue": "No minimum opening balance",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/savings-accounts-and-term-deposits/netsave/"
             },
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalInfo": "No minimum limit",
+                "additionalValue": "No minimum limit",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/savings-accounts-and-term-deposits/netsave/"
             },
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalInfo": "No maximum limit",
+                "additionalValue": "No maximum limit",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/savings-accounts-and-term-deposits/netsave/"
             }
         ],
-        "eligibility": [],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian citizen or permanent resident"
+            },
+            {
+                "eligibilityType": "BUSINESS"
+            }
+        ],
         "fees": [
             {
                 "name": "Deposit Periodic",
                 "feeType": "PERIODIC",
-                "amount": "0",
-                "additionalInfo": "No monthly or annual fees",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "No monthly or annual fees",
+                "additionalInfo": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
                 "discounts": []
             },
             {
                 "name": "Transaction",
                 "feeType": "TRANSACTION",
-                "amount": "0",
-                "additionalValue": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, cheque withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
-                "additionalInfo": "No transaction or withdrawal fees",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "No transaction or withdrawal fees",
+                "additionalInfo": "Payable whenever we send you a letter because you do not make a repayment in full on or before the due date and the default continues for 3 days or more.",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
                 "discounts": []
             },
             {
                 "name": "Arrears",
                 "feeType": "EVENT",
-                "amount": "0",
-                "additionalValue": "Payable whenever we send you a letter because you do not make a repayment in full on or before the due date and the default continues for 3 days or more.",
-                "additionalInfo": "Arrears administration fee",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "Arrears administration fee",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
                 "discounts": []
             }
@@ -147,28 +173,20 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.3",
+                "rate": "0.0015",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
-                "additionalInfoUri": "https://www.creditunionsa.com.au/rates/savings-and-transaction-accounts/"
-            },
-            {
-                "depositRateType": "INTRODUCTORY",
-                "rate": "0.8",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "additionalValue": "Introductory rate for a period of 3 months from opening of the account",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/rates/savings-and-transaction-accounts/"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "PENALTY",
+                "comparisonRate": "0.0",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "15.25",
+                "rate": "0.1525",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],

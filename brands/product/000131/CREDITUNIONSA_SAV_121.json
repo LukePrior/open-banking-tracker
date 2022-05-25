@@ -1,14 +1,13 @@
 {
     "data": {
         "productId": "CREDITUNIONSA_SAV_121",
-        "effectiveFrom": "2015-06-01T00:00:00.000+10:00",
-        "effectiveTo": "2099-06-01T00:00:00.000+10:00",
-        "lastUpdated": "2020-08-07T00:00:00.000+10:00",
+        "effectiveFrom": "1905-07-07T00:00:00.000+10:00",
+        "effectiveTo": "1905-09-29T00:00:00.000+10:00",
+        "lastUpdated": "1905-07-12T00:00:00.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Association Account",
         "description": "Our Association Account is an affordable and convenient interest-bearing transaction account designed for not-for-profit organisations of any type. Visa debit cards can be linked to this account.",
         "brand": "Credit Union SA",
-        "brandName": "Transaction account",
         "applicationUri": "https://apply.creditunionsa.com.au/cusa/servlet/SmartForm.html?formCode=membership-personal",
         "isTailored": false,
         "additionalInformation": {
@@ -86,32 +85,38 @@
                 "additionalValue": "Automatically save your \u2018spare change\u2019 when you make a purchase with your Visa card or digital wallet. Purchases will be rounded up to the nearest whole dollar and the difference will be transferred from your origin account to your nominated destination account.",
                 "additionalInfo": "Round-ups (destination account)",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/globalassets/pdfs/brc_1095.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Ability to register for Business Banking facility to allow for bacth paymemts",
+                "additionalInfo": "Business Banking can be attached to the product",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/business-banking"
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
-                "additionalInfo": "No minimum balance is required",
+                "additionalValue": "No minimum balance is required",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
             },
             {
                 "constraintType": "MAX_BALANCE",
-                "additionalInfo": "No maximum balance is required",
+                "additionalValue": "No maximum balance is required",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
             },
             {
                 "constraintType": "OPENING_BALANCE",
-                "additionalInfo": "No minimum opening balance",
+                "additionalValue": "No minimum opening balance",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
             },
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalInfo": "No minimum limit",
+                "additionalValue": "No minimum limit",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
             },
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalInfo": "No maximum limit",
+                "additionalValue": "No maximum limit",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
             }
         ],
@@ -121,40 +126,88 @@
                 "additionalValue": "No",
                 "additionalInfo": "Accouny only available for non-personal memberships",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/accounts/transaction-accounts/association-account/"
+            },
+            {
+                "eligibilityType": "BUSINESS"
             }
         ],
         "fees": [
             {
                 "name": "Deposit Periodic",
                 "feeType": "PERIODIC",
-                "amount": "0",
-                "additionalInfo": "No monthly or annual fees",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "No monthly or annual fees",
+                "additionalInfo": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
                 "discounts": []
             },
             {
                 "name": "Transaction",
                 "feeType": "TRANSACTION",
-                "amount": "0",
-                "additionalValue": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, cheque withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
-                "additionalInfo": "No transaction or withdrawal fees",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "No transaction or withdrawal fees",
+                "additionalInfo": "Payable whenever we send you a letter because you do not make a repayment in full on or before the due date and the default continues for 3 days or more.",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
                 "discounts": []
             },
             {
                 "name": "Arrears",
                 "feeType": "EVENT",
-                "amount": "0",
-                "additionalValue": "Payable whenever we send you a letter because you do not make a repayment in full on or before the due date and the default continues for 3 days or more.",
-                "additionalInfo": "Arrears administration fee",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "Arrears administration fee",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
+                "discounts": []
+            },
+            {
+                "name": "Paper Statement",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "Paper Statement Fee",
+                "additionalInfo": "If you have not opted in for eStatements and we send a paper statements to your nominated postal address we have on record. Note: An electronic statement can be requested at any time with no fee payable.",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/other-fees/",
+                "discounts": []
+            },
+            {
+                "name": "Member Cheque Withdrawal",
+                "feeType": "EVENT",
+                "amount": "1.50",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "Member Cheque Withdrawal",
+                "additionalInfo": "Payable when a cheque you have written has been presented for clearance",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/other-fees/",
+                "discounts": []
+            },
+            {
+                "name": "Member Cheque Book",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "Member Cheque Book",
+                "additionalInfo": "Payable when you request us to provide you with a cheque book",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/other-fees/",
                 "discounts": []
             }
         ],
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.05",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
@@ -163,7 +216,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.3",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
@@ -174,9 +227,10 @@
         "lendingRates": [
             {
                 "lendingRateType": "PENALTY",
+                "comparisonRate": "0.0",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "15.25",
+                "rate": "0.1525",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
