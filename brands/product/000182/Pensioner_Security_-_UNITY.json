@@ -54,11 +54,6 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "NAB Deposit Facility",
-                "additionalInfoUri": ""
-            },
-            {
-                "featureType": "OTHER",
                 "additionalInfo": "Bank@Post transactions",
                 "additionalInfoUri": ""
             },
@@ -505,6 +500,68 @@
                 "additionalInfo": "",
                 "additionalInfoUri": "",
                 "discounts": []
+            },
+            {
+                "name": "MONTHLY_USAGE_FEE",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalInfo": "Charged on the first day of the month upon conducting a VISA Debit transaction during the previous month.",
+                "additionalInfoUri": "https://asset.reliancebank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf",
+                "discounts": [
+                    {
+                        "description": "Balance greater than $5,000",
+                        "discountType": "BALANCE",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "1.00000",
+                        "additionalValue": "5,000.00",
+                        "additionalInfo": "Across all personal accounts including loans.",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Nil Visa Debit Transactions",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "1.00000",
+                        "additionalValue": null,
+                        "additionalInfo": "Includes ATM, Eftpos, Paywave, Internet & Phone online purchases, Apple Pay, Google Pay or Samsung Pay.",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Over 65 age exemption",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "1.00000",
+                        "additionalValue": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Under 25 age exemption",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "1.00000",
+                        "additionalValue": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
             }
         ],
         "depositRates": [
@@ -546,10 +603,10 @@
             }
         ],
         "productId": "Pensioner_Security_-_UNITY",
-        "lastUpdated": "2022-05-26T08:49:57.000+10:00",
+        "lastUpdated": "2022-05-27T12:20:24.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Pensioner Security Account - UNITY",
-        "description": "Account for members over 55 years of age. It provides access to funds 24/7 through a wide range of payment services and no monthly service fees.",
+        "description": "Account for members over 55 years of age. It provides access to funds 24/7 through a wide range of payment services.",
         "brand": "M",
         "brandName": "Unity Bank",
         "applicationUri": "https://www.unitybank.com.au/apply-online-apply-for-a-savings-account.html",

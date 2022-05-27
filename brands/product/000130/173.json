@@ -2,7 +2,7 @@
     "data": {
         "productId": "173",
         "effectiveFrom": "2020-08-20T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-18T08:00:39.5588392Z",
+        "lastUpdated": "2022-05-26T05:46:57.1307762Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Investment P&I Fixed Home Loan",
         "description": "Investment P&I Fixed Home Loan",
@@ -14,14 +14,19 @@
             "termsUri": "https://www.bcu.com.au/important-documents",
             "feesAndPricingUri": "https://www.bcu.com.au/home-loans/investment/investment-fixed-rate-loan"
         },
-        "constraints": [
+        "features": [
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "2500000.0"
+                "featureType": "DIGITAL_BANKING"
             },
             {
+                "featureType": "NPP_ENABLED"
+            }
+        ],
+        "constraints": [
+            {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "20000.0"
+                "additionalValue": "20000.00",
+                "additionalInfo": "Minimum loan amount is $20,000"
             }
         ],
         "fees": [
@@ -31,12 +36,6 @@
                 "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
-            },
-            {
-                "name": "Home Loan Establishment Fee",
-                "feeType": "UPFRONT",
-                "amount": "600.00",
-                "currency": "AUD"
             },
             {
                 "name": "Discharge of Mortgage Fee",

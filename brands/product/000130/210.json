@@ -2,7 +2,7 @@
     "data": {
         "productId": "210",
         "effectiveFrom": "2021-08-02T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-12T06:00:40.1620296Z",
+        "lastUpdated": "2022-05-26T08:00:40.9420679Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "OMG Home Loan (P&I) LVR<60",
         "description": "OMG Home Loan (P&I) LVR<60",
@@ -19,17 +19,17 @@
                 "featureType": "DIGITAL_BANKING"
             },
             {
+                "featureType": "NPP_ENABLED"
+            },
+            {
                 "featureType": "REDRAW"
             }
         ],
         "constraints": [
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "1500000.0"
-            },
-            {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "100000.0"
+                "additionalValue": "100000.00",
+                "additionalInfo": "Minimum loan amount is $100,000"
             }
         ],
         "fees": [
@@ -38,19 +38,14 @@
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "When payment to a Home Loan becomes overdue by 11 days and 30 days, we reserve the right to charge a $5 fee."
-            },
-            {
-                "name": "Home Loan Switch Fee",
-                "feeType": "EVENT",
-                "amount": "425.00",
-                "currency": "AUD"
+                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
             },
             {
                 "name": "Construction Loan Drawdown Fee",
                 "feeType": "EVENT",
                 "amount": "25.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfo": "Charged per drawdown"
             },
             {
                 "name": "Discharge of Mortgage Fee",
