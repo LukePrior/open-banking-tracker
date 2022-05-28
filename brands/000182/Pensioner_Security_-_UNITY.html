@@ -60,11 +60,6 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;NAB Deposit Facility&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Bank@Post transactions&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
@@ -511,6 +506,98 @@
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;,
             &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;MONTHLY_USAGE_FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://asset.unitybank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Balance greater than $5,000&quot;,
+                    &quot;discountType&quot;: &quot;BALANCE&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: &quot;5,000.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;If combined average balance drops below $5,000, the Monthly Usage Fee will be charged.&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;Combined monthly average balance across all personal accounts including loans.&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Nil Visa Debit Transactions&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Nil Visa Debit Transactions&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;Includes ATM, Eftpos, Paywave, Internet &amp; Phone online purchases, Apple Pay, Google Pay or Samsung Pay.&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Over 65 age exemption&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;MIN_AGE&quot;,
+                            &quot;additionalValue&quot;: &quot;65&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;Under 25 age exemption&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: &quot;1.00000&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;MAX_AGE&quot;,
+                            &quot;additionalValue&quot;: &quot;25&quot;,
+                            &quot;additionalInfo&quot;: &quot;&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
         }
     ],
     &quot;depositRates&quot;: [
@@ -552,10 +639,10 @@
         }
     ],
     &quot;productId&quot;: &quot;Pensioner_Security_-_UNITY&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-05-26T08:49:57.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-27T14:08:58.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Pensioner Security Account - UNITY&quot;,
-    &quot;description&quot;: &quot;Account for members over 55 years of age. It provides access to funds 24/7 through a wide range of payment services and no monthly service fees.&quot;,
+    &quot;description&quot;: &quot;Account for members over 55 years of age. It provides access to funds 24/7 through a wide range of payment services.&quot;,
     &quot;brand&quot;: &quot;M&quot;,
     &quot;brandName&quot;: &quot;Unity Bank&quot;,
     &quot;applicationUri&quot;: &quot;https://www.unitybank.com.au/apply-online-apply-for-a-savings-account.html&quot;,
