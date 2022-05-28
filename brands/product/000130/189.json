@@ -2,7 +2,7 @@
     "data": {
         "productId": "189",
         "effectiveFrom": "2020-04-06T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-12T06:00:40.1620296Z",
+        "lastUpdated": "2022-05-27T08:00:41.8448868Z",
         "productCategory": "PERS_LOANS",
         "name": "New Car Loan",
         "description": "New Car Loan",
@@ -16,25 +16,29 @@
         },
         "features": [
             {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
                 "featureType": "REDRAW"
             }
         ],
         "constraints": [
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "75000.0"
-            },
-            {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "4000.0"
+                "additionalValue": "4000.00",
+                "additionalInfo": "Minimum loan amount is $4,000"
             }
         ],
         "fees": [
             {
-                "name": "Late payment notification fee",
+                "name": "Late Payment Notification Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfo": "Charged when payment to a Personal Loan becomes overdue by 11 and 30 days"
             },
             {
                 "name": "Establishment Fee",

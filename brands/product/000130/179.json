@@ -2,7 +2,7 @@
     "data": {
         "productId": "179",
         "effectiveFrom": "2020-04-06T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-12T06:00:40.1620296Z",
+        "lastUpdated": "2022-05-27T08:00:41.8448868Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Owner Occ IO Var Max",
         "description": "Owner Occ IO Var Max",
@@ -10,7 +10,6 @@
         "brandName": "bcu",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.bcu.com.au/home-loans/owner-occupied/owner-occupied-variable-rate-loan",
             "termsUri": "https://www.bcu.com.au/important-documents",
             "feesAndPricingUri": "https://www.bcu.com.au/interest-rates"
         },
@@ -19,17 +18,18 @@
                 "featureType": "DIGITAL_BANKING"
             },
             {
-                "featureType": "OFFSET"
+                "featureType": "NPP_ENABLED"
             },
             {
-                "featureType": "REDRAW"
+                "featureType": "OFFSET",
+                "additionalInfo": "100% offset account available"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Minimum redraw amount of $1,000"
             }
         ],
         "constraints": [
-            {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "2500000.00"
-            },
             {
                 "constraintType": "MIN_LIMIT",
                 "additionalValue": "10000.00"
@@ -37,17 +37,18 @@
         ],
         "fees": [
             {
-                "name": "Late payment notification fee",
+                "name": "Late Payment Notification Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "When payment to a Home Loan becomes overdue by 11 days and 30 days, we reserve the right to charge a $5 fee."
+                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
             },
             {
                 "name": "Construction Loan Drawdown Fee",
                 "feeType": "EVENT",
                 "amount": "25.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfo": "Charged per drawdown"
             },
             {
                 "name": "Discharge of Mortgage Fee",

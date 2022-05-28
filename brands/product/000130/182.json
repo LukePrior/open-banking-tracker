@@ -2,7 +2,7 @@
     "data": {
         "productId": "182",
         "effectiveFrom": "2020-04-06T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-13T04:00:39.1223345Z",
+        "lastUpdated": "2022-05-27T08:00:41.8448868Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Fixed IO Home Loan",
         "description": "Fixed IO Home Loan",
@@ -17,24 +17,32 @@
         "features": [
             {
                 "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_ENABLED"
             }
         ],
         "constraints": [
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "2500000.00"
-            },
-            {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "20000.00"
+                "additionalValue": "20000.00",
+                "additionalInfo": "Minimum loan amount is $20,000"
             }
         ],
         "fees": [
             {
+                "name": "Late Payment Notification Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
+            },
+            {
                 "name": "Construction Loan Drawdown Fee",
                 "feeType": "EVENT",
                 "amount": "25.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfo": "Charged per drawdown"
             },
             {
                 "name": "Discharge of Mortgage Fee",

@@ -545,8 +545,8 @@
                 "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
-                "additionalInfo": "Charged on the first day of the month upon conducting a VISA Debit transaction during the previous month.",
-                "additionalInfoUri": "https://asset.reliancebank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://asset.unitybank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf",
                 "discounts": [
                     {
                         "description": "Balance greater than $5,000",
@@ -557,7 +557,14 @@
                         "accruedRate": null,
                         "feeRate": "1.00000",
                         "additionalValue": "5,000.00",
-                        "additionalInfo": "Across all personal accounts including loans.",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "If combined average balance drops below $5,000, the Monthly Usage Fee will be charged.",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "Combined monthly average balance across all personal accounts including loans.",
                         "additionalInfoUri": ""
                     },
                     {
@@ -569,6 +576,13 @@
                         "accruedRate": null,
                         "feeRate": "1.00000",
                         "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Nil Visa Debit Transactions",
+                                "additionalInfoUri": ""
+                            }
+                        ],
                         "additionalInfo": "Includes ATM, Eftpos, Paywave, Internet & Phone online purchases, Apple Pay, Google Pay or Samsung Pay.",
                         "additionalInfoUri": ""
                     },
@@ -581,6 +595,14 @@
                         "accruedRate": null,
                         "feeRate": "1.00000",
                         "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "65",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            }
+                        ],
                         "additionalInfo": "",
                         "additionalInfoUri": ""
                     },
@@ -593,6 +615,14 @@
                         "accruedRate": null,
                         "feeRate": "1.00000",
                         "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "25",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            }
+                        ],
                         "additionalInfo": "",
                         "additionalInfoUri": ""
                     }
@@ -638,7 +668,7 @@
             }
         ],
         "productId": "Access_Savings_-_UNITY",
-        "lastUpdated": "2022-05-27T12:20:56.000+10:00",
+        "lastUpdated": "2022-05-27T14:08:58.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Access Savings Account - UNITY",
         "description": "Your day-to-day transaction account with a full range of payment services",
