@@ -112,6 +112,10 @@ for root, dirs, files in os.walk("brands/product/"):
                 with textarea(str(json.dumps(product, indent = 4))):
                     attr(style="width:90vw;height:90vh")
         
+        path = "docs/brands/" + brand
+        if not os.path.exists(path):
+            os.makedirs(path)
+        
         html_file = open("docs/brands/" + brand + "/" + id + ".html", "w")
         html_file.write(str(doc2))
         html_file.close()
