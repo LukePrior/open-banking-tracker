@@ -72,7 +72,7 @@ for file in os.listdir('brands/products/'):
 
                 if (skip_update == False):
                     raw_file = open(path, "w")
-                    json.dump(ordered(response), raw_file, indent = 4)
+                    json.dump(response, raw_file, indent = 4)
                     raw_file.close()
 
                 print(path)
