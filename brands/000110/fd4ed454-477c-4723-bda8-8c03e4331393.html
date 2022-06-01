@@ -7,8 +7,8 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;fd4ed454-477c-4723-bda8-8c03e4331393&quot;,
-    &quot;effectiveFrom&quot;: &quot;2022-05-19T14:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-05-20T00:54:18.982541Z&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-05-30T14:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-31T04:38:30.190194Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;RateSaver Home Loan&quot;,
     &quot;description&quot;: &quot;Our simple vanilla loan with a super-low variable rate, unlimited additional repayments as well as the ability to redraw.\n\nThe RateSaver Home Loan is also available for DHOAS eligible applicants&quot;,
@@ -56,10 +56,23 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Switch/variation fee - home &amp; investment loans&quot;,
+            &quot;name&quot;: &quot;Consent fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;300.00&quot;,
-            &quot;additionalInfo&quot;: &quot;To switch or vary home loans (other than switching to RateSaver)&quot;
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;For 2nd or subsequent mortgages or lease registration&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Legal Fees&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At cost&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;name&quot;: &quot;RateSaver Processing fee&quot;,
@@ -76,23 +89,42 @@
             &quot;additionalInfo&quot;: &quot;At cost. Minimum is $250.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Consent fee&quot;,
+            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Stamp Duty&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;For 2nd or subsequent mortgages or lease registration&quot;
+            &quot;additionalInfo&quot;: &quot;At cost&quot;
         },
         {
-            &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
+            &quot;name&quot;: &quot;Arrears notice fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;2.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Switch/variation fee - home &amp; investment loans&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;additionalInfo&quot;: &quot;To switch or vary home loans (other than switching to RateSaver)&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;
         },
         {
             &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
@@ -102,9 +134,9 @@
             &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;
         },
         {
-            &quot;name&quot;: &quot;Copies of statements (over 12 months) per page&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
@@ -115,26 +147,6 @@
             &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;
         },
         {
-            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Arrears notice fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Legal Fees&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;At cost&quot;
-        },
-        {
             &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;2.00&quot;,
@@ -142,10 +154,10 @@
             &quot;additionalValue&quot;: &quot;P3M&quot;
         },
         {
-            &quot;name&quot;: &quot;Stamp Duty&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;At cost&quot;
+            &quot;name&quot;: &quot;Copies of statements (over 12 months) per page&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;name&quot;: &quot;RateSaver Switch fee&quot;,
@@ -153,32 +165,9 @@
             &quot;amount&quot;: &quot;500.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;To switch to RateSaver Home Loan&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;300.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
         }
     ],
     &quot;lendingRates&quot;: [
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.022&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0224&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalInfo&quot;: &quot;&lt;=70% LVR (DHOAS applicants only)&quot;
-        },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0323&quot;,
@@ -200,6 +189,17 @@
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalInfo&quot;: &quot;LVR &lt;=90%&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.022&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0224&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalInfo&quot;: &quot;&lt;=70% LVR &quot;
         }
     ]
 }</textarea>
