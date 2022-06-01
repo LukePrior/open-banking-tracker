@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "Product123",
-        "effectiveFrom": "2022-05-20T00:00:00.000Z",
+        "effectiveFrom": "2022-06-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2022-05-05T01:54:41Z",
+        "lastUpdated": "2022-05-23T23:52:35Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Saver",
         "description": "A savings account which helps you reach your financial goals faster by rewarding you with bonus interest where monthly savings of at least $100  and no withdrawals are made.",
@@ -105,13 +105,27 @@
         "depositRates": [
             {
                 "depositRateType": "BONUS",
-                "rate": "0.0009",
+                "rate": "0.0019",
                 "calculationFrequency": "P1D",
                 "tiers": [
                     {
-                        "name": "Floating Balance Tier 4",
+                        "name": "$1,000,000.01 and over",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1000000.01
+                    }
+                ],
+                "additionalValue": "Bonus interest rate applies if at least $100 is deposited per month and there are no withdrawals per month."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0039",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "name": "$250,000.01 to $500,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "maximumValue": 500000.0
                     }
                 ],
                 "additionalValue": "Bonus interest rate applies if at least $100 is deposited per month and there are no withdrawals per month."
@@ -122,21 +136,7 @@
                 "calculationFrequency": "P1D",
                 "tiers": [
                     {
-                        "name": "Floating Balance Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000.01,
-                        "maximumValue": 500000.0
-                    }
-                ],
-                "additionalValue": "Bonus interest rate applies if at least $100 is deposited per month and there are no withdrawals per month."
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.0019",
-                "calculationFrequency": "P1D",
-                "tiers": [
-                    {
-                        "name": "Floating Balance Tier 3",
+                        "name": "$500,000.01 to $1,000,000",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
                         "maximumValue": 1000000.0
@@ -159,11 +159,11 @@
             },
             {
                 "depositRateType": "BONUS",
-                "rate": "0.0039",
+                "rate": "0.0049",
                 "calculationFrequency": "P1D",
                 "tiers": [
                     {
-                        "name": "Floating Balance Tier 1",
+                        "name": "$0.01 to $250,000",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.01,
                         "maximumValue": 250000.0

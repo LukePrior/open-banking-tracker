@@ -16,7 +16,7 @@
             {
                 "featureType": "OTHER",
                 "additionalValue": "Additional Repayments",
-                "additionalInfo": "Make extra repayments of up to $10,000 a year and redraw them when you need.",
+                "additionalInfo": "Make extra repayments of up to $10,000 a year.",
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/home-buying/home-loans/fixed-rate"
             },
             {
@@ -49,12 +49,6 @@
                 "featureType": "OTHER",
                 "additionalValue": "Repayment Options",
                 "additionalInfo": "Principal & Interest or Interest only options are available."
-            },
-            {
-                "featureType": "REDRAW",
-                "additionalValue": "Redraw",
-                "additionalInfo": "Access your surplus balance when you need, online via a Home Loan Access request or at your local branch.",
-                "additionalInfoUri": "https://www.bankwest.com.au/personal/home-buying/home-loans/fixed-rate"
             }
         ],
         "constraints": [
@@ -299,12 +293,6 @@
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "Payable when we perform a valuation on any mortgaged real property forming part of the Security after the initial settlement in reimbursement of the valuer's fee."
-            },
-            {
-                "name": "Excess Repayment Fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "You may have to pay an excess repayment fee if you make additional repayments that exceed $10,000 per annum above the minimum required loan repayments."
             },
             {
                 "name": "Fixed Rate Break Cost",
@@ -554,31 +542,6 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0539",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "comparisonRate": "0.0566",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "LVR",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 90.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
-                    {
-                        "name": "Term",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 24,
-                        "maximumValue": 24
-                    }
-                ],
-                "additionalValue": "P24M"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0539",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "comparisonRate": "0.0518",
@@ -600,6 +563,31 @@
                     }
                 ],
                 "additionalValue": "P36M"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0539",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "comparisonRate": "0.0566",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24
+                    }
+                ],
+                "additionalValue": "P24M"
             },
             {
                 "lendingRateType": "FIXED",
@@ -780,15 +768,15 @@
                 "lendingRateType": "FIXED",
                 "rate": "0.0569",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "comparisonRate": "0.0574",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0532",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
+                        "minimumValue": 80.01,
                         "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     },
@@ -805,15 +793,15 @@
                 "lendingRateType": "FIXED",
                 "rate": "0.0569",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0532",
+                "loanPurpose": "INVESTMENT",
+                "comparisonRate": "0.0574",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.01,
+                        "minimumValue": 0.0,
                         "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     },
@@ -1205,7 +1193,7 @@
         "productId": "6aed5cd829964d2b859424cfe6ab83fc",
         "effectiveFrom": "1998-07-19T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-05-18T00:24:32.878231Z",
+        "lastUpdated": "2022-06-01T00:06:56.428324Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Fixed Rate Home Loan",
         "description": "The Fixed Rate Home Loan lets you lock in a competitive fixed rate for one to five years, and enjoy the peace of mind that comes with consistent repayments. The loan is available for both owner occupied and investment purposes (the loan amount will be restricted by your property value, repayment type and loan purpose). Plus link an optional offset facility to your loan to help reduce your interest and pay off your loan faster. After the expiry of your fixed rate term your Home Loan will revert to the Mortgage Shredder Home Loan.",

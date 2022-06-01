@@ -1,33 +1,60 @@
 {
     "data": {
-        "productId": "Product426",
-        "effectiveFrom": "2022-05-20T00:00:00.000Z",
+        "productId": "Product460",
+        "effectiveFrom": "2022-06-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2022-05-19T22:55:20Z",
+        "lastUpdated": "2022-05-27T06:47:49Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Basic Investment Home Loan Fixed",
-        "description": "A competitive investment home loan that doesn't make you pay for the features you won't use with the certainty of a fixed rate",
+        "name": "Premium HL Package Fixed",
+        "description": "A package home loan, fee waivers and discounts across a range of products with the certainty of a fixed rate",
         "brand": "Bank Australia",
         "applicationUri": "https://online.bankaust.com.au/internetlending/public/start.aspx",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.bankaust.com.au/tools/rates/home-loans/basic-home-loan",
+            "overviewUri": "https://www.bankaust.com.au/personal/borrow/home-loans/premium-home-loan-package",
             "termsUri": "https://www.bankaust.com.au/about-us/customer-centre/disclosures",
             "feesAndPricingUri": "https://www.bankaust.com.au/about-us/customer-centre/disclosures"
         },
+        "bundles": [
+            {
+                "name": "Premium Package Home Loan Package",
+                "description": "The Platinum Credit Card is part of the Premium Home Loan Package, entitling you to a waiver of the card's annual fee.",
+                "additionalInfoUri": "https://www.bankaust.com.au/personal/borrow/home-loans/premium-home-loan-package",
+                "productIds": [
+                    "Product490",
+                    "Product494",
+                    "Product429",
+                    "Product430",
+                    "Product454",
+                    "Product460"
+                ]
+            }
+        ],
         "features": [
             {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "You can self-serve your day-to-day banking needs via Bank Australia's App, Internet Banking or Phone Banking."
             },
             {
-                "featureType": "REDRAW",
-                "additionalInfo": "If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed"
+                "featureType": "OFFSET",
+                "additionalInfo": "A Mortgage Offset account reduces the amount of interest you pay on your home loan. The amount within this account is offset against your home loan, meaning you only pay interest on the difference. Up to a limit of $20,000."
             },
             {
                 "featureType": "OTHER",
                 "additionalValue": "Flexible Repayments",
                 "additionalInfo": "Make your loan repayments weekly, fortnightly or monthly"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Parental Pause",
+                "additionalInfo": "Welcoming a new family member to the family can place a pretty big strain on finances so we offer you the option of pausing your home loan repayments to give you some breathing space.  This allows you to take a break from payments for three months, or halve them for six. Conditions apply",
+                "additionalInfoUri": "https://www.bankaust.com.au/personal/borrow/home-loan-hub/buying/parentalpause"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Eco-Pause",
+                "additionalInfo": "Our Eco-Pause lets customers take a break from their mortgage repayments and redirect their money to eco upgrades such as solar panels, batteries and water tanks. With an eco-pause you can pause your repayments for three months or halve them for six. Conditions apply.",
+                "additionalInfoUri": "https://www.bankaust.com.au/personal/borrow/home-loan-hub/buying/ecopause"
             },
             {
                 "featureType": "OTHER",
@@ -63,34 +90,17 @@
         ],
         "fees": [
             {
-                "name": "Additional Valuation",
-                "feeType": "EVENT",
-                "amount": "150.00",
-                "additionalInfo": "The establishment fee covers a standard loan, which includes one valuation. This fee applies for any additional standard residential valuation required."
-            },
-            {
                 "name": "Break Fee",
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "additionalInfo": "You may be required to pay a break fee if you pay your fixed loan off in full, make an early repayment or make certain other changes to your loan during any fixed period. The fee is calculated at the time of the event and is specifically related to your individual loan. More information is found in the loan fees and charges document."
             },
             {
-                "name": "Home Loan Establishment Fee - Existing Mortgage",
-                "feeType": "UPFRONT",
-                "amount": "295.00",
-                "additionalInfo": "Payable for all requests to increase a current loan or for an additional loan where Bank Australia already holds a registered mortgage."
-            },
-            {
-                "name": "Home Loan Establishment Fee - New mortgage",
-                "feeType": "UPFRONT",
-                "amount": "595.00",
-                "additionalInfo": "Payable for all mortgage secured loans to cover Bank Australia administration costs including preparing security documents."
-            },
-            {
-                "name": "Loan Variation Fee",
-                "feeType": "EVENT",
-                "amount": "150.00",
-                "additionalInfo": "Payable when transferring from a home loan product to a different home loan product. For example, transferring a variable rate product to a fixed rate product."
+                "name": "Loan Package Fee",
+                "feeType": "PERIODIC",
+                "amount": "350.00",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Annual fee payable on all Premium loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist"
             },
             {
                 "name": "Mortgage Discharge Fee",
@@ -120,8 +130,8 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0375",
-                "comparisonRate": "0.0270",
+                "rate": "0.0365",
+                "comparisonRate": "0.0282",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -137,123 +147,209 @@
                     }
                 ],
                 "additionalValue": "P1Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0375",
+                "comparisonRate": "0.0291",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR Less than 70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.0,
+                        "maximumValue": 69.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <70%"
+                    }
+                ],
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0385",
-                "comparisonRate": "0.0280",
+                "comparisonRate": "0.0297",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "name": "LVR Less than 70%",
+                        "name": "LVR Less than 80%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 60.0,
-                        "maximumValue": 69.0,
+                        "minimumValue": 70.0,
+                        "maximumValue": 79.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <70%"
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <80%"
                     }
                 ],
                 "additionalValue": "P1Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0395",
-                "comparisonRate": "0.0290",
+                "comparisonRate": "0.0342",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "name": "LVR Less than 80%",
+                        "name": "LVR Less than 90%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 70.0,
-                        "maximumValue": 79.0,
+                        "minimumValue": 80.0,
+                        "maximumValue": 89.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <80%"
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <90%"
                     }
                 ],
                 "additionalValue": "P1Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0415",
+                "comparisonRate": "0.0371",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR greater than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of >90%"
+                    }
+                ],
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0425",
+                "comparisonRate": "0.0303",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR Less than 60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 59.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <60%"
+                    }
+                ],
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0435",
+                "comparisonRate": "0.0313",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR Less than 70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.0,
+                        "maximumValue": 69.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <70%"
+                    }
+                ],
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0445",
-                "comparisonRate": "0.0292",
+                "comparisonRate": "0.0319",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "name": "LVR Less than 60%",
+                        "name": "LVR Less than 80%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 59.0,
+                        "minimumValue": 70.0,
+                        "maximumValue": 79.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <60%"
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <80%"
                     }
                 ],
                 "additionalValue": "P2Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0455",
-                "comparisonRate": "0.0302",
+                "comparisonRate": "0.0361",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "name": "LVR Less than 70%",
+                        "name": "LVR Less than 90%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 60.0,
-                        "maximumValue": 69.0,
+                        "minimumValue": 80.0,
+                        "maximumValue": 89.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <70%"
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <90%"
                     }
                 ],
                 "additionalValue": "P2Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0465",
-                "comparisonRate": "0.0312",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": [
-                    {
-                        "name": "LVR Less than 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 70.0,
-                        "maximumValue": 79.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <80%"
-                    }
-                ],
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0495",
-                "comparisonRate": "0.0320",
+                "comparisonRate": "0.0393",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR greater than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of >90%"
+                    }
+                ],
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0470",
+                "comparisonRate": "0.0330",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -269,13 +365,13 @@
                     }
                 ],
                 "additionalValue": "P3Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0505",
-                "comparisonRate": "0.0331",
+                "rate": "0.0475",
+                "comparisonRate": "0.0339",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -291,13 +387,13 @@
                     }
                 ],
                 "additionalValue": "P3Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0515",
-                "comparisonRate": "0.0341",
+                "rate": "0.0485",
+                "comparisonRate": "0.0345",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -313,34 +409,55 @@
                     }
                 ],
                 "additionalValue": "P3Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0535",
-                "comparisonRate": "0.0373",
+                "rate": "0.0505",
+                "comparisonRate": "0.0387",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "name": "LVR Less than 60%",
+                        "name": "LVR Less than 90%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 59.0,
+                        "minimumValue": 80.0,
+                        "maximumValue": 89.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <60%"
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <90%"
                     }
                 ],
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0545",
+                "rate": "0.0535",
+                "comparisonRate": "0.0417",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR greater than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of >90%"
+                    }
+                ],
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0515",
                 "comparisonRate": "0.0384",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -348,6 +465,28 @@
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
+                        "name": "LVR Less than 60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 59.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <60%"
+                    }
+                ],
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0525",
+                "comparisonRate": "0.0394",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
                         "name": "LVR Less than 70%",
                         "unitOfMeasure": "PERCENT",
                         "minimumValue": 60.0,
@@ -357,13 +496,13 @@
                     }
                 ],
                 "additionalValue": "P5Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0555",
-                "comparisonRate": "0.0394",
+                "rate": "0.0535",
+                "comparisonRate": "0.0402",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -379,13 +518,56 @@
                     }
                 ],
                 "additionalValue": "P5Y",
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0545",
+                "comparisonRate": "0.0435",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR Less than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 89.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <90%"
+                    }
+                ],
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
+                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0555",
+                "comparisonRate": "0.0457",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "LVR greater than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of >90%"
+                    }
+                ],
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.",
                 "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
             }
         ]
     },
     "links": {
-        "self": "https://public.cdr-api.bankaust.com.au/cds-au/v1/banking/products/Product426"
+        "self": "https://public.cdr-api.bankaust.com.au/cds-au/v1/banking/products/Product460"
     },
     "meta": {}
 }
