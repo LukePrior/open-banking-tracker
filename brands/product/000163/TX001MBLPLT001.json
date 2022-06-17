@@ -3,7 +3,7 @@
         "productId": "TX001MBLPLT001",
         "effectiveFrom": "2015-03-06T00:01:00.001Z",
         "effectiveTo": null,
-        "lastUpdated": "2022-05-04T00:01:00.001Z",
+        "lastUpdated": "2022-06-17T00:01:00.001Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Macquarie Transaction Account",
         "description": "An award-winning everyday transaction account with no fees and free access to every ATM in Australia.",
@@ -336,7 +336,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.002",
+                "rate": "0.0150",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -344,7 +344,31 @@
                         "name": "Base rate 1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0,
-                        "maximumValue": 9999999.99,
+                        "maximumValue": 250000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": "https://www.macquarie.com.au/everyday-banking/transaction-account.html#rates-and-fees"
+                        },
+                        "additionalInfo": null,
+                        "additionalInfoUri": null
+                    }
+                ],
+                "additionalValue": null,
+                "additionalInfo": null,
+                "additionalInfoUri": "https://www.macquarie.com.au/everyday-banking/transaction-account.html#rates-and-fees"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0100",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Base rate 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "maximumValue": 1000000,
                         "rateApplicationMethod": "PER_TIER",
                         "applicabilityConditions": {
                             "additionalInfo": null,
@@ -356,7 +380,31 @@
                 ],
                 "additionalValue": null,
                 "additionalInfo": null,
-                "additionalInfoUri": "https://www.macquarie.com.au/everyday-banking/transaction-account.html#rates-and-fees"
+                "additionalInfoUri": null
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0085",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Base rate 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.01,
+                        "maximumValue": null,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "additionalInfo": null,
+                        "additionalInfoUri": null
+                    }
+                ],
+                "additionalValue": null,
+                "additionalInfo": null,
+                "additionalInfoUri": null
             }
         ],
         "lendingRates": []

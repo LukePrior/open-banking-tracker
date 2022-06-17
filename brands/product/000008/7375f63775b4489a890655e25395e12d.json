@@ -143,13 +143,6 @@
                 "additionalInfo": "If you don't have enough money in your account for a payment or transfer you scheduled - we try to make the payment or transfer on five successive business days before charging you. This does not include Scheduled Payments that you arrange between your individual and/or joint accounts."
             },
             {
-                "name": "Rejected transaction fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "We won't charge you if a payment transaction is rejected due to invalid destination account detail."
-            },
-            {
                 "name": "Account Fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -176,9 +169,7 @@
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
-                                "additionalValue": "50000.00",
-                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.",
-                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
+                                "additionalInfo": "You have a disability that requires you to use a branch (visit a branch to apply), then we won't charge you a cheque negotiated fee."
                             }
                         ],
                         "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
@@ -190,7 +181,9 @@
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
-                                "additionalInfo": "You have a disability that requires you to use a branch (visit a branch to apply), then we won't charge you a cheque negotiated fee."
+                                "additionalValue": "50000.00",
+                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.",
+                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
                             }
                         ],
                         "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
@@ -232,20 +225,6 @@
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
-                                "additionalValue": "50000.00",
-                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a withdrawal fee.",
-                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
-                            }
-                        ],
-                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts"
-                    },
-                    {
-                        "description": "You may qualify for a waiver of assisted withdrawal fees if",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
                                 "additionalInfo": "You have a disability that requires you to use a branch (visit a branch to apply), then we won't charge you a withdrawal fee."
                             }
                         ],
@@ -262,6 +241,20 @@
                             }
                         ],
                         "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts"
+                    },
+                    {
+                        "description": "You may qualify for a waiver of assisted withdrawal fees if",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalValue": "50000.00",
+                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a withdrawal fee.",
+                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
+                            }
+                        ],
+                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts"
                     }
                 ],
                 "additionalInfo": "A fee charged on some accounts when you take money out: At a CommBank branch, a post office, agency, with telephone banking if using an operator or by cashing a cheque."
@@ -270,7 +263,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0001",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -286,7 +279,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0001",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -302,7 +295,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0005",
+                "rate": "0.0015",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -318,7 +311,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.002",
+                "rate": "0.004",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -344,7 +337,7 @@
         "productId": "7375f63775b4489a890655e25395e12d",
         "effectiveFrom": "2010-07-14T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-06-15T16:15:27.860911Z",
+        "lastUpdated": "2022-06-17T00:13:02.871247Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Pensioner Security",
         "description": "A flexible account that keeps your retirement savings or pension income safe and working for you.",
