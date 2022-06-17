@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;e3e95867-2cff-48c9-a7cb-50dc2032eb9f&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-05-16T04:57:13.288081Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-06-16T12:25:18.57096Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Mortgage Offset Home Loan&quot;,
     &quot;description&quot;: &quot;Reduce interest charges on your variable rate home loan and pay your mortgage off sooner. Plus, enjoy a dedicated Relationship Manager to help through the complexities.&quot;,
@@ -94,13 +94,6 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Default Notice Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.&quot;
-        },
-        {
             &quot;name&quot;: &quot;Loan Restructure Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;200.00&quot;,
@@ -115,11 +108,24 @@
             &quot;additionalInfo&quot;: &quot;Applies on approval of an additional borrowing against a property that we hold an existing mortgage over.&quot;
         },
         {
+            &quot;name&quot;: &quot;PEXA Processing Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when we process a settlement relating to your loan through PEXA.&quot;
+        },
+        {
             &quot;name&quot;: &quot;Owner Builder Loan Approval Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;500.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Applied on approval of your Owner Builder Facility loan, prior to the initial drawdown.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Default Notice Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.&quot;
         },
         {
             &quot;name&quot;: &quot;Property Valuation Costs&quot;,
@@ -152,10 +158,18 @@
             &quot;additionalInfo&quot;: &quot;Applies when we are required to register a discharge of mortgage relating to a property held as security for your loan.&quot;
         },
         {
-            &quot;name&quot;: &quot;Registration of Transfer&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Discharge of Mortgage Preparation&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applies when we are required to register a transfer of land relating to a property held as security for your loan.&quot;
+            &quot;additionalInfo&quot;: &quot;Applies when we are required to prepare discharge of mortgage documentation relating  to a property held as security for your loan.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Notice Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments by the repayment due date.&quot;
         },
         {
             &quot;name&quot;: &quot;Mortgage Documentation Preparation&quot;,
@@ -165,37 +179,23 @@
             &quot;additionalInfo&quot;: &quot;Applies when we are required to prepare mortgage documentation relating to a property offered as security for your loan.&quot;
         },
         {
-            &quot;name&quot;: &quot;Discharge of Mortgage Preparation&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applies when we are required to prepare discharge of mortgage documentation relating  to a property held as security for your loan.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;PEXA Processing Fee&quot;,
+            &quot;name&quot;: &quot;Registration of Transfer&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applies when we process a settlement relating to your loan through PEXA.&quot;
+            &quot;additionalInfo&quot;: &quot;Applies when we are required to register a transfer of land relating to a property held as security for your loan.&quot;
         },
         {
             &quot;name&quot;: &quot;Agency Settlement/Handing Fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Applies in the event that we require an agent to attend a settlement or handle documentation, relating to your loan.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Late Payment Notice Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments by the repayment due date.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0472&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0453&quot;,
+            &quot;rate&quot;: &quot;0.0522&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0504&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -205,8 +205,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0447&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0451&quot;,
+            &quot;rate&quot;: &quot;0.0497&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0501&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -216,8 +216,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0497&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0501&quot;,
+            &quot;rate&quot;: &quot;0.0547&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0551&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -227,8 +227,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0522&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0504&quot;,
+            &quot;rate&quot;: &quot;0.0572&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0554&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
