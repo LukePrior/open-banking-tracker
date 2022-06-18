@@ -2,7 +2,7 @@
     "data": {
         "productId": "41",
         "effectiveFrom": "2015-09-18T14:30:00.0000000Z",
-        "lastUpdated": "2022-05-18T06:00:21.1757631Z",
+        "lastUpdated": "2022-06-17T12:00:21.2749639Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "P&N Bank Visa Classic",
         "description": "P&N Bank Visa Classic",
@@ -19,17 +19,18 @@
                 "featureType": "ADDITIONAL_CARDS"
             },
             {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Credit card available"
+            },
+            {
                 "featureType": "DIGITAL_BANKING"
             },
             {
                 "featureType": "DIGITAL_WALLET",
-                "additionalValue": "0.00"
+                "additionalValue": "Apple Pay, Google Pay & Samsung Pay"
             },
             {
                 "featureType": "NPP_ENABLED"
-            },
-            {
-                "featureType": "OVERDRAFT"
             },
             {
                 "featureType": "UNLIMITED_TXNS"
@@ -42,12 +43,21 @@
                 "additionalInfo": "\"Your card is protected by Visa Zero Liability and Verified by Visa which protect you against fraudulent transactions.\n\""
             }
         ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Minimum credit limit of $1000"
+            }
+        ],
         "fees": [
             {
-                "name": "Late payment notication fee",
+                "name": "Late Payment Notication Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfo": "Charged when payment to a Credit Card becomes overdue by 11 and 30 days",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/#credit-cards"
             },
             {
                 "name": "Cash Advance Fee",
@@ -61,14 +71,15 @@
                 "amount": "49.00",
                 "currency": "AUD",
                 "additionalValue": "P1Y"
-            }
-        ],
-        "depositRates": [
+            },
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "name": "Foreign Currency Conversion Fee",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "Payable for all transactions made in a foreign currency or if the merchant is located outside Australia",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/#credit-cards"
             }
         ],
         "lendingRates": [
@@ -82,7 +93,8 @@
                 "lendingRateType": "PURCHASE",
                 "rate": "0.1131",
                 "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS"
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "Up to 45 days Interest free if you pay off your balance in full each month"
             }
         ]
     },
