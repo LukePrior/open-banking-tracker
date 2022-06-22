@@ -60,6 +60,9 @@ def calculate_interest(lendingRates):
         if "calculationFrequency" not in lendingRate:
             continue
 
+        if lendingRate["lendingRateType"] != "VARIABLE" and lendingRate["lendingRateType"] != "FIXED":
+            continue
+
         if "loanPurpose" in lendingRate and lendingRate["loanPurpose"] == "INVESTMENT":
             continue
 
@@ -75,13 +78,6 @@ def calculate_interest(lendingRates):
         rate = round(float(lendingRate["rate"])*100,2)
 
         formatted = {"rate": rate, "lendingRateType": lendingRate["lendingRateType"]}
-
-        if lendingRate["lendingRateType"] == "VARIABLE" or lendingRate["lendingRateType"] == "FIXED":
-            formatted["primary"] = True
-        elif len(lendingRates) == 1:
-            continue
-        else:
-            formatted["primary"] = False
 
         if lendingRate["lendingRateType"] == "FIXED" and "additionalValue" in lendingRate:
             period = parse_duration(lendingRate["additionalValue"])
