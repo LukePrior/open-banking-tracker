@@ -32,7 +32,7 @@ def check_product(product):
         return False
     if "lendingRates" not in product["data"]:
         return False
-    if "brandName" not in product["data"]:
+    if "brandName" not in product["data"] and "brand" not in product["data"]:
         return False
     if "name" not in product["data"]:
         return False
@@ -116,7 +116,12 @@ for root, dirs, files in os.walk("brands/product/"):
         if rate == None:
             continue
 
-        processed = {"brandId": brand, "brandName": product["data"]["brandName"], "productId": product["data"]["productId"], "productName": product["data"]["name"], "description": product["data"]["description"], "rate": rate}
+        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "description": product["data"]["description"], "rate": rate}
+
+        if "brandName" in product["data"]:
+            processed["brandName"] = product["data"]["brandName"]
+        else:
+            processed["brandName"] = product["data"]["brand"]
 
         data.append(processed)
 
