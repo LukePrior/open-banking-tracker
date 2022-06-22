@@ -3,7 +3,7 @@
         "productId": "4200-0211",
         "effectiveFrom": "2021-05-31T14:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2022-05-26T14:00:01.00000Z",
+        "lastUpdated": "2022-06-21T14:00:01.00000Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Basic Variable OO P&I",
         "description": "Save with a Great Southern Bank Basic Variable Home Loan. It\u2019s a simple, competitive rate home loan with no monthly or annual fees and the ability to make unlimited extra repayments",
@@ -39,11 +39,11 @@
         "features": [
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Reach your property goal sooner.  Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
+                "additionalInfo": "No on-going fees.  With no annual or monthly account keeping fees you can save money for the other important things in your life."
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "No on-going fees.  With no annual or monthly account keeping fees you can save money for the other important things in your life."
+                "additionalInfo": "Reach your property goal sooner.  Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -57,11 +57,59 @@
         ],
         "fees": [
             {
+                "name": "Annual fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y"
+            },
+            {
+                "name": "Monthly fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "name": "Production fee",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD",
+                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
+            },
+            {
                 "name": "Re-documentation fee",
                 "feeType": "EVENT",
                 "amount": "300.00",
                 "currency": "AUD",
                 "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
+            },
+            {
+                "name": "Telegraphic transfer fee within Australia",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia."
+            },
+            {
+                "name": "Variation fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "A variation fee is payable if you request any changes to the Credit Contract or Security - for example: - Re-arrange and/or substitute a security on a mortgage - Consent to any dealings in relation to property - Switch from one interest rate product to another, at the request of the borrower - Where a fixed interest rate has decreased between loan approval and loan funding, at the request of the borrower"
+            },
+            {
+                "name": "Discharge Fee",
+                "feeType": "EXIT",
+                "amount": "500.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Redraw Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "($200 minimum withdrawal applies in branch)"
             },
             {
                 "name": "ESTABLISHMENT FEE",
@@ -75,81 +123,33 @@
                 "feeType": "UPFRONT",
                 "amount": "235.00",
                 "currency": "AUD"
-            },
-            {
-                "name": "Variation fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "AUD",
-                "additionalInfo": "A variation fee is payable if you request any changes to the Credit Contract or Security - for example: - Re-arrange and/or substitute a security on a mortgage - Consent to any dealings in relation to property - Switch from one interest rate product to another, at the request of the borrower - Where a fixed interest rate has decreased between loan approval and loan funding, at the request of the borrower"
-            },
-            {
-                "name": "Production fee",
-                "feeType": "EVENT",
-                "amount": "100.00",
-                "currency": "AUD",
-                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
-            },
-            {
-                "name": "Monthly fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1M"
-            },
-            {
-                "name": "Annual fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1Y"
-            },
-            {
-                "name": "Redraw Fee",
-                "feeType": "WITHDRAWAL",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "($200 minimum withdrawal applies in branch)"
-            },
-            {
-                "name": "Discharge Fee",
-                "feeType": "EXIT",
-                "amount": "500.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Telegraphic transfer fee within Australia",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0289",
-                "comparisonRate": "0.0294",
+                "rate": "0.0374",
+                "comparisonRate": "0.0379",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable LVR >80% <=90%",
+                        "name": "Basic Variable LVR >90%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.01,
-                        "maximumValue": 90.0,
+                        "minimumValue": 90.01,
+                        "maximumValue": 95.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
                 "additionalValue": "Interest\u00a0on\u00a0balance",
-                "additionalInfo": "Principal and Interest Repayment:90% maximum Loan to Value (LVR) ratio inclusive of Lenders Mortgage Insurance (LMI)."
+                "additionalInfo": "Principal and Interest Repayment: 95% maximum  Loan to Value (LVR) ratio inclusive of Lenders Mortgage Insurance (LMI)."
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0232",
-                "comparisonRate": "0.0237",
+                "rate": "0.0264",
+                "comparisonRate": "0.0269",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -167,8 +167,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0249",
-                "comparisonRate": "0.0254",
+                "rate": "0.0299",
+                "comparisonRate": "0.0304",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -186,23 +186,23 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0324",
-                "comparisonRate": "0.0329",
+                "rate": "0.0339",
+                "comparisonRate": "0.0344",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable LVR >90%",
+                        "name": "Basic Variable LVR >80% <=90%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 90.01,
-                        "maximumValue": 95.0,
+                        "minimumValue": 80.01,
+                        "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
                 "additionalValue": "Interest\u00a0on\u00a0balance",
-                "additionalInfo": "Principal and Interest Repayment: 95% maximum  Loan to Value (LVR) ratio inclusive of Lenders Mortgage Insurance (LMI)."
+                "additionalInfo": "Principal and Interest Repayment:90% maximum Loan to Value (LVR) ratio inclusive of Lenders Mortgage Insurance (LMI)."
             }
         ]
     },
