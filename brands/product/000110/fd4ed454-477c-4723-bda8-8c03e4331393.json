@@ -2,7 +2,7 @@
     "data": {
         "productId": "fd4ed454-477c-4723-bda8-8c03e4331393",
         "effectiveFrom": "2022-05-30T14:00:00Z",
-        "lastUpdated": "2022-05-31T04:38:30.190194Z",
+        "lastUpdated": "2022-06-23T00:24:10.916977Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "RateSaver Home Loan",
         "description": "Our simple vanilla loan with a super-low variable rate, unlimited additional repayments as well as the ability to redraw.\n\nThe RateSaver Home Loan is also available for DHOAS eligible applicants",
@@ -50,11 +50,36 @@
         ],
         "fees": [
             {
-                "name": "Consent fee",
+                "name": "Copies of statements (up to 12 months) at branch",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "2.50",
+                "currency": "AUD"
+            },
+            {
+                "name": "Mortgage discharge fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Arrears notice fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "For 2nd or subsequent mortgages or lease registration"
+                "additionalInfo": "2nd and subsequent reminders by letter or phone"
+            },
+            {
+                "name": "Redraw fee (per redraw)",
+                "feeType": "TRANSACTION",
+                "amount": "10.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Default notice fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when a notice is issued regarding a default under the contract"
             },
             {
                 "name": "Legal Fees",
@@ -63,10 +88,18 @@
                 "additionalInfo": "At cost"
             },
             {
-                "name": "Copies of statements (up to 12 months) at branch",
+                "name": "RateSaver Switch fee",
                 "feeType": "EVENT",
-                "amount": "2.50",
-                "currency": "AUD"
+                "amount": "500.00",
+                "currency": "AUD",
+                "additionalInfo": "To switch to RateSaver Home Loan"
+            },
+            {
+                "name": "Consent fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "For 2nd or subsequent mortgages or lease registration"
             },
             {
                 "name": "RateSaver Processing fee",
@@ -83,9 +116,16 @@
                 "additionalInfo": "At cost. Minimum is $250.00"
             },
             {
-                "name": "Mortgage discharge fee",
+                "name": "Other Bank Deposit Fee",
+                "feeType": "DEPOSIT",
+                "amount": "6.50",
+                "currency": "AUD",
+                "additionalInfo": "Cash and cheque deposit at NAB Branch"
+            },
+            {
+                "name": "Copies of statements (over 12 months) per page",
                 "feeType": "EVENT",
-                "amount": "300.00",
+                "amount": "5.00",
                 "currency": "AUD"
             },
             {
@@ -93,19 +133,6 @@
                 "feeType": "VARIABLE",
                 "currency": "AUD",
                 "additionalInfo": "At cost"
-            },
-            {
-                "name": "Arrears notice fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "2nd and subsequent reminders by letter or phone"
-            },
-            {
-                "name": "Archive retrieval fee",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "A hourly fee applies plus any expenses incurred"
             },
             {
                 "name": "Switch/variation fee - home & investment loans",
@@ -121,24 +148,10 @@
                 "additionalInfo": "Per audit certificate requested"
             },
             {
-                "name": "Other Bank Deposit Fee",
-                "feeType": "DEPOSIT",
-                "amount": "6.50",
+                "name": "Archive retrieval fee",
+                "feeType": "VARIABLE",
                 "currency": "AUD",
-                "additionalInfo": "Cash and cheque deposit at NAB Branch"
-            },
-            {
-                "name": "Redraw fee (per redraw)",
-                "feeType": "TRANSACTION",
-                "amount": "10.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Default notice fee",
-                "feeType": "EVENT",
-                "amount": "30.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when a notice is issued regarding a default under the contract"
+                "additionalInfo": "A hourly fee applies plus any expenses incurred"
             },
             {
                 "name": "Paper statement fee (per statement)",
@@ -146,26 +159,13 @@
                 "amount": "2.00",
                 "currency": "AUD",
                 "additionalValue": "P3M"
-            },
-            {
-                "name": "Copies of statements (over 12 months) per page",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "RateSaver Switch fee",
-                "feeType": "EVENT",
-                "amount": "500.00",
-                "currency": "AUD",
-                "additionalInfo": "To switch to RateSaver Home Loan"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0323",
-                "comparisonRate": "0.0327",
+                "rate": "0.0373",
+                "comparisonRate": "0.0377",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -175,8 +175,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0244",
-                "comparisonRate": "0.0248",
+                "rate": "0.0294",
+                "comparisonRate": "0.0298",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -186,8 +186,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.022",
-                "comparisonRate": "0.0224",
+                "rate": "0.027",
+                "comparisonRate": "0.0274",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
