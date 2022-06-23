@@ -7,8 +7,8 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;faa2bfcb-446a-4a6d-8cdc-e02bff622a69&quot;,
-    &quot;effectiveFrom&quot;: &quot;2022-04-13T14:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-04-13T07:28:00.508191Z&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-05-19T14:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-06-23T00:43:12.369532Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;1 Year Fixed Rate Home Loan&quot;,
     &quot;description&quot;: &quot;A Fixed Rate Home Loan gives you the best of both worlds - peace of mind with the certainty of fixed rates, without being locked in for a long period of time.\n\nThe 1 Year Fixed Rate Home Loan is also available for DHOAS eligible applicants&quot;,
@@ -51,11 +51,50 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;name&quot;: &quot;Property valuation fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;
+            &quot;additionalInfo&quot;: &quot;At cost. Minimum is $250.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Arrears notice fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Legal Fees&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At cost&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Switch/variation fee - home &amp; investment loans&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;To switch or vary home loans (other than switching to RateSaver)&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;name&quot;: &quot;Consent fee&quot;,
@@ -65,13 +104,6 @@
             &quot;additionalInfo&quot;: &quot;For 2nd or subsequent mortgages or lease registration&quot;
         },
         {
-            &quot;name&quot;: &quot;Default notice fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;
-        },
-        {
             &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
             &quot;feeType&quot;: &quot;DEPOSIT&quot;,
             &quot;amount&quot;: &quot;6.50&quot;,
@@ -79,10 +111,36 @@
             &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;
         },
         {
-            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
+            &quot;name&quot;: &quot;Fixed Rate Prepayment Cost&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if you repay your fixed rate loan in full before the fixed interest rate period expires; or make partial prepayments greater than $10,000 in any year of the fixed rate period. The prepayment cost is calculated and will be advised when the prepayment is  made on your fixed rate loan.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Stamp Duty&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At cost&quot;
+        },
+        {
+            &quot;name&quot;: &quot;RateSaver Switch fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;To switch to a RateSaver Loan&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;
         },
         {
             &quot;name&quot;: &quot;Processing fee&quot;,
@@ -104,82 +162,24 @@
             ]
         },
         {
-            &quot;name&quot;: &quot;Stamp Duty&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;At cost&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Arrears notice fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;2.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Property valuation fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;At cost. Minimum is $250.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P3M&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Fixed Rate Prepayment Cost&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if you repay your fixed rate loan in full before the fixed interest rate period expires; or make partial prepayments greater than $10,000 in any year of the fixed rate period. The prepayment cost is calculated and will be advised when the prepayment is  made on your fixed rate loan.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;RateSaver Switch fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;500.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;To switch to a RateSaver Loan&quot;
-        },
-        {
             &quot;name&quot;: &quot;Copies of statements (over 12 months) per page&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
-            &quot;name&quot;: &quot;Legal Fees&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;At cost&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Switch/variation fee - home &amp; investment loans&quot;,
+            &quot;name&quot;: &quot;Default notice fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;To switch or vary home loans (other than switching to RateSaver)&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0284&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0311&quot;,
+            &quot;rate&quot;: &quot;0.0359&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0386&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
