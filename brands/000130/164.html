@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;164&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-04-15T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-06-21T10:00:39.4248589Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-06-23T08:00:39.5230223Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Rewards Credit Card&quot;,
     &quot;description&quot;: &quot;Rewards Credit Card&quot;,
@@ -25,11 +25,18 @@
             &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;
         },
         {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Visa Credit card available&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
-            &quot;additionalValue&quot;: &quot;0.00&quot;
+            &quot;additionalValue&quot;: &quot;Apple Pay, Google Pay &amp; Samsung Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -43,7 +50,8 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;500.00&quot;
+            &quot;additionalValue&quot;: &quot;500.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum credit limit of $500&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -55,19 +63,19 @@
             &quot;additionalValue&quot;: &quot;P1Y&quot;
         },
         {
-            &quot;name&quot;: &quot;Late payment notification fee&quot;,
+            &quot;name&quot;: &quot;Late Payment Notification Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When payment to a Home Loan becomes overdue by 11 days and 30 days, we reserve the right to charge a $5 fee.&quot;
-        }
-    ],
-    &quot;depositRates&quot;: [
+            &quot;additionalInfo&quot;: &quot;Charged when payment to a Credit Card becomes overdue by 11 and 30 days&quot;
+        },
         {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;
+            &quot;name&quot;: &quot;Foreign Currency Conversion Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable for all transactions made in a foreign currency or if the merchant is located outside Australia&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -83,7 +91,8 @@
             &quot;rate&quot;: &quot;0.128&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to 55 days interest free on eligible purchases&quot;
         }
     ]
 }</textarea>
