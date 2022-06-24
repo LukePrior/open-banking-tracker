@@ -6,7 +6,7 @@
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Thriday Transaction Account",
         "description": "Imagine a business transaction account that actually saves you time.\nTeam Thrive Pty Ltd ABN 15 637 676 496 (Thriday) is an authorised representative of Regional Australia Bank ABN 21 087 650 360\u202f AFSL 241167.",
-        "brand": "Team Thrive Pty Ltd",
+        "brand": "Thriday",
         "brandName": "Thriday",
         "applicationUri": "https://www.thriday.com.au/",
         "isTailored": false,
@@ -67,6 +67,13 @@
         ],
         "fees": [
             {
+                "name": "Staff Assisted Fee",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies per payment, withdrawal or transfer processed by Service Staff."
+            },
+            {
                 "name": "Access Fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -82,46 +89,11 @@
                 "additionalInfo": "Where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction you may be liable for the Trace Fee. If you ask us to attempt to reverse the transaction, a Recall Fee may also apply."
             },
             {
-                "name": "Staff Assisted Fee",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies per payment, withdrawal or transfer processed by Service Staff."
-            },
-            {
                 "name": "Over Limit Fee",
                 "feeType": "EVENT",
                 "amount": "12.50",
                 "currency": "AUD",
                 "additionalInfo": "This fee applies for each day that a transaction is debited from a customer which results in your transaction account being drawn beyond its available balance."
-            },
-            {
-                "name": "Direct Debit Dishonour Fee",
-                "feeType": "TRANSACTION",
-                "amount": "12.50",
-                "currency": "AUD",
-                "additionalInfo": "Where a direct debit request is rejected by due to insufficient funds in your account, a Dishonour Fee will apply."
-            },
-            {
-                "name": "Inactive Account Fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "If there are no transactions on your Transaction Accounts for a period of 12 months the Transaction Accounts will be considered inactive. This fee applies annually until the Transaction Accounts become active again, dormant or is closed."
-            },
-            {
-                "name": "Emergency Visa Card Fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "USD",
-                "additionalInfo": "If your card is lost or stolen whilst overseas, a replacement card can be replaced within 2 business days."
-            },
-            {
-                "name": "Electronic Transfer Trace",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction you may be liable for the Trace Fee. If you ask us to attempt to reverse the transaction, a Recall Fee may also apply."
             },
             {
                 "name": "Declined Card Dispute Fee",
@@ -146,10 +118,18 @@
                 "additionalInfo": "Applies to each Audit Certificate or Bank Confirmation request submitted by you or an authorised agent (such as an accountant, solicitor or auditor) acting on your behalf."
             },
             {
-                "name": "Default Notice Fee",
+                "name": "Replacement Card Fee",
                 "feeType": "EVENT",
-                "amount": "30.00",
-                "currency": "AUD"
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
+            },
+            {
+                "name": "Emergency Visa Card Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "USD",
+                "additionalInfo": "If your card is lost or stolen whilst overseas, a replacement card can be replaced within 2 business days."
             },
             {
                 "name": "Cheque Deposit Dishonour Fee",
@@ -157,6 +137,54 @@
                 "amount": "12.50",
                 "currency": "AUD",
                 "additionalInfo": "Where a cheque deposited to your account cannot be honoured due to insufficient funds in the drawer's account this fee may apply."
+            },
+            {
+                "name": "Document Searches",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "Per hour. Where you request us to retrieve documents not specifically covered elsewhere a search fee may apply per hour or part thereof."
+            },
+            {
+                "name": "Electronic Transfer Trace",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction you may be liable for the Trace Fee. If you ask us to attempt to reverse the transaction, a Recall Fee may also apply."
+            },
+            {
+                "name": "Cheque Copy or Trace Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "Applies where you request a copy of a personal cheque you deposited, or Financial Institution cheque. Also applies where you wish to determine if a cheque you have written has been deposited or reached its intended destination."
+            },
+            {
+                "name": "Inactive Account Fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "If there are no transactions on your Transaction Accounts for a period of 12 months the Transaction Accounts will be considered inactive. This fee applies annually until the Transaction Accounts become active again, dormant or is closed."
+            },
+            {
+                "name": "Dormant Account Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "This fee applies if your Transaction Account becomes dormant, which is the result of no customer generated transaction activity for a period of seven (7) years."
+            },
+            {
+                "name": "Direct Debit Dishonour Fee",
+                "feeType": "TRANSACTION",
+                "amount": "12.50",
+                "currency": "AUD",
+                "additionalInfo": "Where a direct debit request is rejected by due to insufficient funds in your account, a Dishonour Fee will apply."
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD"
             },
             {
                 "name": "Bank@Post Transaction Fee",
@@ -173,39 +201,11 @@
                 "additionalInfo": "Overseas withdrawals and purchases made using your Visa Debit card will incur a currency conversion. Fee applies for all currency denominations."
             },
             {
-                "name": "Cheque Copy or Trace Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "Applies where you request a copy of a personal cheque you deposited, or Financial Institution cheque. Also applies where you wish to determine if a cheque you have written has been deposited or reached its intended destination."
-            },
-            {
-                "name": "Replacement Card Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request."
-            },
-            {
                 "name": "Cheque Deposit Fee",
                 "feeType": "DEPOSIT",
                 "amount": "0.50",
                 "currency": "AUD",
                 "additionalInfo": "Your first 10 cheque deposits to your accounts each month are free, each subsequent deposit will be charged per cheque."
-            },
-            {
-                "name": "Document Searches",
-                "feeType": "EVENT",
-                "amount": "50.00",
-                "currency": "AUD",
-                "additionalInfo": "Per hour. Where you request us to retrieve documents not specifically covered elsewhere a search fee may apply per hour or part thereof."
-            },
-            {
-                "name": "Dormant Account Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "This fee applies if your Transaction Account becomes dormant, which is the result of no customer generated transaction activity for a period of seven (7) years."
             }
         ],
         "depositRates": [

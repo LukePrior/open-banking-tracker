@@ -2,7 +2,7 @@
     "data": {
         "productId": "60b4de61-85e5-4ee6-91f6-11eb3fa08f38",
         "effectiveFrom": "2022-05-08T14:00:00Z",
-        "lastUpdated": "2022-06-12T21:07:16.003813Z",
+        "lastUpdated": "2022-06-24T01:43:05.813368Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premium Choice Investment Loan \u2013 Fixed Rate 2 Years LVR >90%",
         "description": "Premium Choice Investment Loan \u2013 Fixed Rate 2 Years LVR >90%",
@@ -61,11 +61,24 @@
         ],
         "fees": [
             {
+                "name": "MORTGAGE_APPLICATION_FEE_FURTHER_ADVANCE-EQUAL_TO_OR_LESS_THAN_80%",
+                "feeType": "UPFRONT",
+                "amount": "400.00",
+                "currency": "AUD",
+                "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees."
+            },
+            {
                 "name": "MORTGAGE_APPLICATION_FEE_FURTHER_ADVANCE-GREATER_THAN_80%",
                 "feeType": "UPFRONT",
                 "amount": "600.00",
                 "currency": "AUD",
                 "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees."
+            },
+            {
+                "name": "ARREARS_2ND_AND_SUBSEQUENT_REMINDER_LETTER",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD"
             },
             {
                 "name": "MORTGAGE_APPLICATION_FEE-EQUAL_TO_OR_LESS_THAN_80%",
@@ -78,26 +91,6 @@
                 "name": "MORTGAGE_APPLICATION_FEE-GREATER_THAN_80%",
                 "feeType": "UPFRONT",
                 "amount": "600.00",
-                "currency": "AUD",
-                "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees."
-            },
-            {
-                "name": "FIXED_RATE_BREAK",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Contact The Capricornian Ltd"
-            },
-            {
-                "name": "ARREARS_2ND_AND_SUBSEQUENT_REMINDER_LETTER",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "MORTGAGE_APPLICATION_FEE_FURTHER_ADVANCE-EQUAL_TO_OR_LESS_THAN_80%",
-                "feeType": "UPFRONT",
-                "amount": "400.00",
                 "currency": "AUD",
                 "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees."
             },
@@ -122,6 +115,13 @@
                 "currency": "AUD"
             },
             {
+                "name": "FIXED_RATE_BREAK",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Contact The Capricornian Ltd"
+            },
+            {
                 "name": "CONTRACT_VARIATION_FEE-MORTGAGE_SECURED_LOANS_AND_OVERDRAFTS",
                 "feeType": "EVENT",
                 "amount": "300.00",
@@ -141,15 +141,15 @@
                 "additionalInfo": "Fee is greater than 0.15% of the amount of credit or $395 where funding is more than 60 days from the date of the Offer and Loan Contract"
             },
             {
-                "name": "ARREARS_REMINDER_CALL_FEE",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
                 "name": "INSURANCE_RENEWAL_FEE",
                 "feeType": "EVENT",
                 "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "ARREARS_REMINDER_CALL_FEE",
+                "feeType": "EVENT",
+                "amount": "5.00",
                 "currency": "AUD"
             }
         ],
@@ -161,7 +161,7 @@
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ADVANCE",
-                "repaymentType": "INTEREST_ONLY",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
                 "additionalValue": "P2Y",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."

@@ -2,7 +2,7 @@
     "data": {
         "productId": "164",
         "effectiveFrom": "2020-04-15T14:30:00.0000000Z",
-        "lastUpdated": "2022-06-21T10:00:39.4248589Z",
+        "lastUpdated": "2022-06-23T08:00:39.5230223Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Rewards Credit Card",
         "description": "Rewards Credit Card",
@@ -19,11 +19,18 @@
                 "featureType": "ADDITIONAL_CARDS"
             },
             {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Credit card available"
+            },
+            {
                 "featureType": "DIGITAL_BANKING"
             },
             {
                 "featureType": "DIGITAL_WALLET",
-                "additionalValue": "0.00"
+                "additionalValue": "Apple Pay, Google Pay & Samsung Pay"
+            },
+            {
+                "featureType": "NPP_ENABLED"
             },
             {
                 "featureType": "OTHER",
@@ -37,7 +44,8 @@
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "500.00"
+                "additionalValue": "500.00",
+                "additionalInfo": "Minimum credit limit of $500"
             }
         ],
         "fees": [
@@ -49,19 +57,19 @@
                 "additionalValue": "P1Y"
             },
             {
-                "name": "Late payment notification fee",
+                "name": "Late Payment Notification Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "When payment to a Home Loan becomes overdue by 11 days and 30 days, we reserve the right to charge a $5 fee."
-            }
-        ],
-        "depositRates": [
+                "additionalInfo": "Charged when payment to a Credit Card becomes overdue by 11 and 30 days"
+            },
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "name": "Foreign Currency Conversion Fee",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "Payable for all transactions made in a foreign currency or if the merchant is located outside Australia"
             }
         ],
         "lendingRates": [
@@ -77,7 +85,8 @@
                 "rate": "0.128",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS"
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "Up to 55 days interest free on eligible purchases"
             }
         ]
     },
