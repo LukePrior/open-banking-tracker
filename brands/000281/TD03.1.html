@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broker Term Deposit</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;TD03.1&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-06-23T03:00:14Z&quot;,
+    &quot;effectiveTo&quot;: &quot;2030-06-24T23:00:26Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-06-20T07:47:32Z&quot;,
+    &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
+    &quot;name&quot;: &quot;Broker Term Deposit&quot;,
+    &quot;description&quot;: &quot;A great way to reach your savings goals, with no fees and a competitive interest rate locked in for terms from 31 days to 60 months.&quot;,
+    &quot;brand&quot;: &quot;Challenger Bank&quot;,
+    &quot;brandName&quot;: &quot;Challenger Bank&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;termsUri&quot;: &quot;https://www.challenger.com.au/banktermdepositammpds&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.challenger.com.au/banktermdepositammpds&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.challenger.com.au/bankfees&quot;
+    },
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Our Term Deposits have a minimum balance of $5,000.00.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.challenger.com.au/banktermdepositammpds&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;This account is available via Australian Money Market&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.challenger.com.au/banktermdepositammpds&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;additionalInfo&quot;: &quot;To open a Term Deposit, you must be a natural person.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;14&quot;,
+            &quot;additionalInfo&quot;: &quot;To open an account, you must be 14 years or older.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://https://www.challenger.com.au/banktermdepositammpds&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;To open an account, you must be solely a tax resident of Australia.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://https://www.challenger.com.au/banktermdepositammpds&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Voucher/information retrieval (minimum fee)&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Voucher/information retrieval (per hour)&quot;,
+            &quot;amount&quot;: &quot;60.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Audit certificate&quot;,
+            &quot;amount&quot;: &quot;35.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;rate&quot;: &quot;0.0040&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P31D&quot;,
+            &quot;additionalValue&quot;: &quot;P31D&quot;,
+            &quot;additionalInfo&quot;: &quot;31 day fixed term deposit with interest paid at maturity&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.challenger.com.au/banktermdepositammpds&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 31,
+                    &quot;maximumValue&quot;: 31,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0195&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;6 month fixed term deposit with interest paid at maturity&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 6,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0300&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;24 month fixed term deposit with interest paid annually&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 50000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;3 month fixed term deposit with interest paid at maturity&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 3,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;12 month fixed term deposit with interest paid at maturity&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 12,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0220&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;9 month fixed term deposit with interest paid at maturity&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0375&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;60 month fixed term deposit with interest paid annually&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0335&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;36 month fixed term deposit with interest paid annually&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 36,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0365&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;48 month fixed term deposit with interest paid annually&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is paid to your nominated account.&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>
