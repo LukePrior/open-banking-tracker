@@ -112,7 +112,7 @@ for root, dirs, files in os.walk("brands/product/"):
         if rate == None:
             continue
 
-        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "description": product["data"]["description"], "rate": rate}
+        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "rate": rate}
 
         if "brandName" in product["data"]:
             processed["brandName"] = product["data"]["brandName"]
