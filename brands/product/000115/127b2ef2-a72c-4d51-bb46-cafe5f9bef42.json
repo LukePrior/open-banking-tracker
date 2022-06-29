@@ -1,6 +1,6 @@
 {
     "data": {
-        "lastUpdated": "2022-05-24T14:35:22.000Z",
+        "lastUpdated": "2022-06-28T14:31:24.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bendigo Easy Retirement Account",
         "description": "A transaction account designed to make life easier for retirees and pensioners.",
@@ -9,7 +9,6 @@
         "applicationUri": "https://www.bendigobank.com.au/personal/transaction-accounts/easy-retirement-account/",
         "isTailored": false,
         "bundles": [],
-        "cardArt": [],
         "features": [
             {
                 "featureType": "UNLIMITED_TXNS"
@@ -25,7 +24,7 @@
                 "additionalValue": "A card is available for the product to access funds"
             }
         ],
-        "constraints": [],
+        "cardArt": [],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -37,41 +36,27 @@
                 "additionalInfo": "Available to retirees over 55 years of age who are either a self-funded retiree or a recipient of a Centrelink aged pension of Department of Veterans\u2019 Affairs (DVA) administered pension."
             }
         ],
+        "constraints": [],
         "lendingRates": [],
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0035000000000000",
+                "rate": "0.0030000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "$250,000 plus",
+                        "name": "$0 < $9,999.99",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": "250000.0000000000000000",
-                        "maximumValue": "0.0000000000000000",
+                        "minimumValue": "0.0000000000000000",
+                        "maximumValue": "9999.9900000000000000",
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0015000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "$10,000 < $49,999.99",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": "10000.0000000000000000",
-                        "maximumValue": "49999.9900000000000000",
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ]
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0025000000000000",
+                "rate": "0.0055000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -86,15 +71,30 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0010000000000000",
+                "rate": "0.0065000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "$0 < $9,999.99",
+                        "name": "$250,000 plus",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": "0.0000000000000000",
-                        "maximumValue": "9999.9900000000000000",
+                        "minimumValue": "250000.0000000000000000",
+                        "maximumValue": "0.0000000000000000",
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0035000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$10,000 < $49,999.99",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": "10000.0000000000000000",
+                        "maximumValue": "49999.9900000000000000",
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ]
@@ -114,11 +114,6 @@
                 "additionalValue": "P1M",
                 "discounts": [
                     {
-                        "description": "Holds a Sandhurst Trustees Managed Fund",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.000000"
-                    },
-                    {
                         "description": "Holds a home loan with Bendigo Bank ",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "3.000000"
@@ -128,6 +123,11 @@
                         "discountType": "DEPOSITS",
                         "amount": "3.000000",
                         "additionalValue": "2000"
+                    },
+                    {
+                        "description": "Holds a Sandhurst Trustees Managed Fund",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.000000"
                     },
                     {
                         "description": "Holds an eligible Bendigo Bank CGU insurance Policy ",
