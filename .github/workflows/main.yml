@@ -29,6 +29,9 @@ jobs:
       - name: Download Products
         run: python product.py
 
+      - name: Generate stats
+        run: python stats.py
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
