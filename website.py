@@ -74,7 +74,7 @@ for brand in brands:
                 with div():
                     attr(id=product["productId"], style="width:300px;height:300px;border-style:solid;margin:25px;padding:25px;cursor:pointer;", onclick="location.href='" + product["productId"] + ".html';")
                     p(product['name'])
-                    if "cardArt" in product and len(product['cardArt']) > 0:
+                    if "cardArt" in product and product["cardArt"] != None and len(product['cardArt']) > 0:
                         source = product['cardArt'][0]['imageUri']
                     else:
                         source = get_image(brand)
