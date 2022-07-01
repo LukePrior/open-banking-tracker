@@ -57,6 +57,8 @@ def check_offset(product):
     if "features" in product["data"]:
         for feature in product["data"]["features"]:
             if feature["featureType"] == "OFFSET":
+                if "additionalValue" in feature and (feature["additionalValue"] == "No" or feature["additionalValue"] == "Not available"):
+                    continue
                 return True
     return False
 
