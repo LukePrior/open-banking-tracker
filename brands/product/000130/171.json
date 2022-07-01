@@ -2,7 +2,7 @@
     "data": {
         "productId": "171",
         "effectiveFrom": "2020-06-04T14:30:00.0000000Z",
-        "lastUpdated": "2022-06-27T16:00:38.3501237Z",
+        "lastUpdated": "2022-06-30T04:00:39.5610249Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Business Basic Access",
         "description": "Business Basic Access",
@@ -11,46 +11,41 @@
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.bcu.com.au/business-access-and-savings/business-basic-access",
+            "termsUri": "https://www.bcu.com.au/important-documents",
             "feesAndPricingUri": "https://www.bcu.com.au/business-access-and-savings/business-basic-access"
         },
         "features": [
             {
-                "featureType": "ADDITIONAL_CARDS"
+                "featureType": "BILL_PAYMENT"
             },
             {
-                "featureType": "OVERDRAFT"
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit card available to authorised signatories"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay, Google Pay & Samsung Pay"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "NPP_PAYID"
+            },
+            {
+                "featureType": "OVERDRAFT",
+                "additionalInfo": "Subject to approval"
             },
             {
                 "featureType": "UNLIMITED_TXNS"
             }
         ],
-        "fees": [
+        "eligibility": [
             {
-                "name": "Company Search Fee",
-                "feeType": "UPFRONT",
-                "amount": "30.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Outward Swift (RTGS)",
-                "feeType": "UPFRONT",
-                "amount": "15.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Over Limit Account Fee",
-                "feeType": "PERIODIC",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "discounts": [
-                    {
-                        "description": "On a fee for maintaining a set balance",
-                        "discountType": "BALANCE",
-                        "feeRate": "1.0",
-                        "additionalValue": "50.000000"
-                    }
-                ]
+                "eligibilityType": "BUSINESS"
             }
         ],
         "depositRates": [
@@ -59,14 +54,6 @@
                 "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M"
-            }
-        ],
-        "lendingRates": [
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.1304",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS"
             }
         ]
     },
