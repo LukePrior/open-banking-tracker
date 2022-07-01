@@ -53,6 +53,13 @@ def check_eligability(product):
                     return False
     return True
 
+def check_offset(product):
+    if "features" in product["data"]:
+        for feature in product["data"]["features"]:
+            if feature["featureType"] == "OFFSET":
+                return True
+    return False
+
 def calculate_interest(lendingRates):
     global lowest_rate
     product_rates = []
@@ -112,7 +119,7 @@ for root, dirs, files in os.walk("brands/product/"):
         if rate == None:
             continue
 
-        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "rate": rate}
+        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "rate": rate, "offset": check_offset(product)}
 
         if "brandName" in product["data"]:
             processed["brandName"] = product["data"]["brandName"]
