@@ -134,7 +134,6 @@ for root, dirs, files in os.walk("brands/product/"):
         else:
             processed["brandName"] = product["data"]["brand"]
 
-        print(processed)
         data.append(processed)
 
 with open('aggregate/RESIDENTIAL_MORTGAGES/data.json', 'w') as outfile:
