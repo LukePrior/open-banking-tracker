@@ -98,6 +98,12 @@ def calculate_interest(lendingRates):
         if "repaymentType" in lendingRate and lendingRate["repaymentType"] != None:
             formatted["repaymentType"] = lendingRate["repaymentType"]
 
+        if "tiers" in lendingRate:
+            for tier in lendingRate["tiers"]:
+                if ("LVR" in tier["name"].upper() and tier["unitOfMeasure"] == "PERCENT" and "minimumValue" in tier and "maximumValue" in tier):
+                    formatted["minLVR"] = tier["minimumValue"]
+                    formatted["maxLVR"] = tier["maximumValue"]
+
         product_rates.append(formatted)
 
     if len(product_rates) == 0:
@@ -128,6 +134,7 @@ for root, dirs, files in os.walk("brands/product/"):
         else:
             processed["brandName"] = product["data"]["brand"]
 
+        print(processed)
         data.append(processed)
 
 with open('aggregate/RESIDENTIAL_MORTGAGES/data.json', 'w') as outfile:
