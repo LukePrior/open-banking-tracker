@@ -73,19 +73,18 @@ def check_redraw(product):
     return False
 
 def calculate_interest(lendingRates):
-
     global lowest_rate
     product_rates = []
     for lendingRate in lendingRates:
         if lendingRate["lendingRateType"] != "VARIABLE" and lendingRate["lendingRateType"] != "FIXED":
             continue
 
-        if "loanPurpose" in lendingRate and lendingRate["loanPurpose"] == "INVESTMENT":
-            continue
-
         rate = round(float(lendingRate["rate"])*100,2)
 
         formatted = {"rate": rate, "lendingRateType": lendingRate["lendingRateType"]}
+
+        if "loanPurpose" in lendingRate:
+            formatted["purpose"] = lendingRate["loanPurpose"]
 
         if lendingRate["lendingRateType"] == "FIXED" and "additionalValue" in lendingRate:
             period = parse_duration(lendingRate["additionalValue"])
