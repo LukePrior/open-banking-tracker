@@ -62,7 +62,7 @@ html_file.close()
 
 for brand in brands:
     products = get_products(brand)
-    if products != None and "data" in products:
+    if products != None and "data" in products and "products" in products["data"]:
         products = products["data"]["products"]
     else:
         continue
