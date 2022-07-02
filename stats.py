@@ -73,25 +73,14 @@ def check_redraw(product):
     return False
 
 def calculate_interest(lendingRates):
+
     global lowest_rate
     product_rates = []
     for lendingRate in lendingRates:
-        if "calculationFrequency" not in lendingRate:
-            continue
-
         if lendingRate["lendingRateType"] != "VARIABLE" and lendingRate["lendingRateType"] != "FIXED":
             continue
 
         if "loanPurpose" in lendingRate and lendingRate["loanPurpose"] == "INVESTMENT":
-            continue
-
-        calculationFrequency = lendingRate["calculationFrequency"]
-        duration = parse_duration(calculationFrequency)
-
-        if duration == None:
-            continue
-
-        if duration.total_seconds() == 0:
             continue
 
         rate = round(float(lendingRate["rate"])*100,2)
@@ -111,8 +100,16 @@ def calculate_interest(lendingRates):
         if "tiers" in lendingRate:
             for tier in lendingRate["tiers"]:
                 if ("LVR" in tier["name"].upper() and tier["unitOfMeasure"] == "PERCENT" and "minimumValue" in tier and "maximumValue" in tier):
-                    formatted["minLVR"] = tier["minimumValue"]
-                    formatted["maxLVR"] = tier["maximumValue"]
+                    if (tier["minimumValue"] != None):
+                        if (float(tier["minimumValue"]) <= 1):
+                            formatted["minLVR"] = float(tier["minimumValue"])*100
+                        else:
+                            formatted["minLVR"] = float(tier["minimumValue"])
+                    if (tier["maximumValue"] != None):
+                        if (float(tier["maximumValue"]) <= 1):
+                            formatted["maxLVR"] = float(tier["maximumValue"])*100
+                        else:
+                            formatted["maxLVR"] = float(tier["maximumValue"])
 
         product_rates.append(formatted)
 
