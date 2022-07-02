@@ -62,6 +62,16 @@ def check_offset(product):
                 return True
     return False
 
+
+def check_redraw(product):
+    if "features" in product["data"]:
+        for feature in product["data"]["features"]:
+            if feature["featureType"] == "REDRAW":
+                if "additionalValue" in feature and (feature["additionalValue"] == "No" or feature["additionalValue"] == "Not available"):
+                    continue
+                return True
+    return False
+
 def calculate_interest(lendingRates):
     global lowest_rate
     product_rates = []
@@ -127,7 +137,7 @@ for root, dirs, files in os.walk("brands/product/"):
         if rate == None:
             continue
 
-        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "rate": rate, "offset": check_offset(product)}
+        processed = {"brandId": brand, "brandName": "placeholder", "productId": product["data"]["productId"], "productName": product["data"]["name"], "rate": rate, "offset": check_offset(product), "redraw": check_redraw(product)}
 
         if "brandName" in product["data"]:
             processed["brandName"] = product["data"]["brandName"]
