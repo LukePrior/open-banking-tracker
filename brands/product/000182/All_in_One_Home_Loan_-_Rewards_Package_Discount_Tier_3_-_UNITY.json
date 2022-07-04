@@ -2,8 +2,14 @@
     "data": {
         "features": [
             {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "13",
+                "featureType": "OFFSET",
+                "additionalValue": "100% interest offset facility",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalValue": "Unlimited free redraw",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
@@ -20,12 +26,28 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalValue": "All in One Rewards Package",
+                "additionalInfo": "Package offers a range of benefits in relation to your home loan, banking products & insurances for a single annual package fee. Available on eligible home loan products.",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
                 "additionalInfo": "Auto repayments from salary or transferred from another account weekly, fortnightly, or monthly",
                 "additionalInfoUri": ""
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Flexible repayment options at no extra cost (conditions apply)",
+                "additionalInfo": "No penalty for lump sum repayments",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No penalty for early pay outs",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Minimum $10,000 top up facility available",
                 "additionalInfoUri": ""
             },
             {
@@ -35,7 +57,37 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Additional repayments accepted -  maximum $10,000 per year",
+                "additionalInfo": "No annual fee on Visa Credit Card",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Access to Premium Rate for personal loans",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No switching fee to Fixed Rate",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Bonus rate on Term Deposits",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Repayment Holiday",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Discount on General Insurance",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Loan period up to 30 years",
                 "additionalInfoUri": ""
             }
         ],
@@ -69,6 +121,11 @@
                 "eligibilityType": "OTHER",
                 "additionalInfo": "Credit eligibility criteria, terms and conditions, fees and charges apply.",
                 "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Pay an annual package fee for the All in One Home Loan Rewards Package",
+                "additionalInfoUri": "https://www.unitybank.com.au/loans-home-a-investment-loans-all-in-one-rewards-package.html#key-features"
             }
         ],
         "fees": [
@@ -133,6 +190,20 @@
                 ]
             },
             {
+                "name": "ALL_IN_ONE_REWARDS_PACKAGE_ANNUAL_FEE",
+                "feeType": "PERIODIC",
+                "amount": "300.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1Y",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": []
+            },
+            {
                 "name": "CONSENT_TO_SUBDIVISION",
                 "feeType": "EVENT",
                 "amount": "250.00",
@@ -185,20 +256,7 @@
                 "discounts": []
             },
             {
-                "name": "EARLY_TERMINATION_FEE_-_FIXED_LOANS",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Calculated using the ERF calculator",
-                "additionalInfoUri": "",
-                "discounts": []
-            },
-            {
-                "name": "ESTABLISHMENT_FEE_-_FIXED_RATE_HOME_LOANS",
+                "name": "ESTABLISHMENT_FEE_-_HOME_LOAN_TOP_UPS",
                 "feeType": "UPFRONT",
                 "amount": "300.00",
                 "balanceRate": null,
@@ -208,7 +266,27 @@
                 "currency": "AUD",
                 "additionalInfo": "",
                 "additionalInfoUri": "",
-                "discounts": []
+                "discounts": [
+                    {
+                        "description": "Advantage Plus Home Loan Discounts",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "0.00000",
+                        "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Must hold an eligible home loan and pay an annual fee",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
             },
             {
                 "name": "MORTGAGE_LOAN_-_LEGAL_&_VALUATION_FEES",
@@ -221,25 +299,51 @@
                 "currency": "AUD",
                 "additionalInfo": "Other fees and charges may apply and will be specified at the time the loan is approved.",
                 "additionalInfoUri": "",
-                "discounts": []
+                "discounts": [
+                    {
+                        "description": "Advantage Plus Home Loan Discounts",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "0.00000",
+                        "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Must hold an eligible home loan and pay an annual fee",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "First Home Buyers and FHLDS Discounts",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": "1.00000",
+                        "additionalValue": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Fees waived for first home buyers and FHLDS eligible members",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
             },
             {
                 "name": "PROGRESSIVE_DRAWING_FEE",
                 "feeType": "UPFRONT",
                 "amount": "250.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "",
-                "additionalInfoUri": "",
-                "discounts": []
-            },
-            {
-                "name": "RATE_LOCK_FEE",
-                "feeType": "EVENT",
-                "amount": "600.00",
                 "balanceRate": null,
                 "transactionRate": null,
                 "accruedRate": null,
@@ -288,7 +392,7 @@
                 "additionalInfoUri": "",
                 "discounts": [
                     {
-                        "description": "First Home Buyers Discount",
+                        "description": "First Home Buyers and FHLDS Discounts",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "0",
                         "balanceRate": null,
@@ -299,7 +403,7 @@
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Fee capped or fee discounted for first home buyers",
+                                "additionalInfo": "Fees waived for first home buyers and FHLDS eligible members",
                                 "additionalInfoUri": ""
                             }
                         ],
@@ -348,39 +452,6 @@
                 "discounts": []
             },
             {
-                "name": "VARIATION_FEE_-_LOAN_TYPE",
-                "feeType": "EVENT",
-                "amount": "150.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "",
-                "additionalInfoUri": "",
-                "discounts": [
-                    {
-                        "description": "All in One Home Loan features and benefits",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "0",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": "1.00000",
-                        "additionalValue": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Members with an All in One Home Loan",
-                                "additionalInfoUri": ""
-                            }
-                        ],
-                        "additionalInfo": "",
-                        "additionalInfoUri": ""
-                    }
-                ]
-            },
-            {
                 "name": "VARIATION_FEE_-_RENEWING_EXPIRED",
                 "feeType": "EVENT",
                 "amount": "150.00",
@@ -409,38 +480,37 @@
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.05490",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.03550",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "P60M",
                 "additionalInfo": "Comparison Rate is calculated on a loan amount of $150,000 over a term of 25 years based on monthly repayments. WARNING: This comparison rate is true only for the example given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": "https://www.reliancebank.com.au/rates-and-fees-loan-rates.html",
+                "additionalInfoUri": "https://www.unitybank.com.au/rates-and-fees-loan-rates.html",
                 "interestPaymentDue": "IN_ARREARS",
-                "comparisonRate": "0.05210",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "comparisonRate": "0.03920",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "First_Rate_Investment_Loan_-_Fixed_5_Year_-_Interest_Only_-_RELIANCE",
+        "productId": "All_in_One_Home_Loan_-_Rewards_Package_Discount_Tier_3_-_UNITY",
         "lastUpdated": "2022-07-04T10:31:03.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "First Rate Investment Loan - Fixed 5 Year - Interest Only - RELIANCE",
-        "description": "Whether you're investing in property for the first time, or seeking to extend your portfolio, our 5 year Fixed Interest Only loan can provide all the certainty you need.",
-        "brand": "R",
-        "brandName": "Reliance Bank",
+        "name": "All in One Home Loan - Rewards Package Discount Tier 3 - UNITY",
+        "description": "The All in One Home Loan Rewards Package Discount product offers you complete flexibility with a full range of features and a highly competitive discounted variable interest rate.",
+        "brand": "M",
+        "brandName": "Unity Bank",
         "applicationUri": "https://asset.unitybank.com.au/files/Forms/HomeLoanApplication.pdf",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.reliancebank.com.au/loans-home-a-investment-loans-fixed-rate.html#key-features",
+            "overviewUri": "https://www.unitybank.com.au/loans-home-a-investment-loans-all-in-one.html#key-features",
             "termsUri": "",
             "eligibilityUri": "",
-            "feesAndPricingUri": "https://asset.reliancebank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf",
+            "feesAndPricingUri": "https://asset.unitybank.com.au/files/Rates%20and%20Fees/FeesandCharges.pdf",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://ibanking.reliancebank.com.au/rel-openbanking/cds-au/v1/banking/products/First_Rate_Investment_Loan_-_Fixed_5_Year_-_Interest_Only_-_RELIANCE"
+        "self": "https://ibanking.unitybank.com.au/OpenBanking/cds-au/v1/banking/products/All_in_One_Home_Loan_-_Rewards_Package_Discount_Tier_3_-_UNITY"
     },
     "meta": {}
 }
