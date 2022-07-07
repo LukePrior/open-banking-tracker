@@ -1,89 +1,139 @@
 {
     "data": {
-        "productId": "d1ec7f07-43e8-4bb2-b9cf-c4d740522556",
-        "lastUpdated": "2021-11-12T16:38:27.334026Z",
-        "productCategory": "OVERDRAFTS",
-        "name": "Pension Overdraft",
-        "description": "Pension Overdraft",
         "brand": "Bank First",
-        "brandName": "Bank First",
-        "applicationUri": "https://apply.bankfirst.com.au/Integate/frmIntegate.aspx?company=VTMB&merchant=VTMB&operator=WEB&password=password&product=AU_od",
+        "description": "Pension Overdraft",
         "isTailored": false,
+        "lastUpdated": "2021-11-12T16:38:27.334026Z",
+        "name": "Pension Overdraft",
+        "productCategory": "OVERDRAFTS",
+        "productId": "d1ec7f07-43e8-4bb2-b9cf-c4d740522556",
         "additionalInformation": {
-            "overviewUri": "https://www.bankfirst.com.au/loans/personal-loans/overdraft",
-            "termsUri": "https://www.bankfirst.com.au/disclosure-documents",
+            "bundleUri": null,
             "eligibilityUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_a.pdf?la=en&hash=1BD3E51F84EC9362648BB08285FA0082715FEDB6",
-            "feesAndPricingUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37"
+            "feesAndPricingUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+            "overviewUri": "https://www.bankfirst.com.au/loans/personal-loans/overdraft",
+            "termsUri": "https://www.bankfirst.com.au/disclosure-documents"
         },
-        "features": [
-            {
-                "featureType": "DIGITAL_BANKING"
-            },
-            {
-                "featureType": "UNLIMITED_TXNS"
-            }
-        ],
+        "applicationUri": "https://apply.bankfirst.com.au/Integate/frmIntegate.aspx?company=VTMB&merchant=VTMB&operator=WEB&password=password&product=AU_od",
+        "brandName": "Bank First",
+        "cardArt": [],
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "bundles": [],
+        "constraints": [],
+        "depositRates": [],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
+                "additionalInfo": null,
+                "additionalInfoUri": null,
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "PENSION_RECIPIENT"
+                "eligibilityType": "PENSION_RECIPIENT",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": null,
+                "additionalInfoUri": null,
                 "additionalValue": "Individual applications must be permanent residents and joint accounts require at least one permanent resident as well as additional requirements for the non-residant applicants."
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "Available to members only"
+                "additionalInfo": "Available to members only",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null
             }
         ],
         "fees": [
             {
+                "feeType": "EVENT",
                 "name": "Over The Limit Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
+                "accrualFrequency": null,
+                "accruedRate": null,
                 "additionalInfo": "Payable immediately if the balance of your account is over the credit limit at the close of business on any day. The fee is payable again at the end of each period of 7 calendar days thereafter if the balance remains over the credit limit.",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37"
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             },
             {
-                "name": "Arrears Fee",
                 "feeType": "EVENT",
+                "name": "Arrears Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
                 "amount": "20.00",
+                "balanceRate": null,
                 "currency": "AUD",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37"
+                "discounts": [],
+                "transactionRate": null
             },
             {
+                "feeType": "PERIODIC",
                 "name": "Overdraft Service Fee (Limit <$1000)",
-                "feeType": "PERIODIC",
-                "amount": "30.00",
                 "accrualFrequency": "P1Y",
-                "currency": "AUD",
-                "additionalValue": "P1Y",
+                "accruedRate": null,
                 "additionalInfo": "Annual Service fee is debited to the Overdraft Account annually on the last working day in June",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37"
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": "P1Y",
+                "amount": "30.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             },
             {
-                "name": "Overdraft Service Fee (Limit >$1000)",
                 "feeType": "PERIODIC",
-                "amount": "72.00",
+                "name": "Overdraft Service Fee (Limit >$1000)",
                 "accrualFrequency": "P1Y",
-                "currency": "AUD",
-                "additionalValue": "P1Y",
+                "accruedRate": null,
                 "additionalInfo": "The Annual Service fee is debited to the Overdraft Account annually on the last working day in June",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37"
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": "P1Y",
+                "amount": "72.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.1279",
-                "calculationFrequency": "P1D",
+                "rate": "0.1279000000000000",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/loans/interest-rates",
+                "additionalValue": null,
                 "applicationFrequency": "P1M",
-                "additionalInfoUri": "https://www.bankfirst.com.au/loans/interest-rates"
+                "calculationFrequency": "P1D",
+                "comparisonRate": null,
+                "interestPaymentDue": null,
+                "loanPurpose": null,
+                "repaymentType": null,
+                "tiers": []
             }
         ]
     },
