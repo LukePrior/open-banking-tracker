@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;6c331888-fe1a-44b5-b813-6feb7fa3b9d8&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-04-13T14:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-04-13T22:57:15.62524Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-07T03:43:33.696991Z&quot;,
     &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
     &quot;name&quot;: &quot;Variable Rate Personal Loan&quot;,
     &quot;description&quot;: &quot;If you\u2019re looking for a great value personal loan, our Variable Rate Personal Loan gives you flexibility, a competitive interest rate and fast approval.&quot;,
@@ -61,6 +61,12 @@
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
+        },
         {
             &quot;name&quot;: &quot;Processing and switch fee - Personal and Car Loans&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
@@ -115,6 +121,19 @@
             ]
         },
         {
+            &quot;name&quot;: &quot;Loan service fee - Personal, Green &amp; Car Loans&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
             &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;10.00&quot;,
@@ -124,13 +143,6 @@
             &quot;name&quot;: &quot;Personal Property security admin fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;30.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Loan service fee - Personal, Green &amp; Car Loans&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;
         },
         {
             &quot;name&quot;: &quot;Copies of statements (over 12 months) per page&quot;,
@@ -153,13 +165,6 @@
             &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;
         },
         {
-            &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
-            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
-            &quot;amount&quot;: &quot;6.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;
-        },
-        {
             &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;2.00&quot;,
@@ -167,30 +172,25 @@
             &quot;additionalValue&quot;: &quot;P1M&quot;
         },
         {
-            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A hourly fee applies plus any expenses incurred&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;2.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
             &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;50.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;amount&quot;: &quot;6.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0905&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0995&quot;,
+            &quot;rate&quot;: &quot;0.1005&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1097&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -199,8 +199,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.114&quot;,
-            &quot;comparisonRate&quot;: &quot;0.1236&quot;,
+            &quot;rate&quot;: &quot;0.124&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1337&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -209,8 +209,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.124&quot;,
-            &quot;comparisonRate&quot;: &quot;0.138&quot;,
+            &quot;rate&quot;: &quot;0.134&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1483&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -219,8 +219,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.078&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0867&quot;,
+            &quot;rate&quot;: &quot;0.088&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0969&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -229,8 +229,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0585&quot;,
-            &quot;comparisonRate&quot;: &quot;0.067&quot;,
+            &quot;rate&quot;: &quot;0.0685&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0772&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
