@@ -16,12 +16,38 @@
     &quot;isTailored&quot;: false,
     &quot;bundles&quot;: [],
     &quot;cardArt&quot;: [],
+    &quot;eligibility&quot;: [],
+    &quot;lendingRates&quot;: [],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0005000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 2000,
+                    &quot;maximumValue&quot;: 5000000,
+                    &quot;name&quot;: &quot;$2000 - $5,000,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 1999.99,
+                    &quot;name&quot;: &quot;$0 - $1,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ]
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
         }
     ],
-    &quot;eligibility&quot;: [],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
@@ -40,32 +66,6 @@
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;4.000000&quot;,
             &quot;discounts&quot;: []
-        }
-    ],
-    &quot;lendingRates&quot;: [],
-    &quot;depositRates&quot;: [
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0005000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$2000 - $5,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: &quot;2000.0000000000000000&quot;,
-                    &quot;maximumValue&quot;: &quot;5000000.0000000000000000&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;$0 - $1,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: &quot;0.0000000000000000&quot;,
-                    &quot;maximumValue&quot;: &quot;1999.9900000000000000&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ]
         }
     ],
     &quot;additionalInformation&quot;: {
