@@ -10,12 +10,38 @@
         "isTailored": false,
         "bundles": [],
         "cardArt": [],
+        "eligibility": [],
+        "lendingRates": [],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0005000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "additionalValue": "P1Y",
+                "tiers": [
+                    {
+                        "minimumValue": 2000,
+                        "maximumValue": 5000000,
+                        "name": "$2000 - $5,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "minimumValue": 0,
+                        "maximumValue": 1999.99,
+                        "name": "$0 - $1,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            }
+        ],
         "features": [
             {
                 "featureType": "DIGITAL_BANKING"
             }
         ],
-        "eligibility": [],
         "constraints": [
             {
                 "constraintType": "OPENING_BALANCE",
@@ -34,32 +60,6 @@
                 "feeType": "TRANSACTION",
                 "amount": "4.000000",
                 "discounts": []
-            }
-        ],
-        "lendingRates": [],
-        "depositRates": [
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0005000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P3M",
-                "additionalValue": "P1Y",
-                "tiers": [
-                    {
-                        "name": "$2000 - $5,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": "2000.0000000000000000",
-                        "maximumValue": "5000000.0000000000000000",
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
-                    {
-                        "name": "$0 - $1,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": "0.0000000000000000",
-                        "maximumValue": "1999.9900000000000000",
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
             }
         ],
         "additionalInformation": {

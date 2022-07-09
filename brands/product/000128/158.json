@@ -1,0 +1,112 @@
+{
+    "data": {
+        "productId": "158",
+        "effectiveFrom": "2004-08-31T14:30:00.0000000Z",
+        "lastUpdated": "2022-07-08T10:00:21.0027361Z",
+        "productCategory": "OVERDRAFTS",
+        "name": "Equity Access Account",
+        "description": "Equity Access Account",
+        "brand": "PNB",
+        "brandName": "P&N Bank",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.pnbank.com.au/home-loans/access-your-equity/equity-access/",
+            "termsUri": "https://www.pnbank.com.au/legal/terms-conditions/lending/",
+            "feesAndPricingUri": "https://www.pnbank.com.au/home-loans/access-your-equity/equity-access/#tab2"
+        },
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT"
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit card available"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "OVERDRAFT"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Discharge Mtg - Non-Settlement",
+                "feeType": "EVENT",
+                "amount": "350.00",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/#home-loans"
+            },
+            {
+                "name": "Discharge Mtg - Settlement Fee",
+                "feeType": "EVENT",
+                "amount": "395.00",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/#home-loans"
+            },
+            {
+                "name": "Over Limit Account Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "If during the month an Overdraft or Line of Credit account exceeds the approved limit by more than $50, a $10 fee will be charged",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/#home-loans",
+                "discounts": [
+                    {
+                        "description": "On a fee for maintaining a set balance",
+                        "discountType": "BALANCE",
+                        "feeRate": "1.0",
+                        "additionalValue": "50.000000"
+                    }
+                ]
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0562",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/158"
+    },
+    "meta": {}
+}
