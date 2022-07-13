@@ -3,7 +3,7 @@
         "productId": "BPA",
         "effectiveFrom": "2020-04-30T14:00:00.000Z",
         "effectiveTo": "2999-12-30T13:00:00.000Z",
-        "lastUpdated": "2022-06-16T14:00:00.000Z",
+        "lastUpdated": "2022-07-12T14:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Business Premium Account",
         "description": "Easy business banking with no monthly account keeping fee and unlimited fee free transactions.",
@@ -291,6 +291,58 @@
         ],
         "depositRates": [
             {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$1 to $19,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 19999.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "Business Premium Variable Interest calculated daily and paid monthly on a tiered basis."
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.004",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P5M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P5M",
+                "additionalInfo": "5 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0145",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "6 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
                 "depositRateType": "FIXED",
                 "rate": "0.006",
                 "calculationFrequency": "P1D",
@@ -343,22 +395,6 @@
                 "additionalValue": "P9M",
                 "additionalInfo": "9 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "$1 to $19,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 19999.0,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ],
-                "additionalInfo": "Business Premium Variable Interest calculated daily and paid monthly on a tiered basis. Calculated on the credit balance less any flexiRate balances. No interest is paid when account is operating in offset mode."
             },
             {
                 "depositRateType": "VARIABLE",
@@ -510,42 +546,6 @@
                 ],
                 "additionalValue": "P4M",
                 "additionalInfo": "4 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.004",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P5M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P5M",
-                "additionalInfo": "5 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0145",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P6M",
-                "additionalInfo": "6 Month FlexiRate. Optional flexiRate feature with Business Premium account.",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
             },
             {
