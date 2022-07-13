@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Essentials I/O Fixed</title>
+    <title>Essentials I/O</title>
   </head>
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;productId&quot;: &quot;831&quot;,
+    &quot;productId&quot;: &quot;830&quot;,
     &quot;effectiveFrom&quot;: &quot;2014-07-28T00:00:00.000+10:00&quot;,
     &quot;effectiveTo&quot;: &quot;2029-12-31T00:00:00.000+11:00&quot;,
     &quot;lastUpdated&quot;: &quot;2014-07-28T00:00:00.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
-    &quot;name&quot;: &quot;Essentials I/O Fixed&quot;,
-    &quot;description&quot;: &quot;The Essentials Investor is a solid bet on a loan that has your back, whether it\u2019s your first investment home, your tenth or anything in-between.&quot;,
+    &quot;name&quot;: &quot;Essentials I/O&quot;,
+    &quot;description&quot;: &quot;The Essentials Interest Only loan is a solid bet on a loan that has your back, whether it\u2019s your first investment property, your tenth or anything in-between.&quot;,
     &quot;brand&quot;: &quot;Defence Bank&quot;,
     &quot;brandName&quot;: &quot;Defence Bank Limited&quot;,
     &quot;applicationUri&quot;: &quot;https://secure.defencebank.com.au/internetlending/public/start.aspx&quot;,
@@ -27,12 +27,8 @@
     &quot;bundles&quot;: [],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;No application fees.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
-            &quot;additionalInfo&quot;: &quot;No fees for extra repayments.&quot;
+            &quot;featureType&quot;: &quot;OFFSET&quot;,
+            &quot;additionalInfo&quot;: &quot;100% mortgage offset account.&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
@@ -44,11 +40,15 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;No application fees.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;No Annual fees.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Fixed rate option.&quot;
+            &quot;additionalInfo&quot;: &quot;No early payout fee&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -64,19 +64,27 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Loans can be switched between Fixed/Variable interest rates&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Up to two facilities at first draw down or any time during term of loan&quot;,
             &quot;additionalInfo&quot;: &quot;Split Loan Facility &quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Australia-based Contact Centre team who understand the unique challenges and opportunities of being in the defence community&quot;,
-            &quot;additionalInfo&quot;: &quot;Australia-based Contact Centre.&quot;
+            &quot;additionalInfo&quot;: &quot;Australia-based Contact Centre&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Speak with a home loan consultant today to discuss your options&quot;,
             &quot;additionalInfo&quot;: &quot;Home Loan Consultants&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/ourlenders&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;No fees for extra repayments.&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -111,62 +119,86 @@
             &quot;additionalInfo&quot;: &quot;Purpose.&quot;
         }
     ],
-    &quot;fees&quot;: [],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Loan Service Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Substitution of Loan Security*&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;275.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable on settlement&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Settlement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;275.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable on settlement&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Valuation Fee - Standard Valuation (from)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;205.25&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Consent and variation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Switching fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Switching from fixed to variable interest rate. Not payable under the Ultimate Package&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Security discharge administration fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Arrears reminder notice fee (per letter)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Default notice (enforcement notice)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
     &quot;depositRates&quot;: [],
     &quot;lendingRates&quot;: [
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0485&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0453&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;rate&quot;: &quot;0.0589&quot;,
+            &quot;rate&quot;: &quot;0.0457&quot;,
             &quot;tiers&quot;: [],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0529&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;rate&quot;: &quot;0.0639&quot;,
-            &quot;tiers&quot;: [],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0447&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;rate&quot;: &quot;0.0479&quot;,
-            &quot;tiers&quot;: [],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0468&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;tiers&quot;: [],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0511&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;rate&quot;: &quot;0.0629&quot;,
-            &quot;tiers&quot;: [],
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest-only variable&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;
         }
     ]
