@@ -2,7 +2,7 @@
     "data": {
         "productId": "RM-1-1",
         "effectiveFrom": "2021-02-01T00:00:00+11:00",
-        "lastUpdated": "2022-06-17T00:00:00+10:00",
+        "lastUpdated": "2022-07-15T00:00:00+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Budget Home Loan",
         "description": "A low cost home loan option, the Budget Home Loan has a discount off IMB\u2019s standard variable rate for the life of the loan, so you\u2019ll always pay less. No monthly fees, unrestricted additional repayments and free Internet and Mobile Banking redraw",
@@ -134,22 +134,6 @@
                 "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
             },
             {
-                "name": "PEXA Fee - Single Title ",
-                "feeType": "EVENT",
-                "amount": "55.04",
-                "currency": "AUD",
-                "additionalInfo": "Payable to the Property Exchange Australia for electronic lodgement of any transaction on title.",
-                "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
-            },
-            {
-                "name": "PEXA Fee - Multiple Title ",
-                "feeType": "EVENT",
-                "amount": "70.93",
-                "currency": "AUD",
-                "additionalInfo": "Payable to the Property Exchange Australia for electronic lodgement of any transaction on titles.",
-                "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
-            },
-            {
                 "name": "Redraw Fee (free via internet and mobile banking)",
                 "feeType": "EVENT",
                 "amount": "50.00",
@@ -173,13 +157,29 @@
                 "currency": "AUD",
                 "additionalInfo": "A full list of fees and charges will be provided if loan is approved.",
                 "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
+            },
+            {
+                "name": "PEXA Fee - Single Title ",
+                "feeType": "EVENT",
+                "amount": "57.81",
+                "currency": "AUD",
+                "additionalInfo": "Payable to the Property Exchange Australia for electronic lodgement of any transaction on title.",
+                "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
+            },
+            {
+                "name": "PEXA Fee - Multiple Title ",
+                "feeType": "EVENT",
+                "amount": "74.52",
+                "currency": "AUD",
+                "additionalInfo": "Payable to the Property Exchange Australia for electronic lodgement of any transaction on titles.",
+                "additionalInfoUri": "https://www.imb.com.au/members-important-information.html"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0294",
-                "comparisonRate": "0.03",
+                "rate": "0.0344",
+                "comparisonRate": "0.035",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -199,8 +199,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0343",
-                "comparisonRate": "0.0349",
+                "rate": "0.0393",
+                "comparisonRate": "0.0399",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -220,8 +220,92 @@
             },
             {
                 "lendingRateType": "VARIABLE",
+                "rate": "0.0334",
+                "comparisonRate": "0.0335",
+                "calculationFrequency": "PID",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "70-80% LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.71,
+                        "maximumValue": 0.8,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "additionalInfo": "For Owner Occupier loans purpose with Principal and Interest repayments.The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "VARIABLE",
                 "rate": "0.0324",
-                "comparisonRate": "0.0312",
+                "comparisonRate": "0.0325",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "<70% LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.01,
+                        "maximumValue": 0.7,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "additionalInfo": "For Owner Occupier loans purpose with Principal and Interest repayments.The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0354",
+                "comparisonRate": "0.0342",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "<70% LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.01,
+                        "maximumValue": 0.7,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "additionalInfo": "For Owner Occupier loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0364",
+                "comparisonRate": "0.0352",
+                "calculationFrequency": "PID",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "70-80% LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.71,
+                        "maximumValue": 0.8,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "additionalInfo": "For Owner Occupier loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0374",
+                "comparisonRate": "0.0362",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -241,8 +325,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0324",
-                "comparisonRate": "0.033",
+                "rate": "0.0374",
+                "comparisonRate": "0.038",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -262,29 +346,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0354",
-                "comparisonRate": "0.0342",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "tiers": [
-                    {
-                        "name": "80-90% LVR",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.81,
-                        "maximumValue": 0.9,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {}
-                    }
-                ],
-                "additionalInfo": "For Investment loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0314",
-                "comparisonRate": "0.032",
+                "rate": "0.0364",
+                "comparisonRate": "0.037",
                 "calculationFrequency": "PID",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -304,8 +367,8 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0344",
-                "comparisonRate": "0.0332",
+                "rate": "0.0394",
+                "comparisonRate": "0.0382",
                 "calculationFrequency": "PID",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -325,45 +388,24 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0284",
-                "comparisonRate": "0.0285",
-                "calculationFrequency": "PID",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "tiers": [
-                    {
-                        "name": "<80% LVR",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.01,
-                        "maximumValue": 0.8,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {}
-                    }
-                ],
-                "additionalInfo": "For Owner Occupier loans purpose with Principal and Interest repayments.The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0314",
-                "comparisonRate": "0.0302",
-                "calculationFrequency": "PID",
+                "rate": "0.0404",
+                "comparisonRate": "0.0392",
+                "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
+                "loanPurpose": "INVESTMENT",
                 "tiers": [
                     {
-                        "name": "<80% LVR",
+                        "name": "80-90% LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.01,
-                        "maximumValue": 0.8,
+                        "minimumValue": 0.81,
+                        "maximumValue": 0.9,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "additionalInfo": "For Owner Occupier loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
+                "additionalInfo": "For Investment loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate."
             }
         ]
     },

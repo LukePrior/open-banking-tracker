@@ -1,54 +1,17 @@
 {
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/a8233e0a-9552-1e7e-3847-1bff290266ef"
+    },
     "data": {
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "productId": "a8233e0a-9552-1e7e-3847-1bff290266ef",
-        "bundles": [],
-        "depositRates": [
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.00",
-                "tiers": [
-                    {
-                        "maximumValue": 4999,
-                        "minimumValue": 0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $0 and $4,999"
-                        },
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR"
-                    }
-                ],
-                "calculationFrequency": "P1D"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.001",
-                "tiers": [
-                    {
-                        "minimumValue": 5000,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance $5,000 or more"
-                        },
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR"
-                    }
-                ],
-                "calculationFrequency": "P1D"
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.00",
-                "tiers": [],
-                "calculationFrequency": "P1D",
-                "additionalValue": "When account is opened online and a balance of $5,000 or more is maintained"
-            }
-        ],
+        "description": "Online business investment account that's linked to your everyday account",
+        "brand": "ANZ",
+        "fees": [],
+        "lendingRates": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
         "eligibility": [
             {
-                "additionalInfo": "You must be 18 years of age or older to apply",
                 "eligibilityType": "MIN_AGE",
+                "additionalInfo": "You must be 18 years of age or older to apply",
                 "additionalValue": "18"
             },
             {
@@ -56,49 +19,79 @@
                 "additionalInfo": "An Australian business with valid ABN/ACN."
             },
             {
-                "additionalInfo": "You're an owner/director of the Business",
                 "eligibilityType": "OTHER",
+                "additionalInfo": "You're an owner/director of the Business",
                 "additionalValue": "You're an owner/director of the Business"
             },
             {
-                "additionalInfo": "Must be linked to an ANZ Business Advantage, ANZ Business Extra or ANZ Business Premium Saver account",
                 "eligibilityType": "OTHER",
+                "additionalInfo": "Must be linked to an ANZ Business Advantage, ANZ Business Extra or ANZ Business Premium Saver account",
                 "additionalValue": "Must be linked to an ANZ Business Advantage, ANZ Business Extra or ANZ Business Premium Saver account"
             }
         ],
-        "constraints": [],
-        "additionalInformation": {
-            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb",
-            "overviewUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb",
-            "eligibilityUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb",
-            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:bb"
-        },
-        "fees": [],
-        "lendingRates": [],
-        "brand": "ANZ",
         "features": [
             {
+                "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
-                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:bb",
-                "featureType": "DIGITAL_BANKING"
+                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:bb"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:bb",
-                "featureType": "NPP_PAYID"
+                "featureType": "NPP_PAYID",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:bb"
             },
             {
-                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:bb",
-                "featureType": "NPP_ENABLED"
+                "featureType": "NPP_ENABLED",
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:bb"
+            }
+        ],
+        "lastUpdated": "2022-07-14T14:01:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "a8233e0a-9552-1e7e-3847-1bff290266ef",
+        "bundles": [],
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "maximumValue": 4999,
+                        "minimumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $0 and $4,999"
+                        },
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "rate": "0.00"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "minimumValue": 5000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $5,000 or more"
+                        },
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "rate": "0.002"
             }
         ],
         "cardArt": [],
-        "description": "Online business investment account that's linked to your everyday account",
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "constraints": [],
         "name": "ANZ Business Online Saver",
         "isTailored": false,
-        "lastUpdated": "2022-06-23T14:01:00.000Z"
-    },
-    "links": {
-        "self": "https://api.anz/cds-au/v1/banking/products/a8233e0a-9552-1e7e-3847-1bff290266ef"
+        "additionalInformation": {
+            "eligibilityUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb",
+            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:bb",
+            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb",
+            "overviewUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/online-saver/?CID=af:obank:bb"
+        }
     }
 }
