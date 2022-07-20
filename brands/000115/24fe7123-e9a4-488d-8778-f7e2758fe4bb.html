@@ -6,7 +6,7 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;lastUpdated&quot;: &quot;2022-02-28T21:30:22.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-19T06:19:14.000Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Low Rate Credit Card &quot;,
     &quot;description&quot;: &quot;All the security and convenience you\u2019d expect, a low annual fee and one of the lowest interest rates around make our Low Rate Credit Card the ideal card for your every day purchases. You will also receive up to 55 days interest free on purchases.&quot;,
@@ -15,6 +15,51 @@
     &quot;applicationUri&quot;: &quot;https://applynow.bendigobank.com.au/apply/#/apply/new/creditCards/loanDetails/productSelection?productCode=RCA-M1-LRM-LRM&quot;,
     &quot;isTailored&quot;: false,
     &quot;bundles&quot;: [],
+    &quot;depositRates&quot;: [],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
+            &quot;rate&quot;: &quot;0.0000000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;0% p.a. on eligible purchases for up to 20 months. Offer available from 1 March 2022 to 31 July 2022. New customers only. T&amp;Cs apply.&quot;,
+            &quot;additionalValue&quot;: &quot;P20M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/low-rate-credit-card/&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
+            &quot;rate&quot;: &quot;0.0000000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;0% p.a. on balance transfer for up to 20 months. Offer available from 1 March 2022 to 31 July 2022. New customers only. T&amp;Cs apply.&quot;,
+            &quot;additionalValue&quot;: &quot;P20M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/low-rate-credit-card/&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
+            &quot;rate&quot;: &quot;0.1199000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
+            &quot;rate&quot;: &quot;0.1399000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
+            &quot;tiers&quot;: []
+        }
+    ],
+    &quot;cardArt&quot;: [
+        {
+            &quot;title&quot;: &quot;Low Rate Credit Card&quot;,
+            &quot;imageUri&quot;: &quot;https://www.bendigobank.com.au/siteassets/personal/creditcards/lowratecreditcard/exploretile-lowratecc.jpg&quot;
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
@@ -24,16 +69,6 @@
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
             &quot;additionalValue&quot;: &quot;With Bendigo Bank you can turn your phone or smart watch into your wallet.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/digital-wallets/&quot;
-        }
-    ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;50,000&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;500&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -50,14 +85,29 @@
             &quot;additionalInfo&quot;: &quot;Additional cardholders must be 16 years of age&quot;
         }
     ],
-    &quot;depositRates&quot;: [],
-    &quot;cardArt&quot;: [
+    &quot;constraints&quot;: [
         {
-            &quot;title&quot;: &quot;Low Rate Credit Card&quot;,
-            &quot;imageUri&quot;: &quot;https://www.bendigobank.com.au/siteassets/personal/creditcards/lowratecreditcard/exploretile-lowratecc.jpg&quot;
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;50,000&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;500&quot;
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Periodical payment by cheque&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.750000&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Bank Cheque Withdrawal&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;10.000000&quot;,
+            &quot;discounts&quot;: []
+        },
         {
             &quot;name&quot;: &quot;Bank@Post transaction fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
@@ -142,44 +192,6 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/globalassets/documents/disclosures/schedule-of-fees-charges-and-transaction-account-rebates.pdf&quot;,
             &quot;discounts&quot;: []
-        }
-    ],
-    &quot;lendingRates&quot;: [
-        {
-            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
-            &quot;rate&quot;: &quot;0.0000000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;0% p.a. on eligible purchases for up to 20 months. Offer available from 1 March 2022 to 31 July 2022. New customers only. T&amp;Cs apply.&quot;,
-            &quot;additionalValue&quot;: &quot;P20M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/low-rate-credit-card/&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
-            &quot;rate&quot;: &quot;0.0000000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;0% p.a. on balance transfer for up to 20 months. Offer available from 1 March 2022 to 31 July 2022. New customers only. T&amp;Cs apply.&quot;,
-            &quot;additionalValue&quot;: &quot;P20M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/low-rate-credit-card/&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
-            &quot;rate&quot;: &quot;0.1199000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
-            &quot;rate&quot;: &quot;0.1399000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
-            &quot;tiers&quot;: []
         }
     ],
     &quot;additionalInformation&quot;: {
