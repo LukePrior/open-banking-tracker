@@ -21,14 +21,8 @@
             },
             {
                 "featureType": "CARD_ACCESS",
-                "additionalValue": "Debit Mastercard",
-                "additionalInfo": "Have easy access to your money with a Debit Mastercard. It's available to Australian citizens and temporary or permanent residents over 18 with an Australian residential address (limited exceptions may apply subject to conditions).",
-                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/bank-accounts/qantas-rewards"
-            },
-            {
-                "featureType": "CARD_ACCESS",
                 "additionalValue": "Platinum Debit Mastercard",
-                "additionalInfo": "Deposit at least $4,000 a month into your account and you'll be eligible for a Platinum Debit Mastercard, which includes upgraded benefits like complimentary purchase security and extended warranty on Australian purchases. Limitations, exclusions and eligibility criteria apply. It's available to Australian citizens and temporary or permanent residents over 18 with an Australian residential address (limited exceptions may apply subject to conditions). Bankwest is making changes to the Platinum Debit Mastercard Insurances. On 25 July 2022 the Platinum Debit Card Extended Warranty and Purchase Security insurances will be withdrawn. Purchases made on or after 25 July 2022 will no longer be available for cover. Eligible purchases made in accordance with the Purchase Security and Extended Warranty Insurances in place from 29 September 2021 to 24 July 2022 will still be eligible for cover.",
+                "additionalInfo": "Have easy access to your money with a Platinum Debit Mastercard with no foreign transaction fees and no overseas ATM fees. It's available to Australian citizens and temporary or permanent residents over 16 with an Australian residential address (limited exceptions may apply subject to conditions).",
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/bank-accounts/qantas-rewards"
             },
             {
@@ -184,7 +178,7 @@
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Overseas ATM access fee. The overseas bank may charge a fee for using their ATM. Other fees and charges, including foreign transaction fees, may apply."
+                "additionalInfo": "No Bankwest-charged overseas ATM access fees. The overseas bank may charge a fee for using their ATM."
             },
             {
                 "name": "Outward Dishonour Fee",
@@ -214,6 +208,13 @@
                 "additionalInfo": "Fee to stop payment on an issued cheque. This fee is $25 when payment is stopped on a range of cheques."
             },
             {
+                "name": "Inward Payment Fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "We will charge a fee of $10.00 per transaction for each deposit via the Real Time Gross Settlement System and SWIFT Network."
+            },
+            {
                 "name": "Maintenance Fee",
                 "feeType": "PERIODIC",
                 "amount": "6.00",
@@ -236,11 +237,18 @@
                 "additionalInfo": "If the aggregate of deposits made to the account in a month up to close of business on the last business day of the month is less than $2,000, a $6.00 Monthly Maintenance Fee will be charged on the first business day of the next month. This fee does not apply in relation to deposits before the end of the first full month after the account is opened."
             },
             {
+                "name": "Duplicate Statement Fee",
+                "feeType": "PERIODIC",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "Customers requesting a duplicate paper statement to be printed (including faxes) will be charged a duplicate statement fee of $2.50 per statement."
+            },
+            {
                 "name": "Foreign Transaction Fee",
                 "feeType": "TRANSACTION",
-                "transactionRate": "0.0295",
+                "transactionRate": "0.0",
                 "currency": "AUD",
-                "additionalInfo": "We will charge a fee equal to 2.95% of the transaction amount for each transaction occurring outside Australia (whether in foreign currency or Australian dollars) posted to your account."
+                "additionalInfo": "No foreign transaction fees."
             }
         ],
         "depositRates": [
@@ -288,7 +296,7 @@
         "productId": "24a40dd2b47a478baef5693da5fdcd23",
         "effectiveFrom": "2012-02-27T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-07-15T00:02:15.211437Z",
+        "lastUpdated": "2022-07-25T00:06:17.750125Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bankwest Qantas Transaction Account",
         "description": "A bank account that earns Qantas Points even when you're not flying. It's available to customers aged 18 years or over.",
