@@ -77,38 +77,17 @@
         ],
         "fees": [
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": null,
+                "additionalInfo": "At cost. Minimum is $250.00",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "500.00",
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS discount",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -182,20 +161,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "250.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Consent fee",
                 "accrualFrequency": null,
@@ -204,34 +169,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "250.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "DEPOSIT",
-                "name": "Other Bank Deposit Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Cash and cheque deposit at NAB Branch",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "6.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -266,14 +203,77 @@
                 "transactionRate": null
             },
             {
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P3M",
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "500.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "DHOAS discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
-                "name": "Mortgage discharge fee",
+                "name": "Copies of statements (up to 12 months) at branch",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "300.00",
+                "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Other Bank Deposit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "6.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -295,13 +295,13 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) at branch",
+                "name": "Mortgage discharge fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "2.50",
+                "amount": "300.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
