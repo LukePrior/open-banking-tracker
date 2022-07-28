@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "gbp_fccy_account",
-        "lastUpdated": "2021-09-22T11:09:30Z",
+        "lastUpdated": "2022-06-17T01:44:02Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "GBP Foreign Currency Transaction Account",
         "description": "Make overseas payments and receive funds from anywhere in the world through our network of correspondent banks, with our Foreign Currency Transaction Account.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.banksyd.com.au/foreign-currency-transaction-account",
@@ -14,38 +14,20 @@
             "eligibilityUri": "https://www.banksyd.com.au/foreign-currency-transaction-account",
             "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
         },
-        "features": [
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Enquiry access and international funds transfer"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Direct credit in the currency the account is in"
-            }
-        ],
         "eligibility": [
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "eligibilityType": "NATURALPERSON"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
+                "eligibilityType": "RESIDENCYSTATUS",
                 "additionalValue": "Australian Resident or Citizen"
             },
             {
-                "eligibilityType": "NATURAL_PERSON"
+                "eligibilityType": "MINAGE",
+                "additionalValue": "18"
             }
         ],
         "fees": [
-            {
-                "feeType": "TRANSACTION",
-                "name": "Inward Telegraphic Transfers From Overseas",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Direct to BOS customers account"
-            },
             {
                 "feeType": "TRANSACTION",
                 "name": "eBank Overseas Telegraphic Transfers",
@@ -73,27 +55,34 @@
                 "amount": "20.00",
                 "currency": "AUD",
                 "additionalInfo": "With currency exchange"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Inward Telegraphic Transfers From Overseas",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Direct to BOS customers account"
             }
         ],
         "depositRates": [
             {
-                "rate": "0.00",
+                "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
-                    {
-                        "name": "100000 to 249999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000,
-                        "maximumValue": 249999,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {}
-                    },
                     {
                         "name": "0 to 9999",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0,
                         "maximumValue": 9999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "10000 to 49999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 49999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     },
@@ -106,18 +95,18 @@
                         "applicabilityConditions": {}
                     },
                     {
-                        "name": "250000 to 999999",
+                        "name": "100000 to 249999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000,
-                        "maximumValue": 999999,
+                        "minimumValue": 100000,
+                        "maximumValue": 249999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     },
                     {
-                        "name": "10000 to 49999",
+                        "name": "250000 to 999999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 49999,
+                        "minimumValue": 250000,
+                        "maximumValue": 999999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     },
@@ -131,6 +120,17 @@
                     }
                 ],
                 "depositRateType": "VARIABLE"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Enquiry access and international funds transfer"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Direct credit in the currency the account is in"
             }
         ]
     },

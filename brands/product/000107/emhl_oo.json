@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "emhl_oo",
-        "lastUpdated": "2022-07-14T06:04:13Z",
+        "lastUpdated": "2022-07-27T02:39:19Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Expect More Home Loan Owner Occupied",
         "description": "Need a few more features than the standard home loan? Our Expect More Home Loan is the one for you. It includes fixed or variable interest rates, an offset account and redraw facility.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.banksyd.com.au/expect-more-home-loan",
@@ -23,29 +23,22 @@
         ],
         "eligibility": [
             {
-                "eligibilityType": "MIN_AGE",
+                "eligibilityType": "MINAGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "NATURAL_PERSON"
+                "eligibilityType": "RESIDENCYSTATUS",
+                "additionalValue": "Australian Permanent Resident or Citizen. Residential address must be in Australia."
+            },
+            {
+                "eligibilityType": "NATURALPERSON"
             },
             {
                 "eligibilityType": "OTHER",
                 "additionalInfo": "Lending criteria applies."
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Permanent Resident or Citizen. Residential address must be in Australia."
             }
         ],
         "fees": [
-            {
-                "feeType": "EVENT",
-                "name": "Variation Fee",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Variation Fee is covered by the package, except if variation is to a different product."
-            },
             {
                 "feeType": "PERIODIC",
                 "name": "Package Fee",
@@ -53,6 +46,13 @@
                 "currency": "AUD",
                 "additionalValue": "P1Y",
                 "additionalInfo": "Waived for LVRs up to 70%"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Discharge of Mortgage Fee",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Excludes legal costs"
             },
             {
                 "feeType": "UPFRONT",
@@ -63,10 +63,10 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Discharge of Mortgage Fee",
-                "amount": "300.00",
+                "name": "Variation Fee",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Excludes legal costs"
+                "additionalInfo": "Variation Fee is covered by the package, except if variation is to a different product."
             }
         ],
         "lendingRates": [
@@ -75,26 +75,9 @@
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalValue": ">80% to 90% LVR",
-                "additionalInfo": "Owner Occupied, Principal and Interest",
+                "additionalInfo": "Owner occupied, Principal and Interest",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0494",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "rate": "0.0329",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "LVR >70% up to 80%",
-                "additionalInfo": "Annual package fee waived",
-                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0331",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0319",
@@ -103,14 +86,30 @@
                 "additionalValue": "LVR up to 70%",
                 "additionalInfo": "Annual package fee waived",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0321",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "lendingRateType": "VARIABLE"
+            },
+            {
+                "rate": "0.0329",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "LVR >70% up to 80%",
+                "additionalInfo": "Annual package fee waived",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
+                "lendingRateType": "VARIABLE"
             }
         ],
         "features": [
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% offset account available"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Redraw facility is available"
+            },
             {
                 "featureType": "OTHER",
                 "additionalValue": "Unlimited additional repayments",
@@ -120,17 +119,6 @@
                 "featureType": "OTHER",
                 "additionalValue": "Construction Loans",
                 "additionalInfo": "Available for Construction purposes"
-            },
-            {
-                "featureType": "DIGITAL_BANKING"
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalInfo": "100% offset account available"
-            },
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Redraw facility is available"
             }
         ]
     },

@@ -1,0 +1,125 @@
+{
+    "data": {
+        "productId": "student_savings_account",
+        "effectiveTo": "2021-07-30T07:00:58Z",
+        "lastUpdated": "2022-07-25T03:59:22Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Student Savings Account",
+        "description": "No monthly account fees and no withdrawal fees means you can save more. This account is ideal for children and teenagers under 18. Parents have full control over it until your child turns 14 years old.",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.banksyd.com.au/student-savings-account",
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/student-savings-account",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "1.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MAXAGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Guardian consent",
+                "additionalInfo": "Guardian consent for under 16 years old."
+            },
+            {
+                "eligibilityType": "RESIDENCYSTATUS",
+                "additionalValue": "Australian Resident or Citizen"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Dishonour fee",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Overdrawn Account Fee",
+                "amount": "7.00",
+                "currency": "AUD"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0045",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 1999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 1999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "2000 to 4999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 2000,
+                        "maximumValue": 4999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "5000 to 9999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 9999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "10000 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card",
+                "additionalInfo": "For customers over 14 years old with parental/guardian consent"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access requires parental/guardian consent and is limited to enquiry only for customers under 14 years old"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/student_savings_account"
+    }
+}

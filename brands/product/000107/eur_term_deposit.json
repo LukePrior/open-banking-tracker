@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "eur_term_deposit",
-        "lastUpdated": "2021-03-09T22:52:42Z",
+        "lastUpdated": "2021-03-09T03:59:52Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "EUR Term Deposit",
         "description": "Get a guaranteed return on it with our specially designed foreign currency term deposit.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.banksyd.com.au/foreign-currency-term-deposit",
@@ -14,12 +14,6 @@
             "eligibilityUri": "https://www.banksyd.com.au/foreign-currency-term-deposit",
             "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
         },
-        "features": [
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Enquiry Only Access"
-            }
-        ],
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
@@ -31,15 +25,15 @@
                 "eligibilityType": "BUSINESS"
             },
             {
-                "eligibilityType": "MIN_AGE",
+                "eligibilityType": "NATURALPERSON"
+            },
+            {
+                "eligibilityType": "MINAGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
+                "eligibilityType": "RESIDENCYSTATUS",
                 "additionalValue": "Australian Resident or Citizen"
-            },
-            {
-                "eligibilityType": "NATURAL_PERSON"
             }
         ],
         "fees": [
@@ -54,8 +48,9 @@
             {
                 "rate": "0.0001",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
-                "additionalValue": "P12M",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P6M",
+                "additionalInfo": "https://www.banksyd.com.au/foreign-currency-term-deposit",
                 "additionalInfoUri": "https://www.banksyd.com.au/foreign-currency-term-deposit",
                 "tiers": [
                     {
@@ -79,17 +74,11 @@
             {
                 "rate": "0.0001",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "additionalValue": "P6M",
+                "applicationFrequency": "P12M",
+                "additionalValue": "P12M",
+                "additionalInfo": "https://www.banksyd.com.au/foreign-currency-term-deposit",
                 "additionalInfoUri": "https://www.banksyd.com.au/foreign-currency-term-deposit",
                 "tiers": [
-                    {
-                        "name": "250000 and above",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {}
-                    },
                     {
                         "name": "100000 to 249999",
                         "unitOfMeasure": "DOLLAR",
@@ -97,9 +86,22 @@
                         "maximumValue": 249999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "250000 and above",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
                     }
                 ],
                 "depositRateType": "FIXED"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Enquiry Only Access"
             }
         ]
     },

@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "everyday_saver",
-        "lastUpdated": "2022-06-14T01:59:31Z",
+        "lastUpdated": "2022-06-27T12:17:51Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Everyday Saver Account",
         "description": "Made managing your money easy with our Everyday Saver Transaction Account, available 24/7, 365 days a year, via Internet Banking and the mobile app.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.banksyd.com.au/everyday-saver",
@@ -14,67 +14,20 @@
             "eligibilityUri": "https://www.banksyd.com.au/everyday-saver",
             "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
         },
-        "features": [
-            {
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Samsung Pay"
-            },
-            {
-                "featureType": "CARD_ACCESS",
-                "additionalValue": "Visa Debit Card"
-            },
-            {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Manage your money via Internet Banking and the mobile app"
-            },
-            {
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Apple Pay"
-            },
-            {
-                "featureType": "UNLIMITED_TXNS",
-                "additionalInfo": "Access your money as soon as you deposit with unlimited number of free transactions."
-            },
-            {
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Google Pay"
-            },
-            {
-                "featureType": "ADDITIONAL_CARDS",
-                "additionalValue": "Null",
-                "additionalInfo": "Additional card holders must be verified as per KYC standards"
-            }
-        ],
         "eligibility": [
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Resident or Citizen"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
+                "eligibilityType": "MINAGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "NATURAL_PERSON"
+                "eligibilityType": "RESIDENCYSTATUS",
+                "additionalValue": "Australian Resident or Citizen"
+            },
+            {
+                "eligibilityType": "NATURALPERSON"
             }
         ],
         "fees": [
-            {
-                "feeType": "WITHDRAWAL",
-                "name": "Bank Cheque Fee",
-                "amount": "5.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Dishonour Fee",
-                "amount": "15.00",
-                "currency": "AUD"
-            },
             {
                 "feeType": "TRANSACTION",
                 "name": "Local Telegraphic Transfer",
@@ -87,9 +40,37 @@
                 "name": "Overdrawn Account Fee",
                 "amount": "7.00",
                 "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Dishonour Fee",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Bank Cheque Fee",
+                "amount": "5.00",
+                "currency": "AUD"
             }
         ],
         "depositRates": [
+            {
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 50000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 50000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            },
             {
                 "rate": "0.0005",
                 "calculationFrequency": "P1D",
@@ -105,22 +86,41 @@
                     }
                 ],
                 "depositRateType": "VARIABLE"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card"
             },
             {
-                "rate": "0.00",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "0 to 50000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0,
-                        "maximumValue": 50000,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": {}
-                    }
-                ],
-                "depositRateType": "VARIABLE"
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Access your money as soon as you deposit with unlimited number of free transactions."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Manage your money via Internet Banking and the mobile app"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "ADDITIONAL_CARDS",
+                "additionalValue": "Null",
+                "additionalInfo": "Additional card holders must be verified as per KYC standards"
             }
         ]
     },

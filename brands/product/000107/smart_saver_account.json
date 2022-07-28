@@ -1,0 +1,118 @@
+{
+    "data": {
+        "productId": "smart_saver_account",
+        "effectiveTo": "2013-09-15T23:14:53Z",
+        "lastUpdated": "2022-07-25T03:59:22Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Smart Saver Account",
+        "description": "Account used for investment purposes without locking funds for a minimum of 1 month",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
+        "isTailored": false,
+        "additionalInformation": {
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "50.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MINAGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "BUSINESS"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Not for sale"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "$5.00 per month (if balance is less than $1,000.00 at any time during a calendar month)"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 24999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 24999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "25000 to 49999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000,
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "50000 to 149999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 149999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "150000 to 499999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 499999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "500000 to 999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000,
+                        "maximumValue": 999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "1000000 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Enquiry only"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Access to funds",
+                "additionalInfo": "No (8 days written notice without reduction amount)"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/smart_saver_account"
+    }
+}

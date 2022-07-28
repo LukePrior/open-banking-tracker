@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "online_term_deposit",
-        "lastUpdated": "2022-07-13T07:27:15Z",
+        "lastUpdated": "2022-07-27T09:15:01Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Online Term Deposit",
         "description": "Term Deposits are an ideal way to earn interest on money you do not intend to use immediately. With a guaranteed interest rate for a set period, you'll always know exactly what your investment will be worth.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "applicationUri": "https://bankofsydney.workflowcloud.com/forms/75bb9825-b5fb-4b24-bfb4-7b528bfc1be1",
         "isTailored": false,
         "additionalInformation": {
@@ -17,26 +17,26 @@
         },
         "constraints": [
             {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.00"
+            },
+            {
                 "constraintType": "MAX_BALANCE",
                 "additionalValue": "500000.00",
                 "additionalInfo": "For amounts over $500,000, contact our Term Deposit Specialist at your nearest branch or 13 95 00."
-            },
-            {
-                "constraintType": "MIN_BALANCE",
-                "additionalValue": "1000.00"
             }
         ],
         "eligibility": [
             {
-                "eligibilityType": "NATURAL_PERSON"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Resident or Citizen"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
+                "eligibilityType": "MINAGE",
                 "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "NATURALPERSON"
+            },
+            {
+                "eligibilityType": "RESIDENCYSTATUS",
+                "additionalValue": "Australian Resident or Citizen"
             }
         ],
         "fees": [
@@ -56,10 +56,10 @@
         ],
         "depositRates": [
             {
-                "rate": "0.0245",
+                "rate": "0.0075",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P11M",
-                "additionalValue": "P11M",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1M",
                 "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
                 "depositRateType": "FIXED"
             },
@@ -72,10 +72,42 @@
                 "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0255",
+                "rate": "0.0175",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
-                "additionalValue": "P12M",
+                "applicationFrequency": "P3M",
+                "additionalValue": "P3M",
+                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0165",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P4M",
+                "additionalValue": "P4M",
+                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P5M",
+                "additionalValue": "P5M",
+                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P6M",
+                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0205",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P7M",
+                "additionalValue": "P7M",
                 "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
                 "depositRateType": "FIXED"
             },
@@ -104,42 +136,18 @@
                 "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0205",
+                "rate": "0.0245",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P7M",
-                "additionalValue": "P7M",
+                "applicationFrequency": "P11M",
+                "additionalValue": "P11M",
                 "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
                 "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0225",
+                "rate": "0.0255",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "additionalValue": "P6M",
-                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
-                "depositRateType": "FIXED"
-            },
-            {
-                "rate": "0.0165",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P4M",
-                "additionalValue": "P4M",
-                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
-                "depositRateType": "FIXED"
-            },
-            {
-                "rate": "0.0175",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P5M",
-                "additionalValue": "P5M",
-                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
-                "depositRateType": "FIXED"
-            },
-            {
-                "rate": "0.0175",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P3M",
-                "additionalValue": "P3M",
+                "applicationFrequency": "P12M",
+                "additionalValue": "P12M",
                 "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
                 "depositRateType": "FIXED"
             },
@@ -148,14 +156,6 @@
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P13M",
                 "additionalValue": "P13M",
-                "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
-                "depositRateType": "FIXED"
-            },
-            {
-                "rate": "0.0075",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "P1M",
                 "additionalInfoUri": "https://www.banksyd.com.au/online-term-deposit",
                 "depositRateType": "FIXED"
             }

@@ -1,12 +1,12 @@
 {
     "data": {
         "productId": "emhl_inv",
-        "lastUpdated": "2022-07-14T06:04:27Z",
+        "lastUpdated": "2022-07-27T03:10:30Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Expect More Home Loan Investment",
         "description": "Our comprehensive investment home loan package, designed for those who expect more from a home loan.",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
@@ -23,7 +23,14 @@
         ],
         "eligibility": [
             {
-                "eligibilityType": "RESIDENCY_STATUS",
+                "eligibilityType": "MINAGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "NATURALPERSON"
+            },
+            {
+                "eligibilityType": "RESIDENCYSTATUS",
                 "additionalValue": "Australian Permanent Resident or Citizen. Residential address must be in Australia."
             },
             {
@@ -31,32 +38,11 @@
                 "additionalInfo": "Lending Criteria applies"
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
-            },
-            {
                 "eligibilityType": "OTHER",
                 "additionalInfo": "Available to Companies in their own capacity or as Trustees for a Trust"
-            },
-            {
-                "eligibilityType": "NATURAL_PERSON"
             }
         ],
         "fees": [
-            {
-                "feeType": "EVENT",
-                "name": "Variation Fee",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Variation Fee is covered by the package, except if variation is to a different product type"
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "Settlement Fee",
-                "amount": "150.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable at the time of new loan settlement only, variations and top ups to existing loans will not incur the settlement fee."
-            },
             {
                 "feeType": "PERIODIC",
                 "name": "Package Fee",
@@ -70,22 +56,23 @@
                 "amount": "300.00",
                 "currency": "AUD",
                 "additionalInfo": "Excludes legal costs"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Settlement Fee",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable at the time of new loan settlement only, variations and top ups to existing loans will not incur the settlement fee."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Variation Fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Variation Fee is covered by the package, except if variation is to a different product type"
             }
         ],
         "lendingRates": [
-            {
-                "rate": "0.0555",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": ">80% to 90% LVR",
-                "additionalInfo": "Investment Property, Principal and Interest",
-                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0592",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
             {
                 "rate": "0.0384",
                 "calculationFrequency": "P1D",
@@ -93,11 +80,16 @@
                 "additionalValue": "LVR up to 80%",
                 "additionalInfo": "Annual Package Fee of $395 p.a. waived",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0386",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
+            },
+            {
+                "rate": "0.0555",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": ">80% to 90% LVR",
+                "additionalInfo": "Investment Property, Principal and Interest",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0404",
@@ -106,24 +98,16 @@
                 "additionalValue": "P1Y",
                 "additionalInfo": "Annual Package Fee of $395 p.a. waived",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0388",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0404",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalValue": "P2Y",
-                "additionalInfo": "Annual Package Fee of $395 p.a. waived",
+                "additionalInfo": "Annual Package Fee of $395 p.a. waived ",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0389",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0404",
@@ -132,55 +116,43 @@
                 "additionalValue": "P3Y",
                 "additionalInfo": "Annual Package Fee of $395 p.a. waived",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0391",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0404",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalValue": "P4Y",
-                "additionalInfo": "Annual Package Fee of $395 p.a. waived",
+                "additionalInfo": "Annual Package Fee of $395 p.a. waived ",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0392",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
             },
             {
                 "rate": "0.0404",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalValue": "P5Y",
-                "additionalInfo": "Annual Package Fee of $395 p.a. waived",
+                "additionalInfo": "Annual Package Fee of $395 p.a. waived ",
                 "additionalInfoUri": "https://www.banksyd.com.au/expect-more-investment-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0394",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
+                "lendingRateType": "VARIABLE"
             }
         ],
         "features": [
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Redraw facility is available"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Unlimited additional repayments",
-                "additionalInfo": "Applicable only for Variable Rate"
-            },
             {
                 "featureType": "OFFSET",
                 "additionalInfo": "100% offset account available"
             },
             {
+                "featureType": "REDRAW",
+                "additionalInfo": "Redraw facility is available"
+            },
+            {
                 "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Unlimited additional repayments",
+                "additionalInfo": "Applicable only for Variable Rate"
             },
             {
                 "featureType": "OTHER",
