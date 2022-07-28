@@ -7,12 +7,12 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;platinum_credit_card&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-09-22T11:08:38Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-06-15T04:24:39Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Mastercard Platinum Credit Card&quot;,
     &quot;description&quot;: &quot;Reap the benefits of your hard work, with our Platinum Credit Card.&quot;,
-    &quot;brand&quot;: &quot;Bank of Sydney&quot;,
-    &quot;brandName&quot;: &quot;Bank of Sydney&quot;,
+    &quot;brand&quot;: &quot;BOS Internal&quot;,
+    &quot;brandName&quot;: &quot;BOS Internal&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
@@ -20,100 +20,36 @@
         &quot;eligibilityUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.banksyd.com.au/important-product-information&quot;
     },
-    &quot;features&quot;: [
-        {
-            &quot;featureType&quot;: &quot;BALANCE_TRANSFERS&quot;,
-            &quot;additionalInfo&quot;: &quot;Balance transfer may not exceed 95% of approved card limit (min $500)&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;INSURANCE&quot;,
-            &quot;additionalValue&quot;: &quot;Complimentary Insurance&quot;,
-            &quot;additionalInfo&quot;: &quot;Overseas Travel, Interstate Flight, Extended Warranty, Purchases Security, Transport Accident&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;BONUS_REWARDS&quot;,
-            &quot;additionalValue&quot;: &quot;$8 for every $1,000 spent - no cap&quot;,
-            &quot;additionalInfo&quot;: &quot;Cash Rewards deposited into a BOS transaction account.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Staff Assisted Transfers&quot;,
-            &quot;additionalInfo&quot;: &quot;Staff assisted transactions. In branch Cash Payments&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
-            &quot;additionalValue&quot;: &quot;4&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Minimum Repayment&quot;,
-            &quot;additionalInfo&quot;: &quot;3% of the closing balance outstanding, or $10, whichever is greater, to be paid monthly.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;INTEREST_FREE&quot;,
-            &quot;additionalValue&quot;: &quot;P55D&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 55 days interest free payments on purchases only&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;INTEREST_FREE_TRANSFERS&quot;,
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;0% p.a. for 6 months from card activation. After promotional period, rate reverts to Standard Purchase rate&quot;
-        }
-    ],
     &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;50000.00&quot;
-        },
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;6000.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;50000.00&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Australian Resident or Citizen&quot;
+            &quot;eligibilityType&quot;: &quot;MINAGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;EMPLOYMENT_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;PAYG (minimum 12 months)&quot;,
-            &quot;additionalInfo&quot;: &quot;Self-Employed (minimum 2 years)&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;eligibilityType&quot;: &quot;NATURALPERSON&quot;,
             &quot;additionalInfo&quot;: &quot;BOS customers only&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;
+            &quot;eligibilityType&quot;: &quot;RESIDENCYSTATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Resident or Citizen&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;EMPLOYMENTSTATUS&quot;,
+            &quot;additionalValue&quot;: &quot;PAYG (minimum 12 months)&quot;,
+            &quot;additionalInfo&quot;: &quot;Self-Employed (minimum 2 years)&quot;
         }
     ],
     &quot;fees&quot;: [
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Urgent Card Replacement by BOS (Overseas)&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Dispatched 3 days after order&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Non-urgent Replacement (Overseas)&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Emergency Card&quot;,
-            &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Delivered by Mastercard overseas&quot;
-        },
         {
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;name&quot;: &quot;Annual Fee&quot;,
@@ -125,12 +61,6 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Late Payment Fee&quot;,
             &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Dishonour Fee&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
@@ -150,24 +80,43 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Emergency Card&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Delivered by Mastercard overseas&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Urgent Card Replacement by BOS (Overseas)&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Dispatched 3 days after order&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Urgent Card Replacement by BOS (Australia)&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Dispatched 3 days after order&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Non-urgent Replacement (Overseas)&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Dishonour Fee&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.00&quot;,
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;0% p.a. for 6 months on Balance Transfers. Rate reverts to Standard Purchase Rate.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
-            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;
-        },
-        {
             &quot;rate&quot;: &quot;0.0699&quot;,
             &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;6.99% for 6 months introductory purchase rate&quot;,
+            &quot;additionalInfo&quot;: &quot;6.99% for 6 months introductory purchase rate.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
             &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;
         },
@@ -178,10 +127,61 @@
             &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;
         },
         {
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;0% p.a. for 6 months on Balance Transfers. Rate reverts to Standard Purchase Rate.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
+            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;
+        },
+        {
             &quot;rate&quot;: &quot;0.1849&quot;,
-            &quot;additionalInfo&quot;: &quot;18.49% Standard Purchase Rate applicable&quot;,
+            &quot;additionalInfo&quot;: &quot;18.49% Standard Purchase rate applicable&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;,
             &quot;lendingRateType&quot;: &quot;PURCHASE&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;BALANCE_TRANSFERS&quot;,
+            &quot;additionalInfo&quot;: &quot;Balance transfer may not exceed 95% of approved card limit (min $500)&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;INTEREST_FREE&quot;,
+            &quot;additionalValue&quot;: &quot;P55D&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to 55 days interest free payments on purchases only&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Minimum Repayment&quot;,
+            &quot;additionalInfo&quot;: &quot;3% of the closing balance outstanding, or $10, whichever is greater, to be paid monthly.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BONUS_REWARDS&quot;,
+            &quot;additionalValue&quot;: &quot;$8 for every $1,000 spent - no cap&quot;,
+            &quot;additionalInfo&quot;: &quot;Cash Rewards deposited into a BOS transaction account.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalValue&quot;: &quot;4&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;INSURANCE&quot;,
+            &quot;additionalValue&quot;: &quot;Complimentary Insurances for:&quot;,
+            &quot;additionalInfo&quot;: &quot;Overseas Travel, Interstate Flight, Extended Warranty, Purchases Security, Transport Accident&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/platinum-mastercard&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;INTEREST_FREE_TRANSFERS&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;0% p.a. for 6 months from card activation. After promotional period, rate reverts to Standard Purchase rate&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Staff Assisted Transfers&quot;,
+            &quot;additionalInfo&quot;: &quot;Staff assisted transactions. In branch Cash Payments&quot;
         }
     ]
 }</textarea>

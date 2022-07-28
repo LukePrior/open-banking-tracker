@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Management Account</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;cash_management_account&quot;,
+    &quot;effectiveTo&quot;: &quot;2013-09-15T23:03:53Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-25T03:59:22Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Cash Management Account&quot;,
+    &quot;description&quot;: &quot;An account can help you track the movement of your money and allows you to see your (cash) financial position at any moment. In other words, it enables you to monitor your cash flow.&quot;,
+    &quot;brand&quot;: &quot;BOS Internal&quot;,
+    &quot;brandName&quot;: &quot;BOS Internal&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {},
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5,000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MINAGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;Under 18 years require guardian authorization&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Not for sale&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Staff Assisted Transaction Fee&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of POS transactions exceeds 4 per month&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;Monthly Account Keeping Fee&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10.00 per month (if balance is less than $5,000.00 at any time during a calendar month) $5.00 per month (if balance is more than $5,000.00 at any time during a calendar month)&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;name&quot;: &quot;Transaction Fee&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM transactions exceeds 3 per month&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Balance Inquiry Fee&quot;,
+            &quot;amount&quot;: &quot;1.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM balance inquiries exceeds 3 per month&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;1000 to 4999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000,
+                    &quot;maximumValue&quot;: 4999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;5000 to 9999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;10000 to 19999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 19999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;20000 to 49999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000,
+                    &quot;maximumValue&quot;: 49999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;50000 to 99999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;100000 to 249999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;250000 to 499999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000,
+                    &quot;maximumValue&quot;: 499999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;500000 to 99999999999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000,
+                    &quot;maximumValue&quot;: 99999999999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Access your funds using our Online Banking&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Visa Debit Card&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;3&quot;,
+            &quot;additionalInfo&quot;: &quot;3 free ATM transactions per month&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;3&quot;,
+            &quot;additionalInfo&quot;: &quot;3 free ATM Balance inquiries per month&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;4&quot;,
+            &quot;additionalInfo&quot;: &quot;4 free POS transactions per month&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>

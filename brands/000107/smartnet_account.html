@@ -7,12 +7,12 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;smartnet_account&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-07-18T08:18:19Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-25T03:59:22Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;SmartNet Account&quot;,
     &quot;description&quot;: &quot;Access your money when needed with this online transaction account that earns you interest every month.&quot;,
-    &quot;brand&quot;: &quot;Bank of Sydney&quot;,
-    &quot;brandName&quot;: &quot;Bank of Sydney&quot;,
+    &quot;brand&quot;: &quot;BOS Internal&quot;,
+    &quot;brandName&quot;: &quot;BOS Internal&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.banksyd.com.au/business/smartnet-account&quot;,
@@ -28,13 +28,13 @@
     ],
     &quot;eligibility&quot;: [
         {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
+            &quot;additionalInfo&quot;: &quot;Business entities to supply business identification documents. Search fees may apply.&quot;
+        },
+        {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Business Signatories&quot;,
             &quot;additionalInfo&quot;: &quot;All the signatories must be identified as per KYC requirements&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalInfo&quot;: &quot;Business entities to supply business identification documents. Search fees may apply.&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -52,9 +52,10 @@
         },
         {
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;name&quot;: &quot;Bank Cheque Fee&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
+            &quot;name&quot;: &quot;Transaction Fees&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM transactions exceeds 3 per month&quot;
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -65,10 +66,15 @@
         },
         {
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;name&quot;: &quot;Transaction Fees&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM transactions exceeds 3 per month&quot;
+            &quot;name&quot;: &quot;Bank Cheque Fee&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Inward Local Transfers (RTGS)&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
@@ -76,56 +82,9 @@
             &quot;amount&quot;: &quot;35.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;RTGS transaction&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;name&quot;: &quot;Inward Local Transfers (RTGS)&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
         }
     ],
     &quot;depositRates&quot;: [
-        {
-            &quot;rate&quot;: &quot;0.0085&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/business/smartnet-account&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;1000000 to 99999999999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000000,
-                    &quot;maximumValue&quot;: 99999999999,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;applicabilityConditions&quot;: {}
-                },
-                {
-                    &quot;name&quot;: &quot;250000 to 499999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 250000,
-                    &quot;maximumValue&quot;: 499999,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;applicabilityConditions&quot;: {}
-                },
-                {
-                    &quot;name&quot;: &quot;25000 to 249999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 25000,
-                    &quot;maximumValue&quot;: 249999,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;applicabilityConditions&quot;: {}
-                },
-                {
-                    &quot;name&quot;: &quot;500000 to 999999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000,
-                    &quot;maximumValue&quot;: 999999,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;applicabilityConditions&quot;: {}
-                }
-            ],
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
-        },
         {
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
@@ -159,37 +118,53 @@
                 }
             ],
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0085&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/business/smartnet-account&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;25000 to 249999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 249999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;250000 to 499999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000,
+                    &quot;maximumValue&quot;: 499999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;500000 to 999999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000,
+                    &quot;maximumValue&quot;: 999999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;1000000 to 99999999999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000000,
+                    &quot;maximumValue&quot;: 99999999999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
         }
     ],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalInfo&quot;: &quot;Access your funds using our Online Banking&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalValue&quot;: &quot;VISA Debit Card&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;3&quot;,
-            &quot;additionalInfo&quot;: &quot;3 free ATM transactions per month&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
-            &quot;additionalValue&quot;: &quot;BPAY&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
-            &quot;additionalValue&quot;: &quot;Google Pay&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalInfo&quot;: &quot;Unlimited POS transactions are allowed&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
-            &quot;additionalValue&quot;: &quot;Samsung Pay&quot;
         },
         {
             &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
@@ -197,13 +172,38 @@
             &quot;additionalInfo&quot;: &quot;Additional card holders must be verified as per KYC standards&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
-            &quot;additionalValue&quot;: &quot;Apple Pay&quot;
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;3&quot;,
+            &quot;additionalInfo&quot;: &quot;3 free ATM transactions per month&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;Unlimited POS transactions are allowed&quot;
         },
         {
             &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
             &quot;additionalValue&quot;: &quot;3&quot;,
             &quot;additionalInfo&quot;: &quot;3 free ATM Balance inquiries per month&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Access your funds using our Online Banking&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Google Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Samsung Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY&quot;
         }
     ]
 }</textarea>

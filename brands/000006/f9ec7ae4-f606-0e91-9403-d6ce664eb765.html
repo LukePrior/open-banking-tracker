@@ -6,75 +6,95 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;brand&quot;: &quot;ANZ&quot;,
-    &quot;cardArt&quot;: [],
-    &quot;effectiveFrom&quot;: &quot;2019-06-30T14:00:00.000Z&quot;,
-    &quot;isTailored&quot;: false,
-    &quot;bundles&quot;: [],
-    &quot;name&quot;: &quot;ANZ Pensioner Advantage Account&quot;,
-    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
-    &quot;constraints&quot;: [],
+    &quot;description&quot;: &quot;Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance&quot;,
     &quot;productId&quot;: &quot;f9ec7ae4-f606-0e91-9403-d6ce664eb765&quot;,
+    &quot;bundles&quot;: [],
     &quot;depositRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.0005&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0005&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;maximumValue&quot;: 9999,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;applicabilityConditions&quot;: {
                         &quot;additionalInfo&quot;: &quot;Balance between $1 and $9,999&quot;
                     },
-                    &quot;maximumValue&quot;: 9999,
-                    &quot;minimumValue&quot;: 1,
-                    &quot;name&quot;: &quot;Balance&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;name&quot;: &quot;Balance&quot;
                 }
-            ]
+            ],
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0005&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.003&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;maximumValue&quot;: 49999,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;applicabilityConditions&quot;: {
                         &quot;additionalInfo&quot;: &quot;Balance between $10,000 and $49,999&quot;
                     },
-                    &quot;maximumValue&quot;: 49999,
-                    &quot;minimumValue&quot;: 10000,
-                    &quot;name&quot;: &quot;Balance&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;name&quot;: &quot;Balance&quot;
                 }
-            ]
+            ],
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0035&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;applicabilityConditions&quot;: {
                         &quot;additionalInfo&quot;: &quot;Balance $50,000 or more&quot;
                     },
-                    &quot;minimumValue&quot;: 50000,
-                    &quot;name&quot;: &quot;Balance&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;name&quot;: &quot;Balance&quot;
                 }
-            ]
+            ],
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;
         }
     ],
+    &quot;constraints&quot;: [],
+    &quot;name&quot;: &quot;ANZ Pensioner Advantage Account&quot;,
+    &quot;additionalInformation&quot;: {
+        &quot;feesAndPricingUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;,
+        &quot;termsUri&quot;: &quot;http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&amp;CID=af:obank:tv#FTPDS&quot;
+    },
+    &quot;lendingRates&quot;: [],
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;brand&quot;: &quot;ANZ&quot;,
+    &quot;fees&quot;: [],
+    &quot;cardArt&quot;: [],
+    &quot;lastUpdated&quot;: &quot;2022-07-27T14:01:00.000Z&quot;,
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;PENSION_RECIPIENT&quot;,
+            &quot;additionalInfo&quot;: &quot;Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account&quot;
+        },
+        {
+            &quot;additionalValue&quot;: &quot;You must be an Australian resident with an Australian residential and mailing address.&quot;,
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;
+        }
+    ],
+    &quot;effectiveFrom&quot;: &quot;2019-06-30T14:00:00.000Z&quot;,
+    &quot;isTailored&quot;: false,
     &quot;features&quot;: [
         {
+            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv&quot;,
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalInfo&quot;: &quot;Access using ANZ Internet Banking or ANZ App&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv&quot;
+            &quot;additionalInfo&quot;: &quot;Access using ANZ Internet Banking or ANZ App&quot;
         },
         {
             &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:tv&quot;,
@@ -85,59 +105,39 @@
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;Apple Pay&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;Google Pay&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Google Pay&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;Samsung Pay&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Samsung Pay&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;Fitbit Pay&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Fitbit Pay&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;Garmin Pay&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Garmin Pay&quot;
         },
         {
-            &quot;additionalValue&quot;: &quot;BPAY&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:tv&quot;,
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY&quot;
         },
         {
+            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&amp;CID=af:obank:tv&quot;,
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalInfo&quot;: &quot;Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&amp;CID=af:obank:tv&quot;
-        }
-    ],
-    &quot;description&quot;: &quot;Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance&quot;,
-    &quot;additionalInformation&quot;: {
-        &quot;eligibilityUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;,
-        &quot;termsUri&quot;: &quot;http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&amp;CID=af:obank:tv#FTPDS&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;,
-        &quot;overviewUri&quot;: &quot;https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv&quot;
-    },
-    &quot;lendingRates&quot;: [],
-    &quot;fees&quot;: [],
-    &quot;lastUpdated&quot;: &quot;2022-06-29T14:01:00.000Z&quot;,
-    &quot;eligibility&quot;: [
-        {
-            &quot;additionalInfo&quot;: &quot;Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account&quot;,
-            &quot;eligibilityType&quot;: &quot;PENSION_RECIPIENT&quot;
-        },
-        {
-            &quot;additionalValue&quot;: &quot;You must be an Australian resident with an Australian residential and mailing address.&quot;,
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;
+            &quot;additionalInfo&quot;: &quot;Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.&quot;
         }
     ]
 }</textarea>
