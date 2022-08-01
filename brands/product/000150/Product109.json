@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "Product109",
-        "effectiveFrom": "2022-05-31T15:00:17Z",
+        "effectiveFrom": "2022-08-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2022-06-10T05:58:56Z",
+        "lastUpdated": "2022-07-25T07:33:43Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Pension Access",
         "description": "A flexible interest paying account designed especially for holders of an aged, veterans or disability pension.",
@@ -144,7 +144,22 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.002",
+                "rate": "0.0010",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 4999.0
+                    }
+                ],
+                "additionalInfo": "Interest calculated daily on portion of balance within each interest tier and credited quarterly."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -159,7 +174,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0045",
+                "rate": "0.0070",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
