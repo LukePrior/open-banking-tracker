@@ -2,7 +2,7 @@
     "data": {
         "productId": "17",
         "effectiveFrom": "2006-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2021-07-27T08:18:04.2256553Z",
+        "lastUpdated": "2022-08-01T06:00:16.7632848Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Visa Debit Card",
         "description": "Visa Debit Card",
@@ -350,7 +350,45 @@
                 "depositRateType": "VARIABLE",
                 "rate": "0.0",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

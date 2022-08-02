@@ -2,7 +2,7 @@
     "data": {
         "productId": "8",
         "effectiveFrom": "2005-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2022-07-28T02:00:43.1193511Z",
+        "lastUpdated": "2022-08-02T00:00:42.9889956Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Gold Class",
         "description": "For those aged 65 or over or receiving a Government Aged, Veteran or Disability Pension.",
@@ -208,7 +208,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.001",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -216,6 +216,22 @@
                         "name": "Tier_1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
+                        "maximumValue": 2000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfoUri": "https://summerland.com.au/files/ratesfees/savingsinterest.pdf"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 2000.01,
                         "maximumValue": 10000.0,
                         "rateApplicationMethod": "PER_TIER"
                     }
@@ -229,7 +245,7 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Tier_2",
+                        "name": "Tier_3",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000.01,
                         "maximumValue": 45000.0,
@@ -241,11 +257,9 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0035",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Tier_3",
+                        "name": "Tier_4",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 45000.01,
                         "rateApplicationMethod": "PER_TIER"
