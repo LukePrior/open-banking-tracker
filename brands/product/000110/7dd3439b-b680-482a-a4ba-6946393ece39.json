@@ -105,6 +105,48 @@
                 "transactionRate": null
             },
             {
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P3M",
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Consent fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "250.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Switch/variation fee - home & investment loans",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "To switch or vary home loans (other than switching to RateSaver)",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "300.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "TRANSACTION",
                 "name": "Redraw fee (per redraw)",
                 "accrualFrequency": null,
@@ -147,31 +189,38 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "A hourly fee applies plus any expenses incurred",
+                "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": null,
+                "amount": "500.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Switch/variation fee - home & investment loans",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "To switch or vary home loans (other than switching to RateSaver)",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "300.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
+                "discounts": [
+                    {
+                        "description": "DHOAS discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -194,6 +243,20 @@
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "At cost",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "A hourly fee applies plus any expenses incurred",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": null,
@@ -245,63 +308,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
+                "feeType": "VARIABLE",
+                "name": "Stamp Duty",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": null,
+                "additionalInfo": "At cost",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS discount",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Consent fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "250.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -316,20 +330,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Stamp Duty",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
