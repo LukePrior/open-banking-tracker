@@ -5,12 +5,27 @@
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "SCCU Netbanking",
                 "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Available for Construction loans",
+                "additionalInfoUri": ""
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "100000.00",
+                "additionalValue": "250000.00",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -26,11 +41,6 @@
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Y",
                 "additionalInfo": "Must be Australian resident",
-                "additionalInfoUri": ""
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": " Only available for business introduced through Broker Channel.",
                 "additionalInfoUri": ""
             }
         ],
@@ -49,7 +59,7 @@
                 "discounts": []
             },
             {
-                "name": "PROPERTY_VALUATION_FEE_BROKER",
+                "name": "PROPERTY_VALUATION_FEE",
                 "feeType": "EVENT",
                 "amount": "300.00",
                 "balanceRate": null,
@@ -58,7 +68,20 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "If using a property as security for the loan, we need to confirm what the property is worth. This fee covers the cost of valuing your property which can vary depending on type and complexity of the property. Fee varies dependent on type and complexity of property. Minimum fee shown.",
-                "additionalInfoUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "CONSTRUCTION_LOAN_PROGRESS_FEE",
+                "feeType": "EVENT",
+                "amount": "450.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Applicable on construction loans when progressive payments are made to your builder.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
                 "discounts": []
             },
             {
@@ -203,52 +226,54 @@
                 "additionalInfo": "When there is a variation made to the terms of an existing loan agreement. For example remaining loan term.",
                 "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
                 "discounts": []
-            }
-        ],
-        "lendingRates": [
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.05490",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "P48M",
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.02780",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "name": "AVM_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "service that can provide real estate property valuations using mathematical modelling combined with a database.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "DESKTOP_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "automated computer valuation done using property data, recent comparable sales and property listings",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
             }
         ],
-        "productId": "BROKER_HOME_LOAN_OO_UNDER-60LVR_FIXED_4Y",
-        "lastUpdated": "2022-08-01T16:03:50.000+10:00",
+        "productId": "PREMIUM_HOME_LOAN_INVEST_VAR_UNDER_80LVR",
+        "effectiveFrom": "2022-08-02T00:00:00.000+10:00",
+        "lastUpdated": "2022-08-03T15:19:56.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "BROKER HOME LOAN OWNER OCCUPIED FIXED RATE 4Y <60% LVR",
-        "description": "Third Party Introduced business suitable for Owner Occupied borrowing where your LVR is lower OR equal to 60%.",
+        "name": "PREMIUM HOME LOAN INVESTMENT VARIABLE RATE UNDER OR EQUAL 80LVR",
+        "description": "Premium Home Loan (investment) is suitable for new property investors and refinancers borrowing over $250k with LVR less than or equal 80%",
         "brand": "S",
         "brandName": "SCCU",
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
-            "termsUri": "",
+            "overviewUri": "https://www.sccu.com.au/personal/loans/",
+            "termsUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "eligibilityUri": "",
-            "feesAndPricingUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
+            "feesAndPricingUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/BROKER_HOME_LOAN_OO_UNDER-60LVR_FIXED_4Y"
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/PREMIUM_HOME_LOAN_INVEST_VAR_UNDER_80LVR"
     },
     "meta": {}
 }

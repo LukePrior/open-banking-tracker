@@ -7,6 +7,11 @@
                 "additionalInfoUri": ""
             },
             {
+                "featureType": "OFFSET",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
                 "featureType": "REDRAW",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
@@ -15,17 +20,12 @@
                 "featureType": "OTHER",
                 "additionalInfo": "Available for Construction loans",
                 "additionalInfoUri": ""
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalInfo": "",
-                "additionalInfoUri": ""
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "100000.00",
+                "additionalValue": "250000.00",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -41,11 +41,6 @@
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Y",
                 "additionalInfo": "Must be Australian resident",
-                "additionalInfoUri": ""
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": " Only available for business introduced through eMoney Home Loans.",
                 "additionalInfoUri": ""
             }
         ],
@@ -207,16 +202,16 @@
                 "discounts": []
             },
             {
-                "name": "HOME_LOAN_ESTABLISHMENT_FEE_EMONEY",
+                "name": "HOME_LOAN_ESTABLISHMENT_FEE",
                 "feeType": "UPFRONT",
-                "amount": "500.00",
+                "amount": "699.00",
                 "balanceRate": null,
                 "transactionRate": null,
                 "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "A one off upfront fee for setting up your home loan.",
-                "additionalInfoUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
                 "discounts": []
             },
             {
@@ -231,40 +226,78 @@
                 "additionalInfo": "When there is a variation made to the terms of an existing loan agreement. For example remaining loan term.",
                 "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
                 "discounts": []
+            },
+            {
+                "name": "AVM_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "service that can provide real estate property valuations using mathematical modelling combined with a database.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "DESKTOP_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "automated computer valuation done using property data, recent comparable sales and property listings",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.02880",
+                "rate": "0.04080",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Interest Only rates revert to the Premium Home Loan (Investment) Variable Principal & Interest rate on expiry.",
+                "additionalInfoUri": "https://www.sccu.com.au/loan-interest-rate-schedule/",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.03880",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "",
-                "additionalInfoUri": "https://www.sccu.com.au/emoney-home-loan-product-schedule/",
+                "additionalInfoUri": "https://www.sccu.com.au/loan-interest-rate-schedule/",
                 "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
             }
         ],
-        "productId": "EMONEY_HOME_LOAN_OO_VAR_UNDER-60LVR",
-        "lastUpdated": "2022-08-01T15:19:32.000+10:00",
+        "productId": "PREMIUM_HOME_LOAN_INV_VAR_INTONLY_5YR_OVER_80LVR",
+        "effectiveFrom": "2022-08-02T00:00:00.000+10:00",
+        "lastUpdated": "2022-08-03T16:44:30.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "EMONEY HOME LOAN OWNER OCCUPIED VARIABLE RATE <60% LVR",
-        "description": "Suitable for borrowing where your LVR is lower OR equal to 60%.",
+        "name": "PREMIUM HOME LOAN INVESTMENT INTEREST ONLY VARIABLE RATE 5YR OVER 80LVR",
+        "description": "Premium Home Loan (investment) is suitable for new property investors and refinancers borrowing over $250k with LVR over 80%.",
         "brand": "S",
         "brandName": "SCCU",
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "",
-            "termsUri": "",
+            "overviewUri": "https://www.sccu.com.au/personal/loans/",
+            "termsUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "eligibilityUri": "",
-            "feesAndPricingUri": "",
+            "feesAndPricingUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/EMONEY_HOME_LOAN_OO_VAR_UNDER-60LVR"
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/PREMIUM_HOME_LOAN_INV_VAR_INTONLY_5YR_OVER_80LVR"
     },
     "meta": {}
 }
