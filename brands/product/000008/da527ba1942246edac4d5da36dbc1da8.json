@@ -150,6 +150,28 @@
                 "additionalValue": "P1M"
             },
             {
+                "name": "Monthly account fee",
+                "feeType": "PERIODIC",
+                "amount": "5.00",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "We won't charge you a monthly account fee",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "5.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "18",
+                                "additionalInfo": "You're under 18.",
+                                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/SavingsInvestment_ADB2852.pdf"
+                            }
+                        ]
+                    }
+                ],
+                "additionalValue": "P1M"
+            },
+            {
                 "name": "CBA ATM cash withdrawals in Australia",
                 "feeType": "EVENT",
                 "amount": "0.00",
@@ -158,7 +180,7 @@
             },
             {
                 "name": "Assisted withdrawal fees",
-                "feeType": "EVENT",
+                "feeType": "WITHDRAWAL",
                 "amount": "3.00",
                 "currency": "AUD",
                 "additionalInfo": "A fee charged on some accounts when you take money out at a CommBank branch or a post office, with telephone banking, if using an operator, or by cashing a cheque. You will receive 2 free assisted withdrawals each calendar month.",
@@ -177,7 +199,7 @@
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "currency": "AUD",
-                "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. Additional interest may apply on overdrawn amounts.",
+                "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. This is charged once per account per day, irrespective of the number of overdrawing transactions that day.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/SavingsInvestment_ADB2852.pdf"
             },
             {
@@ -198,7 +220,7 @@
             },
             {
                 "name": "Cheques negotiated fee",
-                "feeType": "EVENT",
+                "feeType": "TRANSACTION",
                 "amount": "3.00",
                 "currency": "AUD",
                 "additionalInfo": "When you write a cheque that needs to be negotiated through the clearing system.",
@@ -646,7 +668,7 @@
         "productId": "da527ba1942246edac4d5da36dbc1da8",
         "effectiveFrom": "2011-10-13T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-08-03T16:15:26.947526Z",
+        "lastUpdated": "2022-08-05T00:26:29.829924Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Commonwealth Direct Investment Account",
         "description": "A cash management account for investors allowing you to trade and transact when and where it suits you.",

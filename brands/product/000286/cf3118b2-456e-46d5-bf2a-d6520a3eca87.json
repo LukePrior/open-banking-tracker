@@ -2,7 +2,7 @@
     "data": {
         "productId": "cf3118b2-456e-46d5-bf2a-d6520a3eca87",
         "effectiveFrom": "2022-03-21T14:00:01Z",
-        "lastUpdated": "2022-03-30T03:58:32Z",
+        "lastUpdated": "2022-07-29T06:46:34Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "SaveOne",
         "description": "Grow your money with automated savings, using roundups and instant saves.",
@@ -79,11 +79,43 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "0 - 50,000",
+                        "name": "0 - 10,000.00",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0,
-                        "maximumValue": 50000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "maximumValue": 10000,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily and applied monthly on the 1st day of the following month."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.02",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "10,000.01 - 20,000.00",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.01,
+                        "maximumValue": 20000,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily and applied monthly on the 1st day of the following month."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.03",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "20,000.01 - 30,000.00",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.01,
+                        "maximumValue": 30000,
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "Interest is calculated daily and applied monthly on the 1st day of the following month."
@@ -95,10 +127,10 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Over 50,000",
+                        "name": "Over 30,000",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 50000.01,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "minimumValue": 30000.01,
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "Interest is calculated daily and applied monthly on the 1st day of the following month."
