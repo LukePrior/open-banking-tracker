@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;maximiser_account&quot;,
     &quot;effectiveTo&quot;: &quot;2021-07-30T07:00:17Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-07-27T07:47:08Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-08-09T01:52:46Z&quot;,
     &quot;productCategory&quot;: &quot;OVERDRAFTS&quot;,
     &quot;name&quot;: &quot;Maximiser Account&quot;,
     &quot;description&quot;: &quot;A personal overdraft facility&quot;,
@@ -58,19 +58,62 @@
             &quot;additionalInfo&quot;: &quot;1.00% of overdraft limit, minimum $200&quot;
         }
     ],
-    &quot;lendingRates&quot;: [
+    &quot;depositRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.1363&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Rate with arrangement&quot;,
+                    &quot;name&quot;: &quot;0 to 4999&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 4999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;5000 to 9999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;10000 to 19999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 19999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;20000 to 49999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000,
+                    &quot;maximumValue&quot;: 49999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;50000 to 99999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;100000 to 99999999999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 99999999999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
         }
     ],
     &quot;features&quot;: [
