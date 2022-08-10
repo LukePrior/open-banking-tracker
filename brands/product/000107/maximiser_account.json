@@ -2,7 +2,7 @@
     "data": {
         "productId": "maximiser_account",
         "effectiveTo": "2021-07-30T07:00:17Z",
-        "lastUpdated": "2022-07-27T07:47:08Z",
+        "lastUpdated": "2022-08-09T01:52:46Z",
         "productCategory": "OVERDRAFTS",
         "name": "Maximiser Account",
         "description": "A personal overdraft facility",
@@ -52,19 +52,62 @@
                 "additionalInfo": "1.00% of overdraft limit, minimum $200"
             }
         ],
-        "lendingRates": [
+        "depositRates": [
             {
-                "rate": "0.1363",
+                "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Rate with arrangement",
+                        "name": "0 to 4999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000
+                        "minimumValue": 0,
+                        "maximumValue": 4999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "5000 to 9999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 9999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "10000 to 19999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 19999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "20000 to 49999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "50000 to 99999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 99999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "100000 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "VARIABLE"
+                "depositRateType": "VARIABLE"
             }
         ],
         "features": [
