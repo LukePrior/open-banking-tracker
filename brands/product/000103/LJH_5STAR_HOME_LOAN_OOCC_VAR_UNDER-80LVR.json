@@ -5,6 +5,21 @@
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "SCCU Netbanking",
                 "additionalInfoUri": ""
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Minimum redraw amount $500",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Construction loans Available",
+                "additionalInfoUri": ""
             }
         ],
         "constraints": [
@@ -31,7 +46,7 @@
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Y",
-                "additionalInfo": "Must be an Australian resident",
+                "additionalInfo": "Must be an australian resident",
                 "additionalInfoUri": ""
             },
             {
@@ -107,63 +122,90 @@
                 "discounts": []
             },
             {
-                "name": "LOAN_VARIATION",
+                "name": "LOAN_TOP-UP",
                 "feeType": "EVENT",
-                "amount": "150.00",
+                "amount": "250.00",
                 "balanceRate": null,
                 "transactionRate": null,
                 "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "When there is a variation made to the terms of an existing loan agreement. For example remaining loan term.",
+                "additionalInfo": "This is an additional establishment fee for increasing your home loan amount at any point after the home loan has been finalised.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "HOME_LOAN_SECURITY_VARIATION",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "When there is a variation made to the security used for an existing loan agreement.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "HOME_LOAN_PRODUCT_SWITCH",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Variations to your loan including changing product, fixing your interest rates or switching between interest only and principle and interest repayments, will incur a product switch fee.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "DESKTOP_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "automated computer valuation done using property data, recent comparable sales and property listings",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
+                "discounts": []
+            },
+            {
+                "name": "AVM_VALUATION_FEE",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "service that can provide real estate property valuations using mathematical modelling combined with a database.",
                 "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/",
                 "discounts": []
             }
         ],
-        "lendingRates": [
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.05890",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "P60M",
-                "additionalInfo": "Fixed rates revert to the Owner Occupied (LVR 80-95%) 5 Star Home Loan P&I rate on expiry.",
-                "additionalInfoUri": "https://www.sccu.com.au/lj-hooker-home-loan-product-schedule/",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.03080",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.sccu.com.au/lj-hooker-home-loan-product-schedule/",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            }
-        ],
-        "productId": "LJH_5STAR_HOME_LOAN_OO_FIXED_5Y",
-        "lastUpdated": "2022-08-01T15:44:46.000+10:00",
+        "productId": "LJH_5STAR_HOME_LOAN_OOCC_VAR_UNDER-80LVR",
+        "lastUpdated": "2022-08-12T19:13:18.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "LJH 5STAR HOME LOAN OWNER OCCUPIED FIXED RATE 5Y",
-        "description": "Suitable for borrowing where you don't need an offset account and your LVR is lower than 95%.",
+        "name": "LJH 5STAR HOME LOAN OWNER OCCUPIED VARIABLE RATE UNDER 80% LVR",
+        "description": "Suitable for borrowing where you don't need an offset account and your LVR is under 80%.",
         "brand": "S",
         "brandName": "SCCU",
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "",
+            "overviewUri": "https://www.sccu.com.au/lj-hooker-home-loan-product-schedule/",
             "termsUri": "",
-            "eligibilityUri": "",
-            "feesAndPricingUri": "",
+            "eligibilityUri": "https://www.sccu.com.au/lj-hooker-home-loan-product-schedule/",
+            "feesAndPricingUri": "https://www.sccu.com.au/lj-hooker-home-loan-product-schedule/",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/LJH_5STAR_HOME_LOAN_OO_FIXED_5Y"
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/LJH_5STAR_HOME_LOAN_OOCC_VAR_UNDER-80LVR"
     },
     "meta": {}
 }
