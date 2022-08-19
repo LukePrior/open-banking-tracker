@@ -3,90 +3,14 @@
         "self": "https://api.anz/cds-au/v1/banking/products/f9ec7ae4-f606-0e91-9403-d6ce664eb765"
     },
     "data": {
-        "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
-        "productId": "f9ec7ae4-f606-0e91-9403-d6ce664eb765",
-        "bundles": [],
-        "depositRates": [
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "tiers": [
-                    {
-                        "maximumValue": 9999,
-                        "minimumValue": 1,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $1 and $9,999"
-                        },
-                        "name": "Balance"
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.003",
-                "tiers": [
-                    {
-                        "maximumValue": 49999,
-                        "minimumValue": 10000,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $10,000 and $49,999"
-                        },
-                        "name": "Balance"
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.005",
-                "tiers": [
-                    {
-                        "minimumValue": 50000,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance $50,000 or more"
-                        },
-                        "name": "Balance"
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            }
-        ],
-        "constraints": [],
-        "name": "ANZ Pensioner Advantage Account",
-        "additionalInformation": {
-            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
-            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
-            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&CID=af:obank:tv#FTPDS"
-        },
-        "lendingRates": [],
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "brand": "ANZ",
-        "fees": [],
-        "cardArt": [],
-        "lastUpdated": "2022-07-27T14:01:00.000Z",
-        "eligibility": [
-            {
-                "eligibilityType": "PENSION_RECIPIENT",
-                "additionalInfo": "Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account"
-            },
-            {
-                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address.",
-                "eligibilityType": "RESIDENCY_STATUS"
-            }
-        ],
         "effectiveFrom": "2019-06-30T14:00:00.000Z",
         "isTailored": false,
+        "lastUpdated": "2022-08-18T14:01:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "f9ec7ae4-f606-0e91-9403-d6ce664eb765",
+        "fees": [],
+        "bundles": [],
+        "name": "ANZ Pensioner Advantage Account",
         "features": [
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv",
@@ -103,39 +27,115 @@
             },
             {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Apple Pay"
+                "additionalValue": "Apple Pay",
+                "featureType": "DIGITAL_WALLET"
             },
             {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Google Pay"
+                "additionalValue": "Google Pay",
+                "featureType": "DIGITAL_WALLET"
             },
             {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Samsung Pay"
+                "additionalValue": "Samsung Pay",
+                "featureType": "DIGITAL_WALLET"
             },
             {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Fitbit Pay"
+                "additionalValue": "Fitbit Pay",
+                "featureType": "DIGITAL_WALLET"
             },
             {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Garmin Pay"
+                "additionalValue": "Garmin Pay",
+                "featureType": "DIGITAL_WALLET"
             },
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:tv",
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY"
+                "additionalValue": "BPAY",
+                "featureType": "BILL_PAYMENT"
             },
             {
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&CID=af:obank:tv",
                 "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account."
             }
-        ]
+        ],
+        "lendingRates": [],
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&CID=af:obank:tv#FTPDS",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv"
+        },
+        "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
+        "cardArt": [],
+        "eligibility": [
+            {
+                "eligibilityType": "PENSION_RECIPIENT",
+                "additionalInfo": "Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account"
+            },
+            {
+                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address.",
+                "eligibilityType": "RESIDENCY_STATUS"
+            }
+        ],
+        "brand": "ANZ",
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "minimumValue": 1,
+                        "rateApplicationMethod": "PER_TIER",
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $1 and $9,999"
+                        },
+                        "name": "Balance",
+                        "maximumValue": 9999
+                    }
+                ],
+                "rate": "0.0005"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "minimumValue": 10000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $10,000 and $49,999"
+                        },
+                        "name": "Balance",
+                        "maximumValue": 49999
+                    }
+                ],
+                "rate": "0.004"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "minimumValue": 50000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $50,000 or more"
+                        },
+                        "name": "Balance"
+                    }
+                ],
+                "rate": "0.0075"
+            }
+        ],
+        "constraints": []
     }
 }

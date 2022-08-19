@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "1db3caa2-58f5-467c-807d-3ae492ef0c1e",
-        "lastUpdated": "2021-06-18T01:02:00Z",
+        "lastUpdated": "2022-08-19T12:00:00Z",
         "productCategory": "BUSINESS_LOANS",
         "name": "Seasonal Cotton Loan",
         "description": "Short term finance to help you manage your cash flow during the cotton growing season's peak input periods.",
@@ -20,16 +20,20 @@
                 "additionalInfoUri": "https://www.rabobank.com.au/mobile-banking-app/#sba"
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Loan Drawdown facilities."
+                "featureType": "NOTIFICATIONS",
+                "additionalInfo": "An alert about future events or notifications."
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Freedom to pay down debt in good times with no penalties if you repay your variable rate loan early."
+                "additionalInfo": "Cheque book."
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Choice of phone, online banking and mobile banking."
+                "featureType": "REDRAW",
+                "additionalInfo": "Redraw of repaid principal is available."
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited free transactions available to clients."
             }
         ],
         "constraints": [
@@ -50,15 +54,88 @@
         ],
         "fees": [
             {
+                "name": "Cheque Book Fee (Standard 50)",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "additionalInfo": "Charged at the time of ordering new cheque book."
+            },
+            {
+                "name": "Cheque Book Fee (Large 50)",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "additionalInfo": "Charged at the time of ordering new cheque book."
+            },
+            {
+                "name": "Cheque Book Fee (Large 100)",
+                "feeType": "EVENT",
+                "amount": "60.00",
+                "additionalInfo": "Charged at the time of ordering new cheque book."
+            },
+            {
+                "name": "A4 Cheques (minimum 500)",
+                "feeType": "VARIABLE",
+                "additionalInfo": "Available on request."
+            },
+            {
+                "name": "Payment Establishment Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "additionalInfo": "Direct Entry Payments by Rabobank staff."
+            },
+            {
+                "name": "Payment Maintenance Transaction Fee (when changes are requested)",
+                "feeType": "EVENT",
+                "amount": "2.00",
+                "additionalInfo": "Direct Entry Payments by Rabobank staff."
+            },
+            {
+                "name": "Encashment Fee (per encashment)",
+                "feeType": "EVENT",
+                "amount": "5.00"
+            },
+            {
+                "name": "Same Day Funds Transfer Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "additionalInfo": "Real Time Gross Settlement."
+            },
+            {
+                "name": "Telegraphic Transfer (Out) Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "additionalInfo": "Foreign Currency."
+            },
+            {
+                "name": "Telegraphic Transfer (In) Fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfo": "Foreign Currency."
+            },
+            {
+                "name": "Bank Draft Fee",
+                "feeType": "EVENT",
+                "amount": "35.00",
+                "additionalInfo": "Foreign Currency."
+            },
+            {
+                "name": "Bank Cheques",
+                "feeType": "EVENT",
+                "amount": "6.50"
+            },
+            {
                 "name": "Dishonour Fee",
                 "feeType": "EVENT",
-                "amount": "40.00",
-                "additionalInfo": "Dishonour fees are charged in addition to the excess interest charge that may apply for overdrawing an account."
+                "amount": "40.00"
             },
             {
                 "name": "Stop Payment Fee",
                 "feeType": "EVENT",
                 "amount": "15.00"
+            },
+            {
+                "name": "Deposit Book Fee",
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "Voucher Retrieval Fee",
@@ -71,10 +148,9 @@
                 "amount": "60.00"
             },
             {
-                "name": "Temporary Limit Increase Fee",
+                "name": "Statement Copy Fee (per statement)",
                 "feeType": "EVENT",
-                "amount": "100.00",
-                "additionalInfo": "When a temporary increase in a Loan Limit is allowed."
+                "amount": "3.00"
             },
             {
                 "name": "Loan Establishment Fee",
@@ -84,31 +160,37 @@
             {
                 "name": "Loan Limit Increase Fee",
                 "feeType": "VARIABLE",
-                "additionalInfo": "When a Loan Limit is increased, other than a Temporary Limit Increase."
+                "additionalInfo": "When the Loan Limit is increased."
             },
             {
                 "name": "Legal Fees",
                 "feeType": "VARIABLE",
-                "additionalInfo": "At-cost legal fees incurred by the Bank relating to a Loan or securities"
+                "additionalInfo": "Incurred by the Bank relating to a Loan or securities."
             },
             {
                 "name": "Registration Fees",
                 "feeType": "VARIABLE",
-                "additionalInfo": "Relating to securities for a Loan."
+                "additionalInfo": "In connection with registration and electronic conveyancing processing, relating to securities for a Loan."
             },
             {
                 "name": "Disbursements",
                 "feeType": "VARIABLE",
-                "additionalInfo": "At-cost fees in connection with documentation preparation and administration."
+                "additionalInfo": "In connection with documentation preparation and administration."
             },
             {
                 "name": "Search Fees",
                 "feeType": "VARIABLE",
-                "additionalInfo": "At-cost fee including title and company searches."
+                "additionalInfo": "Including title and company searches."
             },
             {
-                "name": "Valuation Fee",
+                "name": "Valuation Fees",
                 "feeType": "VARIABLE"
+            },
+            {
+                "name": "Settlement Handling Fee (per security/dealing)",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "additionalInfo": "Where the Bank attends or effects an electronic or paper based registration, release/discharge, production of title or settlement relating to a security."
             },
             {
                 "name": "Document Handling Fee (per document)",

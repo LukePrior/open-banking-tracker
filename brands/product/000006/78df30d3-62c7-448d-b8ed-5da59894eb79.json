@@ -3,22 +3,43 @@
         "self": "https://api.anz/cds-au/v1/banking/products/78df30d3-62c7-448d-b8ed-5da59894eb79"
     },
     "data": {
+        "effectiveFrom": "2020-06-30T22:00:00.000Z",
         "isTailored": false,
-        "lastUpdated": "2022-07-14T14:01:00.000Z",
+        "lastUpdated": "2022-08-18T14:01:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "78df30d3-62c7-448d-b8ed-5da59894eb79",
+        "fees": [
+            {
+                "amount": "2.50",
+                "discounts": [],
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
+                "name": "Staff Assisted Transaction",
+                "feeType": "TRANSACTION",
+                "currency": "AUD"
+            },
+            {
+                "amount": "0.50",
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "name": "Electronic Transaction",
+                "currency": "AUD"
+            }
+        ],
         "bundles": [],
+        "name": "ANZ V2 PLUS",
         "features": [
             {
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:sv",
-                "featureType": "DIGITAL_BANKING"
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
             },
             {
-                "featureType": "NPP_PAYID",
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv"
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv",
+                "featureType": "NPP_PAYID"
             },
             {
-                "featureType": "NPP_ENABLED",
-                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv"
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv",
+                "featureType": "NPP_ENABLED"
             },
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:sv",
@@ -56,58 +77,37 @@
                 "featureType": "FREE_TXNS"
             }
         ],
-        "depositRates": [
-            {
-                "rate": "0.0001",
-                "depositRateType": "VARIABLE",
-                "tiers": [],
-                "calculationFrequency": "P1D"
-            }
-        ],
-        "eligibility": [
-            {
-                "additionalInfo": "You must be 18 years of age or older to apply",
-                "additionalValue": "18",
-                "eligibilityType": "MIN_AGE"
-            }
-        ],
+        "lendingRates": [],
         "additionalInformation": {
+            "overviewUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
             "eligibilityUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
             "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:sv#FTPDS",
-            "feesAndPricingUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
-            "overviewUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv"
+            "feesAndPricingUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv"
         },
-        "productId": "78df30d3-62c7-448d-b8ed-5da59894eb79",
-        "fees": [
+        "description": "Distributed via a range of approved Third Parties such as stockbrokers, accountants and SMSF administrators who open deposit accounts on behalf of their customers",
+        "cardArt": [],
+        "applicationUri": "https://onlineapps.anz.com/third-party-deposit/?CID=af:obank:sv#/landing",
+        "eligibility": [
             {
-                "name": "Staff Assisted Transaction",
-                "amount": "2.50",
-                "currency": "AUD",
-                "discounts": [],
-                "feeType": "TRANSACTION",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv"
-            },
-            {
-                "amount": "0.50",
-                "name": "Electronic Transaction",
-                "discounts": [],
-                "feeType": "TRANSACTION",
-                "currency": "AUD"
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "You must be 18 years of age or older to apply"
             }
         ],
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "lendingRates": [],
+        "brand": "ANZ",
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "tiers": [],
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001"
+            }
+        ],
         "constraints": [
             {
                 "additionalValue": "5000.00",
                 "constraintType": "MIN_BALANCE"
             }
-        ],
-        "description": "Distributed via a range of approved Third Parties such as stockbrokers, accountants and SMSF administrators who open deposit accounts on behalf of their customers",
-        "applicationUri": "https://onlineapps.anz.com/third-party-deposit/?CID=af:obank:sv#/landing",
-        "brand": "ANZ",
-        "cardArt": [],
-        "name": "ANZ V2 PLUS",
-        "effectiveFrom": "2020-06-30T22:00:00.000Z"
+        ]
     }
 }
