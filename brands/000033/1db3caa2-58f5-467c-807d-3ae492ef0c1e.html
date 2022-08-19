@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;1db3caa2-58f5-467c-807d-3ae492ef0c1e&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-06-18T01:02:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-08-19T12:00:00Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Seasonal Cotton Loan&quot;,
     &quot;description&quot;: &quot;Short term finance to help you manage your cash flow during the cotton growing season's peak input periods.&quot;,
@@ -26,16 +26,20 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.rabobank.com.au/mobile-banking-app/#sba&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Loan Drawdown facilities.&quot;
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalInfo&quot;: &quot;An alert about future events or notifications.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Freedom to pay down debt in good times with no penalties if you repay your variable rate loan early.&quot;
+            &quot;additionalInfo&quot;: &quot;Cheque book.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Choice of phone, online banking and mobile banking.&quot;
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;Redraw of repaid principal is available.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;Unlimited free transactions available to clients.&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -56,15 +60,88 @@
     ],
     &quot;fees&quot;: [
         {
+            &quot;name&quot;: &quot;Cheque Book Fee (Standard 50)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged at the time of ordering new cheque book.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cheque Book Fee (Large 50)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged at the time of ordering new cheque book.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cheque Book Fee (Large 100)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;60.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged at the time of ordering new cheque book.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;A4 Cheques (minimum 500)&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Available on request.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Payment Establishment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;additionalInfo&quot;: &quot;Direct Entry Payments by Rabobank staff.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Payment Maintenance Transaction Fee (when changes are requested)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Direct Entry Payments by Rabobank staff.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Encashment Fee (per encashment)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Same Day Funds Transfer Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;21.50&quot;,
+            &quot;additionalInfo&quot;: &quot;Real Time Gross Settlement.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Telegraphic Transfer (Out) Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Foreign Currency.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Telegraphic Transfer (In) Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Foreign Currency.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bank Draft Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;35.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Foreign Currency.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bank Cheques&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;6.50&quot;
+        },
+        {
             &quot;name&quot;: &quot;Dishonour Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;40.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Dishonour fees are charged in addition to the excess interest charge that may apply for overdrawing an account.&quot;
+            &quot;amount&quot;: &quot;40.00&quot;
         },
         {
             &quot;name&quot;: &quot;Stop Payment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Deposit Book Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;
         },
         {
             &quot;name&quot;: &quot;Voucher Retrieval Fee&quot;,
@@ -77,10 +154,9 @@
             &quot;amount&quot;: &quot;60.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Temporary Limit Increase Fee&quot;,
+            &quot;name&quot;: &quot;Statement Copy Fee (per statement)&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;additionalInfo&quot;: &quot;When a temporary increase in a Loan Limit is allowed.&quot;
+            &quot;amount&quot;: &quot;3.00&quot;
         },
         {
             &quot;name&quot;: &quot;Loan Establishment Fee&quot;,
@@ -90,31 +166,37 @@
         {
             &quot;name&quot;: &quot;Loan Limit Increase Fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;When a Loan Limit is increased, other than a Temporary Limit Increase.&quot;
+            &quot;additionalInfo&quot;: &quot;When the Loan Limit is increased.&quot;
         },
         {
             &quot;name&quot;: &quot;Legal Fees&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;At-cost legal fees incurred by the Bank relating to a Loan or securities&quot;
+            &quot;additionalInfo&quot;: &quot;Incurred by the Bank relating to a Loan or securities.&quot;
         },
         {
             &quot;name&quot;: &quot;Registration Fees&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;Relating to securities for a Loan.&quot;
+            &quot;additionalInfo&quot;: &quot;In connection with registration and electronic conveyancing processing, relating to securities for a Loan.&quot;
         },
         {
             &quot;name&quot;: &quot;Disbursements&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;At-cost fees in connection with documentation preparation and administration.&quot;
+            &quot;additionalInfo&quot;: &quot;In connection with documentation preparation and administration.&quot;
         },
         {
             &quot;name&quot;: &quot;Search Fees&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;At-cost fee including title and company searches.&quot;
+            &quot;additionalInfo&quot;: &quot;Including title and company searches.&quot;
         },
         {
-            &quot;name&quot;: &quot;Valuation Fee&quot;,
+            &quot;name&quot;: &quot;Valuation Fees&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Settlement Handling Fee (per security/dealing)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Where the Bank attends or effects an electronic or paper based registration, release/discharge, production of title or settlement relating to a security.&quot;
         },
         {
             &quot;name&quot;: &quot;Document Handling Fee (per document)&quot;,
