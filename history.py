@@ -74,8 +74,9 @@ def calculate_interest(lendingRates, product_rates, time):
                 product_rates.append(formatted)
 
             elif len(matches) == 1:
-                
-                if matches[0]["rates"][-1]["rate"] != rate:
+                if matches[0]["rates"][-1]["rate"] == rate:
+                    matches[0]["rates"][-1]["time"] = time
+                elif matches[0]["rates"][-1]["rate"] != rate:
                     matches[0]["rates"].append({"time": time, "rate": rate})
 
     return product_rates
