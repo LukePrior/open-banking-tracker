@@ -126,6 +126,8 @@ for product in products:
             temp_product_rates.append(formatted)
         product_rates = temp_product_rates
 
+        product_rates = sorted(product_rates, key=lambda d: d['name']) 
+
         folder = "history/product/" + product["brandId"]
         if not os.path.exists(folder):
             os.makedirs(folder)
