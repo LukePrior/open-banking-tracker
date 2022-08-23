@@ -3,7 +3,7 @@
         "productId": "HL_fixedinvIO",
         "effectiveFrom": "2017-09-26T00:00:00.000+10:00",
         "effectiveTo": "9999-12-30T00:00:00.000+11:00",
-        "lastUpdated": "2022-08-12T00:00:00.000+10:00",
+        "lastUpdated": "2022-08-23T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Fixed Rate Home Loan Investment Interest Only ",
         "description": "Lock in your repayments with a fixed rate, with options up to 5 years",
@@ -14,6 +14,11 @@
             "feesAndPricingUri": "https://www.newcastlepermanent.com.au/personal/home-loans/fixed-rate-home-loan"
         },
         "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Our Rate Lock option enables you to lock in our current advertised interest rate for your selected fixed rate home loan product, giving you certainty for up to 90 days against potential interest rate increases. A non-refundable fee applies for selecting this option.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/rate-lock"
+            },
             {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
@@ -43,6 +48,14 @@
             }
         ],
         "fees": [
+            {
+                "name": "Rate Lock Fee",
+                "feeType": "EVENT",
+                "amount": "750.00",
+                "currency": "AUD",
+                "additionalInfo": "This fee is charged for each loan account for which you've opted to lock in a rate, and for each instance of locking in a rate. We charge the Rate Lock Fee to your loan account on the day the loan is funded. Refer to \u2018Facts for Mortgage Loans\u2019 for more information.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/-/media/files/terms-conditions-fees-charges/mortgage-and-personal-loans/factsheet_mortgageloans.pdf"
+            },
             {
                 "name": "Discharge Administration Fee",
                 "feeType": "EXIT",
@@ -185,8 +198,56 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0579000000",
-                "comparisonRate": "0.0627000000",
+                "rate": "0.0649000000",
+                "comparisonRate": "0.0643000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P4Y",
+                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest Rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0499000000",
+                "comparisonRate": "0.0624000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR below and 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0589000000",
+                "comparisonRate": "0.0629000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -197,13 +258,37 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
                     {
-                        "name": "LVR 80% and below",
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest Rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0619000000",
+                "comparisonRate": "0.0634000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR 80% or below",
                         "unitOfMeasure": "PERCENT",
                         "minimumValue": 0.0,
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%.",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates "
                     }
                 ]
             },
@@ -257,14 +342,14 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0669000000",
-                "comparisonRate": "0.0653000000",
+                "rate": "0.0579000000",
+                "comparisonRate": "0.0627000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
+                "additionalValue": "P2Y",
                 "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
@@ -274,55 +359,7 @@
                         "minimumValue": 0.0,
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649000000",
-                "comparisonRate": "0.0643000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P4Y",
-                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR above 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest Rate applies to loans with LVR over 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0499000000",
-                "comparisonRate": "0.0624000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR below and 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 80.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
+                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%.",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -337,54 +374,6 @@
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR above 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest Rate applies to loans with LVR over 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619000000",
-                "comparisonRate": "0.0634000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR 80% or below",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 80.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates "
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0589000000",
-                "comparisonRate": "0.0629000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
                 "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
@@ -419,6 +408,30 @@
                         "maximumValue": 95.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "additionalInfo": "Interest Rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0669000000",
+                "comparisonRate": "0.0653000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Reverts to the Real Options Investment Home Loan at the end of the Fixed Rate period.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR 80% and below",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%. ",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]

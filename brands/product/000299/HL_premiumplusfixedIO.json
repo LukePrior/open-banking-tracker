@@ -3,7 +3,7 @@
         "productId": "HL_premiumplusfixedIO",
         "effectiveFrom": "2017-09-26T00:00:00.000+10:00",
         "effectiveTo": "9999-12-30T00:00:00.000+11:00",
-        "lastUpdated": "2022-08-12T00:00:00.000+10:00",
+        "lastUpdated": "2022-08-23T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premium Plus Package Fixed Rate Home Loan Interest Only",
         "description": "A fixed rate package home loan with many additional perks like redraw and discounts on other products",
@@ -30,6 +30,11 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalInfo": "Our Rate Lock option enables you to lock in our current advertised interest rate for your selected fixed rate home loan product, giving you certainty for up to 90 days against potential interest rate increases. A non-refundable fee applies for selecting this option.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/rate-lock"
+            },
+            {
+                "featureType": "OTHER",
                 "additionalInfo": "Additional Repayments allowed up to $25000 p.a.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
             }
@@ -53,6 +58,14 @@
             }
         ],
         "fees": [
+            {
+                "name": "Rate Lock Fee",
+                "feeType": "EVENT",
+                "amount": "750.00",
+                "currency": "AUD",
+                "additionalInfo": "This fee is charged for each loan account for which you've opted to lock in a rate, and for each instance of locking in a rate. We charge the Rate Lock Fee to your loan account on the day the loan is funded. Refer to \u2018Facts for Mortgage Loans\u2019 for more information.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/-/media/files/terms-conditions-fees-charges/mortgage-and-personal-loans/factsheet_mortgageloans.pdf"
+            },
             {
                 "name": "Default Administration Fee 1",
                 "feeType": "EVENT",
@@ -171,6 +184,30 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
+                "rate": "0.0519000000",
+                "comparisonRate": "0.0565000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
                 "rate": "0.0679000000",
                 "comparisonRate": "0.0627000000",
                 "calculationFrequency": "P1D",
@@ -195,8 +232,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0659000000",
-                "comparisonRate": "0.0610000000",
+                "rate": "0.0649000000",
+                "comparisonRate": "0.0606000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -207,36 +244,36 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
                     {
-                        "name": "LVR above 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0629000000",
-                "comparisonRate": "0.0592000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
                         "name": "LVR 80% and below",
                         "unitOfMeasure": "PERCENT",
                         "minimumValue": 0.0,
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0689000000",
+                "comparisonRate": "0.0631000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -261,54 +298,6 @@
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0639000000",
-                "comparisonRate": "0.0595000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR above 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0519000000",
-                "comparisonRate": "0.0565000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR above 80%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -363,14 +352,14 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0649000000",
-                "comparisonRate": "0.0606000000",
+                "rate": "0.0629000000",
+                "comparisonRate": "0.0592000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P4Y",
+                "additionalValue": "P3Y",
                 "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
@@ -387,14 +376,38 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0689000000",
-                "comparisonRate": "0.0631000000",
+                "rate": "0.0639000000",
+                "comparisonRate": "0.0595000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0659000000",
+                "comparisonRate": "0.0610000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P4Y",
                 "additionalInfo": "Reverts to Premium Plus Package Tier 4 variable interest rate at the end of the Fixed Rate period",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
