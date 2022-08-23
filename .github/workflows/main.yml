@@ -10,8 +10,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -33,9 +31,6 @@ jobs:
 
       - name: Generate stats
         run: python stats.py
-
-      - name: Generate history
-        run: python history.py
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9

@@ -1,0 +1,29 @@
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  update-data:
+    name: Fetch data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate history
+        run: python history.py
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: Updated history
+          default_author: github_actions
