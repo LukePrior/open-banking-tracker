@@ -321,6 +321,31 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0499&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;comparisonRate&quot;: &quot;0.052&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
@@ -418,31 +443,6 @@
                 }
             ],
             &quot;additionalValue&quot;: &quot;P12M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0533&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 80.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Term&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -997,31 +997,6 @@
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0629&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;comparisonRate&quot;: &quot;0.063&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 90.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Term&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0629&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;comparisonRate&quot;: &quot;0.057&quot;,
@@ -1043,6 +1018,31 @@
                 }
             ],
             &quot;additionalValue&quot;: &quot;P48M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0629&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;comparisonRate&quot;: &quot;0.063&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -1198,7 +1198,7 @@
     &quot;productId&quot;: &quot;3e28f2ff9e5f4894bb39ea8a3cfc689a&quot;,
     &quot;effectiveFrom&quot;: &quot;2014-01-01T13:00:00Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-08-12T00:06:23.213924Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-08-24T00:01:57.229309Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Complete Fixed Home Loan Package&quot;,
     &quot;description&quot;: &quot;The Complete Fixed Home Loan Package includes a fixed home loan, up to 9 offset accounts, a credit card and other good stuff - including our great rates.&quot;,
