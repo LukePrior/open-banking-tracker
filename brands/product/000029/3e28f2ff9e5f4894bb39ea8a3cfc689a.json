@@ -315,6 +315,31 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
+                "rate": "0.0499",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.052",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "lendingRateType": "FIXED",
                 "rate": "0.0539",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
@@ -412,31 +437,6 @@
                     }
                 ],
                 "additionalValue": "P12M"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0569",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0533",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "LVR",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 80.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
-                    {
-                        "name": "Term",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 24,
-                        "maximumValue": 24
-                    }
-                ],
-                "additionalValue": "P24M"
             },
             {
                 "lendingRateType": "FIXED",
@@ -991,31 +991,6 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0629",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "comparisonRate": "0.063",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "LVR",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 90.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
-                    {
-                        "name": "Term",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 60,
-                        "maximumValue": 60
-                    }
-                ],
-                "additionalValue": "P60M"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0629",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "comparisonRate": "0.057",
@@ -1037,6 +1012,31 @@
                     }
                 ],
                 "additionalValue": "P48M"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0629",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "comparisonRate": "0.063",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 60,
+                        "maximumValue": 60
+                    }
+                ],
+                "additionalValue": "P60M"
             },
             {
                 "lendingRateType": "FIXED",
@@ -1192,7 +1192,7 @@
         "productId": "3e28f2ff9e5f4894bb39ea8a3cfc689a",
         "effectiveFrom": "2014-01-01T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-08-12T00:06:23.213924Z",
+        "lastUpdated": "2022-08-24T00:01:57.229309Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Complete Fixed Home Loan Package",
         "description": "The Complete Fixed Home Loan Package includes a fixed home loan, up to 9 offset accounts, a credit card and other good stuff - including our great rates.",
