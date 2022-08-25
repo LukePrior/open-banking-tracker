@@ -44,17 +44,29 @@ def calculate_interest(lendingRates, product_rates, time):
 
             matches = []
             for offering in product_rates:
-                if offering["lendingRateType"] == lendingRate["lendingRateType"] and ("loanPurpose" not in offering or "loanPurpose" not in lendingRate or offering["loanPurpose"] == lendingRate["loanPurpose"]) and ("repaymentType" not in offering or "repaymentType" not in lendingRate or offering["repaymentType"] == lendingRate["repaymentType"]):
+                if (offering["lendingRateType"] == lendingRate["lendingRateType"]) and ("loanPurpose" not in offering or "loanPurpose" not in lendingRate or offering["loanPurpose"] == lendingRate["loanPurpose"]) and ("repaymentType" not in offering or "repaymentType" not in lendingRate or offering["repaymentType"] == lendingRate["repaymentType"]):
                     matches.append(offering)
 
             tempmatches = []
             if len(matches) > 1:
                 for match in matches:
-                    if ("additionalValue" in match and "additionalValue" in lendingRate and (match["additionalValue"] != lendingRate["additionalValue"])):
+                    if ("additionalValue" in match and ("additionalValue" not in lendingRate or match["additionalValue"] != lendingRate["additionalValue"])):
                         continue
-                    if ("tiers" in match and "tiers" in lendingRate and (match["tiers"] != lendingRate["tiers"])):
+                    tempmatches.append(match)
+                matches = tempmatches
+            
+            tempmatches = []
+            if len(matches) > 1:
+                for match in matches:
+                    if ("tiers" in match and ("tiers" not in lendingRate or match["tiers"] != lendingRate["tiers"])):
                         continue
-                    if ("additionalInfo" in match and "additionalInfo" in lendingRate and (match["additionalInfo"] != lendingRate["additionalInfo"])):
+                    tempmatches.append(match)
+                matches = tempmatches
+
+            tempmatches = []
+            if len(matches) > 1:
+                for match in matches:
+                    if ("additionalInfo" in match and ("additionalInfo" not in lendingRate or match["additionalInfo"] != lendingRate["additionalInfo"])):
                         continue
                     tempmatches.append(match)
                 matches = tempmatches
