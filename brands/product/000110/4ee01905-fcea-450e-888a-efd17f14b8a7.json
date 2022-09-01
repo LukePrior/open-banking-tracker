@@ -64,14 +64,14 @@
         "features": [],
         "fees": [
             {
-                "feeType": "EVENT",
-                "name": "Mortgage discharge fee",
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "A hourly fee applies plus any expenses incurred",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "300.00",
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -92,14 +92,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "DEPOSIT",
-                "name": "Other Bank Deposit Fee",
+                "feeType": "EVENT",
+                "name": "Mortgage discharge fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "6.50",
+                "amount": "300.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -134,6 +134,41 @@
                 "transactionRate": null
             },
             {
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "500.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "DHOAS eligible applicants",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Default notice fee",
                 "accrualFrequency": null,
@@ -162,6 +197,20 @@
                 "transactionRate": null
             },
             {
+                "feeType": "DEPOSIT",
+                "name": "Other Bank Deposit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "6.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Copies of statements (over 12 months) per page",
                 "accrualFrequency": null,
@@ -177,13 +226,27 @@
             },
             {
                 "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
+                "name": "Fixed Rate Prepayment Cost",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "A hourly fee applies plus any expenses incurred",
+                "additionalInfo": "Payable if you repay your fixed rate loan in full before the fixed interest rate period expires; or make partial prepayments greater than $10,000 in any year of the fixed rate period. The prepayment cost is calculated and will be advised when the prepayment is  made on your fixed rate loan.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P3M",
+                "amount": "2.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -232,55 +295,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": null,
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS eligible applicants",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "RateSaver Switch fee",
                 "accrualFrequency": null,
@@ -289,20 +303,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Fixed Rate Prepayment Cost",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Payable if you repay your fixed rate loan in full before the fixed interest rate period expires; or make partial prepayments greater than $10,000 in any year of the fixed rate period. The prepayment cost is calculated and will be advised when the prepayment is  made on your fixed rate loan.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],

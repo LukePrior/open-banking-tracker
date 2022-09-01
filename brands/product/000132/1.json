@@ -2,7 +2,7 @@
     "data": {
         "productId": "1",
         "effectiveFrom": "2006-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2022-08-26T08:00:32.8138498Z",
+        "lastUpdated": "2022-08-31T08:00:30.8841102Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Savings Account",
         "description": "Savings Account",
@@ -182,6 +182,36 @@
                         "name": "Floating Balance Tier 2",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 2500.0,
+                        "maximumValue": 9999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Floating Balance Tier 4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
                         "maximumValue": 49999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -194,7 +224,7 @@
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "Floating Balance Tier 3",
+                        "name": "Floating Balance Tier 5",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 50000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
