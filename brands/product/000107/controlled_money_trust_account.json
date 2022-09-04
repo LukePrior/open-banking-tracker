@@ -1,12 +1,85 @@
 {
-    "errors": [
-        {
-            "code": "PCUA015",
-            "title": "Unexpected Error Encountered",
-            "detail": "Upstream server was unable to respond in a timely manner",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:GeneralError/Unexpected"
+    "data": {
+        "productId": "controlled_money_trust_account",
+        "lastUpdated": "2022-08-09T01:52:46Z",
+        "productCategory": "REGULATED_TRUST_ACCOUNTS",
+        "name": "Controlled Money Trust Account",
+        "description": "Manage funds you hold for your clients while earning interest with a Controlled Money Trust account, ideal for solicitors and real estate agents",
+        "brand": "BOS Internal",
+        "brandName": "BOS Internal",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.banksyd.com.au/business/controlled-money-trust-account",
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/business/controlled-money-trust-account",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "1.00"
             }
-        }
-    ]
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalValue": "Solicitors (NSW, SA & VIC) or Real Estate Agents (NSW & SA only)"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Staff Assisted Transaction Fee",
+                "amount": "0.55",
+                "currency": "AUD",
+                "additionalInfo": "The fee is charged per transaction"
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Cheque Deposit Fee",
+                "amount": "0.65",
+                "currency": "AUD",
+                "additionalInfo": "The fee is applicable per cheque deposit"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.006",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Enquiry access to view account"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credit",
+                "additionalInfo": "Direct credits to the account are allowed"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/controlled_money_trust_account"
+    }
 }
