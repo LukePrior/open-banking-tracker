@@ -110,12 +110,6 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;CommBank Youth app&quot;,
-            &quot;additionalInfo&quot;: &quot;Wondering how to teach your child to earn, save and spend their money responsibly. The CommBank Youth app gives under 14s hands-on experience that's fun and secure.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/youth-app.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Spend Tracker &amp; Insights&quot;,
             &quot;additionalInfo&quot;: &quot;We help you stay on track with your debit and credit card spending in the CommBank app.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/spend-tracker-insights.html&quot;
@@ -159,7 +153,7 @@
             &quot;additionalInfo&quot;: &quot;If you don't have enough money in your account for a payment or transfer you scheduled - we try to make the payment or transfer on five successive business days before charging you. This does not include Scheduled Payments that you arrange between your individual and/or joint accounts.&quot;
         },
         {
-            &quot;name&quot;: &quot;Paper Statement Fee&quot;,
+            &quot;name&quot;: &quot;Transaction listing or ad-hoc paper statement fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;2.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -191,6 +185,19 @@
                     &quot;amount&quot;: &quot;4.00&quot;,
                     &quot;eligibility&quot;: [
                         {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;2000.00&quot;,
+                            &quot;additionalInfo&quot;: &quot;You deposit at least $2,000 each calendar month to your account (excludes Bank initiated transactions).&quot;
+                        }
+                    ],
+                    &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;We won't charge you a monthly account fee.&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;4.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
                             &quot;discountEligibilityType&quot;: &quot;MAX_AGE&quot;,
                             &quot;additionalValue&quot;: &quot;25&quot;,
                             &quot;additionalInfo&quot;: &quot;You're under 25.&quot;
@@ -206,6 +213,20 @@
                         {
                             &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
                             &quot;additionalInfo&quot;: &quot;You have a disability that requires you to use a branch (visit a branch to apply).&quot;
+                        }
+                    ],
+                    &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
+                },
+                {
+                    &quot;description&quot;: &quot;We won't charge you a monthly account fee.&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;4.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;CommBank Home Loan&quot;,
+                            &quot;additionalInfo&quot;: &quot;You have a CommBank Home Loan and meet the eligibility criteria (refer to Terms and Conditions for eligibility criteria).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/SavingsInvestment_ADB2852.pdf&quot;
                         }
                     ],
                     &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
@@ -248,23 +269,17 @@
                         }
                     ],
                     &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
-                },
-                {
-                    &quot;description&quot;: &quot;We won't charge you a monthly account fee.&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;amount&quot;: &quot;4.00&quot;,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalValue&quot;: &quot;2000.00&quot;,
-                            &quot;additionalInfo&quot;: &quot;You deposit at least $2,000 each calendar month to your account (excludes Bank initiated transactions).&quot;
-                        }
-                    ],
-                    &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;A monthly account fee.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Paper Statement Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;There is no charge for additional paper statements issued outside the standard cycle (six months, or three months if you have a Personal Overdraft).&quot;
         },
         {
             &quot;name&quot;: &quot;Paper Statement Fee - Standard Cycle&quot;,
@@ -287,6 +302,20 @@
             &quot;amount&quot;: &quot;3.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;You may qualify for a waiver of cheque negotiated fees if.&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;3.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;50000.00&quot;,
+                            &quot;additionalInfo&quot;: &quot;Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/accounts/relationship-balance.html&quot;
+                        }
+                    ],
+                    &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
+                },
                 {
                     &quot;description&quot;: &quot;You may qualify for a waiver of cheque negotiated fees if.&quot;,
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
@@ -321,20 +350,6 @@
                             &quot;discountEligibilityType&quot;: &quot;STUDENT&quot;,
                             &quot;additionalInfo&quot;: &quot;You are a tertiary student at an educational institution located in Australia or are undertaking an Australian Apprenticeship on the Student Options, then student discount apply and we won't charge you a cheque negotiated fee.&quot;,
                             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/banking/students.html&quot;
-                        }
-                    ],
-                    &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
-                },
-                {
-                    &quot;description&quot;: &quot;You may qualify for a waiver of cheque negotiated fees if.&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;amount&quot;: &quot;3.00&quot;,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalValue&quot;: &quot;50000.00&quot;,
-                            &quot;additionalInfo&quot;: &quot;Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.&quot;,
-                            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/accounts/relationship-balance.html&quot;
                         }
                     ],
                     &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts.&quot;
@@ -448,7 +463,7 @@
     &quot;productId&quot;: &quot;33557e367d324529b38813adfc655b55&quot;,
     &quot;effectiveFrom&quot;: &quot;2010-07-14T14:00:00Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-05T16:15:28.439074Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-06T16:15:30.234399Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Smart Access&quot;,
     &quot;description&quot;: &quot;An everyday bank account, giving you access to unlimited electronic transactions and features to help your spending and bills stay on track. Plus if you meet certain criteria, we'll waive your $4 monthly account fee.&quot;,
