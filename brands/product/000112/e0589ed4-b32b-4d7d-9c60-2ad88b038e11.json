@@ -49,10 +49,10 @@
         ],
         "features": [
             {
-                "featureType": "DIGITAL_WALLET",
+                "featureType": "BILL_PAYMENT",
                 "additionalInfo": "",
                 "additionalInfoUri": null,
-                "additionalValue": "Google Pay"
+                "additionalValue": "Bpay"
             },
             {
                 "featureType": "NPP_ENABLED",
@@ -79,6 +79,12 @@
                 "additionalValue": "ApplePay"
             },
             {
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "Google Pay"
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "The minimum age to register for internet banking is 12 years old and the child must be a signatory on the account. However, a child that wants to register and is aged between 12-14 years old can be registered, so long as they have a parent/guardian attached to the account that is also is a signatory.",
                 "additionalInfoUri": null,
@@ -89,12 +95,6 @@
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null
-            },
-            {
-                "featureType": "BILL_PAYMENT",
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "Bpay"
             },
             {
                 "featureType": "BILL_PAYMENT",
@@ -118,13 +118,13 @@
         "fees": [
             {
                 "feeType": "EVENT",
-                "name": "Overdrawn Account Fee",
+                "name": "Statement Request",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies when your Transaction / Savings Account is overdrawn or the balance exceeds the limit of any Overdraft attached to the account at close of business and charged again at seven day increments if the balance remains overdrawn / limit exceeded.",
+                "additionalInfo": "Fee charged $2 per month applies.",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
-                "amount": "15.00",
+                "amount": "2.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -159,20 +159,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Express Posting Of Card Or Pin In Australia",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "15.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "PERIODIC",
                 "name": "Inactive Membership Fee",
                 "accrualFrequency": null,
@@ -187,14 +173,28 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Statement Request",
+                "feeType": "WITHDRAWAL",
+                "name": "Visa Debit Over The Counter Cash Advance",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Fee charged $2 per month applies.",
+                "additionalInfo": "",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
-                "amount": "2.00",
+                "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Overdrawn Account Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when your Transaction / Savings Account is overdrawn or the balance exceeds the limit of any Overdraft attached to the account at close of business and charged again at seven day increments if the balance remains overdrawn / limit exceeded.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -223,6 +223,55 @@
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
                 "amount": "9.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Emergency Overseas Replacement Card Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "150.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "This Fee is waived for Platinum credit card holders",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
+                        "additionalValue": null,
+                        "amount": "150.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Fee is waived for Platinum credit card holders",
+                                "additionalInfoUri": null,
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Express Posting Of Card Or Pin In Australia",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -317,55 +366,6 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "WITHDRAWAL",
-                "name": "Visa Debit Over The Counter Cash Advance",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Emergency Overseas Replacement Card Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "150.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "This Fee is waived for Platinum credit card holders",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
-                        "additionalValue": null,
-                        "amount": "150.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Fee is waived for Platinum credit card holders",
-                                "additionalInfoUri": null,
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
                 "transactionRate": null
             }
         ],
