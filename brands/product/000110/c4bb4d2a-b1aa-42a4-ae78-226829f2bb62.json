@@ -78,13 +78,13 @@
         "fees": [
             {
                 "feeType": "VARIABLE",
-                "name": "Property valuation fee",
+                "name": "Stamp Duty",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
+                "additionalInfo": "At cost",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -99,20 +99,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee - construction",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -161,20 +147,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Stamp Duty",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Consent fee",
                 "accrualFrequency": null,
@@ -185,20 +157,6 @@
                 "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "RateSaver Switch Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "To switch to a RateSaver Loan",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": null,
                 "discounts": [],
                 "transactionRate": null
             },
@@ -217,6 +175,48 @@
                 "transactionRate": null
             },
             {
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "At cost. Minimum is $250.00",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "250.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Redraw fee (per redraw)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "10.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee - construction",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "At cost",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Switch/variation fee - home & investment loans",
                 "accrualFrequency": null,
@@ -228,6 +228,41 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "500.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "DHOAS eligible applicants",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -301,52 +336,17 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "Redraw fee (per redraw)",
+                "feeType": "EVENT",
+                "name": "RateSaver Switch Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "10.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": null,
+                "additionalInfo": "To switch to a RateSaver Loan",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "500.00",
                 "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS eligible applicants",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "currency": null,
+                "discounts": [],
                 "transactionRate": null
             }
         ],
