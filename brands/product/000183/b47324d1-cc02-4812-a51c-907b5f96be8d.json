@@ -89,6 +89,20 @@
         "fees": [
             {
                 "feeType": "EVENT",
+                "name": "MORTGAGE_DISCHARGE_FEE-NON_SETTLEMENT",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "100.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "ARREARS_REMINDER_CALL_FEE",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -110,20 +124,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "600.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "MORTGAGE_DISCHARGE_FEE-NON_SETTLEMENT",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "100.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -172,6 +172,20 @@
                 "transactionRate": null
             },
             {
+                "feeType": "EVENT",
+                "name": "MORTGAGE_DISCHARGE_FEE-SETTLEMENT",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "150.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "UPFRONT",
                 "name": "MORTGAGE_APPLICATION_FEE_FURTHER_ADVANCE-GREATER_THAN_80%",
                 "accrualFrequency": null,
@@ -180,6 +194,20 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "600.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "ARREARS_DEFAULT_NOTICE_FEE",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "40.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -215,34 +243,6 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "ARREARS_DEFAULT_NOTICE_FEE",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "40.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "FIXED_RATE_LOCK",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Fee is greater than 0.15% of the amount of credit or $395 where funding is more than 60 days from the date of the Offer and Loan Contract",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "395.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
                 "name": "ARREARS_2ND_AND_SUBSEQUENT_REMINDER_LETTER",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -257,13 +257,13 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "MORTGAGE_DISCHARGE_FEE-SETTLEMENT",
+                "name": "FIXED_RATE_LOCK",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
+                "additionalInfo": "Fee is greater than 0.15% of the amount of credit or $395 where funding is more than 60 days from the date of the Offer and Loan Contract",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "150.00",
+                "amount": "395.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -287,20 +287,20 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0470000000000000",
+                "rate": "0.0460000000000000",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
-                "comparisonRate": "0.0474000000000000",
+                "comparisonRate": "0.0464000000000000",
                 "interestPaymentDue": "IN_ADVANCE",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "minimumValue": 250000.0,
-                        "name": "Variable Rate >$250K - $500K",
+                        "minimumValue": 500000.0,
+                        "name": "Variable Rate >$500K",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -308,7 +308,7 @@
                             "additionalInfo": null,
                             "additionalInfoUri": null
                         },
-                        "maximumValue": 500000.0,
+                        "maximumValue": 0.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -329,118 +329,6 @@
                     {
                         "minimumValue": 5000000.0,
                         "name": "Fixed Rate 1 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0510000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 500000.0,
-                        "name": "Interest Only Rate < $500K 2 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0554000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P3Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0491000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.0,
-                        "name": "Interest Only Rate  LVR <=80% LVR  3 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.8,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0449000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P2Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0507000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 200000.0,
-                        "name": "2 Year Fixed Special Offer",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0510000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 500000.0,
-                        "name": "Interest Only Rate < $500K 3 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -482,245 +370,21 @@
                 ]
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0509000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P2Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0480000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.0,
-                        "name": "Interest Only Rate  LVR <=80% LVR  2 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.8,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0405000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P1Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0472000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.8,
-                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  1 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.9,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0530000000000000",
-                "additionalInfo": null,
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0484000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 50000.0,
-                        "name": "Interest Only Rate $50K - $250K 3 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 250000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0530000000000000",
+                "rate": "0.0470000000000000",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
-                "comparisonRate": "0.0484000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 50000.0,
-                        "name": "Interest Only Rate $50K - $250K 1 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 250000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0405000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P1Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0472000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.9,
-                        "name": "Interest Only Rate  LVR >90% LVR  1 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0529000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P2Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0484000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.9,
-                        "name": "Interest Only Rate  LVR >90% LVR  2 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0574000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P3Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0496000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.9,
-                        "name": "Interest Only Rate  LVR >90% LVR  3 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0530000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0484000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 50000.0,
-                        "name": "Interest Only Rate $50K - $250K 3 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 250000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0460000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
+                "comparisonRate": "0.0474000000000000",
                 "interestPaymentDue": "IN_ADVANCE",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
-                        "minimumValue": 500000.0,
-                        "name": "Variable Rate >$500K",
+                        "minimumValue": 250000.0,
+                        "name": "Variable Rate >$250K - $500K",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -728,7 +392,7 @@
                             "additionalInfo": null,
                             "additionalInfoUri": null
                         },
-                        "maximumValue": 0.0,
+                        "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -804,7 +468,7 @@
                 "tiers": [
                     {
                         "minimumValue": 251000.0,
-                        "name": "Interest Only Rate $251K - $500K 2 Year",
+                        "name": "Interest Only Rate $251K - $500K 3 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -813,6 +477,118 @@
                             "additionalInfoUri": null
                         },
                         "maximumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0405000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P1Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0472000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.9,
+                        "name": "Interest Only Rate  LVR >90% LVR  1 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0509000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P2Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0480000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.8,
+                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  2 Years",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.9,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0510000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0464000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 500000.0,
+                        "name": "Interest Only Rate < $500K 2 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0530000000000000",
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0484000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 50000.0,
+                        "name": "Interest Only Rate $50K - $250K 3 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 250000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -832,7 +608,7 @@
                 "tiers": [
                     {
                         "minimumValue": 251000.0,
-                        "name": "Interest Only Rate $251K - $500K 1 Year",
+                        "name": "Interest Only Rate $251K - $500K 2 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -841,6 +617,34 @@
                             "additionalInfoUri": null
                         },
                         "maximumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0510000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0464000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 500000.0,
+                        "name": "Interest Only Rate < $500K 3 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -869,146 +673,6 @@
                             "additionalInfoUri": null
                         },
                         "maximumValue": 500000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0405000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P1Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0472000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.0,
-                        "name": "Interest Only Rate  LVR <=80% LVR  1 Year",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.8,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0510000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 500000.0,
-                        "name": "Interest Only Rate < $500K 1 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0510000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 500000.0,
-                        "name": "Interest Only Rate < $500K 4 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0510000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0464000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 500000.0,
-                        "name": "Interest Only Rate < $500K 5 Year",
-                        "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0554000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P3Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0491000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "repaymentType": "INTEREST_ONLY",
-                "tiers": [
-                    {
-                        "minimumValue": 0.8,
-                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  3 Years",
-                        "unitOfMeasure": "PERCENT",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": {
-                            "additionalInfo": null,
-                            "additionalInfoUri": null
-                        },
-                        "maximumValue": 0.9,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -1043,6 +707,90 @@
             },
             {
                 "lendingRateType": "FIXED",
+                "rate": "0.0509000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P2Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0480000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "Interest Only Rate  LVR <=80% LVR  2 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.8,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0510000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0464000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 500000.0,
+                        "name": "Interest Only Rate < $500K 4 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0405000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P1Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0472000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "Interest Only Rate  LVR <=80% LVR  1 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.8,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
                 "rate": "0.0399000000000000",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": null,
@@ -1065,6 +813,62 @@
                             "additionalInfoUri": null
                         },
                         "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0554000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P3Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0491000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "Interest Only Rate  LVR <=80% LVR  3 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.8,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0405000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P1Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0472000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.8,
+                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  1 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.9,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -1126,21 +930,49 @@
                 ]
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0509000000000000",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0530000000000000",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": null,
-                "additionalValue": "P2Y",
+                "additionalValue": null,
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
-                "comparisonRate": "0.0480000000000000",
+                "comparisonRate": "0.0484000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 50000.0,
+                        "name": "Interest Only Rate $50K - $250K 2 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0554000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P3Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0491000000000000",
                 "interestPaymentDue": "IN_ADVANCE",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "INTEREST_ONLY",
                 "tiers": [
                     {
                         "minimumValue": 0.8,
-                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  2 Years",
+                        "name": "Interest Only Rate  LVR >80%-=<90% LVR  3 Years",
                         "unitOfMeasure": "PERCENT",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -1168,7 +1000,7 @@
                 "tiers": [
                     {
                         "minimumValue": 50000.0,
-                        "name": "Interest Only Rate $50K - $250K 2 Year",
+                        "name": "Interest Only Rate $50K - $250K 1 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
@@ -1177,6 +1009,34 @@
                             "additionalInfoUri": null
                         },
                         "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0574000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P3Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0496000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.9,
+                        "name": "Interest Only Rate  LVR >90% LVR  3 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
@@ -1224,6 +1084,146 @@
                 "tiers": [
                     {
                         "minimumValue": 50000.0,
+                        "name": "Interest Only Rate $50K - $250K 3 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0510000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0464000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 500000.0,
+                        "name": "Interest Only Rate < $500K 1 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0510000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0464000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 500000.0,
+                        "name": "Interest Only Rate < $500K 5 Year",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0449000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P2Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0507000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 200000.0,
+                        "name": "2 Year Fixed Special Offer",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P2Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0484000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 0.9,
+                        "name": "Interest Only Rate  LVR >90% LVR  2 Year",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0530000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0484000000000000",
+                "interestPaymentDue": "IN_ADVANCE",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "repaymentType": "INTEREST_ONLY",
+                "tiers": [
+                    {
+                        "minimumValue": 50000.0,
                         "name": "Interest Only Rate $50K - $250K 4 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
@@ -1252,7 +1252,7 @@
                 "tiers": [
                     {
                         "minimumValue": 251000.0,
-                        "name": "Interest Only Rate $251K - $500K 3 Year",
+                        "name": "Interest Only Rate $251K - $500K 1 Year",
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
