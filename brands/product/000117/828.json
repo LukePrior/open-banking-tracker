@@ -1,12 +1,12 @@
 {
     "data": {
-        "productId": "826",
+        "productId": "828",
         "effectiveFrom": "2014-07-28T00:00:00.000+10:00",
         "effectiveTo": "2029-12-31T00:00:00.000+11:00",
         "lastUpdated": "2014-07-28T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Essentials DHOAS Fixed",
-        "description": "The Essentials DHOAS loan is a solid bet on a loan that has your back when purchasing your next owner-occupied property.",
+        "name": "Essentials",
+        "description": "The Essentials is a solid bet on a loan that has your back, whether it\u2019s your first home, your tenth or anything in-between.",
         "brand": "Defence Bank",
         "brandName": "Defence Bank Limited",
         "applicationUri": "https://secure.defencebank.com.au/internetlending/public/start.aspx",
@@ -35,13 +35,16 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalInfo": "Loan Portability "
+            },
+            {
+                "featureType": "OTHER",
                 "additionalValue": "Up to two facilities at first draw down or any time during term of loan",
                 "additionalInfo": "Split Loan Facility "
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Loan can be switched between Variable/Fixed interest rates. Interest rate can be fixed for  1,2,3,4 or 5 years. Break costs may apply if paid out during fixed interest period",
-                "additionalInfo": "Fixed rate options available"
+                "additionalInfo": "Fixed rate option."
             },
             {
                 "featureType": "OTHER",
@@ -71,34 +74,27 @@
                 "additionalInfo": "Quick and easy online application."
             },
             {
-                "featureType": "REDRAW",
-                "additionalInfo": "Free loan redraw "
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Redraw facility available online"
             },
             {
-                "featureType": "OTHER",
-                "additionalValue": "You must meet Defence Home Ownership Assistance Scheme eligibility criteria.",
-                "additionalInfo": "DHOAS home loan compatible.",
-                "additionalInfoUri": "https://www.defencebank.com.au/dhoas-home-loans"
+                "featureType": "REDRAW",
+                "additionalInfo": "Free loan redraw "
             }
         ],
         "constraints": [
             {
-                "constraintType": "MIN_BALANCE",
+                "constraintType": "MAX_BALANCE",
                 "additionalValue": "Residential.",
                 "additionalInfo": "Borrow up to 95% of the property value."
             },
             {
                 "constraintType": "MAX_BALANCE",
-                "additionalValue": "Vacant land/refinance (1st mortgage only).",
+                "additionalValue": "Vacant land/refinance.",
                 "additionalInfo": "Borrow up to 90% of the property value."
             }
         ],
         "eligibility": [
-            {
-                "eligibilityType": "EMPLOYMENT_STATUS",
-                "additionalValue": "You must meet Defence Home Ownership Assistance Scheme eligibility criteria.",
-                "additionalInfoUri": "https://www.defencebank.com.au/dhoas-home-loans"
-            },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalInfo": "Australian residents only."
@@ -113,67 +109,90 @@
                 "additionalInfo": "Lending criteria. "
             },
             {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Purchase/refinance owner occupied home Improvements.",
+                "eligibilityType": "BUSINESS",
+                "additionalValue": "Purchase/refinance owner occupied home improvements any worthwhile purpose.",
                 "additionalInfo": "Purpose"
             }
         ],
-        "fees": [],
+        "fees": [
+            {
+                "name": "Loan Service Fee",
+                "feeType": "PERIODIC",
+                "amount": "8.00",
+                "additionalValue": "P1M",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Substitution of Loan Security",
+                "feeType": "EVENT",
+                "amount": "275.00",
+                "additionalInfo": "Payable on settlement",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Settlement Fee",
+                "feeType": "EVENT",
+                "amount": "275.00",
+                "additionalInfo": "Payable on settlement",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Valuation Fee - Standard Valuation (from)",
+                "feeType": "EVENT",
+                "amount": "205.25",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Consent and variation fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Switching fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "additionalInfo": "Switching from fixed to variable interest rate. Not payable under the Ultimate Package",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Security discharge administration fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Arrears reminder notice fee (per letter)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Default notice (enforcement notice)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            }
+        ],
         "depositRates": [],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0594",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0592",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0669",
+                "rate": "0.0577",
                 "tiers": [],
-                "additionalValue": "P4Y",
-                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0609",
-                "interestPaymentDue": "IN_ADVANCE",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0679",
-                "tiers": [],
-                "additionalValue": "P5Y",
-                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0556",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0599",
-                "tiers": [],
-                "additionalValue": "P2Y",
-                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0544",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0539",
-                "tiers": [],
-                "additionalValue": "P1Y",
-                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0577",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0649",
-                "tiers": [],
-                "additionalValue": "P3Y",
                 "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
             }
         ]
