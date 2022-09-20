@@ -2,8 +2,14 @@
     "data": {
         "features": [
             {
+                "featureType": "OFFSET",
+                "additionalValue": "Yes",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
                 "featureType": "REDRAW",
-                "additionalValue": "Minimum $50",
+                "additionalValue": "Yes, minimum redraw $50",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
@@ -14,10 +20,18 @@
                 "additionalInfoUri": ""
             }
         ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "80.00",
+                "additionalInfo": "Up to 80% LVR",
+                "additionalInfoUri": ""
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": "18 Years",
+                "additionalValue": "18 years",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
@@ -29,20 +43,14 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen",
+                "additionalValue": "Australian citizen",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
             {
                 "eligibilityType": "OTHER",
                 "additionalValue": "Yes",
-                "additionalInfo": "BankVic Member",
-                "additionalInfoUri": ""
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Yes",
-                "additionalInfo": "Police Officer",
+                "additionalInfo": "Member of BankVic",
                 "additionalInfoUri": ""
             }
         ],
@@ -128,34 +136,22 @@
         ],
         "lendingRates": [
             {
-                "lendingRateType": "DISCOUNT",
-                "rate": "0.03840",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.05970",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Maximum 30 year loan term",
                 "additionalInfoUri": "",
                 "interestPaymentDue": "IN_ARREARS",
-                "comparisonRate": "0.04660",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.04790",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "",
-                "additionalInfoUri": "",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "L7_Investment_2_Year_Intro_Variable_IC51",
-        "lastUpdated": "2022-08-16T16:48:39.000+10:00",
+        "productId": "L27_Offset_HOO_IC24",
+        "lastUpdated": "2022-09-20T08:01:06.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Police 2 Year Intro Variable Investor",
-        "description": "INVESTMENT 2 YEAR INTRO VARIABLE",
+        "name": "Offset Variable Home Loan",
+        "description": "Use your savings to reduce interest charged on your variable rate mortgage",
         "brand": "BankVic",
         "brandName": "BankVic",
         "applicationUri": "https://www.bankvic.com.au/apply-home-loan",
@@ -169,7 +165,7 @@
         }
     },
     "links": {
-        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L7_Investment_2_Year_Intro_Variable_IC51"
+        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L27_Offset_HOO_IC24"
     },
     "meta": {}
 }
