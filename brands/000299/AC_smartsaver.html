@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;AC_smartsaver&quot;,
     &quot;effectiveFrom&quot;: &quot;2017-02-27T00:00:00.000+11:00&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T00:00:00.000+11:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-08-12T00:00:00.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-21T00:00:00.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Smart Saver Account&quot;,
     &quot;description&quot;: &quot;This savings account is designed to help members reach their savings goals.&quot;,
@@ -29,13 +29,13 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/personal/saving-accounts/smart-saver-account&quot;
         },
         {
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
-            &quot;additionalValue&quot;: &quot;BPAY View&quot;,
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;OSKO&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/personal/saving-accounts/smart-saver-account&quot;
         },
         {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalInfo&quot;: &quot;OSKO&quot;,
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY View&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/personal/saving-accounts/smart-saver-account&quot;
         },
         {
@@ -67,13 +67,13 @@
             &quot;additionalValue&quot;: &quot;Available to permanent Australian Residents &quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
-            &quot;additionalInfo&quot;: &quot;This account is for personal use by individuals including for Trusts and Self-Managed Superannuation Funds (SMSF) with personal trustees. &quot;
-        },
-        {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;25&quot;,
             &quot;additionalInfo&quot;: &quot;At least one account holder must be 25 years of age or older at the date of opening&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;additionalInfo&quot;: &quot;This account is for personal use by individuals including for Trusts and Self-Managed Superannuation Funds (SMSF) with personal trustees. &quot;
         }
     ],
     &quot;fees&quot;: [
@@ -189,28 +189,12 @@
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0165000000&quot;,
+            &quot;rate&quot;: &quot;0.0220000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;,
             &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$0 - $50000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 50000.0,
-                    &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;$250000 +&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 250000.0,
-                    &quot;maximumValue&quot;: 0.0,
-                    &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
-                },
                 {
                     &quot;name&quot;: &quot;$50000 - $100000&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
@@ -220,10 +204,26 @@
                     &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
                 },
                 {
+                    &quot;name&quot;: &quot;$0 - $50000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 50000.0,
+                    &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
+                },
+                {
                     &quot;name&quot;: &quot;$100000 - $250000&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 100000.0,
                     &quot;maximumValue&quot;: 250000.0,
+                    &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;$250000 +&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000.0,
+                    &quot;maximumValue&quot;: 0.0,
                     &quot;additionalInfo&quot;: &quot;Where account balance falls into this band, rate applies to your whole balance. Interest is earned for every calendar month that your Smart Saver Account closing balance on the last day of the month is at least $150 higher than the opening balance on the first day of that month (excluding any amounts of interest earned on the account in that month) and no more than 2 withdrawals have been made from the account during that month. &quot;,
                     &quot;additionalInfoUri&quot;: &quot;https://www.newcastlepermanent.com.au/tools-and-services/interest-rates&quot;
                 }
