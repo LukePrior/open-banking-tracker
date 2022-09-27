@@ -2,12 +2,8 @@
     "data": {
         "features": [
             {
-                "featureType": "OFFSET",
-                "additionalInfo": "",
-                "additionalInfoUri": ""
-            },
-            {
                 "featureType": "REDRAW",
+                "additionalValue": "Yes, minimum redraw $50",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
@@ -16,13 +12,25 @@
                 "additionalValue": "No-obligation quotes for insurance (with an option of 90 days free building insurance cover during settlement period)",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalValue": "Not available",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
             }
         ],
         "eligibility": [
             {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Yes",
-                "additionalInfo": "BankVic Member",
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18 years",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "EMPLOYMENT_STATUS",
+                "additionalValue": "PAYG income and be outside any probationary periods of employment",
+                "additionalInfo": "",
                 "additionalInfoUri": ""
             },
             {
@@ -32,9 +40,9 @@
                 "additionalInfoUri": ""
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18 Years",
-                "additionalInfo": "",
+                "eligibilityType": "OTHER",
+                "additionalValue": "Yes",
+                "additionalInfo": "Member of BankVic",
                 "additionalInfoUri": ""
             }
         ],
@@ -66,19 +74,6 @@
                 "discounts": []
             },
             {
-                "name": "SWITCHING_LOAN_PRODUCTS",
-                "feeType": "UPFRONT",
-                "amount": "200.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "accrualFrequency": "P1D",
-                "currency": "AUD",
-                "additionalInfo": "",
-                "additionalInfoUri": "",
-                "discounts": []
-            },
-            {
                 "name": "VALUATION_FEE",
                 "feeType": "UPFRONT",
                 "amount": "290.00",
@@ -105,6 +100,19 @@
                 "discounts": []
             },
             {
+                "name": "SWITCHING_LOAN_PRODUCTS",
+                "feeType": "UPFRONT",
+                "amount": "200.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1D",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": []
+            },
+            {
                 "name": "PRODUCTION_OF_TITLE_FEE",
                 "feeType": "UPFRONT",
                 "amount": "330.00",
@@ -121,36 +129,47 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.06640",
+                "rate": "0.03950",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Maximum 30 year loan term",
                 "additionalInfoUri": "",
-                "interestPaymentDue": null,
-                "comparisonRate": "0.06590",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.04440",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.03950",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "L7_Fixed_1Yr_Inv_IO_IC44",
-        "lastUpdated": "2022-09-19T18:57:39.000+10:00",
+        "productId": "L6_2Yr_IO_Variable_Construct_IC57",
+        "lastUpdated": "2022-09-26T14:48:11.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Investor IO Fixed 1 Year",
-        "description": "Interest only term for property investors",
+        "name": "2 Year Interest Only Variable Construction Home Loan",
+        "description": "A low variable Interest Only rate to get into your dream home sooner",
         "brand": "BankVic",
         "brandName": "BankVic",
         "applicationUri": "https://www.bankvic.com.au/apply-home-loan",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.bankvic.com.au/home-buying/investor",
+            "overviewUri": "https://www.bankvic.com.au/home-buying/upgrade-refinance",
             "termsUri": "https://cdn.intelligencebank.com/au/share/NZw2/RVzr/yzJw/original/BankVic+Terms+%26+Conditions",
-            "eligibilityUri": "https://www.bankvic.com.au/home-buying/investor",
+            "eligibilityUri": "https://www.bankvic.com.au/home-buying/upgrade-refinance",
             "feesAndPricingUri": "https://cdn.intelligencebank.com/au/share/NZw2/RVzr/dwqA/original/Fees+and+Charges",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L7_Fixed_1Yr_Inv_IO_IC44"
+        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L6_2Yr_IO_Variable_Construct_IC57"
     },
     "meta": {}
 }
