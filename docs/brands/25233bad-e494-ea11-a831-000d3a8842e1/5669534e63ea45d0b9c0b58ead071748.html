@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business Investment Account</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalValue&quot;: &quot;Maturity reminders&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Early Withdrawal&quot;,
+            &quot;additionalInfo&quot;: &quot;If you want to withdraw your Business Investment Account before it matures you'll need to give us 31 days' notice. You may incur a prepayment adjustment and administration fee.&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;There is no maximum limit (subject to acceptance by the Bank).&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;To be eligible you need to have a valid ABN, ACN, or an association created and operating in Australia. Further Eligibility depends on your specific organisation structure.&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Prepayment administration fee and prepayment adjustment&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;If you need to withdraw money during the term, you may request withdrawal of all or part of your funds by giving the Bank 31 days' notice. A prepayment adjustment and administration fee may apply to withdrawals before maturity.&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7D&quot;,
+            &quot;additionalInfo&quot;: &quot;Holding facility rate. When your funds are in the holding facility, they\u2019re renewed at a fixed interest rate every seven days until we receive your instructions for withdrawal or reinvestment for an agreed fixed term of one month or longer. You can give us instructions at any time, once you decide what you want to do.&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DAY&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 30
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8D&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is 8 days&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 2
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 1 month to less than 2 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 2,
+                    &quot;maximumValue&quot;: 3
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 2 months to less than 3 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 3 months to less than 4 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.008&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 4,
+                    &quot;maximumValue&quot;: 5
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 4 months to less than 5 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 5,
+                    &quot;maximumValue&quot;: 6
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 5 months to less than 6 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 6 months to less than 7 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 7,
+                    &quot;maximumValue&quot;: 8
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P7M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 7 months to less than 8 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 8,
+                    &quot;maximumValue&quot;: 9
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P8M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 8 months to less than 9 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.015&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 9 months to less than 10 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.017&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.017&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 10,
+                    &quot;maximumValue&quot;: 11
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 10 months to less than 11 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.018&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.018&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0185&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0185&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0185&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0185&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 11,
+                    &quot;maximumValue&quot;: 12
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P11M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 11 months to less than 12 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.022&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.022&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.022&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.022&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 36
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 24 months to less than 36 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 48
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 36 months to less than 48 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0245&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0245&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0245&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0245&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 48 months to less than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is greater than 60 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0325&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0325&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P4W&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.033&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.033&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0335&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1999999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0335&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Term&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 24
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;The term of this term deposit is between 12 months to less than 24 months&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;5669534e63ea45d0b9c0b58ead071748&quot;,
+    &quot;effectiveFrom&quot;: &quot;2012-11-27T13:00:00Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-27T16:30:27.001769Z&quot;,
+    &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
+    &quot;name&quot;: &quot;Business Investment Account&quot;,
+    &quot;description&quot;: &quot;Feel confident knowing exactly how much your money will earn. Lock-in a competitive interest rate with our range of fixed term deposits.&quot;,
+    &quot;brand&quot;: &quot;CBA&quot;,
+    &quot;brandName&quot;: &quot;CommBank&quot;,
+    &quot;isTailored&quot;: false
+}</textarea>
+    </div>
+  </body>
+</html>

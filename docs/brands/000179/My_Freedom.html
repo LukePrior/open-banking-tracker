@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Freedom</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
+            &quot;additionalValue&quot;: &quot;subject to normal lending criteria and approval&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS_ALLOWANCE&quot;,
+            &quot;additionalValue&quot;: &quot;no limit to amount of card or branch withdrawals&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;55 year and over&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;MEMBER_CHEQUE_PRESENTED&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee for every cheque presented&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;DECLINED_ATM_OR_EFTPOS_TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Each time an ATM or EFTPOS transaction is declined&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;ATM_BALANCE_ENQUIRY&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Each time a balance enquiry is requested at an ATM&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;My Freedom_Tier_1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 499.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/interest-rates&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00650&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;My Freedom_Tier_2&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 499.01,
+                    &quot;maximumValue&quot;: 48000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/interest-rates&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00650&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;My Freedom_Tier_3&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 48000.01,
+                    &quot;maximumValue&quot;: null,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/interest-rates&quot;
+        }
+    ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.00000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.gmcu.com.au/interest-rates&quot;,
+            &quot;interestPaymentDue&quot;: null,
+            &quot;repaymentType&quot;: null,
+            &quot;loanPurpose&quot;: null
+        }
+    ],
+    &quot;productId&quot;: &quot;My_Freedom&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-29T20:36:26.000+10:00&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;My Freedom&quot;,
+    &quot;description&quot;: &quot;The My Freedom Account is a transaction account for persons aged 55 years and above and who no longer work full time. Funds are available at call&quot;,
+    &quot;brand&quot;: &quot;Goulburn Murray Credit Union Co-Operative Ltd&quot;,
+    &quot;brandName&quot;: &quot;Goulburn Murray Credit Union Co-Operative Ltd&quot;,
+    &quot;applicationUri&quot;: &quot;&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.gmcu.com.au/products-services/accounts&quot;,
+        &quot;termsUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.gmcu.com.au/pds&quot;,
+        &quot;bundleUri&quot;: &quot;&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>

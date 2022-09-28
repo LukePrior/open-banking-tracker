@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retirement Account</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;retirement_account&quot;,
+    &quot;effectiveTo&quot;: &quot;2021-02-26T07:41:03Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-25T03:59:22Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Retirement Account&quot;,
+    &quot;description&quot;: &quot;Designed to offer retirees over the age of 55 a simple way to manage their money.&quot;,
+    &quot;brand&quot;: &quot;Bank of Sydney&quot;,
+    &quot;brandName&quot;: &quot;Bank of Sydney&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;termsUri&quot;: &quot;https://www.banksyd.com.au/important-product-information&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.banksyd.com.au/important-product-information&quot;
+    },
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;50.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MINAGE&quot;,
+            &quot;additionalValue&quot;: &quot;55&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCYSTATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Resident or Citizen&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Transaction Fees&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM transactions exceeds 4 per month&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Dishonour Fee&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Overdrawn Account Fee&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Balance Inquiry Fee&quot;,
+            &quot;amount&quot;: &quot;1.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable if number of ATM balance inquiries exceeds 3 per month&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;0 to 1999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 1999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.002&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2000 to 40999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 2000,
+                    &quot;maximumValue&quot;: 40999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0055&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;41000 to 99999999999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 41000,
+                    &quot;maximumValue&quot;: 99999999999,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;VISA Debit Card&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;4&quot;,
+            &quot;additionalInfo&quot;: &quot;ATM Transactions&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;3&quot;,
+            &quot;additionalInfo&quot;: &quot;Balance Enquiry&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;4&quot;,
+            &quot;additionalInfo&quot;: &quot;Staff Assisted Withdrawal&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Manage your account and view transactions with Internet Banking and Mobile Banking&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Google Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Samsung Pay&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalValue&quot;: &quot;Null&quot;,
+            &quot;additionalInfo&quot;: &quot;Additional card holders must be verified as per KYC standards&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Interest bearing&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest calculated daily and paid monthly&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>

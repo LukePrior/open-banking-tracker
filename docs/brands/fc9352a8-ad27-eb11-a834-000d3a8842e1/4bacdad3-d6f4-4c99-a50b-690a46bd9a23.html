@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixed Rate Loan</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;4bacdad3-d6f4-4c99-a50b-690a46bd9a23&quot;,
+    &quot;effectiveFrom&quot;: &quot;2000-05-21T23:00:00.000Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-31T01:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-20T14:00:00.000Z&quot;,
+    &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
+    &quot;name&quot;: &quot;Fixed Rate Loan&quot;,
+    &quot;description&quot;: &quot;Fixed interest rate home loans for terms of one to five years.&quot;,
+    &quot;brand&quot;: &quot;ING&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.ing.com.au/home-loans/fixed-rate-home-loan.html&quot;
+    },
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;COMPLEMENTARY_PRODUCT_DISCOUNTS&quot;,
+            &quot;additionalValue&quot;: &quot;Discounts on your Home &amp; Contents insurance&quot;,
+            &quot;additionalInfo&quot;: &quot;Breathe easier and save 30% on new policies when you combine home with contents insurance online.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalValue&quot;: &quot;Transaction notification&quot;,
+            &quot;additionalInfo&quot;: &quot;Receive SMS notifications when your balance is above or below an amount, a deposit is made or when your salary is deposited.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Extra repayments&quot;,
+            &quot;additionalInfo&quot;: &quot;It's free to make additional repayments (less than $10,000 per settlement anniversary).&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BONUS_REWARDS&quot;,
+            &quot;additionalInfo&quot;: &quot;Just add Orange Everyday to your home loan, and you\u2019ll get free ATMs across Australia, a rebate on fees from any ATM worldwide within 5 business days, and we\u2019ll also rebate our ING international transaction fees.&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;50000.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;3000000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;You must be aged 18 or over.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;AU&quot;,
+            &quot;additionalInfo&quot;: &quot;Available to Australian citizen or Australian permanent resident.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;NZ&quot;,
+            &quot;additionalInfo&quot;: &quot;Available to New Zealand citizens living in Australia.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Have and maintain an Australian residential address.&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Annual fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;There are no monthly, annual or transaction fees.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Settlement fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;299.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;For each loan application and is charged at settlement.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Combination loan&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;If applying for more than one loan, a split fee of $100 for each additional loan is payable.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Change to letter of offer&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;This is payable if changes are made to the letter of offer between disclosure date (date of original issue) and settlement.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Swift&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;35.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Additional statements&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$7 for each statement period.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Trace request&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;60.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$60 an hour.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Audit certificate completed&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Special answer fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Increase/decrease to loan amount&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Product switch&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Automatically switches to a variable Mortgage Simplifier at the end of the fixed term free of charge. Break cost may be payable if at any time before the fixed term expires, you change your loan type.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Substitution of security&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Discharge Full and Partial&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Consent to Subdivision/2nd mortgage&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Removal or change to borrowers or guarantors&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Dishonoured cheque&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Direct debit rejected&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$9 for each direct debit rejected.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Arrears Reminder Letter&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$20 for each letter.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Arrears Default Letter&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;40.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$40 for each letter.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Fixed Rate Application Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;499.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies for a standard fixed rate loan (where one security property is attached).&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee is waived if split with an Orange Advantage.&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;499.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Fixed Rate Application Fee is waived if split with an Orange Advantage Home Loan.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Fixed Rate Lock in&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;749.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged to lock in your fixed rate prior to settlement and is charged per fixed rate loan account.&quot;
+        }
+    ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0584&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0469&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0594&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0483&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0594&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0494&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0594&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0506&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0624&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0574&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0496&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0584&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0509&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0584&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0520&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0584&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0530&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0614&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0553&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0475&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0486&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0496&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0505&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0579&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0526&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0492&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0499&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0506&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0512&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0528&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0423&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0435&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0446&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0456&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0479&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0451&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0462&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0472&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0482&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0503&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>

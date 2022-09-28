@@ -38,7 +38,7 @@ changed_products = 0
 
 for brand in brands:
     try:
-        response = get_data(brands[brand]['productReferenceDataApi'])
+        response = get_data(brands[brand]['publicBaseUri'] + "/cds-au/v1/banking/products")
 
         flag = False
         skip_update = False

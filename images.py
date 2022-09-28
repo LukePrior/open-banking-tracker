@@ -13,7 +13,7 @@ changed_images = 0
 
 for brand in brands:
     try:
-        r = requests.get(brands[brand]['logoUrl'], headers=headers)
+        r = requests.get(brands[brand]['logoUri'], headers=headers)
 
         file_extension = guess_extension(r.headers['Content-Type'].partition(';')[0].strip())
 

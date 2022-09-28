@@ -3,7 +3,7 @@ import json
 
 brands = {}
 
-r = requests.get('https://api.cdr.gov.au/cdr-register/v1/banking/register')
+r = requests.get('https://api.cdr.gov.au/cdr-register/v1/banking/data-holders/brands/summary', headers={"x-v":"1"})
 
 available_brands = r.json()
 
@@ -11,26 +11,25 @@ raw_file = open("brands/raw.json", "w")
 json.dump(available_brands, raw_file, indent = 4)
 raw_file.close()
 
-available_brands = available_brands['registerDetails']
+available_brands = available_brands['data']
 
-for entity in available_brands:
-    for brand in entity['brands']:
-        if 'productReferenceDataApi' in brand:
-            brands[brand['brandRef']] = {}
-            brands[brand['brandRef']]['legalEntityId'] = entity['legalEntityId']
-            brands[brand['brandRef']]['legalEntityName'] = entity['legalEntityName']
-            brands[brand['brandRef']]['accreditationDate'] = entity['accreditationDate']
-            brands[brand['brandRef']]['brandRef'] = brand['brandRef']
-            brands[brand['brandRef']]['brandName'] = brand['brandName']
-            brands[brand['brandRef']]['productReferenceDataApi'] = brand['productReferenceDataApi']
-            brands[brand['brandRef']]['logoUrl'] = brand['logoUrl']
-            brands[brand['brandRef']]['cdrPolicyUrl'] = brand['cdrPolicyUrl']
-            if 'website' in brand:
-                brands[brand['brandRef']]['website'] = brand['website']
-            elif 'website' in entity:
-                brands[brand['brandRef']]['website'] = entity['website']
-            if 'brandDescription' in brand:
-                brands[brand['brandRef']]['brandDescription'] = brand['brandDescription']
+for brand in available_brands:
+    if ('dataHolderBrandId' in brand or 'interimId' in brand):
+        brands[brand['dataHolderBrandId']] = {}
+        if 'dataHolderBrandId' in brand:
+            brands[brand['dataHolderBrandId']]['dataHolderBrandId'] = brand['dataHolderBrandId']
+        if 'interimId' in brand:
+            brands[brand['dataHolderBrandId']]['interimId'] = brand['interimId']
+        brands[brand['dataHolderBrandId']]['brandName'] = brand['brandName']
+        brands[brand['dataHolderBrandId']]['logoUri'] = brand['logoUri']
+        brands[brand['dataHolderBrandId']]['publicBaseUri'] = brand['publicBaseUri']
+        brands[brand['dataHolderBrandId']]['lastUpdated'] = brand['lastUpdated']
+        if 'abn' in brand:
+            brands[brand['dataHolderBrandId']]['abn'] = brand['abn']
+        if 'acn' in brand:
+            brands[brand['dataHolderBrandId']]['acn'] = brand['acn']
+        if 'arbn' in brand:
+            brands[brand['dataHolderBrandId']]['arbn'] = brand['arbn']
 
 
 brands_file = open("brands/brands.json", "w")
