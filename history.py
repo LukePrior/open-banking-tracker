@@ -101,16 +101,21 @@ for product in products:
     try:
         path = "brands/product/" + product["brandId"] + "/" + product["productId"] + ".json"
 
-        commits = repo.iter_commits(paths=path)
+        commits = repo.git.log('--pretty=h:%H','--follow','--name-only','--', path).split('h:')
+
+        if (commits[0] == ""):
+            commits.pop(0)
 
         product_rates = []
         for commit in commits:
+            newcommit = repo.rev_parse(commit.split("\n")[0])
             try:
-                filecontents = (commit.tree / path).data_stream.read()
-            except:
+                path = commit.split("\n")[2]
+                filecontents = (newcommit.tree / path).data_stream.read()
+            except Exception as e:
                 continue
             if check_product(json.loads(filecontents)):
-                calculate_interest(json.loads(filecontents)["data"]["lendingRates"], product_rates, commit.committed_date)
+                calculate_interest(json.loads(filecontents)["data"]["lendingRates"], product_rates, newcommit.committed_date)
 
         temp_product_rates = []
         for rate in product_rates:
