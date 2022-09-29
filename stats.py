@@ -86,7 +86,7 @@ def calculate_interest(lendingRates):
         if "loanPurpose" in lendingRate:
             formatted["purpose"] = lendingRate["loanPurpose"]
 
-        if lendingRate["lendingRateType"] == "FIXED" and "additionalValue" in lendingRate:
+        if lendingRate["lendingRateType"] == "FIXED" and "additionalValue" in lendingRate and lendingRate["additionalValue"] != None:
             period = parse_duration(lendingRate["additionalValue"])
             months = int(period.years)*12 + int(period.months)
 
