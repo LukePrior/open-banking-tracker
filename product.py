@@ -43,7 +43,7 @@ for file in os.listdir('brands/products/'):
     try:
         for product in brand['data']['products']:
             try:
-                url = (brands[id]['publicBaseUri'] + "/cds-au/v1/banking/products/" + product['productId'])
+                url = (brands[id]['publicBaseUri'].rstrip('/') + "/cds-au/v1/banking/products/" + product['productId'])
 
                 response = get_data(url)
 
