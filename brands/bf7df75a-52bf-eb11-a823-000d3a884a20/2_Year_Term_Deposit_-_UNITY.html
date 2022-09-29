@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2 Year Term Deposit - UNITY</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Banking App, Internet Banking, Mobile Banking&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is fixed for the term of the deposit&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Rates available for 3 to 36 month terms&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Standard interest for terms less than or equal to 12 months, interest is paid at maturity; for terms over 12 months, interest is paid annually and at maturity. For monthly terms, interest is paid every month and at maturity with a reduced rate from the standard interest rate.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Upon application, if a deposit is allowed early withdrawal, an interest adjustment will normally apply&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Government Deposit Guarantee&quot;,
+            &quot;additionalInfo&quot;: &quot;Deposits up to $250,000 per account holder are guaranteed by the Federal Government under the Financial Claims Scheme.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;For deposits over $300,000 rates are by negotiation and subject to acceptance&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian citizen or permanent resident&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;As a Customer Owned Bank, customers must become a shareholder of Unity Bank to open an account.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;COPIES_OF_PREVIOUS_STATEMENTS&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;FREQUENT_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Business account discount&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Must hold a business account&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;&quot;
+                }
+            ]
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.032&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2 Year Term Deposit - UNITY_Tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;2 Year Term Deposit - UNITY_Tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24.0,
+                    &quot;maximumValue&quot;: 24.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;A reduced rate of interest will be paid for early maturity and for interest payment methods other than at maturity and yearly.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.unitybank.com.au/rates-and-fees-investment-product-interest-rates.html&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.034&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2 Year Term Deposit - UNITY_Tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;2 Year Term Deposit - UNITY_Tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24.0,
+                    &quot;maximumValue&quot;: 24.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;A reduced rate of interest will be paid for early maturity and for interest payment methods other than at maturity and yearly.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.unitybank.com.au/rates-and-fees-investment-product-interest-rates.html&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;2_Year_Term_Deposit_-_UNITY&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-08-18T18:36:18.000+10:00&quot;,
+    &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
+    &quot;name&quot;: &quot;2 Year Term Deposit - UNITY&quot;,
+    &quot;description&quot;: &quot;Our term deposit accounts are a great way to earn interest on money that you do not need to access on a daily basis. We offer terms of 3 to 36 months to fit in with your investment requirements.&quot;,
+    &quot;brand&quot;: &quot;M&quot;,
+    &quot;brandName&quot;: &quot;Unity Bank&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.unitybank.com.au/apply-online-apply-for-a-term-deposit.html&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.unitybank.com.au/savings-a-investments-term-deposit-accounts-standard-term-deposits.html#key-features&quot;,
+        &quot;termsUri&quot;: &quot;https://www.unitybank.com.au/about-us-disclosure-statements.html&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.unitybank.com.au/savings-a-investments-term-deposit-accounts-standard-term-deposits.html#key-features&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.unitybank.com.au/rates-and-fees-investment-product-interest-rates.html&quot;,
+        &quot;bundleUri&quot;: &quot;&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>
