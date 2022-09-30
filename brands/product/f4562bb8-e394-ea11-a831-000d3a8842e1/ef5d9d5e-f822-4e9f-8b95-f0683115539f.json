@@ -1,82 +1,82 @@
 {
-    "links": {
-        "self": "https://api.anz/cds-au/v1/banking/products/ef5d9d5e-f822-4e9f-8b95-f0683115539f"
-    },
     "data": {
+        "cardArt": [],
         "effectiveFrom": "2020-06-30T22:00:00.000Z",
-        "constraints": [],
-        "isTailored": false,
-        "lastUpdated": "2022-08-18T14:01:00.000Z",
-        "name": "ANZ SMSF Cash Hub Account",
+        "fees": [],
+        "lastUpdated": "2022-09-29T14:01:00.000Z",
         "productId": "ef5d9d5e-f822-4e9f-8b95-f0683115539f",
         "bundles": [],
+        "eligibility": [],
         "depositRates": [
             {
-                "calculationFrequency": "P1D",
-                "rate": "0.005",
                 "depositRateType": "VARIABLE",
                 "tiers": [
                     {
-                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "Balance between $0 and $9,999"
                         },
-                        "maximumValue": 9999,
-                        "minimumValue": 0,
                         "name": "Balance",
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "unitOfMeasure": "DOLLAR",
+                        "maximumValue": 9999,
+                        "minimumValue": 0
                     }
-                ]
+                ],
+                "rate": "0.005",
+                "calculationFrequency": "P1D"
             },
             {
-                "calculationFrequency": "P1D",
-                "rate": "0.0055",
                 "depositRateType": "VARIABLE",
                 "tiers": [
                     {
-                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "Balance $10,000 or more"
                         },
                         "name": "Balance",
-                        "minimumValue": 10000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000
                     }
-                ]
+                ],
+                "rate": "0.0105",
+                "calculationFrequency": "P1D"
             }
         ],
+        "description": "Self managed super is easier than ever, with all you need to use, move and manage your SMSF cash in one place.",
+        "isTailored": false,
+        "lendingRates": [],
         "features": [
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:iv",
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
+                "featureType": "DIGITAL_BANKING"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:iv",
-                "featureType": "NPP_PAYID"
+                "featureType": "NPP_PAYID",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:iv"
             },
             {
-                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:iv",
-                "featureType": "NPP_ENABLED"
+                "featureType": "NPP_ENABLED",
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:iv"
             },
             {
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&CID=af:obank:iv",
-                "featureType": "UNLIMITED_TXNS",
-                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account."
+                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
+                "featureType": "UNLIMITED_TXNS"
             }
         ],
-        "additionalInformation": {
-            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
-            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:iv#FTPDS",
-            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv"
-        },
-        "description": "Self managed super is easier than ever, with all you need to use, move and manage your SMSF cash in one place.",
-        "eligibility": [],
-        "fees": [],
-        "lendingRates": [],
-        "brand": "ANZ",
+        "constraints": [],
+        "name": "ANZ SMSF Cash Hub Account",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "cardArt": []
+        "additionalInformation": {
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:iv#FTPDS",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv"
+        },
+        "brand": "ANZ"
+    },
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/ef5d9d5e-f822-4e9f-8b95-f0683115539f"
     }
 }
