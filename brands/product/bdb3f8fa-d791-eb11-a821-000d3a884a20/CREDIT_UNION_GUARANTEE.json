@@ -30,7 +30,6 @@
             },
             {
                 "eligibilityType": "BUSINESS",
-                "additionalValue": "Y",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -58,41 +57,28 @@
                 "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Greater of this or Performance Guaranteed Percentage",
+                "additionalInfo": "minimum of $80 or 0.5% of guarantee limit",
                 "additionalInfoUri": "",
                 "discounts": []
             },
             {
-                "name": "PERFORMANCE_GUARANTEE_FLAT",
+                "name": "PERFORMANCE_GUARANTEE_PERCENT",
                 "feeType": "UPFRONT",
-                "amount": "80.00",
-                "balanceRate": null,
+                "amount": null,
+                "balanceRate": "0.00500",
                 "transactionRate": null,
                 "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Greater of this or Performance Guaranteed Percentage",
+                "additionalInfo": "0.5% of Guarantee limit or $80 whichever is greater",
                 "additionalInfoUri": "",
                 "discounts": []
             }
         ],
-        "lendingRates": [
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.05400",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Guarantee limit held for up to 5yrs with no payment required unless drawn on.",
-                "additionalInfoUri": "",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": null
-            }
-        ],
-        "productId": "GUARANTEE_VARIABLE_INTEREST_ONLY",
-        "lastUpdated": "2021-10-13T18:47:52.000+11:00",
+        "productId": "CREDIT_UNION_GUARANTEE",
+        "lastUpdated": "2022-10-04T18:13:51.000+11:00",
         "productCategory": "TRADE_FINANCE",
-        "name": "Credit Union Guarantee - Variable Interest Only",
+        "name": "Credit Union Guarantee",
         "description": "A Performance Guarantee provides an alternative to a deposit or bond. It's essentially a guarantee on your behalf to pay a vendor or supplier the amount of the deposit or bond if called upon.",
         "brand": "S",
         "brandName": "SCCU",
@@ -107,7 +93,7 @@
         }
     },
     "links": {
-        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/GUARANTEE_VARIABLE_INTEREST_ONLY"
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/CREDIT_UNION_GUARANTEE"
     },
     "meta": {}
 }
