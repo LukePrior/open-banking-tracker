@@ -2,14 +2,19 @@ from mimetypes import guess_extension
 import os
 import requests
 import json
+from multiprocessing.pool import ThreadPool as Pool
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'x-v': '3'}
+
+brand_size = 10
+product_size = 5
 
 def get_data(url):
     r = requests.get(url, headers=headers)
     response = r.json()
 
     return response
+
 
 # https://stackoverflow.com/a/25851972/9389353
 def ordered(obj):
@@ -20,13 +25,7 @@ def ordered(obj):
     else:
         return obj
 
-raw_file = open("brands/brands.json", "r")
-brands = json.load(raw_file)
-raw_file.close()
-
-changed_product = 0
-
-for file in os.listdir('brands/products/'):
+def process_brand(file):
     id = file.replace(".json","")
 
     raw_file = open("brands/products/"+file, "r")
@@ -34,54 +33,75 @@ for file in os.listdir('brands/products/'):
     raw_file.close()
 
     if 'data' not in brand:
-        continue
+        return
 
     folder = "brands/product/" + id
     if not os.path.exists(folder):
         os.makedirs(folder)
 
+    product_pool = Pool(product_size)
+
     try:
         for product in brand['data']['products']:
-            try:
-                url = (brands[id]['publicBaseUri'].rstrip('/') + "/cds-au/v1/banking/products/" + product['productId'])
-
-                response = get_data(url)
-
-                flag = False
-                skip_update = False
-
-                try:
-                    for file in os.listdir('brands/product/' + id):
-                        if file == (product['productId'] + ".json"):
-                            flag = True
-                            raw_file = open("brands/product/"+id+"/"+file, "r")
-                            response_compare = json.load(raw_file)
-                            raw_file.close()
-                            if ordered(response) != ordered(response_compare):
-                                changed_product += 1
-                            else:
-                                skip_update = True
-
-                except Exception as e:
-                    print(e)
-
-                if flag == False:
-                    changed_product += 1
-
-                path = 'brands/product/' + id + "/" + product['productId'] + ".json"
-
-                if (skip_update == False):
-                    raw_file = open(path, "w")
-                    json.dump(response, raw_file, indent = 4)
-                    raw_file.close()
-
-                print(path)
-
-            except Exception as e:
-                print(e)
+            product_pool.apply_async(process_product, (product, id,))
 
     except Exception as e:
         print(e)
+
+    product_pool.close()
+    product_pool.join()
+
+
+def process_product(product, id):
+    try:
+        url = (brands[id]['publicBaseUri'].rstrip('/') + "/cds-au/v1/banking/products/" + product['productId'])
+
+        response = get_data(url)
+
+        flag = False
+        skip_update = False
+
+        try:
+            for file in os.listdir('brands/product/' + id):
+                if file == (product['productId'] + ".json"):
+                    flag = True
+                    raw_file = open("brands/product/"+id+"/"+file, "r")
+                    response_compare = json.load(raw_file)
+                    raw_file.close()
+                    if ordered(response) != ordered(response_compare):
+                        changed_product += 1
+                    else:
+                        skip_update = True
+
+        except Exception as e:
+            print(e)
+
+        if flag == False:
+            changed_product += 1
+
+        path = 'brands/product/' + id + "/" + product['productId'] + ".json"
+
+        if (skip_update == False):
+            raw_file = open(path, "w")
+            json.dump(response, raw_file, indent = 4)
+            raw_file.close()
+
+        print(path)
+
+    except Exception as e:
+        print(e)
+
+
+raw_file = open("brands/brands.json", "r")
+brands = json.load(raw_file)
+raw_file.close()
+
+brand_pool = Pool(brand_size)
+for file in os.listdir('brands/products/'):
+    brand_pool.apply_async(process_brand, (file,))
+
+brand_pool.close()
+brand_pool.join()
 
 for root, dirs, files in os.walk("brands/product/"):
     for file in files:
@@ -105,14 +125,6 @@ for root, dirs, files in os.walk("brands/product/"):
             if found is False:
                 path = "brands/product/" + brand + "/" + file
                 os.remove(path)
-                changed_product += 1
 
         except Exception as e:
             print(e)
-
-stats = {}
-stats['changed_files'] = changed_product
-
-raw_file = open("stats.json", "w")
-json.dump(stats, raw_file, indent = 4)
-raw_file.close()
