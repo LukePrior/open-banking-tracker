@@ -57,8 +57,7 @@ def process_product(product, id):
         url = (brands[id]['publicBaseUri'].rstrip('/') + "/cds-au/v1/banking/products/" + product['productId'])
 
         response = get_data(url)
-
-        flag = False
+        
         skip_update = False
 
         try:
@@ -68,16 +67,11 @@ def process_product(product, id):
                     raw_file = open("brands/product/"+id+"/"+file, "r")
                     response_compare = json.load(raw_file)
                     raw_file.close()
-                    if ordered(response) != ordered(response_compare):
-                        changed_product += 1
-                    else:
+                    if ordered(response) == ordered(response_compare):
                         skip_update = True
 
         except Exception as e:
             print(e)
-
-        if flag == False:
-            changed_product += 1
 
         path = 'brands/product/' + id + "/" + product['productId'] + ".json"
 
