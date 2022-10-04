@@ -50,7 +50,7 @@ with doc:
                 attr(id=brand, style="width:300px;height:300px;border-style:solid;margin:25px;padding:25px;cursor:pointer;", onclick="location.href='brands/" + brand + "/index.html';")
                 p(brands[brand]['brandName'])
                 with img():
-                    attr(src=get_image(brand), style="max-width:90%;max-height:70%")
+                    attr(src=brands[brand]["logoUri"], style="max-width:90%;max-height:70%")
 
 path = "docs"
 if not os.path.exists(path):
@@ -77,7 +77,7 @@ for brand in brands:
                     if "cardArt" in product and product["cardArt"] != None and len(product['cardArt']) > 0:
                         source = product['cardArt'][0]['imageUri']
                     else:
-                        source = get_image(brand)
+                        source = brands[brand]["logoUri"]
                     with img():
                         attr(src=source, style="max-width:90%;max-height:70%")
     

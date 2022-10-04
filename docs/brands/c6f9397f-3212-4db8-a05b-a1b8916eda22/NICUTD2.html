@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Term Deposit with interest paid monthly</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;NICUTD2&quot;,
+    &quot;effectiveFrom&quot;: &quot;2020-09-13T14:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-19T07:06:12Z&quot;,
+    &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
+    &quot;name&quot;: &quot;Term Deposit with interest paid monthly&quot;,
+    &quot;description&quot;: &quot;Take advantage of great returns on our term deposits from $5000 with monthly interest being paid to a linked account.&quot;,
+    &quot;brand&quot;: &quot;Northern Inland Credit Union&quot;,
+    &quot;brandName&quot;: &quot;NICU&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.nicu.com.au/about-us/membership&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://nicu.com.au/banking/investments/term-deposits&quot;,
+        &quot;termsUri&quot;: &quot;https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_Fees_Charges_MemberLoyaltyProgram.pdf&quot;
+    },
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;249999.99&quot;,
+            &quot;additionalInfo&quot;: &quot;For amounts greater than $249,999.99 please contact any Northern Inland Credit Union branch for the latest interest rates&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;AU&quot;,
+            &quot;additionalInfo&quot;: &quot;Individuals must be citizens or permanent residents of Australia.&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;$5,000 - $9,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;$5,000 - $9,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 25,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10,000 - $24,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 25,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 24999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;$25,000 - $49,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 25,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;$50,000 - $99,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 25,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0250&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;$100,000 - $249,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 25,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;$50,000 - $99,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;$100,000 - $249,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;$5,000 - $9,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 13,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10,000 - $24,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 13,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 24999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;$25,000 - $49,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 13,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;$50,000 - $99,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 13,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;$100,000 - $249,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 13,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;$50,000 - $99,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;$100,000 - $249,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;$5,000 - $9,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10,000 - $24,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 24999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;$25,000 - $49,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;$50,000 - $99,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 99999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0145&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;$100,000 - $249,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 6,
+                    &quot;maximumValue&quot;: 7,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;$5,000 - $9,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10,000 - $24,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 24999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;$25,000 - $49,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 9,
+                    &quot;maximumValue&quot;: 10,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;$10,000 - $24,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 24999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0100&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;$25,000 - $49,999&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;TERM&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 3,
+                    &quot;maximumValue&quot;: 4,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;0.00&quot;,
+            &quot;additionalInfo&quot;: &quot;No account keeping fees or transaction fees charged on Term Deposits&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://nicu.com.au/banking/investments/term-deposits&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;LOYALTY_PROGRAM&quot;,
+            &quot;additionalValue&quot;: &quot;Member Loyalty Program&quot;,
+            &quot;additionalInfo&quot;: &quot;By increasing your total balance (deposits and loans) through saving, investing and borrowing with us, you pay fewer transaction costs.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://nicu.com.au/about-us/member-loyalty-program&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Government guaranteed  deposits&quot;,
+            &quot;additionalInfo&quot;: &quot;Deposits to this account are covered under the Australian Financial Claims Scheme up to $250,000 in total balances for each account holder at Northern Inland Credit Union&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://nicu.com.au/about-us-financial-claims-scheme.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Early Withdrawal&quot;,
+            &quot;additionalInfo&quot;: &quot;If you withdraw funds prior to maturity, interest is recalculated at the On Call Savings Account rate, except on hardship grounds at our discretion&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalValue&quot;: &quot;Maturity Reminders&quot;,
+            &quot;additionalInfo&quot;: &quot;We'll send you a term deposit maturity advice so that you can inform us how you would like to reinvest it if you haven't already given us instructions.&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>

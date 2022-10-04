@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Management</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;3035&quot;,
+    &quot;effectiveFrom&quot;: &quot;2020-07-01T00:00:00.000Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-31T00:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-26T11:11:36.927Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Cash Management&quot;,
+    &quot;description&quot;: &quot;Interest bearing personal account for parking funds as cash &quot;,
+    &quot;brand&quot;: &quot;Greater Bank&quot;,
+    &quot;brandName&quot;: &quot;Greater Bank&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.greater.com.au/personal/savings-accounts/cash-management-account&quot;,
+        &quot;termsUri&quot;: &quot;https://www.greater.com.au/termsandconditions&quot;
+    },
+    &quot;cardArt&quot;: [
+        {
+            &quot;imageUri&quot;: &quot;https://www.greater.com.au/globalassets/calculators-rate-and-support/images/open-banking/greaterbank_stacked_openbanking.jpg&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS_ALLOWANCE&quot;,
+            &quot;additionalValue&quot;: &quot;3.00&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalValue&quot;: &quot;SMS or Email&quot;,
+            &quot;additionalInfo&quot;: &quot;Receive notification from bank of your nominated transactions (e.g. low account balance warning; credits over $500)&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Transaction Fee Rebate. $3 per $1000 Minimum Monthly Balance&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Residents only&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Must be identifiable in terms of legislative requirements&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Over-the-counter withdrawals&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;2.25&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Greater Bank ATM withdrawal&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;0.70&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Greater Bank ATM balance enquiry&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;EFTPOS Fee (with or without cash out)&quot;,
+            &quot;feeType&quot;: &quot;PURCHASE&quot;,
+            &quot;amount&quot;: &quot;0.70&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over-the-counter BPAY&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Deposit bagged coin&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;transactionRate&quot;: &quot;0.01&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Deposit unbagged coin&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;transactionRate&quot;: &quot;0.02&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Bank cheque fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Cheque drawn&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;0.80&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Overseas ATM&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Cheque deposit&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;amount&quot;: &quot;0.25&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Fee Allowance&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month.&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Information fee - Search &quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfo&quot;: &quot;$20.00 plus $1.00 per page&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Information fee - Per Page&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;additionalInfo&quot;: &quot;$20.00 plus $1.00 per page&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bank transfer fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bulk coin purchase fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.02&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum fee $2.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bulk coin purchase fee - Sourced Externally&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalInfo&quot;: &quot;$8.00 per bag&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Direct debit dishonour fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Foreign currency deposit fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Foreign currency conversion fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Inactive account fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged six monthly if account has no transactions (other than government charges or interest) processed during the preceding 24 months.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Replacement card fee - In Australia&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Replacement card fee - International&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;additionalInfo&quot;: &quot;For any replacement card issued overseas&quot;
+        },
+        {
+            &quot;name&quot;: &quot;SMS alert fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.20&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged for each SMS alert that is sent to you notifying you of account balances and/or other nominated transactions.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Unclaimed monies fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged if an account had no transactions (other than government charges or interest) processed during the last three years.  &quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cheque copy fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cheque honour fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged if we honour a cheque that would otherwise have been dishonoured due to insufficient funds.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Dishonour cheque fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EasyPay notification fee - Letter&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EFT transaction fee (RTGS)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cheque notify fee - Letter/Phone&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Stop payment fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged to stop payment of a cheque you have drawn or a bank cheque.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;International currency draft&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;47.50&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Telegraphic transfer trace&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;80.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee is estimate only&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Payment service creation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged when a customer requests we create an Easypay or Third Party Payment Service to other than a Greater Bank account.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Scheduled BPAY payment fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EasyPay notification fee - SMS&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.20&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 19999.99
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Interest is tiered and calculated daily  based on the daily balance&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;maximumValue&quot;: 199999.99
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Interest is tiered and calculated daily  based on the daily balance&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 200000.0,
+                    &quot;maximumValue&quot;: 499999.99
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Interest is tiered and calculated daily  based on the daily balance&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Interest is tiered and calculated daily  based on the daily balance&quot;
+        }
+    ]
+}</textarea>
+    </div>
+  </body>
+</html>
