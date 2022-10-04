@@ -1,7 +1,9 @@
 on: 
   workflow_dispatch:
-  schedule:
-    - cron: "0 6 * * *"
+  workflow_run:
+    workflows: ["Website"]
+    types:
+      - completed
 
 jobs:
   update-data:

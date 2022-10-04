@@ -1,7 +1,11 @@
+name: Website
+
 on: 
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * *"
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
 
 jobs:
   update-website:
