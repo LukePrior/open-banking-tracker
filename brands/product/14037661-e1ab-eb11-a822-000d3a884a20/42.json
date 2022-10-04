@@ -2,7 +2,7 @@
     "data": {
         "productId": "42",
         "effectiveFrom": "2004-08-31T14:30:00.0000000Z",
-        "lastUpdated": "2022-07-22T04:00:21.7922536Z",
+        "lastUpdated": "2022-09-30T06:00:22.4498211Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Budgeting Account",
         "description": "Budgeting Account",
@@ -32,6 +32,62 @@
             {
                 "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "A range of fee free transactions including BPAY are included in your Budgeting Account"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Bank@Post Withdrawal Fee",
+                "feeType": "TRANSACTION",
+                "amount": "3.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Statement Retrieval",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD",
+                "additionalInfo": "Statement retrieval fee applies for statements over 12 months old. 1st page $6, and $1.50 for each subsequent page",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/"
+            },
+            {
+                "name": "Transaction Fee",
+                "feeType": "TRANSACTION",
+                "amount": "1.25",
+                "currency": "AUD",
+                "additionalInfo": "Applies to EFTPOS, Member Cheque and Direct Debit transactions. First 6 transactions (combined) per month free"
+            },
+            {
+                "name": "Referral Fee",
+                "feeType": "EVENT",
+                "amount": "3.50",
+                "currency": "AUD",
+                "additionalInfo": "Where an account has insufficient available funds to cover a cheque, auto transfer or direct debit transaction, and the transaction is honoured by P&N",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/"
+            },
+            {
+                "name": "Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD",
+                "additionalInfo": "Where an account has insufficient available funds to cover a cheque, auto transfer or direct debit transaction, and the transaction is dishonoured by P&N",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/"
+            },
+            {
+                "name": "Overdrawn Acct Management Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "A fee of $10 payable in relation to any month where we allow you to overdraw your account by more than $50",
+                "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/",
+                "discounts": [
+                    {
+                        "description": "On a fee for maintaining a set balance",
+                        "discountType": "BALANCE",
+                        "feeRate": "1.0",
+                        "additionalValue": "50.000000"
+                    }
+                ]
             }
         ],
         "depositRates": [

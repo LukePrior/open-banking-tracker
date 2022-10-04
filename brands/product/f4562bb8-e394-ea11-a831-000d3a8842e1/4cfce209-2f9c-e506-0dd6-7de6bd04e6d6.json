@@ -3,19 +3,12 @@
         "self": "https://api.anz/cds-au/v1/banking/products/4cfce209-2f9c-e506-0dd6-7de6bd04e6d6"
     },
     "data": {
-        "description": "A simple everyday credit card with $0 annual fee in the first year and complimentary insurances (conditions and exclusions apply)",
-        "isTailored": false,
-        "lastUpdated": "2022-07-25T02:00:00.000Z",
-        "productCategory": "CRED_AND_CHRG_CARDS",
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
                 "additionalValue": "6000.00"
             }
         ],
-        "bundles": [],
-        "name": "ANZ Platinum",
-        "depositRates": [],
         "eligibility": [
             {
                 "additionalValue": "18",
@@ -33,181 +26,188 @@
             "feesAndPricingUri": "https://www.anz.com.au/personal/credit-cards/low-annual-fee/platinum/?CID=af:obank:cc#rates",
             "overviewUri": "https://www.anz.com.au/personal/credit-cards/low-annual-fee/platinum?CID=af:obank:cc"
         },
-        "lendingRates": [
-            {
-                "rate": "0.2024",
-                "additionalInfo": "Rates are subject to change",
-                "interestPaymentDue": "IN_ARREARS",
-                "tiers": [],
-                "lendingRateType": "PURCHASE"
-            },
-            {
-                "rate": "0.2124",
-                "additionalInfo": "Rates are subject to change. The interest rate that applies to cash advances is currently equivalent to the interest rate that applies to standard balance transfers.",
-                "interestPaymentDue": "IN_ARREARS",
-                "tiers": [],
-                "lendingRateType": "CASH_ADVANCE"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "additionalInfo": "1.99% on Promotional Balance Transfers for 6 months. Existing Customers Only. Conditions Apply.",
-                "rate": "0.0199",
-                "additionalValue": "P1M",
-                "tiers": [],
-                "lendingRateType": "INTRODUCTORY"
-            },
-            {
-                "interestPaymentDue": "IN_ARREARS",
-                "rate": "0.00",
-                "additionalInfo": "No interest on purchases for a 25-month promotional period. New Card. T&Cs, eligibility criteria, fees and charges apply.",
-                "additionalInfoUri": "https://www.anz.com.au/personal/credit-cards/low-annual-fee/platinum/",
-                "additionalValue": "P1D",
-                "tiers": [],
-                "lendingRateType": "INTRODUCTORY"
-            }
-        ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "Account Service",
-                "additionalInfo": "No annual card fee for the first year and $87 after that (or $0 if you make $20,000 of eligible purchases in 12 months)",
                 "discounts": [],
-                "additionalValue": "P1Y",
+                "additionalInfo": "No annual card fee for the first year and $87 after that (or $0 if you make $20,000 of eligible purchases in 12 months)",
+                "currency": "AUD",
                 "amount": "87.00",
-                "currency": "AUD"
+                "additionalValue": "P1Y",
+                "feeType": "PERIODIC",
+                "name": "Account Service"
             },
             {
-                "feeType": "WITHDRAWAL",
-                "transactionRate": "0.03",
+                "discounts": [],
                 "additionalInfo": "A 3% fee or the minimum fee set out below, whichever is greater, will be charged if you obtain a cash advance from your credit card account. An ATM operator fee may also apply. If the account is in credit balance at the time we process the cash advance, the credit amount will offset the amount of the cash advance in the calculation of the 3% fee. Please note that the credit balance at the time depends on when credits and debits are processed or posted to your account by ANZ, and the order they are processed in, in accordance with your account terms and conditions. Amounts and transactions displayed to you, including via ANZ mobile banking, internet banking, ATMs (including non-ANZ ATMs) and receipts (including ATM and teller receipts) may reflect both completed and pending credit or debit transactions. The credit balance may be affected by the completion, rejection or reversal of those transactions or other subsequent transactions. This means, for example, if you perform a credit transaction on your account after the close of business on the business day prior to performing a cash advance, or on the same day as performing a cash advance, the amount of that credit transaction may not form part of the credit balance which is offset against the amount of the cash advance in the calculation of the 3% fee even though the credit transaction may appear to be available. The 3% fee will be calculated with reference to the cash advance amount in Australian dollars (including any related charge such as any ATM operator fee) plus any Overseas Transaction Fee charged on the transaction. A minimum fee of $4.00 will apply for cash advances made outside Australia at an ATM, bank or other financial institution or ANZ office.",
-                "name": "Cash Advance",
-                "additionalValue": "P1Y",
                 "currency": "AUD",
-                "discounts": []
-            },
-            {
-                "feeType": "PURCHASE",
                 "transactionRate": "0.03",
-                "name": "Overseas Transaction Fee",
                 "additionalValue": "P1Y",
-                "currency": "AUD",
-                "discounts": []
+                "feeType": "WITHDRAWAL",
+                "name": "Cash Advance"
             },
             {
-                "feeType": "EVENT",
+                "discounts": [],
+                "name": "Overseas Transaction Fee",
+                "currency": "AUD",
+                "transactionRate": "0.03",
+                "additionalValue": "P1Y",
+                "feeType": "PURCHASE"
+            },
+            {
+                "discounts": [
+                    {
+                        "additionalInfo": "This applies to all onsale consumer cards products.",
+                        "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                        "amount": "0.00",
+                        "eligibility": [],
+                        "description": "No Late Payment Fee will apply if you hold an ANZ Access Basic Account. ",
+                        "discountType": "ELIGIBILITY_ONLY"
+                    }
+                ],
                 "name": "Late Payment",
                 "currency": "AUD",
                 "amount": "20.00",
                 "additionalValue": "P1Y",
-                "discounts": [
-                    {
-                        "description": "No Late Payment Fee will apply if you hold an ANZ Access Basic Account. ",
-                        "eligibility": [],
-                        "additionalInfo": "This applies to all onsale consumer cards products.",
-                        "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
-                        "amount": "0.00",
-                        "discountType": "ELIGIBILITY_ONLY"
-                    }
-                ]
+                "feeType": "EVENT"
             },
             {
-                "feeType": "EVENT",
-                "name": "Over Limit",
                 "discounts": [
                     {
-                        "description": "You will not be charged an Overlimit Fee where ANZ provides you with an Informal Overlimit amount during the Statement Period and: - you hold an ANZ Access Basic Account; or - we determine that: (1) Your account was opened before 18 June 2012 and you have asked us to decline transactions (in most cases) that will take you over the credit limit; or (2) Your account was opened on or after 18 June 2012 and at the time the Informal Overlimit amount is provided you have not consented, or you have withdrawn your consent to being charged an Overlimit Fee (unless you are charged an Overlimit Fee in accordance with paragraph A in respect of an earlier Informal Overlimit amount).",
-                        "eligibility": [],
-                        "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                        "discountType": "ELIGIBILITY_ONLY",
                         "amount": "0.00",
-                        "discountType": "ELIGIBILITY_ONLY"
+                        "eligibility": [],
+                        "description": "You will not be charged an Overlimit Fee where ANZ provides you with an Informal Overlimit amount during the Statement Period and: - you hold an ANZ Access Basic Account; or - we determine that: (1) Your account was opened before 18 June 2012 and you have asked us to decline transactions (in most cases) that will take you over the credit limit; or (2) Your account was opened on or after 18 June 2012 and at the time the Informal Overlimit amount is provided you have not consented, or you have withdrawn your consent to being charged an Overlimit Fee (unless you are charged an Overlimit Fee in accordance with paragraph A in respect of an earlier Informal Overlimit amount).",
+                        "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf"
                     }
                 ],
+                "name": "Over Limit",
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
-                "additionalValue": "P1Y",
                 "amount": "20.00",
+                "additionalValue": "P1Y",
+                "feeType": "EVENT",
                 "currency": "AUD"
             }
         ],
+        "depositRates": [],
+        "lendingRates": [
+            {
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "Rates are subject to change",
+                "rate": "0.2024",
+                "tiers": [],
+                "lendingRateType": "PURCHASE"
+            },
+            {
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "Rates are subject to change. The interest rate that applies to cash advances is currently equivalent to the interest rate that applies to standard balance transfers.",
+                "rate": "0.2124",
+                "tiers": [],
+                "lendingRateType": "CASH_ADVANCE"
+            },
+            {
+                "additionalInfo": "1.99% on Promotional Balance Transfers for 6 months. Existing Customers Only. Conditions Apply.",
+                "rate": "0.0199",
+                "tiers": [],
+                "additionalValue": "P1M",
+                "calculationFrequency": "P1D",
+                "lendingRateType": "INTRODUCTORY"
+            },
+            {
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "No interest on purchases for a 25-month promotional period. New Card. T&Cs, eligibility criteria, fees and charges apply.",
+                "additionalInfoUri": "https://www.anz.com.au/personal/credit-cards/low-annual-fee/platinum/",
+                "rate": "0.00",
+                "tiers": [],
+                "additionalValue": "P1D",
+                "lendingRateType": "INTRODUCTORY"
+            }
+        ],
         "applicationUri": "https://creditcardapp.anz.com/#/?sourcecode_1=IWZE&apptype=GV&CID=af:obank:cc",
-        "productId": "4cfce209-2f9c-e506-0dd6-7de6bd04e6d6",
+        "name": "ANZ Platinum",
         "brand": "ANZ",
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
         "cardArt": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
         "features": [
             {
-                "featureType": "ADDITIONAL_CARDS",
                 "additionalValue": "9",
-                "additionalInfo": "Up to 9 additional cardholders (at no additional cost)."
+                "additionalInfo": "Up to 9 additional cardholders (at no additional cost).",
+                "featureType": "ADDITIONAL_CARDS"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
                 "additionalValue": "International Travel Insurance",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
                 "featureType": "INSURANCE"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-platinum-and-black-complimentary-insurance-booklet.pdf",
                 "additionalValue": "Domestic Travel Insurance",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-platinum-and-black-complimentary-insurance-booklet.pdf",
                 "featureType": "INSURANCE"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
                 "additionalValue": "Rental Vehicle Excess in Australia Insurance\t",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
                 "featureType": "INSURANCE"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
                 "additionalValue": "Extended Warranty Insurance",
-                "featureType": "INSURANCE"
-            },
-            {
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
-                "additionalValue": "Purchase Protection Insurance",
                 "featureType": "INSURANCE"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-creditcards-conditions-of-use.pdf?CID=af:obank:cc",
+                "additionalValue": "Purchase Protection Insurance",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/premium-cards-insurances.pdf?CID=af:obank:cc",
+                "featureType": "INSURANCE"
+            },
+            {
                 "additionalValue": "P55D",
-                "featureType": "INTEREST_FREE",
-                "additionalInfo": "Up to 55 days interest free days on purchases"
+                "additionalInfo": "Up to 55 days interest free days on purchases",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-creditcards-conditions-of-use.pdf?CID=af:obank:cc",
+                "featureType": "INTEREST_FREE"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "additionalValue": "Apple Pay",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "additionalValue": "Google Pay",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "additionalValue": "Samsung Pay",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
                 "additionalValue": "Fitbit Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
                 "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
-                "additionalValue": "Garmin Pay",
                 "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:cc",
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
+                "additionalValue": "Garmin Pay",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cc",
+                "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cc",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:cc",
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
                 "additionalValue": "BPAY",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cc",
                 "featureType": "BILL_PAYMENT"
             },
             {
                 "featureType": "BALANCE_TRANSFERS"
             }
-        ]
+        ],
+        "isTailored": false,
+        "lastUpdated": "2022-10-03T00:00:00.000Z",
+        "productId": "4cfce209-2f9c-e506-0dd6-7de6bd04e6d6",
+        "productCategory": "CRED_AND_CHRG_CARDS",
+        "bundles": [],
+        "description": "A simple everyday credit card with $0 annual fee in the first year and complimentary insurances (conditions and exclusions apply)"
     }
 }

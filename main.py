@@ -14,22 +14,27 @@ raw_file.close()
 available_brands = available_brands['data']
 
 for brand in available_brands:
+    brandId = ""
     if ('dataHolderBrandId' in brand or 'interimId' in brand):
-        brands[brand['dataHolderBrandId']] = {}
+        if ('dataHolderBrandId' in brand):
+            brandId = brand['dataHolderBrandId']
+        else:
+            brandId = brand['interimId']
+        brands[brandId] = {}
         if 'dataHolderBrandId' in brand:
-            brands[brand['dataHolderBrandId']]['dataHolderBrandId'] = brand['dataHolderBrandId']
+            brands[brandId]['dataHolderBrandId'] = brand['dataHolderBrandId']
         if 'interimId' in brand:
-            brands[brand['dataHolderBrandId']]['interimId'] = brand['interimId']
-        brands[brand['dataHolderBrandId']]['brandName'] = brand['brandName']
-        brands[brand['dataHolderBrandId']]['logoUri'] = brand['logoUri']
-        brands[brand['dataHolderBrandId']]['publicBaseUri'] = brand['publicBaseUri']
-        brands[brand['dataHolderBrandId']]['lastUpdated'] = brand['lastUpdated']
+            brands[brandId]['interimId'] = brand['interimId']
+        brands[brandId]['brandName'] = brand['brandName']
+        brands[brandId]['logoUri'] = brand['logoUri']
+        brands[brandId]['publicBaseUri'] = brand['publicBaseUri']
+        brands[brandId]['lastUpdated'] = brand['lastUpdated']
         if 'abn' in brand:
-            brands[brand['dataHolderBrandId']]['abn'] = brand['abn']
+            brands[brandId]['abn'] = brand['abn']
         if 'acn' in brand:
-            brands[brand['dataHolderBrandId']]['acn'] = brand['acn']
+            brands[brandId]['acn'] = brand['acn']
         if 'arbn' in brand:
-            brands[brand['dataHolderBrandId']]['arbn'] = brand['arbn']
+            brands[brandId]['arbn'] = brand['arbn']
 
 
 brands_file = open("brands/brands.json", "w")
