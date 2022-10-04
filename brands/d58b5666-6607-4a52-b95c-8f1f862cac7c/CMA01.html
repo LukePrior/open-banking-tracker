@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Management Account</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Funds are at call.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Minimum opening deposit $1,000&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;No minimum ongoing balance.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Interest is calculated daily and is paid monthly and on entire balance.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Statements are supplied quarterly.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Cheque book access (optional).&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Access via our internet banking service abal.online.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Access funds with a Visa Debit payWave Card.&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Convenient access via ATM and EFTPOS.&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;12&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to 12 free transactions per month (maximum of 5 free Cheque Deposits and 2 free Over the Counter transactions per month, and a combined maximum of 5 free transactions per month from the following:  EFTPOS, Direct Debit, BPAY\u00ae and Cheque Withdrawals).&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Overdraft facility available (subject to the Bank's standard credit requirements).&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;bundles&quot;: [],
+    &quot;constraints&quot;: [],
+    &quot;eligibility&quot;: [],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Monthly Account Keeping Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;An account keeping fee of $5 per month applies if account balance falls below $10,000&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Over the Counter Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Up to 12 free transactions per month (maximum of 2 free Over the Counter transactions and 10 free EFTPOS transactions per month&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Eftpos Fee&quot;,
+            &quot;feeType&quot;: &quot;PURCHASE&quot;,
+            &quot;amount&quot;: &quot;0.60&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Includes a maximum of 5 Cheque Deposits and 2 Over the Counter transactions per month, and a combined maximum of 5 transactions per month from the following: EFTPOS, Direct Debit, BPAY and Cheque Withdrawals&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Direct Debit Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.25&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;BPAY&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.25&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Cheque Written Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Cheque Deposit Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;accrualFrequency&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
+    &quot;lendingRates&quot;: [],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0090&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000.0,
+                    &quot;maximumValue&quot;: null,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0075&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 249999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0065&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0050&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0040&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 19999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0040&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000.0,
+                    &quot;maximumValue&quot;: 9999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0040&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;AMOUNT&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 4999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: null
+                }
+            ],
+            &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;CMA01&quot;,
+    &quot;effectiveFrom&quot;: &quot;2020-08-16T14:00:00Z&quot;,
+    &quot;effectiveTo&quot;: null,
+    &quot;lastUpdated&quot;: &quot;2022-08-15T01:29:57.192Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Cash Management Account&quot;,
+    &quot;description&quot;: &quot;An account with great features and easy access to your money.&quot;,
+    &quot;brand&quot;: &quot;Arab Bank Australia&quot;,
+    &quot;brandName&quot;: &quot;&quot;,
+    &quot;applicationUri&quot;: &quot;&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: null,
+    &quot;cardArt&quot;: []
+}</textarea>
+    </div>
+  </body>
+</html>
