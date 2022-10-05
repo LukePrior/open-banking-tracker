@@ -3,7 +3,7 @@
         "productId": "3000-4705",
         "effectiveFrom": "2022-08-23T14:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2022-08-23T14:00:00.00000Z",
+        "lastUpdated": "2022-10-04T14:00:00.00000Z",
         "productCategory": "PERS_LOANS",
         "name": "Unsecured Fixed Personal Loan",
         "description": "A fixed rate personal loan is a great way to reach your goals. Plus, you\u2019ll enjoy the certainty of always knowing how much your repayments will be.",
@@ -51,16 +51,16 @@
         ],
         "features": [
             {
+                "featureType": "OTHER",
+                "additionalInfo": "Flexible repayment options - choose to make either monthly, fortnightly or weekly repayments to suit your income and budget."
+            },
+            {
                 "featureType": "REDRAW",
                 "additionalInfo": "Enjoy access to your additional  loan repayments with redraw, so you can use it whenever you need some breathing space."
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "No penalties for early payout, pay off sooner without being charged a fee."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Flexible repayment options - choose to make either monthly, fortnightly or weekly repayments to suit your income and budget."
+                "additionalInfo": "$0 Monthly fees"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -69,14 +69,21 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Unlimited free extra repayments"
+                "additionalInfo": "No penalties for early payout, pay off sooner without being charged a fee."
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "$0 Monthly fees"
+                "additionalInfo": "Unlimited free extra repayments"
             }
         ],
         "fees": [
+            {
+                "name": "Account information fee",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you request the following: \u2022 an annual audit certificate on a Great Southern Bank account; or \u2022 a copy of a cheque or Visa voucher; or \u2022 personal information, traces, document copies (other than those specified above) and/or information pertaining to an account."
+            },
             {
                 "name": "Arrears letter fee",
                 "feeType": "EVENT",
@@ -92,13 +99,6 @@
                 "additionalInfo": "Payable if you request, and we agree to switch your personal loan product to another personal loan product."
             },
             {
-                "name": "Default notice fee",
-                "feeType": "EVENT",
-                "amount": "33.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account."
-            },
-            {
                 "name": "Establishment fee",
                 "feeType": "UPFRONT",
                 "amount": "175.00",
@@ -106,25 +106,43 @@
                 "additionalInfo": "An establishment fee includes the cost of processing the application and the preparation of loan documentation."
             },
             {
+                "name": "Default notice fee",
+                "feeType": "EVENT",
+                "amount": "33.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account."
+            },
+            {
                 "name": "Telegraphic transfer fee",
                 "feeType": "TRANSACTION",
                 "amount": "20.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable where you request a local telegraphic transfer to an account at a financial institution within Australia."
-            },
-            {
-                "name": "Account information fee",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you request the following: \u2022 an annual audit certificate on a Great Southern Bank account; or \u2022 a copy of a cheque or Visa voucher; or \u2022 personal information, traces, document copies (other than those specified above) and/or information pertaining to an account."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.1699",
-                "comparisonRate": "0.1726",
+                "rate": "0.0749",
+                "comparisonRate": "0.0774",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 1000-1200",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 1000-1200",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1749",
+                "comparisonRate": "0.1776",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -141,8 +159,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.1134",
-                "comparisonRate": "0.116",
+                "rate": "0.1194",
+                "comparisonRate": "0.122",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -159,8 +177,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0785",
-                "comparisonRate": "0.081",
+                "rate": "0.0835",
+                "comparisonRate": "0.086",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -173,24 +191,6 @@
                     }
                 ],
                 "additionalInfo": "Interest rate is available for customers with Equifax score between 800-999",
-                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0699",
-                "comparisonRate": "0.0724",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Equifax Score 1000-1200",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12.0,
-                        "maximumValue": 84.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Interest rate is available for customers with Equifax score between 1000-1200",
                 "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate"
             }
         ]
