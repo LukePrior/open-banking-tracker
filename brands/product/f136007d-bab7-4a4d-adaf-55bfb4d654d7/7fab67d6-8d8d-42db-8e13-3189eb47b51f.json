@@ -2,7 +2,7 @@
     "data": {
         "productId": "7fab67d6-8d8d-42db-8e13-3189eb47b51f",
         "effectiveFrom": "2020-09-30T00:00:00+00:00",
-        "lastUpdated": "2022-09-27T07:49:46+00:00",
+        "lastUpdated": "2022-10-05T05:21:55+00:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Goldrate Home Loan",
         "description": "Our low rate home loan comes with a great range of features to help you pay off your home sooner.",
@@ -15,6 +15,12 @@
         },
         "features": [
             {
+                "featureType": "OFFSET",
+                "additionalValue": "100% Offset",
+                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
+                "additionalInfoUri": "https://www.heritageisle.com.au/loans/home-loans/goldrate/?utm_source=siss"
+            },
+            {
                 "featureType": "REDRAW",
                 "additionalValue": "0",
                 "additionalInfo": "Fee Free redraw",
@@ -22,40 +28,42 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "No Monthly Account Keeping Fees",
-                "additionalInfoUri": "https://www.heritageisle.com.au/loans/home-loans/goldrate/?utm_source=SISS"
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalValue": "100% Offset",
-                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
+                "additionalValue": "Unlimited free additional repayments",
+                "additionalInfo": "Up to $5,000 over a Fixed Term period",
                 "additionalInfoUri": "https://www.heritageisle.com.au/loans/home-loans/goldrate/?utm_source=siss"
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Unlimited free additional repayments",
-                "additionalInfo": "Up to $5,000 over a Fixed Term period",
-                "additionalInfoUri": "https://www.heritageisle.com.au/loans/home-loans/goldrate/?utm_source=siss"
+                "additionalValue": "No Monthly Account Keeping Fees",
+                "additionalInfoUri": "https://www.heritageisle.com.au/loans/home-loans/goldrate/?utm_source=SISS"
             }
         ],
         "eligibility": [
-            {
-                "eligibilityType": "NATURAL_PERSON"
-            },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Residents"
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
-            },
-            {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Citizen"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
             }
         ],
         "fees": [
+            {
+                "name": "General Consent Fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
             {
                 "name": "Production of Title Fee",
                 "feeType": "UPFRONT",
@@ -65,7 +73,39 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Legal/Securities fees",
+                "name": "Arrears Letter Fee",
+                "feeType": "EVENT",
+                "amount": "6.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Consent to Subdivision Fee",
+                "feeType": "EVENT",
+                "amount": "162.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Early Repayment Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At cost",
+                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Stamp Duty",
                 "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
@@ -73,36 +113,11 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Mortgage Discharge Fee",
-                "feeType": "EXIT",
-                "amount": "294.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Dishonoured Member Cheque fee",
+                "name": "Second Mortgage Consent Fee",
                 "feeType": "EVENT",
-                "amount": "9.00",
+                "amount": "75.00",
                 "currency": "AUD",
-                "additionalValue": "Per cheque dishonoured. ",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Substituting Securities fee",
-                "feeType": "EVENT",
-                "amount": "315.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Third Party Costs",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfo": "Any other costs charged to us by a third party will be passed on to you. Some examples are as follows:\r\n\u2022 Title Change Fee\r\n\u2022 Land and Property Information Search Fees\r\n\u2022 Land and Property Information Registration Fees",
+                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -115,73 +130,27 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Early Repayment Fee",
+                "name": "Substituting of Security Legal fee",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "605.00",
                 "currency": "AUD",
-                "additionalValue": "At cost",
-                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
-            },
-            {
-                "name": "Consent to Subdivision Fee",
-                "feeType": "EVENT",
-                "amount": "162.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dishonoured Cheque fee",
+                "name": "Dishonoured Member Cheque fee",
                 "feeType": "EVENT",
                 "amount": "9.00",
                 "currency": "AUD",
-                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
+                "additionalValue": "Per cheque dishonoured. ",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "General Consent Fee",
-                "feeType": "EVENT",
-                "amount": "250.00",
+                "name": "Mortgage Discharge Fee",
+                "feeType": "EXIT",
+                "amount": "294.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Second Mortgage Consent Fee",
-                "feeType": "EVENT",
-                "amount": "75.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Establishment fee",
-                "feeType": "UPFRONT",
-                "amount": "545.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Excess Valuation fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Stamp Duty",
-                "feeType": "UPFRONT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
+                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -193,11 +162,17 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Bank Cheque",
+                "name": "Establishment fee",
+                "feeType": "UPFRONT",
+                "amount": "545.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Dishonoured Cheque fee",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "9.00",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
+                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -209,6 +184,23 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
+                "name": "Excess Valuation fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Third Party Costs",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfo": "Any other costs charged to us by a third party will be passed on to you. Some examples are as follows:\r\n\u2022 Title Change Fee\r\n\u2022 Land and Property Information Search Fees\r\n\u2022 Land and Property Information Registration Fees",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
                 "name": "Late Payment Fee",
                 "feeType": "EVENT",
                 "amount": "10.00",
@@ -217,69 +209,45 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Substituting of Security Legal fee",
+                "name": "Bank Cheque",
                 "feeType": "EVENT",
-                "amount": "605.00",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
+                "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Arrears Letter Fee",
-                "feeType": "EVENT",
-                "amount": "6.50",
+                "name": "Legal/Securities fees",
+                "feeType": "UPFRONT",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Substituting Securities fee",
+                "feeType": "EVENT",
+                "amount": "315.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0569",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0449",
+                "rate": "0.0529",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0469",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0459",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0474",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
@@ -292,75 +260,19 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0489",
+                "rate": "0.0504",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "loanPurpose": "OWNER_OCCUPIED"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0524",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0519",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0539",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0539",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0484",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0564",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
             },
             {
                 "lendingRateType": "FIXED",
@@ -371,186 +283,11 @@
                 "loanPurpose": "INVESTMENT"
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0539",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0474",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0459",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0529",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0559",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0489",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0469",
+                "rate": "0.0449",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0564",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0529",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0529",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0529",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0539",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0469",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0499",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT"
             },
             {
@@ -558,47 +295,23 @@
                 "rate": "0.0569",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0469",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0559",
+                "rate": "0.0514",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0469",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
@@ -611,23 +324,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0569",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0529",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0489",
+                "rate": "0.0519",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -635,11 +332,170 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0409",
+                "rate": "0.0539",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0559",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0684",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0459",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0514",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0559",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0514",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0519",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0469",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0569",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0524",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0504",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0539",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0509",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0504",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0489",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
             },
             {
                 "lendingRateType": "FIXED",
@@ -651,15 +507,15 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0574",
+                "rate": "0.0514",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT"
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0459",
+                "lendingRateType": "FIXED",
+                "rate": "0.0504",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -667,39 +523,15 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0479",
+                "rate": "0.0564",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0479",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0484",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0489",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0684",
+                "rate": "0.0504",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -715,6 +547,158 @@
             },
             {
                 "lendingRateType": "FIXED",
+                "rate": "0.0514",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0519",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0509",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0574",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0489",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0524",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0519",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0539",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0524",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0514",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0519",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0499",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0514",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0504",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0564",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0569",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
                 "rate": "0.0529",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -723,11 +707,19 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0524",
+                "rate": "0.0539",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0514",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "INVESTMENT"
             }
         ]
     },
