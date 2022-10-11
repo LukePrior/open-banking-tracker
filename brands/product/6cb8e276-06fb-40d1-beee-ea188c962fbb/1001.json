@@ -1,12 +1,12 @@
 {
     "data": {
-        "productId": "1005",
-        "effectiveFrom": "2022-08-10T00:00:00.000+10:00",
+        "productId": "1001",
+        "effectiveFrom": "2020-09-30T00:00:00.000+10:00",
         "effectiveTo": "9999-09-30T00:00:00.000+11:00",
-        "lastUpdated": "2022-08-10T00:00:00.000+10:00",
+        "lastUpdated": "2020-09-30T00:00:00.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "Retire Style",
-        "description": "Our Retire Style Account is a hard working savings account for our customers who are aged 55+ or for those that are managing their own SMSF.",
+        "name": "Goldfields Essential Account",
+        "description": "An everyday transaction account for savvy savers.",
         "brand": "Goldfields Money",
         "brandName": "Goldfields Money",
         "isTailored": false,
@@ -34,12 +34,12 @@
                 "additionalValue": "Google Pay"
             },
             {
-                "featureType": "DIGITAL_WALLET",
-                "additionalValue": "Apple Pay"
-            },
-            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Yes"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
             },
             {
                 "featureType": "BILL_PAYMENT",
@@ -47,39 +47,18 @@
             }
         ],
         "constraints": [],
-        "eligibility": [
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "55"
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalValue": "SMSF"
-            }
-        ],
+        "eligibility": [],
         "fees": [
             {
-                "name": "Direct Debit Facility Dishonour",
+                "name": "Dishonour Fee of Deposited Cheque",
                 "feeType": "EVENT",
-                "amount": "25.00",
+                "amount": "15.00",
                 "discounts": []
             },
             {
-                "name": "VISA or EFT Chargeback Request",
-                "feeType": "EVENT",
-                "amount": "25.00",
-                "discounts": []
-            },
-            {
-                "name": "Overseas VISA debit card ATM withdrawal",
+                "name": "Direct Debit Double Handling Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
-                "discounts": []
-            },
-            {
-                "name": "Deposit book",
-                "feeType": "EVENT",
-                "amount": "10.00",
                 "discounts": []
             },
             {
@@ -101,13 +80,19 @@
                 "discounts": []
             },
             {
-                "name": "Dishonour Fee of Deposited Cheque",
+                "name": "Direct Debit Facility Dishonour",
                 "feeType": "EVENT",
-                "amount": "15.00",
+                "amount": "25.00",
                 "discounts": []
             },
             {
-                "name": "Direct Debit Double Handling Fee",
+                "name": "VISA or EFT Chargeback Request",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "discounts": []
+            },
+            {
+                "name": "Overseas VISA debit card ATM withdrawal",
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "discounts": []
@@ -127,30 +112,10 @@
         ],
         "depositRates": [
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.017",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
-                        "maximumValue": 50000.0,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ]
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.021",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 50001.0,
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ]
+                "depositRateType": "FIXED",
+                "rate": "0.00",
+                "calculationFrequency": "Daily",
+                "tiers": []
             }
         ],
         "lendingRates": []
