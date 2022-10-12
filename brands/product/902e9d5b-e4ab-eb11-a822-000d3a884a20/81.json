@@ -2,7 +2,7 @@
     "data": {
         "productId": "81",
         "effectiveFrom": "2020-04-16T14:30:00.0000000Z",
-        "lastUpdated": "2022-09-20T00:00:39.7462064Z",
+        "lastUpdated": "2022-10-12T00:00:39.9157430Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Advantage Saver",
         "description": "Advantage Saver",
@@ -43,6 +43,59 @@
             {
                 "eligibilityType": "PENSION_RECIPIENT",
                 "additionalInfo": "To be eligible for the bcu advantage saver, applicants must be aged 18+ and currently receive one of the following pensions: Aged Pension, Dept. of Veterans Affairs Pension, Disability Pension or Carer's Pension OR are a self-funded retiree aged 55+"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Bank@Post Deposit Fee",
+                "feeType": "TRANSACTION",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "First 2 transactions in a calendar month free"
+            },
+            {
+                "name": "Bank@Post Withdrawal Fee",
+                "feeType": "TRANSACTION",
+                "amount": "2.50",
+                "currency": "AUD"
+            },
+            {
+                "name": "Referral Fee",
+                "feeType": "EVENT",
+                "amount": "3.50",
+                "currency": "AUD",
+                "additionalInfo": "Where an account has insufficient available funds to cover a cheque or direct debit transaction, and the transaction is honoured by bcu"
+            },
+            {
+                "name": "Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD",
+                "additionalInfo": "Where an account has insufficient available funds to cover a cheque, auto transfer or direct debit transaction, and the transaction is dishonoured by bcu"
+            },
+            {
+                "name": "Overdrawn Acct Management Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "A fee of $10 payable in relation to any month where we allow you to overdraw your account by more than $50",
+                "discounts": [
+                    {
+                        "description": "On a fee for maintaining a set balance",
+                        "discountType": "BALANCE",
+                        "feeRate": "1.0",
+                        "additionalValue": "50.000000"
+                    }
+                ]
+            },
+            {
+                "name": "Foreign Currency Conversion Fee",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "Payable for all transactions made in a foreign currency or if the merchant is located outside Australia"
             }
         ],
         "depositRates": [
