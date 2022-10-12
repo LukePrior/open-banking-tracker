@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;BPA&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-04-30T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-14T14:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-10-11T13:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Business Premium Account&quot;,
     &quot;description&quot;: &quot;Easy business banking with no monthly account keeping fee and unlimited fee free transactions.&quot;,
@@ -23,6 +23,11 @@
         &quot;feesAndPricingUri&quot;: &quot;https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/business-deposit-accounts.pdf&quot;
     },
     &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;The flexiRate self-service feature available in mobile and internet banking lets you lock in a fixed interest rate for terms up to 12 months.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
+        },
         {
             &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
             &quot;additionalValue&quot;: &quot;BPAY&quot;
@@ -98,11 +103,6 @@
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Don't travel? Card lock in mobile banking lets you lock your card for overseas instore purchases&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/help-support/ways-to-bank/mobile-app/card-lock.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;The flexiRate self-service feature available in mobile and internet banking lets you lock in a fixed interest rate for terms up to 12 months.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -303,22 +303,6 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;$1 to $19,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 19999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Business Premium Variable Interest calculated daily and paid monthly on a tiered basis.&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0001&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
                     &quot;name&quot;: &quot;$20,000 to $49,999&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 20000.0,
@@ -394,7 +378,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.003&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -412,7 +396,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.007&quot;,
+            &quot;rate&quot;: &quot;0.0145&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P2M&quot;,
             &quot;tiers&quot;: [
@@ -429,8 +413,24 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         },
         {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1 to $19,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 19999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Business Premium Variable Interest calculated daily and paid monthly on a tiered basis.&quot;
+        },
+        {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.016&quot;,
+            &quot;rate&quot;: &quot;0.019&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P3M&quot;,
             &quot;tiers&quot;: [
@@ -448,7 +448,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0115&quot;,
+            &quot;rate&quot;: &quot;0.0145&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P4M&quot;,
             &quot;tiers&quot;: [
@@ -466,7 +466,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0115&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P5M&quot;,
             &quot;tiers&quot;: [
@@ -484,7 +484,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.023&quot;,
+            &quot;rate&quot;: &quot;0.027&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P6M&quot;,
             &quot;tiers&quot;: [
@@ -502,7 +502,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;rate&quot;: &quot;0.0225&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P7M&quot;,
             &quot;tiers&quot;: [
@@ -520,7 +520,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.014&quot;,
+            &quot;rate&quot;: &quot;0.0255&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P8M&quot;,
             &quot;tiers&quot;: [
@@ -538,7 +538,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0265&quot;,
+            &quot;rate&quot;: &quot;0.03&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P9M&quot;,
             &quot;tiers&quot;: [
@@ -556,7 +556,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;rate&quot;: &quot;0.0255&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P10M&quot;,
             &quot;tiers&quot;: [
@@ -574,7 +574,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;rate&quot;: &quot;0.0295&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P11M&quot;,
             &quot;tiers&quot;: [
@@ -592,7 +592,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0305&quot;,
+            &quot;rate&quot;: &quot;0.034&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P12M&quot;,
             &quot;tiers&quot;: [
