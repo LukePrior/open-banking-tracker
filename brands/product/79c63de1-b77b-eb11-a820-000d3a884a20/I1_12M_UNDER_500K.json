@@ -1,9 +1,61 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected error",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1,000",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.01500",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P5M",
+                "tiers": [
+                    {
+                        "name": "Term deposits 12mths under $500,000_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    },
+                    {
+                        "name": "Term deposits 12mths under $500,000_Tier",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 3.0,
+                        "maximumValue": 5.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalValue": "P5M",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://cairnsbank.com.au/banking/personal-banking/rates"
+            }
+        ],
+        "productId": "I1_12M_UNDER_500K",
+        "lastUpdated": "2022-10-14T16:34:54.000+10:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Term deposits 12mths under $500,000",
+        "description": "Cairns Bank term deposits pay a fixed rate of interest for a fixed term with interest paid at maturity.",
+        "brand": "CAIRNS PENNY SAVINGS LOANS LTD",
+        "brandName": "Cairns Bank",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://cairnsbank.com.au/banking/personal-banking/term-deposit-account",
+            "termsUri": "https://cairnsbank.com.au/information-and-support/disclosure/terms-conditions",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "https://cairnsbank.com.au/information-and-support/disclosure/fees-and-charges",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://openbanking.cairnsbank.com.au/OpenBanking/cds-au/v1/banking/products/I1_12M_UNDER_500K"
+    },
+    "meta": {}
 }
