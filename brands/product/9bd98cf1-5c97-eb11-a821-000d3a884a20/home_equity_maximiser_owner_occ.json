@@ -1,12 +1,97 @@
 {
-    "errors": [
-        {
-            "code": "APIG001",
-            "title": "Bad Request",
-            "detail": "Invalid Request. Invalid Http Method or Missing/Invalid mandatory fields.",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:GeneralError/Expected"
+    "data": {
+        "productId": "home_equity_maximiser_owner_occ",
+        "lastUpdated": "2022-10-12T06:34:32Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Home Equity Maximiser Owner Occupied",
+        "description": "Reach your goals sooner by using the existing equity in your home and a Home Equity Maximiser line of credit.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.banksyd.com.au/home-equity-maximiser",
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/home-equity-maximiser",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "eligibility": [
+            {
+                "eligibilityType": "MINAGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "NATURALPERSON"
+            },
+            {
+                "eligibilityType": "RESIDENCYSTATUS",
+                "additionalValue": "Australian Permanent Resident or Citizen. Residential address must be in Australia."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "LVR (Loan to Value Ratio) up to 70%",
+                "additionalInfo": "Residential properties only (Mortgage Insurance required for any LVR above the Limits of Authority Guidelines)"
             }
-        }
-    ]
+        ],
+        "fees": [
+            {
+                "feeType": "UPFRONT",
+                "name": "Application Fee",
+                "amount": "400.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Settlement Fee",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable at settlement"
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Staff Assisted Transaction Fee",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalInfo": "Applicable if number of in branch transactions exceeds 4 per month"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.099",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "lendingRateType": "VARIABLE"
+            },
+            {
+                "rate": "0.0256",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Applied to Standard Variable Rate",
+                "lendingRateType": "DISCOUNT"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Cheque Book",
+                "additionalInfo": "Cheque book facility available"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/home_equity_maximiser_owner_occ"
+    }
 }
