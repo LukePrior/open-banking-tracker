@@ -1,9 +1,180 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Application Error Code - serverUnavailable: UUID -  c3ca7177-b79b-4c12-8b12-3f0024a795a4"
-        }
-    ]
+    "data": {
+        "productId": "AUCFSRC300G1N9ZJ0M",
+        "effectiveFrom": "2020-09-01T00:00:00Z",
+        "effectiveTo": "2023-01-31T00:00:00Z",
+        "lastUpdated": "2022-09-05T06:41:30Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Coles Personal Loan",
+        "description": "A personal loan with a variable rate and reusable credit line with bonus flybuys points when shopping in Coles",
+        "brand": "ColesFS",
+        "brandName": "Coles Financial Services",
+        "applicationUri": "https://financialservices.coles.com.au/loans/personal-loans",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://financialservices.coles.com.au/loans/personal-loans",
+            "termsUri": "https://financialservices.coles.com.au/loans/~/media/financial-services/files/personal-loans/coles-personal-loans-terms-conditions",
+            "eligibilityUri": "https://financialservices.coles.com.au/loans/personal-loans",
+            "feesAndPricingUri": "https://financialservices.coles.com.au/loans/personal-loans"
+        },
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Lending Debit card"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Online Service Centre"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Coles Mobile Wallet App"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "Direct Debit"
+            },
+            {
+                "featureType": "LOYALTY_PROGRAM",
+                "additionalValue": "Flybuys"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "+1 flybuys EXTRA POINT per $1 spent at Coles",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "$10 off your Coles Supermarket shop with a Coles Personal Loan",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "20000.00",
+                "additionalInfo": "Non-Flybuys customers only"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "50000.00",
+                "additionalInfo": "Flybuys customers only"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "2000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "MIN_INCOME",
+                "additionalValue": "35000.00"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian resident"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "199.00",
+                "currency": "AUD",
+                "additionalInfo": "An establishment fee will be debited to your Account on the date we issue you a statement for the Statement Period in which you activate your Account.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "name": "Monthy Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Not charged when account balance is $0 and no retail and cash transactions in the month.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "$30 each time we do not receive the Minimum Payment Due and any Overdue amount by the payment due date, debited to your Account after the payment due date. The minimum Payment Due, any Overdue Amount, and payment due date are detailed on your statement of account.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "name": "International Transaction Fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.025",
+                "currency": "AUD",
+                "additionalInfo": "We charge you an International Transaction Fee of 2.5% on the AUD conversion of any transaction made in foreign currency. This amount includes a service and assessment fee payable by Us to the scheme (where applicable).",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "name": "Australia Post Payment Fee",
+                "feeType": "EVENT",
+                "amount": "2.25",
+                "additionalInfoUri": "https://financialservices.coles.com.au/loans/personal-loans"
+            },
+            {
+                "name": "Early Payout Fee",
+                "feeType": "EVENT",
+                "amount": "0.00"
+            },
+            {
+                "name": "Overlimit fee",
+                "feeType": "EVENT",
+                "amount": "0.00"
+            },
+            {
+                "name": "Cash advance fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "0.00"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1299",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "The advertised Coles Personal Loan rate is for new loans only and is subject to change at any time",
+                "additionalInfoUri": "https://www.coles.com.au/personal-loans"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0890",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Discounted rate applies to flybuys customers only",
+                "additionalInfo": "The advertised Coles Personal Loan rate is for new loans only and is subject to change at any time",
+                "additionalInfoUri": "https://www.coles.com.au/personal-loans"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.openbanking.secure.coles.com.au/cds-au/v1/banking/products/AUCFSRC300G1N9ZJ0M"
+    },
+    "meta": {}
 }
