@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;L23&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-09-30T00:00:00+00:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-10-06T06:04:54+00:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-10-21T04:25:09+00:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Police Value Home Loan&quot;,
     &quot;description&quot;: &quot;Helping Police Officers with a low rate home loan that has a great range of features to help pay off your home sooner.&quot;,
@@ -21,9 +21,9 @@
     },
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalValue&quot;: &quot;0&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee Free redraw&quot;,
+            &quot;featureType&quot;: &quot;OFFSET&quot;,
+            &quot;additionalValue&quot;: &quot;100% Offset&quot;,
+            &quot;additionalInfo&quot;: &quot;Not Available for Fixed Loans or Interest Only&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/loans/home-loans/police-value-home-loan/?utm_source=siss&quot;
         },
         {
@@ -33,25 +33,25 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/interest-rates/#&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Unlimited free additional repayments&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to $5,000 over the Fixed Term period&quot;,
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalValue&quot;: &quot;0&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee Free redraw&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/loans/home-loans/police-value-home-loan/?utm_source=siss&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalValue&quot;: &quot;100% Offset&quot;,
-            &quot;additionalInfo&quot;: &quot;Not Available for Fixed Loans or Interest Only&quot;,
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Unlimited free additional repayments&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to $5,000 over the Fixed Term period&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/loans/home-loans/police-value-home-loan/?utm_source=siss&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Australian Residents&quot;
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
@@ -60,8 +60,8 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/loans/home-loans/police-value-home-loan/?utm_source=siss&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Residents&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
@@ -70,19 +70,19 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Dishonoured Member Cheque fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;9.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Per cheque dishonoured.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Bank Cheque&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Legal/Securities fees&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;At Cost&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Dishonoured Cheque fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Payable when a cheque or other payment to your account is dishonoured.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -94,11 +94,57 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Excess Valuation fee&quot;,
+            &quot;name&quot;: &quot;Consent to Subdivision Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;162.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you ask for our consent to register a subdivision or other plan or dealing.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Establishment fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;545.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Mortgage Loan Top up/Increase in Credit Limit Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;315.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Payable on application or funding. Applies to all Home Loan Applications&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Stamp Duty&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;At Cost&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Mortgage Discharge Fee&quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
+            &quot;amount&quot;: &quot;294.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Production of Title Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;110.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable to our solicitors when you ask us to produce the certificate of title of your property to enable registration of a plan or any document dealing with your property&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Arrears Letter Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;6.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -118,122 +164,12 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Production of Title Fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;110.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable to our solicitors when you ask us to produce the certificate of title of your property to enable registration of a plan or any document dealing with your property&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Early Repayment Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;At cost&quot;,
-            &quot;additionalInfo&quot;: &quot;Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Establishment fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;545.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Default Notice Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;21.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Mortgage Loan Top up/Increase in Credit Limit Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;315.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Payable on application or funding. Applies to all Home Loan Applications&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Legal/Securities fees&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;At Cost&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;RTGS Transfer Fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;10.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Dishonoured Cheque fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;9.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Payable when a cheque or other payment to your account is dishonoured.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Arrears Letter Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;6.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Consent to Subdivision Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;162.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you ask for our consent to register a subdivision or other plan or dealing.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
             &quot;name&quot;: &quot;Third Party Costs&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;At Cost&quot;,
             &quot;additionalInfo&quot;: &quot;Any other costs charged to us by a third party will be passed on to you. Some examples are as follows:\r\n\u2022 Title Change Fee\r\n\u2022 Land and Property Information Search Fees\r\n\u2022 Land and Property Information Registration Fees&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Second Mortgage Consent Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;75.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you ask us to consent to a second mortgage&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Mortgage Discharge Fee&quot;,
-            &quot;feeType&quot;: &quot;EXIT&quot;,
-            &quot;amount&quot;: &quot;294.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Substituting of Security Legal fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;605.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable to us when you substitute an existing property with a new property as security for your home loan. &quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Stamp Duty&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;At Cost&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -245,6 +181,30 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
+            &quot;name&quot;: &quot;Second Mortgage Consent Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;75.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you ask us to consent to a second mortgage&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;RTGS Transfer Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;10.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bank Cheque&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;At Cost&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
             &quot;name&quot;: &quot;Additional Statement Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
@@ -252,163 +212,51 @@
             &quot;additionalValue&quot;: &quot;$1.50 per page&quot;,
             &quot;additionalInfo&quot;: &quot;Payable when you request an additional statement&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Dishonoured Member Cheque fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Per cheque dishonoured.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Early Repayment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;At cost&quot;,
+            &quot;additionalInfo&quot;: &quot;Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Default Notice Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;21.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Excess Valuation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;At Cost&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Substituting of Security Legal fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;605.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable to us when you substitute an existing property with a new property as security for your home loan. &quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0489&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0514&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0559&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
@@ -417,7 +265,23 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -428,20 +292,12 @@
             &quot;rate&quot;: &quot;0.0529&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0564&quot;,
+            &quot;rate&quot;: &quot;0.0594&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -449,79 +305,15 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0449&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0554&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0449&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0499&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0529&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0514&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -529,99 +321,19 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0479&quot;,
+            &quot;rate&quot;: &quot;0.0474&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0594&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0459&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0489&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -632,24 +344,8 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0459&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0514&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0479&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -657,15 +353,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
+            &quot;rate&quot;: &quot;0.0484&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -673,7 +361,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -681,15 +369,23 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0514&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -700,16 +396,8 @@
             &quot;rate&quot;: &quot;0.0519&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -720,8 +408,96 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0554&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0524&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0554&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0554&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0514&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -736,24 +512,8 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0504&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -769,11 +529,171 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0499&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0554&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0589&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0589&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -784,32 +704,40 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0504&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0519&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0509&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0484&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0474&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -817,26 +745,98 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0494&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0524&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0559&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0514&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0564&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0554&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
         }
     ]
