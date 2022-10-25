@@ -39,9 +39,6 @@
                 "name": "STAFF_ASSIST_FEE",
                 "feeType": "TRANSACTION",
                 "amount": "5.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalInfo": "",
@@ -51,11 +48,6 @@
                         "description": "Staff=assisted transfer fee",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "5.00",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "eligibility": [
                             {
                                 "discountEligibilityType": "MAX_AGE",
@@ -70,7 +62,7 @@
                                 "additionalInfoUri": ""
                             },
                             {
-                                "discountEligibilityType": "BUSINESS",
+                                "discountEligibilityType": "INTRODUCTORY",
                                 "additionalValue": "P3M",
                                 "additionalInfo": "",
                                 "additionalInfoUri": ""
@@ -95,9 +87,6 @@
                 "name": "MEMBERSHIP_ADMIN_FEE",
                 "feeType": "PERIODIC",
                 "amount": "5.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalValue": "P1M",
@@ -108,11 +97,6 @@
                         "description": "Membership Admin Fee",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "5.00",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "eligibility": [
                             {
                                 "discountEligibilityType": "MAX_AGE",
@@ -121,7 +105,7 @@
                                 "additionalInfoUri": ""
                             },
                             {
-                                "discountEligibilityType": "BUSINESS",
+                                "discountEligibilityType": "INTRODUCTORY",
                                 "additionalValue": "P3M",
                                 "additionalInfo": "",
                                 "additionalInfoUri": ""
@@ -146,9 +130,6 @@
                 "name": "CHEQUE_FEE",
                 "feeType": "TRANSACTION",
                 "amount": "2.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalInfo": "",
@@ -158,11 +139,6 @@
                         "description": "Personal cheque fee",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "2.00",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "eligibility": [
                             {
                                 "discountEligibilityType": "MAX_AGE",
@@ -171,7 +147,7 @@
                                 "additionalInfoUri": ""
                             },
                             {
-                                "discountEligibilityType": "BUSINESS",
+                                "discountEligibilityType": "INTRODUCTORY",
                                 "additionalValue": "P3M",
                                 "additionalInfo": "",
                                 "additionalInfoUri": ""
@@ -196,7 +172,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.00150",
+                "rate": "0.0015",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "",
@@ -206,7 +182,7 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.00000",
+                "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -215,19 +191,15 @@
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
                         "maximumValue": 4.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "",
-                "interestPaymentDue": null,
-                "repaymentType": null,
-                "loanPurpose": null
+                "additionalInfoUri": ""
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.13990",
+                "rate": "0.1399",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -235,16 +207,11 @@
                         "name": "Special Purpose_Tier_2",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 4.01,
-                        "maximumValue": null,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "",
-                "interestPaymentDue": null,
-                "repaymentType": null,
-                "loanPurpose": null
+                "additionalInfoUri": ""
             }
         ],
         "productId": "SPECIAL_PURPOSE",

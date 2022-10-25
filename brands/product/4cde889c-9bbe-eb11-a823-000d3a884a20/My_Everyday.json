@@ -40,7 +40,6 @@
             },
             {
                 "featureType": "OVERDRAFT",
-                "additionalValue": "Terms, conditions, lending eligibility and approval criteria apply",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -57,9 +56,6 @@
                 "name": "CARD_PURCHASE,_EFTPOS,_ATM",
                 "feeType": "TRANSACTION",
                 "amount": "0.75",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalInfo": "",
@@ -69,11 +65,6 @@
                         "description": "My Everyday - Savings or loan balance fee exemption",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "0.75",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
@@ -93,10 +84,6 @@
                         "description": "My Everyday- Card Purchase Fee cap",
                         "discountType": "FEE_CAP",
                         "amount": "0.75",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
                         "additionalValue": "a cap of $12.00 per month applies",
                         "eligibility": [
                             {
@@ -112,10 +99,6 @@
                         "description": "My Everyday - Card Purchase Fee free allowance",
                         "discountType": "FEE_CAP",
                         "amount": "0.75",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
                         "additionalValue": "The first 15 transactions each month are free",
                         "additionalInfo": "",
                         "additionalInfoUri": "https://www.gmcu.com.au/pds"
@@ -126,22 +109,15 @@
                 "name": "CHEQUES_YOU_DEPOSIT",
                 "feeType": "TRANSACTION",
                 "amount": "0.20",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Fee for every cheque you deposit to your account",
-                "additionalInfoUri": "https://www.gmcu.com.au/pds",
-                "discounts": []
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
             },
             {
                 "name": "BRANCH_WITHDRAWAL_FEE",
                 "feeType": "WITHDRAWAL",
                 "amount": "4.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalInfo": "Includes all in-branch cash transfer and BPAY withdrawals",
@@ -151,11 +127,6 @@
                         "description": "My Everyday - Monthly Branch Withdrawal Fee free allowance",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "4.00",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "additionalInfo": "",
                         "additionalInfoUri": "https://www.gmcu.com.au/pds"
                     },
@@ -163,11 +134,6 @@
                         "description": "Christmas Saver- Branch Withdrawal Fee Exemption",
                         "discountType": "ELIGIBILITY_ONLY",
                         "amount": "4.00",
-                        "balanceRate": null,
-                        "transactionRate": null,
-                        "accruedRate": null,
-                        "feeRate": null,
-                        "additionalValue": null,
                         "eligibility": [
                             {
                                 "discountEligibilityType": "OTHER",
@@ -184,46 +150,34 @@
                 "name": "MEMBER_CHEQUE_PRESENTED",
                 "feeType": "TRANSACTION",
                 "amount": "1.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
                 "additionalInfo": "Fee for every cheque presented",
-                "additionalInfoUri": "https://www.gmcu.com.au/pds",
-                "discounts": []
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
             },
             {
                 "name": "ATM_BALANCE_ENQUIRY",
                 "feeType": "EVENT",
                 "amount": "0.50",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Each time a balance enquiry is requested at an ATM",
-                "additionalInfoUri": "https://www.gmcu.com.au/pds",
-                "discounts": []
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
             },
             {
                 "name": "DECLINED_ATM_OR_EFTPOS_TRANSACTION",
                 "feeType": "EVENT",
                 "amount": "1.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Each time an ATM or EFTPOS transaction is declined",
-                "additionalInfoUri": "https://www.gmcu.com.au/pds",
-                "discounts": []
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
             }
         ],
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.00010",
+                "rate": "0.0001",
                 "calculationFrequency": "P1M",
                 "applicationFrequency": "P1Y",
                 "tiers": [
@@ -232,8 +186,7 @@
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
                         "maximumValue": 4999.0,
-                        "rateApplicationMethod": "PER_TIER",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -241,7 +194,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.00010",
+                "rate": "0.0001",
                 "calculationFrequency": "P1M",
                 "applicationFrequency": "P1Y",
                 "tiers": [
@@ -250,8 +203,7 @@
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 4999.01,
                         "maximumValue": 24999.0,
-                        "rateApplicationMethod": "PER_TIER",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -259,7 +211,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.00100",
+                "rate": "0.001",
                 "calculationFrequency": "P1M",
                 "applicationFrequency": "P1Y",
                 "tiers": [
@@ -268,8 +220,7 @@
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 24999.01,
                         "maximumValue": 49999.0,
-                        "rateApplicationMethod": "PER_TIER",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -277,7 +228,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.00100",
+                "rate": "0.001",
                 "calculationFrequency": "P1M",
                 "applicationFrequency": "P1Y",
                 "tiers": [
@@ -285,9 +236,7 @@
                         "name": "My Everyday_Tier_4",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 49999.01,
-                        "maximumValue": null,
-                        "rateApplicationMethod": "PER_TIER",
-                        "applicabilityConditions": null
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -297,14 +246,11 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.00000",
+                "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "",
-                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates",
-                "interestPaymentDue": null,
-                "repaymentType": null,
-                "loanPurpose": null
+                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates"
             }
         ],
         "productId": "My_Everyday",
