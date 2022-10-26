@@ -1,9 +1,137 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected error",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Internet Banking and WCU Connect App - balance enquiries",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No account keeping fee",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "A guaranteed rate for terms of  18 months",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Earn a competitive interest rate on your investment with a minimum opening balance of $50,000 can get you started",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Interest can be paid monthly, 6 monthly or at maturity. A reduced interst rate applies for monthly and 6 monthly interest payments",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We'll send you a written renewal notice before your deposit matures",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We may allow early withdrawals at our absolute discretion. A reduced rate of interest will apply in these circumstances. For full details refer to our Conditions of Use",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "50000.00",
+                "additionalInfo": "$50,000",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "199999.00",
+                "additionalInfo": "$199,999",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "50000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Individuals must be citizens or permanent residents of Australia",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Must be a member of the Credit Union",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "When paper statements are requested - charged on statement cycle",
+                "additionalInfoUri": "",
+                "discounts": []
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.01150",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P11M",
+                "tiers": [
+                    {
+                        "name": "FIXED TERM DEPOSITS_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500.0,
+                        "maximumValue": 4999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    },
+                    {
+                        "name": "FIXED TERM DEPOSITS_Tier",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 11.0,
+                        "maximumValue": 11.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalValue": "P11M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "I2_18M_$50,000_to_$199,999",
+        "lastUpdated": "2022-10-21T08:43:08.000+10:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "FIXED TERM DEPOSITS",
+        "description": "Take advantage of great returns on our term deposits",
+        "brand": "WARWICK CREDIT UNION",
+        "brandName": "WARWICK CREDIT UNION",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "",
+            "termsUri": "",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://openbanking.wcu.com.au/OpenBanking/cds-au/v1/banking/products/I2_18M_$50,000_to_$199,999"
+    },
+    "meta": {}
 }
