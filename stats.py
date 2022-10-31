@@ -79,7 +79,10 @@ def calculate_interest(lendingRates):
         if lendingRate["lendingRateType"] != "VARIABLE" and lendingRate["lendingRateType"] != "FIXED":
             continue
 
-        rate = round(float(lendingRate["rate"])*100,2)
+        try:
+            rate = round(float(lendingRate["rate"])*100,2)
+        except:
+            continue
 
         formatted = {"rate": rate, "lendingRateType": lendingRate["lendingRateType"]}
 
