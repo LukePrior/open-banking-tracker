@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;S23&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-09-24T12:02:00+00:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-29T04:06:25+00:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-10-31T03:10:35+00:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Bonus Saver Account&quot;,
     &quot;description&quot;: &quot;Reach your goals faster with Police Bank\u2019s Bonus Saver Account which rewards you for saving your hard earned money. Simply deposit a minimum of $100 a month with no withdrawals and you will receive a bonus interest rate on your savings.&quot;,
@@ -28,9 +28,19 @@
     ],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Phone banking&quot;,
-            &quot;additionalInfo&quot;: &quot;You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.&quot;,
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalValue&quot;: &quot;Mobile Number&quot;,
+            &quot;additionalInfo&quot;: &quot;Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalValue&quot;: &quot;Email Address&quot;,
+            &quot;additionalInfo&quot;: &quot;Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Bonus Interest Rate available&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum of $100 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. &quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/financial_services_guide.pdf&quot;
         },
         {
@@ -45,53 +55,34 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/financial_services_guide.pdf&quot;
         },
         {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalValue&quot;: &quot;Email Address&quot;,
-            &quot;additionalInfo&quot;: &quot;Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
-            &quot;additionalValue&quot;: &quot;Yes&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Direct Credits&quot;,
             &quot;additionalInfo&quot;: &quot;Make regular credits like your pay into this account&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/financial_services_guide.pdf&quot;
         },
         {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalValue&quot;: &quot;Mobile Number&quot;,
-            &quot;additionalInfo&quot;: &quot;Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address.&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Phone banking&quot;,
+            &quot;additionalInfo&quot;: &quot;You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/financial_services_guide.pdf&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Bonus Interest Rate available&quot;,
-            &quot;additionalInfo&quot;: &quot;Minimum of $100 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. &quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/financial_services_guide.pdf&quot;
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;None&quot;
+        },
+        {
             &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
             &quot;additionalValue&quot;: &quot;0&quot;,
             &quot;additionalInfo&quot;: &quot;When you apply to become a Police Bank Member, you do not have to pay a membership fee. All we ask is that you guarantee to pay $10 if Police Bank ever ceases to operate to the person/s looking after our winding up.&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;None&quot;
         }
     ],
     &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Police Officers&quot;,
-            &quot;additionalInfo&quot;: &quot;Bonus Saver Account is only available to current Police Officers or a Retired Police Officer(s) who are a member of a Union that is associated with the Police Federation of Australia. This Includes NSW Police Association (including associate members), and the Australian Federal Police Association.&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;
-        },
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Citizen&quot;
@@ -101,11 +92,29 @@
             &quot;additionalValue&quot;: &quot;Individuals&quot;
         },
         {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
+        },
+        {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Residents&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Police Officers&quot;,
+            &quot;additionalInfo&quot;: &quot;Bonus Saver Account is only available to current Police Officers or a Retired Police Officer(s) who are a member of a Union that is associated with the Police Federation of Australia. This Includes NSW Police Association (including associate members), and the Australian Federal Police Association.&quot;
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Additional Statement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;$1.50 per page&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if and when you request an additional statement.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
         {
             &quot;name&quot;: &quot;Document Retrieval fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -113,14 +122,6 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee&quot;,
             &quot;additionalInfo&quot;: &quot;Payable on request for documents to be retrieved&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Overdrawn Savings Account Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -133,11 +134,20 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Counter Cash withdrawal fee up to $24,999&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;name&quot;: &quot;Overdrawn Savings Account Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;First 3 free if part of Reduced Fees program&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Dormant Accounts fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
             &quot;name&quot;: &quot;Special Cheque clearance fee for Personal Accounts&quot;,
@@ -162,27 +172,17 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Additional Statement Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;name&quot;: &quot;Counter Cash withdrawal fee up to $24,999&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;$1.50 per page&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if and when you request an additional statement.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Dormant Accounts fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf&quot;
+            &quot;additionalValue&quot;: &quot;First 3 free if part of Reduced Fees program&quot;
         }
     ],
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0205&quot;,
+            &quot;rate&quot;: &quot;0.028&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
