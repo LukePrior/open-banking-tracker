@@ -2,7 +2,7 @@
     "data": {
         "productId": "07ddb3f7-4488-4fef-bba9-d0566b410302",
         "effectiveFrom": "2020-09-24T02:02:00+00:00",
-        "lastUpdated": "2022-09-29T04:06:46+00:00",
+        "lastUpdated": "2022-10-31T03:10:41+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Saver Account",
         "description": "This is a special purpose savings account created to enable you to earn extra interest if you do not withdraw funds. Funds are available at call. You can use Internet and Redidial Phone Banking on the account. ",
@@ -22,37 +22,8 @@
         ],
         "features": [
             {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Email Address",
-                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
-            },
-            {
                 "featureType": "NPP_ENABLED",
                 "additionalValue": "Yes"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Phone banking",
-                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Internet banking",
-                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Make regular credits like your pay into this account",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Bonus Interest Rate available",
-                "additionalInfo": "Minimum of $100 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. ",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
             },
             {
                 "featureType": "OTHER",
@@ -63,6 +34,35 @@
                 "featureType": "NPP_PAYID",
                 "additionalValue": "Mobile Number",
                 "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Email Address",
+                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Make regular credits like your pay into this account",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Phone banking",
+                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Bonus Interest Rate available",
+                "additionalInfo": "Minimum of $100 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. ",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Internet banking",
+                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
             }
         ],
         "constraints": [
@@ -83,37 +83,54 @@
                 "additionalInfo": "Bonus Saver Account is only available to Australian Customs and Border Protection Services and Australian Quarantine Inspection Services (Core Members)"
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Residents"
             },
             {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalValue": "Individuals"
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Citizen"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Residents"
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals"
             }
         ],
         "fees": [
+            {
+                "name": "Third Party Costs",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Dormant Accounts fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Additional Statement Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "$1.50 per page",
+                "additionalInfo": "Payable if and when you request an additional statement.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
             {
                 "name": "Counter Cash withdrawal $25,000 and over",
                 "feeType": "TRANSACTION",
                 "amount": "50.00",
                 "currency": "AUD",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Document Retrieval fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
-                "additionalInfo": "Payable on request for documents to be retrieved",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -125,6 +142,22 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
+                "name": "Counter Cash withdrawal fee up to $24,999",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
+            },
+            {
+                "name": "Document Retrieval fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
+                "additionalInfo": "Payable on request for documents to be retrieved",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
                 "name": "Default Notice Fee",
                 "feeType": "EVENT",
                 "amount": "21.50",
@@ -133,43 +166,10 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
-            },
-            {
-                "name": "Dormant Accounts fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
                 "name": "Special Cheque clearance fee for Personal Accounts",
                 "feeType": "EVENT",
                 "amount": "16.50",
                 "currency": "AUD",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Third Party Costs",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Additional Statement Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalValue": "$1.50 per page",
-                "additionalInfo": "Payable if and when you request an additional statement.",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
@@ -188,7 +188,7 @@
             },
             {
                 "depositRateType": "BONUS",
-                "rate": "0.0205",
+                "rate": "0.028",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M"
             },

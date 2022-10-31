@@ -2,7 +2,7 @@
     "data": {
         "productId": "80b32d11-44ef-4b14-9cbb-4ae02dde4ac5",
         "effectiveFrom": "2020-09-25T01:44:00+00:00",
-        "lastUpdated": "2022-08-29T05:32:10+00:00",
+        "lastUpdated": "2022-10-28T05:03:28+00:00",
         "productCategory": "PERS_LOANS",
         "name": "Personal Loan",
         "description": "Borrow for any worthwhile purpose from the latest in big ticket electronics, white goods and household items to holidays, cars, boats and bikes.",
@@ -47,41 +47,34 @@
         ],
         "eligibility": [
             {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Citizens"
+            },
+            {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Residents"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizens"
             }
         ],
         "fees": [
             {
-                "name": "Bank Cheque",
+                "name": "Dishonoued Member Cheque Fee",
                 "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalValue": "Per cheque dishonoured.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "PPSR",
+                "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Arrears Letter Fee",
-                "feeType": "EVENT",
-                "amount": "6.50",
-                "currency": "AUD",
-                "additionalValue": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract. ",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Late Payment Fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Heritage Isle Bank  loans and continuing credit accounts.",
+                "additionalInfo": "Certain loans will require us to use the services of PPSR. If we do so, the following may be payable:\r\n\u2022 PPSR Registration Fee\r\n\u2022 PPSR Financier Interest Enquiry\r\n\u2022 PPSR Variation of Interest",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -90,38 +83,6 @@
                 "amount": "15.00",
                 "currency": "AUD",
                 "additionalValue": "Payable when you exceed your credit limit by $75 or more within a calendar month. Interest will also be charged on any amount overdrawn in excess of the approved credit limit at the then current annual percentage rate",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
-                "currency": "AUD",
-                "additionalValue": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Dishonoured Cheque fee",
-                "feeType": "EVENT",
-                "amount": "9.00",
-                "currency": "AUD",
-                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Personal Loan Establishment fee",
-                "feeType": "UPFRONT",
-                "amount": "98.00",
-                "currency": "AUD",
-                "additionalValue": "Payable when your loan is funded",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Dishonoued Member Cheque Fee",
-                "feeType": "EVENT",
-                "amount": "9.00",
-                "currency": "AUD",
-                "additionalValue": "Per cheque dishonoured.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -134,26 +95,65 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "PPSR",
-                "feeType": "UPFRONT",
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Heritage Isle Bank  loans and continuing credit accounts.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
-                "additionalInfo": "Certain loans will require us to use the services of PPSR. If we do so, the following may be payable:\r\n\u2022 PPSR Registration Fee\r\n\u2022 PPSR Financier Interest Enquiry\r\n\u2022 PPSR Variation of Interest",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Dishonoured Cheque fee",
+                "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Arrears Letter Fee",
+                "feeType": "EVENT",
+                "amount": "6.50",
+                "currency": "AUD",
+                "additionalValue": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract. ",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Personal Loan Establishment fee",
+                "feeType": "UPFRONT",
+                "amount": "98.00",
+                "currency": "AUD",
+                "additionalValue": "Payable when your loan is funded",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "currency": "AUD",
+                "additionalValue": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "lendingRates": [
             {
-                "lendingRateType": "VARIABLE",
+                "lendingRateType": "FIXED",
                 "rate": "0.0749",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST"
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0719",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0749",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST"
@@ -167,7 +167,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0749",
+                "rate": "0.0719",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST"

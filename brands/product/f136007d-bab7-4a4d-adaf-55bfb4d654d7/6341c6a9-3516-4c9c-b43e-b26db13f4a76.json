@@ -2,7 +2,7 @@
     "data": {
         "productId": "6341c6a9-3516-4c9c-b43e-b26db13f4a76",
         "effectiveFrom": "2020-09-24T02:02:00+00:00",
-        "lastUpdated": "2021-06-20T22:22:31+00:00",
+        "lastUpdated": "2022-10-31T03:12:15+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Dynamo/Flex Account",
         "description": "This is a special purpose children\u2019s savings account created to enable children to earn extra interest if they do not withdraw funds. Funds are available at call.\r\nYou can use Internet and Redidial\r\nPhone Banking on the account",
@@ -22,25 +22,14 @@
         ],
         "features": [
             {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes"
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Internet banking",
                 "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Make regular credits like your pay into this account",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Email Address",
-                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalValue": "Yes"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -49,8 +38,14 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
             },
             {
+                "featureType": "OTHER",
+                "additionalValue": "Bonus Interest Rate available",
+                "additionalInfo": "Minimum of $20 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. ",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
                 "featureType": "NPP_PAYID",
-                "additionalValue": "Mobile Number",
+                "additionalValue": "Email Address",
                 "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
             },
             {
@@ -60,9 +55,14 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Bonus Interest Rate available",
-                "additionalInfo": "Minimum of $20 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. ",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Make regular credits like your pay into this account",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Mobile Number",
+                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
             }
         ],
         "constraints": [
@@ -78,33 +78,48 @@
         ],
         "eligibility": [
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "0"
-            },
-            {
                 "eligibilityType": "NATURAL_PERSON",
                 "additionalValue": "Individuals"
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "18"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Residents"
             },
             {
-                "eligibilityType": "MAX_AGE",
-                "additionalValue": "18"
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "0"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Citizen"
             }
         ],
         "fees": [
             {
-                "name": "Special Cheque clearance fee for Personal Accounts",
+                "name": "Dormant Accounts fee",
                 "feeType": "EVENT",
-                "amount": "16.50",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Counter Cash withdrawal $25,000 and over",
+                "feeType": "TRANSACTION",
+                "amount": "50.00",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Counter Cash withdrawal fee up to $24,999",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
             },
             {
                 "name": "Document Retrieval fee",
@@ -116,12 +131,10 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Additional Statement Fee",
+                "name": "Special Cheque clearance fee for Personal Accounts",
                 "feeType": "EVENT",
-                "amount": "5.00",
+                "amount": "16.50",
                 "currency": "AUD",
-                "additionalValue": "$1.50 per page",
-                "additionalInfo": "Payable if and when you request an additional statement.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -134,19 +147,13 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dormant Accounts fee",
+                "name": "Additional Statement Fee",
                 "feeType": "EVENT",
-                "amount": "10.00",
+                "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalValue": "$1.50 per page",
+                "additionalInfo": "Payable if and when you request an additional statement.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
             },
             {
                 "name": "Default Notice Fee",
@@ -154,13 +161,6 @@
                 "amount": "21.50",
                 "currency": "AUD",
                 "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Counter Cash withdrawal $25,000 and over",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "currency": "AUD",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -175,7 +175,7 @@
         "depositRates": [
             {
                 "depositRateType": "BONUS",
-                "rate": "0.013",
+                "rate": "0.02",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M"
             },
