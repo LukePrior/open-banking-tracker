@@ -3,7 +3,7 @@
         "productId": "TERM_DEPOSIT",
         "effectiveFrom": "2022-10-26T11:00:00.000+11:00",
         "effectiveTo": "9999-12-30T13:00:00.000+11:00",
-        "lastUpdated": "2022-10-25T03:20:44Z",
+        "lastUpdated": "2022-11-01T01:30:36Z",
         "name": "AMP Bank Term Deposit",
         "description": "Lock in a great rate and know what you'll earn with deposits starting at $5,000, plus pay no monthly fees.",
         "productCategory": "TERM_DEPOSITS",
@@ -89,7 +89,7 @@
                 "feeType": "EVENT",
                 "amount": "30.00",
                 "additionalValue": "On request",
-                "additionalInfo": "When you request us to transfer funds from your account (by SWIFT) to a bank in Australia (in Australian dollars)\nWhen you request us to transfer funds from your account (by telegraphic transfer) to an overseas bank (in Australian dollars or a foreign currency).",
+                "additionalInfo": "When you request us to transfer funds from your account (by SWIFT) to a bank in Australia (in Australian dollars)\r\nWhen you request us to transfer funds from your account (by telegraphic transfer) to an overseas bank (in Australian dollars or a foreign currency).",
                 "additionalInfoUri": "https://www.amp.com.au/content/dam/amp/digitalhub/common/Documents/Banking/Forms/308010A%20Deposit%20Products%20Fees%20and%20Charges%20Guide.pdf"
             },
             {
@@ -2754,483 +2754,423 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.038",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
+                        "name": "13 Month Term $5000 to less than $25000 6 Monthly Interest",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "https://www.amp.com.au/banking/interest-rates-fees",
+                            "additionalInfo": "Only available where interest is paid electronically into a nominated account with AMP Bank or another financial institution and no bank cheque is issued. Where interest is paid annually, the first interest payment is made after 12 months and the second interest payment is made at maturity."
+                        }
+                    }
+                ],
+                "additionalValue": "P13M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0385",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "13 Month Term $25000 to less than $100000 6 Monthly Interest",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "https://www.amp.com.au/banking/interest-rates-fees",
+                            "additionalInfo": "Only available where interest is paid electronically into a nominated account with AMP Bank or another financial institution and no bank cheque is issued. Where interest is paid annually, the first interest payment is made after 12 months and the second interest payment is made at maturity."
+                        }
+                    }
+                ],
+                "additionalValue": "P13M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0385",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "13 Month Term $100000 to $500000  6 Monthly Interest",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.0,
+                        "maximumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "https://www.amp.com.au/banking/interest-rates-fees",
+                            "additionalInfo": "Only available where interest is paid electronically into a nominated account with AMP Bank or another financial institution and no bank cheque is issued. Where interest is paid annually, the first interest payment is made after 12 months and the second interest payment is made at maturity."
+                        }
+                    }
+                ],
+                "additionalValue": "P13M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0385",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "13 Month Term over $500000 to $1000000  6 Monthly Interest",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.01,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "https://www.amp.com.au/banking/interest-rates-fees",
+                            "additionalInfo": "Only available where interest is paid electronically into a nominated account with AMP Bank or another financial institution and no bank cheque is issued. Where interest is paid annually, the first interest payment is made after 12 months and the second interest payment is made at maturity."
+                        }
+                    }
+                ],
+                "additionalValue": "P13M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0385",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "13 Month Term over $1000000 to $5000000  6 Monthly Interest",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.01,
+                        "maximumValue": 5000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "https://www.amp.com.au/banking/interest-rates-fees",
+                            "additionalInfo": "Only available where interest is paid electronically into a nominated account with AMP Bank or another financial institution and no bank cheque is issued. Where interest is paid annually, the first interest payment is made after 12 months and the second interest payment is made at maturity."
+                        }
+                    }
+                ],
+                "additionalValue": "P13M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0445",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "2 Year Term $5000 to less than $25000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 5000.0,
                         "maximumValue": 24999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P2Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
+                        "name": "2 Year Term $25000 to less than $100000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 25000.0,
                         "maximumValue": 99999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P2Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
+                        "name": "2 Year Term $100000 to $500000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 100000.0,
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P2Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
+                        "name": "2 Year Term over $500000 to $1000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
                         "maximumValue": 1000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P2Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
+                        "name": "2 Year Term over $1000000 to $5000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1000000.01,
                         "maximumValue": 5000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P2Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.046",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
+                        "name": "3 Year Term $5000 to less than $25000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 5000.0,
                         "maximumValue": 24999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P3Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.0465",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
+                        "name": "3 Year Term $25000 to less than $100000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 25000.0,
                         "maximumValue": 99999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P3Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.0465",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
+                        "name": "3 Year Term $100000 to $500000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 100000.0,
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P3Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.0465",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
+                        "name": "3 Year Term over $500000 to $1000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
                         "maximumValue": 1000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P3Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.0465",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
+                        "name": "3 Year Term over $1000000 to $5000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1000000.01,
                         "maximumValue": 5000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P3Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.0475",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
+                        "name": "4 Year Term $5000 to less than $25000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 5000.0,
                         "maximumValue": 24999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P4Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
+                        "name": "4 Year Term $25000 to less than $100000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 25000.0,
                         "maximumValue": 99999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P4Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
+                        "name": "4 Year Term $100000 to $500000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 100000.0,
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P4Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
+                        "name": "4 Year Term over $500000 to $1000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
                         "maximumValue": 1000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P4Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
+                        "name": "4 Year Term over $1000000 to $5000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1000000.01,
                         "maximumValue": 5000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P4Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.0485",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
+                        "name": "5 Year Term $5000 to less than $25000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 5000.0,
                         "maximumValue": 24999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P5Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.049",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
+                        "name": "5 Year Term $25000 to less than $100000 6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 25000.0,
                         "maximumValue": 99999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P5Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.049",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
+                        "name": "5 Year Term $100000 to $500000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 100000.0,
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P5Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.049",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
+                        "name": "5 Year Term over $500000 to $1000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
                         "maximumValue": 1000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P5Y"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0405",
+                "rate": "0.049",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
+                        "name": "5 Year Term over $1000000 to $5000000  6 Monthly Interest",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1000000.01,
                         "maximumValue": 5000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 5000.0,
-                        "maximumValue": 24999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 25000.0,
-                        "maximumValue": 99999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
-                        "maximumValue": 500000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 500000.01,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000000.01,
-                        "maximumValue": 5000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $5000 to less than $25000 6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 5000.0,
-                        "maximumValue": 24999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $25000 to less than $100000 6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 25000.0,
-                        "maximumValue": 99999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term $100000 to $500000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
-                        "maximumValue": 500000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term over $500000 to $1000000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 500000.01,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "1 Year Term over $1000000 to $5000000  6 Monthly Interest",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000000.01,
-                        "maximumValue": 5000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
+                "additionalValue": "P5Y"
             }
         ],
         "additionalInformation": {

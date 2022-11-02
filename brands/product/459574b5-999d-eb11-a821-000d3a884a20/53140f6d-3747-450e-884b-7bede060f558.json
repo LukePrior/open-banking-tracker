@@ -1,6 +1,6 @@
 {
     "data": {
-        "lastUpdated": "2022-06-21T14:31:22.000Z",
+        "lastUpdated": "2022-10-31T13:31:22.000Z",
         "productCategory": "BUSINESS_LOANS",
         "name": "Commercial Loan",
         "description": "Commercial Term Loan requiring first mortgage security. Borrowers can choose from Interest Only, Principal and Interest, with variable and fixed rate options.",
@@ -9,26 +9,14 @@
         "isTailored": true,
         "bundles": [],
         "cardArt": [],
-        "features": [
+        "constraints": [
             {
-                "featureType": "OTHER",
-                "additionalInfo": "7 Year Maximum Loan Term (interest Only)"
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "20000000.00"
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "No monthly fees"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Limited annual reviews"
-            },
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "$5000 Minimum Redraw (principal and interest)"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "20 year Maximum Loan Term Principal & Interest"
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "100000.00"
             }
         ],
         "eligibility": [
@@ -53,15 +41,26 @@
                 "additionalInfo": "Maximum LVR % - Rural: 40%"
             }
         ],
-        "depositRates": [],
-        "constraints": [
+        "features": [
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "20000000.00"
+                "featureType": "OTHER",
+                "additionalInfo": "7 Year Maximum Loan Term (interest Only)"
             },
             {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "100000.00"
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Limited annual reviews"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "$5000 Minimum Redraw (principal and interest)"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "20 year Maximum Loan Term Principal & Interest"
             }
         ],
         "fees": [
@@ -108,81 +107,88 @@
                 "discounts": []
             }
         ],
+        "depositRates": [],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0628000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "additionalValue": "P5Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0605000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "additionalValue": "P3Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0580000000000000",
+                "rate": "0.0599000000000000",
                 "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0599000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0640000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "additionalValue": "P5Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0610000000000000",
                 "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "additionalValue": "P3Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0530000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "additionalValue": "P1Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0465000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0620000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
-                "additionalValue": "P4Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0535000000000000",
-                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "additionalValue": "P1Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0623000000000000",
+                "rate": "0.0635000000000000",
                 "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "additionalValue": "P5Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0615000000000000",
+                "rate": "0.0625000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0635000000000000",
                 "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "additionalValue": "P4Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0585000000000000",
+                "rate": "0.0630000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0630000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0594000000000000",
                 "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0615000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0590000000000000",
+                "additionalInfo": "Interest rate is only applicable for loans up to $1,500,000. Loans in excess of $1,500,000 are subject to negotiation",
                 "tiers": []
             }
         ],
