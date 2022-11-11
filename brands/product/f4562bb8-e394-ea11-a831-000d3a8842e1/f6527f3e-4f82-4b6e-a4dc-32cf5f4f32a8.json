@@ -1,32 +1,29 @@
 {
-    "links": {
-        "self": "https://api.anz/cds-au/v1/banking/products/f6527f3e-4f82-4b6e-a4dc-32cf5f4f32a8"
-    },
     "data": {
-        "productId": "f6527f3e-4f82-4b6e-a4dc-32cf5f4f32a8",
-        "bundles": [],
         "depositRates": [],
-        "eligibility": [
+        "lendingRates": [
             {
-                "additionalInfo": "You must be 18 years of age or older to apply",
-                "additionalValue": "18",
-                "eligibilityType": "MIN_AGE"
-            },
-            {
-                "additionalInfo": "Earn a minimum of $15,000 per annum ",
-                "additionalValue": "15000.00",
-                "eligibilityType": "MIN_INCOME"
-            },
-            {
-                "additionalValue": "Be an Australian citizen, permanent resident or have a valid visa",
-                "eligibilityType": "RESIDENCY_STATUS"
-            },
-            {
-                "additionalInfo": "ANZ Assured is an overdraft facility that must be attached to one of the following accounts: ANZ Access Advantage, ANZ Access Select, ANZ One",
-                "additionalValue": "ANZ Assured is an overdraft facility that must be attached to one of the following accounts: ANZ Access Advantage, ANZ Access Select, ANZ One",
-                "eligibilityType": "OTHER"
+                "interestPaymentDue": "IN_ARREARS",
+                "tiers": [],
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1885"
             }
         ],
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv#rates",
+            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/assured-personal-overdraft-tc.pdf?CID=af:obank:tv",
+            "eligibilityUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv#eligibility"
+        },
+        "constraints": [
+            {
+                "additionalInfo": "You can access an extra $500 or $1,000 whenever you need",
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "1000.00"
+            }
+        ],
+        "name": "ANZ Assured Overdraft",
+        "brand": "ANZ",
         "features": [
             {
                 "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
@@ -34,40 +31,43 @@
             },
             {
                 "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv"
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv",
+                "featureType": "DIGITAL_BANKING"
             }
         ],
-        "description": "When you need that little bit extra to cover unexpected expenses",
-        "additionalInformation": {
-            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/assured-personal-overdraft-tc.pdf?CID=af:obank:tv",
-            "eligibilityUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv#eligibility",
-            "overviewUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv",
-            "feesAndPricingUri": "https://www.anz.com.au/personal/personal-loans/overdrafts/assured/?CID=af:obank:tv#rates"
-        },
-        "applicationUri": "http://www.anz.com.au/personal/personal-loans/forms/assured-application/?CID=af:obank:tv",
-        "constraints": [
-            {
-                "additionalInfo": "You can access an extra $500 or $1,000 whenever you need",
-                "additionalValue": "1000.00",
-                "constraintType": "MAX_LIMIT"
-            }
-        ],
-        "brand": "ANZ",
-        "fees": [],
         "cardArt": [],
-        "name": "ANZ Assured Overdraft",
         "effectiveFrom": "2020-06-30T14:00:00.000Z",
-        "lendingRates": [
-            {
-                "rate": "0.186",
-                "interestPaymentDue": "IN_ARREARS",
-                "tiers": [],
-                "lendingRateType": "VARIABLE"
-            }
-        ],
         "isTailored": false,
-        "lastUpdated": "2022-10-13T21:01:00.000Z",
-        "productCategory": "OVERDRAFTS"
+        "productId": "f6527f3e-4f82-4b6e-a4dc-32cf5f4f32a8",
+        "fees": [],
+        "applicationUri": "http://www.anz.com.au/personal/personal-loans/forms/assured-application/?CID=af:obank:tv",
+        "description": "When you need that little bit extra to cover unexpected expenses",
+        "productCategory": "OVERDRAFTS",
+        "bundles": [],
+        "lastUpdated": "2022-11-10T21:00:00.000Z",
+        "eligibility": [
+            {
+                "additionalInfo": "You must be 18 years of age or older to apply",
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "additionalInfo": "Earn a minimum of $15,000 per annum ",
+                "eligibilityType": "MIN_INCOME",
+                "additionalValue": "15000.00"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Be an Australian citizen, permanent resident or have a valid visa"
+            },
+            {
+                "additionalInfo": "ANZ Assured is an overdraft facility that must be attached to one of the following accounts: ANZ Access Advantage, ANZ Access Select, ANZ One",
+                "eligibilityType": "OTHER",
+                "additionalValue": "ANZ Assured is an overdraft facility that must be attached to one of the following accounts: ANZ Access Advantage, ANZ Access Select, ANZ One"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/f6527f3e-4f82-4b6e-a4dc-32cf5f4f32a8"
     }
 }

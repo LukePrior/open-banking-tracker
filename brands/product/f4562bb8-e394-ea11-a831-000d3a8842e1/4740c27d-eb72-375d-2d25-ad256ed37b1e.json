@@ -3,57 +3,30 @@
         "self": "https://api.anz/cds-au/v1/banking/products/4740c27d-eb72-375d-2d25-ad256ed37b1e"
     },
     "data": {
-        "brand": "ANZ",
-        "productCategory": "TERM_DEPOSITS",
-        "cardArt": [],
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
-        "isTailored": false,
-        "lastUpdated": "2022-10-30T13:01:00.000Z",
-        "productId": "4740c27d-eb72-375d-2d25-ad256ed37b1e",
-        "name": "ANZ Business Notice Term Deposit",
-        "bundles": [],
-        "fees": [
-            {
-                "amount": "30.00",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-transaction-accounts-tcs.pdf?MOD=AJPERES&CID=af:obank:bb",
-                "currency": "AUD",
-                "discounts": [],
-                "additionalInfo": "Administration fee for withdrawing funds before the maturity date. The account will also incur an interest reduction in respect of the money withdrawn or transferred early based on the percentage of the original term that has elapsed. Refer to the terms and conditions on anz.com.",
-                "name": "Early Withdrawal",
-                "feeType": "WITHDRAWAL"
-            }
-        ],
-        "lendingRates": [],
-        "additionalInformation": {
-            "overviewUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb",
-            "eligibilityUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb",
-            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:bb",
-            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb"
-        },
         "features": [
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "additionalValue": "Apple Pay"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "additionalValue": "Google Pay"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "additionalValue": "Samsung Pay"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "additionalValue": "Fitbit Pay"
             },
             {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
                 "additionalValue": "Garmin Pay"
             },
             {
@@ -70,1092 +43,1119 @@
                 "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:bb"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:bb",
                 "featureType": "BILL_PAYMENT",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:bb",
                 "additionalValue": "BPAY"
             }
         ],
-        "description": "Business term deposit with flexible terms requiring 31 days notice of withdrawal (fees apply)",
+        "brand": "ANZ",
+        "cardArt": [],
+        "constraints": [
+            {
+                "additionalValue": "5000.00",
+                "constraintType": "MIN_BALANCE"
+            }
+        ],
+        "isTailored": false,
+        "lastUpdated": "2022-11-10T13:01:00.000Z",
         "eligibility": [
             {
                 "eligibilityType": "BUSINESS"
             }
         ],
-        "constraints": [
-            {
-                "constraintType": "MIN_BALANCE",
-                "additionalValue": "5000.00"
-            }
-        ],
+        "productId": "4740c27d-eb72-375d-2d25-ad256ed37b1e",
+        "bundles": [],
         "depositRates": [
             {
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "1-2 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 2,
-                        "minimumValue": 1
-                    }
-                ],
-                "rate": "0.01",
                 "additionalInfo": "1-2 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P1M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "2-3 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 1,
+                        "maximumValue": 2,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 3,
-                        "minimumValue": 2
+                        "applicabilityConditions": {
+                            "additionalInfo": "1-2 months"
+                        }
                     }
                 ],
-                "rate": "0.0125",
+                "rate": "0.01",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "2-3 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P2M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "3-4 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 2,
+                        "maximumValue": 3,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 4,
-                        "minimumValue": 3
+                        "applicabilityConditions": {
+                            "additionalInfo": "2-3 months"
+                        }
                     }
                 ],
-                "rate": "0.015",
+                "rate": "0.0125",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "3-4 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P3M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "4-5 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 3,
+                        "maximumValue": 4,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 5,
-                        "minimumValue": 4
+                        "applicabilityConditions": {
+                            "additionalInfo": "3-4 months"
+                        }
                     }
                 ],
-                "rate": "0.025",
+                "rate": "0.015",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "4-5 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P4M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "5-6 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 4,
+                        "maximumValue": 5,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 6,
-                        "minimumValue": 5
+                        "applicabilityConditions": {
+                            "additionalInfo": "4-5 months"
+                        }
                     }
                 ],
-                "rate": "0.017",
+                "rate": "0.025",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "5-6 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P5M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "6-7 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 5,
+                        "maximumValue": 6,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 7,
-                        "minimumValue": 6
+                        "applicabilityConditions": {
+                            "additionalInfo": "5-6 months"
+                        }
                     }
                 ],
-                "rate": "0.0205",
+                "rate": "0.017",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "6-7 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P6M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "7-8 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 6,
+                        "maximumValue": 7,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 8,
-                        "minimumValue": 7
+                        "applicabilityConditions": {
+                            "additionalInfo": "6-7 months"
+                        }
                     }
                 ],
-                "rate": "0.0315",
+                "rate": "0.0205",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "7-8 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P7M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "8-9 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 7,
+                        "maximumValue": 8,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 9,
-                        "minimumValue": 8
+                        "applicabilityConditions": {
+                            "additionalInfo": "7-8 months"
+                        }
                     }
                 ],
-                "rate": "0.0315",
+                "rate": "0.021",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "8-9 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P8M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "9-10 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 8,
+                        "maximumValue": 9,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 10,
-                        "minimumValue": 9
+                        "applicabilityConditions": {
+                            "additionalInfo": "8-9 months"
+                        }
                     }
                 ],
-                "rate": "0.024",
+                "rate": "0.021",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "9-10 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P9M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "10-11 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 9,
+                        "maximumValue": 10,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 11,
-                        "minimumValue": 10
+                        "applicabilityConditions": {
+                            "additionalInfo": "9-10 months"
+                        }
                     }
                 ],
                 "rate": "0.024",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "10-11 Months, Maturity Interest",
                 "calculationFrequency": "P1D",
                 "additionalValue": "P10M",
-                "depositRateType": "FIXED"
-            },
-            {
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "11-12 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 10,
+                        "maximumValue": 11,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 12,
-                        "minimumValue": 11
+                        "applicabilityConditions": {
+                            "additionalInfo": "10-11 months"
+                        }
                     }
                 ],
                 "rate": "0.024",
-                "additionalInfo": "11-12 Months, Maturity Interest",
-                "calculationFrequency": "P1D",
-                "additionalValue": "P11M",
                 "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0125",
+                "additionalInfo": "11-12 Months, Maturity Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P11M",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "2-3 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 11,
+                        "maximumValue": 12,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 3,
-                        "minimumValue": 2
+                        "applicabilityConditions": {
+                            "additionalInfo": "11-12 months"
+                        }
                     }
                 ],
-                "applicationFrequency": "P1M",
+                "rate": "0.024",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "2-3 Months, Monthly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P2M"
-            },
-            {
-                "rate": "0.015",
+                "additionalValue": "P2M",
+                "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "3-4 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 2,
+                        "maximumValue": 3,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 4,
-                        "minimumValue": 3
+                        "applicabilityConditions": {
+                            "additionalInfo": "2-3 months"
+                        }
                     }
                 ],
-                "applicationFrequency": "P1M",
+                "rate": "0.0125",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "3-4 Months, Monthly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P3M"
-            },
-            {
-                "rate": "0.0249",
+                "additionalValue": "P3M",
+                "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "4-5 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 3,
+                        "maximumValue": 4,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 5,
-                        "minimumValue": 4
+                        "applicabilityConditions": {
+                            "additionalInfo": "3-4 months"
+                        }
                     }
                 ],
-                "applicationFrequency": "P1M",
+                "rate": "0.015",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "4-5 Months, Monthly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P4M"
-            },
-            {
-                "rate": "0.017",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "5-6 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 6,
-                        "minimumValue": 5
-                    }
-                ],
+                "additionalValue": "P4M",
                 "applicationFrequency": "P1M",
-                "additionalInfo": "5-6 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P5M"
-            },
-            {
-                "rate": "0.0204",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "6-7 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 4,
+                        "maximumValue": 5,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 7,
-                        "minimumValue": 6
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "6-7 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P6M"
-            },
-            {
-                "rate": "0.0313",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "7-8 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 8,
-                        "minimumValue": 7
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "7-8 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P7M"
-            },
-            {
-                "rate": "0.0312",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "8-9 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 9,
-                        "minimumValue": 8
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "8-9 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P8M"
-            },
-            {
-                "rate": "0.0238",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "9-10 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 10,
-                        "minimumValue": 9
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "9-10 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P9M"
-            },
-            {
-                "rate": "0.0238",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "10-11 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 11,
-                        "minimumValue": 10
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "10-11 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P10M"
-            },
-            {
-                "rate": "0.0238",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "11-12 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 12,
-                        "minimumValue": 11
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "11-12 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P11M"
-            },
-            {
-                "rate": "0.033",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "12-18 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 18,
-                        "minimumValue": 12
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "12-18 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P12M"
-            },
-            {
-                "rate": "0.033",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "18-24 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 24,
-                        "minimumValue": 18
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "18-24 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P18M"
-            },
-            {
-                "rate": "0.0393",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "24-36 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 36,
-                        "minimumValue": 24
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "24-36 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P24M"
-            },
-            {
-                "rate": "0.0393",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "36-48 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 48,
-                        "minimumValue": 36
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "36-48 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P36M"
-            },
-            {
-                "rate": "0.0393",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "48-60 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 60,
-                        "minimumValue": 48
-                    }
-                ],
-                "applicationFrequency": "P1M",
-                "additionalInfo": "48-60 Months, Monthly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P48M"
-            },
-            {
-                "rate": "0.025",
-                "tiers": [
-                    {
-                        "name": "Term",
                         "applicabilityConditions": {
                             "additionalInfo": "4-5 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 5,
-                        "minimumValue": 4
+                        }
                     }
                 ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "4-5 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P4M"
+                "rate": "0.0249",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.017",
+                "additionalInfo": "5-6 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P5M",
+                "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 5,
+                        "maximumValue": 6,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "5-6 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 6,
-                        "minimumValue": 5
+                        }
                     }
                 ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "5-6 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P5M"
+                "rate": "0.017",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0204",
+                "additionalInfo": "6-7 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P6M",
+                "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6,
+                        "maximumValue": 7,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "6-7 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 7,
-                        "minimumValue": 6
+                        }
                     }
                 ],
+                "rate": "0.0204",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "7-8 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P7M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 7,
+                        "maximumValue": 8,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "7-8 months"
+                        }
+                    }
+                ],
+                "rate": "0.0209",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "8-9 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P8M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 8,
+                        "maximumValue": 9,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "8-9 months"
+                        }
+                    }
+                ],
+                "rate": "0.0209",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "9-10 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P9M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 9,
+                        "maximumValue": 10,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "9-10 months"
+                        }
+                    }
+                ],
+                "rate": "0.0238",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "10-11 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P10M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 10,
+                        "maximumValue": 11,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "10-11 months"
+                        }
+                    }
+                ],
+                "rate": "0.0238",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "11-12 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P11M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 11,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "11-12 months"
+                        }
+                    }
+                ],
+                "rate": "0.0238",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "12-18 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P12M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 18,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "12-18 months"
+                        }
+                    }
+                ],
+                "rate": "0.033",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "18-24 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P18M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "18-24 months"
+                        }
+                    }
+                ],
+                "rate": "0.033",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "24-36 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P24M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 36,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "24-36 months"
+                        }
+                    }
+                ],
+                "rate": "0.0393",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "36-48 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P36M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 36,
+                        "maximumValue": 48,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "36-48 months"
+                        }
+                    }
+                ],
+                "rate": "0.0393",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "48-60 Months, Monthly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P48M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 48,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "48-60 months"
+                        }
+                    }
+                ],
+                "rate": "0.0393",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "4-5 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P4M",
                 "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 4,
+                        "maximumValue": 5,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "4-5 months"
+                        }
+                    }
+                ],
+                "rate": "0.025",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "5-6 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P5M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 5,
+                        "maximumValue": 6,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "5-6 months"
+                        }
+                    }
+                ],
+                "rate": "0.017",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "6-7 Months, Quarterly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P6M"
-            },
-            {
-                "rate": "0.0313",
+                "additionalValue": "P6M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "7-8 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 6,
+                        "maximumValue": 7,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 8,
-                        "minimumValue": 7
+                        "applicabilityConditions": {
+                            "additionalInfo": "6-7 months"
+                        }
                     }
                 ],
-                "applicationFrequency": "P3M",
+                "rate": "0.0204",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "7-8 Months, Quarterly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P7M"
-            },
-            {
-                "rate": "0.0313",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "8-9 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 9,
-                        "minimumValue": 8
-                    }
-                ],
+                "additionalValue": "P7M",
                 "applicationFrequency": "P3M",
-                "additionalInfo": "8-9 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P8M"
-            },
-            {
-                "rate": "0.0239",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "9-10 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 7,
+                        "maximumValue": 8,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 10,
-                        "minimumValue": 9
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "9-10 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P9M"
-            },
-            {
-                "rate": "0.0238",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "10-11 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 11,
-                        "minimumValue": 10
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "10-11 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P10M"
-            },
-            {
-                "rate": "0.0238",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "11-12 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 12,
-                        "minimumValue": 11
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "11-12 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P11M"
-            },
-            {
-                "rate": "0.0331",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "12-18 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 18,
-                        "minimumValue": 12
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "12-18 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P12M"
-            },
-            {
-                "rate": "0.0331",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "18-24 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 24,
-                        "minimumValue": 18
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "18-24 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P18M"
-            },
-            {
-                "rate": "0.0394",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "24-36 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 36,
-                        "minimumValue": 24
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "24-36 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P24M"
-            },
-            {
-                "rate": "0.0394",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "36-48 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 48,
-                        "minimumValue": 36
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "36-48 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P36M"
-            },
-            {
-                "rate": "0.0394",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "48-60 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 60,
-                        "minimumValue": 48
-                    }
-                ],
-                "applicationFrequency": "P3M",
-                "additionalInfo": "48-60 Months, Quarterly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P48M"
-            },
-            {
-                "rate": "0.0315",
-                "tiers": [
-                    {
-                        "name": "Term",
                         "applicabilityConditions": {
                             "additionalInfo": "7-8 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 8,
-                        "minimumValue": 7
+                        }
                     }
                 ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "7-8 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P7M"
+                "rate": "0.0209",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0314",
+                "additionalInfo": "8-9 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P8M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 8,
+                        "maximumValue": 9,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "8-9 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 9,
-                        "minimumValue": 8
+                        }
                     }
                 ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "8-9 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P8M"
+                "rate": "0.0209",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0239",
+                "additionalInfo": "9-10 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P9M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 9,
+                        "maximumValue": 10,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "9-10 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 10,
-                        "minimumValue": 9
+                        }
                     }
                 ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "9-10 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P9M"
+                "rate": "0.0239",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0239",
+                "additionalInfo": "10-11 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P10M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 10,
+                        "maximumValue": 11,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "10-11 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 11,
-                        "minimumValue": 10
+                        }
                     }
                 ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "10-11 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P10M"
+                "rate": "0.0238",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0239",
+                "additionalInfo": "11-12 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P11M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 11,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "11-12 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 12,
-                        "minimumValue": 11
+                        }
                     }
                 ],
+                "rate": "0.0238",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "12-18 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P12M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 18,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "12-18 months"
+                        }
+                    }
+                ],
+                "rate": "0.0331",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "18-24 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P18M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "18-24 months"
+                        }
+                    }
+                ],
+                "rate": "0.0331",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "24-36 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P24M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 36,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "24-36 months"
+                        }
+                    }
+                ],
+                "rate": "0.0394",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "36-48 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P36M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 36,
+                        "maximumValue": 48,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "36-48 months"
+                        }
+                    }
+                ],
+                "rate": "0.0394",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "48-60 Months, Quarterly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P48M",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 48,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "48-60 months"
+                        }
+                    }
+                ],
+                "rate": "0.0394",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "7-8 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P7M",
                 "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 7,
+                        "maximumValue": 8,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "7-8 months"
+                        }
+                    }
+                ],
+                "rate": "0.021",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "8-9 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P8M",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 8,
+                        "maximumValue": 9,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "8-9 months"
+                        }
+                    }
+                ],
+                "rate": "0.021",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "9-10 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P9M",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 9,
+                        "maximumValue": 10,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "9-10 months"
+                        }
+                    }
+                ],
+                "rate": "0.0239",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "10-11 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P10M",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 10,
+                        "maximumValue": 11,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "10-11 months"
+                        }
+                    }
+                ],
+                "rate": "0.0239",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "11-12 Months, Half Yearly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P11M"
-            },
-            {
-                "rate": "0.0332",
+                "additionalValue": "P11M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "12-18 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 11,
+                        "maximumValue": 12,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 18,
-                        "minimumValue": 12
+                        "applicabilityConditions": {
+                            "additionalInfo": "11-12 months"
+                        }
                     }
                 ],
-                "applicationFrequency": "P6M",
+                "rate": "0.0239",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "12-18 Months, Half Yearly Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P12M"
-            },
-            {
-                "rate": "0.0332",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "18-24 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 24,
-                        "minimumValue": 18
-                    }
-                ],
+                "additionalValue": "P12M",
                 "applicationFrequency": "P6M",
-                "additionalInfo": "18-24 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P18M"
-            },
-            {
-                "rate": "0.0396",
                 "tiers": [
                     {
                         "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "24-36 months"
-                        },
                         "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 18,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 36,
-                        "minimumValue": 24
-                    }
-                ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "24-36 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P24M"
-            },
-            {
-                "rate": "0.0396",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "36-48 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 48,
-                        "minimumValue": 36
-                    }
-                ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "36-48 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P36M"
-            },
-            {
-                "rate": "0.0396",
-                "tiers": [
-                    {
-                        "name": "Term",
-                        "applicabilityConditions": {
-                            "additionalInfo": "48-60 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 60,
-                        "minimumValue": 48
-                    }
-                ],
-                "applicationFrequency": "P6M",
-                "additionalInfo": "48-60 Months, Half Yearly Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P48M"
-            },
-            {
-                "rate": "0.0335",
-                "tiers": [
-                    {
-                        "name": "Term",
                         "applicabilityConditions": {
                             "additionalInfo": "12-18 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 18,
-                        "minimumValue": 12
+                        }
                     }
                 ],
-                "applicationFrequency": "P1Y",
-                "additionalInfo": "12-18 Months, Annual Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P12M"
+                "rate": "0.0332",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.0335",
+                "additionalInfo": "18-24 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P18M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "18-24 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 24,
-                        "minimumValue": 18
+                        }
                     }
                 ],
-                "applicationFrequency": "P1Y",
-                "additionalInfo": "18-24 Months, Annual Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P18M"
+                "rate": "0.0332",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.04",
+                "additionalInfo": "24-36 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P24M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 36,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "24-36 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 36,
-                        "minimumValue": 24
+                        }
                     }
                 ],
-                "applicationFrequency": "P1Y",
-                "additionalInfo": "24-36 Months, Annual Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P24M"
+                "rate": "0.0396",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.04",
+                "additionalInfo": "36-48 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P36M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 36,
+                        "maximumValue": 48,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "36-48 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 48,
-                        "minimumValue": 36
+                        }
                     }
                 ],
-                "applicationFrequency": "P1Y",
-                "additionalInfo": "36-48 Months, Annual Interest",
-                "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P36M"
+                "rate": "0.0396",
+                "depositRateType": "FIXED"
             },
             {
-                "rate": "0.04",
+                "additionalInfo": "48-60 Months, Half Yearly Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P48M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
                         "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 48,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfo": "48-60 months"
-                        },
-                        "unitOfMeasure": "MONTH",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 60,
-                        "minimumValue": 48
+                        }
                     }
                 ],
+                "rate": "0.0396",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "12-18 Months, Annual Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P12M",
                 "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 18,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "12-18 months"
+                        }
+                    }
+                ],
+                "rate": "0.0335",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "18-24 Months, Annual Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P18M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "18-24 months"
+                        }
+                    }
+                ],
+                "rate": "0.0335",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "24-36 Months, Annual Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P24M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 36,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "24-36 months"
+                        }
+                    }
+                ],
+                "rate": "0.04",
+                "depositRateType": "FIXED"
+            },
+            {
+                "additionalInfo": "36-48 Months, Annual Interest",
+                "calculationFrequency": "P1D",
+                "additionalValue": "P36M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 36,
+                        "maximumValue": 48,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "36-48 months"
+                        }
+                    }
+                ],
+                "rate": "0.04",
+                "depositRateType": "FIXED"
+            },
+            {
                 "additionalInfo": "48-60 Months, Annual Interest",
                 "calculationFrequency": "P1D",
-                "depositRateType": "FIXED",
-                "additionalValue": "P48M"
+                "additionalValue": "P48M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 48,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "48-60 months"
+                        }
+                    }
+                ],
+                "rate": "0.04",
+                "depositRateType": "FIXED"
+            }
+        ],
+        "name": "ANZ Business Notice Term Deposit",
+        "lendingRates": [],
+        "description": "Business term deposit with flexible terms requiring 31 days notice of withdrawal (fees apply)",
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb",
+            "eligibilityUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb",
+            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:bb",
+            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/business-term-deposit/?CID=af:obank:bb"
+        },
+        "productCategory": "TERM_DEPOSITS",
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "fees": [
+            {
+                "additionalInfo": "Administration fee for withdrawing funds before the maturity date. The account will also incur an interest reduction in respect of the money withdrawn or transferred early based on the percentage of the original term that has elapsed. Refer to the terms and conditions on anz.com.",
+                "amount": "30.00",
+                "name": "Early Withdrawal",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-transaction-accounts-tcs.pdf?MOD=AJPERES&CID=af:obank:bb",
+                "feeType": "WITHDRAWAL",
+                "discounts": []
             }
         ]
     }
