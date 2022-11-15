@@ -1,9 +1,269 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected error",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "CWCU Internet Banking & CWCU App",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple, Samsung & Google pay",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Funds at call",
+                "additionalInfo": "Funds at call",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Residences only",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Housing Loan",
+                "additionalInfo": "Must have a Mortgage Smart Home Loan",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "DIRECT_DEBIT_REJECTION_FEE",
+                "feeType": "TRANSACTION",
+                "amount": "10.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1D",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": []
+            },
+            {
+                "name": "DORMANT_ACCOUNT_FEE",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1Y",
+                "currency": "AUD",
+                "additionalInfo": "Charged after 2 years of inactivity",
+                "additionalInfoUri": "",
+                "discounts": []
+            },
+            {
+                "name": "MONTHLY_VISA_CARD_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalValue": "Fee per card",
+                "additionalInfo": "Fee is applicable to active cards only",
+                "additionalInfoUri": "",
+                "discounts": [
+                    {
+                        "description": "Relationship Balance",
+                        "discountType": "BALANCE",
+                        "amount": "50000.00",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": null,
+                        "additionalValue": "Relationship Balance >$50,000",
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Under 16 years of age",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "2.50",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": null,
+                        "additionalValue": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            },
+            {
+                "name": "OVERDRAFT_ESTABLISHMENT_FEE",
+                "feeType": "UPFRONT",
+                "amount": "150.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Only applicable when applying for an Overdraft facility",
+                "additionalInfoUri": "",
+                "discounts": []
+            },
+            {
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.50",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalValue": "Charged when a paper statement is produced",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": [
+                    {
+                        "description": "Under 16 years of age",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "2.50",
+                        "balanceRate": null,
+                        "transactionRate": null,
+                        "accruedRate": null,
+                        "feeRate": null,
+                        "additionalValue": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.00750",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S12 Mortgage Smart Plus (unsecured)_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.00800",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S12 Mortgage Smart Plus (unsecured)_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 9999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.00850",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S12 Mortgage Smart Plus (unsecured)_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.01100",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S12 Mortgage Smart Plus (unsecured)_Tier_4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": null,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": null
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.00000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "A overdraft facility is allowed on this account. Interest rate is 9.30%. Debit interest is charged every month",
+                "additionalInfoUri": "",
+                "interestPaymentDue": null,
+                "repaymentType": null,
+                "loanPurpose": null
+            }
+        ],
+        "productId": "S12_Mortgage_Smart_Plus",
+        "effectiveFrom": "2021-03-25T00:00:00.000+11:00",
+        "lastUpdated": "2022-11-01T08:23:54.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "S12 Mortgage Smart Plus (unsecured)",
+        "description": "For customers who have a Mortgage Smart Variable Rate Home Loan who require a transaction fee free account",
+        "brand": "CENTRAL WEST CREDIT UNION LTD",
+        "brandName": "CENTRAL WEST CREDIT UNION LTD",
+        "applicationUri": "https://www.cwcu.com.au/lending/apply-for-a-loan",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.cwcu.com.au/savings/on-call-savings",
+            "termsUri": "https://www.cwcu.com.au/disclosure-documents/conditions-of-use",
+            "eligibilityUri": "https://www.cwcu.com.au/cwcu/media/Documents/Summary-of-Accounts-Availability-of-Access-December-20.pdf",
+            "feesAndPricingUri": " https://www.cwcu.com.au/disclosure-documents/fees-and-charges",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://ib.cwcu.com.au/openbanking/cds-au/v1/banking/products/S12_Mortgage_Smart_Plus"
+    },
+    "meta": {}
 }
