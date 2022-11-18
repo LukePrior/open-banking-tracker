@@ -3,7 +3,7 @@
         "productId": "4700-0211",
         "effectiveFrom": "2021-05-31T14:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2022-11-08T14:00:01.00000Z",
+        "lastUpdated": "2022-11-17T14:00:01.00000Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Basic Variable OO Construction",
         "description": "Save with a Great Southern Bank Basic Variable Home Loan. It\u2019s a simple, competitive rate home loan with no monthly or annual fees and the ability to make unlimited extra repayments",
@@ -38,8 +38,8 @@
         ],
         "features": [
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Reach your property goal sooner.  Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
+                "featureType": "REDRAW",
+                "additionalInfo": "Enjoy free redraw.  Access your additional home loan repayments with redraw, so you can use it whenever you need some breathing space."
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -48,14 +48,41 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "No on-going fees.  With no annual or monthly account keeping fees you can save money for the other important things in your life."
+                "additionalInfo": "Reach your property goal sooner.  Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
             },
             {
-                "featureType": "REDRAW",
-                "additionalInfo": "Enjoy free redraw.  Access your additional home loan repayments with redraw, so you can use it whenever you need some breathing space."
+                "featureType": "OTHER",
+                "additionalInfo": "No on-going fees.  With no annual or monthly account keeping fees you can save money for the other important things in your life."
             }
         ],
         "fees": [
+            {
+                "name": "Production fee",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD",
+                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
+            },
+            {
+                "name": "Re-documentation fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
+            },
+            {
+                "name": "Redraw Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "($200 minimum withdrawal applies in branch)"
+            },
+            {
+                "name": "Security Adminstration fee",
+                "feeType": "UPFRONT",
+                "amount": "235.00",
+                "currency": "AUD"
+            },
             {
                 "name": "Variation fee",
                 "feeType": "EVENT",
@@ -71,17 +98,11 @@
                 "additionalValue": "P1Y"
             },
             {
-                "name": "Security Adminstration fee",
-                "feeType": "UPFRONT",
-                "amount": "235.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Redraw Fee",
-                "feeType": "WITHDRAWAL",
-                "amount": "0.00",
+                "name": "Telegraphic transfer fee within Australia",
+                "feeType": "EVENT",
+                "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "($200 minimum withdrawal applies in branch)"
+                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia."
             },
             {
                 "name": "Discharge Fee",
@@ -90,25 +111,11 @@
                 "currency": "AUD"
             },
             {
-                "name": "Re-documentation fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
+                "name": "ESTABLISHMENT FEE",
+                "feeType": "UPFRONT",
+                "amount": "600.00",
                 "currency": "AUD",
-                "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
-            },
-            {
-                "name": "Production fee",
-                "feeType": "EVENT",
-                "amount": "100.00",
-                "currency": "AUD",
-                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
-            },
-            {
-                "name": "Telegraphic transfer fee within Australia",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia."
+                "additionalInfo": "An establishment fee applies to all credit facilities and includes the cost of processing the application and the preparation of the Great Southern Bank loan documentation."
             },
             {
                 "name": "Monthly fee",
@@ -116,34 +123,27 @@
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "P1M"
-            },
-            {
-                "name": "ESTABLISHMENT FEE",
-                "feeType": "UPFRONT",
-                "amount": "600.00",
-                "currency": "AUD",
-                "additionalInfo": "An establishment fee applies to all credit facilities and includes the cost of processing the application and the preparation of the Great Southern Bank loan documentation."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0458",
-                "comparisonRate": "0.0463",
+                "rate": "0.0449",
+                "comparisonRate": "0.0454",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable LVR  >70% <=80%",
+                        "name": "Basic Variable LVR <=70%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 70.01,
-                        "maximumValue": 80.0,
+                        "minimumValue": 0.0,
+                        "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalInfo": "Interest Only Repayment: 80% maximum Loan to Value (LVR) ratio"
+                "additionalInfo": "Interest Only Repayment:70% maximum Loan to Value (LVR) ratio"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -167,22 +167,22 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0453",
-                "comparisonRate": "0.0458",
+                "rate": "0.0449",
+                "comparisonRate": "0.0454",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable LVR <=70%",
+                        "name": "Basic Variable LVR  >70% <=80%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 70.0,
+                        "minimumValue": 70.01,
+                        "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalInfo": "Interest Only Repayment:70% maximum Loan to Value (LVR) ratio"
+                "additionalInfo": "Interest Only Repayment: 80% maximum Loan to Value (LVR) ratio"
             }
         ]
     },
