@@ -1,10 +1,67 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Currently , Default endpoint : [ Name : ConsumerDataStandards--vv1_APIproductionEndpoint ] [ State : SUSPENDED ]",
-            "meta": {}
-        }
-    ]
+    "data": {
+        "productId": "55020185",
+        "effectiveFrom": "2021-02-28T11:00:00.000+11:00",
+        "effectiveTo": "9999-12-31T11:00:00.000+11:00",
+        "lastUpdated": "2021-02-28T11:00:00.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "PassbookSaving USD Statement ",
+        "description": "PassbookSaving USD Statement ",
+        "brand": "BCA",
+        "brandName": "Bank of China",
+        "applicationUri": null,
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+            "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+            "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+            "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+        },
+        "bundles": [],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": null,
+                "additionalInfo": null,
+                "additionalInfoUri": null
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": 50,
+                "additionalInfo": "opening balance USD 50 to active account"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": 16,
+                "additionalInfo": "accepted visa required"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Monthly Account Keeping Fee",
+                "feeType": "PERIODIC",
+                "amount": 5.0,
+                "balanceRate": null,
+                "transactionRate": null,
+                "currency": "USD",
+                "additionalValue": "monthly",
+                "additionalInfo": null
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "calculationFrequency": "P1D",
+                "additionalValue": "base rate 0.01% apply for more than 500 USD deposit otherwise no interest."
+            }
+        ],
+        "lendingRates": []
+    },
+    "links": {
+        "self": "https://gateway.bankofchina.com.au/cds-au/v1/banking/products/55020185"
+    }
 }
