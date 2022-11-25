@@ -3,12 +3,68 @@
         "self": "https://api.anz/cds-au/v1/banking/products/e9a3b4fe-240c-388e-2282-42db8f570e63"
     },
     "data": {
+        "cardArt": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "fees": [
+            {
+                "amount": "2.50",
+                "name": "Staff Assisted Transaction",
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
+                "currency": "AUD"
+            },
+            {
+                "amount": "1.00",
+                "name": "Electronic Transaction",
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
+                "currency": "AUD"
+            }
+        ],
+        "isTailored": false,
+        "lastUpdated": "2022-11-24T19:00:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "e9a3b4fe-240c-388e-2282-42db8f570e63",
+        "bundles": [],
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "tiers": [],
+                "applicationFrequency": "P1M",
+                "rate": "0.0001"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "depositRateType": "BONUS",
+                "additionalInfo": "Bonus interest is subject to eligibility. ANZ Progress Saver pays bonus interest (in addition to the current variable base interest) in respect of a particular month if the set minimum deposit (currently $10) and no withdrawals, fees or charges are processed to the account on or before the last business day of that calendar month, and after the last business day of the previous calendar month. Bonus and base rates are variable and subject to change.",
+                "additionalValue": "When you make a single deposit of $10 or more in a month and no withdrawals",
+                "tiers": [],
+                "applicationFrequency": "P1M",
+                "rate": "0.0224"
+            }
+        ],
+        "constraints": [
+            {
+                "additionalValue": "10.00",
+                "constraintType": "MIN_BALANCE"
+            },
+            {
+                "additionalValue": "10.00",
+                "constraintType": "OPENING_BALANCE"
+            }
+        ],
+        "description": "Savings account where can earn bonus interest for saving regularly",
         "additionalInformation": {
             "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/?CID=af:obank:sv",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:sv#FTPDS",
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/?CID=af:obank:sv",
             "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/?CID=af:obank:sv",
-            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/?CID=af:obank:sv"
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:sv#FTPDS"
         },
+        "features": [],
+        "name": "ANZ Progress Saver",
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -16,122 +72,12 @@
                 "additionalInfo": "You must be 12 years of age or older to apply"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address."
+                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address.",
+                "eligibilityType": "RESIDENCY_STATUS"
             }
         ],
-        "name": "ANZ Progress Saver",
         "applicationUri": "https://applyonline.anz.com/dsr-dep/deposits/apply?apptype=PS&sourcecode_1=OCC&CID=af:obank:sv",
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "brand": "ANZ",
-        "cardArt": [],
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
-        "isTailored": false,
-        "lastUpdated": "2022-11-10T13:01:00.000Z",
-        "fees": [
-            {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
-                "amount": "2.50",
-                "currency": "AUD",
-                "discounts": [],
-                "feeType": "TRANSACTION",
-                "name": "Staff Assisted Transaction"
-            },
-            {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
-                "amount": "1.00",
-                "currency": "AUD",
-                "discounts": [],
-                "feeType": "TRANSACTION",
-                "name": "Electronic Transaction"
-            }
-        ],
-        "lendingRates": [],
-        "productId": "e9a3b4fe-240c-388e-2282-42db8f570e63",
-        "features": [
-            {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:sv",
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
-            },
-            {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv",
-                "featureType": "NPP_PAYID"
-            },
-            {
-                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv",
-                "featureType": "NPP_ENABLED"
-            },
-            {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:sv",
-                "additionalValue": "Apple Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:sv",
-                "additionalValue": "Google Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:sv",
-                "additionalValue": "Samsung Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:sv",
-                "additionalValue": "Fitbit Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:sv",
-                "additionalValue": "Garmin Pay",
-                "featureType": "DIGITAL_WALLET"
-            },
-            {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:sv",
-                "additionalValue": "BPAY",
-                "featureType": "BILL_PAYMENT"
-            },
-            {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
-                "additionalValue": "1",
-                "featureType": "FREE_TXNS",
-                "additionalInfo": "Unlimited ANZ Internet banking transactions plus one ANZ transaction per month"
-            },
-            {
-                "featureType": "CARD_ACCESS",
-                "additionalValue": "ANZ Access card"
-            }
-        ],
-        "bundles": [],
-        "constraints": [
-            {
-                "constraintType": "MIN_BALANCE",
-                "additionalValue": "10.00"
-            },
-            {
-                "constraintType": "OPENING_BALANCE",
-                "additionalValue": "10.00"
-            }
-        ],
-        "description": "Savings account where can earn bonus interest for saving regularly",
-        "depositRates": [
-            {
-                "rate": "0.0001",
-                "tiers": [],
-                "applicationFrequency": "P1M",
-                "depositRateType": "VARIABLE",
-                "calculationFrequency": "P1D"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "tiers": [],
-                "additionalInfo": "Bonus interest is subject to eligibility. ANZ Progress Saver pays bonus interest (in addition to the current variable base interest) in respect of a particular month if the set minimum deposit (currently $10) and no withdrawals, fees or charges are processed to the account on or before the last business day of that calendar month, and after the last business day of the previous calendar month. Bonus and base rates are variable and subject to change.",
-                "applicationFrequency": "P1M",
-                "additionalValue": "When you make a single deposit of $10 or more in a month and no withdrawals",
-                "depositRateType": "BONUS",
-                "rate": "0.0224"
-            }
-        ]
+        "lendingRates": []
     }
 }
