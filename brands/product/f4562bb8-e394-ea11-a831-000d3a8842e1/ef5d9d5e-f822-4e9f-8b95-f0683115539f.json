@@ -1,9 +1,63 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Resource/Invalid",
-            "title": "Invalid Resource",
-            "detail": "The requested resource identifier is permanently unavailable. No subsequent request for the resource will be successful."
-        }
-    ]
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/ef5d9d5e-f822-4e9f-8b95-f0683115539f"
+    },
+    "data": {
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "brand": "ANZ",
+        "cardArt": [],
+        "effectiveFrom": "2020-06-30T14:00:00.000Z",
+        "constraints": [],
+        "lastUpdated": "2022-11-24T19:00:00.000Z",
+        "description": "Self managed super is easier than ever, with all you need to use, move and manage your SMSF cash in one place.",
+        "bundles": [],
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $0 and $9,999"
+                        },
+                        "maximumValue": 9999,
+                        "minimumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "rate": "0.005"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $10,000 or more"
+                        },
+                        "minimumValue": 10000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "rate": "0.013"
+            }
+        ],
+        "eligibility": [],
+        "features": [],
+        "name": "ANZ SMSF Cash Hub Account",
+        "lendingRates": [],
+        "isTailored": false,
+        "additionalInformation": {
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:iv#FTPDS",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv",
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/smsf-cash-account/?CID=af:obank:iv"
+        },
+        "productId": "ef5d9d5e-f822-4e9f-8b95-f0683115539f",
+        "fees": []
+    }
 }

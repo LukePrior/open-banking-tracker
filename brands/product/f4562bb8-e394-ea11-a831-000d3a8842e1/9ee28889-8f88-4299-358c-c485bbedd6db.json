@@ -1,9 +1,137 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Resource/Invalid",
-            "title": "Invalid Resource",
-            "detail": "The requested resource identifier is permanently unavailable. No subsequent request for the resource will be successful."
-        }
-    ]
+    "data": {
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/premium-saver/?CID=af:obank:bb",
+            "eligibilityUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/premium-saver/?CID=af:obank:bb",
+            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:bb",
+            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/premium-saver/?CID=af:obank:bb"
+        },
+        "features": [],
+        "description": "Business Transaction Product with no monthly account servicing fee",
+        "brand": "ANZ",
+        "cardArt": [],
+        "effectiveFrom": "2021-05-31T14:00:00.000Z",
+        "isTailored": false,
+        "lastUpdated": "2022-11-24T19:00:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "9ee28889-8f88-4299-358c-c485bbedd6db",
+        "bundles": [],
+        "applicationUri": "https://onlineapps.anz.com/sbola/?#/?apptype=BPS&sourcecode_1=ANP&CID=af:obank:sv",
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "You must be 18 years of age or older to apply",
+                "additionalValue": "18"
+            },
+            {
+                "additionalInfo": "An Australian business with valid ABN/ACN.",
+                "eligibilityType": "BUSINESS"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You're an owner/director of the Business",
+                "additionalValue": "You're an owner/director of the Business"
+            }
+        ],
+        "constraints": [],
+        "depositRates": [
+            {
+                "rate": "0.00",
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "maximumValue": 4999,
+                        "minimumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $0 and $4,999"
+                        },
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "calculationFrequency": "P1D"
+            },
+            {
+                "rate": "0.0001",
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "minimumValue": 5000,
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $5,000 or more"
+                        },
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "calculationFrequency": "P1D"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/business/products/accounts/savings-accounts/premium-saver/?CID=af:obank:bb",
+                "depositRateType": "BONUS",
+                "tiers": [],
+                "rate": "0.00",
+                "additionalValue": "When account is opened online and a balance of $5,000 or more is maintained",
+                "calculationFrequency": "P1D"
+            }
+        ],
+        "lendingRates": [],
+        "fees": [
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "1.60",
+                "currency": "AUD",
+                "name": "Staff Assisted Transaction",
+                "discounts": [],
+                "feeType": "TRANSACTION"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "0.60",
+                "currency": "AUD",
+                "name": "Cheque Transaction",
+                "discounts": [],
+                "feeType": "TRANSACTION"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "0.60",
+                "currency": "AUD",
+                "name": "Manual Merchant Deposit",
+                "discounts": [],
+                "feeType": "TRANSACTION"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "0.60",
+                "currency": "AUD",
+                "name": "ANZ ATM",
+                "discounts": [],
+                "feeType": "TRANSACTION"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "0.60",
+                "currency": "AUD",
+                "name": "Electronic Transaction",
+                "discounts": [],
+                "feeType": "TRANSACTION"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "amount": "15.00",
+                "name": "Internet Banking for Business",
+                "currency": "AUD",
+                "discounts": [],
+                "additionalValue": "P1M",
+                "feeType": "PERIODIC"
+            }
+        ],
+        "name": "ANZ Business Essentials"
+    },
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/9ee28889-8f88-4299-358c-c485bbedd6db"
+    }
 }
