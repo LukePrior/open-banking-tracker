@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;2551-4000&quot;,
     &quot;effectiveFrom&quot;: &quot;2019-12-31T14:00:00.00000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2030-12-31T13:59:59.00000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-11-23T14:01:00.00000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-11-28T14:01:00.00000Z&quot;,
     &quot;productCategory&quot;: &quot;OVERDRAFTS&quot;,
     &quot;name&quot;: &quot;Business Overdraft (residential secured)&quot;,
     &quot;description&quot;: &quot;A Great Southern Bank Business overdraft can help you to closely manage your cashflow without compromising your business goals.&quot;,
@@ -58,31 +58,21 @@
     ],
     &quot;features&quot;: [
         {
+            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
+            &quot;additionalValue&quot;: &quot;Overdraft approval amount = overdraft limit&quot;,
+            &quot;additionalInfo&quot;: &quot;Once approved the overdraft limit is loaded on to an Everyday Business Account.&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;$0 Monthly service fees&quot;,
             &quot;additionalInfo&quot;: &quot;No overdraft service fees.  With no annual or monthly service fees you can save money for the other important things in your life.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
-            &quot;additionalValue&quot;: &quot;Overdraft approval amount = overdraft limit&quot;,
-            &quot;additionalInfo&quot;: &quot;Once approved the overdraft limit is loaded on to an Everyday Business Account.&quot;
+            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;All overdraft accounts come with a dedicated Relationship Manager&quot;
         }
     ],
     &quot;fees&quot;: [
-        {
-            &quot;name&quot;: &quot;Arrears letter fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;22.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a letter in relation to arrears on your account.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Redocumentation or Variation  Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;300.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if the security held for the overdraft is to be substituted for another property.&quot;
-        },
         {
             &quot;name&quot;: &quot;Establishment fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
@@ -90,16 +80,11 @@
             &quot;additionalInfo&quot;: &quot;$750 irrespective of loan amount.  An establishment fee includes the cost of processing the application and the preparation of loan documentation.&quot;
         },
         {
-            &quot;name&quot;: &quot;Property Valuation Fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable upfront where an independent property valuer nominated by Great Southern Bank must provide a market value the security property offered.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Default notice fee&quot;,
+            &quot;name&quot;: &quot;Discharge Security Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;33.00&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account.&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when the security held for the overdraft is to be released and the overdraft limit removed from the Everyday Business transaction account.&quot;
         },
         {
             &quot;name&quot;: &quot;Production Fee&quot;,
@@ -120,17 +105,36 @@
             &quot;additionalInfo&quot;: &quot;For each security offrered to Great Southern Bank for the overdraft.&quot;
         },
         {
-            &quot;name&quot;: &quot;Discharge Security Fee&quot;,
+            &quot;name&quot;: &quot;Property Valuation Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable upfront where an independent property valuer nominated by Great Southern Bank must provide a market value the security property offered.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Default notice fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;500.00&quot;,
+            &quot;amount&quot;: &quot;33.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when the security held for the overdraft is to be released and the overdraft limit removed from the Everyday Business transaction account.&quot;
+            &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account.&quot;
         },
         {
             &quot;name&quot;: &quot;Overlimit Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;6.00&quot;,
             &quot;additionalInfo&quot;: &quot;Where the balance on the Everyday Business Account exceeds the authorised overdraft limit.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Arrears letter fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;22.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a letter in relation to arrears on your account.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Redocumentation or Variation  Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if the security held for the overdraft is to be substituted for another property.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
