@@ -3,35 +3,84 @@
         "self": "https://api.anz/cds-au/v1/banking/products/7ea773cd-1628-4536-bb7f-849bbb815672"
     },
     "data": {
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "fees": [
+            {
+                "currency": "AUD",
+                "name": "Account Service",
+                "feeType": "PERIODIC",
+                "additionalInfo": "For administering the account, charged monthly on the day the account was opened.",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:hl",
+                "discounts": [],
+                "amount": "10.00",
+                "additionalValue": "P1M"
+            },
+            {
+                "currency": "AUD",
+                "name": "Dishonour Fee",
+                "feeType": "EVENT",
+                "additionalInfo": "Debited when the payment from your account that is declined was attempted via cheque or direct debt. Refer to the Account Fees and Charges booklet for further information.",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:hl",
+                "discounts": [],
+                "amount": "6.00",
+                "additionalValue": "P1M"
+            },
+            {
+                "currency": "AUD",
+                "name": "Periodical Payment Non Payment Fee",
+                "feeType": "EVENT",
+                "additionalInfo": "Debited to your account when any attempted periodical payment can not be made due to lack of cleared funds. Refer to the Account Fees and Charges booklet for further information.",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:hl",
+                "discounts": [],
+                "amount": "6.00",
+                "additionalValue": "P1M"
+            }
+        ],
+        "lendingRates": [],
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl",
+            "eligibilityUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl",
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:hl#FTPDS",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl"
+        },
+        "bundles": [],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "You must be 12 years of age or older to apply",
+                "additionalValue": "12"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address."
+            }
+        ],
         "brand": "ANZ",
         "cardArt": [],
+        "constraints": [],
         "effectiveFrom": "2020-01-31T13:00:00.000Z",
         "isTailored": false,
-        "lastUpdated": "2022-11-29T19:00:00.000Z",
-        "constraints": [],
+        "description": "Reduce interest charges and pay your loan off sooner.",
         "depositRates": [],
         "productId": "7ea773cd-1628-4536-bb7f-849bbb815672",
-        "description": "Reduce interest charges and pay your loan off sooner.",
         "features": [
             {
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:hl",
-                "featureType": "DIGITAL_BANKING"
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
             },
             {
-                "additionalValue": "BPAY",
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:hl",
-                "featureType": "BILL_PAYMENT"
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
             },
             {
-                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:hl",
-                "featureType": "UNLIMITED_TXNS"
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account."
             },
             {
-                "additionalInfo": "An offset account is a transaction account linked to an eligible home or investment loan. The money you have in this account could offset the amount you owe on that loan, and you'll only be charged the interest on the difference.",
-                "featureType": "OFFSET"
+                "featureType": "OFFSET",
+                "additionalInfo": "An offset account is a transaction account linked to an eligible home or investment loan. The money you have in this account could offset the amount you owe on that loan, and you'll only be charged the interest on the difference."
             },
             {
                 "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:tv",
@@ -39,56 +88,7 @@
             }
         ],
         "name": "ANZ One Offset Account",
-        "lendingRates": [],
-        "bundles": [],
-        "additionalInformation": {
-            "feesAndPricingUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl",
-            "overviewUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl",
-            "eligibilityUri": "https://www.anz.com.au/personal/home-loans/extras/offset-account/?CID=af:obank:hl",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:hl#FTPDS"
-        },
-        "eligibility": [
-            {
-                "additionalInfo": "You must be 12 years of age or older to apply",
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "12"
-            },
-            {
-                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address.",
-                "eligibilityType": "RESIDENCY_STATUS"
-            }
-        ],
-        "fees": [
-            {
-                "additionalValue": "P1M",
-                "name": "Account Service",
-                "amount": "10.00",
-                "discounts": [],
-                "additionalInfo": "$10 monthly account fee applies (but this is waived if you're on an ANZ Breakfree package).",
-                "feeType": "PERIODIC",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:hl",
-                "currency": "AUD"
-            },
-            {
-                "additionalValue": "P1M",
-                "name": "Dishonour Fee",
-                "amount": "6.00",
-                "discounts": [],
-                "additionalInfo": "Debited when the payment from your account that is declined was attempted via cheque or direct debt. Refer to the Account Fees and Charges booklet for further information.",
-                "feeType": "EVENT",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:hl",
-                "currency": "AUD"
-            },
-            {
-                "additionalValue": "P1M",
-                "name": "Periodical Payment Non Payment Fee",
-                "amount": "6.00",
-                "discounts": [],
-                "additionalInfo": "Debited to your account when any attempted periodical payment can not be made due to lack of cleared funds. Refer to the Account Fees and Charges booklet for further information.",
-                "feeType": "EVENT",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:hl",
-                "currency": "AUD"
-            }
-        ]
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "lastUpdated": "2022-12-06T06:00:00.000Z"
     }
 }
