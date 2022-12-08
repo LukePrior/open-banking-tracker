@@ -1,9 +1,123 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.023",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_1",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6.0,
+                        "maximumValue": 6.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "Interest rates are subject to term deposit principal and term of investment. Interest is calculated daily on closing credit balance, and will be paid either monthly or at maturity. Fixed interest rate for the term of the investment.",
+                "additionalInfoUri": "https://www.illawarracu.com.au/rates-fees"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.023",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_2",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6.0,
+                        "maximumValue": 6.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "Interest rates are subject to term deposit principal and term of investment. Interest is calculated daily on closing credit balance, and will be paid either monthly or at maturity. Fixed interest rate for the term of the investment.",
+                "additionalInfoUri": "https://www.illawarracu.com.au/rates-fees"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.023",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 9999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "I1-TERMDEPOSIT-6M_Tier_3",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6.0,
+                        "maximumValue": 6.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "Interest rates are subject to term deposit principal and term of investment. Interest is calculated daily on closing credit balance, and will be paid either monthly or at maturity. Fixed interest rate for the term of the investment.",
+                "additionalInfoUri": "https://www.illawarracu.com.au/rates-fees"
+            }
+        ],
+        "productId": "I1-TERMDEPOSIT-6M",
+        "lastUpdated": "2022-11-21T12:17:24.000+11:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "I1-TERMDEPOSIT-6M",
+        "description": "Protect your savings of $1,000 or more. Six months, interest on maturity.",
+        "brand": "Illawarra Credit Union Ltd",
+        "brandName": "Illawarra Credit Union Ltd",
+        "applicationUri": "https://www.illawarracu.com.au/td-personal-apply-now",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.illawarracu.com.au/deposits/term-deposits",
+            "termsUri": "",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "https://www.illawarracu.com.au/fees-charges-and-transaction-limits-brochure",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://onlineteller.cu.com.au/OpenBanking/cds-au/v1/banking/products/I1-TERMDEPOSIT-6M"
+    },
+    "meta": {}
 }
