@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;2591-0100&quot;,
     &quot;effectiveFrom&quot;: &quot;2019-12-31T14:00:00.00000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2030-12-31T13:59:59.00000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-08-16T14:00:00.00000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-12-05T14:00:00.00000Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Low Rate Credit Card&quot;,
     &quot;description&quot;: &quot;Find some financial breathing space.&quot;,
@@ -62,9 +62,9 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/digital-banking/apple-pay-everyday&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Minimum Repayment&quot;,
-            &quot;additionalInfo&quot;: &quot;Your minimum repayment for each month will be calculated as the amount that is the greatest (or equal greatest) of: \u2022 $35; or \u2022 3% of your Closing Balance; AND \u2022 your Overlimit Amount (if any). If the Closing Balance on your Account is less than $35, the minimum repayment will be the Closing Balance.&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;,
+            &quot;additionalInfo&quot;: &quot;Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
@@ -82,17 +82,24 @@
             &quot;additionalInfo&quot;: &quot;Additional Cardholders must be over 16 years of age. If an Additional Cardholder is not an existing Great Southern Bank customer, they must complete a Membership Application - Individual form and satisfy our identification requirements before being added to your account.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Yes&quot;,
-            &quot;additionalInfo&quot;: &quot;Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;INTEREST_FREE&quot;,
             &quot;additionalValue&quot;: &quot;P55D&quot;,
             &quot;additionalInfo&quot;: &quot;Up\u00a0to\u00a055\u00a0interest\u00a0free\u00a0days\u00a0on\u00a0purchases\u00a0when\u00a0you\u00a0pay\u00a0off\u00a0your\u00a0closing\u00a0balance\u00a0in\u00a0full\u00a0by\u00a0the\u00a0due\u00a0date\u00a0shown\u00a0on\u00a0your\u00a0statement\u00a0each\u00a0month.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Minimum Repayment&quot;,
+            &quot;additionalInfo&quot;: &quot;Your minimum repayment for each month will be calculated as the amount that is the greatest (or equal greatest) of: \u2022 $35; or \u2022 3% of your Closing Balance; AND \u2022 your Overlimit Amount (if any). If the Closing Balance on your Account is less than $35, the minimum repayment will be the Closing Balance.&quot;
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Disputed Transaction Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;23.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A Disputed Transaction Fee will be charged where a Transaction you dispute is resolved in the favour of the merchant.&quot;
+        },
         {
             &quot;name&quot;: &quot;Foreign Exchange Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
@@ -108,11 +115,18 @@
             &quot;additionalInfo&quot;: &quot;An Overseas Replacement Card Fee will be charged when a replacement Card is provided to you or an Additional Cardholder overseas (including in emergencies).&quot;
         },
         {
-            &quot;name&quot;: &quot;Arrears Letter Fee&quot;,
+            &quot;name&quot;: &quot;Account Information Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;22.00&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;An Arrears Letter Fee will be charged when Great Southern Bank sends you a letter in relation to any amount owing on your Account.&quot;
+            &quot;additionalInfo&quot;: &quot;Unless we are legally obliged to provide the information free of charge, an Account Information Fee will be payable when you request the following: (a) An annual audit certificate on the Account (b) A copy of a voucher or other document in relation to a Transaction (c) Personal Information, traces, document copies and/or other information pertaining to the Account where further investigation is required an additional hourly rate of $20 per hour or part thereof will apply. An estimate of such additional charges will be provided prior to the work being undertaken.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;12.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A Late Payment Fee will be charged if the \u201dTotal amount due\u201d figure shown on the Statement is not paid within 25 days from your Statement Date.&quot;
         },
         {
             &quot;name&quot;: &quot;Annual\u00a0Card fee&quot;,
@@ -137,25 +151,11 @@
             ]
         },
         {
-            &quot;name&quot;: &quot;Disputed Transaction Fee&quot;,
+            &quot;name&quot;: &quot;Arrears Letter Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;23.00&quot;,
+            &quot;amount&quot;: &quot;22.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A Disputed Transaction Fee will be charged where a Transaction you dispute is resolved in the favour of the merchant.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Default Notice Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;33.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A Default Notice Fee will be charged when Great Southern Bank sends you a default notice in relation to any amount owing on your Account.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Account Information Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Unless we are legally obliged to provide the information free of charge, an Account Information Fee will be payable when you request the following: (a) An annual audit certificate on the Account (b) A copy of a voucher or other document in relation to a Transaction (c) Personal Information, traces, document copies and/or other information pertaining to the Account where further investigation is required an additional hourly rate of $20 per hour or part thereof will apply. An estimate of such additional charges will be provided prior to the work being undertaken.&quot;
+            &quot;additionalInfo&quot;: &quot;An Arrears Letter Fee will be charged when Great Southern Bank sends you a letter in relation to any amount owing on your Account.&quot;
         },
         {
             &quot;name&quot;: &quot;Cash Advance Fee&quot;,
@@ -165,20 +165,21 @@
             &quot;additionalInfo&quot;: &quot;A minimum of $3.50 Cash Advance Fee will be charged when a Cash Advance is obtained from your Account.&quot;
         },
         {
-            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;name&quot;: &quot;Default Notice Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;12.50&quot;,
+            &quot;amount&quot;: &quot;33.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A Late Payment Fee will be charged if the \u201dTotal amount due\u201d figure shown on the Statement is not paid within 25 days from your Statement Date.&quot;
+            &quot;additionalInfo&quot;: &quot;A Default Notice Fee will be charged when Great Southern Bank sends you a default notice in relation to any amount owing on your Account.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
-            &quot;rate&quot;: &quot;0.2174&quot;,
+            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;Interest on Cash Advances&quot;
+            &quot;applicationFrequency&quot;: &quot;P33M&quot;,
+            &quot;additionalValue&quot;: &quot;Balance\u00a0transfer\u00a0rate&quot;,
+            &quot;additionalInfo&quot;: &quot;This offer is available for approved applicants when they apply for a new Credit Card from 25 November 2021. This is a limited time only offer which may be withdrawn or changed at any time without notice. Offer not available to transfers from credit cards that you already have with us. Only one application per account accepted (consolidate up to  3 credit cards per application). The balance transfer application must be applied for within three months of the Disclosure Date in your Offer and Card Contract. Your total balance transfer may not exceed 80% of your credit limit. We may allow this to be exceeded at our discretion. The Promotional Interest Rate Period of 0% p.a. will apply for 33 months from the date the balance transfer application is processed. At the end of the Promotional Interest Rate Period, the Cash Advance rate (currently 21.74%p.a. as at 1 June 2021, subject to change) will apply to any part of the balance transfer which remains unpaid. The 55 days interest free period on purchases will not apply while any balance transfer amount remains outstanding. This means that all purchases will be charged interest at the applicable annual percentage rate.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
@@ -188,12 +189,11 @@
             &quot;additionalValue&quot;: &quot;Interest\u00a0on\u00a0purchases&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
-            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
+            &quot;rate&quot;: &quot;0.2174&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P33M&quot;,
-            &quot;additionalValue&quot;: &quot;Balance\u00a0transfer\u00a0rate&quot;,
-            &quot;additionalInfo&quot;: &quot;This offer is available for approved applicants when they apply for a new Credit Card from 25 November 2021. This is a limited time only offer which may be withdrawn or changed at any time without notice. Offer not available to transfers from credit cards that you already have with us. Only one application per account accepted (consolidate up to  3 credit cards per application). The balance transfer application must be applied for within three months of the Disclosure Date in your Offer and Card Contract. Your total balance transfer may not exceed 80% of your credit limit. We may allow this to be exceeded at our discretion. The Promotional Interest Rate Period of 0% p.a. will apply for 33 months from the date the balance transfer application is processed. At the end of the Promotional Interest Rate Period, the Cash Advance rate (currently 21.74%p.a. as at 1 June 2021, subject to change) will apply to any part of the balance transfer which remains unpaid. The 55 days interest free period on purchases will not apply while any balance transfer amount remains outstanding. This means that all purchases will be charged interest at the applicable annual percentage rate.&quot;
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;Interest on Cash Advances&quot;
         }
     ]
 }</textarea>
