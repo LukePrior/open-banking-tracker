@@ -270,7 +270,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0001",
+                "rate": "0.005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -278,7 +278,7 @@
                         "name": "Self-Managed Superfund Account_Tier_1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
-                        "maximumValue": 4999.99,
+                        "maximumValue": 99999.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -287,14 +287,31 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0035",
+                "rate": "0.025",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Self-Managed Superfund Account_Tier_2",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 5000.0,
+                        "minimumValue": 99999.01,
+                        "maximumValue": 499999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Members with minimum monthly balance of $20,000 and above in their account will receive the 0.15% p.a. interest rate on the whole balance of the account and is paid monthly.",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0375",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Self-Managed Superfund Account_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 499999.01,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -313,7 +330,7 @@
             }
         ],
         "productId": "S87_SMSF_ACCOUNT",
-        "lastUpdated": "2022-03-31T10:14:09.000+11:00",
+        "lastUpdated": "2023-01-15T20:48:02.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Self-Managed Superfund Account",
         "description": "A savings account designed to help you save for retirement and offers greater control over how you invest your superannuation.",
