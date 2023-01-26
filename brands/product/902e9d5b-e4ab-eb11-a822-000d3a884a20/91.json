@@ -2,7 +2,7 @@
     "data": {
         "productId": "91",
         "effectiveFrom": "2020-04-06T14:30:00.0000000Z",
-        "lastUpdated": "2022-12-14T22:00:41.2921830Z",
+        "lastUpdated": "2023-01-25T06:00:40.4867412Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "OMG Home Loan (IO)",
         "description": "OMG Home Loan (IO)",
@@ -34,17 +34,19 @@
         ],
         "fees": [
             {
-                "name": "Late Payment Notifcation Fee",
+                "name": "Late Payment Notification Fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
+                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days",
+                "additionalInfoUri": "https://www.bcu.com.au/help-support/fees-charges"
             },
             {
                 "name": "Discharge of Mortgage Fee",
                 "feeType": "EVENT",
                 "amount": "395.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bcu.com.au/help-support/fees-charges"
             }
         ],
         "lendingRates": [
@@ -54,6 +56,14 @@
                 "comparisonRate": "0.0499",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalValue": "{ \"Term\": 36, \"Period\": \"Month(s)\" }",
+                "additionalInfo": "Owner occupied"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0564",
+                "comparisonRate": "0.0499",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "{ \"Term\": 60, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "Owner occupied"
