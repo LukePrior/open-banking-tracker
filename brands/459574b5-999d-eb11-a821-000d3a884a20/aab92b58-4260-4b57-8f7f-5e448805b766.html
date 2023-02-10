@@ -16,13 +16,199 @@
     &quot;applicationUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/check-my-eligibility/?ccproduct=bright&quot;,
     &quot;isTailored&quot;: false,
     &quot;bundles&quot;: [],
-    &quot;cardArt&quot;: [],
-    &quot;features&quot;: [],
-    &quot;eligibility&quot;: [],
-    &quot;constraints&quot;: [],
-    &quot;fees&quot;: [],
+    &quot;cardArt&quot;: [
+        {
+            &quot;title&quot;: &quot;Bendigo Bright Credit Card&quot;,
+            &quot;imageUri&quot;: &quot;https://www.bendigobank.com.au/siteassets/personal/creditcards/bendigo-bright-credit-card/exploretile-bendigobright.png&quot;
+        }
+    ],
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;With Bendigo Bank you can turn your phone or smart watch into your wallet.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/digital-wallets/&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalValue&quot;: &quot;No fees for additional cardholders&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;1,000&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;30,000&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Must be Australian Resident &quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18 years old&quot;,
+            &quot;additionalInfo&quot;: &quot;Additional cardholders must be 16 years of age&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Bank cheque withdrawal&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;10.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Bank@Post deposit&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;International ATM Inquiry&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.500000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable whenever you make an Account inquiry outside of Australia at a non-Bendigo Bank ATM. &quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable each time you fail to pay your Minimum Repayment as stated on a Statement of Account by its due date.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;International Transaction Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.0300000000000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;International Transaction Fee \u2013 [3% of the Transaction amount (in AUD)] An International Transaction Fee of 3% of the Transaction amount (in AUD) payable for each Transaction which is conducted in a currency other than Australian dollars (AUD) or in Australian dollars (AUD) but with or using a merchant, payment processor, financial institution or other entity (including an online merchant) who is outside of Australia. Note: It may not always be apparent to you that an online merchant is located outside of Australia.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;International ATM Withdrawal&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable whenever you make a cash withdrawal outside of Australia at a non-Bendigo Bank ATM (in addition to the Cash Advance Fee. &quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Periodical payment by cheque&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.750000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;EFT Credit Transfer&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Periodical payment to other financial institution&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;3.750000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Balance Transfer Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;transactionRate&quot;: &quot;0.0200000000000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Balance Transfer Fee \u2013 [2% of the balance transferred] Payable each time we agree to transfer the balance owing by you in respect of a different credit card facility to your Bendigo Bank Credit Card as a Promotional Balance Transfer.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;transactionRate&quot;: &quot;0.0050000000000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Cash Advance Fee \u2013 $[3.00 or 3% of Transaction amount, whichever is greater] Payable each time we provide credit in the form of cash or you perform a Transaction we treat as being equivalent to cash.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Annual fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;59.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/bright/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Bank@Post withdrawal&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;4.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Replacement card fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable whenever we issue you a replacement, reissue or redirection card other than by standard post at your request.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        }
+    ],
     &quot;depositRates&quot;: [],
-    &quot;lendingRates&quot;: [],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
+            &quot;rate&quot;: &quot;0.0999000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/bright/&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
+            &quot;rate&quot;: &quot;0.1999000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Calculated daily, charged monthly&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/bright/&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
+            &quot;rate&quot;: &quot;0.0000000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;0% p.a. on eligible purchases for up to 18 months. Offer commences on 30 November 2022 and may be varied or withdrawn at any time. New customers only. T&amp;Cs apply.&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y6M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/bright/&quot;,
+            &quot;tiers&quot;: []
+        }
+    ],
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/bright/&quot;,
         &quot;termsUri&quot;: &quot;https://www.bendigobank.com.au/disclosure-documents/#CreditCards&quot;,
