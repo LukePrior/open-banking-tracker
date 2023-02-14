@@ -3,7 +3,7 @@
         "brand": "THE CAPRICORNIAN",
         "description": "Home Equity Business Loan",
         "isTailored": false,
-        "lastUpdated": "2022-12-13T04:14:52.023511Z",
+        "lastUpdated": "2023-02-13T23:47:22.528148Z",
         "name": "Home Equity Business Loan",
         "productCategory": "BUSINESS_LOANS",
         "productId": "8a9f159f-8cc5-43a5-a817-6f8124283c77",
@@ -38,26 +38,8 @@
         ],
         "features": [
             {
-                "featureType": "REDRAW",
-                "additionalInfo": "Redraw of repaid principal above minimum required is available.",
-                "additionalInfoUri": null,
-                "additionalValue": null
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalInfo": "An offset account can be connected to the product.",
-                "additionalInfoUri": null,
-                "additionalValue": null
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Access is available to online banking features for the product.",
-                "additionalInfoUri": null,
-                "additionalValue": null
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment.",
+                "featureType": "NOTIFICATIONS",
+                "additionalInfo": "SMS and/or email notifications available",
                 "additionalInfoUri": null,
                 "additionalValue": null
             },
@@ -68,17 +50,35 @@
                 "additionalValue": null
             },
             {
-                "featureType": "NOTIFICATIONS",
-                "additionalInfo": "SMS and/or email notifications available",
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment.",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access is available to online banking features for the product.",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "An offset account can be connected to the product.",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Redraw of repaid principal above minimum required is available.",
                 "additionalInfoUri": null,
                 "additionalValue": null
             }
         ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
-                "accrualFrequency": "P1M",
+                "feeType": "EVENT",
+                "name": "ARREARS_REMINDER_CALL_FEE",
+                "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
@@ -119,8 +119,22 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "ARREARS_REMINDER_CALL_FEE",
+                "name": "MORTGAGE_DISCHARGE_FEE-NON_SETTLEMENT",
                 "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "100.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
+                "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
@@ -147,27 +161,13 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "MORTGAGE_DISCHARGE_FEE-NON_SETTLEMENT",
+                "name": "MORTGAGE_DISCHARGE_FEE-SETTLEMENT",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "100.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_GREATER_THAN_$250000",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "50.00",
+                "amount": "150.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -182,34 +182,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "WITHDRAWAL",
-                "name": "STAFF_ASSISTED_LOAN_REDRAW",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "30.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_GREATER_THAN_$250000",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "1000.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -238,6 +210,34 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "20.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_GREATER_THAN_$250000",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "1000.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_GREATER_THAN_$250000",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -286,14 +286,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "MORTGAGE_DISCHARGE_FEE-SETTLEMENT",
+                "feeType": "WITHDRAWAL",
+                "name": "STAFF_ASSISTED_LOAN_REDRAW",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "This fee is payable in addition to solicitors fees, registration, searches and other third party fees that may apply.",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "150.00",
+                "amount": "30.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -303,7 +303,7 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0675000000000000",
+                "rate": "0.0700000000000000",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
