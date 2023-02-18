@@ -6,78 +6,86 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
+    &quot;brand&quot;: &quot;ANZ&quot;,
     &quot;cardArt&quot;: [],
     &quot;effectiveFrom&quot;: &quot;2019-06-30T14:00:00.000Z&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;lastUpdated&quot;: &quot;2023-02-15T07:00:00.000Z&quot;,
+    &quot;depositRates&quot;: [],
+    &quot;name&quot;: &quot;ANZ Business Low Rate&quot;,
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;
+        }
+    ],
     &quot;fees&quot;: [
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;amount&quot;: &quot;100.00&quot;,
             &quot;discounts&quot;: [
                 {
                     &quot;amount&quot;: &quot;0.00&quot;,
                     &quot;eligibility&quot;: [],
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;additionalInfo&quot;: &quot;Applications must be submitted and approved by 31 December 2021.&quot;,
                     &quot;description&quot;: &quot;Save $100 with no Annual Card Fee\u00a0for the first year on a new ANZ Business Low Rate credit card.&quot;
                 }
             ],
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;name&quot;: &quot;Account Service&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;
+            &quot;amount&quot;: &quot;100.00&quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;name&quot;: &quot;Cash Advance Fee    &quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;A fee will be charged for each Cash Advance, except where it is obtained through an ANZ ATM. The fee will be the greater of $1.50 and 1.50% of the Cash Advance amount plus any ATM operator fee. For Cash Advances made overseas at an ATM, bank or ANZ office, the 1.50% fee will be calculated with reference to the Cash Advance amount, any ATM operator fee plus any Overseas Transaction Fee charged on the Cash Advance.&quot;,
+            &quot;transactionRate&quot;: &quot;0.015&quot;,
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;transactionRate&quot;: &quot;0.015&quot;
+            &quot;name&quot;: &quot;Cash Advance Fee    &quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;name&quot;: &quot;Overseas Transaction Fee&quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;On the value of any International Transaction charged or credited to an ANZ Business One Facility.&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
             &quot;feeType&quot;: &quot;PURCHASE&quot;,
-            &quot;transactionRate&quot;: &quot;0.03&quot;
+            &quot;name&quot;: &quot;Overseas Transaction Fee&quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;amount&quot;: &quot;35.00&quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;name&quot;: &quot;Late Payment&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Late Payment&quot;
+            &quot;amount&quot;: &quot;35.00&quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;name&quot;: &quot;Over Limit&quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;A fee will be charged if the Closing Balance shown on a Statement of Account exceeds the Facility Limit. The Overlimit Fee will be the lesser of 5% of the overlimit amount and $50.&quot;,
+            &quot;transactionRate&quot;: &quot;0.05&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;transactionRate&quot;: &quot;0.05&quot;
+            &quot;name&quot;: &quot;Over Limit&quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;amount&quot;: &quot;12.00&quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;name&quot;: &quot;Payment Dishonour Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Payment Dishonour Fee&quot;
+            &quot;amount&quot;: &quot;12.00&quot;
         },
         {
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;amount&quot;: &quot;25.00&quot;,
             &quot;discounts&quot;: [],
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;A fee of $25 will be charged if, following the closure of the commercial card account, ANZ agrees to reinstate the account&quot;,
+            &quot;name&quot;: &quot;Reinstatement&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Reinstatement&quot;
+            &quot;amount&quot;: &quot;25.00&quot;
         }
     ],
-    &quot;isTailored&quot;: false,
     &quot;features&quot;: [
         {
             &quot;additionalValue&quot;: &quot;9999&quot;,
-            &quot;additionalInfo&quot;: &quot;Any number of additional cards can be ordered&quot;,
-            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalInfo&quot;: &quot;Any number of additional cards can be ordered&quot;
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
@@ -85,94 +93,85 @@
         },
         {
             &quot;additionalValue&quot;: &quot;Unauthorised Transactions Insurance&quot;,
-            &quot;additionalInfo&quot;: &quot;Unauthorised Transactions Insurance protects your business against misuse for up to $37,500 per cardholder and $200,000 maximum for the total account, in any 12 month period.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/content/dam/anzcomau/documents/pdf/commercial-cards-tcs.pdf?MOD=AJPERES&amp;CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;INSURANCE&quot;
+            &quot;featureType&quot;: &quot;INSURANCE&quot;,
+            &quot;additionalInfo&quot;: &quot;Unauthorised Transactions Insurance protects your business against misuse for up to $37,500 per cardholder and $200,000 maximum for the total account, in any 12 month period.&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Transit Accident Insurance&quot;,
-            &quot;additionalInfo&quot;: &quot;Transit Accident Insurance covers cardholders and their spouses and dependent children with the cardholder for certain injuries and loss of life sustained on a trip, the full cost of which was purchased with the cardholder's card.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/content/dam/anzcomau/documents/pdf/commercial-cards-tcs.pdf?MOD=AJPERES&amp;CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;INSURANCE&quot;
+            &quot;featureType&quot;: &quot;INSURANCE&quot;,
+            &quot;additionalInfo&quot;: &quot;Transit Accident Insurance covers cardholders and their spouses and dependent children with the cardholder for certain injuries and loss of life sustained on a trip, the full cost of which was purchased with the cardholder's card.&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Apple Pay&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Google Pay&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Samsung Pay&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Fitbit Pay&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;Garmin Pay&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mobilepayments.anz.com/?CID=af:obank:cm&quot;
         },
         {
-            &quot;additionalInfo&quot;: &quot;Access using ANZ Internet Banking or ANZ App&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Access using ANZ Internet Banking or ANZ App&quot;
         },
         {
             &quot;additionalValue&quot;: &quot;BPAY&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cm&quot;,
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cm&quot;
         }
     ],
-    &quot;productId&quot;: &quot;ca69da6f-d4e9-ba91-1aba-41fa429f031e&quot;,
-    &quot;bundles&quot;: [],
+    &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#eligibility&quot;,
+        &quot;termsUri&quot;: &quot;https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&amp;CID=af:obank:cm&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#rates&quot;
+    },
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
+            &quot;rate&quot;: &quot;0.1299&quot;,
+            &quot;tiers&quot;: [],
+            &quot;additionalInfo&quot;: &quot;Rates are subject to change&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
+            &quot;rate&quot;: &quot;0.1449&quot;,
+            &quot;tiers&quot;: [],
+            &quot;additionalInfo&quot;: &quot;Rates are subject to change&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
+        }
+    ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;1000.00&quot;
         }
     ],
-    &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
+    &quot;bundles&quot;: [],
     &quot;description&quot;: &quot;A credit card facility for businesses with a low interest ongoing interest rate&quot;,
-    &quot;applicationUri&quot;: &quot;https://apply1.anz.com/au/smallbusiness/index.jsp?apptype=BOL&amp;sourcecode_1=OAAB&amp;CID=af:obank:cm&quot;,
-    &quot;lendingRates&quot;: [
-        {
-            &quot;tiers&quot;: [],
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalInfo&quot;: &quot;Rates are subject to change&quot;,
-            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
-            &quot;rate&quot;: &quot;0.1299&quot;
-        },
-        {
-            &quot;tiers&quot;: [],
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalInfo&quot;: &quot;Rates are subject to change&quot;,
-            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
-            &quot;rate&quot;: &quot;0.1449&quot;
-        }
-    ],
-    &quot;depositRates&quot;: [],
-    &quot;additionalInformation&quot;: {
-        &quot;eligibilityUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#eligibility&quot;,
-        &quot;termsUri&quot;: &quot;https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&amp;CID=af:obank:cm&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#rates&quot;,
-        &quot;overviewUri&quot;: &quot;https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm&quot;
-    },
-    &quot;name&quot;: &quot;ANZ Business Low Rate&quot;,
-    &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;
-        }
-    ],
-    &quot;brand&quot;: &quot;ANZ&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-09-10T08:00:00.000Z&quot;
+    &quot;productId&quot;: &quot;ca69da6f-d4e9-ba91-1aba-41fa429f031e&quot;,
+    &quot;applicationUri&quot;: &quot;https://apply1.anz.com/au/smallbusiness/index.jsp?apptype=BOL&amp;sourcecode_1=OAAB&amp;CID=af:obank:cm&quot;
 }</textarea>
     </div>
   </body>

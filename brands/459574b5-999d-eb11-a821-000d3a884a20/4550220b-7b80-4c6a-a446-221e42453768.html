@@ -74,16 +74,6 @@
             &quot;additionalInfoUri&quot;: &quot;https://rewards.bendigobank.com.au/rewards/phoenix/Bendigo_Rewards&quot;
         }
     ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;50,000&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;3,000&quot;
-        }
-    ],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
@@ -98,7 +88,63 @@
             &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
         }
     ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;50,000&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;3,000&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.000000&quot;,
+            &quot;transactionRate&quot;: &quot;0.0300000000000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Cash Advance Fee \u2013 $[3.00 or 3% of Transaction amount, whichever is greater] Payable each time we provide credit in the form of cash or you perform a Transaction we treat as being equivalent to cash.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;EFT Credit Transfer&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Annual fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;89.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable on the day before we issue the first Statement of Account for your Account and annually thereafter.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/platinum-rewards/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Periodical payment to other financial institution&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;3.750000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable each time you fail to pay your Minimum Repayment as stated on a Statement of Account by its due date.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/my-card/common-credit-card-fees/&quot;,
+            &quot;discounts&quot;: []
+        },
         {
             &quot;name&quot;: &quot;Balance Transfer Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -175,82 +221,14 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;At time of transaction.&quot;,
             &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Periodical payment to other financial institution&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;3.750000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Replacement Card Fee - Standard Post (default) Free&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Replacement, reissue or redirection fees: Domestic Express Post $15.00, Domestic Toll Courier $15.00, International Registered Post $15.00, International Courier $60.00&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Non-Bendigo Bank International ATM Withdrawal &quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Late Payment Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
-            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;transactionRate&quot;: &quot;0.0050000000000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;$3.25 or 0.5% of the transaction amount, whichever is greater&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-credit-card-terms-conditions.pdf&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Bank@Post transaction fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;4.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Annual fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;89.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;EFT Credit Transfer&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;4.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Foreign Currency Transactions&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;transactionRate&quot;: &quot;0.0300000000000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: []
         }
     ],
-    &quot;depositRates&quot;: [],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
             &quot;rate&quot;: &quot;0.0000000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
             &quot;additionalInfo&quot;: &quot;0% p.a. on eligible purchases for up to 18 months. Offer commences on 30 November 2022 and may be varied or withdrawn at any time. New customers only. T&amp;Cs apply.&quot;,
             &quot;additionalValue&quot;: &quot;P1Y6M&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/personal/credit-cards/platinum-rewards/&quot;,
