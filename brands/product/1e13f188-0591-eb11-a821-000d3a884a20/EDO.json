@@ -3,7 +3,7 @@
         "productId": "EDO",
         "effectiveFrom": "2020-04-30T14:00:00.000Z",
         "effectiveTo": "2999-12-30T13:00:00.000Z",
-        "lastUpdated": "2022-12-19T13:00:00.000Z",
+        "lastUpdated": "2023-02-14T13:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Everyday Options Account",
         "description": "An easy, everyday bank account packed with extras to help you spend, save and budget better.",
@@ -130,6 +130,78 @@
         ],
         "fees": [
             {
+                "name": "Foreign Currency Bank Draft - trace request or stop payment",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Foreign Currency Conversion Fee (Visa Debit Transactions)",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0",
+                "currency": "AUD",
+                "additionalInfo": "Suncorp Bank Visa Debit Transactions"
+            },
+            {
+                "name": "Copy of personal or bank cheque",
+                "feeType": "EVENT",
+                "amount": "12.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank Cheque Purchase",
+                "feeType": "EVENT",
+                "amount": "8.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Trace/recall of funds request - cheque, electronic payment",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Stop payment request - Direct Debit",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank@Post",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee Free - Limits apply"
+            },
+            {
+                "name": "Stop Payment Request - cheques and bank cheques",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Interest Certificate",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "previous financial year - per certificate issued"
+            },
+            {
+                "name": "Mortgage Offset Fee",
+                "feeType": "EVENT",
+                "amount": "75.00",
+                "currency": "AUD",
+                "additionalInfo": "Waived with Home Package Plus"
+            },
+            {
+                "name": "Physical Security Token",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Suncorp Secured App (soft token) available at no cost",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/security/security-token-app.html"
+            },
+            {
                 "name": "Account keeping fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -221,78 +293,6 @@
                         "eligibility": []
                     }
                 ]
-            },
-            {
-                "name": "Foreign Currency Bank Draft - trace request or stop payment",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Foreign Currency Conversion Fee (Visa Debit Transactions)",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0",
-                "currency": "AUD",
-                "additionalInfo": "Suncorp Bank Visa Debit Transactions"
-            },
-            {
-                "name": "Copy of personal or bank cheque",
-                "feeType": "EVENT",
-                "amount": "12.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Bank Cheque Purchase",
-                "feeType": "EVENT",
-                "amount": "8.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Trace/recall of funds request - cheque, electronic payment",
-                "feeType": "EVENT",
-                "amount": "30.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Stop payment request - Direct Debit",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Bank@Post",
-                "feeType": "TRANSACTION",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Fee Free - Limits apply"
-            },
-            {
-                "name": "Stop Payment Request - cheques and bank cheques",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Interest Certificate",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "previous financial year - per certificate issued"
-            },
-            {
-                "name": "Mortgage Offset Fee",
-                "feeType": "EVENT",
-                "amount": "75.00",
-                "currency": "AUD",
-                "additionalInfo": "Waived with Home Package Plus"
-            },
-            {
-                "name": "Physical Security Token",
-                "feeType": "EVENT",
-                "amount": "20.00",
-                "currency": "AUD",
-                "additionalInfo": "Suncorp Secured App (soft token) available at no cost",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/security/security-token-app.html"
             }
         ],
         "depositRates": [
@@ -312,42 +312,6 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.036",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P9M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P9M",
-                "additionalInfo": "9 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.03",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P10M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P10M",
-                "additionalInfo": "10 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
                 "rate": "0.032",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P11M",
@@ -362,42 +326,6 @@
                 ],
                 "additionalValue": "P11M",
                 "additionalInfo": "11 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P12M",
-                "additionalInfo": "12 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.013",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "$1 to $1,000,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 1000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1M",
-                "additionalInfo": "1 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
             },
             {
@@ -420,7 +348,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.027",
+                "rate": "0.03",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -524,6 +452,78 @@
                 ],
                 "additionalValue": "P8M",
                 "additionalInfo": "8 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M",
+                "additionalInfo": "12 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.013",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P1M",
+                "additionalInfo": "1 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P9M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P9M",
+                "additionalInfo": "9 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.03",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P10M",
+                "tiers": [
+                    {
+                        "name": "$1 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P10M",
+                "additionalInfo": "10 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates"
             }
         ]

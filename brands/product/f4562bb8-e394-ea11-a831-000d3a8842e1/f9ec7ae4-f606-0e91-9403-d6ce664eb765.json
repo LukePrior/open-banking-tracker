@@ -1,90 +1,90 @@
 {
     "data": {
-        "features": [],
-        "additionalInformation": {
-            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&CID=af:obank:tv#FTPDS",
-            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
-            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv"
-        },
-        "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
-        "brand": "ANZ",
         "cardArt": [],
         "effectiveFrom": "2019-06-30T14:00:00.000Z",
-        "isTailored": false,
-        "lastUpdated": "2022-11-24T19:00:00.000Z",
-        "productId": "f9ec7ae4-f606-0e91-9403-d6ce664eb765",
-        "bundles": [],
-        "depositRates": [
-            {
-                "rate": "0.0005",
-                "depositRateType": "VARIABLE",
-                "calculationFrequency": "P1D",
-                "tiers": [
-                    {
-                        "maximumValue": 9999,
-                        "minimumValue": 1,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "name": "Balance",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $1 and $9,999"
-                        }
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "rate": "0.0065",
-                "depositRateType": "VARIABLE",
-                "calculationFrequency": "P1D",
-                "tiers": [
-                    {
-                        "maximumValue": 49999,
-                        "minimumValue": 10000,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "name": "Balance",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $10,000 and $49,999"
-                        }
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "rate": "0.0125",
-                "depositRateType": "VARIABLE",
-                "calculationFrequency": "P1D",
-                "tiers": [
-                    {
-                        "minimumValue": 50000,
-                        "rateApplicationMethod": "PER_TIER",
-                        "unitOfMeasure": "DOLLAR",
-                        "name": "Balance",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance $50,000 or more"
-                        }
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            }
-        ],
-        "constraints": [],
-        "lendingRates": [],
         "eligibility": [
             {
-                "additionalInfo": "Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account",
-                "eligibilityType": "PENSION_RECIPIENT"
+                "eligibilityType": "PENSION_RECIPIENT",
+                "additionalInfo": "Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "You must be an Australian resident with an Australian residential and mailing address."
             }
         ],
+        "isTailored": false,
+        "lastUpdated": "2023-02-16T13:01:00.000Z",
+        "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
+        "productId": "f9ec7ae4-f606-0e91-9403-d6ce664eb765",
+        "depositRates": [
+            {
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $1 and $9,999"
+                        },
+                        "minimumValue": 1,
+                        "name": "Balance",
+                        "rateApplicationMethod": "PER_TIER",
+                        "maximumValue": 9999
+                    }
+                ],
+                "rate": "0.0005",
+                "depositRateType": "VARIABLE"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $10,000 and $49,999"
+                        },
+                        "minimumValue": 10000,
+                        "name": "Balance",
+                        "rateApplicationMethod": "PER_TIER",
+                        "maximumValue": 49999
+                    }
+                ],
+                "rate": "0.009",
+                "depositRateType": "VARIABLE"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $50,000 or more"
+                        },
+                        "minimumValue": 50000,
+                        "name": "Balance",
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "rate": "0.015",
+                "depositRateType": "VARIABLE"
+            }
+        ],
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv",
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?&CID=af:obank:tv#FTPDS",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/?CID=af:obank:tv"
+        },
+        "fees": [],
+        "lendingRates": [],
         "name": "ANZ Pensioner Advantage Account",
-        "fees": []
+        "features": [],
+        "bundles": [],
+        "constraints": [],
+        "brand": "ANZ"
     },
     "links": {
         "self": "https://api.anz/cds-au/v1/banking/products/f9ec7ae4-f606-0e91-9403-d6ce664eb765"
