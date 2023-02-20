@@ -2,7 +2,7 @@
     "data": {
         "productId": "22",
         "effectiveFrom": "2009-04-30T14:30:00.0000000Z",
-        "lastUpdated": "2021-08-05T02:00:17.5585980Z",
+        "lastUpdated": "2023-02-01T02:00:20.4098471Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S70 Mortgage Offset Account",
         "description": "A Mortgage Offset Facility Allows You To Accumulate Savings In A Specific Savings Account And Use That Account Balance To Reduce Interest On Your Home Loan.",
@@ -54,7 +54,7 @@
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
-                "additionalValue": "5000.0",
+                "additionalValue": "5000.00",
                 "additionalInfo": "The Mortgage Offset Savings Account Does Not Earn Interest, Instead An 'Offset Figure' Is Calculated On Balances And This Is Used To Reduce Interest Payable On The Loan."
             }
         ],
@@ -154,13 +154,39 @@
                 "name": "Member Cheque Withdrawal",
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Only customers older than a minimum age receive the discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "70"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Direct Debit",
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Only customers older than a minimum age receive the discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "70"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Over The Counter External Transfer Fee",
@@ -172,7 +198,20 @@
                 "name": "BPay Transaction Fee",
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Only customers older than a minimum age receive the discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "70"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Faxed Statement/Transfer Fees",

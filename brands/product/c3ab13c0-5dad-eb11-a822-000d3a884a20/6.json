@@ -2,7 +2,7 @@
     "data": {
         "productId": "6",
         "effectiveFrom": "1999-01-06T13:30:00.0000000Z",
-        "lastUpdated": "2021-12-14T08:00:33.2971564Z",
+        "lastUpdated": "2022-12-08T06:00:34.2456550Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S8 Savings Account",
         "description": "An at call savings account that allows you to put money aside for saving while still having full access with no penalties",
@@ -45,13 +45,22 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0",
+                "rate": "0.0055",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Floating",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 4999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0005",
+                "rate": "0.006",
                 "tiers": [
                     {
                         "name": "Tier 2",
@@ -64,7 +73,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.001",
+                "rate": "0.0065",
                 "tiers": [
                     {
                         "name": "Tier 3",

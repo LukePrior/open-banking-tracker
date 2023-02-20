@@ -49,10 +49,10 @@
         ],
         "features": [
             {
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfo": "",
+                "featureType": "CARD_ACCESS",
+                "additionalInfo": "Any Visa Debit Card on this account when the child is under the age of 12, is to be in the name of the adult authorised to operate the account.",
                 "additionalInfoUri": null,
-                "additionalValue": "Google Pay"
+                "additionalValue": "Visa Debit Card"
             },
             {
                 "featureType": "NPP_ENABLED",
@@ -67,16 +67,16 @@
                 "additionalValue": null
             },
             {
-                "featureType": "CARD_ACCESS",
-                "additionalInfo": "Any Visa Debit Card on this account when the child is under the age of 12, is to be in the name of the adult authorised to operate the account.",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
-                "additionalValue": "Visa Debit Card"
+                "additionalValue": "ApplePay"
             },
             {
                 "featureType": "DIGITAL_WALLET",
                 "additionalInfo": "",
                 "additionalInfoUri": null,
-                "additionalValue": "ApplePay"
+                "additionalValue": "Google Pay"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -118,6 +118,34 @@
         "fees": [
             {
                 "feeType": "EVENT",
+                "name": "Replacement Card Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "$12.00 Staff Assisted and $8 via Mobile Banking App",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "8.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Inactive Membership Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": "P1Y",
+                "amount": "30.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Direct Debit Dishonour Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -139,20 +167,6 @@
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
                 "amount": "5.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Inactive Membership Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": "P1Y",
-                "amount": "30.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -202,6 +216,20 @@
             },
             {
                 "feeType": "EVENT",
+                "name": "Express Posting Of Card Or Pin In Australia",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Direct Entry Return Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -215,14 +243,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Express Posting Of Card Or Pin In Australia",
+                "feeType": "WITHDRAWAL",
+                "name": "Visa Debit Card Overseas Atm Withdrawals",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "The ATM operator may charge a fee at the time of the transaction",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
-                "amount": "15.00",
+                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -264,20 +292,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "WITHDRAWAL",
-                "name": "Visa Debit Card Overseas Atm Withdrawals",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "The ATM operator may charge a fee at the time of the transaction",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "TRANSACTION",
                 "name": "Currency Conversion Fee",
                 "accrualFrequency": null,
@@ -314,13 +328,13 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Replacement Card Fee",
+                "name": "Issue Card Or Pin Internationally By Registered Mail",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "$12.00 Staff Assisted and $8 via Mobile Banking App",
+                "additionalInfo": "$15 dollars per item",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
-                "amount": "8.00",
+                "amount": "15.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -349,20 +363,6 @@
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
                 "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Issue Card Or Pin Internationally By Registered Mail",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "$15 dollars per item",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "15.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],

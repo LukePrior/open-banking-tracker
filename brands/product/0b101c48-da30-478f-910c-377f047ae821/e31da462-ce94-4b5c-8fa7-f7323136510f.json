@@ -8,14 +8,15 @@
         "brandName": "Tic:Toc",
         "description": "Award-winning home loans, delivered simply.\nWhether you're a first-time buyer or refinancing an investment property, we've got the loan for you.",
         "isTailored": false,
-        "lastUpdated": "2022-08-25T14:00:26.260Z",
+        "lastUpdated": "2023-01-29T13:00:22.464Z",
         "name": "Tic:Toc",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "e31da462-ce94-4b5c-8fa7-f7323136510f",
         "fees": [
             {
                 "name": "Loan Processing Fee",
-                "amount": "0.00",
+                "additionalInfo": "This fee is paid for us to prepare loan  documentation necessary to enable the home  loan to settle.",
+                "amount": "150.00",
                 "currency": "AUD",
                 "feeType": "UPFRONT"
             },
@@ -26,19 +27,8 @@
                 "feeType": "EVENT"
             },
             {
-                "name": "Settlement Fee",
-                "amount": "0.00",
-                "currency": "AUD",
-                "feeType": "UPFRONT"
-            },
-            {
-                "name": "Valuation Fee",
-                "amount": "0.00",
-                "currency": "AUD",
-                "feeType": "UPFRONT"
-            },
-            {
-                "name": "Search Processing Fee",
+                "name": "Subsequent valuation fee",
+                "additionalInfo": "Subsequent valuation fee - Payable for a valuation performed as the result of your request for us to deal with a security after settlement",
                 "amount": "0.00",
                 "currency": "AUD",
                 "feeType": "UPFRONT"
@@ -72,6 +62,7 @@
             },
             {
                 "name": "Discharge Administration Fee",
+                "additionalInfo": "Payable for each security attached to a home  loan that we partially or fully discharge at your  request.",
                 "amount": "325.00",
                 "currency": "AUD",
                 "feeType": "EVENT"
@@ -84,10 +75,31 @@
                 "feeType": "PERIODIC"
             },
             {
-                "name": "Documentation Fee",
-                "amount": "0.00",
-                "currency": "AUD",
+                "name": "Manual Redraw Fee",
+                "additionalInfo": "Payable when you redraw all or part of any  repayments made on your loan (minimum $1).",
+                "amount": "50.00",
+                "feeType": "EVENT"
+            },
+            {
+                "name": "Go-Between Loan",
+                "amount": "295.00",
                 "feeType": "UPFRONT"
+            },
+            {
+                "name": "Construction",
+                "amount": "295.00",
+                "feeType": "UPFRONT"
+            },
+            {
+                "name": "Go-Between & Construction",
+                "amount": "440.00",
+                "feeType": "UPFRONT"
+            },
+            {
+                "name": "Loan variation fee",
+                "additionalInfo": "This fee is charged if you apply to us to vary an  existing contract before settlement occurs. ",
+                "amount": "150.00",
+                "feeType": "EVENT"
             }
         ],
         "eligibility": [
@@ -127,82 +139,66 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0372",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0359",
-                "additionalInfo": "P&I, Owner Occupied (with Offset Account)",
-                "calculationFrequency": "P1D"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.036",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0359",
-                "additionalInfo": "P&I, Owner Occupied Sub 80",
-                "calculationFrequency": "P1D"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0479",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0467",
-                "additionalInfo": "P&I, Owner Occupied (with Offset Account)",
-                "calculationFrequency": "P1D"
-            },
-            {
-                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0468",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0467",
-                "additionalInfo": "P&I, Owner Occupied",
+                "rate": "0.0456",
+                "additionalInfo": "P&I, Owner Occupied (with Offset Account)",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0459",
-                "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0445",
-                "additionalInfo": "Interest Only, Owner Occupied (with Offset Account) Sub 80",
+                "comparisonRate": "0.0457",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "rate": "0.0456",
+                "additionalInfo": "P&I, Owner Occupied ",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0448",
+                "comparisonRate": "0.0571",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0445",
+                "rate": "0.0566",
+                "additionalInfo": "Interest Only, Owner Occupied (with Offset Account) ",
+                "calculationFrequency": "P1D"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0561",
+                "repaymentType": "INTEREST_ONLY",
+                "rate": "0.0566",
                 "additionalInfo": "Interest Only, Owner Occupied ",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0386",
+                "comparisonRate": "0.0477",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0459",
+                "rate": "0.0495",
                 "additionalInfo": "Fixed 1 year, P&I, Owner Occupied (with Offset Account)",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0407",
+                "comparisonRate": "0.0489",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0529",
+                "rate": "0.0544",
                 "additionalInfo": "Fixed 2 year, P&I, Owner Occupied (with Offset Account)",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0415",
+                "comparisonRate": "0.0493",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0509",
+                "rate": "0.0534",
                 "additionalInfo": "Fixed 3 year, P&I, Owner Occupied (with Offset Account)",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0454",
+                "comparisonRate": "0.0518",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0589",
                 "additionalInfo": "Fixed 4 year, P&I, Owner Occupied (with Offset Account)",
@@ -211,7 +207,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0473",
+                "comparisonRate": "0.053",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0594",
                 "additionalInfo": "Fixed 5 year, P&I, Owner Occupied (with Offset Account)",
@@ -220,34 +216,34 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0374",
+                "comparisonRate": "0.0465",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0459",
+                "rate": "0.0495",
                 "additionalInfo": "Fixed 1 year, P&I, Owner Occupied",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0394",
+                "comparisonRate": "0.0477",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0529",
+                "rate": "0.0544",
                 "additionalInfo": "Fixed 2 year, P&I, Owner Occupied",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0403",
+                "comparisonRate": "0.0481",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0509",
+                "rate": "0.0534",
                 "additionalInfo": "Fixed 3 year, P&I, Owner Occupied",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0442",
+                "comparisonRate": "0.0506",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0589",
                 "additionalInfo": "Fixed 4 year, P&I, Owner Occupied",
@@ -256,7 +252,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0461",
+                "comparisonRate": "0.0518",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0594",
                 "additionalInfo": "Fixed 5 year, P&I, Owner Occupied",
@@ -265,16 +261,16 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0473",
+                "comparisonRate": "0.0573",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0579",
+                "rate": "0.0609",
                 "additionalInfo": "Fixed 1 year, Interest Only, Owner Occupied (with Offset Account)",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0488",
+                "comparisonRate": "0.0575",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0599",
                 "additionalInfo": "Fixed 2 year, Interest Only, Owner Occupied (with Offset Account)",
@@ -283,7 +279,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0504",
+                "comparisonRate": "0.0583",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0614",
                 "additionalInfo": "Fixed 3 year, Interest Only, Owner Occupied (with Offset Account)",
@@ -292,7 +288,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0519",
+                "comparisonRate": "0.0589",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0619",
                 "additionalInfo": "Fixed 4 year, Interest Only, Owner Occupied (with Offset Account)",
@@ -301,7 +297,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0541",
+                "comparisonRate": "0.0604",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0644",
                 "additionalInfo": "Fixed 5 year, Interest Only, Owner Occupied (with Offset Account)",
@@ -310,16 +306,16 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0462",
+                "comparisonRate": "0.0562",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0579",
+                "rate": "0.0609",
                 "additionalInfo": "Fixed 1 year, Interest Only, Owner Occupied",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0477",
+                "comparisonRate": "0.0565",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0599",
                 "additionalInfo": "Fixed 2 year, Interest Only, Owner Occupied",
@@ -328,7 +324,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0493",
+                "comparisonRate": "0.0572",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0614",
                 "additionalInfo": "Fixed 3 year, Interest Only, Owner Occupied",
@@ -337,7 +333,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0508",
+                "comparisonRate": "0.0578",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0619",
                 "additionalInfo": "Fixed 4 year, Interest Only, Owner Occupied",
@@ -346,7 +342,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.053",
+                "comparisonRate": "0.0593",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0644",
                 "additionalInfo": "Fixed 5 year, Interest Only, Owner Occupied",
@@ -355,66 +351,66 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0392",
+                "comparisonRate": "0.0498",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0379",
+                "rate": "0.0486",
                 "additionalInfo": "P&I, Residential Investment (with Offset Account)",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.038",
+                "comparisonRate": "0.0487",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0379",
+                "rate": "0.0486",
                 "additionalInfo": "P&I, Residential Investment",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0453",
+                "comparisonRate": "0.0554",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.043",
+                "rate": "0.0529",
                 "additionalInfo": "Interest Only, Residential Investment (with Offset Account)",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0442",
+                "comparisonRate": "0.0544",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.043",
+                "rate": "0.0526",
                 "additionalInfo": "Interest Only, Residential Investment",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0464",
+                "comparisonRate": "0.0566",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0479",
+                "rate": "0.0538",
                 "additionalInfo": "Fixed 1 year, P&I, Residential Investment (with Offset Account)",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.048",
+                "comparisonRate": "0.0568",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0549",
+                "rate": "0.0558",
                 "additionalInfo": "Fixed 2 year, P&I, Residential Investment (with Offset Account)",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0501",
+                "comparisonRate": "0.0568",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0594",
+                "rate": "0.0558",
                 "additionalInfo": "Fixed 3 year, P&I, Residential Investment (with Offset Account)",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0517",
+                "comparisonRate": "0.0587",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0609",
                 "additionalInfo": "Fixed 4 year, P&I, Residential Investment (with Offset Account)",
@@ -423,7 +419,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0531",
+                "comparisonRate": "0.0593",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0614",
                 "additionalInfo": "Fixed 5 year, P&I, Residential Investment (with Offset Account)",
@@ -432,34 +428,34 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0453",
+                "comparisonRate": "0.0555",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0479",
+                "rate": "0.0538",
                 "additionalInfo": "Fixed 1 year, P&I, Residential Investment",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0468",
+                "comparisonRate": "0.0557",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0549",
+                "rate": "0.0558",
                 "additionalInfo": "Fixed 2 year, P&I, Residential Investment",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0489",
+                "comparisonRate": "0.0557",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "rate": "0.0594",
+                "rate": "0.0558",
                 "additionalInfo": "Fixed 3 year, P&I, Residential Investment",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0506",
+                "comparisonRate": "0.0576",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0609",
                 "additionalInfo": "Fixed 4 year, P&I, Residential Investment",
@@ -468,7 +464,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.052",
+                "comparisonRate": "0.0582",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "rate": "0.0614",
                 "additionalInfo": "Fixed 5 year, P&I, Residential Investment",
@@ -477,34 +473,34 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0465",
+                "comparisonRate": "0.0567",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0489",
+                "rate": "0.0554",
                 "additionalInfo": "Fixed 1 year, Interest Only, Residential Investment (with Offset Account)",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0481",
+                "comparisonRate": "0.0572",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0559",
+                "rate": "0.0579",
                 "additionalInfo": "Fixed 2 year, Interest Only, Residential Investment (with Offset Account)",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0502",
+                "comparisonRate": "0.0576",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0604",
+                "rate": "0.0589",
                 "additionalInfo": "Fixed 3 year, Interest Only, Residential Investment (with Offset Account)",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0519",
+                "comparisonRate": "0.0589",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0619",
                 "additionalInfo": "Fixed 4 year, Interest Only, Residential Investment (with Offset Account)",
@@ -513,7 +509,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0532",
+                "comparisonRate": "0.0595",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0624",
                 "additionalInfo": "Fixed 5 year, Interest Only, Residential Investment (with Offset Account)",
@@ -522,34 +518,34 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0453",
+                "comparisonRate": "0.0556",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0489",
+                "rate": "0.0554",
                 "additionalInfo": "Fixed 1 year, Interest Only, Residential Investment",
                 "additionalValue": "P1Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.047",
+                "comparisonRate": "0.0561",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0559",
+                "rate": "0.0579",
                 "additionalInfo": "Fixed 2 year, Interest Only, Residential Investment",
                 "additionalValue": "P2Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0491",
+                "comparisonRate": "0.0565",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0604",
+                "rate": "0.0589",
                 "additionalInfo": "Fixed 3 year, Interest Only, Residential Investment",
                 "additionalValue": "P3Y",
                 "calculationFrequency": "P1D"
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0508",
+                "comparisonRate": "0.0578",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0619",
                 "additionalInfo": "Fixed 4 year, Interest Only, Residential Investment",
@@ -558,7 +554,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "comparisonRate": "0.0521",
+                "comparisonRate": "0.0585",
                 "repaymentType": "INTEREST_ONLY",
                 "rate": "0.0624",
                 "additionalInfo": "Fixed 5 year, Interest Only, Residential Investment",

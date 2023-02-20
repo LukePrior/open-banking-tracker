@@ -3,16 +3,124 @@
         "self": "https://api.anz/cds-au/v1/banking/products/79c2b4dd-7c4d-4f06-b8b4-874eb2178e31"
     },
     "data": {
-        "constraints": [
+        "bundles": [],
+        "depositRates": [
             {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "1000.00"
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $1,000 and $29,999",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 29999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
             },
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "800000.00"
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $30,000 and $49,999",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 30000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $50,000 and $99,999",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 99999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $100,000 and $199,999",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 199999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $200,000 and $399,999",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 399999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 200000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $400,000 and $800,000",
+                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
+                        },
+                        "maximumValue": 800000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 400000
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "rate": "0.012"
             }
         ],
+        "features": [],
         "eligibility": [
             {
                 "additionalInfo": "Be an individual primary producer with taxable non-primary production income of no more than $100,000",
@@ -25,146 +133,32 @@
                 "additionalValue": "Hold a farm management deposit for at least 12 months to qualify for tax concessions"
             }
         ],
+        "fees": [],
+        "description": "A tax efficient investment account for primary producers that can help you manage uneven cashflow",
         "additionalInformation": {
+            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/specialist-accounts/farm-management-deposits/?CID=af:obank:ag",
             "overviewUri": "https://www.anz.com.au/business/products/accounts/specialist-accounts/farm-management-deposits/?CID=af:obank:ag",
             "eligibilityUri": "https://www.anz.com.au/business/products/accounts/specialist-accounts/farm-management-deposits/?CID=af:obank:ag",
-            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:ag",
-            "feesAndPricingUri": "https://www.anz.com.au/business/products/accounts/specialist-accounts/farm-management-deposits/?CID=af:obank:ag"
+            "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:ag"
         },
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "brand": "ANZ",
-        "description": "A tax efficient investment account for primary producers that can help you manage uneven cashflow",
-        "cardArt": [],
         "effectiveFrom": "2020-06-30T14:00:00.000Z",
-        "name": "Farm Management Deposit At Call",
-        "lastUpdated": "2021-04-29T14:00:00.000Z",
-        "bundles": [],
-        "depositRates": [
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $1,000 and $29,999",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 1000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 29999
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $30,000 and $49,999",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 30000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 49999
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $50,000 and $99,999",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 50000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 99999
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $100,000 and $199,999",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 100000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 199999
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $200,000 and $399,999",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 200000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 399999
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            },
-            {
-                "calculationFrequency": "P1D",
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "tiers": [
-                    {
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $400,000 and $800,000",
-                            "additionalInfoUri": "https://www.anz.com.au/personal/investing-super/investment-loans/?CID=af:obank:ag"
-                        },
-                        "minimumValue": 400000,
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "maximumValue": 800000
-                    }
-                ],
-                "applicationFrequency": "P1M"
-            }
-        ],
-        "fees": [],
+        "productId": "79c2b4dd-7c4d-4f06-b8b4-874eb2178e31",
+        "brand": "ANZ",
         "lendingRates": [],
-        "features": [
+        "cardArt": [],
+        "constraints": [
             {
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:ag"
+                "additionalValue": "1000.00",
+                "constraintType": "MIN_LIMIT"
+            },
+            {
+                "additionalValue": "800000.00",
+                "constraintType": "MAX_LIMIT"
             }
         ],
+        "name": "Farm Management Deposit At Call",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "isTailored": false,
-        "productId": "79c2b4dd-7c4d-4f06-b8b4-874eb2178e31"
+        "lastUpdated": "2022-12-01T13:01:00.000Z"
     }
 }

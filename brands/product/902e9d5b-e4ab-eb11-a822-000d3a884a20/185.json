@@ -2,7 +2,7 @@
     "data": {
         "productId": "185",
         "effectiveFrom": "2020-04-06T14:30:00.0000000Z",
-        "lastUpdated": "2022-09-27T22:00:40.2731971Z",
+        "lastUpdated": "2023-02-06T00:00:41.1025459Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Investment IO Var",
         "description": "Standard Variable Home Loan (IO)",
@@ -33,7 +33,7 @@
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "10000.0",
+                "additionalValue": "10000.00",
                 "additionalInfo": "Minimum loan amount is $10,000"
             }
         ],
@@ -43,20 +43,32 @@
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days"
+                "additionalInfo": "Charged when payment to a Home Loan becomes overdue by 11 and 30 days",
+                "additionalInfoUri": "https://www.bcu.com.au/help-support/fees-charges"
             },
             {
                 "name": "Discharge of Mortgage Fee",
                 "feeType": "EVENT",
                 "amount": "395.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bcu.com.au/help-support/fees-charges"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "DISCOUNT",
-                "rate": "0.0657",
-                "comparisonRate": "0.0586",
+                "rate": "0.0732",
+                "comparisonRate": "0.0634",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalValue": "{ \"Term\": 36, \"Period\": \"Month(s)\" }",
+                "additionalInfo": "Investment"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0732",
+                "comparisonRate": "0.0634",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",

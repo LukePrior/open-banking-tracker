@@ -10,7 +10,7 @@
             {
                 "featureType": "OFFSET",
                 "additionalValue": "Interest offset",
-                "additionalInfo": "An Everyday Offset is an offset account that can be linked to a Standard Variable Rate Home Loan. The money you put in your linked Everyday Offset account reduces the balance on which the interest is charged on your home loan. You can have unlimited Everyday Offset accounts linked to one home loan. Everyday Offset is a feature of a Complete Access account. Only available for individual borrowers, not companies or trusts.",
+                "additionalInfo": "An Everyday Offset is a transaction account that can be linked to a Standard Variable Rate home loan. The money you put in your linked Everyday Offset account reduces the balance on which the interest is charged on your home loan. You can have multiple Everyday Offset accounts linked to one home loan. Only available for individual borrowers, not companies or trusts.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/home-loans/fact-sheets/Standard_Variable_Rate.pdf"
             },
             {
@@ -398,10 +398,10 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0680",
+                "rate": "0.0780",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0694",
+                "comparisonRate": "0.0794",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Owner Occupied - Principal and Interest repayment type",
@@ -409,10 +409,10 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0610",
+                "rate": "0.0507",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0648",
+                "comparisonRate": "0.0547",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -423,7 +423,18 @@
                         "maximumValue": 99999999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
-                            "additionalInfo": "Wealth Package discount is based on the package lending balance when you apply for a package. Discount is only applicable with an active Wealth Package.",
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <=60%",
                             "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
                         }
                     }
@@ -433,21 +444,10 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0729",
-                "repaymentType": "INTEREST_ONLY",
+                "rate": "0.0510",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0715",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Owner Occupied - Interest Only payment type",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0659",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "comparisonRate": "0.0666",
+                "comparisonRate": "0.0550",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -458,22 +458,254 @@
                         "maximumValue": 99999999,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
-                            "additionalInfo": "Wealth Package discount is based on the package lending balance when you apply for a package Discount is only applicable with an active Wealth Package.",
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 60.01% - 70%",
                             "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
                         }
                     }
                 ],
-                "additionalInfo": "Owner Occupied - Interest Only payment type with Wealth Package",
+                "additionalInfo": "Owner Occupied - Principal and Interest repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0517",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0556",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 70.01% - 80%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Principal and Interest repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0574",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0613",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 90,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 80.01% - 90%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Principal and Interest repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0674",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0711",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 90.01,
+                        "maximumValue": 95,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 90.01% - 95%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Principal and Interest repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0829",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0816",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Owner Occupied - Interest Only payment type",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0556",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0564",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 60,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of <=60%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Interest Only repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0559",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0566",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 60.01% - 70%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Interest Only repayment type with Wealth Package",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0566",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0573",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 99999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Get a discounted interest rate depending on the Loan to Value ratio (LVR), and access to further interest rate discounts. To be eligible for a package, you must have an initial \u2018package lending balance\u2019 (total of all eligible home loans and the credit limit of Viridian Line of Credit) of at least $150,000 at the time of applying. From 19 November 2022, any new Standard Variable Rate home loans or top ups on existing Standard Variable Rate home loans, which are participating in a Package Agreement, are eligible for discounted interest rates based on LVR.",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    },
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "For home loans with new lending at 'Loan to Valuation Ratio' of 70.01% - 80%",
+                            "additionalInfoUri": "https://www.commbank.com.au/home-loans/wealth-package.html"
+                        }
+                    }
+                ],
+                "additionalInfo": "Owner Occupied - Interest Only repayment type with Wealth Package",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/home-loan-update-002842.pdf"
             }
         ],
         "productId": "f1d6fcc359804f3c9365d576c56356fc",
         "effectiveFrom": "1999-12-31T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2022-05-13T00:15:11.421339Z",
+        "lastUpdated": "2023-02-12T23:09:19.337598Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Standard Variable Rate Home Loan",
-        "description": "Our Standard Variable Rate Home Loan is a flexible loan with a full range of features and benefits.",
+        "description": "A competitive variable rate home loan with access to offset and an extensive range of features.",
         "brand": "CBA",
         "brandName": "CommBank",
         "applicationUri": "https://www.commbank.com.au/digital/homeloanappointment",

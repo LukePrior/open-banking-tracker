@@ -3,7 +3,7 @@
         "productId": "55090506",
         "effectiveFrom": "2012-02-10T11:00:00.000+11:00",
         "effectiveTo": "9999-12-31T11:00:00.000+11:00",
-        "lastUpdated": "2021-07-01T10:00:00.000+10:00",
+        "lastUpdated": "2023-01-01T11:00:00.000+11:00",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Deposit AUD 1M",
         "description": "Term Deposit AUD 1M",
@@ -30,13 +30,13 @@
             {
                 "constraintType": "OPENING_BALANCE",
                 "additionalValue": 1000,
-                "additionalInfo": "minimal opening balance AUD 1000"
+                "additionalInfo": "minimal opening balance AUD 10"
             }
         ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": null,
+                "additionalValue": 16,
                 "additionalInfo": "accepted visa required"
             }
         ],
@@ -44,13 +44,20 @@
         "depositRates": [
             {
                 "depositRateType": "FIXED",
+                "rate": 0.028,
                 "calculationFrequency": "P1D",
-                "additionalValue": null
+                "additionalValue": "Term Deposit AUD 1M"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": 0.012,
+                "calculationFrequency": "P1D",
+                "additionalValue": "Rollover Bonus Rate, when your 1 month term deposit aoto rollover to the new term."
             }
         ],
         "lendingRates": []
     },
     "links": {
-        "self": "https://gateway.bankofchina.com.au/cds-au/v1/banking/products/55090506"
+        "self": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55090506"
     }
 }

@@ -3,7 +3,7 @@
         "brand": "RAB",
         "description": "Versatile and competitive no frills credit card with low rates, low annual fee and great discounts for home loan borrowers.",
         "isTailored": false,
-        "lastUpdated": "2022-02-17T07:04:40.202932Z",
+        "lastUpdated": "2022-11-30T22:53:06.020069Z",
         "name": "Your Choice Visa Credit Card",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "productId": "8d097100-9251-4174-a9e5-8af00812ca87",
@@ -86,6 +86,12 @@
         ],
         "features": [
             {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Bank 24/7 wherever you are and whenever you want with RAB mobile and internet banking.",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
                 "featureType": "CARD_ACCESS",
                 "additionalInfo": "Visa Debit Card available to Australian Residents and members aged > 14 years",
                 "additionalInfoUri": null,
@@ -104,12 +110,6 @@
                 "additionalValue": "Apple, Google & Samsung Pay"
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Bank 24/7 wherever you are and whenever you want with RAB mobile and internet banking.",
-                "additionalInfoUri": null,
-                "additionalValue": null
-            },
-            {
                 "featureType": "FREE_TXNS",
                 "additionalInfo": "Free Branch withdrawals per month",
                 "additionalInfoUri": null,
@@ -122,20 +122,14 @@
                 "additionalValue": "This account can be used as the target of an NPP PayID."
             },
             {
-                "featureType": "INTEREST_FREE",
-                "additionalInfo": "Up to 55 days interest free on purchases",
-                "additionalInfoUri": "https://www.regionalaustraliabank.com.au/-/media/communitymutual/files/documents/pdf/member/visa-conditions-of-use.pdf",
-                "additionalValue": "P55D"
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "This account can be used to send an NPP payment.",
+                "featureType": "OTHER",
+                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time.",
                 "additionalInfoUri": null,
                 "additionalValue": null
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Ability to make extra payments or repay the balance in full at any time.",
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "This account can be used to send an NPP payment.",
                 "additionalInfoUri": null,
                 "additionalValue": null
             },
@@ -168,18 +162,38 @@
                 "additionalInfo": "Additional secondary cardholders are available where more than one card is required. An initial card on each account, replacements for defective cards and automatic card renewals are free. A fee applies for each additional card ordered at your request.",
                 "additionalInfoUri": null,
                 "additionalValue": null
+            },
+            {
+                "featureType": "INTEREST_FREE",
+                "additionalInfo": "Up to 55 days interest free on purchases",
+                "additionalInfoUri": "https://www.regionalaustraliabank.com.au/-/media/communitymutual/files/documents/pdf/member/visa-conditions-of-use.pdf",
+                "additionalValue": "P55D"
             }
         ],
         "fees": [
             {
-                "feeType": "DEPOSIT",
-                "name": "Inward Telegraphic Transfer FEE (in AUD)",
+                "feeType": "PERIODIC",
+                "name": "Inactive Account Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account.",
+                "additionalInfo": "Applies annually if there are no transactions on your membership in the preceding 12 months. ",
+                "additionalInfoUri": null,
+                "additionalValue": "P1Y",
+                "amount": "10.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Direct Debit Dishonour Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies where a direct debit request is rejected by us due to insufficient funds in your account.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "15.00",
+                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -200,17 +214,80 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "Inactive Account Fee",
+                "feeType": "DEPOSIT",
+                "name": "Inward Telegraphic Transfer FEE (in AUD)",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies annually if there are no transactions on your membership in the preceding 12 months. ",
+                "additionalInfo": "Applies to incoming Real Time Gross Settlement (RTGS)/ Telegraphic Transfers received to your account.",
                 "additionalInfoUri": null,
-                "additionalValue": "P1Y",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Replacement Card Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Electronic Transfer Trace Fees",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
                 "amount": "10.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Your Choice Visa Credit Card Annual Fee ",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies on 31st of March each calendar year after initial funding of your \u201cYour Choice Visa\u201d account. Fee does not apply to additional cardholders on the same Your Choice Visa account.",
+                "additionalInfoUri": null,
+                "additionalValue": "P1Y",
+                "amount": "40.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Partnership Advantage Package",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "$40 Annual Fee waived for customers who hold an active, funded Partnership Advantage Home Loan.",
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "40.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Annual Fee waived for customers who hold an active, funded Partnership Advantage Home Loan.",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -222,6 +299,62 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "12.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Foreign Currency Cheque Dishonour Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "30.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Over the Counter Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": null,
+                "discounts": [
+                    {
+                        "description": "Minimum Monthly Balance",
+                        "discountType": "BALANCE",
+                        "accruedRate": null,
+                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt. ",
+                        "additionalInfoUri": null,
+                        "additionalValue": "5000.00",
+                        "amount": "2.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Transaction Listing Print Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -270,6 +403,34 @@
                 "transactionRate": null
             },
             {
+                "feeType": "DEPOSIT",
+                "name": "Cheque Deposit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "0.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Over Limit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "3.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Interest on Over Limit Balances",
                 "accrualFrequency": null,
@@ -284,38 +445,17 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "Your Choice Visa Credit Card Annual Fee ",
+                "feeType": "DEPOSIT",
+                "name": "Foreign Cheque Deposit Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies on 31st of March each calendar year after initial funding of your \u201cYour Choice Visa\u201d account. Fee does not apply to additional cardholders on the same Your Choice Visa account.",
+                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account.",
                 "additionalInfoUri": null,
-                "additionalValue": "P1Y",
-                "amount": "40.00",
+                "additionalValue": null,
+                "amount": "10.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "Partnership Advantage Package",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "$40 Annual Fee waived for customers who hold an active, funded Partnership Advantage Home Loan.",
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "40.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Annual Fee waived for customers who hold an active, funded Partnership Advantage Home Loan.",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -334,69 +474,13 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Electronic Transfer Trace Fees",
+                "name": "Electronic Transfer Recall Fees",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently request us to check the transaction.",
+                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "10.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Default Notice Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "30.00",
-                "balanceRate": null,
-                "currency": null,
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "DEPOSIT",
-                "name": "Cheque Deposit Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Your first 10 cheque deposits to your membership each month are free, each subsequent deposit will be charged per cheque.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "0.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Cheque Deposit Dishonour Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "12.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "DEPOSIT",
-                "name": "Foreign Cheque Deposit Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies to each foreign cheque, whether in Australian dollars or another currency, deposited into your account.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "10.00",
+                "amount": "25.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -418,66 +502,24 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Transaction Listing Print Fee",
+                "name": "Default Notice Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies where you ask us to print a listing of your transactions. A minimum fee of $2.50 applies plus $0.50 per additional 2 pages or part thereof to a maximum of $10.00.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Foreign Currency Cheque Dishonour Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies when a foreign currency cheque or draft that has been deposited into an account has been dishonoured.",
+                "additionalInfo": "Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "30.00",
                 "balanceRate": null,
-                "currency": "AUD",
+                "currency": null,
                 "discounts": [],
                 "transactionRate": null
             },
             {
                 "feeType": "EVENT",
-                "name": "Electronic Transfer Recall Fees",
+                "name": "Cheque Deposit Dishonour Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Applies where you erroneously request a funds transfer to an external account and subsequently ask us to attempt to recall the transaction",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "25.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Direct Debit Dishonour Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies where a direct debit request is rejected by us due to insufficient funds in your account.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "12.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Over Limit Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies for each day that a Direct Debit or Cheque transaction is debited to a member which results in a deposit or overdraft account being drawn beyond its available balance or limit.",
+                "additionalInfo": "Applies to each cheque deposited to your account that is dishonoured by the drawer\u2019s bank.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "12.50",
@@ -497,48 +539,6 @@
                 "amount": "300.00",
                 "balanceRate": null,
                 "currency": "USD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "TRANSACTION",
-                "name": "Over the Counter Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies per counter withdrawal or debit transfer once the monthly limit of 6 included withdrawals is exceeded. ",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": null,
-                "discounts": [
-                    {
-                        "description": "Minimum Monthly Balance",
-                        "discountType": "BALANCE",
-                        "accruedRate": null,
-                        "additionalInfo": "Members with a monthly membership balance greater than $5,000 are exempt. ",
-                        "additionalInfoUri": null,
-                        "additionalValue": "5000.00",
-                        "amount": "2.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Replacement Card Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "The initial card on each account, replacements for defective cards and automatic card renewals are free, however a fee applies for each replacement card ordered at your request.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "5.00",
-                "balanceRate": null,
-                "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
             }

@@ -3,7 +3,7 @@
         "productId": "55940656",
         "effectiveFrom": "2021-07-01T10:00:00.000+10:00",
         "effectiveTo": "9999-12-31T11:00:00.000+11:00",
-        "lastUpdated": "2022-04-01T11:00:00.000+11:00",
+        "lastUpdated": "2023-01-01T11:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Online Saver Statement",
         "description": "Online Saver Statement",
@@ -36,7 +36,7 @@
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": null,
+                "additionalValue": 16,
                 "additionalInfo": "accepted visa required"
             }
         ],
@@ -55,23 +55,32 @@
         "depositRates": [
             {
                 "depositRateType": "FIXED",
+                "rate": 0.0005,
                 "calculationFrequency": "P1D",
-                "additionalValue": "base rate"
+                "additionalValue": "base rate for balance < $3,000 or =$5,000,000."
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": 0.023,
+                "calculationFrequency": "P1D",
+                "additionalValue": "base rate for balance between $3,000 and $4,999,999.99."
             },
             {
                 "depositRateType": "BONUS",
+                "rate": 0.02,
                 "calculationFrequency": "P1D",
-                "additionalValue": "new account bonus rate 1.2% for first 4 months, only new customer can enjoy this bonus rate."
+                "additionalValue": "new account bonus rate 2.00% for first 3 months for balance $3,000 to $499,999.99p, only new customer can enjoy this bonus rate."
             },
             {
                 "depositRateType": "BONUS",
+                "rate": 0.0145,
                 "calculationFrequency": "P1D",
-                "additionalValue": "after 4 months, customr can enjoy  1% existing customer bonus rate if the ending balance can increase no less than 1000 dollars compared to last month ending balance."
+                "additionalValue": "after 3 months, customer can enjoy 1.45% existing customer bonus rate if the ending balance can increase no less than 1000 dollars compared to last month ending balance."
             }
         ],
         "lendingRates": []
     },
     "links": {
-        "self": "https://gateway.bankofchina.com.au/cds-au/v1/banking/products/55940656"
+        "self": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940656"
     }
 }

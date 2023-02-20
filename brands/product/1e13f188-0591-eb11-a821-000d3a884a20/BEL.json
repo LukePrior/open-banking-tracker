@@ -3,7 +3,7 @@
         "productId": "BEL",
         "effectiveFrom": "2021-06-24T14:00:00.000Z",
         "effectiveTo": "2999-12-30T13:00:00.000Z",
-        "lastUpdated": "2022-09-15T14:00:00.000Z",
+        "lastUpdated": "2023-02-16T13:00:00.000Z",
         "productCategory": "BUSINESS_LOANS",
         "name": "Business Essentials Loan",
         "description": "Loan finance up to and including $3 million to support small business expansion, capital purchases and more.",
@@ -27,7 +27,7 @@
             },
             {
                 "featureType": "OFFSET",
-                "additionalInfo": "Reduce your interest repayments with our offset feature up to $1 million (variable only). The funds in your linked Suncorp business transaction account will offset, or reduce, the balance of your Small Business Essentials Loan.",
+                "additionalInfo": "Reduce your interest repayments with our offset feature (variable only). The funds in your linked Suncorp business transaction account will offset, or reduce, the balance of your Small Business Essentials Loan.",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html"
             },
             {
@@ -74,8 +74,8 @@
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
-                "additionalValue": "10000",
-                "additionalInfo": "Minimum Loan Balance of $10,000"
+                "additionalValue": "20000",
+                "additionalInfo": "Minimum Loan Balance of $20,000"
             },
             {
                 "constraintType": "MAX_BALANCE",
@@ -104,25 +104,17 @@
             {
                 "name": "Establishment Fee",
                 "feeType": "EVENT",
-                "amount": "750.00",
+                "amount": "800.00",
                 "currency": "AUD",
-                "additionalInfo": "New term loans between $10,000 and $999,999",
+                "additionalInfo": "New term loans between $20,000 and $499,999",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2"
             },
             {
                 "name": "Establishment Fee",
                 "feeType": "EVENT",
-                "amount": "1500.00",
+                "amount": "0*",
                 "currency": "AUD",
-                "additionalInfo": "New term loans between $1,000,000 and $1,999,999",
-                "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2"
-            },
-            {
-                "name": "Establishment Fee",
-                "feeType": "EVENT",
-                "amount": "2500.00",
-                "currency": "AUD",
-                "additionalInfo": "New term loans between $2,000,000 and $3,000,000",
+                "additionalInfo": "New term loans between $500,000 and $3,000,000 (* For new loan applications \u2265$500,000, the standard Loan Establishment Fee is waived for eligible applications lodged by 30/06/2023. Standard Loan Establishment Fees $800 for loans <$500,000 and 0.30% of the loan amount for loans \u2265$500,000).",
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2"
             },
             {
@@ -168,102 +160,13 @@
         ],
         "lendingRates": [
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0694",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y",
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P2Y",
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P3Y",
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0639",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P4Y",
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649",
-                "tiers": [
-                    {
-                        "name": "$10,000 - $999,999",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
-                        "maximumValue": 999999.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P5Y",
-                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
-            },
-            {
                 "lendingRateType": "FIXED",
                 "rate": "0.0594",
                 "tiers": [
                     {
-                        "name": "$10,000 - $999,999",
+                        "name": "$20,000 - $999,999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
+                        "minimumValue": 20000.0,
                         "maximumValue": 999999.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -273,12 +176,12 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0614",
+                "rate": "0.0594",
                 "tiers": [
                     {
-                        "name": "$10,000 - $999,999",
+                        "name": "$20,000 - $999,999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
+                        "minimumValue": 20000.0,
                         "maximumValue": 999999.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -288,12 +191,12 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0614",
+                "rate": "0.0574",
                 "tiers": [
                     {
-                        "name": "$10,000 - $999,999",
+                        "name": "$20,000 - $999,999",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
+                        "minimumValue": 20000.0,
                         "maximumValue": 999999.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -303,7 +206,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0694",
+                "rate": "0.0794",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -332,7 +235,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0569",
+                "rate": "0.0549",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -347,7 +250,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0569",
+                "rate": "0.0529",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -362,7 +265,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0589",
+                "rate": "0.0579",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -377,7 +280,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0599",
+                "rate": "0.0589",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -407,7 +310,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0564",
+                "rate": "0.0544",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -422,7 +325,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0564",
+                "rate": "0.0524",
                 "tiers": [
                     {
                         "name": "$1,000,000 - $3,000,000",
@@ -434,6 +337,95 @@
                 ],
                 "additionalValue": "P3Y",
                 "additionalInfo": "3 Year Fixed Interest In Advance. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0794",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P1Y",
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P2Y",
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P3Y",
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0629",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P4Y",
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "tiers": [
+                    {
+                        "name": "$20,000 - $999,999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 999999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P5Y",
+                "additionalInfo": "New Lending. Residential Security; Add 0.50% p.a. margin for commercial security"
             }
         ]
     },
