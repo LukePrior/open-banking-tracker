@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;ESS&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-04-30T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-12-19T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-02-27T13:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Everyday Essentials Account&quot;,
     &quot;description&quot;: &quot;A basic day-to-day transaction account for holders of concession and health care cards or recipients of government income support.&quot;,
@@ -71,11 +71,6 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/help-support/ways-to-bank/mobile-app/card-lock.html&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Suncorp Benefits - take advantage of special offers and discounts of up to 15% from major retailers.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/loyalty-program.html?intcmp=SUN:GI:PI:NPS:OSB:20180829:2921&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;
         },
         {
@@ -95,6 +90,10 @@
     ],
     &quot;eligibility&quot;: [
         {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Account owners must be residents of Australia&quot;
+        },
+        {
             &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
             &quot;additionalInfo&quot;: &quot;Account owners must be individuals as personal customers for personal use&quot;
         },
@@ -102,10 +101,6 @@
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;11&quot;,
             &quot;additionalInfo&quot;: &quot;Account owners must be 11 years or older&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Account owners must be residents of Australia&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -114,6 +109,26 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;8.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Non Suncorp Bank ATM withdrawals &amp; enquiries&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;ATM Operator Fee&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Accessibility Waiver&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1&quot;,
+                    &quot;additionalInfo&quot;: &quot;Waive ATM Operator fees&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Applies to customers with a permanent physical, intellectual disability or an impairment that restricts access to Suncorp Bank facilities.&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Real Time Gross Settlements (RTGS) - outward&quot;,
@@ -244,26 +259,6 @@
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Non Suncorp Bank ATM withdrawals &amp; enquiries&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;ATM Operator Fee&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;Accessibility Waiver&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;feeRate&quot;: &quot;1&quot;,
-                    &quot;additionalInfo&quot;: &quot;Waive ATM Operator fees&quot;,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalInfo&quot;: &quot;Applies to customers with a permanent physical, intellectual disability or an impairment that restricts access to Suncorp Bank facilities.&quot;
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }</textarea>

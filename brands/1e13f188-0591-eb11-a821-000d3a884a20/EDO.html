@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;EDO&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-04-30T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-02-14T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-02-27T13:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Everyday Options Account&quot;,
     &quot;description&quot;: &quot;An easy, everyday bank account packed with extras to help you spend, save and budget better.&quot;,
@@ -46,7 +46,7 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Pay $0 account keeping fees&quot;
+            &quot;additionalInfo&quot;: &quot;Pay $0 monthly account keeping fees&quot;
         },
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
@@ -108,11 +108,6 @@
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Don't travel? Card lock in mobile banking lets you lock your card for overseas instore purchases&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/help-support/ways-to-bank/mobile-app/card-lock.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Suncorp Benefits - take advantage of special offers and discounts of up to 15% from major retailers.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/loyalty-program.html?intcmp=SUN:GI:PI:NPS:OSB:20180829:2921&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -265,6 +260,22 @@
             &quot;additionalInfo&quot;: &quot;ATM Operator Fee&quot;
         },
         {
+            &quot;name&quot;: &quot;Visa debit card cash advance at non-Suncorp Bank Institution&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;per $1,000 advanced or part thereof&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Accessibility Waiver&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1&quot;,
+                    &quot;additionalInfo&quot;: &quot;Waive ATM Operator fees&quot;,
+                    &quot;eligibility&quot;: []
+                }
+            ]
+        },
+        {
             &quot;name&quot;: &quot;Telegraphic Transfers (staff assisted and via Global Payments) recall, amended, trace request&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;30.00&quot;,
@@ -283,22 +294,6 @@
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Visa debit card cash advance at non-Suncorp Bank Institution&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;per $1,000 advanced or part thereof&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;Accessibility Waiver&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;feeRate&quot;: &quot;1&quot;,
-                    &quot;additionalInfo&quot;: &quot;Waive ATM Operator fees&quot;,
-                    &quot;eligibility&quot;: []
-                }
-            ]
         }
     ],
     &quot;depositRates&quot;: [
@@ -332,6 +327,42 @@
             ],
             &quot;additionalValue&quot;: &quot;P11M&quot;,
             &quot;additionalInfo&quot;: &quot;11 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.04&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;12 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;1 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         },
         {
@@ -458,42 +489,6 @@
             ],
             &quot;additionalValue&quot;: &quot;P8M&quot;,
             &quot;additionalInfo&quot;: &quot;8 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.04&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 1000000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;12 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.013&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 1000000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;1 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         },
         {
