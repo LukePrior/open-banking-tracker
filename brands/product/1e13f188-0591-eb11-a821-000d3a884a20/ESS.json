@@ -3,7 +3,7 @@
         "productId": "ESS",
         "effectiveFrom": "2020-04-30T14:00:00.000Z",
         "effectiveTo": "2999-12-30T13:00:00.000Z",
-        "lastUpdated": "2022-12-19T13:00:00.000Z",
+        "lastUpdated": "2023-02-27T13:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Everyday Essentials Account",
         "description": "A basic day-to-day transaction account for holders of concession and health care cards or recipients of government income support.",
@@ -65,11 +65,6 @@
                 "additionalInfoUri": "https://www.suncorp.com.au/banking/help-support/ways-to-bank/mobile-app/card-lock.html"
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Suncorp Benefits - take advantage of special offers and discounts of up to 15% from major retailers.",
-                "additionalInfoUri": "https://www.suncorp.com.au/loyalty-program.html?intcmp=SUN:GI:PI:NPS:OSB:20180829:2921"
-            },
-            {
                 "featureType": "UNLIMITED_TXNS"
             },
             {
@@ -89,6 +84,10 @@
         ],
         "eligibility": [
             {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Account owners must be residents of Australia"
+            },
+            {
                 "eligibilityType": "NATURAL_PERSON",
                 "additionalInfo": "Account owners must be individuals as personal customers for personal use"
             },
@@ -96,10 +95,6 @@
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "11",
                 "additionalInfo": "Account owners must be 11 years or older"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Account owners must be residents of Australia"
             }
         ],
         "fees": [
@@ -108,6 +103,26 @@
                 "feeType": "EVENT",
                 "amount": "8.00",
                 "currency": "AUD"
+            },
+            {
+                "name": "Non Suncorp Bank ATM withdrawals & enquiries",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "ATM Operator Fee",
+                "discounts": [
+                    {
+                        "description": "Accessibility Waiver",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "feeRate": "1",
+                        "additionalInfo": "Waive ATM Operator fees",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Applies to customers with a permanent physical, intellectual disability or an impairment that restricts access to Suncorp Bank facilities."
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Real Time Gross Settlements (RTGS) - outward",
@@ -238,26 +253,6 @@
                 "feeType": "WITHDRAWAL",
                 "amount": "0.00",
                 "currency": "AUD"
-            },
-            {
-                "name": "Non Suncorp Bank ATM withdrawals & enquiries",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "ATM Operator Fee",
-                "discounts": [
-                    {
-                        "description": "Accessibility Waiver",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1",
-                        "additionalInfo": "Waive ATM Operator fees",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Applies to customers with a permanent physical, intellectual disability or an impairment that restricts access to Suncorp Bank facilities."
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     },

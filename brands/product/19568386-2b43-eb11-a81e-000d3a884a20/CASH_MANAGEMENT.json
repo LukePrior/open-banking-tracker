@@ -15,6 +15,16 @@
                 "featureType": "NOTIFICATIONS",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
             }
         ],
         "eligibility": [
@@ -25,6 +35,12 @@
             },
             {
                 "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "0",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -65,6 +81,103 @@
                             {
                                 "discountEligibilityType": "OTHER",
                                 "additionalInfo": "Maintain an aggregate balance over $1,000 across all your accounts",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            },
+            {
+                "name": "PAPER_STAT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.50",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": [
+                    {
+                        "description": "Paper Statement Fee",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "2.50",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "21",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "65",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "P3M",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "If you have a mortgage at First Option you will not be charged this fee",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Maintain an aggregate balance over $25,000 across all your accounts",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            },
+            {
+                "name": "STAFF_ASSIST_FEE",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://firstoptionbank.com.au/disclosure-statements/",
+                "discounts": [
+                    {
+                        "description": "Staff=assisted transfer fee",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "5.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "21",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "MIN_AGE",
+                                "additionalValue": "65",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "P3M",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "If you have a mortgage at First Option you will not be charged this fee",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Maintain an aggregate balance over $25,000 across all your accounts",
                                 "additionalInfoUri": ""
                             }
                         ],
@@ -195,7 +308,7 @@
             }
         ],
         "productId": "CASH_MANAGEMENT",
-        "lastUpdated": "2023-01-03T11:27:42.000+11:00",
+        "lastUpdated": "2023-02-27T15:59:45.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "CASH MANAGEMENT",
         "description": "CASH MANAGEMENT",
