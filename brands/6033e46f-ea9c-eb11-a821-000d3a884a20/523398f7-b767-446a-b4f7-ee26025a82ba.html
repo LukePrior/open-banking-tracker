@@ -117,10 +117,10 @@
     ],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null
+            &quot;additionalValue&quot;: &quot;Visa Debit Card&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
@@ -133,12 +133,6 @@
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: &quot;Bpay View&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;Visa Debit Card&quot;
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
@@ -159,6 +153,18 @@
             &quot;additionalValue&quot;: null
         },
         {
+            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;Bpay&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
@@ -177,12 +183,6 @@
             &quot;additionalValue&quot;: null
         },
         {
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;Bpay&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
@@ -196,6 +196,20 @@
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Bank First Cheque Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Coin Handling Fee&quot;,
@@ -212,13 +226,76 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Bank First Cheque Fee&quot;,
+            &quot;name&quot;: &quot;Deposit Cheque Dishonour Fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;amount&quot;: &quot;11.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Emergency Overseas Replacement Card Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;This Fee is waived for Platinum credit card holders&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/disclosure-documents&quot;,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;150.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Fee is waived for Platinum credit card holders&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: null
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                }
+            ],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Express Posting Of Card Or Pin In Australia&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Statement Request&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Fee charged $2 per month applies.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;2.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -268,27 +345,13 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Direct Entry Return Fee&quot;,
+            &quot;name&quot;: &quot;Stop Cheque Payment&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;$5.00 per voucher&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;2.50&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Replacement Card Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;$12.00 Staff Assisted and $8 via Mobile Banking App&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -297,6 +360,34 @@
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Direct Debit Dishonour Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Bank First Corporate Cheque Stop Payment&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Deposit Cheque Special Clearance Request&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
@@ -323,14 +414,14 @@
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Stop Cheque Payment&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;name&quot;: &quot;Non- Individual Membership Establishment Fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;$5.00 per voucher&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when a Non-Individual membership is established&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -338,37 +429,44 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Emergency Overseas Replacement Card Fee&quot;,
+            &quot;name&quot;: &quot;Replacement Card Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;$12.00 Staff Assisted and $8 via Mobile Banking App&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Overdrawn Account Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when your Transaction / Savings Account is overdrawn or the balance exceeds the limit of any Overdraft attached to the account at close of business and charged again at seven day increments if the balance remains overdrawn / limit exceeded.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;Account Keeping Fees&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;This Fee is waived for Platinum credit card holders&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;accruedRate&quot;: null,
-                    &quot;additionalInfo&quot;: &quot;&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/disclosure-documents&quot;,
-                    &quot;additionalValue&quot;: null,
-                    &quot;amount&quot;: &quot;150.00000000&quot;,
-                    &quot;balanceRate&quot;: null,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalInfo&quot;: &quot;Fee is waived for Platinum credit card holders&quot;,
-                            &quot;additionalInfoUri&quot;: null,
-                            &quot;additionalValue&quot;: null
-                        }
-                    ],
-                    &quot;feeRate&quot;: null,
-                    &quot;transactionRate&quot;: null
-                }
-            ],
+            &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
         },
         {
@@ -407,70 +505,14 @@
             &quot;transactionRate&quot;: &quot;0.0300000000000000&quot;
         },
         {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Bank First Corporate Cheque Stop Payment&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;name&quot;: &quot;Visa Debit Over The Counter Cash Advance&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Overdrawn Account Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when your Transaction / Savings Account is overdrawn or the balance exceeds the limit of any Overdraft attached to the account at close of business and charged again at seven day increments if the balance remains overdrawn / limit exceeded.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Deposit Cheque Special Clearance Request&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;name&quot;: &quot;Account Keeping Fees&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;name&quot;: &quot;Non- Individual Membership Establishment Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when a Non-Individual membership is established&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -492,41 +534,13 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Deposit Cheque Dishonour Fee&quot;,
+            &quot;name&quot;: &quot;Direct Entry Return Fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;11.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Statement Request&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Fee charged $2 per month applies.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Voucher Retrieval Fee For Cheque/Deposit&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;$5.00 per voucher&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -548,27 +562,13 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Express Posting Of Card Or Pin In Australia&quot;,
+            &quot;name&quot;: &quot;Voucher Retrieval Fee For Cheque/Deposit&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;$5.00 per voucher&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;name&quot;: &quot;Visa Debit Over The Counter Cash Advance&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&amp;hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],

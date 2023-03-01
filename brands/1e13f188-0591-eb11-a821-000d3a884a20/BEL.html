@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;BEL&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-06-24T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-02-16T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-15T14:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Business Essentials Loan&quot;,
     &quot;description&quot;: &quot;Loan finance up to and including $3 million to support small business expansion, capital purchases and more.&quot;,
@@ -33,7 +33,7 @@
         },
         {
             &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalInfo&quot;: &quot;Reduce your interest repayments with our offset feature (variable only). The funds in your linked Suncorp business transaction account will offset, or reduce, the balance of your Small Business Essentials Loan.&quot;,
+            &quot;additionalInfo&quot;: &quot;Reduce your interest repayments with our offset feature up to $1 million (variable only). The funds in your linked Suncorp business transaction account will offset, or reduce, the balance of your Small Business Essentials Loan.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html&quot;
         },
         {
@@ -80,8 +80,8 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;20000&quot;,
-            &quot;additionalInfo&quot;: &quot;Minimum Loan Balance of $20,000&quot;
+            &quot;additionalValue&quot;: &quot;10000&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum Loan Balance of $10,000&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
@@ -110,17 +110,25 @@
         {
             &quot;name&quot;: &quot;Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;800.00&quot;,
+            &quot;amount&quot;: &quot;750.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;New term loans between $20,000 and $499,999&quot;,
+            &quot;additionalInfo&quot;: &quot;New term loans between $10,000 and $999,999&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2&quot;
         },
         {
             &quot;name&quot;: &quot;Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0*&quot;,
+            &quot;amount&quot;: &quot;1500.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;New term loans between $500,000 and $3,000,000 (* For new loan applications \u2265$500,000, the standard Loan Establishment Fee is waived for eligible applications lodged by 30/06/2023. Standard Loan Establishment Fees $800 for loans &lt;$500,000 and 0.30% of the loan amount for loans \u2265$500,000).&quot;,
+            &quot;additionalInfo&quot;: &quot;New term loans between $1,000,000 and $1,999,999&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Establishment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2500.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;New term loans between $2,000,000 and $3,000,000&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/business/lending/loans/small-business-loan.html#tab2&quot;
         },
         {
@@ -166,13 +174,102 @@
     ],
     &quot;lendingRates&quot;: [
         {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0694&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0619&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0619&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0649&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0594&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;minimumValue&quot;: 10000.0,
                     &quot;maximumValue&quot;: 999999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
@@ -182,12 +279,12 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0594&quot;,
+            &quot;rate&quot;: &quot;0.0614&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;minimumValue&quot;: 10000.0,
                     &quot;maximumValue&quot;: 999999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
@@ -197,12 +294,12 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
+            &quot;rate&quot;: &quot;0.0614&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
+                    &quot;name&quot;: &quot;$10,000 - $999,999&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;minimumValue&quot;: 10000.0,
                     &quot;maximumValue&quot;: 999999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
@@ -212,7 +309,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0794&quot;,
+            &quot;rate&quot;: &quot;0.0694&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
@@ -241,7 +338,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
@@ -256,7 +353,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
@@ -267,21 +364,6 @@
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0579&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000000.0,
-                    &quot;maximumValue&quot;: 3000000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
             &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
         },
         {
@@ -296,6 +378,21 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000000.0,
+                    &quot;maximumValue&quot;: 3000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
             &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
         },
@@ -316,7 +413,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;rate&quot;: &quot;0.0564&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
@@ -331,7 +428,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
+            &quot;rate&quot;: &quot;0.0564&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$1,000,000 - $3,000,000&quot;,
@@ -343,95 +440,6 @@
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;additionalInfo&quot;: &quot;3 Year Fixed Interest In Advance. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0794&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0599&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0599&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0579&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0629&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0639&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$20,000 - $999,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000.0,
-                    &quot;maximumValue&quot;: 999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfo&quot;: &quot;New Lending. Residential Security; Add 0.50% p.a. margin for commercial security&quot;
         }
     ]
 }</textarea>
