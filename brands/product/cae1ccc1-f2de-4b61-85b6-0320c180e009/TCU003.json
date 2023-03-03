@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU003",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S3 Christmas Club Account",
         "description": "Christmas Savings account",
@@ -26,6 +26,13 @@
         "eligibility": [],
         "fees": [
             {
+                "name": "Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "additionalInfo": "Direct Debits and Cheques",
+                "discounts": []
+            },
+            {
                 "name": "Branch Withdrawal Fee",
                 "feeType": "WITHDRAWAL",
                 "amount": "5.00",
@@ -35,7 +42,7 @@
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.50",
+                "amount": "5.00",
                 "discounts": []
             },
             {
@@ -44,44 +51,38 @@
                 "amount": "10.00",
                 "additionalInfo": "Charged monthly when an account is not used for 12 months or more",
                 "discounts": []
-            },
-            {
-                "name": "Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "30.00",
-                "additionalInfo": "Direct Debits and Cheques",
-                "discounts": []
             }
         ],
         "depositRates": [
             {
-                "depositRateType": "FLOATING",
-                "rate": "0.10",
+                "depositRateType": "VARIABLE",
+                "rate": "1.00",
                 "calculationFrequency": "Daily",
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S3 Christmas Club Interest Tier 1",
+                        "name": "S3 Interest Tier 1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1.0,
                         "maximumValue": 999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    },
-                    {
-                        "name": "S3 Christmas Club Interest Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000.0,
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "PER_TIER"
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.25",
+                "rate": "2.25",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S3 Interest Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ],
         "lendingRates": []

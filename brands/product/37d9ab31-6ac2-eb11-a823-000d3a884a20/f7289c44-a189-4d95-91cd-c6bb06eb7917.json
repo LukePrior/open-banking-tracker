@@ -139,55 +139,16 @@
         "fees": [
             {
                 "feeType": "TRANSACTION",
-                "name": "BRANCH_CASH_WITHDRAWAL/MEMBER_CHEQUE_ENCASHMENT",
+                "name": "BANK@POST",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "2.75",
+                "amount": "3.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
-                    {
-                        "description": "Relationship Balance $10k to $175k",
-                        "discountType": "BALANCE",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Excludes speciallly requested services charges",
-                        "amount": "34.25000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
-                    {
-                        "description": "Free ATM or EFTPOS and free Branch Cash Withdrawals",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Age based fee discount - must be under 18 years old",
-                        "amount": "23.50000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
-                    {
-                        "description": "Member over 65 Years Old - 4 free Branch Cash Withdrawals",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Age based eligibility - greater than 65 Years of age",
-                        "amount": "11.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -196,6 +157,19 @@
                         "additionalInfoUri": null,
                         "additionalValue": "S4 and S9 products eligible",
                         "amount": "0.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Relationship Balance $10k to $175k",
+                        "discountType": "BALANCE",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Excludes speciallly requested services charges",
+                        "amount": "34.25000000",
                         "balanceRate": null,
                         "eligibility": [],
                         "feeRate": null,
@@ -311,30 +285,31 @@
                 "transactionRate": null
             },
             {
+                "feeType": "PAYMENT",
+                "name": "BANK_CHEQUE",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "10.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "TRANSACTION",
-                "name": "BANK@POST",
+                "name": "BRANCH_CASH_WITHDRAWAL/MEMBER_CHEQUE_ENCASHMENT",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "3.50",
+                "amount": "2.75",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
-                    {
-                        "description": "Excludes specially requested services charges",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "S4 and S9 products eligible",
-                        "amount": "0.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
                     {
                         "description": "Relationship Balance $10k to $175k",
                         "discountType": "BALANCE",
@@ -343,6 +318,45 @@
                         "additionalInfoUri": null,
                         "additionalValue": "Excludes speciallly requested services charges",
                         "amount": "34.25000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Free ATM or EFTPOS and free Branch Cash Withdrawals",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Age based fee discount - must be under 18 years old",
+                        "amount": "23.50000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Member over 65 Years Old - 4 free Branch Cash Withdrawals",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Age based eligibility - greater than 65 Years of age",
+                        "amount": "11.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Excludes specially requested services charges",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "S4 and S9 products eligible",
+                        "amount": "0.00000000",
                         "balanceRate": null,
                         "eligibility": [],
                         "feeRate": null,
@@ -362,20 +376,6 @@
                         "transactionRate": null
                     }
                 ],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PAYMENT",
-                "name": "BANK_CHEQUE",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "10.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -525,20 +525,6 @@
                         "transactionRate": null
                     }
                 ],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -714,6 +700,20 @@
                         "transactionRate": null
                     }
                 ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
                 "transactionRate": null
             },
             {

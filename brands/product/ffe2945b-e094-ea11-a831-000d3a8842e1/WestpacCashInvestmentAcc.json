@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "WestpacCashInvestmentAcc",
-        "lastUpdated": "2023-02-20T05:46:10Z",
+        "lastUpdated": "2023-03-01T05:17:15Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Cash Investment Account",
         "description": "The Westpac Cash Investment Account has been designed with Westpac share investors in mind by offering access to low brokerage, competitive interest rates, convenient features and seamless trade settlements.",
@@ -348,14 +348,44 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "[[Rates#INV|Westpac Cash Investment Account - Tier 6 - Over $250k.CIA_Tier6.InterestRate{OpenBankingShowAsDecimal}]]",
+                "rate": "0.016",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Above 250000",
+                        "name": "250000 to 1000000",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000
+                        "minimumValue": 250000,
+                        "maximumValue": 1000000
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily using a tiered interest rate, meaning the particular interest rate that applies to you will depend on the daily closing balance of your Cash Investment Account."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "1000000 to 5000000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000,
+                        "maximumValue": 5000000
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily using a tiered interest rate, meaning the particular interest rate that applies to you will depend on the daily closing balance of your Cash Investment Account."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Above 5000000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000000
                     }
                 ],
                 "additionalInfo": "Interest is calculated daily using a tiered interest rate, meaning the particular interest rate that applies to you will depend on the daily closing balance of your Cash Investment Account."
@@ -437,14 +467,44 @@
             },
             {
                 "depositRateType": "BONUS",
-                "rate": "[[Rates#INV|Westpac Cash Investment Account - Tier 6 - Over $250k.CIA_Tier6.BonusRate{OpenBankingShowAsDecimal}]]",
+                "rate": "0.001",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Above  250000",
+                        "name": "250000  to 1000000",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000
+                        "minimumValue": 250000,
+                        "maximumValue": 1000000
+                    }
+                ],
+                "additionalValue": "Bonus interest rate is applicable for balances of $5 million or less."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "1000000  to 5000000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000,
+                        "maximumValue": 5000000
+                    }
+                ],
+                "additionalValue": "Bonus interest rate is applicable for balances of $5 million or less."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Above  5000000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000000
                     }
                 ],
                 "additionalValue": "Bonus interest rate is applicable for balances of $5 million or less."

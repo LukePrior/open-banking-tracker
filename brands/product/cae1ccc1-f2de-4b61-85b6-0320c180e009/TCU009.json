@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU009",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S9 Child account",
         "description": "An account for children from birth to age 12",
@@ -35,60 +35,60 @@
         ],
         "fees": [
             {
-                "name": "NON-TCU owned ATM Withdrawal Fee",
-                "feeType": "WITHDRAWAL",
-                "amount": "3",
-                "discounts": []
-            },
-            {
-                "name": "NON-TCU owned ATM Declined Transaction Fee",
-                "feeType": "EVENT",
-                "amount": "2",
-                "discounts": []
-            },
-            {
-                "name": "Replacement Card Fee",
-                "feeType": "PERIODIC",
-                "amount": "10",
-                "additionalInfo": "Cuecards only issued on account - Charged at time of request",
-                "discounts": []
-            },
-            {
-                "name": "Dormant Account fee",
-                "feeType": "EVENT",
-                "amount": "10",
-                "additionalInfo": "Charged monthly when an account hasn't been used for 12 months or more",
-                "discounts": []
-            },
-            {
-                "name": "Dishonour Fee",
-                "feeType": "EVENT",
-                "amount": "30",
-                "additionalInfo": "Direct Debits and Cheques",
-                "discounts": []
-            },
-            {
-                "name": "Periodical Payment fee",
-                "feeType": "WITHDRAWAL",
-                "amount": "5",
-                "discounts": []
-            },
-            {
                 "name": "Periodical Payment Dishonour fee",
                 "feeType": "EVENT",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "NON-TCU owned ATM Balance Enquiry Fee",
                 "feeType": "EVENT",
                 "amount": "1.25",
+                "discounts": []
+            },
+            {
+                "name": "NON-TCU owned ATM Withdrawal Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "3.00",
+                "discounts": []
+            },
+            {
+                "name": "NON-TCU owned ATM Declined Transaction Fee",
+                "feeType": "EVENT",
+                "amount": "2.00",
+                "discounts": []
+            },
+            {
+                "name": "Replacement Card Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "additionalInfo": "Cuecards only issued on account - Charged at time of request",
+                "discounts": []
+            },
+            {
+                "name": "Dormant Account fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfo": "Charged monthly when an account hasn't been used for 12 months or more",
+                "discounts": []
+            },
+            {
+                "name": "Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "additionalInfo": "Direct Debits and Cheques",
+                "discounts": []
+            },
+            {
+                "name": "Periodical Payment fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
                 "discounts": []
             }
         ],
@@ -100,27 +100,28 @@
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S9 Child Account Interest Tier 1",
+                        "name": "S9 Interest Tier 1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1.0,
                         "maximumValue": 999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    },
-                    {
-                        "name": "S9 Child Account Interest Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000.0,
-                        "maximumValue": 0.0,
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.100",
+                "rate": "2.00",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S9 Interest Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
             }
         ],
         "lendingRates": []

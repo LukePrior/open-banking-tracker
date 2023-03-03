@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU0024",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-06-01T00:00:00.000+10:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S24 Low Usage Business Account",
         "description": "Everyday account for Businesses that have low transaction numbers per month",
@@ -37,46 +37,40 @@
             {
                 "name": "Dishonour fee",
                 "feeType": "EVENT",
-                "amount": "30",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debits and Cheques",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment fee",
                 "feeType": "WITHDRAWAL",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment Dishonour fee",
                 "feeType": "EVENT",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Dormant Account fee",
                 "feeType": "EVENT",
-                "amount": "10",
+                "amount": "10.00",
                 "additionalInfo": "Charged monthly on accounts not used for 12 months or mnore",
-                "discounts": []
-            },
-            {
-                "name": "Cheques",
-                "feeType": "PURCHASE",
-                "amount": "0.40",
                 "discounts": []
             },
             {
                 "name": "Account Service Fee",
                 "feeType": "PERIODIC",
-                "amount": "$10",
+                "amount": "10.00",
                 "additionalValue": "15",
                 "additionalInfo": "$15 of fees are calculated every month but charged at $10",
                 "discounts": [
                     {
                         "description": "The monthly fee is $10, but members get $15 worth of transaction fees included in the month. ",
                         "discountType": "FEE_CAP",
-                        "amount": "$5",
+                        "amount": "5.00",
                         "transactionRate": "15",
                         "eligibility": []
                     }
@@ -85,28 +79,28 @@
             {
                 "name": "Electronic Transaction Fee",
                 "feeType": "TRANSACTION",
-                "amount": "$0.20",
+                "amount": "0.20",
                 "additionalInfo": "Charged on transactions over the $15 allowance",
                 "discounts": []
             },
             {
                 "name": "Cheque Deposit Fee",
                 "feeType": "DEPOSIT",
-                "amount": "$0.60",
+                "amount": "0.60",
                 "additionalInfo": "Charged on transactions over the $15 allowance",
                 "discounts": []
             },
             {
                 "name": "Branch Transaction",
                 "feeType": "TRANSACTION",
-                "amount": "$1",
+                "amount": "1.00",
                 "additionalInfo": "Charged on transactions over the $15 allowance",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.5",
+                "amount": "5.00",
                 "discounts": []
             }
         ],
@@ -123,36 +117,83 @@
                         "minimumValue": 1.0,
                         "maximumValue": 19999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.25",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
                     {
                         "name": "S24 Interest Rate Tier 2",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 20000.0,
-                        "maximumValue": 99999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    },
-                    {
-                        "name": "S24 Interest Rate Tier 3",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
-                        "maximumValue": 0.0,
+                        "maximumValue": 49999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.050",
+                "rate": "0.50",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S24 Interest Rate Tier 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.100",
+                "rate": "1.00",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S24 Interest Rate Tier 4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.0,
+                        "maximumValue": 249999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "2.00",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S24 Interest Rate Tier 5",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.0,
+                        "maximumValue": 499999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "2.25",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S24 Interest Rate Tier 6",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ],
         "lendingRates": [

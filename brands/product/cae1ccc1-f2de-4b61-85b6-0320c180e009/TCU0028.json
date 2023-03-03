@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU0028",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S28 Benevolent Account",
         "description": "Day to day transaction account for charitable and 'not for profit' organisations ",
@@ -28,38 +28,38 @@
             {
                 "name": "Branch Withdrawal Transaction Fee",
                 "feeType": "TRANSACTION",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment fee",
                 "feeType": "WITHDRAWAL",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment Dishonour fee",
                 "feeType": "EVENT",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Dishonour fee",
                 "feeType": "UPFRONT",
-                "amount": "30",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debits and Cheques",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Dormant Account fee",
                 "feeType": "EVENT",
-                "amount": "10",
+                "amount": "10.00",
                 "additionalInfo": "Charged monthly to accunts not used for 12 months or more",
                 "discounts": []
             }
@@ -76,36 +76,82 @@
                         "unitOfMeasure": "Dollar",
                         "minimumValue": 1.0,
                         "maximumValue": 19999.99,
-                        "rateApplicationMethod": "Calculated on whole balance"
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.050",
-                "calculationFrequency": "Daily",
-                "applicationFrequency": "Monthly",
-                "tiers": []
+                "rate": ".25",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S28 Interest Rate Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.100",
+                "rate": ".50",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S28 Interest Rate Tier 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "1",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S28 Interest Rate Tier 4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.0,
+                        "maximumValue": 249999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "2",
                 "calculationFrequency": "Daily",
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S28 Interest Rate Tier 2",
+                        "name": "S28 Interest Rate Tier 5",
                         "unitOfMeasure": "Dollar",
-                        "minimumValue": 20000.0,
-                        "maximumValue": 99999.99,
-                        "rateApplicationMethod": "Calculated on whole balance"
-                    },
+                        "minimumValue": 250000.0,
+                        "maximumValue": 499999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "2.25",
+                "calculationFrequency": "Daily",
+                "applicationFrequency": "Monthly",
+                "tiers": [
                     {
-                        "name": "S28 Interest Rate Tier 3",
-                        "unitOfMeasure": "Dollar",
-                        "minimumValue": 100000.0,
+                        "name": "S28 Interest Tier 6",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
                         "maximumValue": 0.0,
-                        "rateApplicationMethod": "Calculated on whole balance"
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
             }

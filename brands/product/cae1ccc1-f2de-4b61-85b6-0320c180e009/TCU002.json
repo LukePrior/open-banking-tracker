@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU002",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2020-09-28T00:00:00.000+10:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S2 Budget Account",
         "description": "This account is used to save for a specific purpose.",
@@ -85,7 +85,7 @@
             {
                 "name": "Dishonour Fee",
                 "feeType": "EVENT",
-                "amount": "30.00",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debits and Cheques",
                 "discounts": []
             },
@@ -99,7 +99,7 @@
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.50",
+                "amount": "5.00",
                 "discounts": []
             },
             {
@@ -120,11 +120,34 @@
         ],
         "depositRates": [
             {
-                "depositRateType": "FIXED",
-                "rate": "0.05",
+                "depositRateType": "VARIABLE",
+                "rate": "0.01",
                 "calculationFrequency": "Daily",
                 "applicationFrequency": "Monthly",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S2 Interest Tier 1",
+                        "unitOfMeasure": "Dollar",
+                        "minimumValue": 1.0,
+                        "maximumValue": 999.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "2.00",
+                "calculationFrequency": "DAILY",
+                "applicationFrequency": "MONTHLY",
+                "tiers": [
+                    {
+                        "name": "S2 Interest Rate Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
             }
         ],
         "lendingRates": []

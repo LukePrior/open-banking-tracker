@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU001",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-10-01T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S1 Everyday Account",
         "description": "Premium access everyday transaction and savings account.",
@@ -87,14 +87,14 @@
             {
                 "name": "Dishonour Fee",
                 "feeType": "EVENT",
-                "amount": "30.00",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debit and Cheque Dishonours",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "EVENT",
-                "amount": "6.50",
+                "amount": "5.00",
                 "discounts": []
             },
             {
@@ -113,27 +113,28 @@
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S1 Everyday account Interest Tier 1",
+                        "name": "S1 Interest Rate Tier 1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1.0,
                         "maximumValue": 999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    },
-                    {
-                        "name": "S1 Everyday account Interest Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000.0,
-                        "maximumValue": 0.0,
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.100",
+                "rate": "2.00",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S1 Interest Rate Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
             }
         ],
         "lendingRates": []

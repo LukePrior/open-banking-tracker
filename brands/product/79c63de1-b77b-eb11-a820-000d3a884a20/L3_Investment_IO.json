@@ -1,5 +1,21 @@
 {
     "data": {
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "10000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
         "fees": [
             {
                 "name": "ACCOUNT_KEEPING_FEE",
@@ -121,30 +137,20 @@
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0509",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0795",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "P24M",
                 "additionalInfo": "Interest only period up to five years",
                 "additionalInfoUri": "",
                 "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0775",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "",
-                "additionalInfoUri": "",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST"
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
             }
         ],
         "productId": "L3_Investment_IO",
         "effectiveFrom": "2021-02-25T00:00:00.000+10:00",
-        "lastUpdated": "2023-02-24T09:50:10.000+10:00",
+        "lastUpdated": "2023-03-02T08:49:22.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Investment property loan Interest Only",
         "description": "A flexible loan to assist in the purchase of an investment property.",
