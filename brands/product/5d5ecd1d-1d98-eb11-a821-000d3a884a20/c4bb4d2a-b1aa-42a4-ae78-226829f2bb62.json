@@ -77,17 +77,38 @@
         ],
         "fees": [
             {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee",
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
+                "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": "500.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
+                "discounts": [
+                    {
+                        "description": "DHOAS eligible applicants",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -134,13 +155,27 @@
             },
             {
                 "feeType": "VARIABLE",
-                "name": "Stamp Duty",
+                "name": "Property valuation fee - construction",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "At cost",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Other Bank Deposit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "6.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -175,20 +210,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee - construction",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Copies of statements (over 12 months) per page",
                 "accrualFrequency": null,
@@ -217,14 +238,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "DEPOSIT",
-                "name": "Other Bank Deposit Fee",
+                "feeType": "EVENT",
+                "name": "Copies of statements (up to 12 months) at branch",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "6.50",
+                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -245,41 +266,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": null,
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS eligible applicants",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Audit Certificate Fee",
                 "accrualFrequency": null,
@@ -288,6 +274,20 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "50.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Stamp Duty",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "At cost",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -308,14 +308,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) at branch",
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "At cost. Minimum is $250.00",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "2.50",
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
