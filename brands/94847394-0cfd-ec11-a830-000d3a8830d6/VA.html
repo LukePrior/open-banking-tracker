@@ -8,15 +8,38 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;VA&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-09-30T00:38:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-13T04:37:37.194Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-03-15T01:22:32.389Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Virtual Accounts&quot;,
-    &quot;description&quot;: &quot;A unique reference number to help Wholesale banking clients with Payor identification&quot;,
+    &quot;description&quot;: &quot;HSBC offers two types of Virtual Accounts (VA): (1) Traditional VA - A unique reference number in the format of a BSB and account number that payors can use to make a payment to help Wholesale banking customers with payor identification; (2) Next Generation Virtual Account Management - A solution that can help reduce the number of physical bank accounts held by the customer and streamline bank account management and reconciliation activities&quot;,
     &quot;brand&quot;: &quot;VA&quot;,
-    &quot;isTailored&quot;: false,
+    &quot;brandName&quot;: &quot;Wholesale Banking&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.business.hsbc.com.au/en-au/products-and-solutions/bank&quot;,
+    &quot;isTailored&quot;: true,
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
+            &quot;additionalValue&quot;: &quot;There is no limit to the number of transactions that can be made into the virtual account&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Applicable to Next Generation Virtual Account Management only. User interface is accessible through HSBCnet. Enables customer to visualise virtual account balances, self-manage certain virtual account parameters (open/close, rename virtual accounts), download virtual account reporting.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Receivables reporting&quot;,
+            &quot;additionalInfo&quot;: &quot;Virtual account transactions are identifiable in the regular bank statement. However, a dedicated report for receipts, including receipts into a virtual account, is available as an optional feature.&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
+            &quot;additionalValue&quot;: &quot;Corporate customers only&quot;
+        }
+    ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Establishment Fee&quot;,
+            &quot;name&quot;: &quot;Establishment Fee - Traditional VA&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;1500.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
@@ -26,13 +49,29 @@
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;250.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Monthly fee&quot;
+            &quot;additionalValue&quot;: &quot;Monthly fee per physical account&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable to Traditional VA and Next Generation Virtual Account Management&quot;
         },
         {
-            &quot;name&quot;: &quot;Transaction fee&quot;,
+            &quot;name&quot;: &quot;Transaction fee - Traditional VA&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;0.30&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Fee charged for each transaction made into a virtual account. This is  charged in addition to the usual transaction fees.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Establishment Fee - Next Generation Virtual Account Management&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;800.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Maintenance fee - Next Generation Virtual Account Management&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Monthly fee per virtual account. This is charged in addition to the maintenance fee for the physical account.&quot;,
+            &quot;additionalInfo&quot;: &quot;$1 per virtual account, subject to a minimum charge of $300.&quot;
         }
     ]
 }</textarea>
