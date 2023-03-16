@@ -2,7 +2,7 @@
     "data": {
         "productId": "172",
         "effectiveFrom": "2021-04-26T14:30:00.0000000Z",
-        "lastUpdated": "2023-02-21T00:00:31.1972909Z",
+        "lastUpdated": "2023-03-15T02:08:47.2204129Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Green Home Loan",
         "description": "Green Home Loan",
@@ -70,13 +70,19 @@
                 "feeType": "PERIODIC",
                 "amount": "299.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"Year(s)\" }",
                 "additionalInfo": "Payable at settlement and then again on each anniversary",
                 "discounts": [
                     {
                         "description": "The discount is only available during an introductory period",
                         "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0"
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "100"
+                            }
+                        ]
                     }
                 ]
             },
@@ -85,7 +91,7 @@
                 "feeType": "PERIODIC",
                 "amount": "299.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"Year(s)\" }",
                 "additionalInfo": "Annual Home Loan Fee"
             },
             {
@@ -206,8 +212,8 @@
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0479",
                 "comparisonRate": "0.0509",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalInfo": "Green Home Loan"
             }

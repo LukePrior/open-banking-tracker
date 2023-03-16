@@ -2,7 +2,7 @@
     "data": {
         "productId": "23",
         "effectiveFrom": "2006-08-29T14:30:00.0000000Z",
-        "lastUpdated": "2023-02-01T02:00:20.4098471Z",
+        "lastUpdated": "2023-03-15T06:24:40.7338400Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S40 Home Equity Advantage",
         "description": "Borrow Using The Equity Of Your Home, Or An Investment Property, With An Overdraft Limit Linked To Your Transactional Account. A Secured Overdraft Facility Gives You The Financial Freedom And Flexibility To Pursue Your Financial Goals.",
@@ -402,7 +402,7 @@
                 "feeType": "PERIODIC",
                 "amount": "7.00",
                 "currency": "AUD",
-                "additionalValue": "P1M"
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }"
             },
             {
                 "name": "Enforcement Expense",
@@ -415,16 +415,16 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"Month(s)\" }"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0555",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalInfo": "Reference Rate Provided And Subject To Assessment Of Application For Credit, With Interest Rate Being Offered Upon Approval"
             }
