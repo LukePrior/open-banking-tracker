@@ -6,8 +6,8 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;effectiveFrom&quot;: &quot;2022-05-03T00:30:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-08T03:19:53.000Z&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-05-03T00:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-03-16T13:35:22.000Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Bendigo Express Home Loan&quot;,
     &quot;description&quot;: &quot;The Bendigo Express is an online home loan which enables a customer to apply and be approved for a home loan digitally. The application form will be hosted by our partner Tic Toc.&quot;,
@@ -17,16 +17,17 @@
     &quot;isTailored&quot;: true,
     &quot;bundles&quot;: [],
     &quot;cardArt&quot;: [],
-    &quot;depositRates&quot;: [],
-    &quot;fees&quot;: [
+    &quot;eligibility&quot;: [
         {
-            &quot;name&quot;: &quot;Switch Loan type fee&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;amount&quot;: &quot;150.000000&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.&quot;,
-            &quot;discounts&quot;: []
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Credit and Lending Criteria, Fees and Charges Apply&quot;
         },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
+        }
+    ],
+    &quot;fees&quot;: [
         {
             &quot;name&quot;: &quot;Duplicate Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -39,6 +40,14 @@
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;250.000000&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Switch Loan type fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;amount&quot;: &quot;150.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.&quot;,
             &quot;discounts&quot;: []
         },
         {
@@ -114,26 +123,6 @@
             &quot;discounts&quot;: []
         }
     ],
-    &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Credit and Lending Criteria, Fees and Charges Apply&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;
-        }
-    ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;1&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;5000&quot;
-        }
-    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -152,102 +141,54 @@
             &quot;additionalInfo&quot;: &quot;Up to six offset accounts can be connected to the product&quot;
         }
     ],
+    &quot;depositRates&quot;: [],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;1&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000&quot;
+        }
+    ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0614000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0562000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0553000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0524000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0523000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0550000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0594000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0539000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0614000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0544000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0515000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0566000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0549000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0514000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0547000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0517000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0542000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0544000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0506000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0614000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0536000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0557000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
             &quot;tiers&quot;: []
         },
@@ -257,59 +198,66 @@
             &quot;comparisonRate&quot;: &quot;0.0512000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0533000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0472000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0487000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0572000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0542000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0614000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0534000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0594000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0557000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0543000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0584000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0521000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0624000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0552000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0634000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0568000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0583000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0624000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0529000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0572000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
             &quot;tiers&quot;: []
         },
         {
@@ -318,51 +266,127 @@
             &quot;comparisonRate&quot;: &quot;0.0553000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0584000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0498000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0624000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0556000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0560000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0594000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0539000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0614000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0563000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;tiers&quot;: []
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0634000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0532000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0553000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
             &quot;tiers&quot;: []
         },
         {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0517000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0519000000000000&quot;,
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0624000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0547000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0614000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0577000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0574000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0533000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0574000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0527000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0604000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0545000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0634000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0568000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0531000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0522000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0537000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0594000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0554000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
             &quot;tiers&quot;: []
         }
     ],

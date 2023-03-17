@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BROKER HOME LOAN OWNER OCCUPIED VARIABLE RATE 80%-90% LVR</title>
+    <title>PREMIUM HOME LOAN OWNER OCCUPIED VARIABLE RATE LVR EQUAL OR LESS THAN 80%</title>
   </head>
   <body>
     <div>
@@ -13,6 +13,11 @@
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
+            &quot;featureType&quot;: &quot;OFFSET&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;REDRAW&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
@@ -21,17 +26,12 @@
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Available for Construction loans&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;100000.00&quot;,
+            &quot;additionalValue&quot;: &quot;250000.00&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         }
@@ -48,11 +48,6 @@
             &quot;additionalValue&quot;: &quot;Y&quot;,
             &quot;additionalInfo&quot;: &quot;Must be Australian resident&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot; Only available for business introduced through Broker Channel.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -66,13 +61,13 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;
         },
         {
-            &quot;name&quot;: &quot;PROPERTY_VALUATION_FEE_BROKER&quot;,
+            &quot;name&quot;: &quot;PROPERTY_VALUATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;If using a property as security for the loan, we need to confirm what the property is worth. This fee covers the cost of valuing your property which can vary depending on type and complexity of the property. Fee varies dependent on type and complexity of property. Minimum fee shown.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/home-loan-product-schedule_broker/&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/&quot;
         },
         {
             &quot;name&quot;: &quot;CONSTRUCTION_LOAN_PROGRESS_FEE&quot;,
@@ -165,6 +160,15 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;
         },
         {
+            &quot;name&quot;: &quot;HOME_LOAN_ESTABLISHMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;699.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A one off upfront fee for setting up your home loan.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/&quot;
+        },
+        {
             &quot;name&quot;: &quot;LOAN_VARIATION&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;150.00&quot;,
@@ -201,20 +205,35 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;
         }
     ],
-    &quot;productId&quot;: &quot;BROKER_HOME_LOAN_OO_VAR_80-90LVR&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-08T14:29:35.000+11:00&quot;,
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0498&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.sccu.com.au/loan-interest-rate-schedule/&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0503&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;PREMIUM_HOME_LOAN_OO_VAR_UNDER_80LVR&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-08-02T00:00:00.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-03-16T13:41:40.000+11:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
-    &quot;name&quot;: &quot;BROKER HOME LOAN OWNER OCCUPIED VARIABLE RATE 80%-90% LVR&quot;,
-    &quot;description&quot;: &quot;Third Party Introduced business suitable for Owner Occupied borrowing where your LVR is between 80% to 90%.&quot;,
+    &quot;name&quot;: &quot;PREMIUM HOME LOAN OWNER OCCUPIED VARIABLE RATE LVR EQUAL OR LESS THAN 80%&quot;,
+    &quot;description&quot;: &quot;Suitable for borrowing over $250k where an offset account is important and LVR is equal or less than 80%&quot;,
     &quot;brand&quot;: &quot;S&quot;,
     &quot;brandName&quot;: &quot;SCCU&quot;,
     &quot;applicationUri&quot;: &quot;&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.sccu.com.au/sccu-home-loan-broker-product-schedule/&quot;,
-        &quot;termsUri&quot;: &quot;&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.sccu.com.au/personal/loans/&quot;,
+        &quot;termsUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;,
         &quot;eligibilityUri&quot;: &quot;&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.sccu.com.au/sccu-home-loan-broker-product-schedule/&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.sccu.com.au/about-us/reports-and-disclosures/&quot;,
         &quot;bundleUri&quot;: &quot;&quot;
     }
 }</textarea>

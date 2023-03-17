@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;43&quot;,
     &quot;effectiveFrom&quot;: &quot;2022-03-27T13:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-13T22:00:26.3645325Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-03-16T01:26:06.7317820Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;FTD - Interest Annually&quot;,
     &quot;description&quot;: &quot;Fixed Term Deposits are available for terms from 3mths to 36mths.  Fixed Term Deposits allow you to lock funds away for the agreed time, at the agreed rate with options for interest to be paid monthly, annually or at the end term.&quot;,
@@ -30,6 +30,7 @@
             &quot;name&quot;: &quot;Early Redemption Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;accruedRate&quot;: &quot;0.005&quot;,
+            &quot;accrualFrequency&quot;: &quot;{ \&quot;Term\&quot;: 0, \&quot;Period\&quot;: \&quot;Day(s)\&quot; }&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Calculated as follows: Principal x (Early Redemption Rate of 0.5%) x (days invested/365)&quot;
         }
@@ -38,8 +39,8 @@
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.042&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;calculationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 1, \&quot;Period\&quot;: \&quot;Day(s)\&quot; }&quot;,
+            &quot;applicationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 12, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;24 month term, balances $5,000 &lt; $1,000,000&quot;,
@@ -49,14 +50,14 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalValue&quot;: &quot;{ \&quot;Term\&quot;: 24, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;additionalInfo&quot;: &quot;24 month term, balances $5,000 &lt; $1,000,000&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.042&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;calculationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 1, \&quot;Period\&quot;: \&quot;Day(s)\&quot; }&quot;,
+            &quot;applicationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 12, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;24 month term, balances less than $5,000&quot;,
@@ -66,14 +67,14 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalValue&quot;: &quot;{ \&quot;Term\&quot;: 24, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;additionalInfo&quot;: &quot;24 month term, balances less than $5,000&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.04&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;calculationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 1, \&quot;Period\&quot;: \&quot;Day(s)\&quot; }&quot;,
+            &quot;applicationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 12, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;36 month term, balances $5,000 &lt; $1,000,000&quot;,
@@ -83,14 +84,14 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalValue&quot;: &quot;{ \&quot;Term\&quot;: 36, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;additionalInfo&quot;: &quot;36 month term, balances $5,000 &lt; $1,000,000&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.04&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;calculationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 1, \&quot;Period\&quot;: \&quot;Day(s)\&quot; }&quot;,
+            &quot;applicationFrequency&quot;: &quot;{ \&quot;Term\&quot;: 12, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;36 month term, balances less than $5,000&quot;,
@@ -100,7 +101,7 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalValue&quot;: &quot;{ \&quot;Term\&quot;: 36, \&quot;Period\&quot;: \&quot;Month(s)\&quot; }&quot;,
             &quot;additionalInfo&quot;: &quot;36 month term, balances less than $5,000&quot;
         }
     ]
