@@ -1,7 +1,7 @@
 {
     "data": {
-        "effectiveFrom": "2022-05-03T00:30:00.000Z",
-        "lastUpdated": "2023-03-08T03:19:53.000Z",
+        "effectiveFrom": "2022-05-03T00:00:00.000Z",
+        "lastUpdated": "2023-03-16T13:35:22.000Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Bendigo Express Home Loan",
         "description": "The Bendigo Express is an online home loan which enables a customer to apply and be approved for a home loan digitally. The application form will be hosted by our partner Tic Toc.",
@@ -11,16 +11,17 @@
         "isTailored": true,
         "bundles": [],
         "cardArt": [],
-        "depositRates": [],
-        "fees": [
+        "eligibility": [
             {
-                "name": "Switch Loan type fee",
-                "feeType": "VARIABLE",
-                "amount": "150.000000",
-                "currency": "AUD",
-                "additionalInfo": "Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.",
-                "discounts": []
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply"
             },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            }
+        ],
+        "fees": [
             {
                 "name": "Duplicate Fee",
                 "feeType": "EVENT",
@@ -33,6 +34,14 @@
                 "feeType": "UPFRONT",
                 "amount": "250.000000",
                 "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Switch Loan type fee",
+                "feeType": "VARIABLE",
+                "amount": "150.000000",
+                "currency": "AUD",
+                "additionalInfo": "Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.",
                 "discounts": []
             },
             {
@@ -108,26 +117,6 @@
                 "discounts": []
             }
         ],
-        "eligibility": [
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
-            }
-        ],
-        "constraints": [
-            {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "1"
-            },
-            {
-                "constraintType": "OPENING_BALANCE",
-                "additionalValue": "5000"
-            }
-        ],
         "features": [
             {
                 "featureType": "OTHER",
@@ -146,102 +135,54 @@
                 "additionalInfo": "Up to six offset accounts can be connected to the product"
             }
         ],
+        "depositRates": [],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1"
+            },
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "5000"
+            }
+        ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0614000000000000",
-                "comparisonRate": "0.0562000000000000",
+                "comparisonRate": "0.0553000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P5Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0624000000000000",
-                "comparisonRate": "0.0524000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P1Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0604000000000000",
-                "comparisonRate": "0.0523000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P1Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0604000000000000",
-                "comparisonRate": "0.0550000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P4Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0594000000000000",
-                "comparisonRate": "0.0539000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P5Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0614000000000000",
-                "comparisonRate": "0.0544000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "additionalValue": "P3Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0574000000000000",
-                "comparisonRate": "0.0515000000000000",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0566000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P3Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0549000000000000",
-                "comparisonRate": "0.0514000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "additionalValue": "P4Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0547000000000000",
-                "comparisonRate": "0.0517000000000000",
+                "rate": "0.0542000000000000",
+                "comparisonRate": "0.0544000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0574000000000000",
-                "comparisonRate": "0.0506000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P2Y",
+                "repaymentType": "INTEREST_ONLY",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0614000000000000",
-                "comparisonRate": "0.0536000000000000",
+                "comparisonRate": "0.0557000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "additionalValue": "P2Y",
                 "tiers": []
             },
@@ -251,59 +192,66 @@
                 "comparisonRate": "0.0512000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0604000000000000",
-                "comparisonRate": "0.0533000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P2Y",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": []
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0472000000000000",
-                "comparisonRate": "0.0487000000000000",
+                "rate": "0.0572000000000000",
+                "comparisonRate": "0.0542000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0614000000000000",
-                "comparisonRate": "0.0534000000000000",
+                "rate": "0.0594000000000000",
+                "comparisonRate": "0.0557000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "additionalValue": "P3Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0624000000000000",
-                "comparisonRate": "0.0543000000000000",
+                "rate": "0.0584000000000000",
+                "comparisonRate": "0.0521000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P4Y",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0624000000000000",
+                "comparisonRate": "0.0552000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "additionalValue": "P1Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0634000000000000",
-                "comparisonRate": "0.0568000000000000",
+                "comparisonRate": "0.0583000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "additionalValue": "P5Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0624000000000000",
-                "comparisonRate": "0.0529000000000000",
+                "comparisonRate": "0.0572000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P1Y",
+                "repaymentType": "INTEREST_ONLY",
+                "additionalValue": "P4Y",
                 "tiers": []
             },
             {
@@ -312,51 +260,127 @@
                 "comparisonRate": "0.0553000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P5Y",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0584000000000000",
-                "comparisonRate": "0.0498000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P1Y",
+                "repaymentType": "INTEREST_ONLY",
+                "additionalValue": "P2Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0624000000000000",
-                "comparisonRate": "0.0556000000000000",
+                "comparisonRate": "0.0560000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "additionalValue": "P4Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0594000000000000",
-                "comparisonRate": "0.0539000000000000",
+                "rate": "0.0614000000000000",
+                "comparisonRate": "0.0563000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "additionalValue": "P3Y",
                 "tiers": []
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0634000000000000",
-                "comparisonRate": "0.0532000000000000",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0553000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "additionalValue": "P2Y",
                 "tiers": []
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0517000000000000",
-                "comparisonRate": "0.0519000000000000",
+                "lendingRateType": "FIXED",
+                "rate": "0.0624000000000000",
+                "comparisonRate": "0.0547000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0614000000000000",
+                "comparisonRate": "0.0577000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P5Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0574000000000000",
+                "comparisonRate": "0.0533000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0574000000000000",
+                "comparisonRate": "0.0527000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0545000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0634000000000000",
+                "comparisonRate": "0.0568000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "additionalValue": "P5Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0549000000000000",
+                "comparisonRate": "0.0531000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0522000000000000",
+                "comparisonRate": "0.0537000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0594000000000000",
+                "comparisonRate": "0.0554000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalValue": "P5Y",
                 "tiers": []
             }
         ],

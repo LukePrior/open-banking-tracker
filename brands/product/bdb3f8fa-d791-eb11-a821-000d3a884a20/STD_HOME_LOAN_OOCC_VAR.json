@@ -7,6 +7,11 @@
                 "additionalInfoUri": ""
             },
             {
+                "featureType": "OFFSET",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
                 "featureType": "REDRAW",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
@@ -15,17 +20,12 @@
                 "featureType": "OTHER",
                 "additionalInfo": "Available for Construction loans",
                 "additionalInfoUri": ""
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalInfo": "",
-                "additionalInfoUri": ""
             }
         ],
         "constraints": [
             {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "100000.00",
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "250000.00",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -42,11 +42,6 @@
                 "additionalValue": "Y",
                 "additionalInfo": "Must be Australian resident",
                 "additionalInfoUri": ""
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": " Only available for business introduced through Broker Channel.",
-                "additionalInfoUri": ""
             }
         ],
         "fees": [
@@ -60,13 +55,13 @@
                 "additionalInfoUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/"
             },
             {
-                "name": "PROPERTY_VALUATION_FEE_BROKER",
+                "name": "PROPERTY_VALUATION_FEE",
                 "feeType": "EVENT",
                 "amount": "300.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "If using a property as security for the loan, we need to confirm what the property is worth. This fee covers the cost of valuing your property which can vary depending on type and complexity of the property. Fee varies dependent on type and complexity of property. Minimum fee shown.",
-                "additionalInfoUri": "https://www.sccu.com.au/home-loan-product-schedule_broker/"
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/"
             },
             {
                 "name": "CONSTRUCTION_LOAN_PROGRESS_FEE",
@@ -159,6 +154,15 @@
                 "additionalInfoUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/"
             },
             {
+                "name": "HOME_LOAN_ESTABLISHMENT_FEE",
+                "feeType": "UPFRONT",
+                "amount": "699.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "A one off upfront fee for setting up your home loan.",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/"
+            },
+            {
                 "name": "LOAN_VARIATION",
                 "feeType": "EVENT",
                 "amount": "150.00",
@@ -184,36 +188,41 @@
                 "currency": "AUD",
                 "additionalInfo": "automated computer valuation done using property data, recent comparable sales and property listings",
                 "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-and-charges-home-loan-products/"
-            },
-            {
-                "name": "GUARANTOR_SECURITY_VARIATION",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Changes to guarantor security and removing guarantor for loan. Charged per guarantor",
-                "additionalInfoUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/"
             }
         ],
-        "productId": "BROKER_INVESTOR_HOME_LOAN_INV_VAR_LE80LVR",
-        "lastUpdated": "2023-03-08T14:50:39.000+11:00",
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0708",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.sccu.com.au/loan-interest-rate-schedule/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0714",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            }
+        ],
+        "productId": "STD_HOME_LOAN_OOCC_VAR",
+        "lastUpdated": "2023-03-16T13:57:47.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "BROKER INVESTOR HOME LOAN INVESTMENT VARIABLE RATE LE 80%LVR",
-        "description": "Third Party Introduced business suitable for Investment borrowing where your LVR is less than or equal 80%",
+        "name": "STANDARD HOME LOAN OWNER OCCUPIED VARIABLE RATE PRINCIPAL AND INTEREST",
+        "description": "Suitable for borrowing up to $250k and maximum LVR of 90%",
         "brand": "S",
         "brandName": "SCCU",
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.sccu.com.au/sccu-home-loan-broker-product-schedule/",
-            "termsUri": "",
+            "overviewUri": "https://www.sccu.com.au/personal/loans/",
+            "termsUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "eligibilityUri": "",
-            "feesAndPricingUri": "https://www.sccu.com.au/sccu-home-loan-broker-product-schedule/",
+            "feesAndPricingUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/BROKER_INVESTOR_HOME_LOAN_INV_VAR_LE80LVR"
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/STD_HOME_LOAN_OOCC_VAR"
     },
     "meta": {}
 }

@@ -45,6 +45,11 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalValue": "Variable Introductory Rate",
+                "additionalInfo": "Variable Introductory rate for a term as set out in the welcome letter, not available to customers who have had the introductory rate the last 2 years."
+            },
+            {
+                "featureType": "OTHER",
                 "additionalValue": "Other Services",
                 "additionalInfo": "Other fees which the Bank charges for its services, including services not specific to this account but for which you may be charged are listed in our Bankwest Your Guide to Banking Fees brochure."
             },
@@ -101,13 +106,6 @@
         ],
         "fees": [
             {
-                "name": "Inward Payment Fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "We will charge a fee of $10.00 per transaction for each deposit via the Real Time Gross Settlement System and SWIFT Network."
-            },
-            {
                 "name": "Maintenance Fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -153,12 +151,28 @@
                     }
                 ],
                 "additionalInfo": "Variable Credit Interest."
+            },
+            {
+                "depositRateType": "INTRODUCTORY",
+                "rate": "0.0435",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 250000.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "4 month variable introductory rate"
             }
         ],
         "productId": "d10438974ab8417bab388149da5053bb",
         "effectiveFrom": "2021-08-08T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-02-26T22:34:44.465666Z",
+        "lastUpdated": "2023-03-17T00:04:45.247741Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bankwest Easy Saver",
         "description": "The Easy Saver Account is our flexible savings account that lets you earn interest on balances up to $250,000.99. With less BS (Bank Stuff) make withdrawals via your linked Bankwest Easy Transaction Account and no minimum monthly deposit.",

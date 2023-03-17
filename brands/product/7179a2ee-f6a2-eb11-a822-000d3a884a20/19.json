@@ -2,7 +2,7 @@
     "data": {
         "productId": "19",
         "effectiveFrom": "2015-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2023-02-22T12:00:26.0861234Z",
+        "lastUpdated": "2023-03-16T01:26:06.7317820Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Visa Business My Rewards",
         "description": "Our Business Visa Credit Card comes with a competitive low interest rate, low annual fee and up to 55 days interest free on purchases and BPAY if you pay your card in full by the due date, and is linked to our free rewards program, Business Rewarder",
@@ -42,7 +42,7 @@
             },
             {
                 "featureType": "INTEREST_FREE",
-                "additionalValue": "P55D",
+                "additionalValue": "{ \"Term\": 55, \"Period\": \"Day(s)\" }",
                 "additionalInfo": "Up to 55 days interest free on purchases and BPAY if you pay your card in full by the due date"
             }
         ],
@@ -107,7 +107,7 @@
                 "feeType": "PERIODIC",
                 "amount": "30.00",
                 "currency": "AUD",
-                "additionalValue": "P1M",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "discounts": [
                     {
                         "description": "On a fee for maintaining a set balance",
@@ -128,12 +128,18 @@
                 "feeType": "PERIODIC",
                 "amount": "85.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"Year(s)\" }",
                 "discounts": [
                     {
                         "description": "The discount is only available during an introductory period",
                         "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0"
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "100"
+                            }
+                        ]
                     }
                 ]
             }
@@ -142,8 +148,8 @@
             {
                 "lendingRateType": "PURCHASE",
                 "rate": "0.137",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "interestPaymentDue": "IN_ARREARS"
             }
         ]

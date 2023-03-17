@@ -2,7 +2,7 @@
     "data": {
         "productId": "43",
         "effectiveFrom": "2022-03-27T13:30:00.0000000Z",
-        "lastUpdated": "2023-03-13T22:00:26.3645325Z",
+        "lastUpdated": "2023-03-16T01:26:06.7317820Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "FTD - Interest Annually",
         "description": "Fixed Term Deposits are available for terms from 3mths to 36mths.  Fixed Term Deposits allow you to lock funds away for the agreed time, at the agreed rate with options for interest to be paid monthly, annually or at the end term.",
@@ -24,6 +24,7 @@
                 "name": "Early Redemption Fee",
                 "feeType": "EVENT",
                 "accruedRate": "0.005",
+                "accrualFrequency": "{ \"Term\": 0, \"Period\": \"Day(s)\" }",
                 "currency": "AUD",
                 "additionalInfo": "Calculated as follows: Principal x (Early Redemption Rate of 0.5%) x (days invested/365)"
             }
@@ -32,8 +33,8 @@
             {
                 "depositRateType": "FIXED",
                 "rate": "0.042",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 12, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "24 month term, balances $5,000 < $1,000,000",
@@ -43,14 +44,14 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P24M",
+                "additionalValue": "{ \"Term\": 24, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "24 month term, balances $5,000 < $1,000,000"
             },
             {
                 "depositRateType": "FIXED",
                 "rate": "0.042",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 12, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "24 month term, balances less than $5,000",
@@ -60,14 +61,14 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P24M",
+                "additionalValue": "{ \"Term\": 24, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "24 month term, balances less than $5,000"
             },
             {
                 "depositRateType": "FIXED",
                 "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 12, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "36 month term, balances $5,000 < $1,000,000",
@@ -77,14 +78,14 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P36M",
+                "additionalValue": "{ \"Term\": 36, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "36 month term, balances $5,000 < $1,000,000"
             },
             {
                 "depositRateType": "FIXED",
                 "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 12, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "36 month term, balances less than $5,000",
@@ -94,7 +95,7 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P36M",
+                "additionalValue": "{ \"Term\": 36, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "36 month term, balances less than $5,000"
             }
         ]

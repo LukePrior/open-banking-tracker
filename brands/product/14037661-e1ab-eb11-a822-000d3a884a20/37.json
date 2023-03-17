@@ -2,7 +2,7 @@
     "data": {
         "productId": "37",
         "effectiveFrom": "2013-01-30T13:30:00.0000000Z",
-        "lastUpdated": "2023-02-28T06:00:23.4604771Z",
+        "lastUpdated": "2023-03-16T01:21:38.7833779Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Hi Saver Account",
         "description": "Hi Saver Account",
@@ -72,7 +72,7 @@
                 "feeType": "PERIODIC",
                 "amount": "10.00",
                 "currency": "AUD",
-                "additionalValue": "P1M",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "additionalInfo": "A fee of $10 payable in relation to any month where we allow you to overdraw your account by more than $50",
                 "additionalInfoUri": "https://www.pnbank.com.au/help-support/fees-charges/",
                 "discounts": [
@@ -98,14 +98,14 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P4M",
+                "additionalValue": "{ \"Term\": 4, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "Hi Saver bonus interest rate valid for accounts that maintain an account balance of $5,000 or more. Bonus interest rate applies to first 4 months from account opening"
             },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "tiers": [
                     {
                         "name": "Floating Balance Tier 1",
@@ -119,8 +119,8 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.01",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "tiers": [
                     {
                         "name": "Floating Balance Tier 2",
