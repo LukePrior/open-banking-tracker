@@ -96,6 +96,83 @@
                 "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
                 "additionalValue": "15% discount on selected CGU home, contents and landlord insurance.",
                 "additionalInfo": "Insurance."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No application or establishment fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Loan Portability"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Up to two facilities at first draw down or any time during term of loan",
+                "additionalInfo": "Split Loan Facility"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Loan can be switched between Variable/Fixed interest rates",
+                "additionalInfo": "Fixed or Variable Options"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Construction (interest only) available."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Australia-based Contact Centre team who understand the unique challenges and opportunities of being in the defence community",
+                "additionalInfo": "Australia-based Contact Centre"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Speak with a home loan consultant today to discuss your options",
+                "additionalInfo": "Home Loan Consultants",
+                "additionalInfoUri": "https://www.defencebank.com.au/ourlenders"
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalInfo": "No fees for extra repayments."
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% mortgage offset account."
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Free loan redraw (min $100)."
+            },
+            {
+                "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
+                "additionalValue": "No annual fee on our low rate credit card - $22.50 donation to the Defence Bank Foundation still applies.",
+                "additionalInfo": "Credit cards."
+            },
+            {
+                "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
+                "additionalValue": "No application fee on personal loans.",
+                "additionalInfo": "Personal loans."
+            },
+            {
+                "featureType": "BONUS_REWARDS",
+                "additionalValue": "0.15% p.a. bonus rate on term deposits.",
+                "additionalInfo": "Term Deposits."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Quick and easy online application."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Redraw facility available online"
+            },
+            {
+                "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
+                "additionalValue": "15% discount on selected CGU home, contents and landlord insurance.",
+                "additionalInfo": "Insurance."
             }
         ],
         "constraints": [
@@ -108,9 +185,37 @@
                 "constraintType": "MAX_BALANCE",
                 "additionalValue": "Vacant land/refinance",
                 "additionalInfo": "Borrow up to 90% of the property value."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Residential",
+                "additionalInfo": "Borrow up to 95% of the property value."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Vacant land/refinance",
+                "additionalInfo": "Borrow up to 90% of the property value."
             }
         ],
         "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Australian Residents only"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Individuals must have capacity",
+                "additionalInfo": "Lending criteria"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Purchase/Refinance, investment, purchase vacant land, home imrovement.",
+                "additionalInfo": "Purpose"
+            },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalInfo": "Australian Residents only"
@@ -160,17 +265,47 @@
                 "amount": "20.00",
                 "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
                 "discounts": []
+            },
+            {
+                "name": "Ultimate Package Annual Fee",
+                "feeType": "PERIODIC",
+                "amount": "380.00",
+                "additionalValue": "P1Y",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Ultimate Package Annual Fee",
+                "feeType": "EVENT",
+                "amount": "380.00",
+                "additionalInfo": "Payable on settlement",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Arrears reminder notice fee (per letter)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Default notice (enforcement notice)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
             }
         ],
         "depositRates": [],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0711",
+                "comparisonRate": "0.0704",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "rate": "0.0677",
+                "rate": "0.0669",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
@@ -179,11 +314,11 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0707",
+                "comparisonRate": "0.0699",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "rate": "0.0672",
+                "rate": "0.0664",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
@@ -192,11 +327,11 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0702",
+                "comparisonRate": "0.0694",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "rate": "0.0667",
+                "rate": "0.0659",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],

@@ -2,7 +2,7 @@
     "data": {
         "productId": "30",
         "effectiveFrom": "2005-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2022-12-23T06:00:41.2707438Z",
+        "lastUpdated": "2023-03-20T01:35:30.2087224Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Pensioner Savings",
         "description": "Everyday account tailored for Seniors.",
@@ -71,7 +71,7 @@
                 "feeType": "PERIODIC",
                 "amount": "35.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y"
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"Year(s)\" }"
             },
             {
                 "name": "Counter Cash Withdrawal Fee",
@@ -368,13 +368,13 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }"
             },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.021",
-                "calculationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "Pensioner Savings Rate Tier 1",
@@ -389,8 +389,8 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.026",
-                "calculationFrequency": "P1M",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Month(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "Pensioner Savings Rate Tier 2",

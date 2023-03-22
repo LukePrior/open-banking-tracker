@@ -2,7 +2,7 @@
     "data": {
         "productId": "32",
         "effectiveFrom": "2005-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2023-02-22T08:00:41.2510472Z",
+        "lastUpdated": "2023-03-20T01:35:30.2087224Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Simple Home Loan",
         "description": "Enjoy your new home with our Simple Home Loan",
@@ -63,12 +63,18 @@
                 "feeType": "PERIODIC",
                 "amount": "395.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y",
+                "additionalValue": "{ \"Term\": 1, \"Period\": \"Year(s)\" }",
                 "discounts": [
                     {
                         "description": "The discount is only available during an introductory period",
                         "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0"
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "100"
+                            }
+                        ]
                     }
                 ]
             }
@@ -78,8 +84,8 @@
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0544",
                 "comparisonRate": "0.0584",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalInfo": "Finance especially for first home buyers.",
                 "additionalInfoUri": "https://www.dnister.com.au/interest-rates/"

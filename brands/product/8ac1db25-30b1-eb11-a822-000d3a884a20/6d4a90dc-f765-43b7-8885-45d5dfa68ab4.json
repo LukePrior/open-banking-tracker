@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "6d4a90dc-f765-43b7-8885-45d5dfa68ab4",
-        "lastUpdated": "2023-02-24T08:38:25.000+11:00",
+        "lastUpdated": "2023-03-21T08:47:53.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Your Way Home Loan",
         "description": "Flexibly structure and manage your home loan, with Your Way Home Loans",
@@ -243,25 +243,63 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.07540",
-                "comparisonRate": "0.07590",
+                "rate": "0.07790",
+                "comparisonRate": "0.07840",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Your Way Standard Variable",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.1,
+                        "maximumValue": 95,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "additionalInfo": "Your Way Standard Variable rate minimum loan size $25,000. Comparison rates quoted are based on $150,000 for a term of 25 years. Rates apply to secured loans only. WARNING: This Comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different Comparison rate"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.05390",
-                "comparisonRate": "0.05430",
+                "rate": "0.05140",
+                "comparisonRate": "0.05180",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Your Way Basic Variable rate minimum loan size $150,000. Comparison rates quoted are based on $150,000 for a term of 25 years. Rates apply to secured loans only. WARNING: This Comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different Comparison rate"
+                "tiers": [
+                    {
+                        "name": "Your Way Basic Variable LVR =<80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.1,
+                        "maximumValue": 80,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Your Way Basic Variable LVR =<80%. Minimum loan size $150,000. Comparison rates quoted are based on $150,000 for a term of 25 years. Rates apply to secured loans only. WARNING: This Comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different Comparison rate"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.06140",
+                "comparisonRate": "0.06180",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Your Way Basic Variable LVR >80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.1,
+                        "maximumValue": 95,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Your Way Basic Variable LVR >80%. Minimum loan size $150,000. Comparison rates quoted are based on $150,000 for a term of 25 years. Rates apply to secured loans only. WARNING: This Comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different Comparison rate"
             }
         ]
     },

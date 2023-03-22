@@ -2,7 +2,7 @@
     "data": {
         "productId": "16",
         "effectiveFrom": "2001-07-02T14:30:00.0000000Z",
-        "lastUpdated": "2023-03-15T21:00:37.7766872Z",
+        "lastUpdated": "2023-03-20T01:35:17.9756275Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "6 Month Term Deposit",
         "description": "6 Month Term Deposit",
@@ -48,6 +48,7 @@
                 "name": "Early Withdrawal Fee (FTD)",
                 "feeType": "EVENT",
                 "accruedRate": "0.02",
+                "accrualFrequency": "{ \"Term\": 0, \"Period\": \"Day(s)\" }",
                 "currency": "AUD",
                 "additionalInfo": "You may withdraw the balance of your term deposit early by giving us 31 days notice. However if you do, we will reduce the interest on the term deposit from the date it was opened until the date of withdrawal by 2% per annum, or the term deposit rate ifit is less  an 2%. We have the discretion to delay the withdrawal or transfer until the end of the notice period (but not beyond the maturity date)."
             }
@@ -56,8 +57,8 @@
             {
                 "depositRateType": "FIXED",
                 "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 6, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "Fixed",
@@ -67,7 +68,7 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P6M",
+                "additionalValue": "{ \"Term\": 6, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "4.05% pa for $5,000 and over\r\n",
                 "additionalInfoUri": "https://www.qudosbank.com.au/products/ratesfees/termdeposits"
             }

@@ -2,7 +2,7 @@
     "data": {
         "productId": "34",
         "effectiveFrom": "2021-12-19T13:30:00.0000000Z",
-        "lastUpdated": "2023-02-22T08:00:41.2510472Z",
+        "lastUpdated": "2023-03-20T01:35:30.2087224Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Simple Home Loan Plus",
         "description": "Simple Home Loan Plus",
@@ -91,7 +91,13 @@
                     {
                         "description": "The discount is only available during an introductory period",
                         "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0"
+                        "feeRate": "1.0",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "100"
+                            }
+                        ]
                     }
                 ]
             }
@@ -101,8 +107,8 @@
                 "lendingRateType": "DISCOUNT",
                 "rate": "0.0494",
                 "comparisonRate": "0.0595",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 1, \"Period\": \"EOM(s)\" }",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "{ \"Term\": 2, \"Period\": \"Year(s)\" }",
                 "additionalInfo": "2 years introductory, loans over $200,000."

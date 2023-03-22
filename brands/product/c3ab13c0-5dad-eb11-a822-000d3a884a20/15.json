@@ -2,7 +2,7 @@
     "data": {
         "productId": "15",
         "effectiveFrom": "1999-01-06T13:30:00.0000000Z",
-        "lastUpdated": "2023-02-20T02:00:34.6391578Z",
+        "lastUpdated": "2023-03-20T01:34:01.9116848Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "I12 FTD 12 Months",
         "description": "12 Month Term Deposit Interest Paid at Maturity",
@@ -58,8 +58,8 @@
             {
                 "depositRateType": "FIXED",
                 "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 12, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "Fixed",
@@ -69,7 +69,7 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P12M"
+                "additionalValue": "{ \"Term\": 12, \"Period\": \"Month(s)\" }"
             },
             {
                 "depositRateType": "FIXED",
@@ -83,7 +83,7 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P12M"
+                "additionalValue": "{ \"Term\": 12, \"Period\": \"Month(s)\" }"
             }
         ]
     },

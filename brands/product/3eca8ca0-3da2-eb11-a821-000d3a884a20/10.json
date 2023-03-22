@@ -2,7 +2,7 @@
     "data": {
         "productId": "10",
         "effectiveFrom": "2005-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2022-12-23T06:00:41.2707438Z",
+        "lastUpdated": "2023-03-20T01:35:30.2087224Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Deposit - 10 Months",
         "description": "Make the most of your savings and invest with our 10 month Term Deposit.",
@@ -93,8 +93,8 @@
             {
                 "depositRateType": "FIXED",
                 "rate": "0.031",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P10M",
+                "calculationFrequency": "{ \"Term\": 1, \"Period\": \"Day(s)\" }",
+                "applicationFrequency": "{ \"Term\": 10, \"Period\": \"Month(s)\" }",
                 "tiers": [
                     {
                         "name": "Interest Rate",
@@ -104,7 +104,7 @@
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ],
-                "additionalValue": "P10M",
+                "additionalValue": "{ \"Term\": 10, \"Period\": \"Month(s)\" }",
                 "additionalInfo": "For balances $1,000.00 - $1,000,000.00"
             }
         ]

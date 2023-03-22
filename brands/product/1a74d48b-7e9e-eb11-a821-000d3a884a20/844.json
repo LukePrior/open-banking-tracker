@@ -67,6 +67,54 @@
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "Quick and easy online application.",
                 "additionalInfoUri": "https://secure.defencebank.com.au/internetlending/public/start.aspx"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No Annual fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No application fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No early payout fee."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Redraw facility available online"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Australia-based Contact Centre team who understand the unique challenges and opportunities of being in the defence community",
+                "additionalInfo": "Australia-based Contact Centre"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Speak with a home loan consultant today to discuss your options",
+                "additionalInfo": "Home Loan Consultants",
+                "additionalInfoUri": "https://www.defencebank.com.au/ourlenders"
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalInfo": "No fees for extra repayments"
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% mortgage offset account."
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Free loan redraw (min $100)."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Quick and easy online application.",
+                "additionalInfoUri": "https://secure.defencebank.com.au/internetlending/public/start.aspx"
             }
         ],
         "constraints": [
@@ -79,9 +127,37 @@
                 "constraintType": "MAX_BALANCE",
                 "additionalValue": "Vacant Land/Refinance.",
                 "additionalInfo": "Borrow up to 90% of the property value."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Residential.",
+                "additionalInfo": "Borrow up to 90% of the property value."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Vacant Land/Refinance.",
+                "additionalInfo": "Borrow up to 90% of the property value."
             }
         ],
         "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Australian residents only."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Individuals must have capacity.",
+                "additionalInfo": "Lending criteria."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Purchase/Refinance, investment, any worthwile purchase excluding construction.",
+                "additionalInfo": "Purpose."
+            },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalInfo": "Australian residents only."
@@ -115,17 +191,31 @@
                 "amount": "20.00",
                 "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
                 "discounts": []
+            },
+            {
+                "name": "Arrears reminder notice fee (per letter)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Default notice (enforcement notice)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
             }
         ],
         "depositRates": [],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0624",
+                "comparisonRate": "0.0619",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "rate": "0.0624",
+                "rate": "0.0619",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
