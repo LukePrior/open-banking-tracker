@@ -79,6 +79,60 @@
             &quot;additionalValue&quot;: &quot;Speak with a home loan consultant today to discuss your options&quot;,
             &quot;additionalInfo&quot;: &quot;Home Loan Consultants&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/ourlenders&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;No Annual fees.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to 80% loan-to-value ratio.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Be ready to go with our pre-approval process.&quot;,
+            &quot;additionalInfo&quot;: &quot;Pre-approval.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://secure.defencebank.com.au/internetlending/public/start.aspx&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;No application fees.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;No monthly fees.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;No early payout fee.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Australia-based Contact Centre team who understand the unique challenges and opportunities of being in the defence community&quot;,
+            &quot;additionalInfo&quot;: &quot;Australia-based Contact Centre&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
+            &quot;additionalInfo&quot;: &quot;No fees for extra repayments.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;$20 fee per redraw (minimum redraw $500).&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Quick and easy online application.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://secure.defencebank.com.au/internetlending/public/start.aspx&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Redraw facility available online&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Speak with a home loan consultant today to discuss your options&quot;,
+            &quot;additionalInfo&quot;: &quot;Home Loan Consultants&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/ourlenders&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -91,9 +145,37 @@
             &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
             &quot;additionalValue&quot;: &quot;Vacant Land/Refinance.&quot;,
             &quot;additionalInfo&quot;: &quot;Borrow up to 80% of the property value.&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;Residential.&quot;,
+            &quot;additionalInfo&quot;: &quot;Borrow up to 80% of the property value.&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;Vacant Land/Refinance.&quot;,
+            &quot;additionalInfo&quot;: &quot;Borrow up to 80% of the property value.&quot;
         }
     ],
     &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Purchase/Refinance, investment, home improvements, any worthwile purchase.&quot;,
+            &quot;additionalInfo&quot;: &quot;Purpose.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalInfo&quot;: &quot;Australian residents only.&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalInfo&quot;: &quot;18&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Individuals must have capacity.&quot;,
+            &quot;additionalInfo&quot;: &quot;Lending criteria.&quot;
+        },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Purchase/Refinance, investment, home improvements, any worthwile purchase.&quot;,
@@ -177,17 +259,81 @@
             &quot;amount&quot;: &quot;25.00&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
             &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Substitution of Loan Security&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;275.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable on settlement&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Settlement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;275.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Valuation Fee - Standard Valuation (from)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;205.25&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Loan Service Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Consent and variation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Security discharge administration fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Arrears reminder notice fee (per letter)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Default notice (enforcement notice)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Redraw Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.defencebank.com.au/banking/home-loans/&quot;,
+            &quot;discounts&quot;: []
         }
     ],
     &quot;depositRates&quot;: [],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0675&quot;,
+            &quot;comparisonRate&quot;: &quot;0.07&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;rate&quot;: &quot;0.067&quot;,
+            &quot;rate&quot;: &quot;0.0695&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [],
