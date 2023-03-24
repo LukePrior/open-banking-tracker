@@ -6,7 +6,7 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;lastUpdated&quot;: &quot;2022-12-21T13:35:22.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-03-22T13:35:24.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Bendigo Easy Retirement Account&quot;,
     &quot;description&quot;: &quot;A transaction account designed to make life easier for retirees and pensioners.&quot;,
@@ -31,6 +31,7 @@
             &quot;additionalValue&quot;: &quot;A card is available for the product to access funds&quot;
         }
     ],
+    &quot;constraints&quot;: [],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
@@ -40,70 +41,6 @@
             &quot;eligibilityType&quot;: &quot;EMPLOYMENT_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Employment Status&quot;,
             &quot;additionalInfo&quot;: &quot;Available to retirees over 55 years of age who are either a self-funded retiree or a recipient of a Centrelink aged pension of Department of Veterans\u2019 Affairs (DVA) administered pension.&quot;
-        }
-    ],
-    &quot;constraints&quot;: [],
-    &quot;lendingRates&quot;: [],
-    &quot;depositRates&quot;: [
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0105000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;minimumValue&quot;: 10000,
-                    &quot;maximumValue&quot;: 49999.99,
-                    &quot;name&quot;: &quot;$10,000 &lt; $49,999.99&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ]
-        },
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0150000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;minimumValue&quot;: 50000,
-                    &quot;maximumValue&quot;: 249999.99,
-                    &quot;name&quot;: &quot;$50,000 &lt; $249,999.99&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ]
-        },
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0175000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;minimumValue&quot;: 250000,
-                    &quot;maximumValue&quot;: 0,
-                    &quot;name&quot;: &quot;$250,000 plus&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ]
-        },
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0085000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 9999.99,
-                    &quot;name&quot;: &quot;$0 &lt; $9,999.99&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ]
         }
     ],
     &quot;fees&quot;: [
@@ -120,6 +57,11 @@
             &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;discounts&quot;: [
                 {
+                    &quot;description&quot;: &quot;Holds an eligible Bendigo Bank CGU insurance Policy &quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;3.000000&quot;
+                },
+                {
                     &quot;description&quot;: &quot;Holds a home loan with Bendigo Bank &quot;,
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
                     &quot;amount&quot;: &quot;3.000000&quot;
@@ -132,11 +74,6 @@
                 },
                 {
                     &quot;description&quot;: &quot;Holds a Sandhurst Trustees Managed Fund&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;amount&quot;: &quot;3.000000&quot;
-                },
-                {
-                    &quot;description&quot;: &quot;Holds an eligible Bendigo Bank CGU insurance Policy &quot;,
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
                     &quot;amount&quot;: &quot;3.000000&quot;
                 }
@@ -167,6 +104,69 @@
             &quot;discounts&quot;: []
         }
     ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0160000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 249999.99,
+                    &quot;name&quot;: &quot;$50,000 &lt; $249,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ]
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0085000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 9999.99,
+                    &quot;name&quot;: &quot;$0 &lt; $9,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ]
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0190000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 250000,
+                    &quot;maximumValue&quot;: 0,
+                    &quot;name&quot;: &quot;$250,000 plus&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ]
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0115000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 10000,
+                    &quot;maximumValue&quot;: 49999.99,
+                    &quot;name&quot;: &quot;$10,000 &lt; $49,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ]
+        }
+    ],
+    &quot;lendingRates&quot;: [],
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.bendigobank.com.au/personal/transaction-accounts/easy-retirement-account/&quot;,
         &quot;termsUri&quot;: &quot;https://www.bendigobank.com.au/disclosure-documents/&quot;,
