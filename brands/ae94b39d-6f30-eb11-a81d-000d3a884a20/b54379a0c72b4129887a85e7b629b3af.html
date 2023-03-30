@@ -20,12 +20,6 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.bankwest.com.au/personal/bank-and-save/bank-accounts/seniors&quot;
         },
         {
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
-            &quot;additionalValue&quot;: &quot;PayTo&quot;,
-            &quot;additionalInfo&quot;: &quot;PayTo is a service that's been developed by the NPPA (New Payments Platform Australia) that businesses, service providers and merchants can opt in to. Essentially, it's a digital way for customers to pre-authorise payments from their bank accounts in real time, for things like utilities, subscriptions and memberships.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankwest.com.au/personal/ways-to-pay/payto&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalValue&quot;: &quot;Platinum Debit Mastercard&quot;,
             &quot;additionalInfo&quot;: &quot;Have easy access to your money with a Platinum Debit Mastercard with no foreign transaction fees and no overseas ATM fees. It's available to Australian citizens and temporary or permanent residents over 16 with an Australian residential address (limited exceptions may apply subject to conditions).&quot;,
@@ -138,11 +132,25 @@
             &quot;additionalInfo&quot;: &quot;No electronic withdrawal fees apply to this product.&quot;
         },
         {
+            &quot;name&quot;: &quot;Honour Fee - Personal&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A $8.00 Honour Fee will apply when one or more transactions overdraw the account, Bankwest elects to honour (pay) the transaction(s), and Bankwest does not issue an Overdrawn Notice. A transaction will be taken to overdraw your account if it causes the balance to exceed the funds available in your account.&quot;
+        },
+        {
             &quot;name&quot;: &quot;Overseas ATM Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;No Bankwest-charged overseas ATM access fees. The overseas bank may charge a fee for using their ATM.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Outward Dishonour Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A $8.00 Outward Dishonour Fee will be charged to the account where Bankwest dishonours (does not pay) a transaction because there are insufficient funds available in your account (including funds available under a Safety Net Facility) to cover the amount of a cheque drawn on your account, periodical payment or other authorised debit request made in respect of your account. Bankwest will only charge one Outward Dishonour Fee per account, per day.&quot;
         },
         {
             &quot;name&quot;: &quot;Counter Fee&quot;,
@@ -152,6 +160,13 @@
             &quot;additionalInfo&quot;: &quot;No counter fees apply to this product&quot;
         },
         {
+            &quot;name&quot;: &quot;Paper Statement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.25&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Customers with this account will receive eStatements via Bankwest Online Banking and the Bankwest App. Customers who opt to receive a paper statement, however, may be charged the Paper Statement fee. Exemptions apply.&quot;
+        },
+        {
             &quot;name&quot;: &quot;Cheque Stop Payment&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
@@ -159,11 +174,11 @@
             &quot;additionalInfo&quot;: &quot;Fee to stop payment on an issued cheque. This fee is $25 when payment is stopped on a range of cheques.&quot;
         },
         {
-            &quot;name&quot;: &quot;ATM Fee&quot;,
+            &quot;name&quot;: &quot;Inward Payment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;No ATM fees when you use major bank ATMs Australia-wide.&quot;
+            &quot;additionalInfo&quot;: &quot;We will charge a fee of $10.00 per transaction for each deposit via the Real Time Gross Settlement System and SWIFT Network.&quot;
         },
         {
             &quot;name&quot;: &quot;Maintenance Fee&quot;,
@@ -207,7 +222,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0115&quot;,
+            &quot;rate&quot;: &quot;0.006&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -223,7 +238,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0165&quot;,
+            &quot;rate&quot;: &quot;0.01&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -239,7 +254,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.02&quot;,
+            &quot;rate&quot;: &quot;0.013&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -253,13 +268,22 @@
             &quot;additionalInfo&quot;: &quot;Variable Credit Interest.&quot;
         }
     ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.1513&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Variable Overdraft Reference Rate. Applies to any overdrawn amount.&quot;
+        }
+    ],
     &quot;productId&quot;: &quot;b54379a0c72b4129887a85e7b629b3af&quot;,
     &quot;effectiveFrom&quot;: &quot;1979-12-31T13:00:00Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-17T00:04:45.231864Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-16T00:17:42.61845Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Retirement Advantage Account&quot;,
-    &quot;description&quot;: &quot;The Retirement Advantage Account is for those aged 55 and over. Enjoy reduced fees and simple banking by combining a bank account and savings account in one.&quot;,
+    &quot;description&quot;: &quot;An everyday bank account that lets you keep it simple by earning interest and saving on fees, exclusively for those aged 55 and over.&quot;,
     &quot;brand&quot;: &quot;Bankwest&quot;,
     &quot;brandName&quot;: &quot;Bankwest&quot;,
     &quot;applicationUri&quot;: &quot;https://www.bankwest.com.au/personal/bank-and-save/bank-accounts/seniors&quot;,
