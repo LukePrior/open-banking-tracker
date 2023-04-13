@@ -1,6 +1,87 @@
 {
-    "message": "An error has occurred.",
-    "exceptionMessage": "There is not enough space on the disk.\r\n",
-    "exceptionType": "System.IO.IOException",
-    "stackTrace": "   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.WriteCore(Byte[] buffer, Int32 offset, Int32 count)\r\n   at System.IO.FileStream.Write(Byte[] array, Int32 offset, Int32 count)\r\n   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)\r\n   at System.Diagnostics.TextWriterTraceListener.Flush()\r\n   at System.Diagnostics.TraceSource.TraceEvent(TraceEventType eventType, Int32 id, String message)\r\n   at Uda.IntegrationServices.Tpa.ServiceHost.Code.Filters.Exception.ObExceptionFilter.OnException(HttpActionExecutedContext context)\r\n   at System.Web.Http.Filters.ExceptionFilterAttribute.OnExceptionAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Filters.ExceptionFilterAttribute.<ExecuteExceptionFilterAsyncCore>d__0.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()"
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "SCCU Netbanking",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "100000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "EMPLOYMENT_STATUS",
+                "additionalValue": "Y",
+                "additionalInfo": "Must be employed",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Y",
+                "additionalInfo": "Must be Australian resident",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "PERFORMANCE_GUARANTEE_ANNUAL",
+                "feeType": "PERIODIC",
+                "balanceRate": "0.015",
+                "accrualFrequency": "P1Y",
+                "currency": "AUD",
+                "additionalInfo": "Paid six monthly",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PERFORMANCE_GUARANTEE_FLAT",
+                "feeType": "UPFRONT",
+                "amount": "80.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "minimum of $80 or 0.5% of guarantee limit",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PERFORMANCE_GUARANTEE_PERCENT",
+                "feeType": "UPFRONT",
+                "balanceRate": "0.005",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "0.5% of Guarantee limit or $80 whichever is greater",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "CREDIT_UNION_GUARANTEE",
+        "lastUpdated": "2023-03-31T13:31:08.000+11:00",
+        "productCategory": "TRADE_FINANCE",
+        "name": "Credit Union Guarantee",
+        "description": "A Performance Guarantee provides an alternative to a deposit or bond. It's essentially a guarantee on your behalf to pay a vendor or supplier the amount of the deposit or bond if called upon.",
+        "brand": "S",
+        "brandName": "SCCU",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "",
+            "termsUri": "",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "",
+            "bundleUri": ""
+        }
+    },
+    "links": {
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/CREDIT_UNION_GUARANTEE"
+    },
+    "meta": {}
 }

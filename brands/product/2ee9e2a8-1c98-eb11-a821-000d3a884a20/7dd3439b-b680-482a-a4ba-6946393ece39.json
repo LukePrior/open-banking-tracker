@@ -105,6 +105,20 @@
                 "transactionRate": null
             },
             {
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P3M",
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Consent fee",
                 "accrualFrequency": null,
@@ -119,38 +133,17 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
+                "feeType": "EVENT",
+                "name": "Audit Certificate Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": null,
+                "additionalInfo": "Per audit certificate requested",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "500.00",
+                "amount": "50.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS discount",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -182,14 +175,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee",
+                "feeType": "EVENT",
+                "name": "Arrears notice fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
+                "additionalInfo": "2nd and subsequent reminders by letter or phone",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": "20.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -252,6 +245,20 @@
                 "transactionRate": null
             },
             {
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "At cost. Minimum is $250.00",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "250.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Copies of statements (over 12 months) per page",
                 "accrualFrequency": null,
@@ -294,45 +301,38 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Arrears notice fee",
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "2nd and subsequent reminders by letter or phone",
+                "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "20.00",
+                "amount": "500.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Audit Certificate Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Per audit certificate requested",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "50.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
+                "discounts": [
+                    {
+                        "description": "DHOAS discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             }
         ],
