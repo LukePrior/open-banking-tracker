@@ -1,66 +1,55 @@
 {
     "data": {
         "effectiveFrom": "2020-01-01T00:00:00.000Z",
-        "lastUpdated": "2023-04-20T14:30:22.000Z",
+        "lastUpdated": "2023-04-20T14:31:22.000Z",
         "productCategory": "PERS_LOANS",
-        "name": "Bendigo Unsecured Personal Loan ",
-        "description": "A personal loan for a number of purposes not requiring security to be offered",
-        "productId": "c98688d8-055d-494e-8866-b406374bdaf5",
+        "name": "Bendigo Green Unsecured Personal Loan ",
+        "description": "A personal loan for a number of purposes not requiring security to be offered. \nIdeal for solar hot water, grey water treatment systems or energy saving white goods.",
+        "productId": "5351f1a2-c4a5-4bef-b55c-ec4330c7e820",
         "brandName": "Bendigo Bank",
         "applicationUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan",
         "isTailored": true,
         "bundles": [],
         "cardArt": [],
-        "constraints": [
-            {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "1"
-            },
-            {
-                "constraintType": "OPENING_BALANCE",
-                "additionalValue": "2000"
-            }
-        ],
         "features": [
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Online redraw available"
-            },
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Weekly, fortnightly or monthly repayments"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Online redraw available"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "2000"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1"
             }
         ],
         "eligibility": [
             {
-                "eligibilityType": "PENSION_RECIPIENT",
-                "additionalValue": "Pension"
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Resident"
             },
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "STUDENT",
-                "additionalValue": "Student"
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Green Eligibility Criteria Applies - Details upon application"
             },
             {
                 "eligibilityType": "EMPLOYMENT_STATUS",
                 "additionalValue": "Employed"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Resident"
             }
         ],
         "fees": [
-            {
-                "name": "Default Fee",
-                "feeType": "EVENT",
-                "amount": "35.000000",
-                "currency": "AUD",
-                "discounts": []
-            },
             {
                 "name": "Early Repayment Fee ",
                 "feeType": "EXIT",
@@ -69,11 +58,10 @@
                 "discounts": []
             },
             {
-                "name": "Monthly Fee",
-                "feeType": "PERIODIC",
-                "amount": "5.000000",
+                "name": "Default Fee",
+                "feeType": "EVENT",
+                "amount": "35.000000",
                 "currency": "AUD",
-                "additionalValue": "P1M",
                 "discounts": []
             },
             {
@@ -84,11 +72,12 @@
                 "discounts": []
             }
         ],
+        "depositRates": [],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.1279000000000000",
-                "comparisonRate": "0.1489000000000000",
+                "rate": "0.0699000000000000",
+                "comparisonRate": "0.0801000000000000",
                 "calculationFrequency": "P1D",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalInfo": "Unsecured",
@@ -96,15 +85,15 @@
                 "tiers": []
             }
         ],
-        "depositRates": [],
         "additionalInformation": {
-            "overviewUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan",
+            "overviewUri": "https://www.bendigobank.com.au/personal/loans/unsecured-green/",
             "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-personal-loan-terms-conditions.pdf",
+            "eligibilityUri": "https://www.bendigobank.com.au/personal/loans/unsecured-green/",
             "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf"
         },
         "brand": "BENDIGO"
     },
     "links": {
-        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/c98688d8-055d-494e-8866-b406374bdaf5"
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/5351f1a2-c4a5-4bef-b55c-ec4330c7e820"
     }
 }
