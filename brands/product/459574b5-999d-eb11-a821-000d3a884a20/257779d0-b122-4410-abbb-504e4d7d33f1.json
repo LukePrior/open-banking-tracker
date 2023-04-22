@@ -1,6 +1,6 @@
 {
     "data": {
-        "lastUpdated": "2021-07-09T04:11:55.000Z",
+        "lastUpdated": "2023-04-21T06:25:17.000Z",
         "productCategory": "REGULATED_TRUST_ACCOUNTS",
         "name": "Solicitor Trust",
         "description": "Businesses that receive money on behalf of their clients and are required by law to hold this money in trust",
@@ -11,8 +11,8 @@
         "cardArt": [],
         "features": [
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "An account of this product type can be used as the target of an NPP PayID"
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
             },
             {
                 "featureType": "NPP_ENABLED",
@@ -23,72 +23,122 @@
                 "additionalValue": "An account of this product type can be used as the target of an NPP PayID"
             },
             {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "An account of this product type can be used as the target of an NPP PayID"
+                "featureType": "DIGITAL_BANKING"
             }
         ],
-        "eligibility": [],
         "constraints": [
             {
                 "constraintType": "OPENING_BALANCE",
-                "additionalValue": "5000.00"
+                "additionalValue": "1.00",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-business-accounts-and-facilities.pdf"
             }
         ],
+        "eligibility": [],
         "fees": [
             {
-                "name": "CHEQUE DEPOSIT",
-                "feeType": "TRANSACTION",
-                "amount": "0.700000",
-                "currency": "AUD",
-                "discounts": []
-            },
-            {
-                "name": "CASH WITHDRAWAL",
+                "name": "Branch cash withdrawal",
                 "feeType": "TRANSACTION",
                 "amount": "1.750000",
                 "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
                 "discounts": []
             },
             {
-                "name": "Cheque Withdrawl",
-                "feeType": "TRANSACTION",
-                "amount": "0.700000",
-                "currency": "AUD",
-                "discounts": []
-            },
-            {
-                "name": "e-banking BPAY",
+                "name": "e-banking internal transfer",
                 "feeType": "TRANSACTION",
                 "amount": "0.400000",
                 "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
                 "discounts": []
             },
             {
-                "name": "E-banking Transfer",
-                "feeType": "TRANSACTION",
-                "amount": "0.400000",
-                "currency": "AUD",
-                "discounts": []
-            },
-            {
-                "name": "Phone Banking transaction",
-                "feeType": "TRANSACTION",
-                "amount": "0.400000",
-                "currency": "AUD",
-                "discounts": []
-            },
-            {
-                "name": "TRANSFER",
+                "name": "Branch transfer",
                 "feeType": "TRANSACTION",
                 "amount": "1.750000",
                 "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
                 "discounts": []
             },
             {
-                "name": "Payanyone (including OSKO)",
+                "name": "EFTPOS withdrawal",
+                "feeType": "EVENT",
+                "amount": "0.700000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Periodical payment to other financial institution",
+                "feeType": "EVENT",
+                "amount": "3.750000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Collection item",
+                "feeType": "TRANSACTION",
+                "amount": "0.700000",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "BPAY withdrawal",
                 "feeType": "TRANSACTION",
                 "amount": "0.400000",
                 "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Cheque withdrawal",
+                "feeType": "EVENT",
+                "amount": "0.700000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "EFT Credit Transfer",
+                "feeType": "EVENT",
+                "amount": "4.000000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Phone Banking transfer",
+                "feeType": "TRANSACTION",
+                "amount": "0.400000",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Bank cheque withdrawal",
+                "feeType": "EVENT",
+                "amount": "10.000000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Agency withdrawal",
+                "feeType": "TRANSACTION",
+                "amount": "1.750000",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Periodical payment by cheque",
+                "feeType": "EVENT",
+                "amount": "3.750000",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "e-banking Pay Anyone transfer, including Osko",
+                "feeType": "TRANSACTION",
+                "amount": "0.400000",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf",
                 "discounts": []
             }
         ],
@@ -103,7 +153,9 @@
         "lendingRates": [],
         "additionalInformation": {
             "overviewUri": "https://www.bendigobank.com.au/business/business-transaction-accounts/regulated-trust-accounts/",
-            "termsUri": "https://www.bendigobank.com.au/disclosure-documents/"
+            "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-business-accounts-and-facilities.pdf",
+            "eligibilityUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-business-accounts-and-facilities.pdf",
+            "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/business-fees-and-charges.pdf"
         },
         "brand": "BENDIGO"
     },

@@ -1,7 +1,7 @@
 {
     "data": {
-        "effectiveFrom": "2022-05-03T00:00:00.000Z",
-        "lastUpdated": "2023-03-16T13:35:23.000Z",
+        "effectiveFrom": "2022-05-03T00:30:00.000Z",
+        "lastUpdated": "2023-04-21T02:56:07.000Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Bendigo Complete Home Loan",
         "description": "The Bendigo Complete Home Loan offers a 100% offset account on both variable and fixed rates - allowing you to save interest  ",
@@ -29,7 +29,16 @@
                 "additionalInfo": "Unlimited additional repayments if variable, otherwise 20% of loan balance when fixed"
             }
         ],
-        "constraints": [],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1"
+            },
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "5000"
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "OTHER",
@@ -344,6 +353,28 @@
                 "tiers": []
             },
             {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0619000000000000",
+                "comparisonRate": "0.0596000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "LVR 60.01 - 80%",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0599000000000000",
+                "comparisonRate": "0.0582000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "LVR < 60.01%",
+                "tiers": []
+            },
+            {
                 "lendingRateType": "FIXED",
                 "rate": "0.0629000000000000",
                 "comparisonRate": "0.0602000000000000",
@@ -494,28 +525,6 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
-                "additionalInfo": "LVR < 60.01%",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0619000000000000",
-                "comparisonRate": "0.0596000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "LVR 60.01 - 80%",
-                "tiers": []
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0599000000000000",
-                "comparisonRate": "0.0582000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
                 "additionalInfo": "LVR < 60.01%",
                 "tiers": []
             }
