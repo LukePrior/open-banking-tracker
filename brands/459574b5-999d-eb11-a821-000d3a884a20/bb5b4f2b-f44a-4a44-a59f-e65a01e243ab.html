@@ -6,8 +6,8 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;effectiveFrom&quot;: &quot;2022-05-03T00:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-16T13:35:23.000Z&quot;,
+    &quot;effectiveFrom&quot;: &quot;2022-05-03T00:30:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-04-21T02:56:07.000Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Bendigo Complete Home Loan&quot;,
     &quot;description&quot;: &quot;The Bendigo Complete Home Loan offers a 100% offset account on both variable and fixed rates - allowing you to save interest  &quot;,
@@ -35,7 +35,16 @@
             &quot;additionalInfo&quot;: &quot;Unlimited additional repayments if variable, otherwise 20% of loan balance when fixed&quot;
         }
     ],
-    &quot;constraints&quot;: [],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;1&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;5000&quot;
+        }
+    ],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
@@ -350,6 +359,28 @@
             &quot;tiers&quot;: []
         },
         {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0619000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0596000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalInfo&quot;: &quot;LVR 60.01 - 80%&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0599000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0582000000000000&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;additionalInfo&quot;: &quot;LVR &lt; 60.01%&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0629000000000000&quot;,
             &quot;comparisonRate&quot;: &quot;0.0602000000000000&quot;,
@@ -500,28 +531,6 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR &lt; 60.01%&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0619000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0596000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR 60.01 - 80%&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0599000000000000&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0582000000000000&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalInfo&quot;: &quot;LVR &lt; 60.01%&quot;,
             &quot;tiers&quot;: []
         }
