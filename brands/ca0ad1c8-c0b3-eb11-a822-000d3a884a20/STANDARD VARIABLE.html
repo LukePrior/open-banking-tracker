@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;STANDARD VARIABLE&quot;,
     &quot;effectiveFrom&quot;: &quot;2023-03-26T22:05:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-04-24T07:31:09.247Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-04-26T23:33:08.783Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Standard Variable&quot;,
     &quot;description&quot;: &quot;Standard Variable Home Loan&quot;,
@@ -22,14 +22,6 @@
         &quot;eligibilityUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/variable-rate/&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
     },
-    &quot;bundles&quot;: [
-        {
-            &quot;name&quot;: &quot;Home Loan Package &quot;,
-            &quot;description&quot;: &quot;Benefit from a discount on the standard variable rate with the HSBC Home Loan Package and waiver of Establishment Fee, Valuation Fee and Settlement Fee, for one annual fee of $390&quot;,
-            &quot;additionalInfo&quot;: &quot;$390 annual package fee is applicable &quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/variable-rate/&quot;
-        }
-    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;REDRAW&quot;,
@@ -51,26 +43,27 @@
         {
             &quot;featureType&quot;: &quot;OFFSET&quot;,
             &quot;additionalValue&quot;: &quot;100% offset with unlimited free local credits and debits &quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
+            &quot;additionalValue&quot;: &quot;3288.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Cashback of $3,288 for refinances. Eligibility, terms and conditions apply.&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;$50,000&quot;
+            &quot;additionalValue&quot;: &quot;50000&quot;
         },
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;$15,000,000&quot;
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;15000000&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Available on new borrowings from $50,000.&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Available on new borrowings from $50,000.&quot;
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -127,13 +120,6 @@
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;additionalInfo&quot;: &quot;When we agree to vary your home loan &quot;
-        },
-        {
-            &quot;name&quot;: &quot;Package Fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;390.00&quot;,
-            &quot;additionalValue&quot;: &quot;Annual fee charged for package&quot;,
-            &quot;additionalInfo&quot;: &quot;Changed annually in advance&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -141,91 +127,100 @@
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;comparisonRate&quot;: &quot;0.0577&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.01 % with a Comparison Rate of 8.40%&quot;,
-            &quot;additionalInfo&quot;: &quot;Between 70 -  80% LVR PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;O/O Variable P&amp;I (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0559&quot;,
             &quot;comparisonRate&quot;: &quot;0.0596&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.01% with a Comparison Rate of 8.40%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80%  PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;O/O Variable P&amp;I (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;comparisonRate&quot;: &quot;0.0577&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.01 % with a Comparison Rate of 8.40%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 80% PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;O/O Variable IO (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0569&quot;,
             &quot;comparisonRate&quot;: &quot;0.0606&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.63% with a Comparison Rate of 9.01%&quot;,
-            &quot;additionalInfo&quot;: &quot;between 70% - 80% PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;INV Variable P&amp;I (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0589&quot;,
             &quot;comparisonRate&quot;: &quot;0.0626&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.63% with a Comparison Rate of 9.01%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80%  PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;INV Variable P&amp;I (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0589&quot;,
             &quot;comparisonRate&quot;: &quot;0.0612&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.88% with a Comparison Rate of 9.11%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR up to 80%  PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;INV Variable IO (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0609&quot;,
             &quot;comparisonRate&quot;: &quot;0.0632&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.88% with a Comparison Rate of 9.11%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80% PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;INV Variable IO (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0529&quot;,
             &quot;comparisonRate&quot;: &quot;0.0567&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.01 % with a Comparison Rate of 8.40%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to  60% LVR PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;O/O Variable P&amp;I (LVR&lt;=60%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0549&quot;,
             &quot;comparisonRate&quot;: &quot;0.0587&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.63% with a Comparison Rate of 9.01%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 60% PACKAGE&quot;
+            &quot;additionalInfo&quot;: &quot;INV Variable P&amp;I (LVR&lt;=60%)&quot;
         }
     ]
 }</textarea>

@@ -7,8 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;HOME VALUE&quot;,
-    &quot;effectiveFrom&quot;: &quot;2023-03-26T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-04-24T07:32:21.211Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-04-27T00:25:37.136Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Home Value Loan &quot;,
     &quot;description&quot;: &quot;Basic Variable Home Loan&quot;,
@@ -40,22 +39,37 @@
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Unlimited deposits&quot;,
             &quot;additionalInfo&quot;: &quot;Unlimited free deposits into the home value account&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
+            &quot;additionalValue&quot;: &quot;3288.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Cashback of $3,288 for refinances. Eligibility, terms and conditions apply.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/fixed-rate/&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;$50,000&quot;
+            &quot;additionalValue&quot;: &quot;50000.00&quot;
         },
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;$15,000,000&quot;
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;15000000.00&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Available on new borrowings from $50,000.&quot;
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Must be an Australian Resident to be eligible for package&quot;,
+            &quot;additionalInfo&quot;: &quot;Not available to non-residents.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/fixed-rate/&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -63,54 +77,63 @@
             &quot;name&quot;: &quot;Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;600.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Waived during campaign&quot;
         },
         {
             &quot;name&quot;: &quot;Settlement Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Waived during campaign&quot;
         },
         {
             &quot;name&quot;: &quot;Loan Splitting Fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;For a fourth loan account or more. &quot;
         },
         {
             &quot;name&quot;: &quot;Company applicant processing fee &quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;For company applications and when you first draw on the loan. &quot;
         },
         {
             &quot;name&quot;: &quot;Trust structure fee &quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When there is a trust and you first draw on the loan. &quot;
         },
         {
             &quot;name&quot;: &quot;Non-standard security fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;200.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When a security is not residential property and when you first draw on your loan&quot;
         },
         {
             &quot;name&quot;: &quot;Discharge Fee&quot;,
             &quot;feeType&quot;: &quot;EXIT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When we discharge the mortgage over the security property &quot;
         },
         {
             &quot;name&quot;: &quot;Consent / Production of title fee &quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When you request a consent or other production of title matters &quot;
         },
         {
             &quot;name&quot;: &quot;Loan Variation fee &quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When we agree to vary your home loan &quot;
         }
     ],
@@ -119,111 +142,123 @@
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0529&quot;,
             &quot;comparisonRate&quot;: &quot;0.053&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 7.40% with a Comparison Rate of 7.47%&quot;,
-            &quot;additionalInfo&quot;: &quot;Between 70 - 80% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;O/O HV P&amp;I (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0549&quot;,
             &quot;comparisonRate&quot;: &quot;0.055&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;Reference Rate is 7.40% with a Comparison Rate of 7.47%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80% &quot;
+            &quot;additionalInfo&quot;: &quot;O/O HV P&amp;I (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0579&quot;,
             &quot;comparisonRate&quot;: &quot;0.0543&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 7.40% with a Comparison Rate of 7.47%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 80% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;O/O HV IO (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0559&quot;,
             &quot;comparisonRate&quot;: &quot;0.056&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.02% with a Comparison Rate of 8.09%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR between 70% - 80%&quot;
+            &quot;additionalInfo&quot;: &quot;INV HV P&amp;I (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0579&quot;,
             &quot;comparisonRate&quot;: &quot;0.0579&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.02% with a Comparison Rate of 8.09%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80% &quot;
+            &quot;additionalInfo&quot;: &quot;INV HV P&amp;I (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;comparisonRate&quot;: &quot;0.056&quot;,
+            &quot;rate&quot;: &quot;0.0579&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0568&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.02% with a Comparison Rate of 8.09%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR up to 80%&quot;
+            &quot;additionalInfo&quot;: &quot;INV HV IO (LVR&lt;=80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0599&quot;,
             &quot;comparisonRate&quot;: &quot;0.0588&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.27% with a Comparison Rate of 8.20%&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR greater than 80% &quot;
+            &quot;additionalInfo&quot;: &quot;INV HV IO (LVR&gt;80%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0524&quot;,
             &quot;comparisonRate&quot;: &quot;0.0525&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 7.40% with a Comparison Rate of 7.47%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 70% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;O/O HV P&amp;I (LVR&lt;=70%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0549&quot;,
             &quot;comparisonRate&quot;: &quot;0.055&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.02% with a Comparison Rate of 8.09%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 70% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;INV HV P&amp;I (LVR&lt;=70%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0519&quot;,
             &quot;comparisonRate&quot;: &quot;0.052&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 7.40% with a Comparison Rate of 7.47%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 60% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;O/O HV P&amp;I (LVR&lt;=60%)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0539&quot;,
             &quot;comparisonRate&quot;: &quot;0.054&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;additionalValue&quot;: &quot;Reference Rate is 8.02% with a Comparison Rate of 8.09%&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 70% LVR&quot;
+            &quot;additionalInfo&quot;: &quot;INV HV P&amp;I (LVR&lt;=60%)&quot;
         }
     ]
 }</textarea>
