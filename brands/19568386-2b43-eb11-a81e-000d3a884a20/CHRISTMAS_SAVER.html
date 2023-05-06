@@ -16,16 +16,6 @@
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -45,6 +35,9 @@
             &quot;name&quot;: &quot;MEMBERSHIP_ADMIN_FEE&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;P1M&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;P1M&quot;,
@@ -55,6 +48,11 @@
                     &quot;description&quot;: &quot;Membership Admin Fee&quot;,
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
                     &quot;amount&quot;: &quot;5.00&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: null,
+                    &quot;additionalValue&quot;: null,
                     &quot;eligibility&quot;: [
                         {
                             &quot;discountEligibilityType&quot;: &quot;MAX_AGE&quot;,
@@ -63,7 +61,7 @@
                             &quot;additionalInfoUri&quot;: &quot;&quot;
                         },
                         {
-                            &quot;discountEligibilityType&quot;: &quot;INTRODUCTORY&quot;,
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
                             &quot;additionalValue&quot;: &quot;P3M&quot;,
                             &quot;additionalInfo&quot;: &quot;&quot;,
                             &quot;additionalInfoUri&quot;: &quot;&quot;
@@ -88,6 +86,9 @@
             &quot;name&quot;: &quot;PAPER_STAT_FEE&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;P1M&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;P1M&quot;,
@@ -98,6 +99,11 @@
                     &quot;description&quot;: &quot;Paper Statement Fee&quot;,
                     &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
                     &quot;amount&quot;: &quot;2.50&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;transactionRate&quot;: null,
+                    &quot;accruedRate&quot;: null,
+                    &quot;feeRate&quot;: null,
+                    &quot;additionalValue&quot;: null,
                     &quot;eligibility&quot;: [
                         {
                             &quot;discountEligibilityType&quot;: &quot;MAX_AGE&quot;,
@@ -112,7 +118,7 @@
                             &quot;additionalInfoUri&quot;: &quot;&quot;
                         },
                         {
-                            &quot;discountEligibilityType&quot;: &quot;INTRODUCTORY&quot;,
+                            &quot;discountEligibilityType&quot;: &quot;BUSINESS&quot;,
                             &quot;additionalValue&quot;: &quot;P3M&quot;,
                             &quot;additionalInfo&quot;: &quot;&quot;,
                             &quot;additionalInfoUri&quot;: &quot;&quot;
@@ -137,7 +143,7 @@
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;rate&quot;: &quot;0.01500&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -146,7 +152,8 @@
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 0.0,
                     &quot;maximumValue&quot;: 1000000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
                 }
             ],
             &quot;additionalInfo&quot;: &quot;&quot;,
@@ -154,7 +161,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0225&quot;,
+            &quot;rate&quot;: &quot;0.00100&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -162,7 +169,9 @@
                     &quot;name&quot;: &quot;CHRISTMAS SAVER_Tier_2&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 1000000.01,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;maximumValue&quot;: null,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: null
                 }
             ],
             &quot;additionalInfo&quot;: &quot;&quot;,
@@ -170,7 +179,7 @@
         }
     ],
     &quot;productId&quot;: &quot;CHRISTMAS_SAVER&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-15T11:24:36.000+11:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-10-04T09:36:21.000+11:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;CHRISTMAS SAVER&quot;,
     &quot;description&quot;: &quot;CHRISTMAS SAVER&quot;,

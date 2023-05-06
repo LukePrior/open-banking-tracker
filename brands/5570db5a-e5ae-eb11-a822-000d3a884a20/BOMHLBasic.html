@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;BOMHLBasic&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-22T04:04:39Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-29T05:17:06Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Basic Home Variable Loan&quot;,
     &quot;description&quot;: &quot;Our lowest variable home loan rate, with redraw and no ongoing fees.&quot;,
@@ -15,7 +15,7 @@
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.bankofmelbourne.com.au/personal/home-loans/our-home-loans/basic-home-loan&quot;,
-        &quot;termsUri&quot;: &quot;https://www.bankofmelbourne.com.au/personal/home-loans/our-home-loans/basic-home-loan&quot;,
+        &quot;termsUri&quot;: &quot;https://www.bankofmelbourne.com.au/content/dam/bom/downloads/personal/home-loans/Residential-Loan-Agreement.pdf&quot;,
         &quot;eligibilityUri&quot;: &quot;https://www.bankofmelbourne.com.au/personal/home-loans/our-home-loans/basic-home-loan&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.bankofmelbourne.com.au/content/dam/bom/downloads/personal/home-loans/Loan-Accounts.pdf&quot;
     },
@@ -41,9 +41,9 @@
             &quot;additionalInfo&quot;: &quot;Take a break from repayments : You may be able to pause or reduce your repayments for a set period (keep in mind after the break your repayments may be higher for the rest of your loan term)&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
             &quot;additionalValue&quot;: &quot;4000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;$4K Cashback when you Refinance. Apply by 31 August 2023, settle by 30 November 2023. Owner Occupier (P&amp;I repayments) and Residential Investment loans, with LVR up to 80%. Available on home loans with our Advantage Package ($395 annual package fee) and our Basic Home Loan (no annual fee). $200k min loan. Only one $4K cashback offer available per primary applicant within a 12 month period. Excludes refinances from within Westpac Group.&quot;,
+            &quot;additionalInfo&quot;: &quot;$4K Cashback when you Refinance. Apply by 31st October 2022, and settle by 31st January 2023. Owner Occupier (P&amp;I repayments) and Residential Investment loans, with LVR up to 80%. Available on home loans with our Advantage Package ($395 annual package fee) and our Basic Home Loan (no annual fee). $200k min loan. Only one $4K cashback offer available per primary applicant within a 12 month period. Excludes refinances from within Westpac Group.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.bankofmelbourne.com.au/personal/home-loans/refinancing?pid=ibc:hl:digioffer_2003:catpg:&quot;
         },
         {
@@ -53,10 +53,6 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Statements of account : We will send you a statement of your loan account at least every six months or more frequently if you request&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Complete your refinance loan application with FASTRefi. A faster and easier refinancing process compared to the standard way - so you could access your new Bank of Melbourne home loan in days, as opposed to weeks. Eligibility applies.&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -96,6 +92,41 @@
             &quot;additionalValue&quot;: &quot;P1M&quot;
         },
         {
+            &quot;name&quot;: &quot;Overseas Withdrawal Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;additionalInfo&quot;: &quot;The fee is Nil ($0) for cash withdrawals from Global ATM Alliance and Westpac Group partner ATMs. To find an overseas ATM visit the link below&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Foreign Currency Conversion Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Bank cheque fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Per Cheque Fee&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Renegotiation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee payable whenever we agree to renegotiate or vary conditions on a loan other than a conversion (switch) to a different interest rate or home loan type&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Loan Payment Dishonour Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee payable whenever a direct debit order for payment from another institution is dishonoured:&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Repayment Pause&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee payable when customer requests to pause the repayments&quot;
+        },
+        {
             &quot;name&quot;: &quot;Document Processing Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
@@ -107,10 +138,46 @@
             &quot;additionalInfo&quot;: &quot;The Fee starts from $ 164 and the amount payable is dependent on location/value of security property(is)&quot;
         },
         {
+            &quot;name&quot;: &quot;External property inspection&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;From $92.25&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Electronic Property Market Value Estimate&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;From $10.25&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Property Market Value Assessment&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;From $71.75&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Additional security property fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Substituting securities on existing home loans&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;
+        },
+        {
             &quot;name&quot;: &quot;Missed Payment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
             &quot;additionalInfo&quot;: &quot;Fee payable when we send customer an arrears letter relating to an overdue amount&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Safe custody of your title deeds&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee payable per lodgement when customer opts to keep title deeds in safe custody envelope&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Copy of withdrawal or deposit form&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.50&quot;
         },
         {
             &quot;name&quot;: &quot;Loan Discharge Fee&quot;,
@@ -127,8 +194,8 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0795&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0796&quot;,
+            &quot;rate&quot;: &quot;0.0670&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0675&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -144,8 +211,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0736&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0737&quot;,
+            &quot;rate&quot;: &quot;0.0611&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0616&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -161,8 +228,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0823&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0824&quot;,
+            &quot;rate&quot;: &quot;0.0698&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0703&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -178,8 +245,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0794&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0795&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0674&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -195,8 +262,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0654&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0535&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -213,8 +280,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0534&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0535&quot;,
+            &quot;rate&quot;: &quot;0.0414&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0415&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -231,8 +298,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0594&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0595&quot;,
+            &quot;rate&quot;: &quot;0.0474&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0475&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -249,8 +316,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0560&quot;,
+            &quot;rate&quot;: &quot;0.0439&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0440&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -267,8 +334,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0795&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0796&quot;,
+            &quot;rate&quot;: &quot;0.0670&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0675&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -284,8 +351,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0736&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0737&quot;,
+            &quot;rate&quot;: &quot;0.0611&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0616&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -301,8 +368,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0823&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0824&quot;,
+            &quot;rate&quot;: &quot;0.0698&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0703&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -318,8 +385,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0794&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0795&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0674&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -335,8 +402,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0654&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;rate&quot;: &quot;0.0534&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0535&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -353,8 +420,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0534&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0535&quot;,
+            &quot;rate&quot;: &quot;0.0414&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0415&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -371,8 +438,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0594&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0595&quot;,
+            &quot;rate&quot;: &quot;0.0474&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0475&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -389,8 +456,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0560&quot;,
+            &quot;rate&quot;: &quot;0.0439&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0440&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -407,8 +474,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0795&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0796&quot;,
+            &quot;rate&quot;: &quot;0.0675&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0680&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -424,8 +491,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0736&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0737&quot;,
+            &quot;rate&quot;: &quot;0.0616&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0621&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -441,8 +508,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0823&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0824&quot;,
+            &quot;rate&quot;: &quot;0.0703&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0708&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -458,8 +525,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0794&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0795&quot;,
+            &quot;rate&quot;: &quot;0.0674&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0679&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -475,8 +542,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0654&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0540&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -493,8 +560,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0534&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0535&quot;,
+            &quot;rate&quot;: &quot;0.0419&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0420&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -511,8 +578,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0594&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0595&quot;,
+            &quot;rate&quot;: &quot;0.0479&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0480&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -529,8 +596,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0559&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0560&quot;,
+            &quot;rate&quot;: &quot;0.0444&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0445&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -547,8 +614,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0805&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0806&quot;,
+            &quot;rate&quot;: &quot;0.0675&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0680&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -564,8 +631,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0746&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0747&quot;,
+            &quot;rate&quot;: &quot;0.0616&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0621&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -581,8 +648,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0833&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0834&quot;,
+            &quot;rate&quot;: &quot;0.0703&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0708&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -598,8 +665,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0804&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0805&quot;,
+            &quot;rate&quot;: &quot;0.0674&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0679&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -615,8 +682,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0664&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0665&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0540&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -630,6 +697,128 @@
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Owner Occupier Basic Home Loan applications with Principal and Interest repayments received. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0419&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0420&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70.01,
+                    &quot;maximumValue&quot;: 80
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Owner Occupier Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0479&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0480&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70.01,
+                    &quot;maximumValue&quot;: 80
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Residential Investment Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0444&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0445&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70.01,
+                    &quot;maximumValue&quot;: 80
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Residential Investment Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0680&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0685&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90
+                }
+            ]
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0621&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0626&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90
+                }
+            ]
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0708&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0713&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90
+                }
+            ]
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0684&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90
+                }
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -637,128 +826,6 @@
             &quot;comparisonRate&quot;: &quot;0.0545&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70.01,
-                    &quot;maximumValue&quot;: 80
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Owner Occupier Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0604&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0605&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70.01,
-                    &quot;maximumValue&quot;: 80
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Residential Investment Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0570&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 70.01% to 80%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70.01,
-                    &quot;maximumValue&quot;: 80
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Basic Home Loan Promotional Rate: This offer is only available for new Residential Investment Basic Home Loan applications with Principal and Interest repayments. Discount applies to our Basic Home Loan offer for the life of the loan. Excludes internal refinances and switches within St.George, Bank of Melbourne and BankSA. This offer may be varied or withdrawn at any time. Interest rates subject to change.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0835&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0836&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 80.01,
-                    &quot;maximumValue&quot;: 90
-                }
-            ]
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0776&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0777&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 80.01,
-                    &quot;maximumValue&quot;: 90
-                }
-            ]
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0863&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0864&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 80.01,
-                    &quot;maximumValue&quot;: 90
-                }
-            ]
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0834&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0835&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR from 80.01% to 90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 80.01,
-                    &quot;maximumValue&quot;: 90
-                }
-            ]
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0694&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0695&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -773,8 +840,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0575&quot;,
+            &quot;rate&quot;: &quot;0.0424&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0425&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -791,8 +858,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0634&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0635&quot;,
+            &quot;rate&quot;: &quot;0.0484&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0485&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -809,8 +876,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0599&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0600&quot;,
+            &quot;rate&quot;: &quot;0.0449&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0450&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -827,8 +894,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0835&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0836&quot;,
+            &quot;rate&quot;: &quot;0.0680&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0685&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -844,8 +911,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0776&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0777&quot;,
+            &quot;rate&quot;: &quot;0.0621&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0626&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -861,8 +928,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0863&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0864&quot;,
+            &quot;rate&quot;: &quot;0.0708&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0713&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -878,8 +945,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0834&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0835&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0684&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -895,8 +962,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0694&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0695&quot;,
+            &quot;rate&quot;: &quot;0.0544&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0545&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -913,8 +980,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0575&quot;,
+            &quot;rate&quot;: &quot;0.0424&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0425&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -931,8 +998,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0634&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0635&quot;,
+            &quot;rate&quot;: &quot;0.0484&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0485&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -949,8 +1016,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0599&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0600&quot;,
+            &quot;rate&quot;: &quot;0.0449&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0450&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
