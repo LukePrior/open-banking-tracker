@@ -213,11 +213,36 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0574",
-                "comparisonRate": "0.0808",
+                "rate": "0.0589",
+                "comparisonRate": "0.081",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "LVR up to 70.00%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 70
+                    },
+                    {
+                        "name": "1 year standard fixed rate",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0619",
+                "comparisonRate": "0.0865",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
@@ -239,17 +264,67 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0599",
-                "comparisonRate": "0.0863",
+                "comparisonRate": "0.0859",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "LVR up to 70.00%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 70
+                    },
+                    {
+                        "name": "1 year standard fixed rate",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0609",
+                "comparisonRate": "0.0883",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "LVR up to 70.00%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 70
+                    },
+                    {
+                        "name": "1 year standard fixed rate",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "comparisonRate": "0.082",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "LVR up to 70.00%",
+                        "name": "LVR above 70.00%",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0,
-                        "maximumValue": 70
+                        "minimumValue": 70,
+                        "maximumValue": 95
                     },
                     {
                         "name": "1 year standard fixed rate",
@@ -259,65 +334,16 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P12M"
+                "additionalValue": "P12M",
+                "additionalInfo": "Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0574",
-                "comparisonRate": "0.0856",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "tiers": [
-                    {
-                        "name": "LVR up to 70.00%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0,
-                        "maximumValue": 70
-                    },
-                    {
-                        "name": "1 year standard fixed rate",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12,
-                        "maximumValue": 12,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P12M"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0594",
-                "comparisonRate": "0.0881",
+                "rate": "0.0629",
+                "comparisonRate": "0.0875",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "tiers": [
-                    {
-                        "name": "LVR up to 70.00%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0,
-                        "maximumValue": 70
-                    },
-                    {
-                        "name": "1 year standard fixed rate",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12,
-                        "maximumValue": 12,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P12M"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0584",
-                "comparisonRate": "0.0818",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
@@ -340,33 +366,7 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0609",
-                "comparisonRate": "0.0873",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "tiers": [
-                    {
-                        "name": "LVR above 70.00%",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 70,
-                        "maximumValue": 95
-                    },
-                    {
-                        "name": "1 year standard fixed rate",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12,
-                        "maximumValue": 12,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P12M",
-                "additionalInfo": "Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0584",
-                "comparisonRate": "0.0866",
+                "comparisonRate": "0.0869",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -391,8 +391,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0604",
-                "comparisonRate": "0.0891",
+                "rate": "0.0619",
+                "comparisonRate": "0.0893",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -417,8 +417,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0629",
-                "comparisonRate": "0.0795",
+                "rate": "0.0589",
+                "comparisonRate": "0.0787",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -517,8 +517,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0639",
-                "comparisonRate": "0.0805",
+                "rate": "0.0599",
+                "comparisonRate": "0.0797",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",

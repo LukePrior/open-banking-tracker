@@ -2,7 +2,7 @@
     "data": {
         "productId": "07ddb3f7-4488-4fef-bba9-d0566b410302",
         "effectiveFrom": "2020-09-24T02:02:00+00:00",
-        "lastUpdated": "2023-03-31T06:09:41+00:00",
+        "lastUpdated": "2023-05-31T04:18:31+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Saver Account",
         "description": "This is a special purpose savings account created to enable you to earn extra interest if you do not withdraw funds. Funds are available at call. You can use Internet and Redidial Phone Banking on the account. ",
@@ -22,6 +22,21 @@
         ],
         "features": [
             {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Email Address",
+                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Internet banking",
+                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
                 "featureType": "NPP_PAYID",
                 "additionalValue": "Mobile Number",
                 "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
@@ -33,13 +48,10 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
             },
             {
-                "featureType": "NPP_ENABLED",
-                "additionalValue": "Yes"
-            },
-            {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Email Address",
-                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Make regular credits like your pay into this account",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
             },
             {
                 "featureType": "OTHER",
@@ -48,40 +60,23 @@
             },
             {
                 "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Internet banking",
-                "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Phone banking",
                 "additionalInfo": "You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Make regular credits like your pay into this account",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/financial_services_guide.pdf"
             }
         ],
         "constraints": [
             {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "None"
+            },
+            {
                 "constraintType": "OPENING_BALANCE",
                 "additionalValue": "0",
                 "additionalInfo": "When you apply to become a Border Bank Member, you do not have to pay a membership fee. All we ask is that you guarantee to pay $10 if Border Bank ever ceases to operate to the person/s looking after our winding up."
-            },
-            {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "None"
             }
         ],
         "eligibility": [
-            {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Core Members",
-                "additionalInfo": "Bonus Saver Account is only available to Australian Customs and Border Protection Services and Australian Quarantine Inspection Services (Core Members)"
-            },
             {
                 "eligibilityType": "NATURAL_PERSON",
                 "additionalValue": "Individuals"
@@ -92,11 +87,16 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Residents"
+                "additionalValue": "Australian Citizen"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen"
+                "additionalValue": "Australian Residents"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Core Members",
+                "additionalInfo": "Bonus Saver Account is only available to Australian Customs and Border Protection Services and Australian Quarantine Inspection Services (Core Members)"
             }
         ],
         "fees": [
@@ -109,32 +109,16 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Third Party Costs",
+                "name": "Special Cheque clearance fee for Personal Accounts",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "16.50",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
                 "name": "Counter Cash withdrawal $25,000 and over",
                 "feeType": "TRANSACTION",
                 "amount": "50.00",
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
-            },
-            {
-                "name": "Special Cheque clearance fee for Personal Accounts",
-                "feeType": "EVENT",
-                "amount": "16.50",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
@@ -148,12 +132,20 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dormant Accounts fee",
+                "name": "Third Party Costs",
                 "feeType": "EVENT",
-                "amount": "10.00",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalValue": "At Cost",
+                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Counter Cash withdrawal fee up to $24,999",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
             },
             {
                 "name": "Document Retrieval fee",
@@ -162,6 +154,14 @@
                 "currency": "AUD",
                 "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
                 "additionalInfo": "Payable on request for documents to be retrieved",
+                "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Dormant Accounts fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
                 "additionalInfoUri": "https://www.borderbank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -175,26 +175,26 @@
         ],
         "depositRates": [
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0005",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
-            },
-            {
                 "depositRateType": "BONUS",
-                "rate": "0.035",
+                "rate": "0.0375",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M"
             }
