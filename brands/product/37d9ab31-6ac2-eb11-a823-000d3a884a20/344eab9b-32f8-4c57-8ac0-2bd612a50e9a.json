@@ -87,16 +87,29 @@
         "fees": [
             {
                 "feeType": "TRANSACTION",
-                "name": "VISA_CASH_ADVANCE/OVERSEAS_ATM",
+                "name": "BRANCH_CHEQUE_DEPOSIT",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "5.00",
+                "amount": "0.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
+                    {
+                        "description": "All Member Monthly Free Transactions",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "All members receive 3 Free ATM or EFTPOS transactions, 5 free branch cheque deposits and 10 free Cheque Collection (deposits) items per month",
+                        "additionalInfoUri": null,
+                        "additionalValue": "All Members Eligible",
+                        "amount": "11.25000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -138,60 +151,6 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
-                    {
-                        "description": "Excludes specially requested services charges",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "S4 and S9 products eligible",
-                        "amount": "0.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
-                    {
-                        "description": "Relationship Balance >$175k - Unlimited Free Transactions",
-                        "discountType": "BALANCE",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Excludes specially requested services charges",
-                        "amount": "0.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
-                "feeType": "TRANSACTION",
-                "name": "BRANCH_CHEQUE_DEPOSIT",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "0.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "All Member Monthly Free Transactions",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "All members receive 3 Free ATM or EFTPOS transactions, 5 free branch cheque deposits and 10 free Cheque Collection (deposits) items per month",
-                        "additionalInfoUri": null,
-                        "additionalValue": "All Members Eligible",
-                        "amount": "11.25000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -276,20 +235,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PAYMENT",
-                "name": "BANK@POST Transaction",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "Applies to either a Bank@Post Deposit or Withdrawal with a Family First Visa Card",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "3.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "TRANSACTION",
                 "name": "CHEQUE_COLLECTION",
                 "accrualFrequency": "P1M",
@@ -341,6 +286,20 @@
                         "transactionRate": null
                     }
                 ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PAYMENT",
+                "name": "BANK@POST Transaction",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "Applies to either a Bank@Post Deposit or Withdrawal with a Family First Visa Card",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "3.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -596,6 +555,47 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "VISA_CASH_ADVANCE/OVERSEAS_ATM",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Excludes specially requested services charges",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "S4 and S9 products eligible",
+                        "amount": "0.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Relationship Balance >$175k - Unlimited Free Transactions",
+                        "discountType": "BALANCE",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Excludes specially requested services charges",
+                        "amount": "0.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
