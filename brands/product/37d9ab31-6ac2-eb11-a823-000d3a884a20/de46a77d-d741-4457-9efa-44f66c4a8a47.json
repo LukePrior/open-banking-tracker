@@ -113,16 +113,42 @@
         "fees": [
             {
                 "feeType": "TRANSACTION",
-                "name": "BANK@POST",
+                "name": "BRANCH_CASH_WITHDRAWAL/MEMBER_CHEQUE_ENCASHMENT",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "3.50",
+                "amount": "2.75",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
+                    {
+                        "description": "Free ATM or EFTPOS and free Branch Cash Withdrawals",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Age based fee discount - must be under 18 years old",
+                        "amount": "23.50000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
+                    {
+                        "description": "Member over 65 Years Old - 4 free Branch Cash Withdrawals",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": "Age based eligibility - greater than 65 Years of age",
+                        "amount": "11.00000000",
+                        "balanceRate": null,
+                        "eligibility": [],
+                        "feeRate": null,
+                        "transactionRate": null
+                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -167,42 +193,16 @@
             },
             {
                 "feeType": "TRANSACTION",
-                "name": "BRANCH_CASH_WITHDRAWAL/MEMBER_CHEQUE_ENCASHMENT",
+                "name": "BANK@POST",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "2.75",
+                "amount": "3.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
-                    {
-                        "description": "Free ATM or EFTPOS and free Branch Cash Withdrawals",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Age based fee discount - must be under 18 years old",
-                        "amount": "23.50000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
-                    {
-                        "description": "Member over 65 Years Old - 4 free Branch Cash Withdrawals",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": "Age based eligibility - greater than 65 Years of age",
-                        "amount": "11.00000000",
-                        "balanceRate": null,
-                        "eligibility": [],
-                        "feeRate": null,
-                        "transactionRate": null
-                    },
                     {
                         "description": "Excludes specially requested services charges",
                         "discountType": "ELIGIBILITY_ONLY",
@@ -408,20 +408,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "TRANSACTION",
                 "name": "DOMESTIC_ATM_ENQUIRY/DECLINED_TRANSACTION",
                 "accrualFrequency": "P1M",
@@ -553,6 +539,20 @@
                         "transactionRate": null
                     }
                 ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "MONTHLY_VISA_DEBIT_CARD_FEE",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
                 "transactionRate": null
             },
             {
