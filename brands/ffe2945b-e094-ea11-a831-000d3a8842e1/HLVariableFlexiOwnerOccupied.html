@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;HLVariableFlexiOwnerOccupied&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-05-26T01:06:34Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-29T05:16:03Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Flexi First : Basic Variable Home Loan (Owner Occupied)&quot;,
     &quot;description&quot;: &quot;Flexi First Option is a basic home loan with a low variable rate, no loan account fee and no lending establishment fee with Principal &amp; Interest repayments.&quot;,
@@ -39,9 +39,9 @@
             &quot;additionalInfo&quot;: &quot;Save on fees : You won't pay any lending establishment or loan account fees.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;3500.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Get $3,500 cashback when you refinance with us. Apply by 30 June 2023, settle by 30 September 2023. Owner Occupier loans (P&amp;I repayments) and Investment Property Loans, with LVR+ up to 80% and min $250k loan. Flexi First Option or packaged home loans only ($395 annual package fee). Only one cashback offer available per primary applicant within a 12 month period. Excludes refinances within Westpac Group.&quot;
+            &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
+            &quot;additionalValue&quot;: &quot;2000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Get $2K cashback when you refinance with us. Apply by 31st October 2022, settle by 31st January 2023. Owner Occupier loans (P&amp;I repayments) and Investment Property Loans, with LVR+ up to 80% and min $250k loan. Flexi First Option or packaged home loans only ($395 annual package fee). Only one cashback offer available per primary applicant within a 12 month period. Excludes refinances within Westpac Group.&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
@@ -93,7 +93,20 @@
         {
             &quot;name&quot;: &quot;Lending Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;
+            &quot;amount&quot;: &quot;600.00&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Take up our Flexi First Option Home Loan and we'll waive the establishment fee&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;600.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Pay no setup fee : We'll waive your establishment fee, saving you $600 (offer may be varied or withdrawn at any time).&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Guarantor Fee&quot;,
@@ -111,6 +124,21 @@
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;additionalValue&quot;: &quot;P1M&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Top up / Loan increase fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Top up with Portability Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Switch loan or split balance Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;
         },
         {
             &quot;name&quot;: &quot;Missed Payment Fee&quot;,
@@ -133,6 +161,11 @@
             &quot;amount&quot;: &quot;90.00&quot;
         },
         {
+            &quot;name&quot;: &quot;Outward Dishonour Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;
+        },
+        {
             &quot;name&quot;: &quot;Account Overdrawn Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;
@@ -143,6 +176,11 @@
             &quot;amount&quot;: &quot;350.00&quot;
         },
         {
+            &quot;name&quot;: &quot;Progress draw set up&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;95.00&quot;
+        },
+        {
             &quot;name&quot;: &quot;Lenders Mortgage Insurance Premium&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;additionalInfo&quot;: &quot;If your deposit is less than 20% then Lenders Mortgage Insurance is usually required. There may be other circumstances where Lenders Mortgage Insurance is also required. As Lenders Mortgage Insurance reduces bank's risk as a lender when providing a home loan, you may be able to apply for a home loan and get into your home sooner, with a lower deposit. Lenders Mortgage Insurance insures bank for any shortfall in the event that you default on your loan and if the proceeds from the property sale are not enough to pay off the loan in full. The cost of Lenders Mortgage Insurance is calculated as a percentage of the loan amount. The percentage applied will vary depending on a number of factors. Please speak to your lender if you would like to understand this process in more detail. The cost of Lenders Mortgage Insurance premium is passed on to you. We do not receive a commission on Lenders Mortgage Insurance.&quot;
@@ -151,8 +189,8 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0758&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0758&quot;,
+            &quot;rate&quot;: &quot;0.0608&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0613&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -168,8 +206,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0817&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0817&quot;,
+            &quot;rate&quot;: &quot;0.0667&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0672&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -185,8 +223,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0768&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0768&quot;,
+            &quot;rate&quot;: &quot;0.0618&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0623&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -203,8 +241,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0827&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0827&quot;,
+            &quot;rate&quot;: &quot;0.0677&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0682&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -221,7 +259,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
-            &quot;rate&quot;: &quot;0.0159&quot;,
+            &quot;rate&quot;: &quot;0.0169&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -239,7 +277,7 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
-            &quot;rate&quot;: &quot;0.0199&quot;,
+            &quot;rate&quot;: &quot;0.0209&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,

@@ -9,7 +9,7 @@
     &quot;brand&quot;: &quot;THE CAPRICORNIAN&quot;,
     &quot;description&quot;: &quot;iSaver Account&quot;,
     &quot;isTailored&quot;: false,
-    &quot;lastUpdated&quot;: &quot;2023-04-11T03:15:11.613561Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-19T23:40:21.095612Z&quot;,
     &quot;name&quot;: &quot;iSaver&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;productId&quot;: &quot;33563233-c746-4110-b19e-2dbe984248fd&quot;,
@@ -43,7 +43,10 @@
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;additionalInfo&quot;: null,
                     &quot;additionalInfoUri&quot;: null,
-                    &quot;applicabilityConditions&quot;: null,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;&quot;,
+                        &quot;additionalInfoUri&quot;: null
+                    },
                     &quot;maximumValue&quot;: 4999.99,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
@@ -51,7 +54,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0070000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0030000000000000&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
@@ -75,7 +78,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0085000000000000&quot;,
+            &quot;rate&quot;: &quot;0.0040000000000000&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
@@ -114,28 +117,10 @@
     ],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance&quot;,
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Banking app available&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;Account sweep available&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;SMS and/or email notifications available&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;BPAY available&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalInfo&quot;: &quot;Osko by BPAY available&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;An account of this product type can be used as the target of an NPP PayID&quot;
+            &quot;additionalValue&quot;: &quot;Access is available to online banking features for the product&quot;
         },
         {
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
@@ -144,16 +129,69 @@
             &quot;additionalValue&quot;: &quot;An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalInfo&quot;: &quot;Banking app available&quot;,
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;Osko by BPAY available&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;Access is available to online banking features for the product&quot;
+            &quot;additionalValue&quot;: &quot;An account of this product type can be used as the target of an NPP PayID&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;BPAY available&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;SMS and/or email notifications available&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;Account sweep available&quot;
         }
     ],
     &quot;fees&quot;: [
         {
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;ACCOUNT_SERVICE_FEE&quot;,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Account Service Fee Exemption&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: &quot;&quot;,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;0.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;First account free meeting the following criteria; member is 25 years or younger, member is 65 years and older, minimum deposit or lending balance of $20,000 held within membership.&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: null
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                }
+            ],
+            &quot;transactionRate&quot;: null
+        },
+        {
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;name&quot;: &quot;DIRECT_DEBITS&quot;,
+            &quot;name&quot;: &quot;EXTERNAL_FUNDS_TRANSFER&quot;,
             &quot;accrualFrequency&quot;: &quot;P1M&quot;,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
@@ -223,7 +261,7 @@
         },
         {
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;name&quot;: &quot;EXTERNAL_FUNDS_TRANSFER&quot;,
+            &quot;name&quot;: &quot;DIRECT_DEBITS&quot;,
             &quot;accrualFrequency&quot;: &quot;P1M&quot;,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
@@ -246,41 +284,6 @@
                         {
                             &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
                             &quot;additionalInfo&quot;: &quot;For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.&quot;,
-                            &quot;additionalInfoUri&quot;: null,
-                            &quot;additionalValue&quot;: null
-                        }
-                    ],
-                    &quot;feeRate&quot;: null,
-                    &quot;transactionRate&quot;: null
-                }
-            ],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;name&quot;: &quot;ACCOUNT_SERVICE_FEE&quot;,
-            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;Account Service Fee Exemption&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;accruedRate&quot;: null,
-                    &quot;additionalInfo&quot;: &quot;&quot;,
-                    &quot;additionalInfoUri&quot;: null,
-                    &quot;additionalValue&quot;: null,
-                    &quot;amount&quot;: &quot;0.00000000&quot;,
-                    &quot;balanceRate&quot;: null,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalInfo&quot;: &quot;First account free meeting the following criteria; member is 25 years or younger, member is 65 years and older, minimum deposit or lending balance of $20,000 held within membership.&quot;,
                             &quot;additionalInfoUri&quot;: null,
                             &quot;additionalValue&quot;: null
                         }
