@@ -2,6 +2,883 @@
     "data": {
         "products": [
             {
+                "productId": "term_deposit",
+                "lastUpdated": "2023-06-22T23:18:57Z",
+                "productCategory": "TERM_DEPOSITS",
+                "name": "Term Deposit",
+                "description": "Term Deposits are an ideal way to earn interest on money you do not intend to use immediately. Choose the term and amount you want to invest and leave the rest to us.",
+                "brand": "Bank of Sydney",
+                "brandName": "Bank of Sydney",
+                "isTailored": false,
+                "additionalInformation": {
+                    "overviewUri": "https://www.banksyd.com.au/term-deposit",
+                    "termsUri": "https://www.banksyd.com.au/important-product-information",
+                    "eligibilityUri": "https://www.banksyd.com.au/term-deposit",
+                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+                },
+                "constraints": [
+                    {
+                        "constraintType": "MIN_BALANCE",
+                        "additionalValue": "1000.00"
+                    }
+                ],
+                "eligibility": [
+                    {
+                        "eligibilityType": "NATURAL_PERSON"
+                    },
+                    {
+                        "eligibilityType": "MIN_AGE",
+                        "additionalValue": "18"
+                    },
+                    {
+                        "eligibilityType": "RESIDENCY_STATUS",
+                        "additionalValue": "Australian Resident or Citizen"
+                    }
+                ],
+                "fees": [
+                    {
+                        "feeType": "EVENT",
+                        "name": "Early Redemption Fee",
+                        "amount": "30.00",
+                        "currency": "AUD"
+                    },
+                    {
+                        "feeType": "WITHDRAWAL",
+                        "name": "Bank Cheque Fee",
+                        "amount": "5.00",
+                        "currency": "AUD",
+                        "additionalInfo": "Applicable if you withdraw the balance in the form of a bank cheque"
+                    },
+                    {
+                        "feeType": "TRANSACTION",
+                        "name": "Local Telegraphic Transfer Fee",
+                        "amount": "35.00",
+                        "currency": "AUD",
+                        "additionalInfo": "Applicable if you request the balance to be transferred to another bank via RTGS"
+                    }
+                ],
+                "depositRates": [
+                    {
+                        "rate": "0.031",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "additionalValue": "P1M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.032",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P2M",
+                        "additionalValue": "P2M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P3M",
+                        "additionalValue": "P3M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0465",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P4M",
+                        "additionalValue": "P4M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P5M",
+                        "additionalValue": "P5M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0505",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P6M",
+                        "additionalValue": "P6M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P7M",
+                        "additionalValue": "P7M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P8M",
+                        "additionalValue": "P8M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P9M",
+                        "additionalValue": "P9M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P10M",
+                        "additionalValue": "P10M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P11M",
+                        "additionalValue": "P11M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.05",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P12M",
+                        "additionalValue": "P12M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.05",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P13M",
+                        "additionalValue": "P13M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "1000 to 49999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 1000,
+                                "maximumValue": 49999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.031",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "additionalValue": "P1M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.031",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "additionalValue": "P1M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.032",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P2M",
+                        "additionalValue": "P2M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.032",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P2M",
+                        "additionalValue": "P2M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0465",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P4M",
+                        "additionalValue": "P4M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0465",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P4M",
+                        "additionalValue": "P4M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P5M",
+                        "additionalValue": "P5M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P5M",
+                        "additionalValue": "P5M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P7M",
+                        "additionalValue": "P7M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P8M",
+                        "additionalValue": "P8M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P7M",
+                        "additionalValue": "P7M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P8M",
+                        "additionalValue": "P8M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P9M",
+                        "additionalValue": "P9M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P10M",
+                        "additionalValue": "P10M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P9M",
+                        "additionalValue": "P9M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P10M",
+                        "additionalValue": "P10M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P11M",
+                        "additionalValue": "P11M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P11M",
+                        "additionalValue": "P11M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.05",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P13M",
+                        "additionalValue": "P13M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "additionalValue": "P12M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "tiers": [
+                            {
+                                "name": "50000 to 249999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50000,
+                                "maximumValue": 249999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            },
+                            {
+                                "name": "250000 and above",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 250000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "FIXED"
+                    }
+                ],
+                "features": [
+                    {
+                        "featureType": "DIGITAL_BANKING",
+                        "additionalInfo": "Enquiry Only access"
+                    }
+                ]
+            },
+            {
+                "productId": "online_term_deposit",
+                "lastUpdated": "2023-06-22T23:16:14Z",
+                "productCategory": "TERM_DEPOSITS",
+                "name": "Online Term Deposit",
+                "description": "Term Deposits are an ideal way to earn interest on money you do not intend to use immediately. With a guaranteed interest rate for a set period, you'll always know exactly what your investment will be worth.",
+                "brand": "Bank of Sydney",
+                "brandName": "Bank of Sydney",
+                "applicationUri": "https://bankofsydney.workflowcloud.com/forms/75bb9825-b5fb-4b24-bfb4-7b528bfc1be1",
+                "isTailored": false,
+                "additionalInformation": {
+                    "overviewUri": "https://www.banksyd.com.au/term-deposit",
+                    "termsUri": "https://www.banksyd.com.au/important-product-information",
+                    "eligibilityUri": "https://www.banksyd.com.au/term-deposit",
+                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+                },
+                "constraints": [
+                    {
+                        "constraintType": "MIN_BALANCE",
+                        "additionalValue": "1000.00"
+                    },
+                    {
+                        "constraintType": "MAX_BALANCE",
+                        "additionalValue": "500000.00",
+                        "additionalInfo": "For amounts over $500,000, contact our Term Deposit Specialist at your nearest branch or 13 95 00."
+                    }
+                ],
+                "eligibility": [
+                    {
+                        "eligibilityType": "MIN_AGE",
+                        "additionalValue": "18"
+                    },
+                    {
+                        "eligibilityType": "NATURAL_PERSON"
+                    },
+                    {
+                        "eligibilityType": "RESIDENCY_STATUS",
+                        "additionalValue": "Australian Resident or Citizen"
+                    }
+                ],
+                "fees": [
+                    {
+                        "feeType": "EVENT",
+                        "name": "Early Redemption Fee",
+                        "amount": "30.00",
+                        "currency": "AUD"
+                    },
+                    {
+                        "feeType": "WITHDRAWAL",
+                        "name": "Local Telegraphic Transfer Fee",
+                        "amount": "35.00",
+                        "currency": "AUD",
+                        "additionalInfo": "Applicable if you request the balance to be transferred to another bank via RTGS"
+                    }
+                ],
+                "depositRates": [
+                    {
+                        "rate": "0.031",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "additionalValue": "P1M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.032",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P2M",
+                        "additionalValue": "P2M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P3M",
+                        "additionalValue": "P3M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0465",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P4M",
+                        "additionalValue": "P4M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P5M",
+                        "additionalValue": "P5M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0505",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P6M",
+                        "additionalValue": "P6M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P7M",
+                        "additionalValue": "P7M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.048",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P8M",
+                        "additionalValue": "P8M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P9M",
+                        "additionalValue": "P9M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P10M",
+                        "additionalValue": "P10M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.0485",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P11M",
+                        "additionalValue": "P11M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.05",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P12M",
+                        "additionalValue": "P12M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    },
+                    {
+                        "rate": "0.05",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P13M",
+                        "additionalValue": "P13M",
+                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
+                        "depositRateType": "FIXED"
+                    }
+                ],
+                "features": [
+                    {
+                        "featureType": "DIGITAL_BANKING",
+                        "additionalInfo": "Linked to an Everyday Saver Account so you can easily access your money"
+                    }
+                ]
+            },
+            {
                 "productId": "bosbasic_inv",
                 "lastUpdated": "2023-06-19T08:30:30Z",
                 "productCategory": "RESIDENTIAL_MORTGAGES",
@@ -708,6 +1585,23 @@
                         "featureType": "OTHER",
                         "additionalValue": "Direct Credit",
                         "additionalInfo": "Direct credits to the account are allowed"
+                    }
+                ]
+            },
+            {
+                "productId": "controlled_management_account",
+                "lastUpdated": "2023-06-19T07:01:49Z",
+                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+                "name": "Controlled Management Account",
+                "description": "An account designed for solicitors and real estate agents.",
+                "brand": "Bank of Sydney",
+                "brandName": "Bank of Sydney",
+                "isTailored": false,
+                "additionalInformation": {},
+                "depositRates": [
+                    {
+                        "rate": "0.0315",
+                        "depositRateType": "VARIABLE"
                     }
                 ]
             },
@@ -2604,883 +3498,6 @@
                 ]
             },
             {
-                "productId": "online_term_deposit",
-                "lastUpdated": "2023-06-16T00:27:19Z",
-                "productCategory": "TERM_DEPOSITS",
-                "name": "Online Term Deposit",
-                "description": "Term Deposits are an ideal way to earn interest on money you do not intend to use immediately. With a guaranteed interest rate for a set period, you'll always know exactly what your investment will be worth.",
-                "brand": "Bank of Sydney",
-                "brandName": "Bank of Sydney",
-                "applicationUri": "https://bankofsydney.workflowcloud.com/forms/75bb9825-b5fb-4b24-bfb4-7b528bfc1be1",
-                "isTailored": false,
-                "additionalInformation": {
-                    "overviewUri": "https://www.banksyd.com.au/term-deposit",
-                    "termsUri": "https://www.banksyd.com.au/important-product-information",
-                    "eligibilityUri": "https://www.banksyd.com.au/term-deposit",
-                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
-                },
-                "constraints": [
-                    {
-                        "constraintType": "MIN_BALANCE",
-                        "additionalValue": "1000.00"
-                    },
-                    {
-                        "constraintType": "MAX_BALANCE",
-                        "additionalValue": "500000.00",
-                        "additionalInfo": "For amounts over $500,000, contact our Term Deposit Specialist at your nearest branch or 13 95 00."
-                    }
-                ],
-                "eligibility": [
-                    {
-                        "eligibilityType": "MIN_AGE",
-                        "additionalValue": "18"
-                    },
-                    {
-                        "eligibilityType": "NATURAL_PERSON"
-                    },
-                    {
-                        "eligibilityType": "RESIDENCY_STATUS",
-                        "additionalValue": "Australian Resident or Citizen"
-                    }
-                ],
-                "fees": [
-                    {
-                        "feeType": "EVENT",
-                        "name": "Early Redemption Fee",
-                        "amount": "30.00",
-                        "currency": "AUD"
-                    },
-                    {
-                        "feeType": "WITHDRAWAL",
-                        "name": "Local Telegraphic Transfer Fee",
-                        "amount": "35.00",
-                        "currency": "AUD",
-                        "additionalInfo": "Applicable if you request the balance to be transferred to another bank via RTGS"
-                    }
-                ],
-                "depositRates": [
-                    {
-                        "rate": "0.031",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "additionalValue": "P1M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.032",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P2M",
-                        "additionalValue": "P2M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P3M",
-                        "additionalValue": "P3M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P4M",
-                        "additionalValue": "P4M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0475",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P5M",
-                        "additionalValue": "P5M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P6M",
-                        "additionalValue": "P6M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P7M",
-                        "additionalValue": "P7M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P8M",
-                        "additionalValue": "P8M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P9M",
-                        "additionalValue": "P9M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P10M",
-                        "additionalValue": "P10M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P11M",
-                        "additionalValue": "P11M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.05",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P12M",
-                        "additionalValue": "P12M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.05",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P13M",
-                        "additionalValue": "P13M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "depositRateType": "FIXED"
-                    }
-                ],
-                "features": [
-                    {
-                        "featureType": "DIGITAL_BANKING",
-                        "additionalInfo": "Linked to an Everyday Saver Account so you can easily access your money"
-                    }
-                ]
-            },
-            {
-                "productId": "term_deposit",
-                "lastUpdated": "2023-06-16T00:05:12Z",
-                "productCategory": "TERM_DEPOSITS",
-                "name": "Term Deposit",
-                "description": "Term Deposits are an ideal way to earn interest on money you do not intend to use immediately. Choose the term and amount you want to invest and leave the rest to us.",
-                "brand": "Bank of Sydney",
-                "brandName": "Bank of Sydney",
-                "isTailored": false,
-                "additionalInformation": {
-                    "overviewUri": "https://www.banksyd.com.au/term-deposit",
-                    "termsUri": "https://www.banksyd.com.au/important-product-information",
-                    "eligibilityUri": "https://www.banksyd.com.au/term-deposit",
-                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
-                },
-                "constraints": [
-                    {
-                        "constraintType": "MIN_BALANCE",
-                        "additionalValue": "1000.00"
-                    }
-                ],
-                "eligibility": [
-                    {
-                        "eligibilityType": "NATURAL_PERSON"
-                    },
-                    {
-                        "eligibilityType": "MIN_AGE",
-                        "additionalValue": "18"
-                    },
-                    {
-                        "eligibilityType": "RESIDENCY_STATUS",
-                        "additionalValue": "Australian Resident or Citizen"
-                    }
-                ],
-                "fees": [
-                    {
-                        "feeType": "EVENT",
-                        "name": "Early Redemption Fee",
-                        "amount": "30.00",
-                        "currency": "AUD"
-                    },
-                    {
-                        "feeType": "WITHDRAWAL",
-                        "name": "Bank Cheque Fee",
-                        "amount": "5.00",
-                        "currency": "AUD",
-                        "additionalInfo": "Applicable if you withdraw the balance in the form of a bank cheque"
-                    },
-                    {
-                        "feeType": "TRANSACTION",
-                        "name": "Local Telegraphic Transfer Fee",
-                        "amount": "35.00",
-                        "currency": "AUD",
-                        "additionalInfo": "Applicable if you request the balance to be transferred to another bank via RTGS"
-                    }
-                ],
-                "depositRates": [
-                    {
-                        "rate": "0.031",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "additionalValue": "P1M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.032",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P2M",
-                        "additionalValue": "P2M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P3M",
-                        "additionalValue": "P3M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P4M",
-                        "additionalValue": "P4M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0475",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P5M",
-                        "additionalValue": "P5M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P6M",
-                        "additionalValue": "P6M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P7M",
-                        "additionalValue": "P7M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P8M",
-                        "additionalValue": "P8M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P9M",
-                        "additionalValue": "P9M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P10M",
-                        "additionalValue": "P10M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P11M",
-                        "additionalValue": "P11M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.05",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P12M",
-                        "additionalValue": "P12M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.05",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P13M",
-                        "additionalValue": "P13M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "1000 to 49999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 1000,
-                                "maximumValue": 49999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.031",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "additionalValue": "P1M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.031",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "additionalValue": "P1M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.032",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P2M",
-                        "additionalValue": "P2M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.032",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P2M",
-                        "additionalValue": "P2M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P4M",
-                        "additionalValue": "P4M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0465",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P4M",
-                        "additionalValue": "P4M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0475",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P5M",
-                        "additionalValue": "P5M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0475",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P5M",
-                        "additionalValue": "P5M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P7M",
-                        "additionalValue": "P7M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P8M",
-                        "additionalValue": "P8M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P7M",
-                        "additionalValue": "P7M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P8M",
-                        "additionalValue": "P8M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P9M",
-                        "additionalValue": "P9M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P10M",
-                        "additionalValue": "P10M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P9M",
-                        "additionalValue": "P9M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P10M",
-                        "additionalValue": "P10M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P11M",
-                        "additionalValue": "P11M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.0485",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P11M",
-                        "additionalValue": "P11M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.05",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P13M",
-                        "additionalValue": "P13M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    },
-                    {
-                        "rate": "0.048",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "additionalValue": "P12M",
-                        "additionalInfoUri": "https://www.banksyd.com.au/term-deposit",
-                        "tiers": [
-                            {
-                                "name": "50000 to 249999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50000,
-                                "maximumValue": 249999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            },
-                            {
-                                "name": "250000 and above",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 250000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "FIXED"
-                    }
-                ],
-                "features": [
-                    {
-                        "featureType": "DIGITAL_BANKING",
-                        "additionalInfo": "Enquiry Only access"
-                    }
-                ]
-            },
-            {
                 "productId": "platinum_credit_card",
                 "lastUpdated": "2023-05-26T00:09:38Z",
                 "productCategory": "CRED_AND_CHRG_CARDS",
@@ -3650,23 +3667,6 @@
                         "featureType": "OTHER",
                         "additionalValue": "Staff Assisted Transfers",
                         "additionalInfo": "Staff assisted transactions. In branch Cash Payments"
-                    }
-                ]
-            },
-            {
-                "productId": "controlled_management_account",
-                "lastUpdated": "2023-06-19T07:01:49Z",
-                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-                "name": "Controlled Management Account",
-                "description": "An account designed for solicitors and real estate agents.",
-                "brand": "Bank of Sydney",
-                "brandName": "Bank of Sydney",
-                "isTailored": false,
-                "additionalInformation": {},
-                "depositRates": [
-                    {
-                        "rate": "0.0315",
-                        "depositRateType": "VARIABLE"
                     }
                 ]
             },
