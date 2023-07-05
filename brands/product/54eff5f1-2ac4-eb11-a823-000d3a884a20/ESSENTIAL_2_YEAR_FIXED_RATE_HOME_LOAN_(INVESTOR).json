@@ -1,9 +1,88 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "150000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian citizen or permanent resident",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "MORTGAGE_ESTABLISHMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.orangecu.com.au/everyday-banking/rates-and-fees/fees-and-charges"
+            },
+            {
+                "name": "LOAN_SECURITY_DISCHARGE_FEE",
+                "feeType": "EVENT",
+                "amount": "200.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.orangecu.com.au/everyday-banking/rates-and-fees/fees-and-charges"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P24M",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "comparisonRate": "0.0464",
+                "repaymentType": "PRINCIPAL_AND_INTEREST"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0549",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "repaymentType": "PRINCIPAL_AND_INTEREST"
+            }
+        ],
+        "productId": "ESSENTIAL_2_YEAR_FIXED_RATE_HOME_LOAN_(INVESTOR)",
+        "lastUpdated": "2023-06-21T09:49:05.000+10:00",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "2YR Essential Fixed Rate Home Loan (Investor)",
+        "description": "ESSENTIAL INVESTOR HOME LOAN",
+        "brand": "ORANGE CREDIT UNION LTD",
+        "brandName": "ORANGE CREDIT UNION LTD",
+        "applicationUri": "https://forms.orangecu.com.au/form.php?f=82",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.orangecu.com.au/homeloansfixed#step-2",
+            "termsUri": "https://www.orangecu.com.au/disclosure-documents",
+            "eligibilityUri": "https://www.orangecu.com.au/disclosure-documents",
+            "feesAndPricingUri": "https://www.orangecu.com.au/everyday-banking/rates-and-fees/fees-and-charges",
+            "bundleUri": "https://www.orangecu.com.au/everyday-banking/rates-and-fees/fees-and-charges"
         }
-    ]
+    },
+    "links": {
+        "self": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/ESSENTIAL_2_YEAR_FIXED_RATE_HOME_LOAN_(INVESTOR)"
+    },
+    "meta": {}
 }
