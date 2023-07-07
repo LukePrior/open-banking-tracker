@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;HLFixed&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-07-03T01:20:40Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-29T05:16:02Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Fixed Rate Home Loan&quot;,
     &quot;description&quot;: &quot;Our Fixed Options Home Loan has a fixed interest rate and set repayments that won't change during the fixed term so you can lock in certainty.&quot;,
@@ -42,6 +42,11 @@
             &quot;featureType&quot;: &quot;COMPLEMENTARY_PRODUCT_DISCOUNTS&quot;,
             &quot;additionalValue&quot;: &quot;You save on fees when you choose the Premier Advantage Package, however an annual package fee of $395 applies.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/pb/PAP_ConditionsofUse.pdf&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
+            &quot;additionalValue&quot;: &quot;2000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Get $2K cashback when you refinance with us. Apply by 31st October 2022, settle by 31st January 2023. Owner Occupier loans (P&amp;I repayments) and Investment Property Loans, with LVR+ up to 80% and min $250k loan. Flexi First Option or packaged home loans only ($395 annual package fee). Only one cashback offer available per primary applicant within a 12 month period. Excludes refinances within Westpac Group.&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
@@ -168,6 +173,20 @@
             ]
         },
         {
+            &quot;name&quot;: &quot;Switch loan or split balance Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Break Cost&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Administration Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;
+        },
+        {
             &quot;name&quot;: &quot;Missed Payment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;
@@ -186,6 +205,11 @@
             &quot;name&quot;: &quot;Mortgage Insurance Administration Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;90.00&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Outward Dishonour Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;
         },
         {
             &quot;name&quot;: &quot;Account Overdrawn Fee&quot;,
@@ -214,11 +238,10 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0639&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0837&quot;,
+            &quot;rate&quot;: &quot;0.0529&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0671&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -226,36 +249,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 12,
-                    &quot;maximumValue&quot;: 12,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0892&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -269,11 +263,35 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0887&quot;,
+            &quot;rate&quot;: &quot;0.0579&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0729&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 12,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0549&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0722&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -281,8 +299,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -296,11 +313,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0659&quot;,
-            &quot;comparisonRate&quot;: &quot;0.091&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0747&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -308,8 +324,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -323,11 +338,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0847&quot;,
+            &quot;rate&quot;: &quot;0.0539&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0681&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -335,36 +349,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 12,
-                    &quot;maximumValue&quot;: 12,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0679&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0902&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -379,11 +364,36 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0659&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0897&quot;,
+            &quot;rate&quot;: &quot;0.0589&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0739&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
+                },
+                {
+                    &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12,
+                    &quot;maximumValue&quot;: 12,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0732&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -391,8 +401,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -407,11 +416,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.092&quot;,
+            &quot;rate&quot;: &quot;0.0579&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0757&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -419,8 +427,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard fixed rate&quot;,
@@ -432,123 +439,113 @@
             ],
             &quot;additionalValue&quot;: &quot;P12M&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0609&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0673&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0726&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0609&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0717&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0629&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0741&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0619&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0812&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0683&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
-            &quot;additionalInfo&quot;: &quot;For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0659&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0866&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0629&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0857&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0639&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0879&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0629&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0822&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -556,36 +553,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0876&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
@@ -597,51 +565,47 @@
             ],
             &quot;additionalValue&quot;: &quot;P24M&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0639&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0866&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 24,
-                    &quot;maximumValue&quot;: 24,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0888&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0736&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0619&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0727&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
@@ -656,11 +620,36 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0659&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0804&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0751&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 90
+                },
+                {
+                    &quot;name&quot;: &quot;2 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 24,
+                    &quot;maximumValue&quot;: 24,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0676&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -668,36 +657,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 36,
-                    &quot;maximumValue&quot;: 36,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P36M&quot;,
-            &quot;additionalInfo&quot;: &quot;For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0689&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0853&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -712,19 +672,17 @@
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0844&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0727&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -738,20 +696,18 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0679&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0864&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0692&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -765,20 +721,18 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0813&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.071&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -788,25 +742,22 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P36M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
+            &quot;additionalValue&quot;: &quot;P36M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0699&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0862&quot;,
+            &quot;rate&quot;: &quot;0.0649&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0686&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -822,10 +773,35 @@
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0679&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0854&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0737&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
+                },
+                {
+                    &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 36,
+                    &quot;maximumValue&quot;: 36,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P36M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0702&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -833,8 +809,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -849,11 +824,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0689&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0874&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.072&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -861,8 +835,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard fixed rate&quot;,
@@ -877,11 +850,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0659&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0788&quot;,
+            &quot;rate&quot;: &quot;0.0559&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0645&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -889,8 +861,107 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0709&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0736&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0719&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0689&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0743&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0654&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
@@ -901,124 +972,218 @@
                 }
             ],
             &quot;additionalValue&quot;: &quot;P48M&quot;,
-            &quot;additionalInfo&quot;: &quot;For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0719&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0746&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0729&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 90
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0699&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0752&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 90
+                },
+                {
+                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 48,
+                    &quot;maximumValue&quot;: 48,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P48M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0685&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0719&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0739&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0719&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0709&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0747&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 70
+                },
+                {
+                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0694&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70,
+                    &quot;maximumValue&quot;: 95
+                },
+                {
+                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 60,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P60M&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0729&quot;,
-            &quot;comparisonRate&quot;: &quot;0.085&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0749&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0825&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0689&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0848&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0798&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0739&quot;,
-            &quot;comparisonRate&quot;: &quot;0.086&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1026,229 +1191,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0679&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0835&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0699&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0857&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;4 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 48,
-                    &quot;maximumValue&quot;: 48,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P48M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 90% inclusive of any capitalised mortgaged insurance (MI) premium (if available)&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0689&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0788&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;,
-            &quot;additionalInfo&quot;: &quot;For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0739&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0841&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0699&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0821&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0709&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0839&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0699&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0798&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 60,
-                    &quot;maximumValue&quot;: 60,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P60M&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). For Government's home guarantee scheme-backed loans, maximum LVR may differ.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0749&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0851&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR above 70.00%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
@@ -1263,11 +1206,10 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0709&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0831&quot;,
+            &quot;rate&quot;: &quot;0.0689&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0729&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1275,8 +1217,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
@@ -1292,10 +1233,9 @@
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0719&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0849&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0757&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1303,8 +1243,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard fixed rate&quot;,
@@ -1322,7 +1261,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1330,8 +1268,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1349,7 +1286,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1357,8 +1293,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1375,7 +1310,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1383,8 +1317,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1401,7 +1334,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1409,8 +1341,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1427,7 +1358,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1435,8 +1365,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1454,7 +1383,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1462,8 +1390,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1481,7 +1408,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1489,8 +1415,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1508,7 +1433,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1516,8 +1440,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate&quot;,
@@ -1535,7 +1458,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1543,8 +1465,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1561,7 +1482,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1569,8 +1489,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1587,7 +1506,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1595,8 +1513,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1613,7 +1530,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1621,8 +1537,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1639,7 +1554,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1647,8 +1561,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1666,7 +1579,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1674,8 +1586,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1693,7 +1604,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1701,8 +1611,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1720,7 +1629,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1728,8 +1636,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate&quot;,
@@ -1747,7 +1654,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1755,8 +1661,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1773,7 +1678,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1781,8 +1685,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1799,7 +1702,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1807,8 +1709,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1825,7 +1726,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1833,8 +1733,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1851,7 +1750,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1859,8 +1757,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1878,7 +1775,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1886,8 +1782,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1905,7 +1800,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1913,8 +1807,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1932,7 +1825,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -1940,8 +1832,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate&quot;,
@@ -1959,7 +1850,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1967,8 +1857,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -1985,7 +1874,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -1993,8 +1881,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2011,7 +1898,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2019,8 +1905,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2037,7 +1922,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2045,8 +1929,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2063,7 +1946,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2071,8 +1953,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2090,7 +1971,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2098,8 +1978,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2117,7 +1996,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2125,8 +2003,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2144,7 +2021,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2152,8 +2028,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate&quot;,
@@ -2171,7 +2046,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2179,8 +2053,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2197,7 +2070,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2205,8 +2077,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2223,7 +2094,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2231,8 +2101,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2249,7 +2118,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2257,8 +2125,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2275,7 +2142,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2283,8 +2149,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2302,7 +2167,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -2310,8 +2174,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 95
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2329,7 +2192,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2337,8 +2199,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2356,7 +2217,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2364,8 +2224,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate&quot;,
@@ -2383,7 +2242,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2391,8 +2249,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard discount rate&quot;,
@@ -2409,7 +2266,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2417,8 +2273,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard discount rate&quot;,
@@ -2435,7 +2290,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2443,8 +2297,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard discount rate&quot;,
@@ -2461,7 +2314,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2469,8 +2321,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard discount rate&quot;,
@@ -2487,7 +2338,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2495,8 +2345,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard discount rate&quot;,
@@ -2513,7 +2362,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2521,8 +2369,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard discount rate&quot;,
@@ -2539,7 +2386,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2547,8 +2393,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard discount rate&quot;,
@@ -2565,7 +2410,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2573,8 +2417,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard discount rate&quot;,
@@ -2591,7 +2434,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2599,8 +2441,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard discount rate&quot;,
@@ -2617,7 +2458,6 @@
             &quot;rate&quot;: &quot;0.002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2625,8 +2465,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard discount rate&quot;,
@@ -2643,7 +2482,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2651,8 +2489,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2670,7 +2507,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2678,8 +2514,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;1 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2697,7 +2532,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2705,8 +2539,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2724,7 +2557,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2732,8 +2564,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;2 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2751,7 +2582,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2759,8 +2589,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2778,7 +2607,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2786,8 +2614,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;3 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2805,7 +2632,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2813,8 +2639,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2832,7 +2657,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2840,8 +2664,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;4 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2859,7 +2682,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2867,8 +2689,7 @@
                     &quot;name&quot;: &quot;LVR up to 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 70
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,
@@ -2886,7 +2707,6 @@
             &quot;rate&quot;: &quot;0.004&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -2894,8 +2714,7 @@
                     &quot;name&quot;: &quot;LVR above 70.00%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 90,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                    &quot;maximumValue&quot;: 90
                 },
                 {
                     &quot;name&quot;: &quot;5 year standard Bundle Discount Fixed rate with Interest only in Advance repayment option&quot;,

@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;BSAEFGoodsLoan&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-06-30T00:54:50Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2021-06-30T10:42:03Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Goods Loan&quot;,
     &quot;description&quot;: &quot;A Goods Loan is a fixed rate loan used to finance the purchase of eligible new or used vehicles or equipment. The customer purchases and owns the asset and gives the Bank security over it.&quot;,
@@ -40,6 +40,11 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Potential tax benefits : Interest on the finance and depreciation of the asset are generally both tax deductible&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Extended tax write-offs : With the Federal Budget announcement on Temporary Full Expensing, you may be able to deduct the full cost of eligible business equipment or vehicles&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksa.com.au/business/business-loans/vehicle-equipment-finance/instant-asset-tax-write-offs&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -51,7 +56,7 @@
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalValue&quot;: &quot;Your business must be registered in Australia.&quot;
+            &quot;additionalInfo&quot;: &quot;Your business must be registered in Australia.&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
@@ -114,22 +119,26 @@
         },
         {
             &quot;name&quot;: &quot;Aircraft - CASA Transfer of Ownership&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;130.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies each time there is/will be a transfer of ownership with the Civil Aviation Safety Authority (CASA) and payable by you on or before the date of transfer.&quot;
         },
         {
             &quot;name&quot;: &quot;Aircraft - RAA Transfer of Ownership &quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;65.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies each time there is/will be a transfer of ownership with the Recreational Aviation Authority (RAA) and payable by you on or before the date of transfer.&quot;
         },
         {
             &quot;name&quot;: &quot;Marine - Vessel Registration less than 24 metres&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1190.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is  required &quot;
         },
         {
             &quot;name&quot;: &quot;Marine - Vessel Registration greater than 24 metres&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2040.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is  required &quot;
         },
         {
@@ -151,20 +160,20 @@
         {
             &quot;name&quot;: &quot;Arrears Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applicable each time a payment is not received within 15 days of its due date and is in addition to any overdue amount owing.&quot;
         },
         {
             &quot;name&quot;: &quot;Overdue interest (Default / Penalty Interest)&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;accruedRate&quot;: &quot;0.00&quot;,
+            &quot;accruedRate&quot;: &quot;0.03&quot;,
             &quot;accrualFrequency&quot;: &quot;P1Y&quot;,
             &quot;additionalInfo&quot;: &quot;This charge applies on overdue amount from the time it?s due until it?s paid&quot;
         },
         {
             &quot;name&quot;: &quot;Dishonour Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies each time a payment you make or amount we attempt to direct debit is unsuccessful.&quot;
         },
         {
