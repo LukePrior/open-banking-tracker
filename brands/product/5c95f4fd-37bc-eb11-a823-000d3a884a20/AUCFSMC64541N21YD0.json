@@ -1,9 +1,127 @@
 {
-    "errors": [
-        {
-            "title": "Unsupported Version",
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "detail": "Supported Version is 4. The version given is lower than the minimum version or greater than maximum version"
-        }
-    ]
+    "data": {
+        "productId": "AUCFSMC64541N21YD0",
+        "effectiveFrom": "2020-09-01T00:00:00Z",
+        "effectiveTo": "2023-01-31T00:00:00Z",
+        "lastUpdated": "2022-07-28T06:20:33Z",
+        "productCategory": "CRED_AND_CHRG_CARDS",
+        "name": "Coles Rewards Platinum Mastercard",
+        "description": "Coles Rewards Mastercard",
+        "brand": "ColesFS",
+        "brandName": "Coles Financial Services",
+        "applicationUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard",
+            "termsUri": "https://financialservices.coles.com.au/credit-cards/about-our-credit-cards/important-information",
+            "eligibilityUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard",
+            "feesAndPricingUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+        },
+        "cardArt": [
+            {
+                "title": "Coles Rewards Mastercard",
+                "imageUri": "https://www.secure.coles.com.au/drpcontent/accope/images/mc645.png"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "2000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "MIN_INCOME",
+                "additionalValue": "25000.00"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian resident"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Annual Fee",
+                "feeType": "PERIODIC",
+                "amount": "99.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "$30 each time we do not receive the Minimum Payment Due and any Overdue Amount by the payment due date, debited to your Account after the payment due date. The Minimum Payment Due, any Overdue Amount, and payment due date are detailed on your statement of account.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "Domestic Cash Advance Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "1.95",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "A Domestic Cash Advance Fee will apply of A$1.95 per transaction amount under A$65.00, and 3.00% of the transaction amount for any transaction equal to or over A$65.00, debited to your Account on the Transaction Date.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "International Cash Advance Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "International Transaction Fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "The International Transaction Fee for Retail Purchases is waived on the Coles Rewards Mastercard, however any Cash Advance in foreign currency, or a Cash Advance made outside of Australia, will continue to incur an International Transaction fee of 2.50% of the transaction value when converted to Australian dollars, plus any other fees applicable to an International Cash Advance from the date of the transaction.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "Over-the-Counter Transaction Fee",
+                "feeType": "TRANSACTION",
+                "amount": "2.25",
+                "currency": "AUD",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "EVENT",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalInfo": "You will be charged a Paper Statement Fee of A$2.00 each month we issue you with a paper statement, debited to your Account in the following Statement Period. This fee may be waived in limited circumstances.",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "PURCHASE",
+                "rate": "0.1999",
+                "calculationFrequency": "P1D",
+                "additionalInfo": "Interest on purchases",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            },
+            {
+                "lendingRateType": "CASH_ADVANCE",
+                "rate": "0.1999",
+                "calculationFrequency": "P1D",
+                "additionalInfo": "Interest on cash advances",
+                "additionalInfoUri": "https://financialservices.coles.com.au/credit-cards/rewards-mastercard"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.openbanking.secure.coles.com.au/cds-au/v1/banking/products/AUCFSMC64541N21YD0"
+    },
+    "meta": {}
 }
