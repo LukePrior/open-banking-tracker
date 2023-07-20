@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Loan</title>
+    <title>Fixed Rate Personal Loan</title>
   </head>
   <body>
     <div>
@@ -9,8 +9,8 @@
     &quot;brand&quot;: &quot;AMB&quot;,
     &quot;description&quot;: &quot;If you\u2019re looking for a personal loan with set repayments, our Fixed Rate Personal Loan gives you the peace of mind in knowing what your repayments will be for the life of your loan.&quot;,
     &quot;isTailored&quot;: false,
-    &quot;lastUpdated&quot;: &quot;2023-06-06T03:20:31.723808Z&quot;,
-    &quot;name&quot;: &quot;Personal Loan&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-07-07T03:49:58.310261Z&quot;,
+    &quot;name&quot;: &quot;Fixed Rate Personal Loan&quot;,
     &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
     &quot;productId&quot;: &quot;72ec4ee7-7b70-4376-b921-f9eb1a06bb75&quot;,
     &quot;additionalInformation&quot;: {
@@ -83,31 +83,112 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;50.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Arrears notice fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Processing and switch fee - Personal and Car Loans&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;,
+            &quot;additionalInfo&quot;: &quot;From $100.00 to $500.00 depending on Credit Grade&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;amount&quot;: &quot;500.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;AA Grade&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;400.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Clients that meet AA Credit Grade requirements&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                },
+                {
+                    &quot;description&quot;: &quot;A Grade&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;375.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Clients that meet A Credit Grade requirements&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                },
+                {
+                    &quot;description&quot;: &quot;B Grade&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;350.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Clients that meet B Credit Grade requirements&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                },
+                {
+                    &quot;description&quot;: &quot;C Grade&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;accruedRate&quot;: null,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;additionalValue&quot;: null,
+                    &quot;amount&quot;: &quot;300.00000000&quot;,
+                    &quot;balanceRate&quot;: null,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Clients that meet C Credit Grade requirements&quot;,
+                            &quot;additionalInfoUri&quot;: null,
+                            &quot;additionalValue&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;feeRate&quot;: null,
+                    &quot;transactionRate&quot;: null
+                }
+            ],
             &quot;transactionRate&quot;: null
         },
         {
@@ -125,14 +206,14 @@
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
-            &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;6.50&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -154,6 +235,34 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Arrears notice fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;2nd and subsequent reminders by letter or phone&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;name&quot;: &quot;Other Bank Deposit Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Cash and cheque deposit at NAB Branch&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;6.50&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Default notice fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
@@ -167,16 +276,30 @@
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;name&quot;: &quot;Personal Property security admin fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: null,
             &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
         },
@@ -207,46 +330,74 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;name&quot;: &quot;Personal Property security admin fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: null,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;name&quot;: &quot;Processing and switch fee - Personal and Car Loans&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;150.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0899000000000000&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;rate&quot;: &quot;0.1005000000000000&quot;,
+            &quot;additionalInfo&quot;: &quot;Grade B - Rate applies for 1 - 5 year terms&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0992000000000000&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1097000000000000&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;loanPurpose&quot;: null,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.1340000000000000&quot;,
+            &quot;additionalInfo&quot;: &quot;Grade D- Rate applies for 1 - 5 year terms&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1483000000000000&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;loanPurpose&quot;: null,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0880000000000000&quot;,
+            &quot;additionalInfo&quot;: &quot;Grade A - Rate applies for 1 - 5 year terms&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0969000000000000&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;loanPurpose&quot;: null,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0685000000000000&quot;,
+            &quot;additionalInfo&quot;: &quot;Grade AA - Rate applies for 1 - 5 year terms&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0772000000000000&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;loanPurpose&quot;: null,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: []
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.1240000000000000&quot;,
+            &quot;additionalInfo&quot;: &quot;Grade C - Rate applies for 1 - 5 year terms&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1337000000000000&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;loanPurpose&quot;: null,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
