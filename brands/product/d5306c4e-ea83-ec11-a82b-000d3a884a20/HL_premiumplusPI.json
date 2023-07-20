@@ -3,7 +3,7 @@
         "productId": "HL_premiumplusPI",
         "effectiveFrom": "2005-10-04T00:00:00.000+10:00",
         "effectiveTo": "9999-12-30T00:00:00.000+11:00",
-        "lastUpdated": "2023-06-29T00:00:00.000+10:00",
+        "lastUpdated": "2023-07-20T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premium Plus Package Variable Home Loan Principal and Interest ",
         "description": "A variable rate package home loan with fee free redraw and a 100% offset account",
@@ -14,6 +14,12 @@
             "feesAndPricingUri": "https://www.newcastlepermanent.com.au/personal/home-loans/premium-plus-package-variable"
         },
         "features": [
+            {
+                "featureType": "CASHBACK_OFFER",
+                "additionalValue": "2000.00",
+                "additionalInfo": "Refinance Cashback available on eligible home loans or see T&Cs for further details and eligibility.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#Promotions"
+            },
             {
                 "featureType": "OFFSET",
                 "additionalInfo": "100% Offset account available. ",
@@ -29,13 +35,19 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
             },
             {
+                "featureType": "CASHBACK_OFFER",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Refinance Cashback available on eligible home loans or see T&Cs for further details and eligibility.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#Promotions"
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
             },
             {
-                "featureType": "OTHER",
-                "additionalInfo": "Additional repayments allowed. ",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalInfo": "You can make regular additional repayments and extra lump sum payments.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans/premium-plus-package-variable"
             }
         ],
         "constraints": [],
@@ -168,8 +180,8 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0599000000",
-                "comparisonRate": "0.0633000000",
+                "rate": "0.0679000000",
+                "comparisonRate": "0.0712000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -178,12 +190,12 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
                     {
-                        "name": "Discount 1",
+                        "name": "Discount 2",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 80.0,
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount 1 - Discounted interest rate available for new loans of $150,000 or more and LVR of less than or equal to 80%",
+                        "additionalInfo": "Discount 2 - Discounted interest rate available for new loans of $150,000 or more and LVR over 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -206,28 +218,6 @@
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "additionalInfo": "Tier 1 - combined loan balances below $500,000",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0664000000",
-                "comparisonRate": "0.0697000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "Discount 2",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount 2 - Discounted interest rate available for new loans of $150,000 or more and LVR over 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -293,6 +283,28 @@
                         "maximumValue": 900000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "additionalInfo": "Tier 3 - combined loan balances over $750,000 and below $900,000",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0614000000",
+                "comparisonRate": "0.0648000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "Discount 1",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Discount 1 - Discounted interest rate available for new loans of $150,000 or more and LVR of less than or equal to 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]

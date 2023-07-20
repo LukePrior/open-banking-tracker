@@ -3,7 +3,7 @@
         "productId": "HL_fixedIO",
         "effectiveFrom": "2012-08-13T00:00:00.000+10:00",
         "effectiveTo": "9999-12-30T00:00:00.000+11:00",
-        "lastUpdated": "2023-06-29T00:00:00.000+10:00",
+        "lastUpdated": "2023-07-20T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Fixed Rate Home Loan Interest Only",
         "description": "Lock in your repayments with a fixed rate, with options up to 5 years",
@@ -15,6 +15,12 @@
         },
         "features": [
             {
+                "featureType": "CASHBACK_OFFER",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Refinance Cashback available on eligible home loans or see T&Cs for further details and eligibility.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#Promotions"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalInfo": "Our Rate Lock option enables you to lock in our current advertised interest rate for your selected fixed rate home loan product, giving you certainty for up to 90 days against potential interest rate increases. A non-refundable fee applies for selecting this option.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/rate-lock"
@@ -24,9 +30,20 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
             },
             {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalInfo": "You can make regular additional and extra lump sum repayments up to $25,000 per year. Break costs may apply if you make additional repayments of more than $25,000. See the Break Costs and Fixed Interest Guide for more info.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans/fixed-rate-home-loan"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalInfo": "Additional Repayments allowed up to $25000 p.a.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/personal/home-loans"
+            },
+            {
+                "featureType": "CASHBACK_OFFER",
+                "additionalValue": "2000.00",
+                "additionalInfo": "Refinance Cashback available on eligible home loans or see T&Cs for further details and eligibility.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#Promotions"
             }
         ],
         "constraints": [],
@@ -190,8 +207,8 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0629000000",
-                "comparisonRate": "0.0789000000",
+                "rate": "0.0639000000",
+                "comparisonRate": "0.0791000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -214,8 +231,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0629000000",
-                "comparisonRate": "0.0772000000",
+                "rate": "0.0639000000",
+                "comparisonRate": "0.0775000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -238,14 +255,14 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0649000000",
-                "comparisonRate": "0.0793000000",
+                "rate": "0.0659000000",
+                "comparisonRate": "0.0780000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
+                "additionalValue": "P3Y",
                 "additionalInfo": "Reverts to the Real Options Home Loan at the end of the Fixed Rate period.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
@@ -274,12 +291,12 @@
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
                     {
-                        "name": "LVR above 80%",
+                        "name": "LVR 80% and below",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80.0,
-                        "maximumValue": 95.0,
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
+                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%",
                         "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
                     }
                 ]
@@ -335,30 +352,6 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0649000000",
-                "comparisonRate": "0.0810000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Reverts to the Real Options Home Loan at the end of the Fixed Rate period.",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
-                "tiers": [
-                    {
-                        "name": "LVR 80% and below",
-                        "unitOfMeasure": "PERCENT",
-                        "minimumValue": 0.0,
-                        "maximumValue": 80.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Special interest rate is currently available to new loans with an LVR of less than or equal to 80%",
-                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649000000",
                 "comparisonRate": "0.0764000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -382,14 +375,14 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0669000000",
-                "comparisonRate": "0.0771000000",
+                "rate": "0.0659000000",
+                "comparisonRate": "0.0795000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P4Y",
+                "additionalValue": "P2Y",
                 "additionalInfo": "Reverts to the Real Options Home Loan at the end of the Fixed Rate period.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
@@ -406,14 +399,38 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0649000000",
-                "comparisonRate": "0.0777000000",
+                "rate": "0.0689000000",
+                "comparisonRate": "0.0815000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Reverts to the Real Options Home Loan at the end of the Fixed Rate period.",
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "LVR above 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.0,
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Interest rate applies to loans with LVR over 80%",
+                        "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0669000000",
+                "comparisonRate": "0.0771000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P4Y",
                 "additionalInfo": "Reverts to the Real Options Home Loan at the end of the Fixed Rate period.",
                 "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
                 "tiers": [
