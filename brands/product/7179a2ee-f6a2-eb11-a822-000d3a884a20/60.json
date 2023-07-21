@@ -1,11 +1,11 @@
 {
     "data": {
-        "productId": "30",
+        "productId": "60",
         "effectiveFrom": "2015-09-30T14:30:00.0000000Z",
         "lastUpdated": "2023-07-20T04:00:24.2668644Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Home Loan-Fixed",
-        "description": "Our Fixed Rate Home Loan provides you with the best of both worlds, a fixed rate and the full range of home loan benefits including a 100% offset account.  A fixed rate loan gives you certainty of what your regular repayment will be for up to 3 years.",
+        "name": "Home Loan-Fixed I.O.",
+        "description": "Our Fixed Rate Interest Only Home Loan provides you with a fixed rate and the full range of",
         "brand": "Queensland Country Bank",
         "isTailored": false,
         "additionalInformation": {
@@ -31,6 +31,10 @@
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Maximum loan to valuation ratio of 80% without Lenders Mortgage Insurance (LMI)."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Available for interest only repayments to approved applicants."
             },
             {
                 "featureType": "OTHER",
@@ -88,7 +92,20 @@
                 "name": "Redraw Fee",
                 "feeType": "TRANSACTION",
                 "amount": "8.00",
-                "currency": "AUD"
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Another eligibility criteria exists as described in the additionalInfo field",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Redraw Fee is waived if completed completed Online"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Rate Lock Fee",
@@ -101,8 +118,7 @@
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Refer to our Fees and charges brochure for information on other fees and charges which may apply.",
-                "additionalInfoUri": "https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf"
+                "additionalInfo": "Refer to our Fees and charges brochure for information on other fees and charges which may apply."
             },
             {
                 "name": "Valuation Fees",
@@ -129,33 +145,23 @@
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0634",
-                "comparisonRate": "0.0839",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P1Y",
-                "additionalInfo": "1 Year Fixed Rate Loan (<80%) P&I"
-            },
-            {
-                "lendingRateType": "FIXED",
                 "rate": "0.0654",
                 "comparisonRate": "0.0841",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "P1Y",
-                "additionalInfo": "1 Year Fixed Rate Loan (>80%) P&I"
+                "additionalInfo": "1 Year Fixed Rate (<80%) Interest Only"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0624",
-                "comparisonRate": "0.0815",
+                "rate": "0.0674",
+                "comparisonRate": "0.0843",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P2Y",
-                "additionalInfo": "2 Year Fixed Rate Loan (<80%) P&I"
+                "additionalValue": "P1Y",
+                "additionalInfo": "1 Year Fixed Rate Loan (>80%) Interest Only"
             },
             {
                 "lendingRateType": "FIXED",
@@ -165,32 +171,42 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "P2Y",
-                "additionalInfo": "2 Year Fixed Rate Loan (>80%) P&I"
+                "additionalInfo": "2 Year Fixed Rate (<80%) Interest Only"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0624",
-                "comparisonRate": "0.0795",
+                "rate": "0.0664",
+                "comparisonRate": "0.0824",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalValue": "P3Y",
-                "additionalInfo": "3 Year Fixed Rate Loan (<80%) P&I"
+                "additionalValue": "P2Y",
+                "additionalInfo": "2 Year Fixed Rate Loan (>80%) Interest Only"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0644",
-                "comparisonRate": "0.0801",
+                "comparisonRate": "0.0802",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "P3Y",
-                "additionalInfo": "3 Year Fixed Rate Loan (>80%) P&I"
+                "additionalInfo": "3 Year Fixed Rate (<80%) Interest Only"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0664",
+                "comparisonRate": "0.0808",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalValue": "P3Y",
+                "additionalInfo": "3 Year Fixed Rate Loan (>80%) Interest Only"
             }
         ]
     },
     "links": {
-        "self": "https://public.cdr-api.queenslandcountry.bank/cds-au/v1/banking/products/30"
+        "self": "https://public.cdr-api.queenslandcountry.bank/cds-au/v1/banking/products/60"
     },
     "meta": {}
 }
