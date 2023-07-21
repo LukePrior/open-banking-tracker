@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Loan-Fixed</title>
+    <title>Home Loan-Fixed I.O.</title>
   </head>
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;productId&quot;: &quot;30&quot;,
+    &quot;productId&quot;: &quot;60&quot;,
     &quot;effectiveFrom&quot;: &quot;2015-09-30T14:30:00.0000000Z&quot;,
     &quot;lastUpdated&quot;: &quot;2023-07-20T04:00:24.2668644Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
-    &quot;name&quot;: &quot;Home Loan-Fixed&quot;,
-    &quot;description&quot;: &quot;Our Fixed Rate Home Loan provides you with the best of both worlds, a fixed rate and the full range of home loan benefits including a 100% offset account.  A fixed rate loan gives you certainty of what your regular repayment will be for up to 3 years.&quot;,
+    &quot;name&quot;: &quot;Home Loan-Fixed I.O.&quot;,
+    &quot;description&quot;: &quot;Our Fixed Rate Interest Only Home Loan provides you with a fixed rate and the full range of&quot;,
     &quot;brand&quot;: &quot;Queensland Country Bank&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -37,6 +37,10 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum loan to valuation ratio of 80% without Lenders Mortgage Insurance (LMI).&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Available for interest only repayments to approved applicants.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -94,7 +98,20 @@
             &quot;name&quot;: &quot;Redraw Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;8.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Another eligibility criteria exists as described in the additionalInfo field&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Redraw Fee is waived if completed completed Online&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Rate Lock Fee&quot;,
@@ -107,8 +124,7 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Refer to our Fees and charges brochure for information on other fees and charges which may apply.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf&quot;
+            &quot;additionalInfo&quot;: &quot;Refer to our Fees and charges brochure for information on other fees and charges which may apply.&quot;
         },
         {
             &quot;name&quot;: &quot;Valuation Fees&quot;,
@@ -135,33 +151,23 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0634&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0839&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0654&quot;,
             &quot;comparisonRate&quot;: &quot;0.0841&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
+            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate (&lt;80%) Interest Only&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0815&quot;,
+            &quot;rate&quot;: &quot;0.0674&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0843&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate Loan (&gt;80%) Interest Only&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -171,27 +177,37 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
+            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate (&lt;80%) Interest Only&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0795&quot;,
+            &quot;rate&quot;: &quot;0.0664&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0824&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate Loan (&gt;80%) Interest Only&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0644&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0801&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0802&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
+            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate (&lt;80%) Interest Only&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0664&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0808&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate Loan (&gt;80%) Interest Only&quot;
         }
     ]
 }</textarea>

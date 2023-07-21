@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Loan-Fixed</title>
+    <title>Home Loan-Variable I.O.</title>
   </head>
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
-    &quot;productId&quot;: &quot;30&quot;,
+    &quot;productId&quot;: &quot;59&quot;,
     &quot;effectiveFrom&quot;: &quot;2015-09-30T14:30:00.0000000Z&quot;,
     &quot;lastUpdated&quot;: &quot;2023-07-20T04:00:24.2668644Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
-    &quot;name&quot;: &quot;Home Loan-Fixed&quot;,
-    &quot;description&quot;: &quot;Our Fixed Rate Home Loan provides you with the best of both worlds, a fixed rate and the full range of home loan benefits including a 100% offset account.  A fixed rate loan gives you certainty of what your regular repayment will be for up to 3 years.&quot;,
+    &quot;name&quot;: &quot;Home Loan-Variable I.O.&quot;,
+    &quot;description&quot;: &quot;Our Standard Variable Rate Interest Only Home Loan is a simple, easy to manage product that is equally suited to owner-occupiers, residential investors or even those purchasing a vacant block of land. Extra payments can be made with flexibility to redraw&quot;,
     &quot;brand&quot;: &quot;Queensland Country Bank&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.queenslandcountry.bank/banking/home-loans/fixed-rate-home-loan/&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.queenslandcountry.bank/banking/home-loans/standard-variable-rate-home-loan/&quot;,
         &quot;termsUri&quot;: &quot;https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_account-access-facility.pdf&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf&quot;
     },
@@ -24,7 +24,8 @@
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OFFSET&quot;
+            &quot;featureType&quot;: &quot;OFFSET&quot;,
+            &quot;additionalInfo&quot;: &quot;100% Mortgage Offset account for owner occupied home loans.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -40,11 +41,10 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Able to pay up to an extra $10,000 per year in addition to your contracted repayments.&quot;
+            &quot;additionalInfo&quot;: &quot;Available for interest only repayments to approved applicants.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalInfo&quot;: &quot;Redraw facility on owner-occupied home loans.&quot;
+            &quot;featureType&quot;: &quot;REDRAW&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -94,20 +94,27 @@
             &quot;name&quot;: &quot;Redraw Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;8.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Rate Lock Fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;350.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Redraw Fee&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;feeRate&quot;: &quot;1.0&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Redraw Fee is waived if completed Online.&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Other Credit Fees&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Refer to our Fees and charges brochure for information on other fees and charges which may apply.&quot;,
+            &quot;additionalInfo&quot;: &quot;Refer to our Fees and Charges brochure for information on other fees and charges which may apply.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.queenslandcountry.bank/siteassets/documents/brochures/brochure_fees-charges.pdf&quot;
         },
         {
@@ -115,17 +122,17 @@
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Valuation Fee may be charged at time of application, the fee is payable where a valuation is required to be ordered in respect to mortgaged properties to Queensland Country Bank. A third party may be engaged to complete the valuation and their fee will be disclosed on application&quot;
+            &quot;additionalInfo&quot;: &quot;Valuation Fee may be charged at time of application, the fee is payable where a valuation is required to be ordered in respect to mortgaged properties to Queensland Country Bank.\r\nA third party may be engaged to complete the valuation and their fee wil lbe disclosed on application.&quot;
         },
         {
             &quot;name&quot;: &quot;Additional Establishment Fees&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Government Fees - Company Search, Title Search Fee and DNRM Registration Fees and External Document Preparation Fee.\t\t\t\t\r\nGovernment Fees include Company Search, Title Search and Department of Natural Resources Management Fees.\r\nThese fees may be charged at the time of application, the fee relates to information or registration obtained from various government regulatory bodies and preparation of documents from external third parties in relation to the loan/facility.&quot;
+            &quot;additionalInfo&quot;: &quot;Government Fees - Company Search, Title Search Fee and DNRM Registration Fees and External Document Preparation Fee.\r\nGovernment Fees include Company Search, Title Search and Department of Natural Resources Management Fees.\r\nThese fees may be charged attime of application, the fee relates to information or registration obtained from various government regulatory bodies and preparation of documents from external third parties in relation to the loan/facility.&quot;
         },
         {
-            &quot;name&quot;: &quot;Lenders Mortgage Insurance (LMI)&quot;,
+            &quot;name&quot;: &quot;Lenders Mortgage Insurance - LMI&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -134,64 +141,13 @@
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0634&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0839&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0884&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0874&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0654&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0841&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;1 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0815&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0644&quot;,
-            &quot;comparisonRate&quot;: &quot;0.082&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;2 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0795&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate Loan (&lt;80%) P&amp;I&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0644&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0801&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;3 Year Fixed Rate Loan (&gt;80%) P&amp;I&quot;
+            &quot;additionalInfo&quot;: &quot;Interest Only&quot;
         }
     ]
 }</textarea>
