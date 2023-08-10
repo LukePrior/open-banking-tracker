@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "CUA",
-        "lastUpdated": "2023-06-01T06:46:55.027Z",
+        "lastUpdated": "2023-08-09T05:06:10.582Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Current Account",
         "description": "HSBC's primary current offering known as a Business Cheque Account is an interest bearing account aimed at meeting Corporate's daily banking needs with the flexibility of easy access and control. This account type is of particular relevance for clients with a need to conduct ACH transactions. Customer benefits include:1)Attractive Interest Rates, 2)Online access via HSBCnet and 3) Competitive fees.",
@@ -32,7 +32,7 @@
             {
                 "name": "Cheque book - charge per cheque written",
                 "feeType": "TRANSACTION",
-                "amount": "0.90"
+                "amount": "1.00"
             },
             {
                 "name": "Inward Transfers -  International Telegraphic Transfer (TT) receipt",
@@ -58,25 +58,13 @@
             {
                 "name": "Inward Transfers -  Dishonour of foreign currency cheques",
                 "feeType": "TRANSACTION",
-                "amount": "40.00",
-                "additionalInfo": "Plus costs"
+                "amount": "0.00",
+                "additionalInfo": "Costs from overseas banks will be passed on"
             },
             {
-                "name": "Transfers Between Accounts - Domestic Funds transfers between customer\u2019s accounts with HSBC via HSBC",
+                "name": "Transfers Between Accounts - Domestic Funds transfers between accounts with HSBC via HSBCnet",
                 "feeType": "TRANSACTION",
                 "amount": "0.25"
-            },
-            {
-                "name": "Transfers Between Accounts - Domestic Funds transfer between customer\u2019s accounts [see info]",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "additionalInfo": "Domestic Funds transfer between customer\u2019s accounts with HSBC submitted as originals on HSBC application forms"
-            },
-            {
-                "name": "Transfers Between Accounts - Domestic Funds transfer between customer\u2019s accounts [see info]",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "additionalInfo": "Domestic Funds transfer between customer\u2019s accounts with HSBC, initiated via other form of instructions (as agreed to by HSBC)"
             },
             {
                 "name": "Outward Transfers - Overnight domestic funds transfers using ACH or autoPay via HSBCnet",
@@ -131,12 +119,6 @@
                 "additionalInfo": "Plus other bank\u2019s charges"
             },
             {
-                "name": "Outward Transfers - Fax confirmation of exchange rate or outward payment provided [see info]",
-                "feeType": "TRANSACTION",
-                "amount": "7.00",
-                "additionalInfo": "Fee is per page. Fax confirmation of exchange rate or outward payment provided at customer\u2019s request"
-            },
-            {
                 "name": "Manual Standing Instructions - To an HSBC account",
                 "feeType": "TRANSACTION",
                 "amount": "5.00"
@@ -149,7 +131,8 @@
             {
                 "name": "Manual Standing Instructions - Other Payments",
                 "feeType": "TRANSACTION",
-                "amount": "5.00"
+                "amount": "5.00",
+                "additionalInfo": "Cost of Bank Cheque also applies"
             },
             {
                 "name": "Manual Standing Instructions - Non-payment due to lack of funds",
@@ -192,39 +175,21 @@
                 "amount": "15.00"
             },
             {
-                "name": "Direct Credits - Referral fee for authorisation of payment (per referral)",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "additionalInfo": "Referral fee for authorisation of payment where the account has insufficient and/or unclear funds and no prior arrangements have been made."
-            },
-            {
                 "name": "Direct Debits - Dishonour / rejection fee",
                 "feeType": "TRANSACTION",
                 "amount": "35.00"
             },
             {
-                "name": "Foreign Currency Notes - Bank buys and pays AUD - For amounts less than $10,000.00",
+                "name": "Foreign Currency Notes - Bank buys and pays AUD",
                 "feeType": "TRANSACTION",
                 "amount": "10.00",
                 "additionalInfo": "The applicable exchange rate is the Bank\u2019s Note buying rate for that currency against AUD."
             },
             {
-                "name": "Foreign Currency Notes - Bank buys and pays AUD - For amounts greater than $10,000.00",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.0025",
-                "additionalInfo": "Min. $25.00. The applicable exchange rate is the Bank\u2019s Note buying rate for that currency against AUD."
-            },
-            {
-                "name": "Foreign Currency Notes - Bank sells and receives AUD - For amounts less than $10,000.00",
+                "name": "Foreign Currency Notes - Bank sells and receives AUD",
                 "feeType": "TRANSACTION",
                 "amount": "10.00",
                 "additionalInfo": "The applicable exchange rate is the Bank\u2019s Note selling rate for that currency against AUD."
-            },
-            {
-                "name": "Foreign Currency Notes - Bank sells and receives AUD - For amounts greater than $10,000.00",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.0025",
-                "additionalInfo": "Min. $25.00. The applicable exchange rate is the Bank\u2019s Note selling rate for that currency against AUD."
             },
             {
                 "name": "BPay\u00ae payments - Per BPay\u00ae payment",
@@ -269,17 +234,11 @@
                 "amount": "10.00"
             },
             {
-                "name": "Cash Handling Fees - Local coin handling - For amount greater than $100.00",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.02",
-                "additionalInfo": "Min $10.00"
-            },
-            {
                 "name": "Cash Handling Fees - Local currency - [See info]",
                 "feeType": "TRANSACTION",
                 "amount": "2.00",
                 "transactionRate": "0.005",
-                "additionalInfo": "$2.00 + 0.50% of amount handled. On all cash deposits and withdrawals, where the daily aggregate deposit or withdrawal is greater than $1,000.00 for that day"
+                "additionalInfo": "for amounts up to $1,000.00: $2.00; for amounts greater than $1,000: $2.00 + 0.50% of amount handled"
             },
             {
                 "name": "Cash Handling Fees - Foreign currency - [See info]",
@@ -291,21 +250,59 @@
             {
                 "name": "Transactions through an alliance bank branch - Deposits - cheques",
                 "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "additionalInfo": "$5.00 per deposit plus $0.55 per cheque"
+                "amount": "6.00",
+                "additionalInfo": "$6.00 per deposit plus $0.65 per cheque"
             },
             {
                 "name": "Transactions through an alliance bank branch - Deposits - cash",
                 "feeType": "TRANSACTION",
-                "amount": "5.00",
+                "amount": "6.00",
                 "transactionRate": "0.0085",
-                "additionalInfo": "$5.00 per deposit plus 0.85% of amount"
+                "additionalInfo": "$6.00 per deposit plus 0.85% of amount"
             },
             {
                 "name": "Transactions through an alliance bank branch - Cheque cashing",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.015",
                 "additionalInfo": "1.5% of amount. Min $10.00."
+            },
+            {
+                "name": "Cheque encashment facility set-up",
+                "feeType": "UPFRONT",
+                "amount": "100.00",
+                "additionalInfo": "per set-up (per branch)"
+            },
+            {
+                "name": "Cheque encashment facility amendment",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "additionalInfo": "per amendment (per branch)"
+            },
+            {
+                "name": "Real Time Payments",
+                "feeType": "TRANSACTION",
+                "amount": "0.50"
+            },
+            {
+                "name": "Real Time Payments to accounts within HSBC Australia",
+                "feeType": "TRANSACTION",
+                "amount": "0.25"
+            },
+            {
+                "name": "Returned Real Time Payments",
+                "feeType": "TRANSACTION",
+                "amount": "0.00"
+            },
+            {
+                "name": "Real Time Payment Receipts",
+                "feeType": "TRANSACTION",
+                "amount": "0.00"
+            },
+            {
+                "name": "Paper Billing Invoices",
+                "feeType": "PERIODIC",
+                "amount": "8.25",
+                "additionalValue": "P1M"
             }
         ],
         "depositRates": [
