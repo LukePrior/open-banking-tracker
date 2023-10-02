@@ -3,3 +3,9 @@
 This repository contains the scripts to automatically monitor the savings/loan rates offered by various Australian banks.
 
 [Visualisation tool](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=LukePrior%2Fopen-banking-tracker)
+
+[![Main](https://github.com/LukePrior/open-banking-tracker/actions/workflows/main.yml/badge.svg)](https://github.com/LukePrior/open-banking-tracker/actions/workflows/main.yml)
+
+## Note
+
+Data between August 12th 2023 and October 3rd 2023 is unavailable due to an API issue.
