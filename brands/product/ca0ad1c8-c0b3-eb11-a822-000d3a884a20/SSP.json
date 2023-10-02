@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "SSP",
-        "lastUpdated": "2023-02-15T00:09:43.609Z",
+        "lastUpdated": "2023-07-31T23:41:55.761Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "HSBC Everyday Savings Account",
         "description": "The HSBC Everyday Savings Account is an online savings account with a great 3 month introductory variable interest rate and must be linked to your nominated transaction account to enable you to move money in and out.",
@@ -9,21 +9,27 @@
         "applicationUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.hsbc.com.au/accounts/products",
+            "overviewUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/",
             "termsUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/accounts/transaction-savings-terms-and-conditions.pdf",
+            "eligibilityUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/",
             "feesAndPricingUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf",
-            "bundleUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/accounts/serious-saver-supplementary-product-disclosure-statement.pdf"
+            "bundleUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
         },
         "features": [
             {
                 "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Transfer money between your HSBC Everyday Savings account and linked nominated account via Internet Banking"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalValue": "Introductory variable interest rate for the first 3 months from account opening, then an ongoing variable rate"
             }
         ],
         "constraints": [
             {
                 "constraintType": "MAX_BALANCE",
-                "additionalValue": "Interest is paid on balances up to $1M AUD.",
+                "additionalValue": "Introductory and ongoing variable interest rate paid on balances up to $1,000,000",
+                "additionalInfo": "Must be linked to an HSBC transaction account or a transaction account you hold with another Australian financial institution",
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
             }
         ],
@@ -51,9 +57,10 @@
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
-                "name": "TT credited to existing HSBC account",
+                "name": "Telegraphic Transfers (TT) credited to existing HSBC account",
                 "feeType": "TRANSACTION",
                 "amount": "10.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
@@ -66,60 +73,70 @@
                 "name": "Bank cheque (excluding term deposit redemption)",
                 "feeType": "PURCHASE",
                 "amount": "8.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Replacement bank cheque",
                 "feeType": "PURCHASE",
                 "amount": "18.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Repurchase bank cheque",
                 "feeType": "PURCHASE",
                 "amount": "10.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Stop payment request",
                 "feeType": "PAYMENT",
                 "amount": "8.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Return Fee - Cheques Drawn by You",
                 "feeType": "PAYMENT",
                 "amount": "5.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Foreign Currency Cash Deposit/Withdrawal",
                 "feeType": "DEPOSIT",
                 "amount": "10.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Periodical Payments Dishonour",
                 "feeType": "PAYMENT",
                 "amount": "5.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Direct Debit Return Fee (Inward and Outward)",
                 "feeType": "PAYMENT",
                 "amount": "5.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Deposit through National Australia Bank branches",
                 "feeType": "DEPOSIT",
                 "amount": "4.17",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "Cheque cashing fee through National Australia Bank branches",
                 "feeType": "WITHDRAWAL",
                 "balanceRate": "0.015",
+                "currency": "AUD",
                 "additionalInfo": "1.5% of the amount of cheque (min $10)",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
@@ -127,6 +144,7 @@
                 "name": "Company search fee",
                 "feeType": "EVENT",
                 "amount": "30.00",
+                "currency": "AUD",
                 "additionalInfo": "additional cost may apply",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
@@ -134,12 +152,14 @@
                 "name": "Audit or balance certificate for individual or company",
                 "feeType": "EVENT",
                 "amount": "25.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             },
             {
                 "name": "International Banking account opening",
                 "feeType": "EVENT",
                 "amount": "200.00",
+                "currency": "AUD",
                 "additionalInfo": "no charge for premier customers",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/misc/ways-to-bank/personal-banking-booklet.pdf"
             }
@@ -147,19 +167,20 @@
         "depositRates": [
             {
                 "depositRateType": "INTRODUCTORY",
-                "rate": "0.045",
+                "rate": "0.0515",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/fees-charges.pdf",
+                "additionalValue": "3 Month Introductory Variable Rate",
                 "additionalInfo": "Available only for the first 3 months upon account opening.",
-                "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/savings-pds.pdf"
+                "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.028",
+                "rate": "0.033",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/savings-pds.pdf"
+                "additionalValue": "Ongoing Variable Rate",
+                "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
             }
         ]
     },

@@ -3,10 +3,10 @@
         "productId": "CREDITUNIONSA_HL_446",
         "effectiveFrom": "2016-08-01T00:00:00.000+10:00",
         "effectiveTo": "2099-06-01T00:00:00.000+10:00",
-        "lastUpdated": "2023-02-14T00:00:00.000+11:00",
+        "lastUpdated": "2023-07-26T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Bridging Home Loan",
-        "description": "Our Bridging Home Loan lets you purchase the new property before selling your current home. You can choose to make monthly interest payments or have the interest capitalised to your loan during the bridging period, keeping your costs at a minimum while you sell your existing home.",
+        "description": "Our Bridging Home Loan allows you to purchase a new Owner Occupied property before selling your current home - taking a lot of the stress out of the process. You can choose to make monthly interest only repayments or you can have the interest added  (capitalised) to your loan during the bridging period.  Nil-end debt loans are not available for non-members (members for less than 12 months) where the end debt is less thant $300,000.",
         "brand": "Credit Union SA",
         "applicationUri": "https://apply.creditunionsa.com.au/cusa/servlet/SmartForm.html?formCode=joint-home-loan",
         "isTailored": false,
@@ -21,7 +21,7 @@
         "features": [],
         "constraints": [
             {
-                "constraintType": "MAX_LIMIT",
+                "constraintType": "MIN_LIMIT",
                 "additionalValue": "150000.0",
                 "additionalInfo": "Minimum loan amount",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/loans/home-loans/standard-variable-rate-home-loans/"
@@ -45,17 +45,6 @@
         ],
         "fees": [
             {
-                "name": "Application fee nil-end-debt bridging loan",
-                "feeType": "UPFRONT",
-                "amount": "1350.00",
-                "balanceRate": "0.0",
-                "transactionRate": "0.0",
-                "currency": "AUD",
-                "additionalValue": "When you apply for a nil-end-debt bridging loan",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/home-loans/",
-                "discounts": []
-            },
-            {
                 "name": "Application fee",
                 "feeType": "UPFRONT",
                 "amount": "600.00",
@@ -63,6 +52,17 @@
                 "transactionRate": "0.0",
                 "currency": "AUD",
                 "additionalValue": "When you apply for a bridging home loan",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Application fee nil-end-debt bridging loan",
+                "feeType": "UPFRONT",
+                "amount": "1350.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "When you apply for a nil-end-debt bridging loan",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/home-loans/",
                 "discounts": []
             },
@@ -116,25 +116,16 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.063",
+                "comparisonRate": "0.077",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0649",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "rate": "0.0859",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
+                "additionalValue": "LVR<=97%Loan amount >= $20,000",
                 "additionalInfo": "Owner Occupied Bridging Loan (IO)"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0646",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "rate": "0.0644",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "additionalInfo": "Investment Bridging Loan (IO)"
             }
         ]
     },

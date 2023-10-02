@@ -1,70 +1,12 @@
 {
-    "data": {
-        "productId": "up-saver",
-        "effectiveFrom": "2019-07-02T00:00:00+10:00",
-        "effectiveTo": "9999-12-30T01:00:00+11:00",
-        "lastUpdated": "2023-01-01T00:00:00+00:00",
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "Up Saver",
-        "description": "Up\u2019s competitive savings account. Up Savers are free to use, and they pay up to 3.35% p.a. interest. You can transfer money to and from your Up Savers and your Everyday Account as much as you like.",
-        "brand": "Up",
-        "brandName": "Up",
-        "isTailored": false,
-        "additionalInformation": {
-            "overviewUri": "https://up.com.au/life_savers",
-            "termsUri": "https://up.com.au/product-terms/",
-            "eligibilityUri": "https://up.com.au/product-terms/#keyfeaturestable",
-            "feesAndPricingUri": "https://up.com.au/pricing/"
-        },
-        "features": [
-            {
-                "featureType": "DIGITAL_BANKING"
+    "errors": [
+        {
+            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
+            "title": "Unsupported Version",
+            "detail": "The requested version of the endpoint, via `x-v` is not supported. Supported versions are: 4.",
+            "meta": {
+                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
             }
-        ],
-        "eligibility": [
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "16"
-            }
-        ],
-        "depositRates": [
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.0335",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Combined Balance Limit",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0,
-                        "maximumValue": 1000000,
-                        "rateApplicationMethod": "PER_TIER",
-                        "additionalInfo": "Available on multiple Savers, up to a combined balance of $1,000,000.",
-                        "additionalInfoUri": "https://up.com.au/pricing/"
-                    }
-                ],
-                "additionalValue": "5 or more successful card purchases per month from your Everyday Account. No monthly deposits required."
-            }
-        ],
-        "lendingRates": [
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.1123",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "The interest rate that applies on overdrawn amounts. We may calculate interest on the overdrawn amount on a daily basis, and debit it to your account monthly for the UP Saver Account, until the overdrawn amount is repaid.",
-                "additionalInfoUri": "https://up.com.au/product-terms/#section-b"
-            }
-        ]
-    },
-    "links": {
-        "self": "https://api.up.com.au/cds-au/v1/banking/products/up-saver"
-    }
+        }
+    ]
 }

@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU004",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S4 Family/Clan/Group Account",
         "description": "This account that can be used by a whole family, clan or group (Sporting Club, etc).",
@@ -46,14 +46,14 @@
             {
                 "name": "Dishonour fee",
                 "feeType": "EVENT",
-                "amount": "30.00",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debits and Cheques",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "WITHDRAWAL",
-                "amount": "6.50",
+                "amount": "5.00",
                 "discounts": []
             },
             {
@@ -66,30 +66,31 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.050",
+                "rate": "0.01",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S4 Interest Tier 1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1.0,
+                        "maximumValue": 999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.01",
+                "rate": "2.25",
                 "calculationFrequency": "Daily",
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S4 Family/Clan/Group Account Interest Tier 1",
+                        "name": "S4 Interest Tier 2",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1.0,
-                        "maximumValue": 9999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    },
-                    {
-                        "name": "S4 Family/Clan/Group Account Interest Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
+                        "minimumValue": 1000.0,
                         "maximumValue": 0.0,
-                        "rateApplicationMethod": "PER_TIER"
+                        "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ]
             }

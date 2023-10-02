@@ -1,8 +1,8 @@
 {
     "data": {
         "productId": "HOME VALUE",
-        "effectiveFrom": "2022-12-27T13:00:00.000Z",
-        "lastUpdated": "2023-02-24T05:58:08.564Z",
+        "effectiveFrom": "2023-06-25T14:00:00.000Z",
+        "lastUpdated": "2023-06-26T00:21:14.658Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Home Value Loan ",
         "description": "Basic Variable Home Loan",
@@ -34,22 +34,37 @@
                 "featureType": "OTHER",
                 "additionalValue": "Unlimited deposits",
                 "additionalInfo": "Unlimited free deposits into the home value account"
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS"
+            },
+            {
+                "featureType": "CASHBACK_OFFER",
+                "additionalValue": "3288.00",
+                "additionalInfo": "Cashback of $3,288 for refinances. Eligibility, terms and conditions apply.",
+                "additionalInfoUri": "https://www.hsbc.com.au/home-loans/products/fixed-rate/"
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "$50,000"
+                "additionalValue": "50000.00"
             },
             {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "$15,000,000"
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "15000000.00"
             }
         ],
         "eligibility": [
             {
-                "eligibilityType": "OTHER",
-                "additionalInfo": "Available on new borrowings from $50,000."
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian Resident to be eligible for package",
+                "additionalInfo": "Not available to non-residents.",
+                "additionalInfoUri": "https://www.hsbc.com.au/home-loans/products/fixed-rate/"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
             }
         ],
         "fees": [
@@ -57,152 +72,169 @@
                 "name": "Establishment Fee",
                 "feeType": "UPFRONT",
                 "amount": "600.00",
+                "currency": "AUD",
                 "additionalInfo": "Waived during campaign"
             },
             {
                 "name": "Settlement Fee",
                 "feeType": "UPFRONT",
                 "amount": "150.00",
+                "currency": "AUD",
                 "additionalInfo": "Waived during campaign"
             },
             {
                 "name": "Loan Splitting Fee",
                 "feeType": "VARIABLE",
                 "amount": "100.00",
+                "currency": "AUD",
                 "additionalInfo": "For a fourth loan account or more. "
-            },
-            {
-                "name": "Company applicant processing fee ",
-                "feeType": "VARIABLE",
-                "amount": "100.00",
-                "additionalInfo": "For company applications and when you first draw on the loan. "
-            },
-            {
-                "name": "Trust structure fee ",
-                "feeType": "VARIABLE",
-                "amount": "150.00",
-                "additionalInfo": "When there is a trust and you first draw on the loan. "
-            },
-            {
-                "name": "Non-standard security fee",
-                "feeType": "VARIABLE",
-                "amount": "200.00",
-                "additionalInfo": "When a security is not residential property and when you first draw on your loan"
             },
             {
                 "name": "Discharge Fee",
                 "feeType": "EXIT",
                 "amount": "300.00",
+                "currency": "AUD",
                 "additionalInfo": "When we discharge the mortgage over the security property "
             },
             {
                 "name": "Consent / Production of title fee ",
                 "feeType": "VARIABLE",
                 "amount": "100.00",
+                "currency": "AUD",
                 "additionalInfo": "When you request a consent or other production of title matters "
             },
             {
                 "name": "Loan Variation fee ",
                 "feeType": "VARIABLE",
                 "amount": "300.00",
+                "currency": "AUD",
                 "additionalInfo": "When we agree to vary your home loan "
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0469",
-                "comparisonRate": "0.047",
+                "rate": "0.0589",
+                "comparisonRate": "0.0589",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "Reference Rate is 6.90% with a Comparison Rate of 6.97%",
-                "additionalInfo": "Between 70 - 80% LVR"
+                "additionalInfo": "O/O HV P&I (LVR<=80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0489",
-                "comparisonRate": "0.049",
+                "rate": "0.0609",
+                "comparisonRate": "0.0609",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "Reference Rate is 6.90% with a Comparison Rate of 6.97%",
-                "additionalInfo": "LVR greater than 80% "
+                "additionalInfo": "O/O HV P&I (LVR>80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0509",
-                "comparisonRate": "0.048",
+                "rate": "0.0639",
+                "comparisonRate": "0.0603",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "Reference Rate is 6.90% with a Comparison Rate of 6.97%",
-                "additionalInfo": "Up to 80% LVR"
+                "additionalInfo": "O/O HV IO (LVR<=80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0489",
-                "comparisonRate": "0.049",
+                "rate": "0.0619",
+                "comparisonRate": "0.0619",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "Reference Rate is 7.52% with a Comparison Rate of 7.59%",
-                "additionalInfo": "LVR between 70% - 80%"
+                "additionalInfo": "INV HV P&I (LVR<=80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0509",
-                "comparisonRate": "0.051",
+                "rate": "0.0639",
+                "comparisonRate": "0.0639",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "Reference Rate is 7.52% with a Comparison Rate of 7.59%",
-                "additionalInfo": "LVR greater than 80% "
+                "additionalInfo": "INV HV P&I (LVR>80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0509",
-                "comparisonRate": "0.0498",
+                "rate": "0.0639",
+                "comparisonRate": "0.0628",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "Reference Rate is 7.77% with a Comparison Rate of 7.70%",
-                "additionalInfo": "LVR up to 80%"
+                "additionalInfo": "INV HV IO (LVR<=80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0529",
-                "comparisonRate": "0.0518",
+                "rate": "0.0659",
+                "comparisonRate": "0.0648",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "Reference Rate is 7.77% with a Comparison Rate of 7.70%",
-                "additionalInfo": "LVR greater than 80% "
+                "additionalInfo": "INV HV IO (LVR>80%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0464",
-                "comparisonRate": "0.0465",
+                "rate": "0.0584",
+                "comparisonRate": "0.0584",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "Reference Rate is 6.90% with a Comparison Rate of 6.97%",
-                "additionalInfo": "Up to 70% LVR"
+                "additionalInfo": "O/O HV P&I (LVR<=70%)"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0479",
-                "comparisonRate": "0.048",
+                "rate": "0.0609",
+                "comparisonRate": "0.0609",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "additionalValue": "Reference Rate is 7.52% with a Comparison Rate of 7.59%",
-                "additionalInfo": "Up to 70% LVR"
+                "additionalInfo": "INV HV P&I (LVR<=70%)"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0579",
+                "comparisonRate": "0.0579",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "O/O HV P&I (LVR<=60%)"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0599",
+                "comparisonRate": "0.0599",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "INV HV P&I (LVR<=60%)"
             }
         ]
     },
-    "links": {
-        "self": "https://public.ob.hsbc.com.au/cds-au/v1/banking/products/HOME%20VALUE"
-    },
+    "links": {},
     "meta": {}
 }

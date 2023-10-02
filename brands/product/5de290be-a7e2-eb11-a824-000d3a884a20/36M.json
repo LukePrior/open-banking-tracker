@@ -20,11 +20,6 @@
                 "featureType": "OTHER",
                 "additionalInfo": "Negotiated rates for balances above $250,000",
                 "additionalInfoUri": ""
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Option of having interest paid monthly or annually and on maturity",
-                "additionalInfoUri": ""
             }
         ],
         "constraints": [
@@ -44,34 +39,59 @@
         "depositRates": [
             {
                 "depositRateType": "FIXED",
-                "rate": "0.039",
+                "rate": "0.0015",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P28D",
+                "applicationFrequency": "P12M",
                 "tiers": [
                     {
-                        "name": "TERM INVESTMENT_Tier",
+                        "name": "Term Deposit 36M (Paid Annually and at Maturity)_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term Deposit 36M (Paid Annually and at Maturity)_Tier_1",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 36.0,
+                        "maximumValue": 36.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P36M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Term Deposit 36M (Paid Annually and at Maturity)_Tier_2",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 5000.0,
                         "maximumValue": 250000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     },
                     {
-                        "name": "TERM INVESTMENT_Tier",
+                        "name": "Term Deposit 36M (Paid Annually and at Maturity)_Tier_2",
                         "unitOfMeasure": "MONTH",
-                        "minimumValue": 24.0,
-                        "maximumValue": 35.0,
+                        "minimumValue": 36.0,
+                        "maximumValue": 36.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P35M",
+                "additionalValue": "P36M",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
         ],
         "productId": "36M",
-        "lastUpdated": "2023-02-21T20:34:33.000+11:00",
+        "lastUpdated": "2023-04-13T14:15:18.000+10:00",
         "productCategory": "TERM_DEPOSITS",
-        "name": "TERM INVESTMENT",
+        "name": "Term Deposit 36M (Paid Annually and at Maturity)",
         "description": "TERM DEPOSIT - 36 month",
         "brand": "HUME BANK LIMITED",
         "brandName": "HUME BANK LIMITED",

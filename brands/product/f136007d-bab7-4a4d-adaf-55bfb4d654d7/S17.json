@@ -2,7 +2,7 @@
     "data": {
         "productId": "S17",
         "effectiveFrom": "2020-09-24T02:02:00+00:00",
-        "lastUpdated": "2022-10-11T06:22:08+00:00",
+        "lastUpdated": "2023-05-31T04:20:00+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Retirement Plus Account",
         "description": "Our Retirement Plus account specially designed for retirees with a flat rate of interest which provides security and peace of mind while your savings grow.",
@@ -22,8 +22,10 @@
         ],
         "features": [
             {
-                "featureType": "NPP_ENABLED",
-                "additionalValue": "Yes"
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Make regular credits like your pay into this account",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/financial_services_guide.pdf"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -32,29 +34,13 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Periodical Payments",
-                "additionalInfo": "Account allows Periodical Payments via Cheque and can also make External Periodical Payments"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Phone banking",
-                "additionalInfo": "You can pay bills via BPAY and check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Make regular credits like your pay into this account",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "OTHER",
                 "additionalValue": "Contributes to Reduced Fees Program",
                 "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates."
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Internet banking",
-                "additionalInfo": "You can pay bills via BPAY and check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free."
+                "featureType": "OTHER",
+                "additionalValue": "Periodical Payments",
+                "additionalInfo": "Account allows Periodical Payments via Cheque and can also make External Periodical Payments"
             },
             {
                 "featureType": "OTHER",
@@ -63,32 +49,42 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/financial_services_guide.pdf"
             },
             {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Mobile Number",
-                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes"
             },
             {
                 "featureType": "BILL_PAYMENT",
                 "additionalValue": "BPAY",
                 "additionalInfo": "BPAY - for your bill payments with access to the\r\nBPAY system*"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Phone banking",
+                "additionalInfo": "You can pay bills via BPAY and check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free."
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Mobile Number",
+                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Internet banking",
+                "additionalInfo": "You can pay bills via BPAY and check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free."
             }
         ],
         "constraints": [
             {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "None"
-            },
-            {
                 "constraintType": "OPENING_BALANCE",
                 "additionalValue": "0",
                 "additionalInfo": "When you apply to become a Police Bank Member, you do not have to pay a membership fee. All we ask is that you guarantee to pay $10 if Police Bank ever ceases to operate to the person/s looking after our winding up."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "None"
             }
         ],
         "eligibility": [
-            {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalValue": "Individuals"
-            },
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
@@ -98,40 +94,20 @@
                 "additionalValue": "Australian Citizen"
             },
             {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals"
+            },
+            {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Residents"
             }
         ],
         "fees": [
             {
-                "name": "Counter Cheque withdrawal fee",
-                "feeType": "TRANSACTION",
-                "amount": "3.00",
-                "currency": "AUD",
-                "additionalValue": "Per Cheque",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Direct Debit Dishonour Fee",
+                "name": "Special Cheque clearance fee for Personal Accounts",
                 "feeType": "EVENT",
-                "amount": "9.00",
+                "amount": "16.50",
                 "currency": "AUD",
-                "additionalInfo": "Direct Debit Dishonour Fee per transaction"
-            },
-            {
-                "name": "Bank Cheque",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Overdrawn Savings Account Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -144,6 +120,28 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
+                "name": "Counter Cash withdrawal fee up to $24,999",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
+            },
+            {
+                "name": "Direct Debit Dishonour Fee",
+                "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalInfo": "Direct Debit Dishonour Fee per transaction"
+            },
+            {
+                "name": "Counter Cheque withdrawal fee",
+                "feeType": "TRANSACTION",
+                "amount": "3.00",
+                "currency": "AUD",
+                "additionalValue": "Per Cheque",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
                 "name": "External Electronic Periodical Payments",
                 "feeType": "TRANSACTION",
                 "amount": "1.00",
@@ -153,18 +151,11 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Counter Cash withdrawal $25,000 and over",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Dormant Accounts fee",
+                "name": "Bank Cheque",
                 "feeType": "EVENT",
-                "amount": "10.00",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -177,6 +168,22 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
+                "name": "Dormant Accounts fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
                 "name": "Third Party Costs",
                 "feeType": "EVENT",
                 "amount": "0.00",
@@ -186,32 +193,25 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Special Cheque clearance fee for Personal Accounts",
-                "feeType": "EVENT",
-                "amount": "16.50",
+                "name": "Counter Cash withdrawal $25,000 and over",
+                "feeType": "TRANSACTION",
+                "amount": "50.00",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
-            },
-            {
-                "name": "Default Notice Fee",
+                "name": "Overdrawn Savings Account Fee",
                 "feeType": "EVENT",
-                "amount": "21.50",
+                "amount": "15.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
+                "additionalInfo": "Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.014",
+                "rate": "0.02",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M"
             }

@@ -290,6 +290,90 @@
                         "additionalInfoUri": ""
                     }
                 ]
+            },
+            {
+                "name": "BANK@POST_WDL",
+                "feeType": "TRANSACTION",
+                "amount": "3.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": [
+                    {
+                        "description": "Bank@Post withdrawal",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "21",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "P3M",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "If you have a mortgage at First Option you will not be charged this fee",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Maintain an aggregate balance > $25,000 across all your accounts",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            },
+            {
+                "name": "OVERSEAS_ATM_WDL",
+                "feeType": "TRANSACTION",
+                "amount": "3.50",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "",
+                "discounts": [
+                    {
+                        "description": "Overseas ATM withdrawal",
+                        "discountType": "BALANCE",
+                        "amount": "3.50",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "21",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "INTRODUCTORY",
+                                "additionalValue": "P3M",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "If you have a mortgage at First Option you will not be charged this fee",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Maintain an aggregate balance over $25,000 across all your accounts",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
             }
         ],
         "depositRates": [
@@ -310,7 +394,7 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Pay Account_Tier_1",
+                        "name": "Spend Account_Tier_1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
                         "maximumValue": 4.0,
@@ -327,7 +411,7 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Pay Account_Tier_2",
+                        "name": "Spend Account_Tier_2",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 4.01,
                         "rateApplicationMethod": "WHOLE_BALANCE"
@@ -338,10 +422,10 @@
             }
         ],
         "productId": "PAY_ACCOUNT",
-        "lastUpdated": "2022-12-05T11:22:32.000+11:00",
+        "lastUpdated": "2023-03-15T11:23:33.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "Pay Account",
-        "description": "Pay Account",
+        "name": "Spend Account",
+        "description": "Spend Account",
         "brand": "FIRST OPTION BANK LTD",
         "brandName": "FIRST OPTION BANK",
         "applicationUri": "https://firstoptionbank.com.au/join/",

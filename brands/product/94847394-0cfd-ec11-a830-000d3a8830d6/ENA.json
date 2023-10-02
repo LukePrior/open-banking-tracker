@@ -1,15 +1,36 @@
 {
     "data": {
         "productId": "ENA",
-        "lastUpdated": "2021-06-28T07:36:43.271Z",
+        "effectiveFrom": "2020-02-29T13:00:00.000Z",
+        "lastUpdated": "2023-03-15T01:20:28.047Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Encashment Authority",
         "description": "Encashment Authority (ENA) is used by customers for cashing cheques at alliance bank branches for petty cash. The ENA is issued by HSBC to its alliance bank to remove the risk of a dishonoured cheque up to the limit agreed with the customer.",
         "brand": "HSBC",
+        "brandName": "Wholesale Banking",
+        "applicationUri": "https://www.business.hsbc.com.au/en-au/products-and-solutions/bank",
         "isTailored": false,
         "additionalInformation": {
             "feesAndPricingUri": "https://www.business.hsbc.com.au/-/media/library/markets-selective/australia/pdf/corporate-banking-fees-and-charges.pdf"
         },
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalValue": "Unlimited transactions up to the limit amount specified by the customer within a given frequency (e.g. daily, weekly, monthly)"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "The cumulative amount of encashments is subject to the approved credit limit"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalValue": "Corporate use only. Product offering is subject to approval of credit limit."
+            }
+        ],
         "fees": [
             {
                 "name": "Cheque encashment facility set up",
@@ -20,7 +41,7 @@
             },
             {
                 "name": "Cheque encashment facility amendment",
-                "feeType": "TRANSACTION",
+                "feeType": "EVENT",
                 "amount": "50.00",
                 "currency": "AUD",
                 "additionalValue": "Charged per amendment per branch"

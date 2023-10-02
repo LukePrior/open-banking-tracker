@@ -1,79 +1,12 @@
 {
-    "data": {
-        "productId": "trust_account",
-        "lastUpdated": "2021-06-21T10:13:30Z",
-        "productCategory": "REGULATED_TRUST_ACCOUNTS",
-        "name": "Trust Account",
-        "description": "A general trust account for solicitors and real estate agents",
-        "brand": "Bank of Sydney",
-        "brandName": "Bank of Sydney",
-        "isTailored": false,
-        "additionalInformation": {
-            "termsUri": "https://www.banksyd.com.au/important-product-information",
-            "eligibilityUri": "https://www.banksyd.com.au/important-product-information",
-            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
-        },
-        "constraints": [
-            {
-                "constraintType": "OPENING_BALANCE",
-                "additionalValue": "50.00"
+    "errors": [
+        {
+            "code": "PCUA006",
+            "title": "Unsupported Version",
+            "detail": "Unable to find the version requested in x-v",
+            "meta": {
+                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
             }
-        ],
-        "eligibility": [
-            {
-                "eligibilityType": "BUSINESS",
-                "additionalValue": "Solicitors or Real Estate Agents in NSW only"
-            }
-        ],
-        "fees": [
-            {
-                "feeType": "PERIODIC",
-                "name": "Monthly Account Keeping Fee",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "Charged to another nominated BOS account"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Cheque Negotiation Fee",
-                "amount": "0.65",
-                "currency": "AUD",
-                "additionalInfo": "Charged to another nominated BOS account"
-            },
-            {
-                "feeType": "DEPOSIT",
-                "name": "Cheque Deposit Fee",
-                "amount": "0.65",
-                "currency": "AUD",
-                "additionalInfo": "Charged to another nominated BOS account"
-            },
-            {
-                "feeType": "TRANSACTION",
-                "name": "Staff Assisted Transactions",
-                "amount": "0.55",
-                "currency": "AUD",
-                "additionalInfo": "Charged to another nominated BOS account"
-            }
-        ],
-        "features": [
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": "Enquiry access to view accounts"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Direct Credit facility is available"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Cheque Book",
-                "additionalInfo": "Cheque Book access is available"
-            }
-        ]
-    },
-    "links": {
-        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/trust_account"
-    }
+        }
+    ]
 }

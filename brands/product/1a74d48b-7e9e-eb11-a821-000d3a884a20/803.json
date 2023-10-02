@@ -3,7 +3,7 @@
         "productId": "803",
         "effectiveFrom": "2016-11-04T00:00:00.000+11:00",
         "effectiveTo": "2029-12-31T00:00:00.000+11:00",
-        "lastUpdated": "2023-02-13T00:00:00.000+11:00",
+        "lastUpdated": "2023-06-20T00:00:00.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premier Home Loan",
         "description": "The Premier home loan is fuss-free with the flexibility of an offset account - a transaction account that\u2019s linked to your home loan.",
@@ -53,9 +53,53 @@
             {
                 "featureType": "REDRAW",
                 "additionalInfo": "Free loan redraw"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No application fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No Annual fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Australia-based Contact Centre team who understand the unique challenges and opportunities of being in the defence community",
+                "additionalInfo": "Australia-based Contact Centre"
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalInfo": "No fees for extra repayment."
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% mortgage offset account."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "To be eligible, you must meet First Home Loan Deposit Scheme conditions.",
+                "additionalInfo": "First Home Loan Deposit Scheme."
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Free loan redraw"
             }
         ],
         "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Residential.",
+                "additionalInfo": "Borrow up to 90% of the property value."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "Vacant Land/Refinance.",
+                "additionalInfo": "Borrow up to 90% of the property value."
+            },
             {
                 "constraintType": "MAX_BALANCE",
                 "additionalValue": "Residential.",
@@ -78,11 +122,38 @@
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalValue": "Lending criteria. ",
+                "additionalValue": "Lending criteria.",
+                "additionalInfo": "Individuals must have capacity."
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "Australian residents only."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Lending criteria.",
                 "additionalInfo": "Individuals must have capacity."
             }
         ],
         "fees": [
+            {
+                "name": "Arrears reminder notice fee (per letter)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
+            {
+                "name": "Default notice (enforcement notice)",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/",
+                "discounts": []
+            },
             {
                 "name": "Arrears reminder notice fee (per letter)",
                 "feeType": "EVENT",
@@ -102,10 +173,15 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0574",
+                "comparisonRate": "0.0674",
                 "interestPaymentDue": "IN_ARREARS",
-                "rate": "0.0574",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "rate": "0.0674",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "tiers": [],
+                "additionalInfo": "Premier home loan",
                 "additionalInfoUri": "https://www.defencebank.com.au/banking/home-loans/"
             }
         ]

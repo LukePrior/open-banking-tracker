@@ -1,9 +1,9 @@
 {
     "data": {
         "productId": "TCU006",
-        "effectiveFrom": "2020-10-01T00:00:00.000+10:00",
+        "effectiveFrom": "2023-03-01T00:00:00.000+11:00",
         "effectiveTo": "2025-09-28T00:00:00.000+10:00",
-        "lastUpdated": "2021-02-03T00:00:00.000+11:00",
+        "lastUpdated": "2023-03-01T00:00:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S6 Student Account",
         "description": "An account for Students aged between 13 and 18",
@@ -49,52 +49,52 @@
             {
                 "name": "NON-TCU owned ATM Withdrawal Fee",
                 "feeType": "WITHDRAWAL",
-                "amount": "3",
+                "amount": "3.00",
                 "discounts": []
             },
             {
                 "name": "Replacement Card fee",
                 "feeType": "EVENT",
-                "amount": "10",
+                "amount": "10.00",
                 "additionalInfo": "Cuecards and Visa Debit Cards - Charged when request received",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment Fee",
                 "feeType": "PERIODIC",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Periodical Payment Dishonour fee",
                 "feeType": "PERIODIC",
-                "amount": "5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Dishonour Fee",
                 "feeType": "EVENT",
-                "amount": "30",
+                "amount": "15.00",
                 "additionalInfo": "Direct Debits and Cheques",
                 "discounts": []
             },
             {
                 "name": "Issue Corporate Cheque",
                 "feeType": "EVENT",
-                "amount": "6.5",
+                "amount": "5.00",
                 "discounts": []
             },
             {
                 "name": "Dormant Account fee",
                 "feeType": "EVENT",
-                "amount": "10",
+                "amount": "10.00",
                 "additionalInfo": "Charged monthly when an account hasn't been used for 12 months or more",
                 "discounts": []
             },
             {
                 "name": "NON-TCU owned ATM Declined Transaction Fee",
                 "feeType": "EVENT",
-                "amount": "2",
+                "amount": "2.00",
                 "discounts": []
             },
             {
@@ -112,27 +112,28 @@
                 "applicationFrequency": "Monthly",
                 "tiers": [
                     {
-                        "name": "S6 Student Account Interest Tier 1",
+                        "name": "S6 Interest Tier 1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 1.0,
                         "maximumValue": 999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    },
-                    {
-                        "name": "S6 Student Account Interest Tier 2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000.0,
-                        "maximumValue": 0.0,
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ]
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.100",
+                "rate": "2.00",
                 "calculationFrequency": "DAILY",
                 "applicationFrequency": "MONTHLY",
-                "tiers": []
+                "tiers": [
+                    {
+                        "name": "S6 Interest Tier 2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ]
             }
         ],
         "lendingRates": []

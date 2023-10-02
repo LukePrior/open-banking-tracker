@@ -7,6 +7,14 @@
                 "additionalInfoUri": ""
             }
         ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "10000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -100,19 +108,22 @@
         ],
         "lendingRates": [
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0795",
+                "lendingRateType": "FIXED",
+                "rate": "0.058",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "additionalValue": "P12M",
                 "additionalInfo": "Interest only period up to five years",
                 "additionalInfoUri": "",
                 "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY"
+                "comparisonRate": "0.0791",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
             }
         ],
         "productId": "L3_Investment_IO_1_Fixed",
         "effectiveFrom": "2021-02-26T00:00:00.000+10:00",
-        "lastUpdated": "2023-02-24T09:50:10.000+10:00",
+        "lastUpdated": "2023-03-22T15:19:35.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Investment property loan Interest Only Fixed 1 year",
         "description": "A flexible loan to assist in the purchase of an investment property with the rate fixed for 1 year.  Includes a 100% offset account.",
@@ -121,8 +132,8 @@
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "",
-            "termsUri": "",
+            "overviewUri": "https://cairnsbank.com.au/loans/home-loans",
+            "termsUri": "https://cairnsbank.com.au/information-and-support/disclosure/terms-conditions",
             "eligibilityUri": "",
             "feesAndPricingUri": "",
             "bundleUri": ""

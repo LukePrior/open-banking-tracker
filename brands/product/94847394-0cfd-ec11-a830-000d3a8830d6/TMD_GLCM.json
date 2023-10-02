@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "TMD_GLCM",
-        "lastUpdated": "2020-09-28T04:33:15.505Z",
+        "lastUpdated": "2023-05-09T06:15:47.123Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Deposit Account",
         "description": "Provides a fixed term investment at a specified interest rate.",
@@ -10,6 +10,17 @@
         "additionalInformation": {
             "feesAndPricingUri": "https://www.business.hsbc.com.au/-/media/library/markets-selective/australia/pdf/corporate-banking-fees-and-charges.pdf"
         },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5000"
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "OTHER",
@@ -17,12 +28,21 @@
                 "additionalInfo": "Must be an existing client with a valid current account. "
             }
         ],
+        "fees": [
+            {
+                "name": "N/A",
+                "feeType": "WITHDRAWAL",
+                "balanceRate": "0.5",
+                "additionalInfo": ". If the Customer has already been paid interest at the full rate then the principal amount payable to the Customer when the Bank closes the Account will be reduced to put the Customer in the \nsame position as if interest on the amount deposited had been reduced by 50% for the whole \ntime the Account was open."
+            }
+        ],
         "depositRates": [
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0025",
-                "additionalValue": "Please refer to your relationship manager as the quoted rate will vary depending on tenor, amount and client classification.",
-                "additionalInfo": "Please refer to your relationship manager"
+                "rate": "0.038",
+                "additionalValue": "Above rate is applicable for 1 month. Please refer to your relationship manager as the quoted rate will vary depending on tenor, amount and client classification.",
+                "additionalInfo": "Please refer to your relationship manager",
+                "additionalInfoUri": "https://www.business.hsbc.com.au/en-au/form-downloads-and-interest-rates?DCSext.nav=quick-link"
             }
         ]
     },

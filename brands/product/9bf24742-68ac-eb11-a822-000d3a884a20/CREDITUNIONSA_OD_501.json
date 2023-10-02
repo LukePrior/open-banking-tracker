@@ -3,7 +3,7 @@
         "productId": "CREDITUNIONSA_OD_501",
         "effectiveFrom": "2001-03-07T00:00:00.000+11:00",
         "effectiveTo": "2099-06-01T00:00:00.000+10:00",
-        "lastUpdated": "2011-12-01T00:00:00.000+11:00",
+        "lastUpdated": "2011-06-29T00:00:00.000+10:00",
         "productCategory": "OVERDRAFTS",
         "name": "Personal Overdraft",
         "description": "Our variable rate revolving credit facility can be attached to selected transaction accounts. Visa debit cards can be linked to a Personal Overdraft",
@@ -139,23 +139,28 @@
         "constraints": [
             {
                 "constraintType": "MIN_BALANCE",
-                "additionalValue": "No minimum balance is required"
+                "additionalValue": "500.0",
+                "additionalInfo": "Minimum loan amount"
             },
             {
                 "constraintType": "MAX_BALANCE",
-                "additionalValue": "No maximum balance is required"
+                "additionalValue": "50000.0",
+                "additionalInfo": "Maximum loan amount"
             },
             {
                 "constraintType": "OPENING_BALANCE",
-                "additionalValue": "No minimum opening balance"
+                "additionalValue": "500.0",
+                "additionalInfo": "Minimum loan amount"
             },
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "500.0"
+                "additionalValue": "500.0",
+                "additionalInfo": "Minimum loan amount"
             },
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalValue": "20000.0"
+                "additionalValue": "50000.0",
+                "additionalInfo": "Maximum loan amount"
             }
         ],
         "eligibility": [
@@ -170,28 +175,6 @@
             }
         ],
         "fees": [
-            {
-                "name": "Overdraft Application",
-                "feeType": "UPFRONT",
-                "amount": "60.00",
-                "balanceRate": "0.0",
-                "transactionRate": "0.0",
-                "currency": "AUD",
-                "additionalValue": "Application fee",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/credit-cards-and-overdrafts/",
-                "discounts": []
-            },
-            {
-                "name": "Transaction",
-                "feeType": "TRANSACTION",
-                "amount": "0.00",
-                "balanceRate": "0.0",
-                "transactionRate": "0.0",
-                "currency": "AUD",
-                "additionalValue": "No transaction or withdrawal fees",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/credit-cards-and-overdrafts/",
-                "discounts": []
-            },
             {
                 "name": "Arrears",
                 "feeType": "EVENT",
@@ -208,8 +191,20 @@
                 "feeType": "EVENT",
                 "balanceRate": "0.0",
                 "transactionRate": "0.03",
+                "accrualFrequency": "TS0",
                 "currency": "AUD",
                 "additionalValue": "Visa Currency Conversion",
+                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/credit-cards-and-overdrafts/",
+                "discounts": []
+            },
+            {
+                "name": "Transaction",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "balanceRate": "0.0",
+                "transactionRate": "0.0",
+                "currency": "AUD",
+                "additionalValue": "No transaction or withdrawal fees",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/credit-cards-and-overdrafts/",
                 "discounts": []
             }
@@ -225,7 +220,8 @@
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
-                "additionalInfo": "Personal Overdraft rate"
+                "additionalInfo": "Personal Overdraft rate",
+                "additionalInfoUri": "Overdraft removed from sale"
             }
         ]
     },

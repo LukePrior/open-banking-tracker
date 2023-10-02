@@ -2,7 +2,7 @@
     "data": {
         "productId": "L28",
         "effectiveFrom": "2020-09-30T00:00:00+00:00",
-        "lastUpdated": "2023-01-19T21:05:10+00:00",
+        "lastUpdated": "2023-07-28T04:14:54+00:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "First Home Loan",
         "description": "We\u2019re proudly supporting the Government\u2019s initiative to help Australians purchase their first home sooner. Police Bank will help you get into your first home with our low rates and great features.",
@@ -15,6 +15,12 @@
         },
         "features": [
             {
+                "featureType": "OFFSET",
+                "additionalValue": "100% Offset",
+                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
+                "additionalInfoUri": "https://www.policebank.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalValue": "Unlimited free additional repayments",
                 "additionalInfo": "Up to $5,000 over the Fixed Term period",
@@ -25,20 +31,12 @@
                 "additionalValue": "0",
                 "additionalInfo": "Fee Free redraw",
                 "additionalInfoUri": "https://www.policebank.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalValue": "100% Offset",
-                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
-                "additionalInfoUri": "https://www.policebank.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
             }
         ],
         "eligibility": [
             {
-                "eligibilityType": "OTHER",
-                "additionalValue": "First Home Loan Deposit Scheme",
-                "additionalInfo": "Must be eligible for the First Home Loan Deposit Scheme",
-                "additionalInfoUri": "https://www.policebank.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
@@ -48,22 +46,72 @@
                 "eligibilityType": "NATURAL_PERSON"
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "eligibilityType": "OTHER",
+                "additionalValue": "First Home Loan Deposit Scheme",
+                "additionalInfo": "Must be eligible for the First Home Loan Deposit Scheme",
+                "additionalInfoUri": "https://www.policebank.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
             }
         ],
         "fees": [
             {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
+                "name": "Second Mortgage Consent Fee",
+                "feeType": "UPFRONT",
+                "amount": "75.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
+                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Excess Valuation Fee",
+                "name": "Bank Cheque",
                 "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Legal/Securities fees",
+                "feeType": "UPFRONT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Early Repayment Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At cost",
+                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
+            },
+            {
+                "name": "Additional Valuation Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "General Consent Fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Mortgage Discharge Fee",
+                "feeType": "EXIT",
+                "amount": "294.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Stamp Duty",
+                "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
@@ -76,19 +124,11 @@
                 "currency": "AUD"
             },
             {
-                "name": "Dishonoured Cheque fee",
+                "name": "Consent to Subdivision Fee",
                 "feeType": "EVENT",
-                "amount": "9.00",
+                "amount": "162.00",
                 "currency": "AUD",
-                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Mortgage Discharge Fee",
-                "feeType": "EXIT",
-                "amount": "294.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
+                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -100,46 +140,6 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "General Consent Fee",
-                "feeType": "EVENT",
-                "amount": "250.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Stamp Duty",
-                "feeType": "UPFRONT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Bank Cheque",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Additional Valuation Fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Late Payment Fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Police Bank loans and continuing credit accounts",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
                 "name": "Substituting of Security Legal fee",
                 "feeType": "UPFRONT",
                 "amount": "605.00",
@@ -148,11 +148,27 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Legal/Securities fees",
+                "name": "RTGS Transfer Fee",
                 "feeType": "UPFRONT",
-                "amount": "0.00",
+                "amount": "10.50",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
+                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Substituting Securities fee",
+                "feeType": "UPFRONT",
+                "amount": "315.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Dishonoured Member Cheque fee",
+                "feeType": "PERIODIC",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalValue": "Per cheque dishonoured.",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -165,11 +181,11 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dishonoured Member Cheque fee",
-                "feeType": "PERIODIC",
-                "amount": "9.00",
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
                 "currency": "AUD",
-                "additionalValue": "Per cheque dishonoured.",
+                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -182,27 +198,19 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Consent to Subdivision Fee",
+                "name": "Dishonoured Cheque fee",
                 "feeType": "EVENT",
-                "amount": "162.00",
+                "amount": "9.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
+                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "RTGS Transfer Fee",
-                "feeType": "UPFRONT",
-                "amount": "10.50",
+                "name": "Excess Valuation Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Second Mortgage Consent Fee",
-                "feeType": "UPFRONT",
-                "amount": "75.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
+                "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -214,26 +222,18 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Early Repayment Fee",
+                "name": "Late Payment Fee",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "10.00",
                 "currency": "AUD",
-                "additionalValue": "At cost",
-                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
-            },
-            {
-                "name": "Substituting Securities fee",
-                "feeType": "UPFRONT",
-                "amount": "315.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
+                "additionalInfo": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Police Bank loans and continuing credit accounts",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0579",
+                "rate": "0.0574",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -241,63 +241,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0519",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0569",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0569",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0519",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0589",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0564",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0669",
+                "rate": "0.0639",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -313,7 +257,7 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0574",
+                "rate": "0.0564",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -321,7 +265,15 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0569",
+                "rate": "0.0589",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0559",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -337,7 +289,15 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0509",
+                "rate": "0.0569",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0564",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -345,15 +305,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0599",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0664",
+                "rate": "0.0579",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -361,7 +313,15 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0539",
+                "rate": "0.0569",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0674",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -369,10 +329,50 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0619",
+                "rate": "0.0679",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0569",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0574",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             }
         ]
