@@ -6,6 +6,7 @@ This repository contains the scripts to automatically monitor the savings/loan r
 
 [![Main](https://github.com/LukePrior/open-banking-tracker/actions/workflows/main.yml/badge.svg)](https://github.com/LukePrior/open-banking-tracker/actions/workflows/main.yml)
 
-## Note
+## Notes
 
-Data between August 12th 2023 and October 3rd 2023 is unavailable due to an API issue.
+- Data between August 12th 2023 and October 3rd 2023 is unavailable due to an API issue.
+- The historical data generated for use by [Mortgage Manager](https://github.com/LukePrior/mortgage-manager) is inaccurate and needs refactoring.
