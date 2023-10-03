@@ -12,14 +12,22 @@
                 "additionalInfoUri": ""
             },
             {
-                "featureType": "FREE_TXNS",
+                "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "Fee free account",
                 "additionalInfoUri": ""
             },
             {
                 "featureType": "CARD_ACCESS",
-                "additionalValue": "$5",
+                "additionalValue": "5.00",
                 "additionalInfo": "payable if deposit made within a month of account opening",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "1500000.00",
+                "additionalInfo": "in total per account holder",
                 "additionalInfoUri": ""
             }
         ],
@@ -39,7 +47,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.01",
+                "rate": "0.0125",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -56,7 +64,7 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.01",
+                "rate": "0.0125",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -72,9 +80,35 @@
             },
             {
                 "depositRateType": "BONUS",
+                "rate": "0.0365",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S11 LITTLE STAR SAVER_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 50000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalValue": "Tiered Rates",
+                "additionalInfo": "Tiered rate based on different balance thresholds",
+                "additionalInfoUri": "https://www.sccu.com.au/deposit-interest-rate-schedule/"
+            },
+            {
+                "depositRateType": "BONUS",
                 "rate": "0.0",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "S11 LITTLE STAR SAVER_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
                 "additionalValue": "Tiered Rates",
                 "additionalInfo": "Tiered rate based on different balance thresholds",
                 "additionalInfoUri": "https://www.sccu.com.au/deposit-interest-rate-schedule/"
@@ -82,7 +116,7 @@
         ],
         "productId": "LITTLE_STAR_SAVER",
         "effectiveFrom": "2022-12-23T00:00:00.000+11:00",
-        "lastUpdated": "2023-04-13T11:22:11.000+10:00",
+        "lastUpdated": "2023-10-03T08:21:13.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "S11 LITTLE STAR SAVER",
         "description": "Savings account for customers under 14yrs. Bonus Interest paid on balance up to $50k and no withdrawals made.",

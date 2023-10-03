@@ -1,12 +1,196 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "575",
+        "lastUpdated": "2023-07-02T22:40:12Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Mortgage Saver Home Loan",
+        "description": "Our Mortgage Saver home loan is a straight forward, basic variable home loan with a low variable rate. With no ongoing fees, unlimited additional repayments and free redraw you can reach your property goals sooner.",
+        "brand": "RACQ Bank",
+        "brandName": "RACQ Bank",
+        "applicationUri": "https://forms.racq.com.au/banking/servlet/SmartForm.html?formCode=home-loan",
+        "isTailored": false,
+        "additionalInformation": {
+            "feesAndPricingUri": "https://www.racq.com.au/banking/forms-and-documents"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "REDRAW"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "20000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian Resident"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Substitution of Mortgage Security (single property) Fee - for new loans",
+                "amount": "350.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable for substitution of a mortgage security",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Substitution of Mortgage Security (single property) Fee - for variations",
+                "amount": "200.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable for substitution of a mortgage security",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Company / Trust - Borrower / Guarantor Party Fee Company Search and Review Fee",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable for each company or trust borrower / guarantor party on the loan.",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Mortgage Top Up Fee",
+                "amount": "350.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable for further advance. Valuation fees are payable at cost.",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Additional valuation fee",
+                "currency": "AUD",
+                "additionalInfo": "Payable at cost",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Default Enforcement Expenses",
+                "currency": "AUD",
+                "additionalInfo": "May apply if enforcement services are required as part of default administration",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "EXIT",
+                "name": "Discharge Fee",
+                "amount": "165.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable for standard partial or full discharges.",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Establishment Fee",
+                "amount": "900.00",
+                "currency": "AUD",
+                "additionalInfo": "Establishment Fee includes valuation fee up to $300, title search, document preparation and settlement fees - document generation, distribution of documents, verification of returned documents, verification of search requirements, settlement booking, settlement attendance (PEXA or paper) and lodgement of title documents",
+                "additionalInfoUri": "https://www.racq.com.au/banking/forms-and-documents"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.0589",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR between >60% to <=70% only.",
+                "tiers": [
+                    {
+                        "name": "LVR >60% to <=70% discount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "lendingRateType": "DISCOUNT",
+                "comparisonRate": "0.0596",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "rate": "0.0599",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR between >70% to <=80% only.",
+                "tiers": [
+                    {
+                        "name": "LVR >70% to <=80% discount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "lendingRateType": "DISCOUNT",
+                "comparisonRate": "0.0606",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "rate": "0.0719",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0726",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "rate": "0.0659",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Applicable for new lending only. Existing members can switch to Mortgage Saver Special with a minimum of $20,000 in additional lending.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0666",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "rate": "0.0579",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR of <=60% only.",
+                "tiers": [
+                    {
+                        "name": "LVR <=60% discount ",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "lendingRateType": "DISCOUNT",
+                "comparisonRate": "0.0586",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://cdrbank.racq.com.au/cds-au/v1/banking/products/575"
+    }
 }

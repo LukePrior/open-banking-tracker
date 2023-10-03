@@ -1,12 +1,101 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "business_advance_cheque_account",
+        "lastUpdated": "2020-12-02T02:47:14Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Business Advance Cheque Account",
+        "description": "Designed for businesses with high transaction volumes, allowing you to easily manage your daily business finances.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.banksyd.com.au/business/business-advanced-cheque-account",
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/business/business-advanced-cheque-account",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "status": "APPROVED",
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited ATM, cheque, Internet Banking transactions"
+            },
+            {
+                "featureType": "OVERDRAFT",
+                "additionalInfo": "Overdraft facility is available for this product."
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "50.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Business Signatories",
+                "additionalInfo": "All the signatories must be identified as per KYC requirements"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Dishonour Fee",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Overdrawn Account Fee",
+                "amount": "7.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Bank Cheque Fee",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Local Telegraphic Transfer",
+                "amount": "35.00",
+                "currency": "AUD",
+                "additionalInfo": "RTGS transaction"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/business_advance_cheque_account"
+    }
 }

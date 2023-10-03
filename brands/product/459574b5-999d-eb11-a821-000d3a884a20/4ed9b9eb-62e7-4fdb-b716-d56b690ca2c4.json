@@ -1,9 +1,85 @@
 {
-    "errors": [
-        {
-            "title": "Unsupported Version",
-            "detail": "Unsupported Version Requested",
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
-        }
-    ]
+    "data": {
+        "brandName": "Bendigo Bank",
+        "depositRates": [
+            {
+                "rate": "0.0005000000000000",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "minimumValue": 0,
+                        "maximumValue": 1999.99,
+                        "name": "$0 - $1,999"
+                    }
+                ],
+                "depositRateType": "FIXED",
+                "additionalValue": "P1Y",
+                "calculationFrequency": "P1D"
+            },
+            {
+                "rate": "0.0005000000000000",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "minimumValue": 2000,
+                        "maximumValue": 5000000,
+                        "name": "$2000 - $5,000,000"
+                    }
+                ],
+                "depositRateType": "FIXED",
+                "additionalValue": "P1Y",
+                "calculationFrequency": "P1D"
+            }
+        ],
+        "isTailored": false,
+        "bundles": [],
+        "cardArt": [],
+        "eligibility": [],
+        "brand": "BENDIGO",
+        "constraints": [
+            {
+                "additionalValue": "2000",
+                "constraintType": "OPENING_BALANCE"
+            }
+        ],
+        "name": "Gold Term Deposit",
+        "fees": [
+            {
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "name": "Bank cheque withdrawal",
+                "amount": "10.000000"
+            },
+            {
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "name": "EFT Credit Transfer",
+                "amount": "4.000000"
+            }
+        ],
+        "productId": "4ed9b9eb-62e7-4fdb-b716-d56b690ca2c4",
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            }
+        ],
+        "lendingRates": [],
+        "additionalInformation": {
+            "overviewUri": "https://www.bendigobank.com.au/personal/term-deposits/",
+            "termsUri": "https://www.bendigobank.com.au/disclosure-documents/",
+            "feesAndPricingUri": "https://www.bendigobank.com.au/disclosure-documents/",
+            "eligibilityUri": "https://www.bendigobank.com.au/disclosure-documents/"
+        },
+        "lastUpdated": "2020-12-08T13:00:22.369Z",
+        "description": "Bendigo Bank\u2019s range of term deposits offer great rates so you can watch your money grow.  Additional deposits at any time and withdrawals of up to 25% of your original deposit if you need to at any Bendigo Branch.",
+        "productCategory": "TERM_DEPOSITS",
+        "applicationUri": "https://www.bendigobank.com.au/personal/term-deposits/term-deposit-enquiry/"
+    },
+    "links": {
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/4ed9b9eb-62e7-4fdb-b716-d56b690ca2c4"
+    }
 }

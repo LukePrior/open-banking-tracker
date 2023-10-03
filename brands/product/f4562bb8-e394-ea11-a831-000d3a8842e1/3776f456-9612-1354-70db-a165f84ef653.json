@@ -1,9 +1,83 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Unable to select an endpoint version. Supported versions: min = 4, max = 4."
-        }
-    ]
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/3776f456-9612-1354-70db-a165f84ef653"
+    },
+    "data": {
+        "description": "An online savings account",
+        "name": "ANZ Online Saver",
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "You must be 12 years of age or older to apply",
+                "additionalValue": "12"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Account holders of, or signatories to, eligible ANZ everyday banking accounts with ANZ Internet Banking or ANZ Phone Banking access. Eligible accounts include ANZ Access Advantage, ANZ Access Select, ANZ Access Basic, ANZ Pensioner Advantage, ANZ Progress Saver, ANZ V2 PLUS, ANZ Premium Cash Management Account and ANZ Everyday Visa Debit.",
+                "additionalValue": "Account holders of, or signatories to, eligible ANZ everyday banking accounts with ANZ Internet Banking or ANZ Phone Banking access. Eligible accounts include ANZ Access Advantage, ANZ Access Select, ANZ Access Basic, ANZ Pensioner Advantage, ANZ Progress Saver, ANZ V2 PLUS, ANZ Premium Cash Management Account and ANZ Everyday Visa Debit."
+            }
+        ],
+        "lendingRates": [],
+        "fees": [],
+        "depositRates": [
+            {
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "rate": "0.016",
+                "depositRateType": "VARIABLE",
+                "tiers": []
+            },
+            {
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "tiers": [],
+                "rate": "0.018",
+                "depositRateType": "INTRODUCTORY",
+                "additionalValue": "P3M"
+            }
+        ],
+        "features": [
+            {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:sv",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:sv",
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "FRAUD_PROTECTION"
+            }
+        ],
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "brand": "ANZ",
+        "bundles": [],
+        "cardArt": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "constraints": [],
+        "additionalInformation": {
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/online-saver/",
+            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
+            "feesAndPricingUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/online-saver/"
+        },
+        "isTailored": false,
+        "lastUpdated": "2023-06-29T20:00:00.000Z",
+        "applicationUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/online-saver/",
+        "productId": "3776f456-9612-1354-70db-a165f84ef653"
+    }
 }

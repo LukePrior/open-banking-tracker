@@ -1,9 +1,126 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Supported minimum version 4 and maximum versions 4"
-        }
-    ]
+    "data": {
+        "productId": "TRANSACT01",
+        "lastUpdated": "2023-08-28T00:00:00Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "ANZ Plus",
+        "description": "ANZ Plus",
+        "brand": "ANZ Plus",
+        "brandName": "ANZ Plus",
+        "applicationUri": "https://anz.com/plus/products",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://anz.com/plus/products",
+            "termsUri": "https://anz.com/plus/terms",
+            "eligibilityUri": "https://anz.com/plus/terms",
+            "feesAndPricingUri": "https://anz.com/plus/terms",
+            "bundleUri": "https://anz.com/plus/products"
+        },
+        "cardArt": [
+            {
+                "title": "Consumer Visa Debit Card Standard",
+                "imageUri": "https://anz.com.au/content/dam/anzplus/images/open-banking/anzplus-visa-debit-card-512px.png"
+            }
+        ],
+        "bundles": [
+            {
+                "name": "ANZ Plus",
+                "description": "ANZ Plus bundle with a single ANZ Plus account, a single ANZ Save account and a Visa Debit Consumer Standard Card attached as a service to the ANZ Plus account.",
+                "additionalInfo": "ANZ Plus and ANZ Save Accounts",
+                "additionalInfoUri": "https://anz.com/plus/products",
+                "productIds": [
+                    "TRANSACT01",
+                    "SAVING01"
+                ]
+            }
+        ],
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Consumer Visa Debit Card Standard",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Garmin Pay",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfoUri": "https://anz.com/plus/products"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "15"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Permanent Resident, Australian Citizen, Australian Temporary Resident"
+            }
+        ],
+        "fees": [
+            {
+                "name": "OVERSEAS NON ANZ ATM FEE",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "See the ANZ Plus and ANZ Save Accounts T&Cs for details on fees",
+                "additionalInfoUri": "https://anz.com/plus/terms"
+            },
+            {
+                "name": "OVERSEAS TRANSACTION FEE",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "See the ANZ Plus and ANZ Save Accounts T&Cs for details on fees",
+                "additionalInfoUri": "https://anz.com/plus/terms"
+            },
+            {
+                "name": "INTERNATIONAL INWARD MONEY TRANSFER FEE",
+                "feeType": "TRANSACTION",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "See the ANZ Plus and ANZ Save Accounts T&Cs for details on fees",
+                "additionalInfoUri": "https://anz.com/plus/terms"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://cdr.apix.anz/cds-au/v1/banking/products/TRANSACT01"
+    },
+    "meta": {}
 }

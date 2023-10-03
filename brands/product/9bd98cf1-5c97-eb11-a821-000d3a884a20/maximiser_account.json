@@ -1,12 +1,124 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "maximiser_account",
+        "effectiveTo": "2021-07-30T07:00:17Z",
+        "lastUpdated": "2023-06-19T05:48:55Z",
+        "productCategory": "OVERDRAFTS",
+        "name": "Maximizer Account",
+        "description": "A personal overdraft facility",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "status": "APPROVED",
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card"
             }
-        }
-    ]
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Resident or Citizen"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "No longer for sale"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "TRANSACTION",
+                "name": "Staff Assisted Transaction",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalInfo": "Applicable if number of in branch transactions exceeds 4 per month"
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "10.00",
+                "additionalValue": "P1M"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Application Fee",
+                "amount": "200.00",
+                "currency": "AUD",
+                "additionalInfo": "1.00% of overdraft limit, minimum $200"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.2058",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 4999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 4999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "5000 to 9999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 9999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "10000 to 19999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 19999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "20000 to 49999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "50000 to 99999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 99999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "100000 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/maximiser_account"
+    }
 }

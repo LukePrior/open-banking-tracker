@@ -1,0 +1,81 @@
+{
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No Account Keeping Fee",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We'll notify you before your deposit matures",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "If you wish to withdraw your Term deposit before it matures, a reduced interest rate may apply",
+                "additionalInfoUri": "https://www.humebank.com.au/tools-help/product-tcs/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Negotiated rates for balances above $250,000",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0475",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P100D",
+                "tiers": [
+                    {
+                        "name": "Term Deposit 100 Day (Interest at Maturity)_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term Deposit 100 Day (Interest at Maturity)_Tier",
+                        "unitOfMeasure": "DAY",
+                        "minimumValue": 100.0,
+                        "maximumValue": 100.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P100D",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "100D",
+        "lastUpdated": "2023-09-21T20:41:58.000+10:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Term Deposit 100 Day (Interest at Maturity)",
+        "description": "TERM DEPOSIT - 100 Day",
+        "brand": "HUME BANK LIMITED",
+        "brandName": "HUME BANK LIMITED",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "termsUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "eligibilityUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "feesAndPricingUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "bundleUri": ""
+        }
+    },
+    "links": {
+        "self": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/100D"
+    },
+    "meta": {}
+}

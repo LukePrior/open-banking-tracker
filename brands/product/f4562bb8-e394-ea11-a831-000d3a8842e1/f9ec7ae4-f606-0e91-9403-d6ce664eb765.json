@@ -1,9 +1,145 @@
 {
-    "errors": [
-        {
-            "detail": "Unable to select an endpoint version. Supported versions: min = 4, max = 4.",
-            "title": "Unsupported Version",
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
-        }
-    ]
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/f9ec7ae4-f606-0e91-9403-d6ce664eb765"
+    },
+    "data": {
+        "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
+        "name": "ANZ Pensioner Advantage Account",
+        "eligibility": [
+            {
+                "additionalInfo": "Receive an eligible Centrelink pension or allowance or a Veterans' Affairs pension or allowance that is paid into the account",
+                "eligibilityType": "PENSION_RECIPIENT"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "You must be an Australian resident with an Australian residential and mailing address."
+            }
+        ],
+        "lendingRates": [],
+        "fees": [],
+        "depositRates": [
+            {
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "rate": "0.0005",
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "maximumValue": 9999,
+                        "rateApplicationMethod": "PER_TIER",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance less than $10,000"
+                        },
+                        "minimumValue": 0
+                    }
+                ]
+            },
+            {
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "rate": "0.0165",
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "PER_TIER",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance of $10,000 to less than $50,000"
+                        },
+                        "minimumValue": 10000
+                    }
+                ]
+            },
+            {
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "rate": "0.0225",
+                "depositRateType": "VARIABLE",
+                "tiers": [
+                    {
+                        "rateApplicationMethod": "PER_TIER",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance of $50,000 or more"
+                        }
+                    }
+                ]
+            }
+        ],
+        "features": [
+            {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:tv",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:tv"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:tv"
+            },
+            {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay"
+            },
+            {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
+            },
+            {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Fitbit Pay"
+            },
+            {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:tv",
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Garmin Pay"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:tv",
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&CID=af:obank:tv",
+                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "FRAUD_PROTECTION"
+            }
+        ],
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "brand": "ANZ",
+        "bundles": [],
+        "cardArt": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "constraints": [],
+        "additionalInformation": {
+            "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/",
+            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
+            "feesAndPricingUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/",
+            "overviewUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/"
+        },
+        "isTailored": false,
+        "lastUpdated": "2023-07-13T14:05:00.000Z",
+        "applicationUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/#apply",
+        "productId": "f9ec7ae4-f606-0e91-9403-d6ce664eb765"
+    }
 }

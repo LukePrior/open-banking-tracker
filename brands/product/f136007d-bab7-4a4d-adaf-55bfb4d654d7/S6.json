@@ -3,33 +3,22 @@
         "productId": "S6",
         "effectiveFrom": "2020-09-20T12:02:00+00:00",
         "effectiveTo": "2022-09-18T23:59:00+00:00",
-        "lastUpdated": "2022-09-18T22:37:31+00:00",
+        "lastUpdated": "2023-08-29T23:46:08+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Insurance Saver Account",
         "description": "This is a special purpose savings account you can use to set aside money for insurance payments. Internet and phone banking are available. Direct debits can be set up for your payments ",
         "brand": "Police Bank",
-        "applicationUri": "https://www.policebank.com.au/online-membership-application/",
         "isTailored": false,
-        "additionalInformation": {
-            "overviewUri": "https://www.policebank.com.au/savings/transaction-accounts/",
-            "termsUri": "https://www.policebank.com.au/important-information/",
-            "feesAndPricingUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-        },
-        "cardArt": [
-            {
-                "title": "Police Bank Visa Debit",
-                "imageUri": "https://www.policebank.com.au/wp-content/uploads/2014/11/PB_VisaDebitCard_FRONT_2015.png"
-            }
-        ],
         "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Contributes to Reduced Fees Program",
+                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates."
+            },
             {
                 "featureType": "NPP_PAYID",
                 "additionalValue": "Mobile Number",
                 "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalValue": "Yes"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -38,14 +27,13 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Contributes to Reduced Fees Program",
-                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates."
-            },
-            {
-                "featureType": "OTHER",
                 "additionalValue": "Direct Credits",
                 "additionalInfo": "Make regular credits like your pay into this account",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/financial_services_guide.pdf"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes"
             }
         ],
         "constraints": [
@@ -61,23 +49,30 @@
         ],
         "eligibility": [
             {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalValue": "Individuals"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Residents"
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Citizen"
             },
             {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Residents"
             }
         ],
         "fees": [
+            {
+                "name": "Counter Cash withdrawal fee up to $24,999",
+                "feeType": "TRANSACTION",
+                "amount": "2.00",
+                "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
+            },
             {
                 "name": "Third Party Costs",
                 "feeType": "EVENT",
@@ -85,23 +80,6 @@
                 "currency": "AUD",
                 "additionalValue": "At Cost",
                 "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Document Retrieval fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
-                "additionalInfo": "Payable on request for documents to be retrieved",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -113,11 +91,10 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Overdrawn Savings Account Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
+                "name": "Counter Cash withdrawal $25,000 and over",
+                "feeType": "TRANSACTION",
+                "amount": "50.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -130,17 +107,11 @@
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
                 "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
-            },
-            {
-                "name": "Counter Cash withdrawal $25,000 and over",
-                "feeType": "TRANSACTION",
-                "amount": "50.00",
-                "currency": "AUD",
+                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -149,6 +120,23 @@
                 "amount": "16.50",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Overdrawn Savings Account Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Document Retrieval fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
+                "additionalInfo": "Payable on request for documents to be retrieved",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "depositRates": [
@@ -156,31 +144,43 @@
                 "depositRateType": "VARIABLE",
                 "rate": "0.0001",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $20,001 to $50,000",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0001",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $50,001 or more",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $500 to $20,000",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Whole Balance Balance $0 - $499",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             }
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.1196"
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1196",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "May be applicable if your account becomes overdrawn",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/financial_services_guide.pdf"
             }
         ]
     },

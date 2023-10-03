@@ -2,7 +2,7 @@
     "data": {
         "productId": "12",
         "effectiveFrom": "2006-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2023-04-26T02:13:25.1811298Z",
+        "lastUpdated": "2023-09-28T00:00:14.2127639Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "I52 Gold Mbr Ftd 24 Mths",
         "description": "I52 Gold Mbr Ftd 24 Mths",
@@ -10,11 +10,11 @@
         "applicationUri": "https://www.coastline.com.au/invest/gold-member/",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.coastline.com.au/invest/",
+            "overviewUri": "https://www.coastline.com.au/invest/gold-member/",
             "termsUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "eligibilityUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "feesAndPricingUri": "https://www.coastline.com.au/about-coast/fees-and-charges/",
-            "bundleUri": "https://www.coastline.com.au/transact/"
+            "bundleUri": "https://www.coastline.com.au/invest/gold-member/"
         },
         "constraints": [
             {
@@ -38,9 +38,143 @@
         "depositRates": [
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0",
+                "rate": "0.04",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P24M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$25000-$49999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 49999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P14D",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$25000-$49999/14",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$25000-$49999/M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P24M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$5000-$24999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 24999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P14D",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$5000-$24999/14",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$5000-$24999/M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.041",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P24M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$50000+",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.041",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P14D",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$50000+/14",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.041",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/$50000+/M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "additionalValue": "P24M"
             }
         ]

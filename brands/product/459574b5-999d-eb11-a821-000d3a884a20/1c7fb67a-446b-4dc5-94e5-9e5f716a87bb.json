@@ -1,9 +1,120 @@
 {
-    "errors": [
-        {
-            "detail": "Unsupported Version Requested",
-            "title": "Unsupported Version",
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
-        }
-    ]
+    "data": {
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "A card is available for the product to access funds"
+            }
+        ],
+        "productId": "1c7fb67a-446b-4dc5-94e5-9e5f716a87bb",
+        "name": "Bendigo Student Account",
+        "constraints": [],
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "eligibility": [
+            {
+                "additionalInfo": "Available to full time students/apprentices/trainees, aged 12 years and over. Once you turn 25 years of age, proof of ongoing enrolment to be provided by 14 April every year.",
+                "eligibilityType": "STUDENT"
+            },
+            {
+                "additionalValue": "12",
+                "eligibilityType": "MIN_AGE"
+            }
+        ],
+        "brandName": "Bendigo Bank",
+        "fees": [
+            {
+                "feeType": "TRANSACTION",
+                "discounts": [],
+                "amount": "4.000000",
+                "name": "Bank@Post transaction fee"
+            }
+        ],
+        "applicationUri": "https://applynow.bendigobank.com.au/apply/#/apply/new/depositAccounts/productSelection?productCode=DDA-14-STU",
+        "isTailored": false,
+        "depositRates": [
+            {
+                "tiers": [
+                    {
+                        "minimumValue": 0,
+                        "maximumValue": 250,
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "$0 < $250"
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "rate": "0.0000000000000000",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "tiers": [
+                    {
+                        "minimumValue": 250,
+                        "maximumValue": 2000,
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "$250 < $2,000"
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001000000000000",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "tiers": [
+                    {
+                        "minimumValue": 2000,
+                        "maximumValue": 5000,
+                        "unitOfMeasure": "DOLLAR",
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "$2,000 < $5,000"
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005000000000000",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "tiers": [
+                    {
+                        "minimumValue": 5000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "name": "$5,000 plus"
+                    }
+                ],
+                "calculationFrequency": "P1D",
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005000000000000",
+                "applicationFrequency": "P1M"
+            }
+        ],
+        "lendingRates": [],
+        "brand": "BENDIGO",
+        "additionalInformation": {
+            "feesAndPricingUri": "https://www.bendigobank.com.au/disclosure-documents/",
+            "termsUri": "https://www.bendigobank.com.au/disclosure-documents/",
+            "eligibilityUri": "https://www.bendigobank.com.au/disclosure-documents/",
+            "overviewUri": "https://www.bendigobank.com.au/personal/transaction-accounts/student-account/"
+        },
+        "lastUpdated": "2020-10-15T13:00:21.982Z",
+        "cardArt": [],
+        "description": "This clever transaction account is designed to help you earn while you learn.  It's available to full time students, apprentices and trainees.",
+        "bundles": []
+    },
+    "links": {
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/1c7fb67a-446b-4dc5-94e5-9e5f716a87bb"
+    }
 }

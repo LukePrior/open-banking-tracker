@@ -2,19 +2,19 @@
     "data": {
         "productId": "47",
         "effectiveFrom": "2010-06-10T14:30:00.0000000Z",
-        "lastUpdated": "2021-07-27T08:18:04.2256553Z",
+        "lastUpdated": "2023-09-28T00:00:14.2127639Z",
         "productCategory": "PERS_LOANS",
         "name": "Fixed Rate Car Loan",
         "description": "Fixed Rate Car Loan",
         "brand": "Coastline ",
-        "applicationUri": "https://www.coastline.com.au/borrow/Car-loans/",
+        "applicationUri": "https://www.coastline.com.au/Loans/Car-loans/",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.coastline.com.au/borrow/Car-loans/",
+            "overviewUri": "https://www.coastline.com.au/Loans/Car-loans/",
             "termsUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "eligibilityUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
-            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/fees-and-charges/",
-            "bundleUri": "https://www.coastline.com.au/borrow/Car-loans/"
+            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/loans-fees-and-charges/",
+            "bundleUri": "https://www.coastline.com.au/Loans/Car-loans/"
         },
         "eligibility": [
             {
@@ -85,6 +85,65 @@
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
                 "currency": "AUD"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1",
+                "comparisonRate": "0.1036",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/MV<=2YO",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "MOTOR VEHICLE 2 YEARS OLD OR LESS\r\n"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.11",
+                "comparisonRate": "0.1136",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/MV>2YO<=4YO",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "MOTOR VEHICLE MORE THAN 2 YEARS OLD UP TO 4 YEARS OLD"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.12",
+                "comparisonRate": "0.1237",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/MV>4YO<=7YO",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "MOTOR VEHCILE  MORE THAN 4YO UP TO 7YO\r\n"
             }
         ]
     },

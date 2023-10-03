@@ -1,12 +1,110 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "L51_Unsecured_Personal_Loan",
+        "effectiveFrom": "2020-12-15T00:00:00Z",
+        "lastUpdated": "2023-09-15T08:34:19Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Unsecured Personal Loan",
+        "description": "If you don\u2019t want to secure your loan against an asset, but you have something you need to fund (like a holiday or a house renovation) this may be the loan for you. It\u2019s also great for consolidating credit card debt. Loan amounts can be between $5,000 up to $20,000.",
+        "brand": "AUBL",
+        "brandName": "Australian Unity Bank",
+        "applicationUri": "https://forms.sharedservices.com.au/form.php?c=140&f=50",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.australianunity.com.au/banking/personal-loans",
+            "termsUri": "https://www.australianunity.com.au/banking/terms-and-conditions",
+            "eligibilityUri": "https://forms.sharedservices.com.au/form.php?c=140&f=50",
+            "feesAndPricingUri": "https://www.australianunity.com.au/banking/personal-loans"
+        },
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Term",
+                "additionalInfo": "Maximum loan term 7 years",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Repayment frequency",
+                "additionalInfo": "Choose a repayment frequency to suit you. Pay weekly, fortnightly or monthly over 1 to 7 years from the linked Australian Unity transaction account.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Digital Banking",
+                "additionalInfo": "Manage your account from anywhere with our Internet Banking or mobile banking app.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Additional repayments and Early Repayment Adjustment",
+                "additionalInfo": "Pay off your loan early - Make additional payments at no extra cost.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Variable interest rate",
+                "additionalInfo": "Borrow $5,000 or more and enjoy a great low variable rate on a loan term up to 7 years.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalValue": "Redraw",
+                "additionalInfo": "Redraw funds at no extra cost via internet banking. Access any extra money you\u2019ve paid towards your loan.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
             }
-        }
-    ]
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Establishment Fee",
+                "amount": "199.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable on all new personal loan products including secured, partly secured, unsecured and car loan products.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/~/media/publicsite/documents/banking-new/forms/loanfee-schedule.ashx?la=en"
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Fees",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Enjoy no ongoing monthly fees.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.1499",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Rates are subject to change",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/personal-loans",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 20000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 84,
+                        "maximumValue": 84,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.1636",
+                "interestPaymentDue": "IN_ARREARS"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://open-banking.australianunity.com.au/cds-au/v1/banking/products/L51_Unsecured_Personal_Loan"
+    }
 }

@@ -1,9 +1,290 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Fixed Interest Rate",
+                "additionalInfo": "Fixed interest rate for terms of 30 - 180 days, with ability to rollover for subsequent terms.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Repayment Options",
+                "additionalInfo": "Interest only or Principal reductions (only at rollover) in conjunction with interest payments.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Multiple Limits",
+                "additionalInfo": "Multiple limits allowed per account to suit your business needs.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Progress drawdowns",
+                "additionalInfo": "Progress drawdowns if you are using the loan for construction.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Interest Rate Risk Management",
+                "additionalInfo": "Avoid uncertainty with interest rate risk management options.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1000000.00",
+                "additionalInfo": "Loans must be a minimum of $1,000,000 (no maximum).",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Minimum Limit",
+                "additionalInfo": "Suitable for finance in excess of $1,000,000.00. You must meet Bankwest's lending criteria.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Relationship managed customers only (limited exceptions may apply).",
+                "additionalInfo": "Only available to relationship managed customers (limited exceptions may apply).",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Bank Cheque Fees",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Rollover Fee",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "An administration fee is charged where an existing Commercial Advance is rolled over for the same or modified period. Only charged once per rollover, irrespective of how many limits are held on the account.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Legal Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Early Repayment Adjustment Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "If you repay all or part of an Advance early or prior to the last day of the Interest Period, you may have to pay an Early Repayment Adjustment and other applicable fees (if any). We will tell you about any other fees, when you tell us you wish to repay early.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Establishment Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Notified on application",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Variation Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "A fee is payable if you apply to vary any of the terms of this Agreement.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Legal Document Preparation Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Legal Document Registration Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Legal Document Stamping Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Settlement Attendance Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Legal Document Discharge Preparation Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Registration Of Security Documents Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Stamp Duty On Security Documents Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Title Search Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "ASIC Company Search Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Personal Property Securities Register (PPSR) Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Business Name Registration Search Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Valuation Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Personal Property Securities Register (PPSR) Registration of Charge Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Personal Property Securities Register (PPSR) Minor Amendment of Financing Statement Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Quantity Surveyor Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Project Engineer Fees",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Multiple fees instances may apply, however this may be shown as a total amount in your contract.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Refinance Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Refinance Fee is calculated on the portion of the Facility that is refinanced with another lender and is subject to our discretion.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Covenant Breach Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "A fee is payable on breach of any covenant contained in the Offer Letter.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Renegotiation Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Our standard fee is payable whenever you apply to us to amend any of the terms of this Agreement.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Commitment Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Commitment Fee is based on the facility limit payable in advance with the first payment on the date of first drawing.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Line Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "A line fee based on the Facility Limit, may be payable monthly or quarterly in advance, with the first payment on the date of first drawing.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            },
+            {
+                "name": "Unused Limit Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Calculated daily and raised in arrears at rollover based on a 0.50% calculation on the difference between the balance of the account and the maximum limit value.",
+                "additionalInfoUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "additionalInfo": "Based on market related rates and available on application. Rates are subject to change and a margin may apply based on our full credit assessment of your loan application."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1688",
+                "calculationFrequency": "P1D",
+                "additionalInfo": "The overdue rate automatically applies to an account where either: a) The facility has expired - applies to the entire balance or b) Where the facility is overdrawn - applies to overdrawn portion where balance exceeds the limit."
+            }
+        ],
+        "productId": "3159c0c858a94e33954570943b043043",
+        "effectiveFrom": "2008-03-16T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-07-11T00:26:15.885426Z",
+        "productCategory": "BUSINESS_LOANS",
+        "name": "Commercial Advance",
+        "description": "Commercial Advances are tailored market rate loans. Offering fixed rate roll term options of 30 - 180 days to suit the cash flow needs of your business.",
+        "brand": "Bankwest",
+        "brandName": "Bankwest",
+        "applicationUri": "https://www.bankwest.com.au/business/loans-and-finance",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.bankwest.com.au/business/loans-and-finance",
+            "termsUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf",
+            "eligibilityUri": "https://www.bankwest.com.au/content/dam/bankwest/documents/legal-library/PDS_20220315-102933.pdf",
+            "feesAndPricingUri": "https://www.bankwest.com.au/business/rates"
         }
-    ]
+    },
+    "links": {
+        "self": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/3159c0c858a94e33954570943b043043"
+    }
 }

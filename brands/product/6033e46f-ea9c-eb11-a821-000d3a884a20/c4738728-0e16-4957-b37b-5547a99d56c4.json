@@ -1,10 +1,289 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Could not satisfy bounds: x-v:3 x-min-v:null. Endpoint supports: [4]",
-            "meta": null
-        }
-    ]
+    "data": {
+        "brand": "Bank First",
+        "description": "Savings Account",
+        "isTailored": false,
+        "lastUpdated": "2023-06-20T21:03:11.24226Z",
+        "name": "Online Saver Account",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "productId": "c4738728-0e16-4957-b37b-5547a99d56c4",
+        "additionalInformation": {
+            "overviewUri": "https://www.bankfirst.com.au/bank-accounts/savings-accounts/online-saver",
+            "termsUri": "https://www.bankfirst.com.au/disclosure-documents",
+            "eligibilityUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_a.pdf?la=en&hash=1BD3E51F84EC9362648BB08285FA0082715FEDB6",
+            "feesAndPricingUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+            "bundleUri": null,
+            "additionalOverviewUris": null,
+            "additionalTermsUris": null,
+            "additionalEligibilityUris": null,
+            "additionalFeesAndPricingUris": null,
+            "additionalBundleUris": null
+        },
+        "applicationUri": "https://forms.bankfirst.com.au/form.php?c=107&f=144",
+        "brandName": "Bank First",
+        "cardArt": [],
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "bundles": [],
+        "constraints": [],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0005000000000000",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "Online Saver Account_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": "",
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 1999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0355000000000000",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "minimumValue": 2000.0,
+                        "name": "Online Saver Account_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": "",
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 149999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0355000000000000",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "minimumValue": 150000.0,
+                        "name": "Online Saver Account_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": "",
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Available to members only",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": "18"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "Bpay"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "Bpay view"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Other service related charges apply based on your circumstances",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Phone Banking is available",
+                "additionalInfoUri": null,
+                "additionalValue": null
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Direct Entry Return Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Coin Handling Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Handling of a coin deposit or withdrawal - $5 per every $100.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Statement Request",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Fee charged $2 per month applies.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Overdrawn Account Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when your Transaction / Savings Account is overdrawn or the balance exceeds the limit of any Overdraft attached to the account at close of business and charged again at seven day increments if the balance remains overdrawn / limit exceeded.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Direct Debit Dishonour Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Direct Debit Stop Request",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "9.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Account Keeping Fees",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": "P1M",
+                "amount": "0.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Inactive Membership Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": "P1Y",
+                "amount": "30.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Non- Individual Membership Establishment Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when a Non-Individual membership is established",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "50.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            }
+        ],
+        "lendingRates": []
+    },
+    "links": {
+        "self": "https://public.cdr.bankfirst.com.au/cds-au/v1/banking/products/c4738728-0e16-4957-b37b-5547a99d56c4"
+    },
+    "meta": {}
 }

@@ -1,9 +1,364 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Term",
+                "additionalInfo": "1 to 7 years.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Repayment frequency",
+                "additionalInfo": "Pay weekly, fortnightly or monthly via direct debit. If you pay by any other means, your repayments will be monthly.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html/"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalValue": "Additional repayments and Early Repayment Adjustment",
+                "additionalInfo": "You can make additional repayments up to a total of $1,000 a year without fees applying. Additional repayments made on a Fixed Rate Loan are not available to be redrawn. If you make additional repayments above the annual limit or repay your loan in full, we may charge an Early Repayment Adjustment. We charge this if we estimate we will make a loss as a result of the early repayment.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB2911.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Fixed interest rate",
+                "additionalInfo": "Interest is fixed so you know what your repayments will be for the life of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Same day funding",
+                "additionalInfo": "You may be eligible for same day funding if you're approved, accept your contract and complete verification by 4pm Monday to Friday (Sydney/Melbourne time). Subject to credit checks and assessment of your financial situation. Unavailable for secured loans, if an application is incomplete or needs to be referred for a more detailed review by a lending specialist, if required documentation isn't provided and subject to system availability.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html?ei=cb-pe-fixed-def2#terms"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Unsecured loan",
+                "additionalInfo": "Security is not required for this loan type.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html/"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "50000.00"
+            },
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "4000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Be an individual",
+                "additionalInfo": "Individuals must have the legal capacity to enter into the loan contract. Not available for non-personal borrowers."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must live in Australia and be either: an Australian citizen, an Australian permanent resident (permanent visa sub class holder), a New Zealand citizen, or eligible non-resident visa holder."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Credit approval",
+                "additionalInfo": "Meet CBA's credit assessment criteria which includes demonstrating the capacity to make the required repayments on the credit facility without substantial hardship."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Maximum 2 borrowers per application",
+                "additionalInfo": "The maximum number of borrowers eligible to apply per application is two."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Upfront cost payable when accepting a loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html?ei=rates_seemore"
+            },
+            {
+                "name": "Loan service fee",
+                "feeType": "PERIODIC",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Monthly charge to cover costs of keeping account active.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html?ei=rates_seemore"
+            },
+            {
+                "name": "Late payment fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "May be payable on the fifth business day after the repayment due date if at the end of the previous business day your loan is in arrears.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html?ei=rates_seemore"
+            },
+            {
+                "name": "Settlement cheque fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalValue": "On funding if you require more than two cheques.",
+                "additionalInfo": "Cheques provided to help you pay different recipients with your loan borrowings.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html?ei=rates_seemore"
+            },
+            {
+                "name": "Early repayment adjustment",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalValue": "If you make additional repayments above the annual limit or repay your loan in full, we may charge an Early Repayment Adjustment. We charge this if we estimate we will make a loss as a result of the early repayment.",
+                "additionalInfo": "An early repayment adjustment may be made for the loss the Bank expects to make due to the loan being repaid earlier than anticipated. The early repayment adjustment is levied to put the Bank back into the same financial position it would have been in had the loan not been prepaid.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html?ei=rates_seemore"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.1345",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Minimum rate 8.49%, 1 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 13.45% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Maximum rate 20.49%, 1 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 25.29% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.2084",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Representative rate 15.99%, 1 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 20.84% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.1345",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Minimum rate 8.49%, 2 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 13.45% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Maximum rate 20.49%, 2 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 25.29% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.2084",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Representative rate 15.99%, 2 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 20.84% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.1345",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Minimum rate 8.49%, 3 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 13.45% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2529",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Maximum rate 20.49%, 3 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 25.29% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.2084",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Representative rate 15.99%, 3 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 20.84% p.a. based on an unsecured $10,000 loan over 3 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.0988",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P4Y",
+                "additionalInfo": "Minimum rate 8.49%, 4 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 9.88% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2178",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P4Y",
+                "additionalInfo": "Maximum rate 20.49%, 4 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 21.78% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.1731",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P4Y",
+                "additionalInfo": "Representative rate 15.99%, 4 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 17.31% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.0988",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Minimum rate 8.49%, 5 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 9.88% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2178",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Maximum rate 20.49%, 5 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 21.78% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.1731",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Representative rate 15.99%, 5 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 17.31% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.0988",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P6Y",
+                "additionalInfo": "Minimum rate 8.49%, 6 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 9.88% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2178",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P6Y",
+                "additionalInfo": "Maximum rate 20.49%, 6 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 21.78% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.1731",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P6Y",
+                "additionalInfo": "Representative rate 15.99%, 6 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 17.31% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0849",
+                "comparisonRate": "0.0988",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P7Y",
+                "additionalInfo": "Minimum rate 8.49%, 7 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 9.88% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html/"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.2049",
+                "comparisonRate": "0.2178",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P7Y",
+                "additionalInfo": "Maximum rate 20.49%, 7 year loan term. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 21.78% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1599",
+                "comparisonRate": "0.1731",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P7Y",
+                "additionalInfo": "Representative rate 15.99%, 7 year loan term. At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. Your interest rate will be based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 17.31% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan."
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0700",
+                "comparisonRate": "0.0841",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Green Discount Rate 7.00%",
+                "additionalInfo": "To qualify for the green discount, you must use your personal loan to buy or install eligible products. Comparison rate: 8.41% p.a. based on an unsecured loan of $30,000, over a term of 5 years. Warning: Comparison rates are true only for examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/green-loan-discount.html"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0800",
+                "comparisonRate": "0.0940",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Medical Education Discount Rate 8.00%",
+                "additionalInfo": "To qualify for the medical education discount, at least one loan purpose of your personal loan must be for medical education costs at approved colleges and institutions. Comparison rate: 9.40% are based on an unsecured loan of $30,000, over a term of 5 years. Warning: Comparison rates are true only for examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/industries/healthcare/personal-loans.html"
+            }
+        ],
+        "productId": "ae29850ddb9b437393b8ea49bffba09e",
+        "effectiveFrom": "1999-12-31T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-07-27T00:09:46.12732Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Fixed Rate Personal Loan",
+        "description": "Stay in control with a fixed interest rate and fixed repayments for the life of the loan.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan.html",
+            "termsUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB2911.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/important-info/target-market-determinations.html",
+            "feesAndPricingUri": "https://www.commbank.com.au/personal-loans/fixed-rate-loan/rates-and-fees.html"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/ae29850ddb9b437393b8ea49bffba09e"
+    }
 }

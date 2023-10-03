@@ -2,19 +2,19 @@
     "data": {
         "productId": "44",
         "effectiveFrom": "2006-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2023-04-26T02:13:25.1811298Z",
+        "lastUpdated": "2023-09-28T00:00:14.2127639Z",
         "productCategory": "PERS_LOANS",
         "name": "Unsecured Personal Loan",
         "description": "Unsecured Personal Loan",
         "brand": "Coastline ",
-        "applicationUri": "https://www.coastline.com.au/borrow/Personal-loans/",
+        "applicationUri": "https://www.coastline.com.au/Loans/Personal-loans/",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.coastline.com.au/borrow/Personal-loans/",
+            "overviewUri": "https://www.coastline.com.au/Loans/Personal-loans/",
             "termsUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "eligibilityUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
-            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/fees-and-charges/",
-            "bundleUri": "https://www.coastline.com.au/borrow/Personal-loans/"
+            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/loans-fees-and-charges/",
+            "bundleUri": "https://www.coastline.com.au/Loans/Personal-loans/"
         },
         "features": [
             {
@@ -96,9 +96,58 @@
             {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.195",
+                "comparisonRate": "0.2098",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS"
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/Loan<$3000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 2999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.13",
+                "comparisonRate": "0.1442",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/Loan>$10000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.165",
+                "comparisonRate": "0.1795",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/Loan>=$3000To$10000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 3000.0,
+                        "maximumValue": 9999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

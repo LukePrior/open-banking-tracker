@@ -1,9 +1,148 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "No versions supported in the requested range of x-min-v to x-v."
-        }
-    ]
+    "data": {
+        "productId": "a023c7eb-54cc-4919-9683-9d478d34ee3e",
+        "lastUpdated": "2023-04-22T13:00:00Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Call Deposit Account",
+        "description": "This at-call deposit account gives you an easy way to invest extra cash, while still being able get your hands on it anytime you need it.",
+        "brand": "Rabobank",
+        "applicationUri": "https://www.rabobank.com.au/banking/deposits/#call-deposits",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.rabobank.com.au/banking/deposits/#call-deposits",
+            "termsUri": "https://www.rabobank.com.au/corporate/legal/",
+            "feesAndPricingUri": "https://www.rabobank.com.au/product-rates/#call_deposits"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Online and mobile banking.",
+                "additionalInfoUri": "https://www.rabobank.com.au/mobile-banking-app/#sba"
+            },
+            {
+                "featureType": "FRAUD_PROTECTION",
+                "additionalInfo": "Includes fraud protection."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Includes advanced notifications sent to clients.",
+                "additionalInfo": "An alert about future events or notifications."
+            },
+            {
+                "featureType": "RELATIONSHIP_MANAGEMENT",
+                "additionalInfo": "Relationship management is available for all Farm Business clients."
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited free transactions available to clients."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "The applicant and each account owner must be at least 18 years old."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Suitable for farmers and/or food & agribusinesses only."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Account keeping fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "additionalValue": "P1M"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 19999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000,
+                        "maximumValue": 249999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000,
+                        "maximumValue": 499999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "For deposits of $500,000+ call 1800 632 113 to talk to a Client Services representative for a firm quote."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbanking.api.rabobank.com.au/public/cds-au/v1/banking/products/a023c7eb-54cc-4919-9683-9d478d34ee3e"
+    },
+    "meta": {}
 }

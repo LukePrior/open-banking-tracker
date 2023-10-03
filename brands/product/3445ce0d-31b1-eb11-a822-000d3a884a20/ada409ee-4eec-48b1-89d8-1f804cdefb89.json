@@ -1,9 +1,160 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Requested: 3-3 Available: 4"
-        }
-    ]
+    "data": {
+        "productId": "ada409ee-4eec-48b1-89d8-1f804cdefb89",
+        "lastUpdated": "2023-08-07T12:44:43.000+10:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Bill Paying account",
+        "description": "A bank account that makes it easy to separate your money for bills.",
+        "brand": "HPB",
+        "brandName": "Health Professionals Bank",
+        "applicationUri": "https://www.hpbank.com.au/bill-paying-apply",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.hpbank.com.au/bill-paying-overview",
+            "termsUri": "https://www.hpbank.com.au/savings-terms-and-conditions",
+            "eligibilityUri": "https://www.hpbank.com.au/savings-eligibility",
+            "feesAndPricingUri": "https://www.hpbank.com.au/savings-fees-and-charges"
+        },
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Track payments with SMS and email alerts"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.",
+                "additionalInfoUri": "https://www.hpbank.com.au/savings-eligibility"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+            }
+        ],
+        "fees": [
+            {
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "1.50",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "This fee applies when you have elected to receive a paper statement by post in addition to a statement available to view and download in internet banking. It is in addition to fees for replacement and additional statements. For credit cards, this fee is debited to credit card account on the 7th day of the month after the end of a statement period. For all other accounts, this fee is debited to transaction, savings or loan account in that order on the 15th day of the month after the end of a statement period. Exceptions apply. For more information please refer to our Fees and Charges brochure.",
+                "additionalInfoUri": "https://www.hpbank.com.au/savings-fees-and-charges",
+                "discounts": [
+                    {
+                        "description": "Paper Statement fee waiver",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "1.50",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "The Paper Statement fee does not apply if you were a member and have not resigned your membership or the Bank has not terminated your membership before 1 November 2018; you opened an account with us and have not closed that account before 1 November 2018; or you are under 18 years of age."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "ACCOUNT_FUNCTIONS",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "$50 per hour (minimum charge $25). Additional accounting services on your account at your request."
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bill Paying account_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 9999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bill Paying account_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 19999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bill Paying account_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bill Paying account_Tier_4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1264",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "The overdraft (RediCredit) interest rate that applies to any overdrawn amounts."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ada409ee-4eec-48b1-89d8-1f804cdefb89"
+    }
 }

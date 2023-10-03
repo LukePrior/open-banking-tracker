@@ -8,6 +8,17 @@
             },
             {
                 "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_PAYID",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             }
@@ -39,7 +50,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "To cover our costs associated with establishing your loan",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "PRINCIPAL_INCREASE_FEE",
@@ -48,7 +59,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable when we process your request to increase the principal amount of your loan",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "PROGRESS_PAYMENT_FEE",
@@ -57,7 +68,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable on the first drawdown after settlement to cover the administration costs of progress payments for your construction or home renovation.",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "BASIC_VARIATION_FEE",
@@ -66,7 +77,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable when we process your request to change or restructure your repayment",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "COMPLEX_VARIATION_FEE",
@@ -75,7 +86,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable when we process your request that varaies your product, security, interest rate or repayment type, unless switching to Principal & Interest payments.",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "REDRAW_FEE",
@@ -84,7 +95,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable when we manually process your request (eg: in Branch) to redraw available advance funds from your loan account. Excluse online redraws.",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "DEFAULT_ADMINISTRATION_FEE",
@@ -93,7 +104,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable if there is an event of default under the terms of your loan",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "RTGS_''SAME_DAY''_PAYMENT",
@@ -102,7 +113,7 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \"same day\" payment",
-                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
                 "name": "MORTGAGE_RELEASE_FEE",
@@ -117,157 +128,307 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0519",
+                "rate": "0.0589",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan <=75%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan up to 60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 60.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR <=75%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0521",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0591",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.055",
+                "rate": "0.0589",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan >75% <=90%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan 60.01% - 70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR >75% <=90%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0552",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0591",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0535",
+                "rate": "0.0594",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan <=75%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan 70.01% - 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR <=75%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0537",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0596",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0624",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan 80.01% to 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0626",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0624",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan up to 60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 60.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0626",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.056",
+                "rate": "0.0634",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan >75% <=90%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan 60.01% -70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR >75% <=90%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0562",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0636",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0575",
+                "rate": "0.0634",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan <=75%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan 70.01% to 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR <=75%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0577",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0636",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0654",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan 80.01% to 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0656",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0624",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan up to 60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 60.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0626",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.06",
+                "rate": "0.0634",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Basic Home Loan >75% <=90%",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 100000.0,
+                        "name": "Basic Home Loan 60.01% - 70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {
                             "additionalInfoUri": "",
                             "additionalInfo": ""
-                        },
-                        "additionalInfo": "LVR >75% <=90%",
-                        "additionalInfoUri": ""
+                        }
                     }
                 ],
                 "additionalInfo": "",
-                "additionalInfoUri": "https://auswidebank.com.au/info/rates/",
-                "comparisonRate": "0.0602",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0636",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan 70.01% - 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0636",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0654",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Basic Home Loan 80.01% to 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfoUri": "",
+                            "additionalInfo": ""
+                        }
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0656",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT"
             }
         ],
         "productId": "524add2a-ea86-4639-b084-abde1082801e",
-        "lastUpdated": "2023-03-29T09:16:41.000+10:00",
+        "lastUpdated": "2023-09-28T08:54:16.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "BASIC HOME LOAN",
         "description": "A home loan with a competitive variable interest rate and no monthly fees. Suitable for customers who don't require the benefits of an offset account.",
@@ -276,10 +437,10 @@
         "applicationUri": "",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://auswidebank.com.au/personal/home-loans/",
-            "termsUri": "https://auswidebank.com.au/info/terms-and-conditions/#homeLoans",
+            "overviewUri": "https://auswidebank.com.au/home-loans/compare-home-loans/",
+            "termsUri": "https://auswidebank.com.au/help/resources/terms-and-conditions/",
             "eligibilityUri": "",
-            "feesAndPricingUri": "https://auswidebank.com.au/info/fees-and-charges/#homeLoans",
+            "feesAndPricingUri": "https://auswidebank.com.au/help/resources/fees-and-charges/",
             "bundleUri": ""
         }
     },

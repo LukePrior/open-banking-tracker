@@ -291,16 +291,41 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0175",
+                "rate": "0.03",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "JUNIOR SAVER ACCOUNT_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 10000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.communityfirst.com.au/personal/transaction-accounts/junior-saver"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "JUNIOR SAVER ACCOUNT_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
                 "additionalInfo": "",
                 "additionalInfoUri": "https://www.communityfirst.com.au/personal/transaction-accounts/junior-saver"
             }
         ],
         "productId": "S18-JS",
-        "effectiveFrom": "2023-02-14T00:00:00.000+11:00",
-        "lastUpdated": "2023-02-14T14:27:20.000+11:00",
+        "effectiveFrom": "2023-07-01T00:00:00.000+10:00",
+        "lastUpdated": "2023-08-02T15:50:39.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "JUNIOR SAVER ACCOUNT",
         "description": "An account for members ages under 18 to kick start their savings with the help of a parent or guardian. Account holders 12+ are eligible for debit card access - all balances earn competitive interest",

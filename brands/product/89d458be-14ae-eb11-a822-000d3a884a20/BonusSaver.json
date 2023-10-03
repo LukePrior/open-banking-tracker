@@ -76,31 +76,89 @@
                 "additionalInfoUri": ""
             }
         ],
-        "lendingRates": [
+        "depositRates": [
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0",
-                "calculationFrequency": "",
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Saver_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
                 "additionalInfo": "",
-                "additionalInfoUri": ""
+                "additionalInfoUri": "https://movebank.com.au/tools-support/interest-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Saver_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://movebank.com.au/tools-support/interest-rates/"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.043",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Saver_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://movebank.com.au/tools-support/interest-rates/"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Saver_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://movebank.com.au/tools-support/interest-rates/"
             }
         ],
         "productId": "BonusSaver",
         "effectiveFrom": "2020-09-16T00:00:00.000+10:00",
-        "lastUpdated": "2023-04-06T17:47:36.000+10:00",
+        "lastUpdated": "2023-06-30T22:49:30.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "BONUS SAVER",
-        "description": "BONUS SAVER",
+        "name": "Bonus Saver",
+        "description": "Bonus Saver",
         "brand": "MOVE Bank (Railways Credit Union Lt",
         "brandName": "MOVE Bank (Railways Credit Union Lt",
         "applicationUri": "https://movebank.com.au/top-menu/join-us/",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://movebank.com.au/products/everyday-banking/bonus-saver/",
-            "termsUri": "https://movebank.com.au/quick-links/product-membership-documents/important-documents/",
+            "overviewUri": "https://movebank.com.au/products/savings-accounts/bonus-saver/",
+            "termsUri": "https://movebank.com.au/tools-support/product-membership-documents/important-documents/",
             "eligibilityUri": "",
-            "feesAndPricingUri": "https://movebank.com.au/quick-links/fees-charges/",
+            "feesAndPricingUri": "https://movebank.com.au/tools-support/fees-charges/",
             "bundleUri": ""
         }
     },

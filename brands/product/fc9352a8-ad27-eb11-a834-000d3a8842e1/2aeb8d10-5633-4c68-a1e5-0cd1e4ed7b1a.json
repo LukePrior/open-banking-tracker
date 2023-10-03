@@ -1,9 +1,94 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Not acceptable value in headers x-v or x-min-v"
-        }
-    ]
+    "data": {
+        "productId": "2aeb8d10-5633-4c68-a1e5-0cd1e4ed7b1a",
+        "effectiveFrom": "2004-03-31T23:00:00.000Z",
+        "effectiveTo": "9999-12-31T01:00:00.000Z",
+        "lastUpdated": "2022-09-14T14:00:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Business Optimiser",
+        "description": "A high variable interest business savings account with 24/7 access.",
+        "brand": "ING",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.ing.com.au/business/business-optimiser.html"
+        },
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited electronic transactions."
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "No need for BSB and account number. Receive real time payments using your own unique ID."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Transaction notification",
+                "additionalInfo": "Receive SMS notifications when your balance is above or below an amount, a withdrawal or deposit is made or when your salary is deposited."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "5000000.00",
+                "additionalInfo": "We may not accept a deposit to your Business Optimiser if it would result in the combined deposits of all your Business Optimiser(s) exceeding $5,000,000."
+            },
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "A minimum combined balance of $50,000 is required across any Business Optimiser and Business Term Deposit accounts held in your business entity's name."
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "You need to nominate between one and four authorised users to operate your Business Optimiser. They must be at least 18 years old."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You need to nominate between one and four authorised users to operate your Business Optimiser. They must be an Australian resident for taxation purposes."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You must be an account holder using the product for business purposes or with a Self-Managed Super Fund (SMSF)."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "The account cannot be used by bare/informal trusts, public companies, unincorporated associations, or a statutory account."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Account fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "There are $0 monthly fees."
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0060",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "INTRODUCTORY",
+                "rate": "0.0100",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P6M",
+                "additionalInfo": "For the first six months, for new customers, on balances up to $1million."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://id.ob.ing.com.au/cds-au/v1/banking/products/2aeb8d10-5633-4c68-a1e5-0cd1e4ed7b1a"
+    },
+    "meta": {}
 }

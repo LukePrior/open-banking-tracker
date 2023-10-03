@@ -1,12 +1,104 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "S49_Savings_KidsSaver",
+        "effectiveFrom": "2020-08-20T08:00:41Z",
+        "lastUpdated": "2023-09-15T08:34:18Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Kids Saver",
+        "description": "Set smart habits young, let us reward your kids for savings and not spending.",
+        "brand": "AUBL",
+        "brandName": "Australian Unity Bank",
+        "applicationUri": "https://www.australianunity.com.au/banking/savings-accounts/apply-for-kids-saver",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver",
+            "termsUri": "https://www.australianunity.com.au/banking/terms-and-conditions",
+            "eligibilityUri": "https://www.australianunity.com.au/banking/savings-accounts/apply-for-kids-saver",
+            "feesAndPricingUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver#rates-and-fees"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "Manage your account from anywhere with our Internet Banking or mobile banking app.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5",
+                "additionalInfo": "Deposit min $5p/mth AND No withdrawals"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "20000",
+                "additionalInfo": "Bonus interest applies to balances up to $20K; base interest rate has no max. balance"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "You must have an Australian residential address.",
+                "additionalInfo": "You must have an Australian residential address."
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "14",
+                "additionalInfo": "Only available to children ages 0 to 14."
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "The account requires a parent or guardian to be the signatory of the account which means you can move money in and out of the savings account via Internet Banking or our mobile banking app for your child."
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.01",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1M",
+                "additionalInfo": "Monthly",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1M",
+                "additionalInfo": "Monthly",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/savings-accounts/kids-saver",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5,
+                        "maximumValue": 20000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "BONUS"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://open-banking.australianunity.com.au/cds-au/v1/banking/products/S49_Savings_KidsSaver"
+    }
 }

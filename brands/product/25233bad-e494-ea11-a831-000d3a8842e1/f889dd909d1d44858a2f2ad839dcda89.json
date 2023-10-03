@@ -1,9 +1,671 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Helps balance good and bad times, by allowing eligible customers to set aside their individual pre-tax income in good years as a cash reserve to withdraw from in less profitable years.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html?ei=FMD"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Funds held in a FMD account will be deducted from your assessable income in the year in which the deposit is made. Withdrawals are considered assessable income for that year's tax return. Keep in mind, deposits in the FMD account must be kept for at least 12 months to be eligible for tax benefits.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html?ei=FMD"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Flexibility to choose between a fixed term and at call investment option",
+                "additionalInfoUri": "https://www.commbank.com.au/business/pds/ADB2671.pdf"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "View your Farm Management Deposit Account alongside your other accounts in NetBank and the CommBank app."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No account-keeping fees (standard government fees may apply)."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "General Transactions",
+                "additionalInfo": "Withdrawals and deposits are made by phoning your relationship manager, or visiting a branch of the Bank."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Early Withdrawal",
+                "additionalInfo": "To withdraw part or all of your funds in advance of maturity ('prepayment'), you will need to give us 31 days' notice, and a prepayment adjustment and administration fee may apply.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.00",
+                "additionalInfo": "$1,000.00 in any individual FMD Account at any time.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "800000.00",
+                "additionalInfo": "Aggregate balance of all FMD Accounts must not exceed $800,000.00",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            },
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Fixed Term FMD Account - $1,000.00",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "To be eligible for the scheme and to maintain FMD status, the account holder must be an individual primary producer (this can include the beneficiary of a trust, partner of a partnership, but not joint persons or companies) at the time when they open the account or make a deposit. Deposits must meet the criteria specified in the Income Tax Assessment Act 1997 and those outlined in the Terms and Conditions section of the Farm Management Deposit Accounts document. For further details on eligibility criteria refer to the Farm Management Deposits Law or visit the Department of Agriculture and Water Resources website at agriculture.gov.au. Account holders must also meet the FMD account eligibility criteria as set out by the ATO: https://www.ato.gov.au/business/primary-producers/in-detail/farm-management-deposits-scheme/",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Prepayment administration fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "additionalInfo": "Fixed Term FMD Account - for withdrawal in advance of maturity",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2671.pdf"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0325",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P3M",
+                "additionalInfo": "3 months term option. Interest is paid at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.038",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P6M",
+                "additionalInfo": "6 month term option. Interest is paid at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0405",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P9M",
+                "additionalInfo": "9 month term option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P12M",
+                "additionalInfo": "12 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 12,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P12M",
+                "additionalInfo": "12 month term option - Annual interest payment option. Interest is paid at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 13,
+                        "maximumValue": 13,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P13M",
+                "additionalInfo": "13 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 13,
+                        "maximumValue": 13,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P13M",
+                "additionalInfo": "13 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 14,
+                        "maximumValue": 14,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P14M",
+                "additionalInfo": "14 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 14,
+                        "maximumValue": 14,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P14M",
+                "additionalInfo": "14 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 15,
+                        "maximumValue": 15,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P15M",
+                "additionalInfo": "15 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 15,
+                        "maximumValue": 15,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P15M",
+                "additionalInfo": "15 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 16,
+                        "maximumValue": 16,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P16M",
+                "additionalInfo": "16 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 16,
+                        "maximumValue": 16,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P16M",
+                "additionalInfo": "16 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 17,
+                        "maximumValue": 17,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P17M",
+                "additionalInfo": "17 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 17,
+                        "maximumValue": 17,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P17M",
+                "additionalInfo": "17 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 18,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P18M",
+                "additionalInfo": "18 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 18,
+                        "maximumValue": 18,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P18M",
+                "additionalInfo": "18 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 19,
+                        "maximumValue": 19,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P19M",
+                "additionalInfo": "19 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 19,
+                        "maximumValue": 19,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P19M",
+                "additionalInfo": "19 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 20,
+                        "maximumValue": 20,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P20M",
+                "additionalInfo": "20 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 20,
+                        "maximumValue": 20,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P20M",
+                "additionalInfo": "20 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 21,
+                        "maximumValue": 21,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P21M",
+                "additionalInfo": "21 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 21,
+                        "maximumValue": 21,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P21M",
+                "additionalInfo": "21 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 22,
+                        "maximumValue": 22,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P22M",
+                "additionalInfo": "22 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 22,
+                        "maximumValue": 22,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P22M",
+                "additionalInfo": "22 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 23,
+                        "maximumValue": 23,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P23M",
+                "additionalInfo": "23 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 23,
+                        "maximumValue": 23,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P23M",
+                "additionalInfo": "23 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.044",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "6 monthly interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "6 monthly interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "24 month term option - 6 monthly interest payment option. 6 monthly interest is paid evenly 6 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "Annual interest payment option",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Annual interest payment option"
+                        }
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "24 month term option - Annual interest payment option. 12 monthly interest is paid evenly 12 months and at maturity. Rate is on Per Annum basis.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
+            }
+        ],
+        "productId": "f889dd909d1d44858a2f2ad839dcda89",
+        "effectiveFrom": "2009-12-31T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-10-03T00:32:45.169316Z",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Farm Management Deposit account (Fixed Term)",
+        "description": "A tax-effective investment that allows primary producers to set aside pre-tax income as a cash reserve for later years.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/farm-management-account.html",
+            "termsUri": "https://www.commbank.com.au/business/pds/ADB2671.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/business/pds/ADB2671.pdf",
+            "feesAndPricingUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/InvInterestRates_ADB1072.pdf"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/f889dd909d1d44858a2f2ad839dcda89"
+    }
 }

@@ -1,12 +1,66 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "student_transaction_account",
+        "effectiveTo": "2020-07-16T23:44:52Z",
+        "lastUpdated": "2022-07-25T03:59:22Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Student Transaction Account",
+        "description": "Account useful for students to use their funds on daily basis.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "status": "APPROVED",
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card",
+                "additionalInfo": "No for under 14 y.o. Yes for over 14 y.o. (requires guardian guarantee/consent)"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "under 14 y.o. - Enquiry access only, over 14 y.o. - Full access"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "1.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "STUDENT",
+                "additionalInfo": "Individuals under 18 y.o. (under 14 y.o. require guardian authorization)"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Not for sale"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/student_transaction_account"
+    }
 }

@@ -1,9 +1,134 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "No Early Repayment Adjustment or Administrative fees",
+                "additionalInfo": "There is no Early Repayment Adjustment (ERA) or Administrative Fee applied if you break the fixed interest rate period by paying your loan partially or in full.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Fixed term",
+                "additionalInfo": "10 years. You have the certainty of knowing exactly what your repayments will be \u2013 giving you the confidence to budget accurately and plan ahead.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Home Loan Compassionate Care",
+                "additionalInfo": "For eligible owner-occupied home loans, you\u2019ll receive the benefit of Home Loan Compassionate Care, which is complimentary protection that helps support you by paying your home loan repayments for around 12 months if you, your spouse of dependant passes away or is medically certified with a terminal illness.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Loan Purposes",
+                "additionalInfo": "Installation of eligible small-scale renewables must be completed by an approved retailer and/or installer and trained to ensure systems meet industry best practice standards and all relevant Australian Standards (as accredited by the Clean Energy Council).",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Unacceptable Loan Purposes",
+                "additionalInfo": "A CommBank Green Loan is not available if your eligible new and/or existing home loan is or has any of the following features: Construction loans (which are not yet fully funded), Bridging loans, Equity Unlock for Seniors (EQFS) , Non-personal borrower(s) such as a Company and/or Trust, or Loans under government guarantee scheme.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "5000.00",
+                "additionalInfo": "For a Green Loan, there is a minimum loan amount of $5,000.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "30000.00",
+                "additionalInfo": "For a Green Loan, there is a maximum loan amount of $30,000.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "Individuals (natural persons) must have the legal capacity to enter into the loan contract, provide acceptable identification documentation and be 18 years or older."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Applications for home loans are subject to the Bank's normal credit approval."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Hold eligible CommBank Home loan or CommBank Investment Home Loan",
+                "additionalInfo": "Eligible borrower(s) must have an eligible CommBank Home Loan or CommBank Investment Home Loan funded which is not currently being used for construction (which is not yet fully funded), for bridging purposes, be an Equity Unlock for Seniors loan or be under a government guarantee scheme. The eligible CommBank Home or CommBank Investment Home Loan must have a total CBA home loan balance of $150,000 or more at the time the CommBank Green Loan is funded (not including any redraw balances, construction loans which are not fully funded, loans for bridging purposes, Viridian Line of Credit limits, Equity Unlock for Seniors loan or the new CommBank Green Loan). Eligible CommBank Home Loan or CommBank Investment Home Loan and the CommBank Green Loan must be secured by the property where the CommBank Green Loan will be used to install the clean energy assets and is not an apartment or commercial property. The address for installation must match the address we have listed as security for at least one of your eligible CommBank home loan(s) and your total lending balance (Home/Investment Home Loans and CommBank Green Loans/CommBank Investment Green Loans) must not exceed 80% of the security property's value (subject to any postcode restrictions)."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Install eligible small-scale renewables on the property",
+                "additionalInfo": "The CommBank Green Loan must be used to install eligible small-scale renewables on the property used to secure the existing home loan such as solar panels, solar/heat pump hot water systems or battery packs, electric vehicle charging stations, switching from gas to electric cooking equipment, enabling components to support solar PV and batteries, smart/connected home products, energy efficient window treatments, switching from non LED to LED lighting and virtual power plants."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Installation requirements",
+                "additionalInfo": "Installation of eligible small-scale renewables must be completed by an approved retailer and/or installer and trained to ensure systems meet industry best practice standards and all relevant Australian Standards (as accredited by the Clean Energy Council)."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "The borrower(s) on the CommBank Green Loan must be the borrower(s) name on the CommBank home loan."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "For home loans - If your account falls into arrears, you will be charged a late payment fee. The fee is payable on the fifth business day after the monthly repayment due date. We will continue to charge the fee monthly until you repay all arrears or you enter into an arrangement with us for the full repayment of those arrears (even if you repay your loan weekly or fortnightly). If you break that arrangement the fee will continue to apply.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/003-750.pdf"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0299",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "comparisonRate": "0.0299",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalValue": "P10Y",
+                "additionalInfo": "CommBank Green Loan - Owner Occupied",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
+            }
+        ],
+        "productId": "8bcdb767185f4e259496d7c6f33e22b0",
+        "effectiveFrom": "2021-08-05T14:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-06-22T16:15:12.650705Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "CommBank Green Loan",
+        "description": "Customers with an eligible CommBank home loan or investment home loan can use the Green Loan to buy and install eligible clean energy products such as solar panels, solar/heat pump hot water systems or battery packs, electric vehicle charging stations, switching from gas to electric cooking equipment, enabling components to support solar PV and batteries, smart/connected home products, energy efficient window treatments, switching from non LED to LED lighting and virtual power plants at the property used to secure their eligible CommBank home loan.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/home-loans/commbank-green-loan.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/home-loans/commbank-green-loan.html",
+            "termsUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf",
+            "feesAndPricingUri": "https://www.commbank.com.au/content/dam/commbank-assets/home-loans/docs/CommBank_Greenloan_Factsheet.pdf"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/8bcdb767185f4e259496d7c6f33e22b0"
+    }
 }

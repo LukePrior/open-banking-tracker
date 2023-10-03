@@ -1,12 +1,108 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "offset_account",
+        "lastUpdated": "2022-06-27T12:36:15Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Everyday Main Account",
+        "description": "You want to offset your loan. This account offsets the home loan's outstanding balance for interest calculation.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/important-product-information",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "status": "APPROVED",
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Pay"
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Cheque Book",
+                "additionalInfo": "Cheque Book access is allowed."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Periodical Payments",
+                "additionalInfo": "Periodical payments are allowed"
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalValue": "2",
+                "additionalInfo": "2 free branch assisted transactions, $2.00 per subsequent transactions"
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% home loan offset account"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Access your money as soon as you deposit with unlimited number of ATM transactions."
             }
-        }
-    ]
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Companies in their capacity as Trustees for a Trust",
+                "additionalInfo": "When account is linked to an eligible Investment Home Loan."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Permanent Resident or Citizen."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Only available for home loan offset."
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "name": "Monthly Account Keeping Fee",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "If balance is less than $2000.00 at any time during a calendar month. Fee waived for customers holding Expect More Home Loan Package."
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Cheque Deposit Fee",
+                "amount": "0.85",
+                "currency": "AUD",
+                "additionalInfo": "Per cheque deposit"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/offset_account"
+    }
 }

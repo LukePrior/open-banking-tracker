@@ -1,9 +1,128 @@
 {
-    "errors": [
-        {
-            "detail": "Unsupported Version Requested",
-            "title": "Unsupported Version",
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
-        }
-    ]
+    "data": {
+        "brandName": "Bendigo Bank",
+        "depositRates": [],
+        "isTailored": true,
+        "bundles": [
+            {
+                "description": "Bundle added to create test data",
+                "additionalInfo": "Data created to do functional testing",
+                "productIds": [
+                    "123049f7-9897-4f62-b435-87e45c75298f",
+                    "3967f67b-6b97-4f86-876d-85774f21b94c"
+                ],
+                "name": "Personal Loan Bundle",
+                "additionalInfoUri": "https://www.bendigobank.com.au/privacy-policy/full-privacy-policy/"
+            }
+        ],
+        "cardArt": [
+            {
+                "imageUri": "https://www.bendigobank.com.au/gl",
+                "title": "Personal Loan"
+            }
+        ],
+        "effectiveFrom": "2019-12-31T13:00:00.000Z",
+        "eligibility": [
+            {
+                "additionalValue": "18",
+                "eligibilityType": "MIN_AGE"
+            },
+            {
+                "additionalValue": "Pension",
+                "eligibilityType": "PENSION_RECIPIENT"
+            },
+            {
+                "additionalValue": "Australian Resident",
+                "eligibilityType": "RESIDENCY_STATUS"
+            },
+            {
+                "additionalValue": "Student",
+                "eligibilityType": "STUDENT"
+            },
+            {
+                "additionalValue": "Employed",
+                "eligibilityType": "EMPLOYMENT_STATUS"
+            }
+        ],
+        "brand": "BENDIGO",
+        "name": "Bendigo Secured Personal Loan ",
+        "productId": "123049f7-9897-4f62-b435-87e45c75298f",
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "amount": "5.000000",
+                "additionalValue": "P1M",
+                "discounts": [],
+                "currency": "AUD",
+                "name": "Monthly Fee"
+            },
+            {
+                "feeType": "EXIT",
+                "amount": "20.000000",
+                "discounts": [],
+                "currency": "AUD",
+                "name": "Early Repayment Fee "
+            },
+            {
+                "feeType": "UPFRONT",
+                "amount": "260.000000",
+                "additionalInfo": "Incorporates all standard upfront fees into this amount (That is, Application Fee $150, Documentation Fee $100, Security Processing Fee $10)",
+                "discounts": [],
+                "currency": "AUD",
+                "name": "Establishment Fee"
+            },
+            {
+                "feeType": "EVENT",
+                "amount": "35.000000",
+                "discounts": [],
+                "currency": "AUD",
+                "name": "Default Fee"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.0779000000000000",
+                "tiers": [],
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0851000000000000",
+                "additionalInfo": "Secured  ",
+                "lendingRateType": "FIXED",
+                "additionalValue": "P7Y",
+                "calculationFrequency": "P1D"
+            }
+        ],
+        "constraints": [
+            {
+                "additionalValue": "1",
+                "constraintType": "MIN_BALANCE"
+            },
+            {
+                "additionalValue": "2000",
+                "constraintType": "OPENING_BALANCE"
+            }
+        ],
+        "description": "A competitve secured personal loan for car, boat or motorcycle.  ",
+        "additionalInformation": {
+            "overviewUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=carLoan",
+            "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-personal-loan-terms-conditions.pdf",
+            "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf"
+        },
+        "lastUpdated": "2023-04-20T14:31:21.969Z",
+        "features": [
+            {
+                "additionalInfo": "Online redraw available",
+                "featureType": "REDRAW",
+                "additionalValue": "New Value"
+            },
+            {
+                "additionalInfo": "Weekly, fortnightly or monthly repayments",
+                "featureType": "OTHER"
+            }
+        ],
+        "productCategory": "PERS_LOANS",
+        "applicationUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=carLoan"
+    },
+    "links": {
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/123049f7-9897-4f62-b435-87e45c75298f"
+    }
 }

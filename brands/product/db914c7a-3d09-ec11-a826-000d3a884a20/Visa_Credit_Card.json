@@ -1,9 +1,61 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Requested: 3-3 Available: 4"
+    "data": {
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "500.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "ANNUAL_FEE",
+                "feeType": "PERIODIC",
+                "amount": "39.00",
+                "accrualFrequency": "P1Y",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "CASH_ADVANCE",
+                "rate": "0.0999",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "For both purchases and cash advances",
+                "additionalInfoUri": "https://bankofus.com.au/cards"
+            },
+            {
+                "lendingRateType": "PURCHASE",
+                "rate": "0.0999",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "For both purchases and cash advances",
+                "additionalInfoUri": "https://bankofus.com.au/cards"
+            }
+        ],
+        "productId": "Visa_Credit_Card",
+        "lastUpdated": "2022-11-04T12:08:00.000+11:00",
+        "productCategory": "CRED_AND_CHRG_CARDS",
+        "name": "Visa Credit Card",
+        "description": "All the features you would expect from a credit card accepted at more than 24 million outlets worldwide, with the extra benefit of up to 57 days interest free and a low annual fee.",
+        "brand": "BNE LTD",
+        "brandName": "Bank of us",
+        "applicationUri": "https://bankofus.com.au/online-application",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://bankofus.com.au/cards",
+            "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/61525-Bank-of-Us-Conditions-of-Use-Visa-Credit-Credit-Card-36PP-Cover1Dec2020.pdf",
+            "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-29-March-2021.pdf",
+            "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Credit-Card-Key-Fact-Sheet_15.02.2022.pdf",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Visa_Credit_Card"
+    },
+    "meta": {}
 }

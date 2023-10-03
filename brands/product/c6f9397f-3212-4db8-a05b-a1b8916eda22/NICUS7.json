@@ -1,12 +1,170 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "NICUS7",
+        "effectiveFrom": "2020-06-30T14:00:00Z",
+        "lastUpdated": "2023-06-30T05:51:34Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Super Saver account",
+        "description": "Super Saver Account is a high interest savings account for Under 13 year olds that rewards savings.",
+        "brand": "Northern Inland Credit Union",
+        "brandName": "NICU",
+        "applicationUri": "https://www.nicu.com.au/about-us/membership",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://nicu.com.au/banking/savings/super-saver",
+            "termsUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_SuperSaver_TeenageAcc.pdf",
+            "eligibilityUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_SuperSaver_TeenageAcc.pdf",
+            "feesAndPricingUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_Fees_Charges_MemberLoyaltyProgram.pdf"
+        },
+        "features": [
+            {
+                "featureType": "FREE_TXNS_ALLOWANCE",
+                "additionalValue": "Yes",
+                "additionalInfo": "Members aged under 25 years receive up to $10 rebate on any rebateable transaction fees charged"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "Secure banking 24/7 from your computer or mobile with Online Banking",
+                "additionalInfoUri": "https://nicu.com.au/ways-to-bank-online-a-phone-banking.html"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "25000"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "12",
+                "additionalInfo": "For children up to 12 years old. A parent or legal guardian will need to open the account in the childs name"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "AU",
+                "additionalInfo": "Individuals must be citizens or permanent residents of Australia."
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Traces, Recalls & Recovery Action Fee",
+                "amount": "28.00",
+                "currency": "AUD",
+                "additionalInfo": "Refunded if Credit Union is at fault."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "SMS Alerts Fee",
+                "amount": "0.25",
+                "currency": "AUD",
+                "additionalInfo": "8 Free SMS Alerts per month."
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Counter Corporate Cheque",
+                "amount": "5.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Cheque Deposit (per cheque)",
+                "amount": "1.25",
+                "currency": "AUD",
+                "additionalInfo": "This Fee is Rebateable and is added to other Rebateable Fees before Fee Rebate Applied."
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Counter Withdrawal, Manual Bill Payment. External Periodical Payment",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "This Fee is Rebateable and is added to other Rebateable Fees before Fee Rebate Applied."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Paper Statement Fee",
+                "amount": "7.00",
+                "currency": "AUD",
+                "additionalInfo": "This Fee is Rebateable and is added to other Rebateable Fees before Fee Rebate Applied."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Cheque Deposit Dichonour Fee",
+                "amount": "7.50",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Staff Manual Transfer of Funds between Accounts",
+                "amount": "10.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "PURCHASE",
+                "name": "NAB Bank Cheque",
+                "amount": "20.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "PURCHASE",
+                "name": "Copy of Member or Corporate Cheque",
+                "amount": "25.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Stop Payment Corporate Cheque",
+                "amount": "10.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Stop Payment Corporate Cheque - if presented",
+                "amount": "40.00",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Retrieval of Electronically Held Documents",
+                "amount": "1.50",
+                "currency": "AUD",
+                "additionalInfo": "Per page."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Retrieval all Other Documents",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "Per hour."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Bank Confirmation/Audit Certificate",
+                "amount": "30.00",
+                "currency": "AUD"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0400",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "depositRateType": "VARIABLE"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.1575",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "The interest rate that applies to any overdrawn amounts.",
+                "lendingRateType": "PENALTY"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.cds.nicu.com.au/cds-au/v1/banking/products/NICUS7"
+    }
 }

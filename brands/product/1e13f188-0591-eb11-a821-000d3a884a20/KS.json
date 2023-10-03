@@ -1,9 +1,165 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Not acceptable value in headers x-v or x-min-v"
-        }
-    ]
+    "data": {
+        "productId": "KS",
+        "effectiveFrom": "2020-04-30T14:00:00.000Z",
+        "effectiveTo": "2999-12-30T13:00:00.000Z",
+        "lastUpdated": "2023-09-04T14:00:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Kids Savings",
+        "description": "A savings account for under-18s that offers bonus interest for regular savers",
+        "brand": "Suncorp",
+        "brandName": "Null",
+        "applicationUri": "https://www.suncorp.com.au/banking/bank-accounts/kids-bank-accounts/kids-savings.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.suncorp.com.au/banking/bank-accounts/kids-bank-accounts/kids-savings.html",
+            "termsUri": "https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/personal-deposit-account-pid.pdf",
+            "eligibilityUri": "https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/personal-deposit-account-pid.pdf",
+            "feesAndPricingUri": "https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/personal-deposit-account-pid.pdf"
+        },
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Pay $0 account keeping fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No minimum balance to earn standard interest"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Earn Bonus Interest when you deposit at least $20 each month and make no more than 1 withdrawal in the calendar month."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No maximum balance"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "11-18",
+                "additionalInfo": "Where the child is aged 11 <18 years, the account can be opened and operated by the child either solely or as a shared account with the parent/guardian."
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "11",
+                "additionalInfo": "Where the child is under 11 years of age - parent/guardian consent is required to open the account. The parent/guardian will have full access to operate the account and the child cannot transact."
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "Account owners must be individuals as personal customers for personal use"
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "Account owners must be under 18"
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "On turning 18 years of age, the accountholder will no longer be eligible to hold a Kids Savings account. We will write to you and convert the account to a Suncorp Bank Everyday Options Account."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Account owners must be residents of Australia"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Interest Certificate",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "previous financial year - per certificate issued"
+            },
+            {
+                "name": "Copy of bank cheque",
+                "feeType": "EVENT",
+                "amount": "12.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank Cheque Purchase",
+                "feeType": "EVENT",
+                "amount": "8.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Physical Security Token",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Suncorp Secured App (soft token) available at no cost",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/security/security-token-app.html"
+            },
+            {
+                "name": "Account keeping fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "No monthly account keeping fees"
+            },
+            {
+                "name": "Request for Audit Certificate",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "per certificate"
+            },
+            {
+                "name": "Trace/recall of funds request",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Bank Cheque Replacement",
+                "feeType": "EVENT",
+                "amount": "8.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Stop payments request - cheque and bank cheques",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Record search/copy fee (cheques, records, retrieval)",
+                "feeType": "EVENT",
+                "amount": "70.00",
+                "currency": "AUD",
+                "additionalInfo": "per hour"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0095",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Standard Interest calculated daily and paid monthly. If you do not meet the Bonus Conditions in a calendar month you still earn Standard Interest on daily balances."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0325",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Bonus interest is paid when you deposit at least $20 each month and make no more than 1 withdrawal in the month.",
+                "additionalInfo": "Bonus interest - conditions must be met for bonus interest to be paid."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://id-ob.suncorpbank.com.au/cds-au/v1/banking/products/KS"
+    },
+    "meta": {}
 }

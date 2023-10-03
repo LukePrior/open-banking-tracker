@@ -12,10 +12,15 @@
         "applicationUri": "https://join.defencebank.com.au",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
-            "termsUri": "https://cw-cms.defencebank.com.au/tools-and-advice/legal-and-compliance/disclosure-documents/",
-            "eligibilityUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
-            "feesAndPricingUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/"
+            "overviewUri": "https://www.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+            "termsUri": "https://www.defencebank.com.au/tools-and-advice/legal-and-compliance/disclosure-documents/",
+            "eligibilityUri": "https://www.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+            "feesAndPricingUri": "https://www.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+            "additionalOverViewUris": [],
+            "additionalTermsUris": [],
+            "additionalEligibilityUris": [],
+            "additionalFeesAndPricingUris": [],
+            "additionalBundleUris": []
         },
         "cardArt": [],
         "bundles": [],
@@ -87,6 +92,12 @@
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Set your own pin",
                 "additionalInfoUri": "https://www.defencebank.com.au/tools-and-advice/lost-or-stolen-cards/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "a new digital way to pre-authorise payments directly from your bank account.",
+                "additionalInfo": "PayTo",
+                "additionalInfoUri": "https://www.defencebank.com.au/tools-and-advice/payto/"
             }
         ],
         "constraints": [
@@ -119,28 +130,42 @@
                 "feeType": "EVENT",
                 "amount": "1.50",
                 "additionalInfo": "Declined EFTPOS transactions (insufficient funds)",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Declined transactions at an ATM.",
                 "feeType": "EVENT",
                 "amount": "0.50",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Cash advance fee (Australia Post and other banks), including overseas ATMs",
                 "feeType": "EVENT",
                 "amount": "4.10",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Statement fees (for monthly).",
                 "feeType": "PERIODIC",
                 "amount": "2.00",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
+                "discounts": []
+            },
+            {
+                "name": "Auto transfer/BPAY dishonour fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
+                "discounts": []
+            },
+            {
+                "name": "Overdrawn/over limit fees.",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
@@ -148,43 +173,29 @@
                 "feeType": "EVENT",
                 "amount": "25.00",
                 "additionalInfo": "We decide to honour your personal cheque for payment where there are insufficient funds in your account or the credit limit will be/has been exceeded. We dishonour payment of your personal cheque due to insufficient funds, payment stopped or the cheque is incorrectly completed (e.g. no signature).We decline a direct debit request due to insufficient funds.We decide to honour a direct debit request where there are insufficient funds in your account or the credit limit will be/has been exceeded",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
-                "discounts": []
-            },
-            {
-                "name": "Auto transfer/BPAY dishonour fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
-                "discounts": []
-            },
-            {
-                "name": "Overdrawn/over limit fees.",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Same day domestic transfers (via Swift/RTGS) inbound.",
                 "feeType": "EVENT",
                 "amount": "6.80",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Same day domestic transfers (via Swift/RTGS) - Outwards",
                 "feeType": "EVENT",
                 "amount": "11.80",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/fees-and-charges-schedule---domestic-transactions",
                 "discounts": []
             },
             {
                 "name": "Visa foreign currency conversion fee.",
                 "feeType": "EVENT",
-                "amount": "3% (percentage of transaction value)",
+                "transactionRate": "0.03",
                 "additionalInfo": "The fee we charge when you make a payment or a deposit or obtain a cash advance overseas.",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/defence-bank-fees-and-charges-savings-overseas-transactions.pdf",
                 "discounts": []
             },
             {
@@ -192,7 +203,7 @@
                 "feeType": "EVENT",
                 "amount": "20.00",
                 "additionalInfo": "The fee we charge when you request we make a foreign currency telegraphic transfer to an overseas destination.",
-                "additionalInfoUri": "https://cw-cms.defencebank.com.au/banking/savings-accounts/cadet-saver/",
+                "additionalInfoUri": "https://www.defencebank.com.au/globalassets/documents/fees--charges/defence-bank-fees-and-charges-savings-overseas-transactions.pdf",
                 "discounts": []
             }
         ],
@@ -200,10 +211,10 @@
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0450",
-                "calculationFrequency": "Daily",
-                "applicationFrequency": "Interest is calculated daily on the closing balance and credited on 31 March each year.",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
                 "tiers": [],
-                "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/"
+                "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/cadet-saver/"
             }
         ],
         "lendingRates": []

@@ -1,10 +1,105 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Requested x-v version is not supported",
-            "meta": {}
-        }
-    ]
+    "data": {
+        "productId": "56150485",
+        "effectiveFrom": "2009-02-05T11:00:00.000+11:00",
+        "effectiveTo": "9999-12-31T11:00:00.000+11:00",
+        "lastUpdated": "2009-02-05T11:00:00.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Current Account Statement ",
+        "description": "Current Account Statement ",
+        "brand": "BCA",
+        "brandName": "Bank of China",
+        "isTailored": false,
+        "additionalInformation": [
+            {
+                "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+                "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+                "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+                "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+            }
+        ],
+        "bundles": [],
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "2000",
+                "additionalInfo": "opening balance AUD 2000 to active account"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "16",
+                "additionalInfo": "accepted visa required"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Monthly Account Keeping Fee",
+                "feeType": "PERIODIC",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "monthly"
+            },
+            {
+                "name": "Over the counter withdrawals at branches",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            },
+            {
+                "name": "Cheque book orders",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            },
+            {
+                "name": "Outward cheque dishonour for insufficient funds-per cheque",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            },
+            {
+                "name": "Outward cheque dishonour for incorrect detail-per cheque",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            },
+            {
+                "name": "Stop cheque",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            },
+            {
+                "name": "Cancellation of cheque book",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD",
+                "additionalValue": "once-off"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "additionalValue": "base rate 0.01% applies to deposit over 2000."
+            }
+        ],
+        "lendingRates": []
+    },
+    "links": {
+        "self": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56150485"
+    }
 }

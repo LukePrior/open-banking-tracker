@@ -1,9 +1,171 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "No versions supported in the requested range of x-min-v to x-v."
-        }
-    ]
+    "data": {
+        "productId": "7d432ded-374d-4c05-98c4-66da8f64aa8c",
+        "lastUpdated": "2023-04-22T13:00:00Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "High Interest Savings Account (SMSF)",
+        "description": "Give your savings a boost with our award winning High Interest Savings Account which offers flexibility and easy access to your money.",
+        "brand": "Rabobank",
+        "applicationUri": "https://myapplication.rabobank.com.au/apply?CONT=AU&ACCOUNTTYPE=SMSF&PID=MSA",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.rabobank.com.au/high-interest-savings-account/",
+            "termsUri": "https://www.rabobank.com.au/termsandconditions"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Online and mobile banking."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalInfo": "An alert about future events or notifications."
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited free transactions available to clients."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "0.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Each SMSF trustee owner of an account must be an Australian tax resident and reside in Australia."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "16",
+                "additionalInfo": "Each SMSF trustee owner of an account must be at least 16 years old."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "SMSF products are available only to SMSF trustees."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Account keeping fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "additionalValue": "P1M"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "INTRODUCTORY",
+                "rate": "0.046",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 250000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Available for new customers for 4 months from the day the account is opened, after which the rate will revert to the Standard Variable Rate. Introductory rate is variable and subject to change at any time.",
+                            "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+                        }
+                    }
+                ],
+                "additionalValue": "P4M",
+                "additionalInfo": "Available for new customers for 4 months from the day the account is opened, after which the rate will revert to the Standard Variable Rate. Introductory rate is variable and subject to change at any time.",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.032",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 250000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Base Rate",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "maximumValue": 1000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Base Rate",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.01,
+                        "maximumValue": 2000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Base Rate",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 2000000.01,
+                        "maximumValue": 3000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Base Rate",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.025",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 3000000.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Base Rate",
+                "additionalInfoUri": "https://www.rabobank.com.au/rates/smsf-rates/"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbanking.api.rabobank.com.au/public/cds-au/v1/banking/products/7d432ded-374d-4c05-98c4-66da8f64aa8c"
+    },
+    "meta": {}
 }

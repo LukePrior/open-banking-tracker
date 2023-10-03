@@ -1,9 +1,196 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Term",
+                "additionalInfo": "1 to 7 years.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Repayment frequency",
+                "additionalInfo": "Pay weekly, fortnightly or monthly via direct debit. If you pay by any other means, your repayments will be monthly.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalValue": "Make additional repayments without a fee",
+                "additionalInfo": "You can make additional repayments or repay your loan in full at any time. Additional repayments may enable you to redraw funds, subject to conditions.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Variable interest rate",
+                "additionalInfo": "Get a competitive rate and have the flexibility to make additional repayments at any time without a fee. If you have a variable interest rate, we can change your interest rate by changing the reference rate and your margin.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB2911.pdf"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Same day funding",
+                "additionalInfo": "You may be eligible for same day funding if you're approved, accept your contract and complete verification by 4pm Monday to Friday (Sydney/Melbourne time). Subject to credit checks and assessment of your financial situation. Unavailable for secured loans, if an application is incomplete or needs to be referred for a more detailed review by a lending specialist, if required documentation isn't provided and subject to system availability.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html?ei=cb-pe-var-def2#terms"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalValue": "Flexibility to redraw available funds",
+                "additionalInfo": "If you have made additional repayments, you may be able to access these funds through your redraw facility. You can check your available redraw balance online or by contacting us.",
+                "additionalInfoUri": "https://www.commbank.com.au/support.personal-loan.personal-loan-redraw-facility.html?ei=personal-loan-redraw-facility"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Unsecured loan",
+                "additionalInfo": "Security is not required for this loan type.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "50000.00"
+            },
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "4000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Be an individual",
+                "additionalInfo": "Individuals must have the legal capacity to enter into the loan contract. Not available for non-personal borrowers."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must live in Australia and be either: an Australian citizen, an Australian permanent resident (permanent visa sub class holder), a New Zealand citizen, or eligible non-resident visa holder."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Credit approval",
+                "additionalInfo": "Meet CBA's credit assessment criteria which includes demonstrating the capacity to make the required repayments on the credit facility without substantial hardship."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Maximum 2 borrowers per application",
+                "additionalInfo": "The maximum number of borrowers eligible to apply per application is two."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Upfront cost payable when accepting a loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "name": "Loan service fee",
+                "feeType": "PERIODIC",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Monthly charge to cover costs of keeping account active.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "name": "Late payment fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "May be payable on the fifth business day after the repayment due date if at the end of the previous business day your loan is in arrears.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "name": "Settlement cheque fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalValue": "On funding if you require more than two cheques",
+                "additionalInfo": "Cheques provided to help you pay different recipients with your loan borrowings.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0800",
+                "comparisonRate": "0.0940",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Minimum rate 8.00%",
+                "additionalInfo": "The reference rate is the Standard Variable Rate which is currently 15.50% p.a. Your interest rate may be different and is based on a number of factors, including the information you provide and our assessment of your application. Interest rates at the lower end of our range may be offered to customers with an excellent credit history. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (minimum rate): 9.40% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.2000",
+                "comparisonRate": "0.2130",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Maximum rate 20.00%",
+                "additionalInfo": "The reference rate is the Standard Variable Rate which is currently 15.50% p.a. Your interest rate may be different and is based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (maximum rate): 21.30% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1550",
+                "comparisonRate": "0.1683",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Representative rate 15.50%",
+                "additionalInfo": "At least half of our customers will receive the representative rate, or lower. It may not be the actual rate you receive. The reference rate is the Standard Variable Rate which is currently 15.50% p.a. Your interest rate may be different and is based on a number of factors, including the information you provide and our assessment of your application. We'll confirm your actual interest rate in your loan offer document. Comparison Rate (representative rate): 16.83% p.a. based on an unsecured $30,000 loan over 5 years. Warning: This comparison rate applies only to the example or examples given. Different amounts and terms will result in different comparison rates. Costs such as redraw fees or early repayment fees, and cost savings such as fee waivers, are not included in the comparison rate but may influence the cost of the loan.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0700",
+                "comparisonRate": "0.0841",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Green Discount Rate 7.00%",
+                "additionalInfo": "To qualify for the green discount, you must use your personal loan to buy or install eligible products. Comparison rate: 8.41% p.a. based on an unsecured loan of $30,000, over a term of 5 years. Warning: Comparison rates are true only for examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal-loans/green-loan-discount.html"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "0.0800",
+                "comparisonRate": "0.0940",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Medical Education Discount Rate 8.00%",
+                "additionalInfo": "To qualify for the medical education discount, at least one loan purpose of your personal loan must be for medical education costs at approved colleges and institutions. Comparison rate: 9.40% are based on an unsecured loan of $30,000, over a term of 5 years. Warning: Comparison rates are true only for examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/industries/healthcare/personal-loans.html"
+            }
+        ],
+        "productId": "3d41b9c0127a4905ad75cad2d79c3554",
+        "effectiveFrom": "1999-12-31T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-07-27T00:09:46.12758Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Variable Rate Personal Loan",
+        "description": "Get a competitive rate and have the flexibility to make additional repayments at any time without a fee.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/personal-loans/variable-rate-loan.html",
+            "termsUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB2911.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/important-info/target-market-determinations.html",
+            "feesAndPricingUri": "https://www.commbank.com.au/personal/personal-loans/variable-rate-loan/rates-and-fees.html?ei=rates_fees-see-more"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/3d41b9c0127a4905ad75cad2d79c3554"
+    }
 }

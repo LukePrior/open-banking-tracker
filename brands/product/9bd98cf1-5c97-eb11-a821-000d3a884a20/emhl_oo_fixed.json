@@ -1,12 +1,129 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "emhl_oo_fixed",
+        "lastUpdated": "2023-09-08T00:19:30Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Expect More Home Loan Owner Occupied - Fixed",
+        "description": "Need a few more features than the standard home loan? Our Expect More Home Loan is the one for you.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.banksyd.com.au/expect-more-home-loan",
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "eligibilityUri": "https://www.banksyd.com.au/expect-more-home-loan",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "status": "APPROVED",
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Construction Loan",
+                "additionalInfo": "Available for Construction purposes"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "100000",
+                "additionalInfo": "Minimum aggregated total loan amount $100,000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Permanent Resident or Citizen. Residential address must be in Australia."
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Lending Criteria applies"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "PERIODIC",
+                "name": "Package Fee",
+                "amount": "395.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Waived for LVRs up to 70%"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Discharge of Mortgage Fee",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Excludes legal costs"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Settlement Fee",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable at settlement of new loan, variations and top ups to existing loans do not incur this fee."
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Variation Fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Variation Fee is covered by the package, except if variation is to a different product."
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.068",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied, Principal and Interest",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.0626"
+            },
+            {
+                "rate": "0.067",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied, Principal and Interest",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.0633"
+            },
+            {
+                "rate": "0.0649",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied, Principal and Interest",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.0635"
+            },
+            {
+                "rate": "0.0685",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied, Principal and Interest",
+                "additionalInfoUri": "https://www.banksyd.com.au/expect-more-home-loan",
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.0662"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/emhl_oo_fixed"
+    }
 }

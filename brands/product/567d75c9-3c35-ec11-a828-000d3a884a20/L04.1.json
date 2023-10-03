@@ -1,12 +1,246 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "L04.1",
+        "effectiveFrom": "2022-06-23T03:00:37Z",
+        "effectiveTo": "2030-06-25T09:00:47Z",
+        "lastUpdated": "2023-08-23T20:54:59Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Standard home loan (investor)",
+        "description": "Our investment loan offers fast approval, flexible repayment options and competitive rates.",
+        "brand": "Challenger Bank",
+        "applicationUri": "https://apply.challenger.com.au/banking/SelfService/servletcontroller?ProductType=CBL_LOAN_HOME&CustomerType=Individual",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.bankchallenger.com.au/home-loans",
+            "feesAndPricingUri": "https://www.challenger.com.au/bankfees"
+        },
+        "features": [
+            {
+                "featureType": "REDRAW"
+            },
+            {
+                "featureType": "OFFSET"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Fee free additional repayments."
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "200000.00"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "3000000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "EMPLOYMENT_STATUS",
+                "additionalValue": "Currently employed and or receive a regular income."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "An Australian or New Zealand citizen, or a permanent resident of Australia."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Lending criteria apply."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Not previously declared bankrupt, insolvent or had defaults on any loans, credit cards, interest free finance, store cards or utility or phone bills in the last five years."
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "UPFRONT",
+                "name": "Title Search fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Title Search fee waived.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Application fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Application fee waived.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Mortgage Documentation fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Mortgage Documentation fee waived.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Package fee (Offset account)",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Package fee waived.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Registration and Discharge of Mortgage fee (when taking out a new loan with us)",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Mortgage Registration and Discharge fees are waived on new lending."
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "Valuation fee",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Valuation fee waived.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Statement reissue",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Voucher retrieval",
+                "currency": "AUD",
+                "additionalValue": "Voucher retrieval fee. Minimum $20.00 ($60 per hour).",
+                "additionalInfo": "Fee charged for voucher/information retrieval by us.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Audit certificate",
+                "amount": "35.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged for Audit Certificates.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Discharge documentation fee (when discharging a mortgage held with us)",
+                "currency": "AUD",
+                "additionalValue": "At cost",
+                "additionalInfo": "External costs relating to preparation of legal documents, settlement disbursements and attendance."
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Discharge registration fee (when discharging a mortgage held with us)",
+                "currency": "AUD",
+                "additionalValue": "From $118.90 to $260.00",
+                "additionalInfo": "Government fee varies by state"
+            }
+        ],
+        "lendingRates": [
+            {
+                "rate": "0.0624",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 40% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0624",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0629",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 30% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0629",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0634",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 20% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0634",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0674",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Deposit less than 20%",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0674",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0654",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 40% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0654",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0659",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 30% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0659",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0664",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Minimum 20% deposit applies.",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0664",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0724",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Deposit less than 20%",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0724",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.openbanking.challenger.com.au/cds-au/v1/banking/products/L04.1"
+    }
 }

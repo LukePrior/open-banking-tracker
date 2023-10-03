@@ -2,7 +2,7 @@
     "data": {
         "productId": "177",
         "effectiveFrom": "2021-09-23T14:30:00.0000000Z",
-        "lastUpdated": "2023-08-09T08:00:28.8908482Z",
+        "lastUpdated": "2023-09-08T06:00:29.0444255Z",
         "productCategory": "BUSINESS_LOANS",
         "name": "Commercial Property Loan",
         "description": "Commercial Property Loan",
@@ -43,11 +43,13 @@
         "constraints": [
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalValue": "4000000.00"
+                "additionalValue": "4000000.00",
+                "additionalInfo": "Maximum loan amount $4,000,000.00"
             },
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "250000.00"
+                "additionalValue": "250000.00",
+                "additionalInfo": "Minimum loan amount $250,000.00"
             }
         ],
         "eligibility": [
@@ -79,9 +81,10 @@
             },
             {
                 "name": "Monthly Fee",
-                "feeType": "UPFRONT",
+                "feeType": "PERIODIC",
                 "amount": "25.00",
                 "currency": "AUD",
+                "additionalValue": "P1M",
                 "additionalInfo": "Ongoing monthly service fee"
             },
             {
@@ -90,13 +93,6 @@
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable if the loan amount is paid in full within 3 years. 1.00% of the total loan amount applied for"
-            },
-            {
-                "name": "Fixed Loan Break Cost",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Early repayment adjustment is payable if Gateway suffers a loss when the loan is repaid in full during a fixed rate period. \r\nAmount is unascertainable (ERA formula available upon request)"
             },
             {
                 "name": "Split Loan Account Fee",
@@ -144,21 +140,23 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0654",
-                "comparisonRate": "0.0696",
+                "rate": "0.0679",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalInfo": "Commercial Property Loan (<60%)"
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Commercial Property Loan LVR >60%"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0664",
-                "comparisonRate": "0.0706",
+                "rate": "0.0669",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
-                "additionalInfo": "Commercial Property Loan (>60%)\r\n"
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Commercial Property Loan LVR <60%"
             }
         ]
     },

@@ -1,9 +1,194 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY View",
+                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Goal Tracker",
+                "additionalInfo": "Whether you have a savings goal in mind or want to build a buffer for those 'just in case' moments, Goal Tracker in the CommBank app helps you set and reach your goals.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/goal-tracker.html"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "The first staff assisted or telephone banking withdrawals when using an operator (including cheques issued on your account and cashed over-the-counter at a CommBank branch) are free. Every additional staff assisted withdrawal will have a charge of $3.00 each.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/goal-saver.html"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Australian Residential Address",
+                "additionalInfo": "For customers wanting to apply online, they will require an Australian residential address."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged when you ask us to give you an additional account statement outside the standard cycle. A fee charged when you ask us to issue past statements, or ordered statements."
+            },
+            {
+                "name": "Account Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M"
+            },
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P6M",
+                "additionalInfo": "Fees do not apply for statements issued as per the standard statement frequency."
+            },
+            {
+                "name": "Staff assisted withdrawals",
+                "feeType": "WITHDRAWAL",
+                "amount": "3.00",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "You may qualify for a waiver of assisted withdrawal fees if",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "We will waive 1 assisted withdrawal fee per month (not available through ATM, EFTPOS, Agency, Cheque withdrawals)."
+                            }
+                        ]
+                    },
+                    {
+                        "description": "You may qualify for a waiver of assisted withdrawal fees if",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "PENSION_RECIPIENT",
+                                "additionalInfo": "Your Australian Age, Service or Disability Pension is directly credited to your account, then we'll waive 2 extra assisted withdrawal fees each month."
+                            }
+                        ]
+                    }
+                ],
+                "additionalInfo": "A fee charged on some accounts when you take money out: At a CommBank branch, a post office, agency, with telephone banking if using an operator or by cashing a cheque."
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.004",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "The standard variable rate applies if the bonus conditions are not met. The standard variable credit interest rate is paid on your entire account balance."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0425",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 49999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "We pay bonus interest on top of the standard variable credit interest rate on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0425",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 249999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "We pay bonus interest on top of the standard variable credit interest rate on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0425",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.0,
+                        "maximumValue": 999999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "We pay bonus interest on top of the standard variable credit interest rate on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0425",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "We pay bonus interest on top of the standard variable credit interest rate on credit balances if you: 1) Make at least one deposit each calendar month into your account; and 2) Have a higher account balance at the end of the month compared to the account balance at the start of the month (excluding interest and bank-initiated transactions). One variable bonus interest rate applies to your entire balance. The interest rate depends on how much you have in your account."
+            }
+        ],
+        "productId": "72f214498c7f47a98fe59b794e7c01ab",
+        "effectiveFrom": "2010-10-28T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-10-03T00:32:08.983794Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "GoalSaver",
+        "description": "Be rewarded with a variable bonus interest rate for saving regularly each month.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/banking/goal-saver.html#apply",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/banking/goal-saver.html",
+            "termsUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/SavingsInvestment_ADB2852.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/banking/goal-saver.html#applyhow",
+            "feesAndPricingUri": "https://www.commbank.com.au/banking/goal-saver.html#rates"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/72f214498c7f47a98fe59b794e7c01ab"
+    }
 }

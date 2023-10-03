@@ -1,9 +1,258 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Unsupported version requested. Min version 4, max version 4 supported"
-        }
-    ]
+    "data": {
+        "productId": "3220",
+        "effectiveFrom": "2020-07-01T00:00:00.000Z",
+        "effectiveTo": "9999-12-31T00:00:00.000Z",
+        "lastUpdated": "2023-09-26T09:26:37.785Z",
+        "productCategory": "CRED_AND_CHRG_CARDS",
+        "name": "Visa Credit Card",
+        "description": "Low rate, low fee, personal credit card",
+        "brand": "Greater Bank",
+        "brandName": "Greater Bank",
+        "applicationUri": "https://www.greater.com.au/personal/credit-cards/",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.greater.com.au/personal/credit-cards",
+            "termsUri": "https://www.greater.com.au/termsandconditions"
+        },
+        "cardArt": [
+            {
+                "imageUri": "https://www.greater.com.au/globalassets/calculators-rate-and-support/images/open-banking/greaterbank_stacked_openbanking.jpg"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Greater Bank Visa Credit Card"
+            },
+            {
+                "featureType": "ADDITIONAL_CARDS",
+                "additionalValue": "9"
+            },
+            {
+                "featureType": "UNLIMITED_TXNS"
+            },
+            {
+                "featureType": "BALANCE_TRANSFERS"
+            },
+            {
+                "featureType": "INTEREST_FREE",
+                "additionalValue": "P55D"
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "SMS or Email",
+                "additionalInfo": "Receive notification from bank of your nominated transactions (e.g. low account balance warning; credits over $500)"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "50000.00"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "MIN_INCOME",
+                "additionalValue": "20000.00"
+            },
+            {
+                "eligibilityType": "EMPLOYMENT_STATUS",
+                "additionalValue": "Gainfully employed"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Residents only"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Must be identifiable in terms of legislative requirements. Lending criteria apply."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Information fee - Search ",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfo": "$20 per request, plus $1 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
+            },
+            {
+                "name": "Information fee - Per Page",
+                "feeType": "EVENT",
+                "amount": "1.00",
+                "additionalInfo": "$20 per request, plus $1 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
+            },
+            {
+                "name": "Bank transfer fee",
+                "feeType": "TRANSACTION",
+                "amount": "8.00"
+            },
+            {
+                "name": "Bulk coin purchase fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.02",
+                "additionalInfo": "Minimum fee $2.00"
+            },
+            {
+                "name": "Bulk coin purchase fee - Sourced Externally",
+                "feeType": "TRANSACTION",
+                "amount": "8.00",
+                "additionalInfo": "$8.00 per bag"
+            },
+            {
+                "name": "Foreign currency deposit fee",
+                "feeType": "TRANSACTION",
+                "amount": "5.00"
+            },
+            {
+                "name": "Foreign currency conversion fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.03",
+                "additionalInfo": "3% of the value of the transaction converted into Australian dollars. This applies also when the merchant or financial institution that processes the transaction is located outside of Australia."
+            },
+            {
+                "name": "Replacement card fee - In Australia",
+                "feeType": "EVENT",
+                "amount": "7.00",
+                "additionalInfo": "Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months."
+            },
+            {
+                "name": "Replacement card fee - International",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "additionalInfo": "For any replacement card issued overseas"
+            },
+            {
+                "name": "SMS alert fee",
+                "feeType": "TRANSACTION",
+                "amount": "0.20",
+                "additionalInfo": "Charged for each SMS alert that is sent to you notifying you of account balances and/or other nominated transactions."
+            },
+            {
+                "name": "EasyPay notification fee - Letter",
+                "feeType": "EVENT",
+                "amount": "8.00"
+            },
+            {
+                "name": "EFT transaction fee (RTGS)",
+                "feeType": "EVENT",
+                "amount": "20.00"
+            },
+            {
+                "name": "International currency draft",
+                "feeType": "TRANSACTION",
+                "amount": "15.00"
+            },
+            {
+                "name": "Telegraphic transfer - Foreign Currency",
+                "feeType": "TRANSACTION",
+                "amount": "30.00"
+            },
+            {
+                "name": "Telegraphic transfer - Australian Currency",
+                "feeType": "TRANSACTION",
+                "amount": "47.50"
+            },
+            {
+                "name": "Telegraphic transfer trace",
+                "feeType": "TRANSACTION",
+                "amount": "80.00",
+                "additionalInfo": "Fee is estimate only"
+            },
+            {
+                "name": "Scheduled BPAY payment fee",
+                "feeType": "EVENT",
+                "amount": "1.00"
+            },
+            {
+                "name": "Default notice fee",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "additionalInfo": "Debited to your account when we send you a notice informing you of a default under the credit card contract."
+            },
+            {
+                "name": "Annual fee",
+                "feeType": "PERIODIC",
+                "amount": "49.00",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Debited to your account on the last day of the month in which the account is opened and then on the anniversary of that date every year. We will waive the annual fee: 1) When the value of all purchases debited to your account during the period between the debiting of one annual fee and the date of the next annual fee is to be debited equals or exceeds $12,000; 2) If you have paid an annual package fee in respect of your Ultimate Home loan on the date of or since the date that the last annual fee would otherwise have been debited."
+            },
+            {
+                "name": "Australian cash advance fee",
+                "feeType": "WITHDRAWAL",
+                "transactionRate": "0.02",
+                "additionalInfo": "If your account has a negative balance at the time you request the cash advance fee you will be charged 2.00% of the cash advance amount. The minimum fee is $1.50, the maximum fee is $20.00. If your account has a positive balance flat fee is $1.50. Debited to your account when you request a cash advance in Australia. The fee will be debited on the last day of the statement period. "
+            },
+            {
+                "name": "Overseas cash advance fee",
+                "feeType": "WITHDRAWAL",
+                "transactionRate": "0.02",
+                "additionalInfo": "If your account has a negative balance at the time you request you will be charged 2.00% of the cash advance amount. The minimum fee is $4.00, the maximum fee is $20.00. If your account has a positive balance flat fee is $4.00. Debited to your account when you request a cash advance through a terminal outside of Australia. The fee will be debited on the last day of the statement period."
+            },
+            {
+                "name": "Disputed transaction fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "additionalInfo": "Debited to your account when you request a record of a disputed transaction."
+            },
+            {
+                "name": "Late payment fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "additionalInfo": "Payable when you miss a payment. The fee will be\ndebited to your account on the last day of the second\nconsecutive statement period in which the minimum\nrepayment is not made and thereafter on the last day\nof each statement period that the minimum repayment\nis not made by the due date."
+            },
+            {
+                "name": "EasyPay notification fee - SMS",
+                "feeType": "EVENT",
+                "amount": "0.20"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0995",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalInfoUri": "https://www.greater.com.au/personal/credit-card-interest-rates"
+            },
+            {
+                "lendingRateType": "CASH_ADVANCE",
+                "rate": "0.0995",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalInfo": "Base rate disclosed. Margins will be applied. "
+            },
+            {
+                "lendingRateType": "PURCHASE",
+                "rate": "0.0995",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "additionalInfo": "Base rate disclosed. Margins will be applied. "
+            }
+        ]
+    },
+    "links": {
+        "self": "https://public.cdr-api.greater.com.au/cds-au/v1/banking/products/3220"
+    },
+    "meta": {}
 }

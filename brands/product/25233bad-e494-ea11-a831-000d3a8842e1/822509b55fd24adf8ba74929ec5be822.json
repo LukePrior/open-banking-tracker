@@ -1,9 +1,125 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Access money at a time that suits you",
+                "additionalInfo": "Get access to a minimum amount of $300 before your next pay day. There's no need to contact or involve your employer.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Apply online in minutes",
+                "additionalInfo": "If eligible, you can apply through NetBank or the CommBank app in just a few minutes. If your application is approved, your limit should be available instantly (usually within seconds but may take up to 1 business day).",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "A single upfront fee",
+                "additionalInfo": "You'll be charged a fee depending on the amount you ask for. There are no extra charges if you pay back on time.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Access available via Netbank and CommBank App",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "300.00",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "5000.00",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Income account",
+                "additionalInfo": "You must have your income paid into a CommBank Smart Access or Complete Access account (not a joint account).",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Digital access",
+                "additionalInfo": "You must be registered for NetBank.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Earned income",
+                "additionalInfo": "You must have earned enough income at the time of applying to meet our $300 minimum limit.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Next pay date",
+                "additionalInfo": "Your next pay date must be 2 days or more away.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Annual uses",
+                "additionalInfo": "You must have accessed CommBank AdvancePay less than 8 times in the last 12 months if you're paid weekly or fortnightly or 4 times if you're paid monthly",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Personal use",
+                "additionalInfo": "For personal use only.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Credit approval",
+                "additionalInfo": "Applications for Personal Overdrafts are subject to the Bank's normal credit approval.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Upfront fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Variable Upfront Fee. There is a single, upfront fee of $5 for every $500 (or part of) you ask for. This fee is charged when your CommBank AdvancePay limit is applied to your account, regardless of whether the temporary limit is accessed or not. Your final limit will be made up of the amount approved and the fee.",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1490",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Debit excess interest rate",
+                "additionalInfo": " If your CommBank AdvancePay limit is not fully repaid once your chosen pay date arrives, your account will be considered overdrawn and you\u2019ll be charged the debit excess interest rate. ",
+                "additionalInfoUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
+            }
+        ],
+        "productId": "822509b55fd24adf8ba74929ec5be822",
+        "effectiveFrom": "1999-12-31T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-07-11T16:15:14.967449Z",
+        "productCategory": "OVERDRAFTS",
+        "name": "CommBank AdvancePay",
+        "description": "CommBank AdvancePay gives you access to money you expect to be paid, before your next pay day. It's a short term facility applied to your personal everyday account as a temporary limit.",
+        "brand": "CBA",
+        "brandName": "CommBank",
+        "applicationUri": "https://www.commbank.com.au/banking/commbank-advancepay.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.commbank.com.au/banking/commbank-advancepay.html",
+            "termsUri": "https://www.commbank.com.au/content/dam/commbank-assets/banking/accounts/docs/commbank-advancepay-terms-and-conditions.pdf",
+            "eligibilityUri": "https://www.commbank.com.au/banking/commbank-advancepay.html",
+            "feesAndPricingUri": "https://www.commbank.com.au/banking/commbank-advancepay.html"
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.commbank.com.au/public/cds-au/v1/banking/products/822509b55fd24adf8ba74929ec5be822"
+    }
 }

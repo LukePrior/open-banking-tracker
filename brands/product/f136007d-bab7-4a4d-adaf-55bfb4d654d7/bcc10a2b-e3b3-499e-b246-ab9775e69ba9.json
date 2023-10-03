@@ -3,33 +3,27 @@
         "productId": "bcc10a2b-e3b3-499e-b246-ab9775e69ba9",
         "effectiveFrom": "2020-09-20T12:02:00+00:00",
         "effectiveTo": "2022-09-18T23:59:00+00:00",
-        "lastUpdated": "2022-09-18T22:39:10+00:00",
+        "lastUpdated": "2023-09-15T03:41:51+00:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Insurance Saver Account",
         "description": "This is a special purpose savings account you can use to set aside money for insurance payments. Internet and phone banking are available. Direct debits can be set up for your payments ",
         "brand": "Bank of Heritage Isle",
-        "applicationUri": "https://www.heritageisle.com.au/online-membership-application/",
         "isTailored": false,
-        "additionalInformation": {
-            "overviewUri": "https://www.heritageisle.com.au/savings/transaction-accounts/",
-            "termsUri": "https://www.heritageisle.com.au/important-information/",
-            "feesAndPricingUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-        },
-        "cardArt": [
-            {
-                "title": "Heritage Isle Bank  Visa Debit",
-                "imageUri": "https://www.heritageisle.com.au/wp-content/uploads/2019/02/BoHI-Debit-01.png"
-            }
-        ],
         "features": [
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Contributes to Reduced Fees Program",
-                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates."
-            },
             {
                 "featureType": "NPP_ENABLED",
                 "additionalValue": "Yes"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Email Address",
+                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Direct Credits",
+                "additionalInfo": "Make regular credits like your pay into this account",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide_BOHI.pdf"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -38,28 +32,26 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalValue": "Direct Credits",
-                "additionalInfo": "Make regular credits like your pay into this account",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide.pdf"
-            },
-            {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Email Address",
-                "additionalInfo": "Select the Contact Method that you would like to use for your PayID i.e. your mobile number or email address."
+                "additionalValue": "Contributes to Reduced Fees Program",
+                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates."
             }
         ],
         "constraints": [
             {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "None"
-            },
-            {
                 "constraintType": "OPENING_BALANCE",
                 "additionalValue": "0",
                 "additionalInfo": "When you apply to become a Heritage Isle Bank  Member, you do not have to pay a membership fee. All we ask is that you guarantee to pay $10 if Heritage Isle Bank  ever ceases to operate to the person/s looking after our winding up."
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "None"
             }
         ],
         "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Residents"
+            },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Citizen"
@@ -71,44 +63,14 @@
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Residents"
             }
         ],
         "fees": [
             {
-                "name": "Third Party Costs",
+                "name": "Special Cheque clearance fee for Personal Accounts",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "16.50",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Counter Cash withdrawal fee up to $24,999",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
-                "currency": "AUD",
-                "additionalValue": "First 3 free if part of Reduced Fees program"
-            },
-            {
-                "name": "Document Retrieval fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
-                "additionalInfo": "Payable on request for documents to be retrieved",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -121,10 +83,27 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Counter Cash withdrawal $25,000 and over",
+                "name": "Counter Cash withdrawal fee up to $24,999",
                 "feeType": "TRANSACTION",
-                "amount": "50.00",
+                "amount": "2.00",
                 "currency": "AUD",
+                "additionalValue": "First 3 free if part of Reduced Fees program"
+            },
+            {
+                "name": "Dormant Accounts fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Document Retrieval fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "Minimum $22.77 per hour retrieval fee and minimum $30 per hour administrative fee",
+                "additionalInfo": "Payable on request for documents to be retrieved",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -136,18 +115,27 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Special Cheque clearance fee for Personal Accounts",
+                "name": "Default Notice Fee",
                 "feeType": "EVENT",
-                "amount": "16.50",
+                "amount": "21.50",
                 "currency": "AUD",
+                "additionalInfo": "Payable if and when we send you a default notice for an overdrawn account where an arrears remains\r\nunremedied after we have sent you an arrears letter ",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dormant Accounts fee",
+                "name": "Third Party Costs",
                 "feeType": "EVENT",
-                "amount": "10.00",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.",
+                "additionalValue": "At Cost",
+                "additionalInfo": "Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Counter Cash withdrawal $25,000 and over",
+                "feeType": "TRANSACTION",
+                "amount": "50.00",
+                "currency": "AUD",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             }
         ],
@@ -156,31 +144,43 @@
                 "depositRateType": "VARIABLE",
                 "rate": "0.0001",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $50,001 or more",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M"
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Whole Balance Balance $0 - $499",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $500 to $20,000",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalInfo": "Balance $20,001 to $50,000",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             }
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.1196"
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1196",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "May be applicable if your account becomes overdrawn",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/financial_services_guide_BOHI.pdf"
             }
         ]
     },

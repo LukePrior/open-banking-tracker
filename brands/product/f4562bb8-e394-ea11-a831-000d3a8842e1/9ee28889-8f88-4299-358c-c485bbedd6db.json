@@ -1,9 +1,177 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Unable to select an endpoint version. Supported versions: min = 4, max = 4."
-        }
-    ]
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/9ee28889-8f88-4299-358c-c485bbedd6db"
+    },
+    "data": {
+        "applicationUri": "https://applyapp.anz.com/?producttype=bes&schema=sbola&sourcecode_1=ANP",
+        "brand": "ANZ",
+        "name": "ANZ Business Essentials",
+        "cardArt": [],
+        "depositRates": [
+            {
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-essentials/",
+                "depositRateType": "VARIABLE",
+                "rate": "0.00",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "name": "Balance",
+                        "minimumValue": 0,
+                        "maximumValue": 4999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $0 and $4,999"
+                        }
+                    }
+                ]
+            },
+            {
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-essentials/",
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "unitOfMeasure": "DOLLAR",
+                        "name": "Balance",
+                        "minimumValue": 5000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $5,000 or more"
+                        }
+                    }
+                ]
+            }
+        ],
+        "effectiveFrom": "2021-05-31T14:00:00.000Z",
+        "features": [
+            {
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
+                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:bb",
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:bb",
+                "featureType": "NPP_PAYID"
+            },
+            {
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:bb",
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "additionalValue": "BPAY",
+                "featureType": "BILL_PAYMENT",
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "Apple Pay",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "Google Pay",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "Samsung Pay",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "Fitbit Pay",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "Garmin Pay",
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
+            },
+            {
+                "additionalValue": "20",
+                "additionalInfo": "20 Electronic and ANZ ATM transactions included every month",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "featureType": "FREE_TXNS"
+            },
+            {
+                "featureType": "FRAUD_PROTECTION"
+            }
+        ],
+        "isTailored": false,
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "eligibility": [
+            {
+                "additionalValue": "18",
+                "additionalInfo": "You must be 18 years of age or older to apply",
+                "eligibilityType": "MIN_AGE"
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "An Australian business with valid ABN/ACN."
+            },
+            {
+                "additionalValue": "You're an owner/director of the Business",
+                "additionalInfo": "You're an owner/director of the Business",
+                "eligibilityType": "OTHER"
+            }
+        ],
+        "productId": "9ee28889-8f88-4299-358c-c485bbedd6db",
+        "fees": [
+            {
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "currency": "AUD",
+                "name": "Staff Assisted Transaction",
+                "discounts": [],
+                "amount": "1.60"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "currency": "AUD",
+                "name": "Cheque Transaction",
+                "discounts": [],
+                "amount": "0.60"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "currency": "AUD",
+                "name": "Manual Merchant Deposit",
+                "discounts": [],
+                "amount": "0.60"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "currency": "AUD",
+                "name": "ANZ ATM",
+                "discounts": [],
+                "amount": "0.60"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
+                "currency": "AUD",
+                "name": "Electronic Transaction",
+                "discounts": [],
+                "amount": "0.60"
+            }
+        ],
+        "constraints": [],
+        "description": "Business Transaction Product with no monthly account servicing fee",
+        "additionalInformation": {
+            "overviewUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-essentials/",
+            "eligibilityUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-essentials/",
+            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-transaction-accounts-tcs.pdf",
+            "feesAndPricingUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf"
+        },
+        "bundles": [],
+        "lendingRates": [],
+        "lastUpdated": "2023-07-07T08:00:00.000Z"
+    }
 }

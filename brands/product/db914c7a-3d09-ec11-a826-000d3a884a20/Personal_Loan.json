@@ -1,9 +1,106 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Requested: 3-3 Available: 4"
+    "data": {
+        "features": [
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "If your loan is in advance then redraw is available. Redraw is available same day without fees.",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Make extra repayments and pay your loan off early without penalty.",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Secured with a security < 2 years of age",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "With a security of 2 to 7 yearsof age",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Unsecured",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "80000.00",
+                "additionalInfo": "Secured",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "30000.00",
+                "additionalInfo": "Unsecured",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "3000.00",
+                "additionalInfo": "Secured or unsecured.",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "100000.00",
+                "additionalInfo": "Secured by residential real estate",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Australian permanent resident or hold a valid employment visa.",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "PERSONAL_LOAN_APPLICATION_FEE",
+                "feeType": "UPFRONT",
+                "amount": "200.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "Personal_Loan",
+        "lastUpdated": "2023-06-28T16:22:53.000+10:00",
+        "productCategory": "PERS_LOANS",
+        "name": "Personal Loan",
+        "description": "Low interest rate Personal Loan, secured or unsecured.",
+        "brand": "BNE LTD",
+        "brandName": "Bank of us",
+        "applicationUri": "https://bankofus.com.au/personal-loan-application",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://bankofus.com.au/source-assets/documents/brochures/2021/PersonalLoan_Digital.pdf",
+            "termsUri": "https://bankofus.com.au/product-disclosure",
+            "eligibilityUri": "https://bankofus.com.au/personal-loans",
+            "feesAndPricingUri": "https://bankofus.com.au/personal-loan-interest-rates",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Personal_Loan"
+    },
+    "meta": {}
 }

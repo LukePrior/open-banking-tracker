@@ -1,12 +1,539 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "TermDeposit_Standard",
+        "effectiveFrom": "2020-08-20T08:00:41Z",
+        "lastUpdated": "2023-09-15T08:34:18Z",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Standard Term Deposit",
+        "description": "With a term deposit you know exactly how much interest you\u2019ll earn. Make a deposit of $5,000 or more, choose a term from 1 month to 5 years, select a range of interest payment options and you\u2019re good to go.",
+        "brand": "AUBL",
+        "brandName": "Australian Unity Bank",
+        "applicationUri": "https://www.australianunity.com.au/banking/term-deposits/apply-for-term-deposit",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.australianunity.com.au/banking/term-deposits",
+            "termsUri": "https://www.australianunity.com.au/banking/terms-and-conditions",
+            "eligibilityUri": "https://www.australianunity.com.au/banking/term-deposits/apply-for-term-deposit",
+            "feesAndPricingUri": "https://www.australianunity.com.au/banking/term-deposits#rates-and-fees"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "Manage your account from anywhere with our Internet Banking or mobile banking app.",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Yes",
+                "additionalInfo": "Maturity Reminders",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Early Redemption",
+                "additionalInfo": "Interest penalties apply",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits"
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5000",
+                "additionalInfo": "Minimum balance of $5000"
+            },
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "5000",
+                "additionalInfo": "Minimum balance of $5000"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "You must be a permanent Australian resident that resides in Australia.",
+                "additionalInfo": "You must be a permanent Australian resident that resides in Australia."
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0075",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P1M",
+                "additionalInfo": "1 Month",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.009",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P2M",
+                "additionalValue": "P2M",
+                "additionalInfo": "2 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.043",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "additionalValue": "P3M",
+                "additionalInfo": "3 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0115",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P4M",
+                "additionalValue": "P4M",
+                "additionalInfo": "4 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0115",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P5M",
+                "additionalValue": "P5M",
+                "additionalInfo": "5 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.045",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P6M",
+                "additionalInfo": "6 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.015",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P7M",
+                "additionalValue": "P7M",
+                "additionalInfo": "7 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.014",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P8M",
+                "additionalValue": "P8M",
+                "additionalInfo": "8 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.047",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P9M",
+                "additionalValue": "P9M",
+                "additionalInfo": "9 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.014",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P10M",
+                "additionalValue": "P10M",
+                "additionalInfo": "10 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0175",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P11M",
+                "additionalValue": "P11M",
+                "additionalInfo": "11 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.049",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "additionalValue": "P12M",
+                "additionalInfo": "12 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0489",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "P12M",
+                "additionalInfo": "12 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0489",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "additionalValue": "P12M",
+                "additionalInfo": "12 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0489",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P12M",
+                "additionalInfo": "12 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.042",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "additionalValue": "P24M",
+                "additionalInfo": "24 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0419",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P24M",
+                "additionalInfo": "24 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "additionalValue": "P36M",
+                "additionalInfo": "36 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0399",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P36M",
+                "additionalInfo": "36 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.03",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "additionalValue": "P48M",
+                "additionalInfo": "48 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0299",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P48M",
+                "additionalInfo": "48 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0305",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "additionalValue": "P60M",
+                "additionalInfo": "60+ Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0304",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P60M",
+                "additionalInfo": "60+ Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.045",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "additionalValue": "P18M",
+                "additionalInfo": "18 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0449",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P18M",
+                "additionalInfo": "18 Months",
+                "additionalInfoUri": "https://www.australianunity.com.au/banking/term-deposits",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 0,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://open-banking.australianunity.com.au/cds-au/v1/banking/products/TermDeposit_Standard"
+    }
 }

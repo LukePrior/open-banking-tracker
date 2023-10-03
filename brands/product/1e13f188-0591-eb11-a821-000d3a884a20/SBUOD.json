@@ -1,9 +1,105 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Not acceptable value in headers x-v or x-min-v"
-        }
-    ]
+    "data": {
+        "productId": "SBUOD",
+        "effectiveFrom": "2021-06-24T14:00:00.000Z",
+        "effectiveTo": "2999-12-30T13:00:00.000Z",
+        "lastUpdated": "2023-08-31T14:00:00.000Z",
+        "productCategory": "OVERDRAFTS",
+        "name": "Unsecured Business Overdraft",
+        "description": "Manage your short-term cash flow, unexpected expenses, or simply have access to extra credit when you need it.",
+        "brand": "Suncorp",
+        "brandName": "Null",
+        "applicationUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html",
+            "termsUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html",
+            "eligibilityUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html",
+            "feesAndPricingUri": "https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/personal-business-lending-fees-and-charges.pdf"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Interest rate type: Variable",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Repayment type: Interest is charged on the portion of the overdraft that is used, no set principal repayments",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Term: Ongoing limit, no fixed term",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Security: Unsecured",
+                "additionalInfoUri": "https://www.suncorp.com.au/banking/business/lending/overdraft.html"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "10000.00",
+                "additionalInfo": "Maximum limit of $10,000 for Greenfield or start-ups with a registered ABN"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "25000.00",
+                "additionalInfo": "Maximum limit of $25,000 for Businesses established and registered for GST > 1 year"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "50000.00",
+                "additionalInfo": "Maximum limit of $50,000 for Businesses established and registered for GST > 2 years"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "You must be a registered Australian business with a current ABN or ACN."
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "You must be able to prove 'satisfactory conduct' on all bank accounts over the last 6 months for all existing Suncorp Bank accounts and loans and have satisfactory credit bureau reports, subject to credit criteria."
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "If you are new to Suncorp Bank, copies of your last 6 months of bank statements for business and personal accounts held at another bank need to be provided with your application"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Quarterly Service Fee",
+                "feeType": "PERIODIC",
+                "amount": "75.00",
+                "currency": "AUD",
+                "additionalValue": "P3M"
+            },
+            {
+                "name": "Upfront Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "250.00",
+                "currency": "AUD"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1549",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://id-ob.suncorpbank.com.au/cds-au/v1/banking/products/SBUOD"
+    },
+    "meta": {}
 }

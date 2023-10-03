@@ -1,12 +1,122 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "S02.1",
+        "effectiveFrom": "2022-06-23T03:00:41Z",
+        "effectiveTo": "2030-06-24T23:00:50Z",
+        "lastUpdated": "2023-08-23T20:51:06Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "MySavings account",
+        "description": "Our MySavings account offers you the freedom of no minimum balance, no account keeping or transaction fees and no minimum monthly deposit requirements.",
+        "brand": "Challenger Bank",
+        "brandName": "Challenger Bank",
+        "applicationUri": "https://apply.challenger.com.au/banking/SelfService/servletcontroller?ProductType=CBL_ACCOUNT_MYSAV&CustomerType=Individual",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.challenger.com.au/bankaccounts",
+            "termsUri": "https://www.challenger.com.au/bankgeneralterms",
+            "feesAndPricingUri": "https://www.challenger.com.au/bankfees"
+        },
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY",
+                "additionalInfo": "Make fee-free bill payments using BPAY via Internet Banking or from our app."
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Make unlimited fee-free transactions via Internet Banking or Mobile Banking."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Make fee-free Pay anyone or BPAY transactions via Internet Banking or from our app."
             }
-        }
-    ]
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "To open an account, you must be solely a tax resident of Australia.",
+                "additionalInfoUri": "http://www.challenger.com.au/bankgeneralterms"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "14",
+                "additionalInfo": "To open an account, you must be 14 years or older.",
+                "additionalInfoUri": "http://www.challenger.com.au/bankgeneralterms"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "To open an account, you must be an existing customer with a valid email address and an Australian mobile number.",
+                "additionalInfoUri": "http://www.challenger.com.au/bankgeneralterms"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "EVENT",
+                "name": "Audit certificate",
+                "amount": "35.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged for Audit Certificates.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "Electronic transfer - Branch assisted",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged when one-off Pay anyone, BPAY, or transfers are made on behalf of customers by us.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "PAYMENT",
+                "name": "Periodical payment - Branch assisted",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged when periodical Pay anyone or BPAY payments are made on behalf of customers by us. Fee charged per transaction.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Overdrawn account",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged on overdrawn accounts (per occurrence).",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Voucher retrieval",
+                "currency": "AUD",
+                "additionalValue": "Voucher retrieval fee. Minimum $20.00 ($60 per hour).",
+                "additionalInfo": "Fee charged for voucher/information retrieval by us.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Dishonour fee",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Dishonour fee charged on Pay anyone, or BPAY dishonours.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Statement reissue",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.",
+                "additionalInfoUri": "https://www.challenger.com.au/bankfees"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0310",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "depositRateType": "VARIABLE"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.openbanking.challenger.com.au/cds-au/v1/banking/products/S02.1"
+    }
 }

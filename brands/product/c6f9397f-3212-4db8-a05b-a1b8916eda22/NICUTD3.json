@@ -1,12 +1,205 @@
 {
-    "errors": [
-        {
-            "code": "PCUA006",
-            "title": "Unsupported Version",
-            "detail": "Unable to find the version requested in x-v",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Header/UnsupportedVersion"
+    "data": {
+        "productId": "NICUTD3",
+        "effectiveFrom": "2020-09-13T14:00:00Z",
+        "lastUpdated": "2023-09-25T23:29:18Z",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Young Saver Term Deposit with interest paid at maturity/annually",
+        "description": "For those aged up to 19yrs, take advantage of great returns on our term deposits from $1000,  with interest paid at maturity/annually",
+        "brand": "Northern Inland Credit Union",
+        "brandName": "NICU",
+        "applicationUri": "https://www.nicu.com.au/about-us/membership",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://nicu.com.au/banking/investments/term-deposits#term-deposit-for-under-20s",
+            "termsUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf",
+            "eligibilityUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf",
+            "feesAndPricingUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_Fees_Charges_MemberLoyaltyProgram.pdf"
+        },
+        "features": [
+            {
+                "featureType": "FREE_TXNS",
+                "additionalValue": "0.00",
+                "additionalInfo": "No account keeping fees or transaction fees charged on Term Deposits",
+                "additionalInfoUri": "https://nicu.com.au/banking/investments/term-deposits"
+            },
+            {
+                "featureType": "LOYALTY_PROGRAM",
+                "additionalValue": "Member Loyalty Program",
+                "additionalInfo": "By increasing your total balance (deposits and loans) through saving, investing and borrowing with us, you pay fewer transaction costs.",
+                "additionalInfoUri": "https://nicu.com.au/about-us/member-loyalty-program"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Government guaranteed  deposits",
+                "additionalInfo": "Deposits to this account are covered under the Australian Financial Claims Scheme up to $250,000 in total balances for each account holder at Northern Inland Credit Union",
+                "additionalInfoUri": "https://nicu.com.au/about-us-financial-claims-scheme.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Early Withdrawal",
+                "additionalInfo": "If you withdraw funds prior to maturity, interest is recalculated at the On Call Savings Account rate, except on hardship grounds at our discretion",
+                "additionalInfoUri": "https://asset.nicu.com.au/files/Product%20Fact%20Sheets/NICU_PFS_TermDeposits.pdf"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Maturity Reminders",
+                "additionalInfo": "We'll send you a term deposit maturity advice so that you can inform us how you would like to reinvest it if you haven't already given us instructions."
             }
-        }
-    ]
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000",
+                "additionalInfo": "Term Deposit for 0-19yr olds"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "19",
+                "additionalInfo": "Maximum age 19 years"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "AU",
+                "additionalInfo": "Individuals must be citizens or permanent residents of Australia."
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0425",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P9M",
+                "additionalValue": "P9M",
+                "additionalInfo": "$1,000 - $4,999",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 9,
+                        "maximumValue": 10,
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "additionalInfo": "Interest paid at maturity. 0-19yr olds only",
+                        "name": "AMOUNT",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0490",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "$1,000 - $4,999",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12,
+                        "maximumValue": 13,
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "additionalInfo": "Interest paid at maturity. 0-19yr olds only",
+                        "name": "AMOUNT",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0395",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P24M",
+                "additionalValue": "P1Y",
+                "additionalInfo": "$1,000 - $4,999",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 25,
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "additionalInfo": "Interest paid at maturity. 0-19yr olds only",
+                        "name": "AMOUNT",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0350",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "additionalValue": "P3M",
+                "additionalInfo": "$1,000 - $4,999",
+                "tiers": [
+                    {
+                        "additionalInfo": "Interest paid at maturity. 0-19yr olds only",
+                        "name": "AMOUNT",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 3,
+                        "maximumValue": 4,
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            },
+            {
+                "rate": "0.0420",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "additionalValue": "P6M",
+                "additionalInfo": "$1,000 - $4,999",
+                "tiers": [
+                    {
+                        "name": "TERM",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 6,
+                        "maximumValue": 7,
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "additionalInfo": "Interest paid at maturity. 0-19yr olds only",
+                        "name": "AMOUNT",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 4999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "FIXED"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.cds.nicu.com.au/cds-au/v1/banking/products/NICUTD3"
+    }
 }

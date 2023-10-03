@@ -1,9 +1,736 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Not acceptable value in headers x-v or x-min-v"
-        }
-    ]
+    "data": {
+        "productId": "9b408eec-e2ff-4c65-a19f-d72fbaa181f9",
+        "effectiveFrom": "2000-05-21T23:00:00.000Z",
+        "effectiveTo": "9999-12-31T01:00:00.000Z",
+        "lastUpdated": "2023-08-24T14:00:00.000Z",
+        "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Orange Advantage",
+        "description": "Includes a 100% interest offset when linked to our Orange Everyday bank account.",
+        "brand": "ING",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.ing.com.au/home-loans/orange-advantage.html"
+        },
+        "features": [
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited electronic transactions."
+            },
+            {
+                "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
+                "additionalValue": "Discounts on your Home & Contents insurance",
+                "additionalInfo": "Breathe easier and save 30% on new policies when you combine home with contents insurance online."
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "No need for BSB and account number. Receive real time payments using your own unique ID."
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY",
+                "additionalInfo": "Make payments the easy way."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Transaction notification",
+                "additionalInfo": "Receive SMS notifications when your balance is above or below an amount, a withdrawal or deposit is made or when your salary is deposited."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Everyday Round Up",
+                "additionalInfo": "Round up eligible Orange Everyday card purchases to the nearest $1 or $5, and the difference goes straight from your Orange Everyday to pay down on your Orange Advantage home loan."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Extra repayments",
+                "additionalInfo": "No fees for extra repayments."
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Our flexible redraw facility gives you access to your additional payments when you need them. There is no minimum redraw amount, no limit on how many redraw transactions you can make and no redraw fee."
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "Reduce your interest payable on your home loan with a 100% offset facility when you make a deposit into your linked Orange Everyday bank account."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "50000.00"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "3000000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "You must be aged 18 or over."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "AU",
+                "additionalInfo": "Available to Australian citizen or Australian permanent resident."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "NZ",
+                "additionalInfo": "Available to New Zealand citizens living in Australia."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Have and maintain an Australian residential address."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Annual fee",
+                "feeType": "PERIODIC",
+                "amount": "299.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "With no monthly or transaction fees."
+            },
+            {
+                "name": "Settlement fee",
+                "feeType": "EVENT",
+                "amount": "299.00",
+                "currency": "AUD",
+                "additionalInfo": "For each loan application and is charged at settlement."
+            },
+            {
+                "name": "Combination loan",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD",
+                "additionalInfo": "If applying for more than one loan, a split fee of $100 for each additional loan is payable."
+            },
+            {
+                "name": "Change to letter of offer",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "This is payable if changes are made to the letter of offer between disclosure date (date of original issue) and settlement."
+            },
+            {
+                "name": "Swift",
+                "feeType": "EVENT",
+                "amount": "35.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Additional statements",
+                "feeType": "EVENT",
+                "amount": "7.00",
+                "currency": "AUD",
+                "additionalInfo": "$7 for each statement period."
+            },
+            {
+                "name": "Trace request",
+                "feeType": "EVENT",
+                "amount": "60.00",
+                "currency": "AUD",
+                "additionalInfo": "$60 an hour."
+            },
+            {
+                "name": "Audit certificate completed",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Special answer fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Increase/decrease to loan amount",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Product switch",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Substitution of security",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Discharge Full and Partial",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Consent to Subdivision/2nd mortgage",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Removal or change to borrowers or guarantors",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Dishonoured cheque",
+                "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Direct debit rejected",
+                "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalInfo": "$9 for each direct debit rejected."
+            },
+            {
+                "name": "Arrears Reminder Letter",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "$20 for each letter."
+            },
+            {
+                "name": "Arrears Default Letter",
+                "feeType": "EVENT",
+                "amount": "40.00",
+                "currency": "AUD",
+                "additionalInfo": "$40 for each letter."
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0812",
+                "comparisonRate": "0.0839",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 149999.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0785",
+                "comparisonRate": "0.0825",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 149999.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0820",
+                "comparisonRate": "0.0846",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 149999.0
+                    }
+                ],
+                "additionalInfo": "Investor - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0845",
+                "comparisonRate": "0.0857",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 149999.0
+                    }
+                ],
+                "additionalInfo": "Investor - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0584",
+                "comparisonRate": "0.0613",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0614",
+                "comparisonRate": "0.0643",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0649",
+                "comparisonRate": "0.0677",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 91.0,
+                        "maximumValue": 95.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0632",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0604",
+                "comparisonRate": "0.0633",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    }
+                ],
+                "additionalInfo": "Investor - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0629",
+                "comparisonRate": "0.0641",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0
+                    }
+                ],
+                "additionalInfo": "Investor - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0584",
+                "comparisonRate": "0.0613",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "maximumValue": 999999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0614",
+                "comparisonRate": "0.0643",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0649",
+                "comparisonRate": "0.0677",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 91.0,
+                        "maximumValue": 95.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0632",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "maximumValue": 999999.0
+                    },
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0604",
+                "comparisonRate": "0.0633",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0
+                    }
+                ],
+                "additionalInfo": "Investor - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0584",
+                "comparisonRate": "0.0613",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0632",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.0
+                    }
+                ],
+                "additionalInfo": "Owner occupier - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0629",
+                "comparisonRate": "0.0641",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 1.0,
+                        "maximumValue": 80.0
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0
+                    }
+                ],
+                "additionalInfo": "Investor - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0662",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Investor - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0662",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Investor - Principal & Interest."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0664",
+                "comparisonRate": "0.0673",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000.0,
+                        "maximumValue": 499999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Investor - Interest only."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0664",
+                "comparisonRate": "0.0673",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Loan to Value Ratio",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 81.0,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Total borrowing",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Investor - Interest only."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://id.ob.ing.com.au/cds-au/v1/banking/products/9b408eec-e2ff-4c65-a19f-d72fbaa181f9"
+    },
+    "meta": {}
 }

@@ -1,0 +1,134 @@
+{
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Access to funds via a linked SCCU transaction account",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "1.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "2000000.00",
+                "additionalInfo": "in total per account holder",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "6MNTH-$6_MONTHLY_ACCOUNT_FEE_-_STARSAVER",
+                "feeType": "PERIODIC",
+                "amount": "6.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.sccu.com.au/schedule-of-fees-charges/",
+                "discounts": [
+                    {
+                        "description": "Over $3,000 Account Balance Fee Waived",
+                        "discountType": "BALANCE",
+                        "amount": "0.00",
+                        "additionalValue": "3000",
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Over $30,000 total customer balance - fee waived",
+                        "discountType": "BALANCE",
+                        "amount": "0.00",
+                        "additionalValue": "30000",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "NATURAL_PERSON",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    },
+                    {
+                        "description": "Under 21 years old - fee waived",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "0.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "21",
+                                "additionalInfo": "Under 21 years old",
+                                "additionalInfoUri": ""
+                            },
+                            {
+                                "discountEligibilityType": "NATURAL_PERSON",
+                                "additionalInfo": "",
+                                "additionalInfoUri": ""
+                            }
+                        ],
+                        "additionalInfo": "",
+                        "additionalInfoUri": ""
+                    }
+                ]
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0365",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "BONUS INTEREST",
+                "additionalInfo": "Bonus interest paid when a minimum balance increase of $200 is achieved for the calendar month",
+                "additionalInfoUri": "https://www.sccu.com.au/deposit-interest-rate-schedule/"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0125",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Bonus interest paid when a minimum balance increase of $200 is achieved for the calendar month",
+                "additionalInfoUri": "https://www.sccu.com.au/deposit-interest-rate-schedule/"
+            }
+        ],
+        "productId": "BUSINESS_STAR_SAVER",
+        "effectiveFrom": "2023-08-08T00:00:00.000+10:00",
+        "lastUpdated": "2023-09-21T16:05:44.000+10:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "BUSINESS STAR SAVER",
+        "description": "Star Saver savings account for Business",
+        "brand": "S",
+        "brandName": "SCCU",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.sccu.com.au/business/business-banking/business-star-saver/",
+            "termsUri": "https://www.sccu.com.au/about-us/reports-and-disclosures/",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "https://www.sccu.com.au/schedule-of-fees-charges/",
+            "bundleUri": ""
+        }
+    },
+    "links": {
+        "self": "https://cdr.sccu.com.au/openbanking/cds-au/v1/banking/products/BUSINESS_STAR_SAVER"
+    },
+    "meta": {}
+}

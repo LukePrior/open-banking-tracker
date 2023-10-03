@@ -1,9 +1,175 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "None of the versions requested are supported"
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "You can do your everyday banking through Bankwest Online Banking and the Bankwest App from anywhere, 24/7 - it's easy and secure.",
+                "additionalInfoUri": "https://www.bankwest.com.au/help/how-do-i-set-up-online-banking"
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalValue": "Additional Repayments",
+                "additionalInfo": "Make extra payments - pay more than your minimum repayments as and when you choose.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Easy Alerts",
+                "additionalInfo": "Remember when a repayment is due. Get an alert before your minimum monthly repayment is due.",
+                "additionalInfoUri": "https://www.bankwest.com.au/help/online-banking/bankwest-easy-alerts"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes",
+                "additionalInfo": "This means you can receive faster payments into this account, often in real time. Keep in mind - this account isn't eligible for PayID."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Fixed interest rate",
+                "additionalInfo": "Great fixed rate - have peace of mind knowing exactly what your repayments will be.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Repayment options that suit you. Choose the loan term - from three to seven years - and repayment frequency.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalValue": "Redraw",
+                "additionalInfo": "Access surplus funds 24/7 - redraw online and on the go with the Bankwest App.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "50000.00",
+                "additionalInfo": "Maximum limit $50,000.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "3000.00",
+                "additionalInfo": "Minimum limit $3,000.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "MIN_INCOME",
+                "additionalValue": "20000",
+                "additionalInfo": "Regular income of over $20,000 a year.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Available to Australian citizens or permanent residents and to New Zealand citizens residing in Australia.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "The Bankwest Unsecured Personal Loan is an account for personal customers who are over 18 years of age.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Applications for Personal Loans are subject to the Bank's normal credit approval.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Repeat Statement of Account Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "Cost is per statement and payable on customer request to issue a copy of the current or a previously issued statement."
+            },
+            {
+                "name": "Statement Faxing Fee",
+                "feeType": "EVENT",
+                "amount": "4.00",
+                "currency": "AUD",
+                "additionalInfo": "Cost is per statements when a customer requests for a statement to be faxed."
+            },
+            {
+                "name": "Bank Cheque Fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you request a bank cheque."
+            },
+            {
+                "name": "Arrears Notice Fee",
+                "feeType": "EVENT",
+                "amount": "25.00",
+                "currency": "AUD",
+                "additionalInfo": "Cost is per notice and payable upon notification that your account is in arrears, during the period the loan is in default."
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable on issue of a statutory default notice, during the period the loan is in default."
+            },
+            {
+                "name": "Early Repayment Fee",
+                "feeType": "EXIT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you repay your loan within the first 24 months from the date the loan, or any part, is advanced."
+            },
+            {
+                "name": "Loan Maintenance Fee",
+                "feeType": "PERIODIC",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable monthly in arrears on the monthly repayment due date."
+            },
+            {
+                "name": "Application Fee",
+                "feeType": "UPFRONT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "There is no application fee."
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.1099",
+                "comparisonRate": "0.1132",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            }
+        ],
+        "productId": "e116305697ad4817a3487206f6bf18b1",
+        "effectiveFrom": "2008-12-21T13:00:00Z",
+        "effectiveTo": "9999-12-30T13:00:00Z",
+        "lastUpdated": "2023-09-26T00:27:03.826337Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Unsecured Personal Loan",
+        "description": "Our Unsecured Personal Loan is great for consolidating your debt, renovating your home, taking a holiday, buying a car or planning a wedding.",
+        "brand": "Bankwest",
+        "brandName": "Bankwest",
+        "applicationUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate",
+            "termsUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate#content-lcd",
+            "eligibilityUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate",
+            "feesAndPricingUri": "https://www.bankwest.com.au/personal/personal-loans/unsecured-fixed-rate"
         }
-    ]
+    },
+    "links": {
+        "self": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/e116305697ad4817a3487206f6bf18b1"
+    }
 }

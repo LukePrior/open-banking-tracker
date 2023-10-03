@@ -1,9 +1,166 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Requested: 3-3 Available: 4"
+    "data": {
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OVERDRAFT",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "FREE_TXNS_ALLOWANCE",
+                "additionalValue": "no limit to amount of card or branch withdrawals",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "55",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "MEMBER_CHEQUE_PRESENTED",
+                "feeType": "TRANSACTION",
+                "amount": "1.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalInfo": "Fee for every cheque presented",
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
+            },
+            {
+                "name": "DECLINED_ATM_OR_EFTPOS_TRANSACTION",
+                "feeType": "EVENT",
+                "amount": "1.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Each time an ATM or EFTPOS transaction is declined",
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
+            },
+            {
+                "name": "ATM_BALANCE_ENQUIRY",
+                "feeType": "EVENT",
+                "amount": "0.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Each time a balance enquiry is requested at an ATM",
+                "additionalInfoUri": "https://www.gmcu.com.au/pds"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "My Freedom_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 499.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.02",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "My Freedom_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 499.01,
+                        "maximumValue": 48000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.02",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "My Freedom_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 48000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.gmcu.com.au/interest-rates"
+            }
+        ],
+        "productId": "My_Freedom",
+        "lastUpdated": "2023-06-30T12:46:15.000+10:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "My Freedom",
+        "description": "The My Freedom Account is a transaction account for persons aged 55 years and above and who no longer work full time. Funds are available at call",
+        "brand": "Goulburn Murray Credit Union Co-Operative Ltd",
+        "brandName": "Goulburn Murray Credit Union Co-Operative Ltd",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.gmcu.com.au/products-services/accounts",
+            "termsUri": "https://www.gmcu.com.au/pds",
+            "eligibilityUri": "https://www.gmcu.com.au/pds",
+            "feesAndPricingUri": "https://www.gmcu.com.au/pds",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://secure.gmcu.com.au/OpenBanking/cds-au/v1/banking/products/My_Freedom"
+    },
+    "meta": {}
 }
