@@ -7,10 +7,12 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;TRANSACT01&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-06-29T00:00:00Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-08-28T00:00:00Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;ANZ Plus&quot;,
     &quot;description&quot;: &quot;ANZ Plus&quot;,
+    &quot;brand&quot;: &quot;ANZ Plus&quot;,
+    &quot;brandName&quot;: &quot;ANZ Plus&quot;,
     &quot;applicationUri&quot;: &quot;https://anz.com/plus/products&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -23,7 +25,7 @@
     &quot;cardArt&quot;: [
         {
             &quot;title&quot;: &quot;Consumer Visa Debit Card Standard&quot;,
-            &quot;imageUri&quot;: &quot;&quot;
+            &quot;imageUri&quot;: &quot;https://anz.com.au/content/dam/anzplus/images/open-banking/anzplus-visa-debit-card-512px.png&quot;
         }
     ],
     &quot;bundles&quot;: [
@@ -77,6 +79,10 @@
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://anz.com/plus/products&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -88,41 +94,34 @@
             &quot;additionalValue&quot;: &quot;15&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;MAX_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;199&quot;
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Permanent Resident, Australian Citizen, Australian Temporary Resident&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Visa&quot;,
+            &quot;name&quot;: &quot;OVERSEAS NON ANZ ATM FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;transactionRate&quot;: &quot;0.03&quot;,
-            &quot;additionalInfo&quot;: &quot;Domestic Visa Credit Interchange Rates&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;See the ANZ Plus and ANZ Save Accounts T&amp;Cs for details on fees&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://anz.com/plus/terms&quot;
         },
         {
-            &quot;name&quot;: &quot;Overseas ATM Usage&quot;,
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;Overseas ATM Usage&quot;,
+            &quot;name&quot;: &quot;OVERSEAS TRANSACTION FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;See the ANZ Plus and ANZ Save Accounts T&amp;Cs for details on fees&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://anz.com/plus/terms&quot;
-        }
-    ],
-    &quot;depositRates&quot;: [
+        },
         {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://anz.com/plus/terms&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$0.00 or more&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 999999999,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ]
+            &quot;name&quot;: &quot;INTERNATIONAL INWARD MONEY TRANSFER FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;See the ANZ Plus and ANZ Save Accounts T&amp;Cs for details on fees&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://anz.com/plus/terms&quot;
         }
     ]
 }</textarea>

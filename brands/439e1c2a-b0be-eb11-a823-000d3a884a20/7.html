@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;7&quot;,
     &quot;effectiveFrom&quot;: &quot;2006-06-30T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-04-26T02:13:25.1811298Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-28T00:00:14.2127639Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;I21 Term Deposit 6 Mths&quot;,
     &quot;description&quot;: &quot;I21 Term Deposit 6 Mths&quot;,
@@ -16,11 +16,11 @@
     &quot;applicationUri&quot;: &quot;https://www.coastline.com.au/invest/term-deposits/&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.coastline.com.au/invest/&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.coastline.com.au/invest/term-deposits/&quot;,
         &quot;termsUri&quot;: &quot;https://www.coastline.com.au/about-coast/conditions-of-use/&quot;,
         &quot;eligibilityUri&quot;: &quot;https://www.coastline.com.au/about-coast/conditions-of-use/&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.coastline.com.au/about-coast/fees-and-charges/&quot;,
-        &quot;bundleUri&quot;: &quot;https://www.coastline.com.au/transact/&quot;
+        &quot;bundleUri&quot;: &quot;https://www.coastline.com.au/invest/term-deposits/&quot;
     },
     &quot;constraints&quot;: [
         {
@@ -40,9 +40,49 @@
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;rate&quot;: &quot;0.044&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/$25000-$49999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 25000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.043&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/$5000-$24999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 5000.0,
+                    &quot;maximumValue&quot;: 24999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/$50000+&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P6M&quot;
         }
     ]

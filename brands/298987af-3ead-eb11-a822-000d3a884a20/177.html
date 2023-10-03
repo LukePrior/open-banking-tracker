@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;177&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-09-23T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-08-09T08:00:28.8908482Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-08T06:00:29.0444255Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Commercial Property Loan&quot;,
     &quot;description&quot;: &quot;Commercial Property Loan&quot;,
@@ -49,11 +49,13 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;4000000.00&quot;
+            &quot;additionalValue&quot;: &quot;4000000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum loan amount $4,000,000.00&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;250000.00&quot;
+            &quot;additionalValue&quot;: &quot;250000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum loan amount $250,000.00&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -85,9 +87,10 @@
         },
         {
             &quot;name&quot;: &quot;Monthly Fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;25.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;Ongoing monthly service fee&quot;
         },
         {
@@ -96,13 +99,6 @@
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable if the loan amount is paid in full within 3 years. 1.00% of the total loan amount applied for&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Fixed Loan Break Cost&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Early repayment adjustment is payable if Gateway suffers a loss when the loan is repaid in full during a fixed rate period. \r\nAmount is unascertainable (ERA formula available upon request)&quot;
         },
         {
             &quot;name&quot;: &quot;Split Loan Account Fee&quot;,
@@ -150,21 +146,23 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0654&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0696&quot;,
+            &quot;rate&quot;: &quot;0.0679&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalInfo&quot;: &quot;Commercial Property Loan (&lt;60%)&quot;
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;Commercial Property Loan LVR &gt;60%&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0664&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0706&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;additionalInfo&quot;: &quot;Commercial Property Loan (&gt;60%)\r\n&quot;
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;Commercial Property Loan LVR &lt;60%&quot;
         }
     ]
 }</textarea>

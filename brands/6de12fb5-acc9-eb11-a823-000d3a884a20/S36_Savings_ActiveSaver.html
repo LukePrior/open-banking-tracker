@@ -6,16 +6,31 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
+    &quot;productId&quot;: &quot;S36_Savings_ActiveSaver&quot;,
+    &quot;effectiveFrom&quot;: &quot;2020-08-20T08:00:41Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-15T08:34:18Z&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Active Saver&quot;,
+    &quot;description&quot;: &quot;Be rewarded for actively saving and leaving your money alone with bonus interest.&quot;,
+    &quot;brand&quot;: &quot;AUBL&quot;,
+    &quot;brandName&quot;: &quot;Australian Unity Bank&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#how-to-apply&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver&quot;,
+        &quot;termsUri&quot;: &quot;https://www.australianunity.com.au/banking/terms-and-conditions&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#how-to-apply&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#rates-and-fees&quot;
+    },
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
-            &quot;additionalValue&quot;: &quot;NPP Enabled&quot;,
-            &quot;additionalInfo&quot;: &quot;NPP Enabled&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Manage your account from anywhere with our Internet Banking or mobile banking app.&quot;,
+            &quot;additionalValue&quot;: &quot;Yes&quot;,
             &quot;additionalInfo&quot;: &quot;Manage your account from anywhere with our Internet Banking or mobile banking app.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver&quot;
         }
@@ -23,158 +38,106 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;250.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Deposit min $250 p/mth AND No withdrawals&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;additionalValue&quot;: &quot;250&quot;,
+            &quot;additionalInfo&quot;: &quot;Deposit min $250 p/mth AND No withdrawals&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalInfo&quot;: &quot;No maximum balance, bonus interest applies to balances up to $500,000&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;additionalValue&quot;: &quot;0&quot;,
+            &quot;additionalInfo&quot;: &quot;No maximum balance, bonus interest applies to balances up to $500,000&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;16&quot;,
-            &quot;additionalInfo&quot;: &quot;To apply you need to be 16 years or over.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;additionalInfo&quot;: &quot;To apply you need to be 16 years or over.&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;You must have an Australian residential address.&quot;,
-            &quot;additionalInfo&quot;: &quot;You must have an Australian residential address.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;additionalInfo&quot;: &quot;You must have an Australian residential address.&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Be registered for Australian Unity Internet Banking and have an email address.&quot;,
-            &quot;additionalInfo&quot;: &quot;Be registered for Australian Unity Internet Banking and have an email address.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;additionalInfo&quot;: &quot;Be registered for Australian Unity Internet Banking and have an email address.&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;S36_ELECTRONIC_FUNDS_TRANSFER_FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Staff assisted transactions&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged for each transaction we perform on your behalf. Including but not limited to: BPAY, periodical payments, balance enquiries, electronic transfers, external transfers (such as to a nonAustralian Unity Bank Limited account) and other transactions performed by us. Other transactions include any transaction from/to your account that is manually processed by Australian Unity Bank staff that Australian Unity determines to be a staff assisted transaction.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/wealth/~/media/publicsite/documents/banking-new/forms/scheduleoffeescharges-transactionlimits.ashx?la=en&quot;
+        },
+        {
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Electronic funds transfer&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Charged for each transaction we perform on your behalf. Including but not limited to: BPAY, periodical payments, balance enquiries, electronic transfers and other transaction. Terms and Conditions and fees and charges apply to the eligible account.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/wealth/~/media/publicsite/documents/banking-new/forms/scheduleoffeescharges-transactionlimits.ashx?la=en&quot;
         },
         {
-            &quot;name&quot;: &quot;S36_PAPER_STATEMENT_FEE&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Charged when you request paper statements. Electronic statements through internet banking are fee free. Terms and Conditions and fees and charges apply to the eligible account.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/wealth/~/media/publicsite/documents/banking-new/forms/scheduleoffeescharges-transactionlimits.ashx?la=en&quot;
-        },
-        {
-            &quot;name&quot;: &quot;S36_SAME_DAY_EFT_VIA_RTGS_FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Same day EFT (via RTGS)&quot;,
             &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Charged to when you request same-day EFT be made to a non Australian Unity account. Terms and Conditions and fees and charges apply to the eligible account.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/wealth/~/media/publicsite/documents/banking-new/forms/scheduleoffeescharges-transactionlimits.ashx?la=en&quot;
         },
         {
-            &quot;name&quot;: &quot;S36_STAFF_ASSISTED_TRANSACTION_FEE&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Paper Statement fee&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Charged for each transaction we perform on your behalf. Including but not limited to: BPAY, periodical payments, balance enquiries, electronic transfers and other transaction. Terms and Conditions and fees and charges apply to the eligible account.&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged when you request paper statements. Electronic statements through internet banking are fee free. Terms and Conditions and fees and charges apply to the eligible account.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/wealth/~/media/publicsite/documents/banking-new/forms/scheduleoffeescharges-transactionlimits.ashx?la=en&quot;
         }
     ],
     &quot;depositRates&quot;: [
         {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0001&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Be rewarded for actively saving and leaving your money alone with bonus interest.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#features-and-benefits&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Active Saver_Tier_1&quot;,
+                    &quot;name&quot;: &quot;BALANCE&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 500000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0001&quot;,
+            &quot;rate&quot;: &quot;0.0449&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Bonus interest applies to balances up to $500K but base interest has no maximum balance.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#features-and-benefits&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Active Saver_Tier_2&quot;,
+                    &quot;name&quot;: &quot;BALANCE&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.01,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                    &quot;minimumValue&quot;: 250,
+                    &quot;maximumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0279&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;Active Saver_Tier_1&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 500000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;Active Saver_Tier_2&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.01,
-                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
+            &quot;depositRateType&quot;: &quot;BONUS&quot;
         }
-    ],
-    &quot;productId&quot;: &quot;S36_Savings_ActiveSaver&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-08T10:56:03.000+10:00&quot;,
-    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
-    &quot;name&quot;: &quot;Active Saver&quot;,
-    &quot;description&quot;: &quot;Be rewarded for actively saving and leaving your money alone with bonus interest.&quot;,
-    &quot;brand&quot;: &quot;1&quot;,
-    &quot;brandName&quot;: &quot;AUSTRALIAN UNITY&quot;,
-    &quot;applicationUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#how-to-apply&quot;,
-    &quot;isTailored&quot;: false,
-    &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver&quot;,
-        &quot;termsUri&quot;: &quot;https://www.australianunity.com.au/banking/terms-and-conditions&quot;,
-        &quot;eligibilityUri&quot;: &quot;https://www.australianunity.com.au/banking/terms-and-conditions&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.australianunity.com.au/banking/savings-accounts/active-saver#rates-and-fees&quot;,
-        &quot;bundleUri&quot;: &quot;&quot;
-    }
+    ]
 }</textarea>
     </div>
   </body>

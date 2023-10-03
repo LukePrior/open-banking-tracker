@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;bosbasic_oo&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-23T07:30:40Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-08T00:12:04Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;BOS Basic Home Loan Owner Occupied&quot;,
     &quot;description&quot;: &quot;Looking to buy a new home and want to keep things simple? Our BOS Basic Home Loan, with no fees and a competitive interest rate, is the one for you.&quot;,
@@ -20,22 +20,32 @@
         &quot;eligibilityUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-home-loan&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.banksyd.com.au/important-product-information&quot;
     },
+    &quot;status&quot;: &quot;APPROVED&quot;,
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;Redraw facility is available&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        }
+    ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;250000&quot;
+            &quot;additionalValue&quot;: &quot;100000&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;MINAGE&quot;,
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;18&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;NATURALPERSON&quot;
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;RESIDENCYSTATUS&quot;,
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Permanent Resident or Citizen. Residential address must be in Australia.&quot;
         },
         {
@@ -48,7 +58,8 @@
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;name&quot;: &quot;Application Fee&quot;,
             &quot;amount&quot;: &quot;600.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Application fee waived&quot;
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -73,21 +84,61 @@
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.0399&quot;,
+            &quot;rate&quot;: &quot;0.0574&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;LVR up to 80%&quot;,
+            &quot;additionalValue&quot;: &quot;&gt;60% to 80% LVR&quot;,
+            &quot;additionalInfo&quot;: &quot;$600 application fee waived&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
-        }
-    ],
-    &quot;features&quot;: [
-        {
-            &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalInfo&quot;: &quot;Redraw facility is available&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.6,
+                    &quot;maximumValue&quot;: 0.8,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0576&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;&gt;50% to 60% LVR&quot;,
+            &quot;additionalInfo&quot;: &quot;$600 application fee waived&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-home-loan&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 60%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.5,
+                    &quot;maximumValue&quot;: 0.6,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0571&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;LVR up to 50%&quot;,
+            &quot;additionalInfo&quot;: &quot;$600 application fee waived&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-home-loan&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 50%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 0.5,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0571&quot;
         }
     ]
 }</textarea>

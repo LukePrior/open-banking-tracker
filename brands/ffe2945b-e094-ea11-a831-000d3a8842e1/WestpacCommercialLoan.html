@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;WestpacCommercialLoan&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-08-12T03:54:04Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-07-28T04:57:43Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Commercial Loan&quot;,
     &quot;description&quot;: &quot;Our offering for Equipment and Vehicle finance needs with options to take loan to help your business take the next step&quot;,
@@ -68,19 +68,31 @@
             &quot;additionalValue&quot;: &quot;15000.00&quot;
         }
     ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
+            &quot;additionalInfo&quot;: &quot;A business entity domiciled in Australia or an individual 18 years and above or strata corporation domiciled in Australia and requires the funding for business or investment purposes other than investment in residential property&quot;
+        }
+    ],
     &quot;fees&quot;: [
         {
             &quot;name&quot;: &quot;Loan Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;450.00&quot;,
-            &quot;additionalValue&quot;: &quot;This Fee is appliable when the amount financed is less that $420,000&quot;
+            &quot;additionalInfo&quot;: &quot;This Fee is appliable when the amount financed is less that $420,000&quot;
         },
         {
             &quot;name&quot;: &quot;Loan Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;30.00&quot;,
             &quot;transactionRate&quot;: &quot;0.001&quot;,
-            &quot;additionalValue&quot;: &quot;This fee is applicable when the amount financed is greater than $420,000. The total fee applicable is 0.1% of the financed amount and $30.&quot;
+            &quot;additionalInfo&quot;: &quot;This fee is applicable when the amount financed is greater than $420,000. The total fee applicable is 0.1% of the financed amount and $30.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Loan Establishment Fee - Private Sale&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;600.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged in the event of a private sale, payable by you on or before the settlement date.&quot;
         },
         {
             &quot;name&quot;: &quot;Equipment Inspection Fee&quot;,
@@ -92,68 +104,58 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;750.00&quot;,
             &quot;currency&quot;: &quot;USD&quot;,
-            &quot;additionalValue&quot;: &quot;Applies for each registration of Security on the International Register and payable by you on or before the settlement date when this type of security is required for financed aircraft The AUD amount will be quoted to you as part of the settlement documentation where it applies. (I.e. Quote and Details)&quot;
+            &quot;additionalInfo&quot;: &quot;Applies for each registration of Security on the International Register and payable by you on or before the settlement date when this type of security is required for financed aircraft The AUD amount will be quoted to you as part of the settlement documentation where it applies. (I.e. Quote and Details)&quot;
         },
         {
             &quot;name&quot;: &quot;Aircraft - De-register Cape Town Security&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;450.00&quot;,
             &quot;currency&quot;: &quot;USD&quot;,
-            &quot;additionalValue&quot;: &quot;Applies each time we are required to remove a security registration from the International Register and payable by you on or before the date of removal. The AUD amount will be quoted to you before being charged.&quot;
+            &quot;additionalInfo&quot;: &quot;Applies each time we are required to remove a security registration from the International Register and payable by you on or before the date of removal. The AUD amount will be quoted to you before being charged.&quot;
         },
         {
             &quot;name&quot;: &quot;Aircraft - CASA Transfer of Ownership&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;130.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applies each time there is/will be a transfer of ownership with the Civil Aviation Safety Authority (CASA) and payable by you on or before the date of transfer.&quot;
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies each time there is/will be a transfer of ownership with the Civil Aviation Safety Authority (CASA) and payable by you on or before the date of transfer.&quot;
         },
         {
             &quot;name&quot;: &quot;Aircraft - RAA Transfer of Ownership&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;65.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is required&quot;
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is required&quot;
         },
         {
             &quot;name&quot;: &quot;Marine - Vessel Registration less than 24metres&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;1190.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is required&quot;
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies for each registration of a marine vessel with the Australian Maritime Safety Authority and payable by you on or before the settlement date when this type of security is required&quot;
         },
         {
             &quot;name&quot;: &quot;Substitution fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;230.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applicable for the substitution of Equipment and/or Guarantors and payable by you on or before the date of substitution&quot;
+            &quot;additionalInfo&quot;: &quot;Applicable for the substitution of Equipment and/or Guarantors and payable by you on or before the date of substitution&quot;
         },
         {
-            &quot;name&quot;: &quot;Assignment&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;450.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applicable for the assignment of Goods Loan products to a third party and payable by you on or before the date of the assignment&quot;
+            &quot;name&quot;: &quot;Break Costs&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;Break costs are not a fixed amount and are determined by a number of\nfactors specific to your product.&quot;
         },
         {
             &quot;name&quot;: &quot;Early Termination&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;400.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applicable when you terminate your Goods Loan, Lease or Hire Purchase early.&quot;
+            &quot;additionalInfo&quot;: &quot;Applicable when you terminate your Goods Loan, Lease or Hire Purchase early.&quot;
         },
         {
             &quot;name&quot;: &quot;Arrears Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;9.00&quot;,
-            &quot;additionalValue&quot;: &quot;Applicable each time a payment is not received within 15 days of its due date and is in addition to any overdue amount owing&quot;
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Applicable each time a payment is not received within 15 days of its due date and is in addition to any overdue amount owing&quot;
         },
         {
             &quot;name&quot;: &quot;Overdue interest&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;transactionRate&quot;: &quot;0.03&quot;,
-            &quot;additionalValue&quot;: &quot;This charge applies on overdue amount from the time it?s due until it?s paid.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Progress Payment Facility - Notice Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;additionalValue&quot;: &quot;Charged for each progress payment made on a Progress Payment Facility and is payable by you at the time of each progress payment.&quot;
+            &quot;transactionRate&quot;: &quot;0.00&quot;,
+            &quot;additionalInfo&quot;: &quot;This charge applies on overdue amount from the time it is due until it is paid.&quot;
         }
     ]
 }</textarea>

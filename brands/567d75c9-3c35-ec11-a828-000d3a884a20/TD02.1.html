@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;TD02.1&quot;,
     &quot;effectiveFrom&quot;: &quot;2022-06-23T03:00:58Z&quot;,
     &quot;effectiveTo&quot;: &quot;2030-06-24T23:00:08Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-26T23:37:24Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-24T21:24:51Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;Term Deposit - Business&quot;,
     &quot;description&quot;: &quot;A great way to reach your savings goals, with no fees and a competitive interest rate locked in for terms from 31 days to 60 months.&quot;,
@@ -23,11 +23,21 @@
         &quot;eligibilityUri&quot;: &quot;https://www.challenger.com.au/bankgeneralterms&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.challenger.com.au/bankfees&quot;
     },
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest can be reinvested back into the Term Deposit, paid to your account with us, or paid to another financial institution account.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Manage the Term Deposit maturity instructions from within Internet Banking or our app. Tell us how the principal and interest amounts are to be paid when your Term Deposit matures.&quot;
+        }
+    ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;5000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Our Term Deposits have a minimum balance of $5,000.00.&quot;
+            &quot;additionalValue&quot;: &quot;100000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Our Term Deposits have a minimum balance of $100,000.00.&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -38,17 +48,11 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Voucher/information retrieval(minimum fee)&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Voucher/information retrieval.&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.challenger.com.au/bankfees&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Voucher/information retrieval (per hour)&quot;,
-            &quot;amount&quot;: &quot;60.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;Voucher retrieval fee. Minimum $20.00 ($60 per hour).&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee charged for voucher/information retrieval by us.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.challenger.com.au/bankfees&quot;
         },
         {
@@ -69,7 +73,7 @@
     ],
     &quot;depositRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.0050&quot;,
+            &quot;rate&quot;: &quot;0.0385&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P31D&quot;,
             &quot;additionalValue&quot;: &quot;P31D&quot;,
@@ -78,7 +82,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -95,7 +99,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0255&quot;,
+            &quot;rate&quot;: &quot;0.0470&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P9M&quot;,
             &quot;additionalValue&quot;: &quot;P9M&quot;,
@@ -104,7 +108,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -121,7 +125,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0300&quot;,
+            &quot;rate&quot;: &quot;0.0470&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;additionalValue&quot;: &quot;P24M&quot;,
@@ -138,7 +142,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -147,7 +151,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0295&quot;,
+            &quot;rate&quot;: &quot;0.0465&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P24M&quot;,
@@ -164,7 +168,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -173,7 +177,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0170&quot;,
+            &quot;rate&quot;: &quot;0.0450&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P3M&quot;,
             &quot;additionalValue&quot;: &quot;P3M&quot;,
@@ -182,7 +186,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -199,7 +203,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0270&quot;,
+            &quot;rate&quot;: &quot;0.0480&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P12M&quot;,
@@ -216,7 +220,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -225,7 +229,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0215&quot;,
+            &quot;rate&quot;: &quot;0.0470&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P6M&quot;,
             &quot;additionalValue&quot;: &quot;P6M&quot;,
@@ -242,7 +246,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -251,7 +255,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0275&quot;,
+            &quot;rate&quot;: &quot;0.0485&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P12M&quot;,
             &quot;additionalValue&quot;: &quot;P12M&quot;,
@@ -260,7 +264,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -277,7 +281,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0300&quot;,
+            &quot;rate&quot;: &quot;0.0420&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;additionalValue&quot;: &quot;P36M&quot;,
@@ -286,7 +290,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -303,7 +307,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0295&quot;,
+            &quot;rate&quot;: &quot;0.0415&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P36M&quot;,
@@ -312,7 +316,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -329,7 +333,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0300&quot;,
+            &quot;rate&quot;: &quot;0.0410&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;additionalValue&quot;: &quot;P48M&quot;,
@@ -338,7 +342,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -355,7 +359,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0295&quot;,
+            &quot;rate&quot;: &quot;0.0405&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P48M&quot;,
@@ -364,7 +368,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -381,7 +385,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0300&quot;,
+            &quot;rate&quot;: &quot;0.0410&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;additionalValue&quot;: &quot;P60M&quot;,
@@ -390,7 +394,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -407,7 +411,7 @@
             &quot;depositRateType&quot;: &quot;FIXED&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0295&quot;,
+            &quot;rate&quot;: &quot;0.0405&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P60M&quot;,
@@ -416,7 +420,7 @@
                 {
                     &quot;name&quot;: &quot;Amount&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 5000,
+                    &quot;minimumValue&quot;: 100000,
                     &quot;maximumValue&quot;: 1000000,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -431,16 +435,6 @@
                 }
             ],
             &quot;depositRateType&quot;: &quot;FIXED&quot;
-        }
-    ],
-    &quot;features&quot;: [
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Interest can be reinvested back into the Term Deposit, paid to your Challenger Bank account, or paid to another financial institution account.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Manage the Term Deposit maturity instructions from within Internet Banking or our app. Tell us how the principal and interest amounts are to be paid when your Term Deposit matures.&quot;
         }
     ]
 }</textarea>
