@@ -7,9 +7,9 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;AMP_BASIC_HL&quot;,
-    &quot;effectiveFrom&quot;: &quot;2021-09-13T00:00:00.000+10:00&quot;,
-    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00.000+11:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-15T01:15:19Z&quot;,
+    &quot;effectiveFrom&quot;: &quot;2023-09-13T00:00:00.000Z&quot;,
+    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-09-28T23:08:33Z&quot;,
     &quot;name&quot;: &quot;Basic Package&quot;,
     &quot;description&quot;: &quot;Basic Package&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
@@ -29,7 +29,7 @@
             &quot;name&quot;: &quot;Valuation fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;additionalValue&quot;: &quot;At cost &quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when valuation costs associated with a loan application or variation exceed $900. If applicable, we will advise you of any excess valuation costs payable prior to the valuation.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when valuation costs associated with a loan application or variation exceed $550. If applicable, we will advise you of any excess valuation costs payable prior to the valuation.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/content/dam/amp/digitalhub/common/Documents/HomeLoans/Forms/308006_Home_Loan_Fees_and_Charges_Guide.pdf&quot;
         },
         {
@@ -266,11 +266,6 @@
             &quot;additionalInfo&quot;: &quot;You can choose to set up an Offset Deposit Account on a variable rate loan. A $6 monthly account management fee is payable on the Offset Deposit Account when linked to a Basic Variable Rate Loan.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalValue&quot;: &quot;A Bett3r offset account can be connected to the product&quot;,
-            &quot;additionalInfo&quot;: &quot;You can choose to set up a Bett3r Offset Account on a variable rate loan. A $6 monthly account management fee is payable on the AMP Bett3r Offset Account when linked to a Basic Variable Rate Loan.&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalValue&quot;: &quot;A card is available for the product to access funds&quot;,
             &quot;additionalInfo&quot;: &quot;Visa Debit Card&quot;
@@ -299,8 +294,8 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0474&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0479&quot;,
+            &quot;rate&quot;: &quot;0.0699&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0704&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -333,9 +328,31 @@
             &quot;additionalInfo&quot;: &quot;Max LVR 60%, New business rates, fees and charges apply&quot;
         },
         {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0799&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0724&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_io_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 80% incl LMI, New business rates, fees and charges apply&quot;
+        },
+        {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0484&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0489&quot;,
+            &quot;rate&quot;: &quot;0.0709&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0714&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -361,9 +378,118 @@
             &quot;additionalInfo&quot;: &quot;Max LVR 80%, New business rates, fees and charges apply&quot;
         },
         {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0724&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0740&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0744&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0747&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0739&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0744&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0764&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0747&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
+        },
+        {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0514&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0519&quot;,
+            &quot;rate&quot;: &quot;0.0749&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0732&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;basic_io_tier&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 99999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Max LVR 80% incl. LMI, New business rates, fees and charges apply&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0739&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0744&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -389,140 +515,9 @@
             &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
         },
         {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0505&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_io_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 80% incl. LMI, New business rates, fees and charges apply&quot;
-        },
-        {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0534&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0521&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0564&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0529&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0569&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0534&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0579&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0547&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_pi_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 90% + LMI, New business rates, fees and charges apply&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0498&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;basic_io_tier&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
-                    &quot;maximumValue&quot;: 99999999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.amp.com.au/home-loans/loans/basic-package-home-loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Max LVR 80% incl LMI, New business rates, fees and charges apply&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0589&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0508&quot;,
+            &quot;rate&quot;: &quot;0.0759&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0724&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -543,8 +538,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0604&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0521&quot;,
+            &quot;rate&quot;: &quot;0.0744&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0724&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -565,8 +560,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0624&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0547&quot;,
+            &quot;rate&quot;: &quot;0.0769&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0741&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -587,8 +582,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0499&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0504&quot;,
+            &quot;rate&quot;: &quot;0.0724&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0729&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -622,8 +617,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0504&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0509&quot;,
+            &quot;rate&quot;: &quot;0.0729&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0734&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -650,8 +645,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0552&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0557&quot;,
+            &quot;rate&quot;: &quot;0.0777&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0782&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -678,8 +673,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0517&quot;,
+            &quot;rate&quot;: &quot;0.0749&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0743&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -699,8 +694,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0539&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0556&quot;,
+            &quot;rate&quot;: &quot;0.0769&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0782&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -721,8 +716,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0561&quot;,
+            &quot;rate&quot;: &quot;0.0749&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0777&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -743,8 +738,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0579&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0734&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0769&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -765,8 +760,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0594&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0575&quot;,
+            &quot;rate&quot;: &quot;0.0759&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0774&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -787,8 +782,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0539&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0512&quot;,
+            &quot;rate&quot;: &quot;0.0779&quot;,
+            &quot;comparisonRate&quot;: &quot;0.074&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -809,8 +804,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0574&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0522&quot;,
+            &quot;rate&quot;: &quot;0.0759&quot;,
+            &quot;comparisonRate&quot;: &quot;0.074&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -831,8 +826,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0584&quot;,
-            &quot;comparisonRate&quot;: &quot;0.053&quot;,
+            &quot;rate&quot;: &quot;0.0744&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0738&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -853,8 +848,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0609&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0552&quot;,
+            &quot;rate&quot;: &quot;0.0774&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0754&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -875,8 +870,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0522&quot;,
+            &quot;rate&quot;: &quot;0.0699&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0742&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
@@ -896,8 +891,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0524&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0556&quot;,
+            &quot;rate&quot;: &quot;0.0699&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0776&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
