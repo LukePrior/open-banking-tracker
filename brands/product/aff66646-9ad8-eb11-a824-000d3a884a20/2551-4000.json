@@ -1,9 +1,147 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:Header/UnsupportedVersion",
-            "title": "Unsupported Version",
-            "detail": "Please send appropriate x-v value."
-        }
-    ]
+    "data": {
+        "productId": "2551-4000",
+        "effectiveFrom": "2019-12-31T14:00:00.00000Z",
+        "effectiveTo": "2030-12-31T13:59:59.00000Z",
+        "lastUpdated": "2023-06-26T14:01:00.00000Z",
+        "productCategory": "OVERDRAFTS",
+        "name": "Business Overdraft (residential secured)",
+        "description": "A Great Southern Bank Business overdraft can help you to closely manage your cashflow without compromising your business goals.",
+        "brand": "Great Southern Bank",
+        "brandName": "Great Southern Bank",
+        "applicationUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft#how",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft",
+            "termsUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft",
+            "eligibilityUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft",
+            "feesAndPricingUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft#rates"
+        },
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "Loan purpose must be business related."
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "Applicant/s Guarantors must be a legal entity registered within Australia."
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "All individuals, directors, guarantors, trustees, members must be 18+ yrs."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "All individuals, directors, guarantors, trustees, members must be an Australian Resident."
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Applications\u00a0for\u00a0Overdrafts\u00a0are\u00a0subject\u00a0to\u00a0credit\u00a0approval. Property offered as security must be acceptable within policy."
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "20000"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "250000"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalValue": "$0 Monthly service fees",
+                "additionalInfo": "No overdraft service fees.  With no annual or monthly service fees you can save money for the other important things in your life."
+            },
+            {
+                "featureType": "RELATIONSHIP_MANAGEMENT",
+                "additionalInfo": "All overdraft accounts come with a dedicated Relationship Manager"
+            },
+            {
+                "featureType": "OVERDRAFT",
+                "additionalValue": "Overdraft approval amount = overdraft limit",
+                "additionalInfo": "Once approved the overdraft limit is loaded on to an Everyday Business Account."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Redocumentation or Variation  Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable if the security held for the overdraft is to be substituted for another property."
+            },
+            {
+                "name": "Establishment fee",
+                "feeType": "UPFRONT",
+                "currency": "AUD",
+                "additionalInfo": "$750 irrespective of loan amount.  An establishment fee includes the cost of processing the application and the preparation of loan documentation."
+            },
+            {
+                "name": "Production Fee",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "additionalInfo": "If a title held by Great Southern Bank has to be presented to the state's land titles office for any purpose."
+            },
+            {
+                "name": "Property Valuation Fee",
+                "feeType": "VARIABLE",
+                "additionalInfo": "Payable upfront where an independent property valuer nominated by Great Southern Bank must provide a market value the security property offered."
+            },
+            {
+                "name": "Arrears letter fee",
+                "feeType": "EVENT",
+                "amount": "22.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
+            },
+            {
+                "name": "Default notice fee",
+                "feeType": "EVENT",
+                "amount": "33.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account."
+            },
+            {
+                "name": "Overlimit Fee",
+                "feeType": "EVENT",
+                "amount": "6.00",
+                "additionalInfo": "Where the balance on the Everyday Business Account exceeds the authorised overdraft limit."
+            },
+            {
+                "name": "Debt Collection Fee",
+                "feeType": "VARIABLE",
+                "additionalInfo": "Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is out of order."
+            },
+            {
+                "name": "Discharge Security Fee",
+                "feeType": "EVENT",
+                "amount": "500.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when the security held for the overdraft is to be released and the overdraft limit removed from the Everyday Business transaction account."
+            },
+            {
+                "name": "Securities Administration Fee",
+                "feeType": "UPFRONT",
+                "amount": "235.00",
+                "currency": "AUD",
+                "additionalInfo": "For each security offrered to Great Southern Bank for the overdraft."
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0895",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft#rates"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://api.open-banking.greatsouthernbank.com.au/cds-au/v1/banking/products/2551-4000"
+    }
 }

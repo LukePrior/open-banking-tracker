@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "9af3781e-102c-ee11-9966-002248e1d7d5",
-        "lastUpdated": "2023-09-13T03:39:15Z",
+        "lastUpdated": "2023-10-03T04:34:51Z",
         "lastUpdatedBy": "SYSTEM",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "BOQ Low Rate Visa Credit Card",
@@ -19,6 +19,12 @@
         "status": "APPROVED",
         "features": [
             {
+                "featureType": "INTEREST_FREE_TRANSFERS",
+                "additionalValue": "P12M",
+                "additionalInfo": "0% p.a. on purchases and balance transfers for 12 months plus no balance transfer fee. No interest free days apply to retail purchases while you have a balance transfer. Reverts to cash advance rate. No interest free days apply while you have a balance transfer.",
+                "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalInfo": "Low interest rate (13.49% p.a) on purchases.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card"
@@ -26,12 +32,6 @@
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Added security and authorisation for online purchases with Verified by Visa, FRAUDSHIELD and Visa Zero Liability.",
-                "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card"
-            },
-            {
-                "featureType": "INTEREST_FREE_TRANSFERS",
-                "additionalValue": "0% p.a. on balance transfers",
-                "additionalInfo": "On balance transfers for 6 months reverting to the cash advance rate thereafter (No interest free days apply to retail purchases while you have a balance transfer).",
                 "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card"
             },
             {
@@ -165,20 +165,22 @@
         ],
         "lendingRates": [
             {
-                "rate": "0.1349000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Except to the extent that an interest free period applies, you must pay interest on everything charged to your account. Interest is charged monthly at the end of each statement period. We calculate interest for each balance type at its applicable APR for each statement period. The APR (Annual Percentage Rate) that applies to each balance type (e.g. a balance transfer) also applies to related fees and interest. The Retail APR applies to retail purchase balance. To calculate that interest, we multiply the applicable daily percentage rate by the daily unpaid balance of its balance type (including related fees and interest) for each day of that statement period, and then add those amounts together. The daily percentage rate is the applicable APR divided by 365. Information on any APR is available on request.",
-                "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card",
-                "lendingRateType": "PURCHASE"
-            },
-            {
                 "rate": "0.2149000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Except to the extent that an interest free period applies, you must pay interest on everything charged to your account. Interest is charged monthly at the end of each statement period. We calculate interest for each balance type at its applicable APR for each statement period. The APR (Annual Percentage Rate) that applies to each balance type (e.g. a balance transfer) also applies to related fees and interest. The Retail APR applies to retail purchase balance. To calculate that interest, we multiply the applicable daily percentage rate by the daily unpaid balance of its balance type (including related fees and interest) for each day of that statement period, and then add those amounts together. The daily percentage rate is the applicable APR divided by 365. Information on any APR is available on request.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card",
-                "lendingRateType": "CASH_ADVANCE"
+                "lendingRateType": "CASH_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS"
+            },
+            {
+                "rate": "0.1349000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Except to the extent that an interest free period applies, you must pay interest on everything charged to your account. Interest is charged monthly at the end of each statement period. We calculate interest for each balance type at its applicable APR for each statement period. The APR (Annual Percentage Rate) that applies to each balance type (e.g. a balance transfer) also applies to related fees and interest. The Retail APR applies to retail purchase balance. To calculate that interest, we multiply the applicable daily percentage rate by the daily unpaid balance of its balance type (including related fees and interest) for each day of that statement period, and then add those amounts together. The daily percentage rate is the applicable APR divided by 365. Information on any APR is available on request.",
+                "additionalInfoUri": "https://www.boq.com.au/personal/credit-cards/low-rate-credit-card",
+                "lendingRateType": "PURCHASE",
+                "interestPaymentDue": "IN_ARREARS"
             }
         ]
     },
