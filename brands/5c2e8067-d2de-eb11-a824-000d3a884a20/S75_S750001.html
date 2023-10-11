@@ -9,6 +9,7 @@
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Visa Debit&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
@@ -19,27 +20,108 @@
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay, Samsung Pay and Google Pay&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;Internet Banking and Mobile Banking App.&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;Create a PayID through Horizon Bank s Internet Banking or Mobile Banking App to receive Osko payments with a unique identifier, such as your mobile number or email address, enabling you to receive and send money securely without the need to remember complex banking details.&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalInfo&quot;: &quot;This account type is enabled for Osko payments, via the New Payments Platform (NPP). Osko is the faster way to pay or receive money from friends, family and businesses. No more waiting days for money to change hands. Now you can pay and be paid in a matter of seconds&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY&quot;,
+            &quot;additionalInfo&quot;: &quot;BPAY is an electronic bill payment service, providing a convenient access point for the payment and receipt of consumer bills.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Manage payments from your bank account using PayTo.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;BULK_COIN_COUNTAGE&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
+            &quot;transactionRate&quot;: &quot;0.02&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Up to 2% for bulk coin counting above $300. Fee excludes money boxes &amp; community&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DIRECT_DEBIT_DISHONOUR&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
-            &quot;featureType&quot;: &quot;FREE_TXNS_ALLOWANCE&quot;,
+            &quot;name&quot;: &quot;FOREIGN_CASH_WITHDRAWAL_FROM_VISA_DEBIT_CARD&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;FOREIGN_CHEQUE_DEPOSIT&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;11.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;STATEMENT_COPY&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;TOTAL_CASH_WITHDRAWAL_ABOVE_4000_PER_DAY&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;transactionRate&quot;: &quot;0.0025&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A fee of 0.25% of total cash withdrawals is charged for total cash withdrawals over $4000 in a day.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;VISA_CARD_INTERNATIONAL_TRANSACTION_FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;name&quot;: &quot;VISA_CARD_REPLACEMENT&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Australia only&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
@@ -65,7 +147,7 @@
     ],
     &quot;productId&quot;: &quot;S75_S750001&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-10-01T00:00:00.000+10:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-10-19T09:49:39.000+11:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-06-13T11:56:08.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;OFFSET SAVINGS&quot;,
     &quot;description&quot;: &quot;OFFSET SAVINGS&quot;,
