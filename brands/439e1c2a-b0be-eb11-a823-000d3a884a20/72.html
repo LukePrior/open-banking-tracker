@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;72&quot;,
     &quot;effectiveFrom&quot;: &quot;2006-06-30T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-09-28T00:00:14.2127639Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-10-18T08:00:13.5451399Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Interest Only (Investment)&quot;,
     &quot;description&quot;: &quot;Interest Only (Investment)&quot;,
@@ -19,7 +19,7 @@
         &quot;overviewUri&quot;: &quot;https://www.coastline.com.au/Loans/home-loans/&quot;,
         &quot;termsUri&quot;: &quot;https://www.coastline.com.au/about-coast/conditions-of-use/&quot;,
         &quot;eligibilityUri&quot;: &quot;https://www.coastline.com.au/about-coast/conditions-of-use/&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.coastline.com.au/about-coast/loans-fees-and-charges/&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.coastline.com.au/about-coast/conditions-of-use/&quot;,
         &quot;bundleUri&quot;: &quot;https://www.coastline.com.au/Loans/home-loans/&quot;
     },
     &quot;features&quot;: [
@@ -149,7 +149,17 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/INT-ONLY_LVR&lt;=60%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 60.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;VARIABLE INTEREST ONLY RATE WITH LVR &lt;= 60%&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -159,7 +169,17 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/INT-ONLY_LVR&gt;60%To&lt;=80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;VARIABLE INTEREST ONLY RATE WITH LVR &gt; 60% TO &lt;= 80%&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -169,7 +189,16 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;USER-INPUT-RATE/INT-ONLY_LVR&gt;80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;VARIABLE INTEREST ONLY RATE WITH LVR &gt; 80%&quot;
         }
     ]
 }</textarea>
