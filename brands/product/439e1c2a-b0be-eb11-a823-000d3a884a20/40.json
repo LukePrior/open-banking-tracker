@@ -2,7 +2,7 @@
     "data": {
         "productId": "40",
         "effectiveFrom": "2006-06-30T14:30:00.0000000Z",
-        "lastUpdated": "2023-09-28T00:00:14.2127639Z",
+        "lastUpdated": "2023-10-18T08:00:13.5451399Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Interest Only (Owner Occupied)",
         "description": "Interest Only (Owner Occupied)",
@@ -13,7 +13,7 @@
             "overviewUri": "https://www.coastline.com.au/Loans/home-loans/",
             "termsUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "eligibilityUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
-            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/loans-fees-and-charges/",
+            "feesAndPricingUri": "https://www.coastline.com.au/about-coast/conditions-of-use/",
             "bundleUri": "https://www.coastline.com.au/Loans/home-loans/"
         },
         "features": [
@@ -143,17 +143,16 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0904",
-                "comparisonRate": "0.0911",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/BRIDGING_LVR<60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR BRIDGING FINANCE OF OWNER OCCUPIED HOMES WITH LVR <= 60%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -163,7 +162,36 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/BRIDGING_LVR>60%To<=80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR BRIDGING FINANCE OF OWNER OCCUPIED HOMES WITH LVR > 60% TO\r\n<= 80%"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0904",
+                "comparisonRate": "0.0911",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/BRIDGING_LVR>80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR BRIDGING FINANCE OF OWNER OCCUPIED HOMES WITH LVR > 80%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -173,7 +201,17 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/CONSTRUCT_LVR<60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 60.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR CONSTRUCTION OF OWNER OCCUPIED HOMES WITH LVR <= 60%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -183,7 +221,17 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/CONSTRUCT_LVR>60%To<=80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR CONSTRUCTION OF OWNER OCCUPIED HOMES WITH LVR > 60% TO \r\n<= 80%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -193,7 +241,16 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/CONSTRUCT_LVR>80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR CONSTRUCTION OF OWNER OCCUPIED HOMES WITH LVR > 80%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -203,7 +260,17 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/STD-OWN_LVR<=60%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 60.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR OWNER OCCUPIED HOMES WITH LVR <= 60%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -213,7 +280,17 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/STD-OWN_LVR>60%To<=80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR OWNER OCCUPIED HOMES WITH LVR > 60% TO <= 80%"
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -223,7 +300,16 @@
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED"
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "USER-INPUT-RATE/STD-OWN_LVR>80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "VARIABLE INTEREST ONLY RATE FOR OWNER OCCUPIED HOMES WITH LVR > 80%"
             }
         ]
     },

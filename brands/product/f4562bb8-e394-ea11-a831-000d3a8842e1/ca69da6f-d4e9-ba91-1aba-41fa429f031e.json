@@ -3,161 +3,165 @@
         "self": "https://api.anz/cds-au/v1/banking/products/ca69da6f-d4e9-ba91-1aba-41fa429f031e"
     },
     "data": {
-        "applicationUri": "https://www.anz.com.au/business/credit-cards/low-rate/",
-        "brand": "ANZ",
-        "name": "ANZ Business Low Rate",
-        "cardArt": [],
+        "lendingRates": [
+            {
+                "calculationFrequency": "P1D",
+                "lendingRateType": "PURCHASE",
+                "interestPaymentDue": "IN_ARREARS",
+                "applicationFrequency": "P1M",
+                "rate": "0.1299",
+                "tiers": [],
+                "additionalInfo": "Rates are subject to change"
+            },
+            {
+                "calculationFrequency": "P1D",
+                "lendingRateType": "CASH_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
+                "applicationFrequency": "P1M",
+                "rate": "0.1449",
+                "tiers": [],
+                "additionalInfo": "Rates are subject to change"
+            }
+        ],
+        "isTailored": false,
+        "lastUpdated": "2023-10-17T21:00:00.000Z",
         "depositRates": [],
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "productId": "ca69da6f-d4e9-ba91-1aba-41fa429f031e",
+        "bundles": [],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1000.00"
+            }
+        ],
+        "applicationUri": "https://www.anz.com.au/business/credit-cards/low-rate/",
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS"
+            }
+        ],
         "features": [
             {
                 "additionalValue": "9999",
-                "additionalInfo": "Any number of additional cards can be ordered",
-                "featureType": "ADDITIONAL_CARDS"
+                "featureType": "ADDITIONAL_CARDS",
+                "additionalInfo": "Any number of additional cards can be ordered"
             },
             {
                 "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account."
             },
             {
-                "additionalValue": "Unauthorised Transactions Insurance",
-                "additionalInfo": "Unauthorised Transactions Insurance protects your business against misuse for up to $37,500 per cardholder and $200,000 maximum for the total account, in any 12 month period.",
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/pdf/commercial-cards-anz-business-one-tsc.pdf",
-                "featureType": "INSURANCE"
+                "additionalValue": "Unauthorised Transactions Insurance",
+                "featureType": "INSURANCE",
+                "additionalInfo": "Unauthorised Transactions Insurance protects your business against misuse for up to $37,500 per cardholder and $200,000 maximum for the total account, in any 12 month period."
             },
             {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm",
                 "additionalValue": "Apple Pay",
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm"
+                "featureType": "DIGITAL_WALLET"
             },
             {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm",
                 "additionalValue": "Google Pay",
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm"
+                "featureType": "DIGITAL_WALLET"
             },
             {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm",
                 "additionalValue": "Samsung Pay",
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm"
+                "featureType": "DIGITAL_WALLET"
             },
             {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm",
                 "additionalValue": "Fitbit Pay",
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm"
+                "featureType": "DIGITAL_WALLET"
             },
             {
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm",
                 "additionalValue": "Garmin Pay",
-                "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:cm"
+                "featureType": "DIGITAL_WALLET"
             },
             {
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:cm",
-                "featureType": "DIGITAL_BANKING"
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
             },
             {
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cm",
                 "additionalValue": "BPAY",
-                "featureType": "BILL_PAYMENT",
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:cm"
-            }
-        ],
-        "isTailored": false,
-        "productCategory": "CRED_AND_CHRG_CARDS",
-        "eligibility": [
+                "featureType": "BILL_PAYMENT"
+            },
             {
-                "eligibilityType": "BUSINESS"
+                "featureType": "FRAUD_PROTECTION",
+                "additionalInfo": "You won't be liable for fraudulent transactions on your ANZ credit card account with ANZ Fraud Money Back Guarantee"
             }
         ],
-        "productId": "ca69da6f-d4e9-ba91-1aba-41fa429f031e",
         "fees": [
             {
                 "additionalValue": "P1Y",
-                "feeType": "PERIODIC",
                 "name": "Account Service",
-                "currency": "AUD",
+                "amount": "100.00",
                 "discounts": [
                     {
-                        "eligibility": [],
                         "description": "Save $100 with no Annual Card Fee\u00a0for the first year on a new ANZ Business Low Rate credit card.",
                         "amount": "0.00",
+                        "eligibility": [],
                         "discountType": "ELIGIBILITY_ONLY"
                     }
                 ],
-                "amount": "100.00"
+                "currency": "AUD",
+                "feeType": "PERIODIC"
             },
             {
-                "feeType": "WITHDRAWAL",
+                "transactionRate": "0.015",
                 "name": "Cash Advance Fee    ",
-                "currency": "AUD",
                 "additionalInfo": "A fee will be charged for each Cash Advance, except where it is obtained through an ANZ ATM. The fee will be the greater of $1.50 and 1.50% of the Cash Advance amount plus any ATM operator fee. For Cash Advances made overseas at an ATM, bank or ANZ office, the 1.50% fee will be calculated with reference to the Cash Advance amount, any ATM operator fee plus any Overseas Transaction Fee charged on the Cash Advance.",
-                "discounts": [],
-                "transactionRate": "0.015"
-            },
-            {
-                "feeType": "PURCHASE",
-                "name": "Overseas Transaction Fee",
                 "currency": "AUD",
-                "additionalInfo": "On the value of any International Transaction charged or credited to an ANZ Business One Facility.",
                 "discounts": [],
-                "transactionRate": "0.03"
+                "feeType": "WITHDRAWAL"
             },
             {
-                "feeType": "EVENT",
+                "transactionRate": "0.03",
+                "name": "Overseas Transaction Fee",
+                "additionalInfo": "On the value of any International Transaction charged or credited to an ANZ Business One Facility.",
+                "currency": "AUD",
+                "discounts": [],
+                "feeType": "PURCHASE"
+            },
+            {
                 "name": "Late Payment",
                 "currency": "AUD",
                 "amount": "35.00",
-                "discounts": []
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Over Limit",
-                "currency": "AUD",
-                "additionalInfo": "A fee will be charged if the Closing Balance shown on a Statement of Account exceeds the Facility Limit. The Overlimit Fee will be the lesser of 5% of the overlimit amount and $50.",
                 "discounts": [],
-                "transactionRate": "0.05"
+                "feeType": "EVENT"
             },
             {
-                "feeType": "EVENT",
+                "transactionRate": "0.05",
+                "name": "Over Limit",
+                "additionalInfo": "A fee will be charged if the Closing Balance shown on a Statement of Account exceeds the Facility Limit. The Overlimit Fee will be the lesser of 5% of the overlimit amount and $50.",
+                "currency": "AUD",
+                "discounts": [],
+                "feeType": "EVENT"
+            },
+            {
                 "name": "Payment Dishonour Fee",
                 "currency": "AUD",
                 "amount": "12.00",
-                "discounts": []
+                "discounts": [],
+                "feeType": "EVENT"
             }
         ],
-        "constraints": [
-            {
-                "additionalValue": "1000.00",
-                "constraintType": "MIN_LIMIT"
-            }
-        ],
-        "description": "A credit card facility for businesses with a low interest ongoing interest rate",
         "additionalInformation": {
             "overviewUri": "https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm",
             "eligibilityUri": "https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#eligibility",
             "termsUri": "https://www.anz.com.au/business/help-support/terms-conditions/?section=SBS&CID=af:obank:cm",
             "feesAndPricingUri": "https://www.anz.com.au/business/products/credit-cards/low-rate/?CID=af:obank:cm#rates"
         },
-        "bundles": [],
-        "lendingRates": [
-            {
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "rate": "0.1299",
-                "lendingRateType": "PURCHASE",
-                "additionalInfo": "Rates are subject to change",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS"
-            },
-            {
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "rate": "0.1449",
-                "lendingRateType": "CASH_ADVANCE",
-                "additionalInfo": "Rates are subject to change",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS"
-            }
-        ],
-        "lastUpdated": "2023-06-28T06:00:00.000Z"
+        "description": "A credit card facility for businesses with a low interest ongoing interest rate",
+        "brand": "ANZ",
+        "productCategory": "CRED_AND_CHRG_CARDS",
+        "cardArt": [],
+        "name": "ANZ Business Low Rate",
+        "effectiveFrom": "2019-06-30T14:00:00.000Z"
     }
 }
