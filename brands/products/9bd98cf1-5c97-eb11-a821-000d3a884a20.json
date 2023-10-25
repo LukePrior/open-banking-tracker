@@ -2,6 +2,250 @@
     "data": {
         "products": [
             {
+                "productId": "bos_saver_account",
+                "lastUpdated": "2023-10-24T03:06:52Z",
+                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+                "name": "BOS Saver",
+                "description": "With a high interest rate, the BOS Saver Account makes saving simple. Reach your goals and maximize your savings. Simply deposit more than $5,000 to get the most out of your money.",
+                "brand": "Bank of Sydney",
+                "brandName": "Bank of Sydney",
+                "isTailored": false,
+                "additionalInformation": {
+                    "overviewUri": "https://www.banksyd.com.au/bos-saver",
+                    "termsUri": "https://www.banksyd.com.au/important-product-information",
+                    "eligibilityUri": "https://www.banksyd.com.au/bos-saver",
+                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+                },
+                "status": "APPROVED",
+                "constraints": [
+                    {
+                        "constraintType": "OPENING_BALANCE",
+                        "additionalValue": "1000.00",
+                        "additionalInfo": "Account to be closed if customer does not deposit at least $1,000 within 10 business days."
+                    }
+                ],
+                "eligibility": [
+                    {
+                        "eligibilityType": "MIN_AGE",
+                        "additionalValue": "18"
+                    },
+                    {
+                        "eligibilityType": "NATURAL_PERSON"
+                    },
+                    {
+                        "eligibilityType": "RESIDENCY_STATUS",
+                        "additionalValue": "Australian Resident or Citizen"
+                    }
+                ],
+                "fees": [
+                    {
+                        "feeType": "WITHDRAWAL",
+                        "name": "Branch Assisted Withdrawal",
+                        "amount": "5.00",
+                        "currency": "AUD"
+                    }
+                ],
+                "depositRates": [
+                    {
+                        "rate": "0.04",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "tiers": [
+                            {
+                                "name": "5000001 to 99999999999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 5000001,
+                                "maximumValue": 99999999999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "VARIABLE"
+                    },
+                    {
+                        "rate": "0.04",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "tiers": [
+                            {
+                                "name": "5000 to 5000000",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 5000,
+                                "maximumValue": 5000000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "VARIABLE"
+                    }
+                ],
+                "features": [
+                    {
+                        "featureType": "DIGITAL_BANKING"
+                    },
+                    {
+                        "featureType": "OTHER",
+                        "additionalValue": "Linked to a full Transaction Account",
+                        "additionalInfo": "Linked to Everyday Saver Transaction so you can access your money at any time through Internet Banking"
+                    }
+                ]
+            },
+            {
+                "productId": "everyday_saver",
+                "lastUpdated": "2023-10-24T01:57:51Z",
+                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+                "name": "Everyday Saver Account",
+                "description": "Made managing your money easy with our Everyday Saver Transaction Account, available 24/7, 365 days a year, via Internet Banking and the mobile app.",
+                "brand": "Bank of Sydney",
+                "brandName": "Bank of Sydney",
+                "isTailored": false,
+                "additionalInformation": {
+                    "overviewUri": "https://www.banksyd.com.au/everyday-saver",
+                    "termsUri": "https://www.banksyd.com.au/important-product-information",
+                    "eligibilityUri": "https://www.banksyd.com.au/everyday-saver",
+                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+                },
+                "status": "APPROVED",
+                "eligibility": [
+                    {
+                        "eligibilityType": "MIN_AGE",
+                        "additionalValue": "18"
+                    },
+                    {
+                        "eligibilityType": "RESIDENCY_STATUS",
+                        "additionalValue": "Australian Resident or Citizen"
+                    },
+                    {
+                        "eligibilityType": "NATURAL_PERSON"
+                    }
+                ],
+                "fees": [
+                    {
+                        "feeType": "TRANSACTION",
+                        "name": "Local Telegraphic Transfer",
+                        "amount": "35.00",
+                        "currency": "AUD",
+                        "additionalInfo": "RTGS transaction"
+                    },
+                    {
+                        "feeType": "EVENT",
+                        "name": "Overdrawn Account Fee",
+                        "amount": "7.00",
+                        "currency": "AUD"
+                    },
+                    {
+                        "feeType": "EVENT",
+                        "name": "Dishonour Fee",
+                        "amount": "15.00",
+                        "currency": "AUD"
+                    },
+                    {
+                        "feeType": "WITHDRAWAL",
+                        "name": "Bank Cheque Fee",
+                        "amount": "5.00",
+                        "currency": "AUD"
+                    },
+                    {
+                        "feeType": "PERIODIC",
+                        "name": "Monthly Account Fee",
+                        "amount": "5.00",
+                        "currency": "AUD",
+                        "additionalValue": "P1M",
+                        "discounts": [
+                            {
+                                "discountType": "BALANCE",
+                                "description": "Account balance",
+                                "amount": "5.0000",
+                                "balanceRate": "0.0",
+                                "transactionRate": "0.0",
+                                "accruedRate": "0.0",
+                                "feeRate": "0.0",
+                                "additionalValue": "5000",
+                                "additionalInfo": "Fee waived if the account's monthly average balance is equal to or higher than $5,000"
+                            },
+                            {
+                                "discountType": "ELIGIBILITY_ONLY",
+                                "description": "Customer related products",
+                                "amount": "5.0000",
+                                "balanceRate": "0.0",
+                                "transactionRate": "0.0",
+                                "accruedRate": "0.0",
+                                "feeRate": "0.0"
+                            }
+                        ]
+                    }
+                ],
+                "depositRates": [
+                    {
+                        "rate": "0.0001",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "tiers": [
+                            {
+                                "name": "0 to 50000",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 0,
+                                "maximumValue": 50000,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "VARIABLE"
+                    },
+                    {
+                        "rate": "0.0005",
+                        "calculationFrequency": "P1D",
+                        "applicationFrequency": "P1M",
+                        "tiers": [
+                            {
+                                "name": "50001 to 99999999999",
+                                "unitOfMeasure": "DOLLAR",
+                                "minimumValue": 50001,
+                                "maximumValue": 99999999999,
+                                "rateApplicationMethod": "WHOLE_BALANCE",
+                                "applicabilityConditions": {}
+                            }
+                        ],
+                        "depositRateType": "VARIABLE"
+                    }
+                ],
+                "features": [
+                    {
+                        "featureType": "CARD_ACCESS",
+                        "additionalValue": "Visa Debit Card"
+                    },
+                    {
+                        "featureType": "UNLIMITED_TXNS",
+                        "additionalInfo": "Access your money as soon as you deposit with unlimited number of free transactions."
+                    },
+                    {
+                        "featureType": "DIGITAL_BANKING",
+                        "additionalInfo": "Manage your money via Internet Banking and the mobile app"
+                    },
+                    {
+                        "featureType": "DIGITAL_WALLET",
+                        "additionalValue": "Apple Pay"
+                    },
+                    {
+                        "featureType": "DIGITAL_WALLET",
+                        "additionalValue": "Google Pay"
+                    },
+                    {
+                        "featureType": "DIGITAL_WALLET",
+                        "additionalValue": "Samsung Pay"
+                    },
+                    {
+                        "featureType": "BILL_PAYMENT",
+                        "additionalValue": "BPAY"
+                    },
+                    {
+                        "featureType": "ADDITIONAL_CARDS",
+                        "additionalValue": "Null",
+                        "additionalInfo": "Additional card holders must be verified as per KYC standards"
+                    }
+                ]
+            },
+            {
                 "productId": "term_deposit",
                 "lastUpdated": "2023-10-05T03:56:08Z",
                 "productCategory": "TERM_DEPOSITS",
@@ -1669,161 +1913,6 @@
                 ]
             },
             {
-                "productId": "everyday_saver",
-                "lastUpdated": "2023-06-19T07:00:58Z",
-                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-                "name": "Everyday Saver Account",
-                "description": "Made managing your money easy with our Everyday Saver Transaction Account, available 24/7, 365 days a year, via Internet Banking and the mobile app.",
-                "brand": "Bank of Sydney",
-                "brandName": "Bank of Sydney",
-                "isTailored": false,
-                "additionalInformation": {
-                    "overviewUri": "https://www.banksyd.com.au/everyday-saver",
-                    "termsUri": "https://www.banksyd.com.au/important-product-information",
-                    "eligibilityUri": "https://www.banksyd.com.au/everyday-saver",
-                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
-                },
-                "status": "APPROVED",
-                "eligibility": [
-                    {
-                        "eligibilityType": "MIN_AGE",
-                        "additionalValue": "18"
-                    },
-                    {
-                        "eligibilityType": "RESIDENCY_STATUS",
-                        "additionalValue": "Australian Resident or Citizen"
-                    },
-                    {
-                        "eligibilityType": "NATURAL_PERSON"
-                    }
-                ],
-                "fees": [
-                    {
-                        "feeType": "TRANSACTION",
-                        "name": "Local Telegraphic Transfer",
-                        "amount": "35.00",
-                        "currency": "AUD",
-                        "additionalInfo": "RTGS transaction"
-                    },
-                    {
-                        "feeType": "EVENT",
-                        "name": "Overdrawn Account Fee",
-                        "amount": "7.00",
-                        "currency": "AUD"
-                    },
-                    {
-                        "feeType": "EVENT",
-                        "name": "Dishonour Fee",
-                        "amount": "15.00",
-                        "currency": "AUD"
-                    },
-                    {
-                        "feeType": "WITHDRAWAL",
-                        "name": "Bank Cheque Fee",
-                        "amount": "5.00",
-                        "currency": "AUD"
-                    },
-                    {
-                        "feeType": "PERIODIC",
-                        "name": "Monthly Account Fee",
-                        "amount": "5.00",
-                        "currency": "AUD",
-                        "additionalValue": "P1M",
-                        "discounts": [
-                            {
-                                "discountType": "BALANCE",
-                                "description": "Account balance",
-                                "amount": "5.0000",
-                                "balanceRate": "0.0",
-                                "transactionRate": "0.0",
-                                "accruedRate": "0.0",
-                                "feeRate": "0.0",
-                                "additionalValue": "5000",
-                                "additionalInfo": "Fee waived if the account's monthly average balance is equal to or higher than $5,000"
-                            },
-                            {
-                                "discountType": "ELIGIBILITY_ONLY",
-                                "description": "Customer related products",
-                                "amount": "5.0000",
-                                "balanceRate": "0.0",
-                                "transactionRate": "0.0",
-                                "accruedRate": "0.0",
-                                "feeRate": "0.0"
-                            }
-                        ]
-                    }
-                ],
-                "depositRates": [
-                    {
-                        "rate": "0.0045",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "tiers": [
-                            {
-                                "name": "0 to 50000",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 0,
-                                "maximumValue": 50000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "VARIABLE"
-                    },
-                    {
-                        "rate": "0.0055",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "tiers": [
-                            {
-                                "name": "50001 to 99999999999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 50001,
-                                "maximumValue": 99999999999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "VARIABLE"
-                    }
-                ],
-                "features": [
-                    {
-                        "featureType": "CARD_ACCESS",
-                        "additionalValue": "Visa Debit Card"
-                    },
-                    {
-                        "featureType": "UNLIMITED_TXNS",
-                        "additionalInfo": "Access your money as soon as you deposit with unlimited number of free transactions."
-                    },
-                    {
-                        "featureType": "DIGITAL_BANKING",
-                        "additionalInfo": "Manage your money via Internet Banking and the mobile app"
-                    },
-                    {
-                        "featureType": "DIGITAL_WALLET",
-                        "additionalValue": "Apple Pay"
-                    },
-                    {
-                        "featureType": "DIGITAL_WALLET",
-                        "additionalValue": "Google Pay"
-                    },
-                    {
-                        "featureType": "DIGITAL_WALLET",
-                        "additionalValue": "Samsung Pay"
-                    },
-                    {
-                        "featureType": "BILL_PAYMENT",
-                        "additionalValue": "BPAY"
-                    },
-                    {
-                        "featureType": "ADDITIONAL_CARDS",
-                        "additionalValue": "Null",
-                        "additionalInfo": "Additional card holders must be verified as per KYC standards"
-                    }
-                ]
-            },
-            {
                 "productId": "smartnet_account",
                 "lastUpdated": "2023-06-19T07:00:29Z",
                 "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
@@ -2051,95 +2140,6 @@
                     {
                         "featureType": "BILL_PAYMENT",
                         "additionalValue": "BPAY"
-                    }
-                ]
-            },
-            {
-                "productId": "bos_saver_account",
-                "lastUpdated": "2023-06-19T06:59:56Z",
-                "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-                "name": "BOS Saver",
-                "description": "With a high interest rate, the BOS Saver Account makes saving simple. Reach your goals and maximize your savings. Simply deposit more than $5,000 to get the most out of your money.",
-                "brand": "Bank of Sydney",
-                "brandName": "Bank of Sydney",
-                "isTailored": false,
-                "additionalInformation": {
-                    "overviewUri": "https://www.banksyd.com.au/bos-saver",
-                    "termsUri": "https://www.banksyd.com.au/important-product-information",
-                    "eligibilityUri": "https://www.banksyd.com.au/bos-saver",
-                    "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
-                },
-                "status": "APPROVED",
-                "constraints": [
-                    {
-                        "constraintType": "OPENING_BALANCE",
-                        "additionalValue": "1000.00",
-                        "additionalInfo": "Account to be closed if customer does not deposit at least $1,000 within 10 business days."
-                    }
-                ],
-                "eligibility": [
-                    {
-                        "eligibilityType": "MIN_AGE",
-                        "additionalValue": "18"
-                    },
-                    {
-                        "eligibilityType": "NATURAL_PERSON"
-                    },
-                    {
-                        "eligibilityType": "RESIDENCY_STATUS",
-                        "additionalValue": "Australian Resident or Citizen"
-                    }
-                ],
-                "fees": [
-                    {
-                        "feeType": "WITHDRAWAL",
-                        "name": "Branch Assisted Withdrawal",
-                        "amount": "5.00",
-                        "currency": "AUD"
-                    }
-                ],
-                "depositRates": [
-                    {
-                        "rate": "0.0",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "tiers": [
-                            {
-                                "name": "5000001 to 99999999999",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 5000001,
-                                "maximumValue": 99999999999,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "VARIABLE"
-                    },
-                    {
-                        "rate": "0.04",
-                        "calculationFrequency": "P1D",
-                        "applicationFrequency": "P1M",
-                        "tiers": [
-                            {
-                                "name": "5000 to 5000000",
-                                "unitOfMeasure": "DOLLAR",
-                                "minimumValue": 5000,
-                                "maximumValue": 5000000,
-                                "rateApplicationMethod": "WHOLE_BALANCE",
-                                "applicabilityConditions": {}
-                            }
-                        ],
-                        "depositRateType": "VARIABLE"
-                    }
-                ],
-                "features": [
-                    {
-                        "featureType": "DIGITAL_BANKING"
-                    },
-                    {
-                        "featureType": "OTHER",
-                        "additionalValue": "Linked to a full Transaction Account",
-                        "additionalInfo": "Linked to Everyday Saver Transaction so you can access your money at any time through Internet Banking"
                     }
                 ]
             },

@@ -116,17 +116,38 @@
         ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
+                "feeType": "TRANSACTION",
+                "name": "VISA_DEBIT_CASH_ADVANCE",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "5.00",
+                "amount": "0.70",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
+                "discounts": [
+                    {
+                        "description": "Transaction Fee Rebate",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "15.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.",
+                                "additionalInfoUri": null,
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -165,38 +186,17 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "VISA_DEBIT_CASH_ADVANCE",
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "0.70",
+                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "Transaction Fee Rebate",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "15.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.",
-                                "additionalInfoUri": null,
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -236,13 +236,13 @@
             },
             {
                 "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$5001_TO_$100000",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$100,001_TO_$250,000",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "20.00",
+                "amount": "30.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -260,41 +260,6 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "ACCOUNT_SERVICE_FEE_BUSINESS",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "10.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "Account Service Fee Exemption Business",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "0.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Minimum deposit or lending balance of $20,000 held within membership.",
-                                "additionalInfoUri": null,
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
                 "transactionRate": null
             },
             {
@@ -355,20 +320,6 @@
             },
             {
                 "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$100,001_TO_$250,000",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "30.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
                 "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_GREATER_THAN_$250000",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
@@ -406,6 +357,41 @@
                             {
                                 "discountEligibilityType": "OTHER",
                                 "additionalInfo": "For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.",
+                                "additionalInfoUri": null,
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "ACCOUNT_SERVICE_FEE_BUSINESS",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "10.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Account Service Fee Exemption Business",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "0.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Minimum deposit or lending balance of $20,000 held within membership.",
                                 "additionalInfoUri": null,
                                 "additionalValue": null
                             }
@@ -474,6 +460,20 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "800.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$5001_TO_$100000",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "20.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
