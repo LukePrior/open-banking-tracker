@@ -6,6 +6,34 @@
   <body>
     <div>
       <textarea style="width:90vw;height:90vh">{
+    &quot;depositRates&quot;: [],
+    &quot;name&quot;: &quot;Bendigo Secured Green Personal Loan &quot;,
+    &quot;cardArt&quot;: [
+        {
+            &quot;title&quot;: &quot;Personal Loan&quot;,
+            &quot;imageUri&quot;: &quot;https://www.bendigobank.com.au/gl&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Resident&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;EMPLOYMENT_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Employed&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Suitable for electric vehicles (EV), plug-in hybrid electric vehicles (PHEV), hybrid vehicle and \u2018A\u2019 rated vehicles emitting less than 110g of CO2 per kilometre.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greenvehicleguide.gov.au/&quot;
+        }
+    ],
+    &quot;brand&quot;: &quot;BENDIGO&quot;,
     &quot;additionalInformation&quot;: {
         &quot;termsUri&quot;: &quot;https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-personal-loan-terms-conditions.pdf&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf&quot;,
@@ -13,108 +41,80 @@
         &quot;eligibilityUri&quot;: &quot;https://www.bendigobank.com.au/personal/loans/green/&quot;
     },
     &quot;effectiveFrom&quot;: &quot;2020-01-01T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-04-20T14:31:23.932Z&quot;,
-    &quot;brand&quot;: &quot;BENDIGO&quot;,
-    &quot;eligibility&quot;: [
-        {
-            &quot;additionalValue&quot;: &quot;18&quot;,
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;
-        },
-        {
-            &quot;additionalValue&quot;: &quot;Australian Resident&quot;,
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;
-        },
-        {
-            &quot;additionalValue&quot;: &quot;Employed&quot;,
-            &quot;eligibilityType&quot;: &quot;EMPLOYMENT_STATUS&quot;
-        },
-        {
-            &quot;additionalInfo&quot;: &quot;Suitable for electric vehicles (EV), plug-in hybrid electric vehicles (PHEV), hybrid vehicle and \u2018A\u2019 rated vehicles emitting less than 110g of CO2 per kilometre.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.greenvehicleguide.gov.au/&quot;,
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;
-        }
-    ],
-    &quot;description&quot;: &quot;This loan rewards you for your environmentally friendly purchases.&quot;,
-    &quot;brandName&quot;: &quot;Bendigo Bank&quot;,
-    &quot;applicationUri&quot;: &quot;https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&amp;applicationType=carLoan&quot;,
-    &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
-    &quot;isTailored&quot;: true,
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;1&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;2000&quot;
-        }
-    ],
-    &quot;depositRates&quot;: [],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Early Repayment Fee &quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
             &quot;amount&quot;: &quot;20.000000&quot;,
-            &quot;feeType&quot;: &quot;EXIT&quot;
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;name&quot;: &quot;Early Repayment Fee &quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
+            &quot;discounts&quot;: []
         },
         {
-            &quot;name&quot;: &quot;Establishment Fee&quot;,
-            &quot;additionalInfo&quot;: &quot;Incorporates all standard upfront fees into this amount (That is, Application Fee $150, Documentation Fee $100, Security Processing Fee $10)&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
             &quot;amount&quot;: &quot;260.000000&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Default Fee&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;name&quot;: &quot;Establishment Fee&quot;,
             &quot;discounts&quot;: [],
-            &quot;amount&quot;: &quot;35.000000&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;
-        }
-    ],
-    &quot;features&quot;: [
-        {
-            &quot;additionalInfo&quot;: &quot;Online redraw available&quot;,
-            &quot;additionalValue&quot;: &quot;New Value&quot;,
-            &quot;featureType&quot;: &quot;REDRAW&quot;
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;additionalInfo&quot;: &quot;Incorporates all standard upfront fees into this amount (That is, Application Fee $150, Documentation Fee $100, Security Processing Fee $10)&quot;
         },
         {
-            &quot;additionalInfo&quot;: &quot;Weekly, fortnightly or monthly repayments&quot;,
-            &quot;featureType&quot;: &quot;OTHER&quot;
+            &quot;amount&quot;: &quot;35.000000&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;name&quot;: &quot;Default Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;discounts&quot;: []
         }
     ],
-    &quot;name&quot;: &quot;Bendigo Secured Green Personal Loan &quot;,
-    &quot;productId&quot;: &quot;3967f67b-6b97-4f86-876d-85774f21b94c&quot;,
     &quot;lendingRates&quot;: [
         {
+            &quot;comparisonRate&quot;: &quot;0.0584000000000000&quot;,
+            &quot;tiers&quot;: [],
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;rate&quot;: &quot;0.0549000000000000&quot;,
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;additionalInfo&quot;: &quot;Secured  &quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;tiers&quot;: [],
-            &quot;comparisonRate&quot;: &quot;0.0535000000000000&quot;,
-            &quot;additionalValue&quot;: &quot;P7Y&quot;,
-            &quot;rate&quot;: &quot;0.0499000000000000&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
+            &quot;additionalValue&quot;: &quot;P7Y&quot;
         }
     ],
+    &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
     &quot;bundles&quot;: [
         {
-            &quot;name&quot;: &quot;Personal Loan Bundle&quot;,
             &quot;additionalInfo&quot;: &quot;Data created to do functional testing&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/privacy-policy/full-privacy-policy/&quot;,
+            &quot;description&quot;: &quot;Bundle added to create test data&quot;,
+            &quot;name&quot;: &quot;Personal Loan Bundle&quot;,
             &quot;productIds&quot;: [
                 &quot;123049f7-9897-4f62-b435-87e45c75298f&quot;,
                 &quot;3967f67b-6b97-4f86-876d-85774f21b94c&quot;
             ],
-            &quot;description&quot;: &quot;Bundle added to create test data&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://www.bendigobank.com.au/privacy-policy/full-privacy-policy/&quot;
         }
     ],
-    &quot;cardArt&quot;: [
+    &quot;isTailored&quot;: true,
+    &quot;applicationUri&quot;: &quot;https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&amp;applicationType=carLoan&quot;,
+    &quot;brandName&quot;: &quot;Bendigo Bank&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-10-24T13:30:23.998Z&quot;,
+    &quot;productId&quot;: &quot;3967f67b-6b97-4f86-876d-85774f21b94c&quot;,
+    &quot;description&quot;: &quot;This loan rewards you for your environmentally friendly purchases.&quot;,
+    &quot;features&quot;: [
         {
-            &quot;imageUri&quot;: &quot;https://www.bendigobank.com.au/gl&quot;,
-            &quot;title&quot;: &quot;Personal Loan&quot;
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;Online redraw available&quot;,
+            &quot;additionalValue&quot;: &quot;New Value&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Weekly, fortnightly or monthly repayments&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;additionalValue&quot;: &quot;1&quot;,
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;
+        },
+        {
+            &quot;additionalValue&quot;: &quot;2000&quot;,
+            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;
         }
     ]
 }</textarea>
