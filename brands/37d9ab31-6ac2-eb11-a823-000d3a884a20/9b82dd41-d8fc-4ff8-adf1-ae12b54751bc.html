@@ -42,45 +42,21 @@
     &quot;depositRates&quot;: [],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Terms and conditions apply&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;&quot;
-        },
-        {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: &quot;18&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Terms and conditions apply&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;&quot;
         }
     ],
     &quot;features&quot;: [
         {
-            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;Includes access to Apple or Android&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null
@@ -92,13 +68,149 @@
             &quot;additionalValue&quot;: &quot;VISA Debit Card&quot;
         },
         {
-            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;Includes access to Apple or Android&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null
+        },
+        {
+            &quot;featureType&quot;: &quot;OVERDRAFT&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Establishment Fee - Personal Loan&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply for a Personal Loan&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Default Notice Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Subsequent Default Notice Issue&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a subsequent default notice to you.&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Bank Cheque Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when we issue you with a Bank Cheque.&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Establishment Fee - Overdraft&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply for an Overdraft&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Establishment Fee - Mortgage&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply for a Mortgage related loan&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Establishment Fee - Unsecured Line of Credit&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply for an Unsecured Line of Credit&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Rate Lock Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply to lock in an interest rate on your loan prior to settlement&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Discharge of Mortgage Settlement Fee&quot;,
@@ -129,27 +241,13 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Subsequent Default Notice Issue&quot;,
+            &quot;name&quot;: &quot;Personal/Home Loan Redraw Facility&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a subsequent default notice to you.&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when you apply for a redraw of funds on your loan&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;IPEX&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies per transfer&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -171,111 +269,13 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Personal/Home Loan Redraw Facility&quot;,
+            &quot;name&quot;: &quot;IPEX&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply for a redraw of funds on your loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies per transfer&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;25.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;name&quot;: &quot;Rate Lock Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply to lock in an interest rate on your loan prior to settlement&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: null,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Loan Establishment Fee - Unsecured Line of Credit&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply for an Unsecured Line of Credit&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Default Notice Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you fail to make your contracted repayments and we are required to issue a default notice to you.&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Loan Establishment Fee - Mortgage&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply for a Mortgage related loan&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Loan Establishment Fee - Overdraft&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply for an Overdraft&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Loan Establishment Fee - Personal Loan&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when you apply for a Personal Loan&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Bank Cheque Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Applies when we issue you with a Bank Cheque.&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
