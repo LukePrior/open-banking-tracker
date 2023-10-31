@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "f2176288-5c03-ee11-8f6e-00224814dce7",
-        "lastUpdated": "2023-10-28T22:44:14Z",
+        "lastUpdated": "2023-10-30T05:10:35Z",
         "lastUpdatedBy": "SYSTEM",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Economy Variable Home Loan",
@@ -198,6 +198,14 @@
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Owner Occupier, Principal & Interest - max 70% LVR, minimum $150k. New lending only.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0599000000000000",
                 "interestPaymentDue": "IN_ARREARS",
@@ -205,23 +213,26 @@
                 "loanPurpose": "OWNER_OCCUPIED"
             },
             {
-                "rate": "0.0589000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Investor, Principal & Interest - max 80% LVR, minimum $150k. New lending only",
-                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0604000000000000",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
                 "rate": "0.0624000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Investor, Interest Only - max 70% LVR, minimum $150k. New lending only",
                 "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 70,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0717000000000000",
                 "interestPaymentDue": "IN_ARREARS",
@@ -253,23 +264,19 @@
                 "loanPurpose": "INVESTMENT"
             },
             {
-                "rate": "0.0599000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Owner Occupier, Principal & Interest - max 80% LVR, minimum $150k. New lending only.",
-                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
-                "lendingRateType": "VARIABLE",
-                "comparisonRate": "0.0614000000000000",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
                 "rate": "0.0609000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Investor, Principal & Interest - max 70% LVR, minimum $150k. New lending only",
                 "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0624000000000000",
                 "interestPaymentDue": "IN_ARREARS",
@@ -306,11 +313,119 @@
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Investor, Interest Only - max 80% LVR, minimum $150k. New lending only",
                 "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0719000000000000",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0689000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Investor, Interest Only - max 90% LVR, minimum $150k. New lending only",
+                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0746000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0664000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Investor, Principal & Interest- max 90% LVR, minimum $150k. New lending only",
+                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0678000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0614000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Investor, Principal & Interest - max 80% LVR, minimum $150k. New lending only",
+                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0629000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT"
+            },
+            {
+                "rate": "0.0589000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Owner Occupier, Principal & Interest - max 80% LVR, minimum $150k. New lending only.",
+                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0604000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "rate": "0.0619000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Owner Occupied, Principal & Interest - max 90% LVR, minimum $150k. New lending only",
+                "additionalInfoUri": "https://www.boq.com.au/personal/home-loans/economy-home-loan",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0634000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ]
     },

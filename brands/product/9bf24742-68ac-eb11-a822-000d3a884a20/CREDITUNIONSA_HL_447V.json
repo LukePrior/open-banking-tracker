@@ -1,19 +1,19 @@
 {
     "data": {
-        "productId": "CREDITUNIONSA_HL_442F3",
-        "effectiveFrom": "2016-08-01T00:00:00.000+10:00",
+        "productId": "CREDITUNIONSA_HL_447V",
+        "effectiveFrom": "2023-10-31T00:00:00.000+11:00",
         "effectiveTo": "2099-06-01T00:00:00.000+10:00",
         "lastUpdated": "2023-10-31T00:00:00.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "3-Year Fixed Home Loan Package",
-        "description": "Our 3 year Fixed Home Loan Package is perfect if you have a strict budget as you\u2019ll know exactly what your repayments will be. Plus you pay no monthly or redraw fees. The Credit Union SA Fixed Home Loan Package offers a fantastic collection of benefits across our Home Loans, Visa Credit Card, Personal Loans, Term Deposits and more.  You pay an annual fee of $395 and in return you\u2019ll save an absolute bundle.",
+        "name": "Variable Home Loan Package <70% Special",
+        "description": "Our Variable Home Loan Package is ideal for those seeking significant flexibility. The Credit Union SA Variable Home Loan Package offers a fantastic collection of benefits across our Home Loans, Visa Credit Card, Personal Loans, Term Deposits and more.  You pay an annual fee of $395 and in return you\u2019ll save an absolute bundle.",
         "brand": "Credit Union SA",
         "applicationUri": "https://apply.creditunionsa.com.au/cusa/servlet/SmartForm.html?formCode=joint-home-loan",
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.creditunionsa.com.au/loans/home-loans/home-loan-package/",
-            "termsUri": "https://www.creditunionsa.com.au/globalassets/pdfs/brc_1035.pdf",
-            "eligibilityUri": "https://www.creditunionsa.com.au/loans/home-loans/home-loan-package/",
+            "termsUri": "https://www.creditunionsa.com.au/loans/home-loans/discounted-variable-rate-home-loans/",
+            "eligibilityUri": "https://www.creditunionsa.com.au/loans/home-loans/discounted-variable-rate-home-loans/",
             "feesAndPricingUri": "https://www.creditunionsa.com.au/globalassets/pdfs/brc_1011.pdf",
             "additionalOverViewUris": [],
             "additionalTermsUris": [],
@@ -24,8 +24,9 @@
         "cardArt": [],
         "bundles": [
             {
-                "name": "3-Year Fixed Home Loan Package",
+                "name": "Variable Home Loan Package <70% Special",
                 "description": "Benefits of bundling the Variable Home Loan Package include, a reduction of 0.50% pa off carded rates for all fixed and variable personal loans and an additional 0.25% pa on carded term investment rates for amounts up to $250,000. Annual fee of $395 applies to all package home loans. No application fee for Tesla Powerwall Loan and reduced rate.",
+                "additionalInfo": "Annual package fee of $395 applies to all package home loans",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/loans/home-loans/home-loan-package/",
                 "productIds": "CREDITUNIONSA_OD_500, CREDITUNIONSA_INV"
             }
@@ -33,13 +34,15 @@
         "features": [
             {
                 "featureType": "OTHER",
-                "additionalInfo": "No loan application or monthly fee",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/hidden/compare-home-loans/compare-home-loans-listing/home-loan-package/"
+                "additionalInfo": "No loan application or monthly fee"
             },
             {
                 "featureType": "REDRAW",
-                "additionalInfo": "Extra repayments can be withdrawn at no cost",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/hidden/compare-home-loans/compare-home-loans-listing/home-loan-package/"
+                "additionalInfo": "Extra repayments can be withdrawn at no cost"
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "Can be 100% offset when linked to a Home Loan Offset Account"
             }
         ],
         "constraints": [
@@ -143,72 +146,22 @@
                 "additionalValue": "Payable whenever we prepare guarantee documents for a loan.",
                 "additionalInfoUri": "https://www.creditunionsa.com.au/fees/home-loans/",
                 "discounts": []
-            },
-            {
-                "name": "Rate Lock Fee",
-                "feeType": "EVENT",
-                "amount": "600.00",
-                "balanceRate": "0.0",
-                "transactionRate": "0.0",
-                "currency": "AUD",
-                "additionalValue": "The higher of $600 or 0.15% of the loan amount, payable if you choose to lock in your interest rate on a fixed rate loan for up to 90 days prior to the funding of your loan",
-                "additionalInfoUri": "https://www.creditunionsa.com.au/fees/home-loans/",
-                "discounts": []
             }
         ],
         "depositRates": [],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0643",
+                "lendingRateType": "VARIABLE",
+                "comparisonRate": "0.0616",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0599",
+                "rate": "0.0579",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [],
-                "additionalValue": "LVR<=97%Loan amount >= $150,000",
-                "additionalInfo": "Owner Occupied 3 year Fixed Home Loan Package (P&I)"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0664",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "rate": "0.0679",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "additionalValue": "LVR<=97%Loan amount >= $150,000",
-                "additionalInfo": "Owner Occupied 3 year Fixed Home Loan Package (IO)"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0668",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "rate": "0.0624",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "additionalValue": "LVR<=97%Loan amount >= $150,000",
-                "additionalInfo": "Investment 3 year Fixed Home Loan Package (P&I)"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "comparisonRate": "0.0668",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "rate": "0.0629",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [],
-                "additionalValue": "LVR<=97%Loan amount >= $150,000",
-                "additionalInfo": "Investment 3 year Fixed Home Loan Package (IO)"
+                "additionalValue": "LVR<=70%Loan amount >= $150,000",
+                "additionalInfo": "Owner Occupied Variable Home Loan <70% Special Offer (P&I)"
             }
         ]
     },
