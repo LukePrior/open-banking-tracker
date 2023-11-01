@@ -3,29 +3,285 @@
         "self": "https://api.anz/cds-au/v1/banking/products/175698f7-1e2a-63ec-4c24-868fc21d087b"
     },
     "data": {
-        "additionalInformation": {
-            "overviewUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-advantage/",
-            "eligibilityUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-advantage/",
-            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-transaction-accounts-tcs.pdf",
-            "feesAndPricingUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf"
-        },
-        "depositRates": [],
-        "lendingRates": [],
-        "constraints": [],
-        "description": "A simple, low-cost business account that gives you easy access to your money via ANZ Internet banking, ATMs and branches.",
-        "brand": "ANZ",
+        "applicationUri": "https://applyapp.anz.com/?producttype=bad&schema=sbola&sourcecode_1=ANA",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "brand": "ANZ",
         "cardArt": [],
-        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "fees": [
+            {
+                "currency": "AUD",
+                "additionalInfo": "For administering the account, charged monthly on the day the account was opened",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "discounts": [],
+                "additionalValue": "P1M",
+                "name": "Month Account Service Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            },
+            {
+                "additionalInfo": "For provision of a credit facility, payable in arrears for ongoing provision of the facility. Amount displayed is the annual fee which is debited quarterly in arrears based on the account opening date, and on a pro-rata basis whenever there is a change to the facility limit. The amount payable depends on the size of the limit - up to $9,999 = $250 p.a., $10K - $19,999 = $400 p.a., $20K - $49,999 = $600, $50K+= 1.7% of facility limit",
+                "accruedRate": "0.00",
+                "name": "Credit Facility Fee",
+                "amount": "250.00",
+                "discounts": [],
+                "currency": "AUD",
+                "feeType": "PERIODIC",
+                "additionalValue": "P1Y",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Debited to your account for determining whether to process a debit to your account using the informal overdraft facility, where that debit is declined as a result of our credit criteria not being satisfied.",
+                "discounts": [],
+                "amount": "37.70",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Outward Dishonour Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Payable for a transaction being honoured that causes the account to be overdrawn by more than $50 after processing",
+                "discounts": [],
+                "amount": "37.70",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Honour Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Charged on any international transaction charged or credited to an ANZ account. Proportion of the total AUD withdrawn or credited amount including any third party ATM operator fees.",
+                "transactionRate": "0.03",
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Overseas Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Charged when any attempted periodical payment cannot be made due to a lack of cleared funds",
+                "discounts": [],
+                "amount": "6.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Periodical Payment non-payment fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Fees are determined by the Australian Financial Security Authority, not ANZ. Currently, on renewal of securities on PPSR: $6 for 7 year PPSR renewal or $25 for 25 year renewal.",
+                "discounts": [],
+                "amount": "6.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "PPSR Registration, Renewal and Amendment Fees",
+                "additionalInfoUri": "https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr"
+            },
+            {
+                "additionalInfo": "For supplying a certificate(s) for audit or other purposes. $70 per hour, with a minimum of $50.",
+                "discounts": [],
+                "amount": "50.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Supplying Certificates",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-business-general-service-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "For preparation of Mortgage over Property, Charge over Asset, Corporate Guarantee or Individual Guarantee. The fee applies to each document prepared. Where two Mortgage over Property documents are prepared the total document preparation fee is $400.",
+                "discounts": [],
+                "amount": "200.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Document Preparation Fee - Loan Securities",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Non-payment that is referred to a third party debt collection agency. The amount charged depends upon the enforcement action taken and the agency to which the debt is referred.",
+                "discounts": [],
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Enforcement Expenses",
+                "amount": "0.00"
+            },
+            {
+                "additionalInfo": "Original registration by ANZ",
+                "discounts": [],
+                "amount": "160.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Lodgement Fee - Original Registration",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Charge for lodgement for registration of ANZ Mortgages, Discharges of Mortgage, Transfers of Land, PPS interests, assignment or reassignment of Life Policies and other documents",
+                "discounts": [],
+                "amount": "160.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Lodgement Fee - Registration",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Re-registration of Personal Property Security Interests",
+                "discounts": [],
+                "amount": "160.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Lodgement Fee - Re-registration",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Preparation and/or execution of Consent to Lease or Deed of Priority",
+                "discounts": [],
+                "amount": "90.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Preparation/Execution Fee - Consent to Lease/Deed of Priority",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Preparation and/or execution of Discharge of Mortgage",
+                "discounts": [],
+                "amount": "90.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Preparation/Execution Fee - Discharge of Mortgage",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "For searching for additional information (beyond normal searches like title search) required to obtain information from a government or regulatory body regarding the loan. Charged per property security. ",
+                "discounts": [],
+                "amount": "50.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Search Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Payable when there is a security to be provided or varied under an ANZ loan. It is charged per settlement attended even if it falls through and even if physical settlement doesn\u2019t occur.",
+                "discounts": [],
+                "amount": "160.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Settlement Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "For any changes that occur to a registered mortgage or on request for a certificate of title or other security document",
+                "discounts": [],
+                "amount": "160.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Production Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Payable where stamp duty is applicable to the loan at the time of settlement. The amount is calculated by the state or territory government's administrative body (e.g. Titles Office) using the value of the property being purchased.",
+                "discounts": [],
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Stamp Duty - Mortgage Document",
+                "amount": "0.00"
+            },
+            {
+                "additionalInfo": "Charged for overdrawing account in excess of the amount of credit available under  formal credit facility or other formal overdraft facility. Charge amount determined on application.",
+                "discounts": [],
+                "amount": "0.00",
+                "feeType": "EVENT",
+                "currency": "AUD",
+                "name": "Temporary Overdraft Increase",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside Australia (per withdrawal), and debited to your account at the same time as the withdrawal is debited",
+                "discounts": [],
+                "amount": "5.00",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Overseas ATM Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Upfront fee payable for any application for a new facility or change of terms of existing facility.   Fee is subject to negotiation and will be detailed in your Letter of Offer",
+                "discounts": [],
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "name": "Loan Approval Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf"
+            },
+            {
+                "additionalInfo": "Included - Electronic Transactions are unlimited through Self Assisted Channels",
+                "discounts": [],
+                "amount": "0.00",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Electronic Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            },
+            {
+                "additionalInfo": "Included - Electronic Transactions are unlimited through Self Assisted Channels",
+                "discounts": [],
+                "amount": "0.00",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "ANZ ATM Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            },
+            {
+                "additionalInfo": " You will have 20 included monthly ANZ Transactions consisting of a combination of Cheque Deposits/Cheque Withdrawals/Manual Merchant Deposits and Staff Assisted Transactions. After this, you will incur an Additional Transaction Fee for Cheque Transactions, Manual Merchant Deposits and Staff Assisted Transactions.",
+                "discounts": [],
+                "amount": "2.50",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Staff Assisted Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            },
+            {
+                "additionalInfo": " You will have 20 included monthly ANZ Transactions consisting of a combination of Cheque Deposits/Cheque Withdrawals/Manual Merchant Deposits and Staff Assisted Transactions. After this, you will incur an Additional Transaction Fee for Cheque Transactions, Manual Merchant Deposits and Staff Assisted Transactions.",
+                "discounts": [],
+                "amount": "2.50",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Cheque Transaction Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            },
+            {
+                "additionalInfo": " You will have 20 included monthly ANZ Transactions consisting of a combination of Cheque Deposits/Cheque Withdrawals/Manual Merchant Deposits and Staff Assisted Transactions. After this, you will incur an Additional Transaction Fee for Cheque Transactions, Manual Merchant Deposits and Staff Assisted Transactions.",
+                "discounts": [],
+                "amount": "2.50",
+                "feeType": "TRANSACTION",
+                "currency": "AUD",
+                "name": "Manual Merchant Deposit Fee",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
+            }
+        ],
+        "constraints": [],
         "isTailored": false,
+        "lastUpdated": "2023-10-31T13:01:00.000Z",
+        "eligibility": [
+            {
+                "additionalValue": "18",
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "You must be 18 years of age or older to apply"
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "An Australian business with valid ABN/ACN."
+            },
+            {
+                "additionalValue": "You're an owner/director of the Business",
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You're an owner/director of the Business"
+            }
+        ],
+        "productId": "175698f7-1e2a-63ec-4c24-868fc21d087b",
+        "depositRates": [],
+        "name": "ANZ Business Advantage",
         "features": [
             {
                 "featureType": "FRAUD_PROTECTION"
             },
             {
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
                 "featureType": "DIGITAL_BANKING",
-                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:bb",
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
+                "additionalInfoUri": "https://www.anz.com.au/business/products/online-banking/?CID=af:obank:bb"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -36,265 +292,54 @@
                 "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:bb"
             },
             {
+                "additionalValue": "BPAY",
                 "featureType": "BILL_PAYMENT",
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:bb",
-                "additionalValue": "BPAY"
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:bb"
             },
             {
+                "additionalValue": "Apple Pay",
                 "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
-                "additionalValue": "Apple Pay"
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
             },
             {
+                "additionalValue": "Google Pay",
                 "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
-                "additionalValue": "Google Pay"
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
             },
             {
+                "additionalValue": "Samsung Pay",
                 "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
-                "additionalValue": "Samsung Pay"
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
             },
             {
+                "additionalValue": "Fitbit Pay",
                 "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
-                "additionalValue": "Fitbit Pay"
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
             },
             {
+                "additionalValue": "Garmin Pay",
                 "featureType": "DIGITAL_WALLET",
-                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb",
-                "additionalValue": "Garmin Pay"
+                "additionalInfoUri": "https://mobilepayments.anz.com/?CID=af:obank:bb"
             },
             {
+                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
                 "featureType": "UNLIMITED_TXNS",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb",
-                "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account."
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
             },
             {
                 "featureType": "OVERDRAFT",
                 "additionalInfo": "You can apply for a linked overdraft to help with short term cash flow requirements (subject to ANZ's normal credit approval criteria)"
             }
         ],
-        "productId": "175698f7-1e2a-63ec-4c24-868fc21d087b",
-        "bundles": [],
-        "fees": [
-            {
-                "currency": "AUD",
-                "amount": "10.00",
-                "name": "Month Account Service Fee",
-                "additionalValue": "P1M",
-                "feeType": "PERIODIC",
-                "additionalInfo": "For administering the account, charged monthly on the day the account was opened",
-                "discounts": [],
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf?CID=af:obank:bb"
-            },
-            {
-                "currency": "AUD",
-                "accruedRate": "0.00",
-                "discounts": [],
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "additionalValue": "P1Y",
-                "name": "Credit Facility Fee",
-                "additionalInfo": "For provision of a credit facility, payable in arrears for ongoing provision of the facility. Amount displayed is the annual fee which is debited quarterly in arrears based on the account opening date, and on a pro-rata basis whenever there is a change to the facility limit. The amount payable depends on the size of the limit - up to $9,999 = $250 p.a., $10K - $19,999 = $400 p.a., $20K - $49,999 = $600, $50K+= 1.7% of facility limit",
-                "amount": "250.00",
-                "feeType": "PERIODIC"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Outward Dishonour Fee",
-                "feeType": "EVENT",
-                "additionalInfo": "Debited to your account for determining whether to process a debit to your account using the informal overdraft facility, where that debit is declined as a result of our credit criteria not being satisfied.",
-                "discounts": [],
-                "amount": "37.70"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Honour Fee",
-                "feeType": "EVENT",
-                "additionalInfo": "Payable for a transaction being honoured that causes the account to be overdrawn by more than $50 after processing",
-                "discounts": [],
-                "amount": "37.70"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf",
-                "transactionRate": "0.03",
-                "name": "Overseas Transaction Fee",
-                "additionalInfo": "Charged on any international transaction charged or credited to an ANZ account. Proportion of the total AUD withdrawn or credited amount including any third party ATM operator fees.",
-                "discounts": [],
-                "feeType": "TRANSACTION"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf",
-                "name": "Periodical Payment non-payment fee",
-                "feeType": "EVENT",
-                "additionalInfo": "Charged when any attempted periodical payment cannot be made due to a lack of cleared funds",
-                "discounts": [],
-                "amount": "6.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr",
-                "name": "PPSR Registration, Renewal and Amendment Fees",
-                "feeType": "EVENT",
-                "additionalInfo": "Fees are determined by the Australian Financial Security Authority, not ANZ. Currently, on renewal of securities on PPSR: $6 for 7 year PPSR renewal or $25 for 25 year renewal.",
-                "discounts": [],
-                "amount": "6.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-business-general-service-fees-charges.pdf",
-                "name": "Supplying Certificates",
-                "feeType": "EVENT",
-                "additionalInfo": "For supplying a certificate(s) for audit or other purposes. $70 per hour, with a minimum of $50.",
-                "discounts": [],
-                "amount": "50.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Document Preparation Fee - Loan Securities",
-                "feeType": "EVENT",
-                "additionalInfo": "For preparation of Mortgage over Property, Charge over Asset, Corporate Guarantee or Individual Guarantee. The fee applies to each document prepared. Where two Mortgage over Property documents are prepared the total document preparation fee is $400.",
-                "discounts": [],
-                "amount": "200.00"
-            },
-            {
-                "currency": "AUD",
-                "amount": "0.00",
-                "name": "Enforcement Expenses",
-                "additionalInfo": "Non-payment that is referred to a third party debt collection agency. The amount charged depends upon the enforcement action taken and the agency to which the debt is referred.",
-                "discounts": [],
-                "feeType": "EVENT"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Lodgement Fee - Original Registration",
-                "feeType": "EVENT",
-                "additionalInfo": "Original registration by ANZ",
-                "discounts": [],
-                "amount": "160.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Lodgement Fee - Registration",
-                "feeType": "EVENT",
-                "additionalInfo": "Charge for lodgement for registration of ANZ Mortgages, Discharges of Mortgage, Transfers of Land, PPS interests, assignment or reassignment of Life Policies and other documents",
-                "discounts": [],
-                "amount": "160.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Lodgement Fee - Re-registration",
-                "feeType": "EVENT",
-                "additionalInfo": "Re-registration of Personal Property Security Interests",
-                "discounts": [],
-                "amount": "160.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Preparation/Execution Fee - Consent to Lease/Deed of Priority",
-                "feeType": "EVENT",
-                "additionalInfo": "Preparation and/or execution of Consent to Lease or Deed of Priority",
-                "discounts": [],
-                "amount": "90.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Preparation/Execution Fee - Discharge of Mortgage",
-                "feeType": "EVENT",
-                "additionalInfo": "Preparation and/or execution of Discharge of Mortgage",
-                "discounts": [],
-                "amount": "90.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Search Fee",
-                "feeType": "EVENT",
-                "additionalInfo": "For searching for additional information (beyond normal searches like title search) required to obtain information from a government or regulatory body regarding the loan. Charged per property security. ",
-                "discounts": [],
-                "amount": "50.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Settlement Fee",
-                "feeType": "EVENT",
-                "additionalInfo": "Payable when there is a security to be provided or varied under an ANZ loan. It is charged per settlement attended even if it falls through and even if physical settlement doesn\u2019t occur.",
-                "discounts": [],
-                "amount": "160.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Production Fee",
-                "feeType": "EVENT",
-                "additionalInfo": "For any changes that occur to a registered mortgage or on request for a certificate of title or other security document",
-                "discounts": [],
-                "amount": "160.00"
-            },
-            {
-                "currency": "AUD",
-                "amount": "0.00",
-                "name": "Stamp Duty - Mortgage Document",
-                "additionalInfo": "Payable where stamp duty is applicable to the loan at the time of settlement. The amount is calculated by the state or territory government's administrative body (e.g. Titles Office) using the value of the property being purchased.",
-                "discounts": [],
-                "feeType": "EVENT"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Temporary Overdraft Increase",
-                "feeType": "EVENT",
-                "additionalInfo": "Charged for overdrawing account in excess of the amount of credit available under  formal credit facility or other formal overdraft facility. Charge amount determined on application.",
-                "discounts": [],
-                "amount": "0.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf",
-                "name": "Overseas ATM Transaction Fee",
-                "feeType": "TRANSACTION",
-                "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside Australia (per withdrawal), and debited to your account at the same time as the withdrawal is debited",
-                "discounts": [],
-                "amount": "5.00"
-            },
-            {
-                "currency": "AUD",
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-banking-finance-fees-charges.pdf",
-                "name": "Loan Approval Fee",
-                "additionalInfo": "Upfront fee payable for any application for a new facility or change of terms of existing facility.   Fee is subject to negotiation and will be detailed in your Letter of Offer",
-                "discounts": [],
-                "feeType": "VARIABLE"
-            }
-        ],
-        "applicationUri": "https://applyapp.anz.com/?producttype=bad&schema=sbola&sourcecode_1=ANA",
-        "name": "ANZ Business Advantage",
-        "eligibility": [
-            {
-                "additionalInfo": "You must be 18 years of age or older to apply",
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
-            },
-            {
-                "eligibilityType": "BUSINESS",
-                "additionalInfo": "An Australian business with valid ABN/ACN."
-            },
-            {
-                "additionalInfo": "You're an owner/director of the Business",
-                "eligibilityType": "OTHER",
-                "additionalValue": "You're an owner/director of the Business"
-            }
-        ],
-        "lastUpdated": "2023-07-10T05:00:00.000Z"
+        "lendingRates": [],
+        "effectiveFrom": "2019-06-30T14:00:00.000Z",
+        "description": "A simple, low-cost business account that gives you easy access to your money via ANZ Internet banking, ATMs and branches.",
+        "additionalInformation": {
+            "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/business-transaction-accounts-tcs.pdf",
+            "feesAndPricingUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/transaction-accounts-fees-charges.pdf",
+            "overviewUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-advantage/",
+            "eligibilityUri": "https://www.anz.com.au/business/accounts/transaction-accounts/business-advantage/"
+        },
+        "bundles": []
     }
 }
