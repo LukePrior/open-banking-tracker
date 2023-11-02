@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "2c186288-5c03-ee11-8f6e-00224814dce7",
-        "lastUpdated": "2023-10-10T01:53:16Z",
+        "lastUpdated": "2023-11-01T04:16:46Z",
         "lastUpdatedBy": "SYSTEM",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "EverydayPlus Account",
@@ -89,18 +89,20 @@
         ],
         "fees": [
             {
-                "feeType": "VARIABLE",
-                "name": "ATM transactions per activity",
-                "amount": "0.0000",
-                "currency": "AUD"
+                "feeType": "EVENT",
+                "name": "Trace Fee",
+                "amount": "20.0000",
+                "currency": "AUD",
+                "additionalInfo": "Charged for each request to perform a trace on any transaction type",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
             },
             {
                 "feeType": "EVENT",
-                "name": "Duplicate and Interim Statement Fee",
-                "amount": "5.0000",
+                "name": "Bank Cheque Fee",
+                "amount": "10.0000",
                 "currency": "AUD",
-                "additionalInfo": "Charged for each Duplicate and Interim statement issued",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
+                "additionalInfo": "Charged for issuing a bank cheque",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
             },
             {
                 "feeType": "EVENT",
@@ -108,29 +110,63 @@
                 "amount": "30.0000",
                 "currency": "AUD",
                 "additionalInfo": "Charged for each Bank Audit Certificate issued as part of an audit request",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
             },
             {
                 "feeType": "EVENT",
-                "name": "Online Banking Security credential",
-                "amount": "0.0000",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Voucher retrieval Fee",
-                "amount": "10.0000",
+                "name": "Overdrawn Account Fee",
+                "amount": "15.0000",
                 "currency": "AUD",
-                "additionalInfo": "Payable for each voucher retrieval you request BOQ Specialist to obtain from a relevant merchant.",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
+                "additionalInfo": "Charged if we honour a transaction that overdraws your account",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
             },
             {
                 "feeType": "EVENT",
-                "name": "Transaction Fee Real Time Gross Settlement (RTGS) - which is a same day payment request",
+                "name": "Dishonour Fee",
+                "amount": "45.0000",
+                "currency": "AUD",
+                "additionalInfo": "Charged if there is insufficent cleared funds available to cover the value of a direct debit being processed",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "GCAS emergency card replacement Fee",
+                "amount": "175.0000",
+                "currency": "USD",
+                "additionalInfo": "Payable and deducted from your card account on issuance of a replacement card outside Australia.",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Express PIN delivery",
                 "amount": "30.0000",
                 "currency": "AUD",
-                "additionalInfo": "Payable for each Real Time Gross Settlement (RTGS) transaction",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
+                "additionalInfo": "Priority handling cost for replacement PIN",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Foreign ATM Fee",
+                "amount": "5.0000",
+                "currency": "AUD",
+                "additionalInfo": "Charged for each transaction at an ATM outside of Australia.",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Express card delivery",
+                "amount": "40.0000",
+                "currency": "AUD",
+                "additionalInfo": "Priority handling cost for replacement Card",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Duplicate and Interim Statement Fee",
+                "amount": "5.0000",
+                "currency": "AUD",
+                "additionalInfo": "Charged for each Duplicate and Interim statement issued",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
             },
             {
                 "feeType": "EVENT",
@@ -138,7 +174,51 @@
                 "amount": "50.0000",
                 "currency": "AUD",
                 "additionalInfo": "Charged for each replacement Online Banking security credential issued",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Transaction Fee Real Time Gross Settlement (RTGS) - which is a same day payment request",
+                "amount": "30.0000",
+                "currency": "AUD",
+                "additionalInfo": "Payable for each Real Time Gross Settlement (RTGS) transaction",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Transaction Fee (international)",
+                "amount": "30.0000",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you transfer money to a Beneficiary with a bank account held at an overseas financial institution or Foreign Currency transfer to an australian financial institution.",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Foreign Currency conversion Fee",
+                "transactionRate": "0.0295000000000000",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you make a transaction on your card account in a currency other than Australian dollars, or you make a transaction on your card account in any currency (including AUD) that is processed by the card scheme or billed by the merchant outside Australia. 1.0% of the total amount of each such transaction is payable to Visa as a currency conversion charge and the remaining 1.95% of the total amount of each such transaction is an administration fee payable to BOQ Specialist.",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Voucher retrieval Fee",
+                "amount": "10.0000",
+                "currency": "AUD",
+                "additionalInfo": "Payable for each voucher retrieval you request BOQ Specialist to obtain from a relevant merchant.",
+                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/BOQS001527-everyday-plus-account-terms-and-conditions.pdf"
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "ATM transactions per activity",
+                "amount": "0.0000",
+                "currency": "AUD"
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Online Banking Security credential",
+                "amount": "0.0000",
+                "currency": "AUD"
             },
             {
                 "feeType": "EVENT",
@@ -154,89 +234,9 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Trace Fee",
-                "amount": "20.0000",
-                "currency": "AUD",
-                "additionalInfo": "Charged for each request to perform a trace on any transaction type",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Foreign Currency conversion Fee",
-                "transactionRate": "0.0295000000000000",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you make a transaction on your card account in a currency other than Australian dollars, or you make a transaction on your card account in any currency (including AUD) that is processed by the card scheme or billed by the merchant outside Australia. 1.0% of the total amount of each such transaction is payable to Visa as a currency conversion charge and the remaining 1.95% of the total amount of each such transaction is an administration fee payable to BOQ Specialist.",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Foreign ATM Fee",
-                "amount": "5.0000",
-                "currency": "AUD",
-                "additionalInfo": "Charged for each transaction at an ATM outside of Australia.",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "GCAS emergency card replacement Fee",
-                "amount": "175.0000",
-                "currency": "USD",
-                "additionalInfo": "Payable and deducted from your card account on issuance of a replacement card outside Australia.",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Overdrawn Account Fee",
-                "amount": "15.0000",
-                "currency": "AUD",
-                "additionalInfo": "Charged if we honour a transaction that overdraws your account",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Express card delivery",
-                "amount": "40.0000",
-                "currency": "AUD",
-                "additionalInfo": "Priority handling cost for replacement Card",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
                 "name": "Direct Debit Fee",
                 "amount": "0.0000",
                 "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Dishonour Fee",
-                "amount": "45.0000",
-                "currency": "AUD",
-                "additionalInfo": "Charged if there is insufficent cleared funds available to cover the value of a direct debit being processed",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Express PIN delivery",
-                "amount": "30.0000",
-                "currency": "AUD",
-                "additionalInfo": "Priority handling cost for replacement PIN",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Bank Cheque Fee",
-                "amount": "10.0000",
-                "currency": "AUD",
-                "additionalInfo": "Charged for issuing a bank cheque",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Transaction Fee (international)",
-                "amount": "30.0000",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you transfer money to a Beneficiary with a bank account held at an overseas financial institution or Foreign Currency transfer to an australian financial institution.",
-                "additionalInfoUri": "https://www.boqspecialist.com.au/content/dam/boq-specialist/files/products/bank-accounts/everyday-plus-account/terms-and-conditions/60719-BOQS001527-EVERYDAY-PLUS-ACCOUNT-TERMS-AND-CONDITIONS.pdf"
             }
         ],
         "depositRates": [

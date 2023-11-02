@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "1c906e88-5c03-ee11-8f6e-00224814d330",
-        "lastUpdated": "2023-10-22T22:36:31Z",
+        "lastUpdated": "2023-11-01T01:07:47Z",
         "lastUpdatedBy": "SYSTEM",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Future Saver Account",
@@ -235,29 +235,47 @@
         ],
         "depositRates": [
             {
+                "rate": "0.0005000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/future-saver",
+                "depositRateType": "VARIABLE"
+            },
+            {
                 "rate": "0.0535000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "for balance $1 to $50000",
-                "additionalInfo": "If Bonus Criteria ($1000 deposited per month + 5 eligible transactions ) met. Otherwise only base rate (0.05%) will apply",
+                "additionalValue": "If Bonus Criteria ($1000 deposited per month + 5 eligible transactions) met. Otherwise only base rate (0.05%) will apply.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/future-saver",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 50000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "depositRateType": "BONUS"
             },
             {
                 "rate": "0.0295000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "for balance $50.000.01 up to $250000",
-                "additionalInfo": "If Bonus Criteria ($1000 deposited per month + 5 eligible transactions ) met. Otherwise only base rate (0.05%) will apply",
+                "additionalValue": "If Bonus Criteria ($1000 deposited per month + 5 eligible transactions) met. Otherwise only base rate (0.05%) will apply.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/future-saver",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50001,
+                        "maximumValue": 250000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "depositRateType": "BONUS"
-            },
-            {
-                "rate": "0.0005000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/future-saver",
-                "depositRateType": "VARIABLE"
             }
         ]
     },

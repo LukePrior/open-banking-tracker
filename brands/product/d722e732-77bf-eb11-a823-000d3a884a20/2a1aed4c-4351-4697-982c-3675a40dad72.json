@@ -3,7 +3,7 @@
         "brand": "THE CAPRICORNIAN",
         "description": "Premium Choice Investment Loan",
         "isTailored": false,
-        "lastUpdated": "2023-09-13T22:24:41.856748Z",
+        "lastUpdated": "2023-11-01T23:53:47.918702Z",
         "name": "Premium Choice Investment Loan",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "2a1aed4c-4351-4697-982c-3675a40dad72",
@@ -94,13 +94,13 @@
         "fees": [
             {
                 "feeType": "EVENT",
-                "name": "ARREARS_DEFAULT_NOTICE_FEE",
+                "name": "ARREARS_REMINDER_CALL_FEE",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "40.00",
+                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -136,6 +136,20 @@
             },
             {
                 "feeType": "EVENT",
+                "name": "ARREARS_DEFAULT_NOTICE_FEE",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "40.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "MORTGAGE_DISCHARGE_FEE-NON_SETTLEMENT",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -163,14 +177,28 @@
                 "transactionRate": null
             },
             {
+                "feeType": "UPFRONT",
+                "name": "MORTGAGE_APPLICATION_FEE-GREATER_THAN_80%",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "600.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
-                "name": "ARREARS_REMINDER_CALL_FEE",
+                "name": "ARREARS_2ND_AND_SUBSEQUENT_REMINDER_LETTER",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "5.00",
+                "amount": "20.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -233,20 +261,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "ARREARS_2ND_AND_SUBSEQUENT_REMINDER_LETTER",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "WITHDRAWAL",
                 "name": "STAFF_ASSISTED_LOAN_REDRAW",
                 "accrualFrequency": null,
@@ -273,23 +287,37 @@
                 "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "MORTGAGE_APPLICATION_FEE-GREATER_THAN_80%",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Includes one valuation up to the cost of $300 - Excludes additional valuation costs and solicitors costs to prepare mortgage documents and settlement fees.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "600.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
             }
         ],
         "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0664000000000000",
+                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
+                "additionalInfoUri": null,
+                "additionalValue": "P2Y",
+                "applicationFrequency": "P1M",
+                "calculationFrequency": "P1D",
+                "comparisonRate": "0.0730000000000000",
+                "interestPaymentDue": "IN_ARREARS",
+                "loanPurpose": "INVESTMENT",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "minimumValue": 0.9,
+                        "name": "Fixed - Loan to valuation ratio greater than 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
+            },
             {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0741000000000000",
@@ -299,7 +327,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0746000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -309,7 +337,10 @@
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
-                        "applicabilityConditions": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
                         "maximumValue": 500000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -324,7 +355,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0746000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -334,7 +365,10 @@
                         "unitOfMeasure": "DOLLAR",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
-                        "applicabilityConditions": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
                         "maximumValue": 250000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -349,7 +383,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0732000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -357,31 +391,6 @@
                         "minimumValue": 500000.0,
                         "name": "Variable Rate >$500K",
                         "unitOfMeasure": "DOLLAR",
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "applicabilityConditions": null,
-                        "maximumValue": 0.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ]
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0664000000000000",
-                "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
-                "additionalInfoUri": null,
-                "additionalValue": "P2Y",
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "comparisonRate": "0.0730000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
-                "loanPurpose": "INVESTMENT",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": [
-                    {
-                        "minimumValue": 0.9,
-                        "name": "Fixed - Loan to valuation ratio greater than 90%",
-                        "unitOfMeasure": "PERCENT",
                         "additionalInfo": null,
                         "additionalInfoUri": null,
                         "applicabilityConditions": {
@@ -402,7 +411,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0715000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -430,7 +439,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0709000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -458,7 +467,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0735000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
@@ -486,7 +495,7 @@
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.0726000000000000",
-                "interestPaymentDue": "IN_ADVANCE",
+                "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [

@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "b6176288-5c03-ee11-8f6e-00224814dce7",
-        "lastUpdated": "2023-10-09T11:13:48Z",
+        "lastUpdated": "2023-11-01T00:46:42Z",
         "lastUpdatedBy": "SYSTEM",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Interest Savings",
@@ -18,12 +18,6 @@
         },
         "status": "APPROVED",
         "features": [
-            {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "1",
-                "additionalInfo": "Choose from one of the following free transactions per month: 1 free branch withdrawal or 1 free BOQ/ATM eftpos withdrawal or transfer or 1 free Internet Banking transfer to your BOQ account or BPAY payment",
-                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account"
-            },
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Let your savings grow without monthly account fees",
@@ -42,6 +36,12 @@
             {
                 "featureType": "OTHER",
                 "additionalInfo": "All deposits up to $250,000 are protected by the Federal Government's deposit guarantee, so your savings are secure with us",
+                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account"
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalValue": "1",
+                "additionalInfo": "Choose from one of the following free transactions per month: 1 free branch withdrawal or 1 free BOQ/ATM eftpos withdrawal or transfer or 1 free Internet Banking transfer to your BOQ account or BPAY payment",
                 "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account"
             }
         ],
@@ -136,24 +136,6 @@
         ],
         "depositRates": [
             {
-                "rate": "0.0270000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "for balance $50000 and over",
-                "additionalInfo": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly",
-                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account",
-                "depositRateType": "BONUS"
-            },
-            {
-                "rate": "0.0270000000000000",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "for balance $1 to less than $4999",
-                "additionalInfo": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly",
-                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account",
-                "depositRateType": "BONUS"
-            },
-            {
                 "rate": "0.0005000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -164,9 +146,53 @@
                 "rate": "0.0270000000000000",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "for balance $5000 to less than $49999",
-                "additionalInfo": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly",
+                "additionalValue": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly.",
                 "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1,
+                        "maximumValue": 4999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "BONUS"
+            },
+            {
+                "rate": "0.0270000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly.",
+                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "BONUS"
+            },
+            {
+                "rate": "0.0270000000000000",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Total interest rate will be 2.75% p.a. (2.70% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month.\u00a0Calculated daily and paid monthly.",
+                "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/bonus-interest-savings-account",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000,
+                        "maximumValue": 49999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "depositRateType": "BONUS"
             }
         ]
