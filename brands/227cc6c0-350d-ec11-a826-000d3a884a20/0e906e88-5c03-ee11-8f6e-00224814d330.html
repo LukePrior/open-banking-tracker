@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;0e906e88-5c03-ee11-8f6e-00224814d330&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-09-06T00:06:56Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-01T01:03:06Z&quot;,
     &quot;lastUpdatedBy&quot;: &quot;SYSTEM&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Fast Track Starter&quot;,
@@ -97,18 +97,36 @@
             &quot;rate&quot;: &quot;0.0245000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;for balance $10.000.01 to less than $250000&quot;,
-            &quot;additionalInfo&quot;: &quot;If Bonus Criteria ($200 deposited per month + 5 eligible transactions) met. Otherwise only variable base rate (0.05%) will apply&quot;,
+            &quot;additionalValue&quot;: &quot;If Bonus Criteria ($200 deposited per month + 5 eligible transactions) met. Otherwise only variable base rate (0.05%) will apply.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/personal-deposits-interest-rates.pdf&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.01,
+                    &quot;maximumValue&quot;: 250000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
             &quot;depositRateType&quot;: &quot;BONUS&quot;
         },
         {
             &quot;rate&quot;: &quot;0.0295000000000000&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;for balance $1 to $10000&quot;,
-            &quot;additionalInfo&quot;: &quot;If Bonus Criteria ($200 deposited per month + 5 eligible transactions) met. Otherwise only variable base rate (0.05%) will apply&quot;,
+            &quot;additionalValue&quot;: &quot;If Bonus Criteria ($200 deposited per month + 5 eligible transactions) met. Otherwise only variable base rate (0.05%) will apply.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/personal-deposits-interest-rates.pdf&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1,
+                    &quot;maximumValue&quot;: 10000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
             &quot;depositRateType&quot;: &quot;BONUS&quot;
         }
     ]
