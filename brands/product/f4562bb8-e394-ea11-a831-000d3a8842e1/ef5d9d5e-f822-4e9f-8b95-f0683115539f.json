@@ -1,60 +1,19 @@
 {
-    "links": {
-        "self": "https://api.anz/cds-au/v1/banking/products/ef5d9d5e-f822-4e9f-8b95-f0683115539f"
-    },
     "data": {
+        "lendingRates": [],
         "description": "Self managed super is easier than ever, with all you need to use, move and manage your SMSF cash in one place.",
-        "name": "ANZ SMSF Cash Hub Account",
         "eligibility": [
             {
                 "additionalInfo": "The account is only available to SMSF Trustees to receive and manage money for a SMSF.",
                 "eligibilityType": "OTHER"
             }
         ],
-        "lendingRates": [],
-        "fees": [],
-        "depositRates": [
-            {
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "rate": "0.005",
-                "depositRateType": "VARIABLE",
-                "tiers": [
-                    {
-                        "maximumValue": 9999,
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance between $0 and $9,999"
-                        },
-                        "minimumValue": 0
-                    }
-                ]
-            },
-            {
-                "applicationFrequency": "P1M",
-                "calculationFrequency": "P1D",
-                "rate": "0.0205",
-                "depositRateType": "VARIABLE",
-                "tiers": [
-                    {
-                        "rateApplicationMethod": "WHOLE_BALANCE",
-                        "name": "Balance",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "applicabilityConditions": {
-                            "additionalInfo": "Balance $10,000 or more"
-                        }
-                    }
-                ]
-            }
-        ],
+        "effectiveFrom": "2020-06-30T14:00:00.000Z",
         "features": [
             {
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:iv",
+                "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
-                "featureType": "DIGITAL_BANKING"
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:iv"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -65,29 +24,115 @@
                 "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:iv"
             },
             {
-                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&CID=af:obank:iv",
+                "featureType": "UNLIMITED_TXNS",
                 "additionalInfo": "Unlimited ANZ transactions available using ANZ Internet Banking, ANZ Phone Banking, ANZ ATMs, ANZ Business Visa Debit and EFTPOS. Also includes any deposit, withdrawal or transfer at ANZ branches, cheques drawn by you and any cheque or manual merchant slip deposited to your account.",
-                "featureType": "UNLIMITED_TXNS"
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?MOD=AJPERES&CID=af:obank:iv"
             },
             {
                 "featureType": "FRAUD_PROTECTION"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "A secure cash account, designed specifically for SMSF Trustees, to seamlessly use, move and manage cash for your self managed super.",
+                "additionalInfoUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Easy to manage a variety of SMSF cash flows such as superannuation contributions, rollovers, investments, ATO payments and more.",
+                "additionalInfoUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/"
             }
         ],
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "brand": "ANZ",
+        "isTailored": false,
+        "depositRates": [
+            {
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "minimumValue": 0,
+                        "maximumValue": 9999,
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance between $0 and $9,999"
+                        },
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "calculationFrequency": "P1D",
+                "rate": "0.005"
+            },
+            {
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "minimumValue": 10000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Balance $10,000 or more"
+                        },
+                        "name": "Balance",
+                        "unitOfMeasure": "DOLLAR"
+                    }
+                ],
+                "depositRateType": "VARIABLE",
+                "calculationFrequency": "P1D",
+                "rate": "0.0205"
+            }
+        ],
+        "productId": "ef5d9d5e-f822-4e9f-8b95-f0683115539f",
         "bundles": [],
+        "applicationUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/",
+        "brand": "ANZ",
+        "fees": [
+            {
+                "currency": "AUD",
+                "additionalInfo": " A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit ",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "name": "Dishonour Fee",
+                "discounts": [],
+                "amount": "6.00",
+                "feeType": "EVENT"
+            },
+            {
+                "balanceRate": "0.03",
+                "discounts": [],
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "additionalInfo": "ANZ will charge 3% of the value of any International Transaction charged or credited to an ANZ account.",
+                "name": "Overseas Transaction Fee",
+                "feeType": "EVENT"
+            },
+            {
+                "discounts": [],
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "name": "Overseas ATM Transaction Fee",
+                "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside Australia (per withdrawal), and debited to your account at the same time as the withdrawal is debited ",
+                "amount": "5.00",
+                "feeType": "EVENT"
+            },
+            {
+                "currency": "AUD",
+                "additionalInfo": "Charged when any attempted periodical payment cannot be made due to a lack of cleared funds",
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "name": "Periodical Payment Non-payment Fee",
+                "discounts": [],
+                "amount": "6.00",
+                "feeType": "EVENT"
+            }
+        ],
+        "name": "ANZ SMSF Cash Hub Account",
         "cardArt": [],
-        "effectiveFrom": "2020-06-30T14:00:00.000Z",
-        "constraints": [],
         "additionalInformation": {
             "eligibilityUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/",
             "termsUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
             "feesAndPricingUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
             "overviewUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/"
         },
-        "isTailored": false,
-        "lastUpdated": "2023-07-06T11:00:00.000Z",
-        "applicationUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/smsf-cash-hub-account/",
-        "productId": "ef5d9d5e-f822-4e9f-8b95-f0683115539f"
+        "lastUpdated": "2023-11-03T10:00:00.000Z",
+        "constraints": [],
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS"
+    },
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/ef5d9d5e-f822-4e9f-8b95-f0683115539f"
     }
 }

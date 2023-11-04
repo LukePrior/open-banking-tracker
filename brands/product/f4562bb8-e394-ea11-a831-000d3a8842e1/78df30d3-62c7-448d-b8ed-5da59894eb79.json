@@ -1,10 +1,14 @@
 {
-    "links": {
-        "self": "https://api.anz/cds-au/v1/banking/products/78df30d3-62c7-448d-b8ed-5da59894eb79"
-    },
     "data": {
-        "description": "Distributed via a range of approved Third Parties such as stockbrokers, accountants and SMSF administrators who open deposit accounts on behalf of their customers",
-        "name": "ANZ V2 PLUS",
+        "additionalInformation": {
+            "feesAndPricingUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
+            "overviewUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
+            "eligibilityUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
+            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:sv#FTPDS"
+        },
+        "applicationUri": "https://onlineapps.anz.com/third-party-deposit/?CID=af:obank:sv#/landing",
+        "brand": "ANZ",
+        "cardArt": [],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -12,53 +16,127 @@
                 "additionalValue": "18"
             }
         ],
+        "description": "Distributed via a range of approved Third Parties such as stockbrokers, accountants and SMSF administrators who open deposit accounts on behalf of their customers",
+        "isTailored": false,
+        "lastUpdated": "2023-11-03T10:00:00.000Z",
+        "productId": "78df30d3-62c7-448d-b8ed-5da59894eb79",
+        "name": "ANZ V2 PLUS",
+        "bundles": [],
         "lendingRates": [],
         "fees": [
             {
-                "discounts": [],
-                "name": "Staff Assisted Transaction",
-                "amount": "2.50",
                 "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
+                "amount": "2.50",
+                "currency": "AUD",
                 "feeType": "TRANSACTION",
+                "name": "Staff Assisted Transaction",
+                "discounts": []
+            },
+            {
+                "amount": "0.50",
+                "discounts": [],
+                "feeType": "TRANSACTION",
+                "name": "Electronic Transaction",
                 "currency": "AUD"
             },
             {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
+                "amount": "10.00",
+                "additionalInfo": "Providing bank cheques (Australian dollars only) This is a charge for issuing a bank cheque to an ANZ account holder. ",
+                "feeType": "EVENT",
                 "discounts": [],
-                "name": "Electronic Transaction",
-                "amount": "0.50",
-                "feeType": "TRANSACTION",
+                "name": "Bank Cheque At ANZ Branch",
                 "currency": "AUD"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
+                "amount": "7.50",
+                "additionalInfo": "Providing bank cheques (Australian dollars only) This is a charge for issuing a bank cheque to an ANZ account holder. ",
+                "feeType": "EVENT",
+                "discounts": [],
+                "name": "Bank Cheque Request through ANZ Internet Banking",
+                "currency": "AUD"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
+                "amount": "25.00",
+                "currency": "AUD",
+                "feeType": "EVENT",
+                "name": "Repurchase of Bank Cheque",
+                "discounts": []
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
+                "amount": "32.50",
+                "currency": "AUD",
+                "feeType": "EVENT",
+                "name": "Replacing a lost or stolen bank cheque ",
+                "discounts": []
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "amount": "6.00",
+                "additionalInfo": " A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit ",
+                "feeType": "EVENT",
+                "discounts": [],
+                "name": "Dishonour Fee",
+                "currency": "AUD"
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "discounts": [],
+                "feeType": "EVENT",
+                "name": "Overseas Transaction Fee",
+                "balanceRate": "0.03",
+                "additionalInfo": "ANZ will charge 3% of the value of any International\nTransaction charged or credited to an ANZ account."
+            },
+            {
+                "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+                "amount": "5.00",
+                "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside\nAustralia (per withdrawal), and debited to your account at\nthe same time as the withdrawal is debited ",
+                "feeType": "EVENT",
+                "discounts": [],
+                "name": "Overseas ATM Transaction Fee",
+                "currency": "AUD"
+            }
+        ],
+        "effectiveFrom": "2020-06-30T14:00:00.000Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "constraints": [
+            {
+                "additionalValue": "5000.00",
+                "constraintType": "MIN_BALANCE"
             }
         ],
         "depositRates": [
             {
-                "applicationFrequency": "P3M",
-                "calculationFrequency": "P1D",
-                "rate": "0.0001",
                 "depositRateType": "VARIABLE",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "rate": "0.0001",
                 "tiers": []
             },
             {
-                "applicationFrequency": "P3M",
-                "calculationFrequency": "P1D",
-                "rate": "0.0385",
                 "depositRateType": "VARIABLE",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "rate": "0.0385",
                 "tiers": []
             }
         ],
         "features": [
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/internet-banking/personal/?CID=af:obank:sv",
-                "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
-                "featureType": "DIGITAL_BANKING"
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Access using ANZ Internet Banking or ANZ App"
             },
             {
-                "featureType": "NPP_PAYID",
-                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv"
+                "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv",
+                "featureType": "NPP_PAYID"
             },
             {
-                "featureType": "NPP_ENABLED",
-                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv"
+                "additionalInfoUri": "https://institutional.anz.com/content/dam/Institutional/en/documents/NEW%20PAYMENTS%20PLATFORM%20T&C.pdf?CID=af:obank:sv",
+                "featureType": "NPP_ENABLED"
             },
             {
                 "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/bpay/?CID=af:obank:sv",
@@ -97,28 +175,16 @@
             },
             {
                 "featureType": "FRAUD_PROTECTION"
-            }
-        ],
-        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "brand": "ANZ",
-        "bundles": [],
-        "cardArt": [],
-        "effectiveFrom": "2020-06-30T14:00:00.000Z",
-        "constraints": [
+            },
             {
-                "constraintType": "MIN_BALANCE",
-                "additionalValue": "5000.00"
+                "additionalInfoUri": "https://www.anz.com.au/personal/adviser-services/our-products/cash-account/",
+                "featureType": "OTHER",
+                "additionalInfo": "The ability to have either \u2018full transactional\u2019 or \u2018view-only\u2019 access to the account, depending on your client's needs.",
+                "additionalValue": "Simple & Flexible"
             }
-        ],
-        "additionalInformation": {
-            "eligibilityUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
-            "termsUri": "http://www.anz.com/auxiliary/rates-fees-terms/fees-terms-conditions/?CID=af:obank:sv#FTPDS",
-            "feesAndPricingUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
-            "overviewUri": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv"
-        },
-        "isTailored": false,
-        "lastUpdated": "2023-06-29T20:00:00.000Z",
-        "applicationUri": "https://onlineapps.anz.com/third-party-deposit/?CID=af:obank:sv#/landing",
-        "productId": "78df30d3-62c7-448d-b8ed-5da59894eb79"
+        ]
+    },
+    "links": {
+        "self": "https://api.anz/cds-au/v1/banking/products/78df30d3-62c7-448d-b8ed-5da59894eb79"
     }
 }
