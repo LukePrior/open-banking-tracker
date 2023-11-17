@@ -82,17 +82,38 @@
         ],
         "fees": [
             {
-                "feeType": "EVENT",
-                "name": "Consent fee",
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": "500.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
+                "discounts": [
+                    {
+                        "description": "DHOAS discount",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -104,6 +125,34 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Mortgage discharge fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "300.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Consent fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -152,28 +201,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Arrears notice fee",
+                "feeType": "TRANSACTION",
+                "name": "Redraw fee (per redraw)",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "2nd and subsequent reminders by letter or phone",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "A hourly fee applies plus any expenses incurred",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
+                "amount": "10.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -222,16 +257,16 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "Redraw fee (per redraw)",
+                "feeType": "EVENT",
+                "name": "RateSaver Switch Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "To switch to a RateSaver Loan",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "10.00",
+                "amount": "500.00",
                 "balanceRate": null,
-                "currency": "AUD",
+                "currency": null,
                 "discounts": [],
                 "transactionRate": null
             },
@@ -250,41 +285,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": null,
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS discount",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
                 "feeType": "PERIODIC",
                 "name": "Paper statement fee (per statement)",
                 "accrualFrequency": null,
@@ -299,28 +299,28 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "RateSaver Switch Fee",
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "To switch to a RateSaver Loan",
+                "additionalInfo": "A hourly fee applies plus any expenses incurred",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "500.00",
+                "amount": null,
                 "balanceRate": null,
-                "currency": null,
+                "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
             },
             {
                 "feeType": "EVENT",
-                "name": "Mortgage discharge fee",
+                "name": "Arrears notice fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "2nd and subsequent reminders by letter or phone",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "300.00",
+                "amount": "20.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
