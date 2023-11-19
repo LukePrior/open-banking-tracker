@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;BTAbsoluteInvestmentLoan&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-06-11T06:46:13Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-10-16T05:38:23Z&quot;,
     &quot;productCategory&quot;: &quot;MARGIN_LOANS&quot;,
     &quot;name&quot;: &quot;Absolute Investment Loan&quot;,
     &quot;description&quot;: &quot;BT absolute investment loan has potential to magnify your investment returns with up to 80% gearing.&quot;,
@@ -40,6 +40,14 @@
             &quot;additionalInfo&quot;: &quot;The BT Absolute Investment Loan has no transaction fees.&quot;
         },
         {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;Indicates that the product has the option to accept extra repayments without incurring additional charges (for example Buy Now, Pay Later (BNPL) or line of credit products may offer the facility to repay instalments on an adhoc basis).&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;Relationship management is available for eligible customers.&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Borrowers are subject to full credit checks.&quot;
         }
@@ -54,17 +62,15 @@
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Australian Residency&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Residency &quot;,
             &quot;additionalInfo&quot;: &quot;Individual or joint individuals, who are Australian residents for tax purposes, reside in Australia and are not holders of a Significant Investor Visa (SIV) (188C).&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Australian proprietary companies&quot;,
             &quot;additionalInfo&quot;: &quot;Australian proprietary companies which are not subsidiaries of listed companies. The company directors are required to guarantee the obligations of a company borrower. The company directors must be Australian residents for tax purposes, reside in Australia and not be holders of a Significant Investor Visa (SIV) (188C).&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Australian trustees of family&quot;,
             &quot;additionalInfo&quot;: &quot;Australian trustees of family, discretionary or testamentary trusts. The directors of proprietary company trustees are required to guarantee the obligations of the company trustee borrower. The company directors must be Australian residents for tax purposes, reside in Australia and not be holders of a Significant Investor Visa (SIV) (188C).&quot;
         }
     ],
@@ -79,103 +85,152 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0827&quot;,
+            &quot;rate&quot;: &quot;0.1002&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0805&quot;,
+            &quot;rate&quot;: &quot;0.0905&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;additionalValue&quot;: &quot;P3M&quot;,
-            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0805&quot;,
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0805&quot;,
-            &quot;additionalValue&quot;: &quot;P9M&quot;,
-            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0805&quot;,
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.089&quot;,
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0905&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0905&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0905&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.094&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0955&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;additionalValue&quot;: &quot;P36M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.092&quot;,
+            &quot;rate&quot;: &quot;0.097&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;additionalValue&quot;: &quot;P48M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0935&quot;,
+            &quot;rate&quot;: &quot;0.0985&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ADVANCE&quot;,
             &quot;additionalValue&quot;: &quot;P60M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in advance.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0815&quot;,
+            &quot;rate&quot;: &quot;0.0915&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P3M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0815&quot;,
+            &quot;rate&quot;: &quot;0.0915&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P6M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0815&quot;,
+            &quot;rate&quot;: &quot;0.0915&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P9M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0815&quot;,
+            &quot;rate&quot;: &quot;0.0915&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P12M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.09&quot;,
+            &quot;rate&quot;: &quot;0.095&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P24M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0915&quot;,
+            &quot;rate&quot;: &quot;0.0965&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P36M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.093&quot;,
+            &quot;rate&quot;: &quot;0.098&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P48M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0945&quot;,
+            &quot;rate&quot;: &quot;0.0995&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;P60M&quot;,
             &quot;additionalInfo&quot;: &quot;Fixed interest is paid in arrears.&quot;
         }
