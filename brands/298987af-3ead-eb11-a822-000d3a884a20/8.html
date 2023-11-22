@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;8&quot;,
     &quot;effectiveFrom&quot;: &quot;2007-04-15T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-04-26T02:12:32.2791072Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-22T00:00:31.7643157Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;Term Deposit 4 Months&quot;,
     &quot;description&quot;: &quot;Term Deposit 4 Months&quot;,
@@ -27,6 +27,10 @@
         }
     ],
     &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1000000.00&quot;
+        },
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
             &quot;additionalValue&quot;: &quot;1000.00&quot;
@@ -55,7 +59,8 @@
                 {
                     &quot;name&quot;: &quot;Tier 1&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.0,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 1000000.0,
                     &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
                 }
             ],
