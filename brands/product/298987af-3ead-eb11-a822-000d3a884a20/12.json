@@ -2,7 +2,7 @@
     "data": {
         "productId": "12",
         "effectiveFrom": "2007-04-15T14:30:00.0000000Z",
-        "lastUpdated": "2023-04-26T02:12:32.2791072Z",
+        "lastUpdated": "2023-11-22T00:00:31.7643157Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Deposit 8 Months",
         "description": "Term Deposit 8 Months",
@@ -21,6 +21,10 @@
             }
         ],
         "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "1000000.00"
+            },
             {
                 "constraintType": "MIN_BALANCE",
                 "additionalValue": "1000.00"
@@ -49,7 +53,8 @@
                     {
                         "name": "Tier 1",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
+                        "minimumValue": 1000.0,
+                        "maximumValue": 1000000.0,
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ],
