@@ -2,39 +2,10 @@
     "data": {
         "features": [
             {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY View",
-                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
-            },
-            {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Business Visa Debit Card",
                 "additionalInfo": "Access your own business funds to pay bills and suppliers online, over the phone or in person.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/business-accounts/business-visa-debit.html"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Yes",
-                "additionalInfo": "Regardless of your business structure and needs, we have an online banking solution that will suit you.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/online-banking/compare-our-online-business-banking-platforms.html"
-            },
-            {
-                "featureType": "NOTIFICATIONS",
-                "additionalValue": "Billing notifications",
-                "additionalInfo": "We'll tell you when your online bill payment is due.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
-            },
-            {
-                "featureType": "NOTIFICATIONS",
-                "additionalValue": "Smart Alerts",
-                "additionalInfo": "Set alerts in the CommBank app or NetBank and we'll instantly tell you if your account balance is low, high or if you've just been paid.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/alerts.html"
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "Pay and receive payments in realtime.",
-                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/ElectronicBanking_ADB2426.pdf"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -55,9 +26,21 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/accounting-software-integration.html"
             },
             {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY View",
+                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalValue": "Lock & Block",
                 "additionalInfo": "Securely lock your debit card in the CommBank app when you need to. And unlock it again when you don't."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Yes",
+                "additionalInfo": "Regardless of your business structure and needs, we have an online banking solution that will suit you.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/online-banking/compare-our-online-business-banking-platforms.html"
             },
             {
                 "featureType": "OTHER",
@@ -66,15 +49,32 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/online-banking/commbiz/daily-iq.html"
             },
             {
+                "featureType": "OVERDRAFT",
+                "additionalValue": "OVERDRAFT",
+                "additionalInfo": "You may apply to establish an overdraft limit on an eligible account. Applications are subject to our normal credit approval."
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Billing notifications",
+                "additionalInfo": "We'll tell you when your online bill payment is due.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Smart Alerts",
+                "additionalInfo": "Set alerts in the CommBank app or NetBank and we'll instantly tell you if your account balance is low, high or if you've just been paid.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/alerts.html"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "Pay and receive payments in realtime.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/apply-online/download-printed-forms/ElectronicBanking_ADB2426.pdf"
+            },
+            {
                 "featureType": "OTHER",
                 "additionalValue": "Switch Fee Options",
                 "additionalInfo": "Customers have the ability to switch between the available fee options at any time. The $10 Monthly Account Fee option includes 5 assisted transactions, and the $0 Monthly Account Fee option does not include any assisted transactions. Monthly Account Fees are calculated at the end of each month and charged to your account on the first day of the following month. Monthly Account Fee payable for partial months is calculated pro-rata on a daily basis.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/business-transaction-account.html"
-            },
-            {
-                "featureType": "OVERDRAFT",
-                "additionalValue": "OVERDRAFT",
-                "additionalInfo": "You may apply to establish an overdraft limit on an eligible account. Applications are subject to our normal credit approval."
             },
             {
                 "featureType": "UNLIMITED_TXNS",
@@ -94,6 +94,139 @@
             }
         ],
         "fees": [
+            {
+                "name": "Coin handling fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.01",
+                "currency": "AUD",
+                "additionalInfo": "The coin handling is 1% of the total value of the coin component of all deposit and withdrawal transactions, where the total value of coins handled exceeds $1,000 per day. This fee is debited on the day the transactions are processed. This fee does not apply to deposits made via QuickCash envelopes.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Dishonour fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "$5 per payment. Charged to the account, due to insufficient available funds, when we are unable to debit the account after five attempts.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Note handling fee",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.0025",
+                "currency": "AUD",
+                "additionalInfo": "The note handling is 0.25% of the total value of the notes component of all deposit and withdrawal transactions, where the total value of notes handled exceeds $50,000 per day. This fee is debited on the day the transactions are processed. This fee does not apply to deposits made via QuickCash envelopes.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Paper Statement Fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "A paper statement fee applies to account when you request a paper copy of an account statement outside the standard cycle.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Overdraw Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. Additional interest may apply on overdrawn amounts.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Pricing Option 1 - $10 Monthly account fee",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Calculated at the end of each month and charged to your account on the first day of the following month. Up to 5 cheques, staff assisted or quick deposit transactions included with this fee option.  Fees apply when the number of Quick Deposit, Cheque and Assisted Transactions for the month exceed the relevant number of transactions included in the Monthly Account Fee.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Access fee - Overseas transactions",
+                "feeType": "WITHDRAWAL",
+                "transactionRate": "0.03",
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Access fee - Overseas transactions",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Access fee - Overseas transactions",
+                "feeType": "PURCHASE",
+                "transactionRate": "0.03",
+                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in Australian dollars: 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Access fee - Overseas transactions",
+                "feeType": "PURCHASE",
+                "transactionRate": "0.03",
+                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in foreign currency: 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Withdrawals or transfers made via telephone banking with operator assistance",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Withdrawals or transfers made via telephone banking using an operator.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Pricing Option 2 - $0 Monthly account fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Calculated at the end of each month and charged to your account on the first day of the following month. This pricing option does not include any assisted transactions - each assisted transaction will be chargeable.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "CommBank ATMs outside Australia",
+                "feeType": "WITHDRAWAL",
+                "amount": "2.00",
+                "additionalInfo": "The fee is charged to the account at the time of the withdrawal. This fee may be charged for each withdrawal you make through ATMs and Maestro, Cirrus, MasterCard or Visa Plus networks outside Australia.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Assisted transactions",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Withdrawals made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "EFTPOS in Australia",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Cash withdrawals or purchases made via EFTPOS in Australia or utilising the 'credit' option with your Business Visa Debit Card or Debit MasterCard.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Cheques transactions",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Cheques written by you and negotiated through the clearing system.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Assisted transactions",
+                "feeType": "TRANSACTION",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Cheques drawn on your account and cashed over-the-counter at any Commonwealth Bank branch.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
             {
                 "name": "Assisted deposits",
                 "feeType": "DEPOSIT",
@@ -119,144 +252,11 @@
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
             },
             {
-                "name": "Dishonour fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "$5 per payment. Charged to the account, due to insufficient available funds, when we are unable to debit the account after five attempts.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Paper Statement Fee",
-                "feeType": "EVENT",
-                "amount": "2.50",
-                "currency": "AUD",
-                "additionalInfo": "A paper statement fee applies to account when you request a paper copy of an account statement outside the standard cycle.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Overdraw Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. Additional interest may apply on overdrawn amounts.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "EFTPOS in Australia",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Cash withdrawals or purchases made via EFTPOS in Australia or utilising the 'credit' option with your Business Visa Debit Card or Debit MasterCard.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Pricing Option 1 - $10 Monthly account fee",
-                "feeType": "PERIODIC",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "Calculated at the end of each month and charged to your account on the first day of the following month. Up to 5 cheques, staff assisted or quick deposit transactions included with this fee option.  Fees apply when the number of Quick Deposit, Cheque and Assisted Transactions for the month exceed the relevant number of transactions included in the Monthly Account Fee.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Pricing Option 2 - $0 Monthly account fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "Calculated at the end of each month and charged to your account on the first day of the following month. This pricing option does not include any assisted transactions - each assisted transaction will be chargeable.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in Australian dollars: 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in foreign currency: 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Coin handling fee",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.01",
-                "currency": "AUD",
-                "additionalInfo": "The coin handling is 1% of the total value of the coin component of all deposit and withdrawal transactions, where the total value of coins handled exceeds $1,000 per day. This fee is debited on the day the transactions are processed. This fee does not apply to deposits made via QuickCash envelopes.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Note handling fee",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.0025",
-                "currency": "AUD",
-                "additionalInfo": "The note handling is 0.25% of the total value of the notes component of all deposit and withdrawal transactions, where the total value of notes handled exceeds $50,000 per day. This fee is debited on the day the transactions are processed. This fee does not apply to deposits made via QuickCash envelopes.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Withdrawals or transfers made via telephone banking with operator assistance",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Withdrawals or transfers made via telephone banking using an operator.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Cheques transactions",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Cheques written by you and negotiated through the clearing system.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Assisted transactions",
-                "feeType": "TRANSACTION",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Cheques drawn on your account and cashed over-the-counter at any Commonwealth Bank branch.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
                 "name": "Electronic transactions",
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalInfo": "Customers with a Business Transaction Account are entitled to unlimited free electronic transactions. Please note Access, CommBiz and NetBank Service Fees may apply and are excluded from the unlimited electronic transactions.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "WITHDRAWAL",
-                "transactionRate": "0.03",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "WITHDRAWAL",
-                "amount": "5.00",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "CommBank ATMs outside Australia",
-                "feeType": "WITHDRAWAL",
-                "amount": "2.00",
-                "additionalInfo": "The fee is charged to the account at the time of the withdrawal. This fee may be charged for each withdrawal you make through ATMs and Maestro, Cirrus, MasterCard or Visa Plus networks outside Australia.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Assisted transactions",
-                "feeType": "WITHDRAWAL",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Withdrawals made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
             }
         ],
@@ -273,7 +273,7 @@
         "productId": "f70238d4ee324ad99af6ee0f01f7cdde",
         "effectiveFrom": "2011-05-10T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-23T00:32:14.648175Z",
+        "lastUpdated": "2023-11-24T00:32:14.696099Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Business Transaction Account",
         "description": "An everyday business bank account that you can open online, which provides unlimited electronic transactions and 5 assisted transactions on a monthly basis for customers on the $10 monthly account fee pricing option. Fees and charges will apply if you exceed this amount. Customers with the $0 monthly account fee pricing option will not have included assisted transactions - each assisted transaction will be chargeable. Please note Access, CommBiz and NetBank Service Fees may apply and are excluded from the unlimited electronic transactions.",

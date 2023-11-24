@@ -2,12 +2,6 @@
     "data": {
         "features": [
             {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY View",
-                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
-            },
-            {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Link to Existing Card"
             },
@@ -26,6 +20,30 @@
                 "additionalValue": "Debit Mastercard",
                 "additionalInfo": "Use instore, online and withdraw local currency at millions of locations, everywhere Mastercard is accepted. Choose a Debit Mastercard with your CommBank account and pay for things using your card, smartphone or wearable.",
                 "additionalInfoUri": "https://www.commbank.com.au/banking/debit-mastercard.html"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Yes",
+                "additionalInfo": "Get faster payments between participating banks, anytime with a PayID.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/pay-id.html"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY View",
+                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Cardless Cash",
+                "additionalInfo": "Use Cardless Cash in the CommBank app to get money out from any CommBank ATM, without having to use your card.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/cardless-cash.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Lock & Block",
+                "additionalInfo": "Securely lock your debit card in the CommBank app when you need to. And unlock it again when you don't.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/online-banking/commbank-app/debit-lock.html"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -72,24 +90,6 @@
             {
                 "featureType": "NPP_ENABLED",
                 "additionalValue": "Yes"
-            },
-            {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Yes",
-                "additionalInfo": "Get faster payments between participating banks, anytime with a PayID.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/pay-id.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Cardless Cash",
-                "additionalInfo": "Use Cardless Cash in the CommBank app to get money out from any CommBank ATM, without having to use your card.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/cardless-cash.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Lock & Block",
-                "additionalInfo": "Securely lock your debit card in the CommBank app when you need to. And unlock it again when you don't.",
-                "additionalInfoUri": "https://www.commbank.com.au/personal/online-banking/commbank-app/debit-lock.html"
             },
             {
                 "featureType": "OTHER",
@@ -150,13 +150,6 @@
                 "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. Additional interest may apply on overdrawn amounts."
             },
             {
-                "name": "CBA ATM cash withdrawals in Australia",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Free."
-            },
-            {
                 "name": "Account Fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -170,13 +163,6 @@
                 "currency": "AUD",
                 "additionalValue": "P1M",
                 "additionalInfo": "There is no charge for paper statements issued within the standard monthly cycle."
-            },
-            {
-                "name": "Access fee - Overseas purchases",
-                "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "currency": "AUD",
-                "additionalInfo": "Purchases made overseas or in Australia (e.g. online), where the merchant is located overseas or the financial institution or entity processing transaction is located overseas."
             },
             {
                 "name": "Access fee - Overseas ATMs",
@@ -198,6 +184,20 @@
                 "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Any other cash withdrawals overseas will incur a fee of 3% of the transaction value plus a $5.00 fee."
+            },
+            {
+                "name": "Access fee - Overseas purchases",
+                "feeType": "PURCHASE",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "Purchases made overseas or in Australia (e.g. online), where the merchant is located overseas or the financial institution or entity processing transaction is located overseas."
+            },
+            {
+                "name": "CBA ATM cash withdrawals in Australia",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Free."
             }
         ],
         "depositRates": [
@@ -309,7 +309,7 @@
         "productId": "c50f2a2cf77c47248ebbb565d2d6c1cb",
         "effectiveFrom": "2011-05-10T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-23T00:30:09.457741Z",
+        "lastUpdated": "2023-11-24T00:30:09.075635Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Private Bank Account",
         "description": "The Commonwealth Private Bank Account is an exclusive transaction account for Commonwealth Private clients.",

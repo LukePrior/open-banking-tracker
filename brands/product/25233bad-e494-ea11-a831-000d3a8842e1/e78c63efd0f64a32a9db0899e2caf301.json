@@ -8,16 +8,10 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/society-cheque-account.html"
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Bank how & when you want",
-                "additionalInfo": "Bank online using NetBank or the CommBank mobile app, over the phone or in branch. We also have deposit ATMs for cash, cheques and coins.",
+                "featureType": "OTHER",
+                "additionalValue": "MYOB & Xero partnership",
+                "additionalInfo": "Make reconciliation simpler by integrating your online accounting service with your Society Cheque Account in just one click.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/society-cheque-account.html"
-            },
-            {
-                "featureType": "NPP_ENABLED",
-                "additionalValue": "Yes",
-                "additionalInfo": "Pay and receive payments in realtime.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/pds/ADB2916.pdf"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -26,9 +20,9 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/pds/ADB2916.pdf"
             },
             {
-                "featureType": "OTHER",
-                "additionalValue": "MYOB & Xero partnership",
-                "additionalInfo": "Make reconciliation simpler by integrating your online accounting service with your Society Cheque Account in just one click.",
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Bank how & when you want",
+                "additionalInfo": "Bank online using NetBank or the CommBank mobile app, over the phone or in branch. We also have deposit ATMs for cash, cheques and coins.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/society-cheque-account.html"
             },
             {
@@ -48,6 +42,12 @@
                 "additionalValue": "No monthly account fees",
                 "additionalInfo": "No monthly account fee means one less expense and more money raised going towards those you are helping.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/banking-and-cards/bank-accounts/society-cheque-account.html"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalValue": "Yes",
+                "additionalInfo": "Pay and receive payments in realtime.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/pds/ADB2916.pdf"
             },
             {
                 "featureType": "OTHER",
@@ -78,30 +78,6 @@
         ],
         "fees": [
             {
-                "name": "Assisted deposits",
-                "feeType": "DEPOSIT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Deposits made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
-                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
-            },
-            {
-                "name": "Quick Deposits",
-                "feeType": "DEPOSIT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Quick deposit box & Quickcash envelopes.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
-            },
-            {
-                "name": "Cheque transactions",
-                "feeType": "DEPOSIT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Cheques deposited to your account (including cheques deposited via Quick Deposits or QuickCash envelope banking).",
-                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
-            },
-            {
                 "name": "Dishonour fee",
                 "feeType": "EVENT",
                 "amount": "5.00",
@@ -118,14 +94,6 @@
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
             },
             {
-                "name": "Commonwealth Bank ATM cash withdrawals in Australia",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Unlimited free ATM cash withdrawals in Australia from Commonwealth Bank ATMs.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
-            },
-            {
                 "name": "Paper Statement Fee",
                 "feeType": "PERIODIC",
                 "amount": "0.00",
@@ -135,13 +103,19 @@
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
             },
             {
-                "name": "Monthly base maintenance fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
+                "name": "Access fee - Overseas transactions",
+                "feeType": "WITHDRAWAL",
+                "transactionRate": "0.03",
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Access fee - Overseas transactions",
+                "feeType": "WITHDRAWAL",
+                "amount": "5.00",
                 "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "No monthly account fee means one less expense and more money raised going towards those you are helping.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
             },
             {
                 "name": "Access fee - Overseas transactions",
@@ -166,6 +140,29 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
             },
             {
+                "name": "Access Fees",
+                "feeType": "WITHDRAWAL",
+                "amount": "2.00",
+                "additionalInfo": "CommBank ATMs outside Australia, AUD $2. The fee is charged to the account at the time of the withdrawal.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
+            },
+            {
+                "name": "Assisted transactions",
+                "feeType": "WITHDRAWAL",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Withdrawals made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+            },
+            {
+                "name": "Commonwealth Bank ATM cash withdrawals in Australia",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Unlimited free ATM cash withdrawals in Australia from Commonwealth Bank ATMs.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+            },
+            {
                 "name": "Cheques transactions",
                 "feeType": "TRANSACTION",
                 "amount": "0.00",
@@ -179,6 +176,30 @@
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalInfo": "Cheques drawn on your account and cashed over-the-counter at any Commonwealth Bank branch.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+            },
+            {
+                "name": "Assisted deposits",
+                "feeType": "DEPOSIT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Deposits made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+            },
+            {
+                "name": "Quick Deposits",
+                "feeType": "DEPOSIT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Quick deposit box & Quickcash envelopes.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
+            },
+            {
+                "name": "Cheque transactions",
+                "feeType": "DEPOSIT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Cheques deposited to your account (including cheques deposited via Quick Deposits or QuickCash envelope banking).",
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
             },
             {
@@ -198,33 +219,12 @@
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
             },
             {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "WITHDRAWAL",
-                "transactionRate": "0.03",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access fee - Overseas transactions",
-                "feeType": "WITHDRAWAL",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Access Fees",
-                "feeType": "WITHDRAWAL",
-                "amount": "2.00",
-                "additionalInfo": "CommBank ATMs outside Australia, AUD $2. The fee is charged to the account at the time of the withdrawal.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/ADB2916.pdf"
-            },
-            {
-                "name": "Assisted transactions",
-                "feeType": "WITHDRAWAL",
+                "name": "Monthly base maintenance fee",
+                "feeType": "PERIODIC",
                 "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Withdrawals made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post).",
+                "additionalValue": "P1M",
+                "additionalInfo": "No monthly account fee means one less expense and more money raised going towards those you are helping.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/society-cheque-account.html#rates"
             }
         ],
@@ -249,7 +249,7 @@
         "productId": "e78c63efd0f64a32a9db0899e2caf301",
         "effectiveFrom": "2011-05-10T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-23T00:32:30.035106Z",
+        "lastUpdated": "2023-11-24T00:32:30.315354Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Society Cheque Account",
         "description": "A transaction account for eligible not-for-profit and community organisations and associations, and organisations that operate for the benefit of the wider community. You can set one up in any of our branches.",

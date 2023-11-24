@@ -8,6 +8,12 @@
                 "additionalInfoUri": "https://www.commbank.com.au/personal/credit-cards/manage/make-changes.html"
             },
             {
+                "featureType": "OTHER",
+                "additionalValue": "Automatic Bank Feeds",
+                "additionalInfo": "Streamline your business banking and save time with automatic data feeds from your online banking to your accounting software.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/accounting-software-integration.html"
+            },
+            {
                 "featureType": "BALANCE_TRANSFERS",
                 "additionalValue": "Yes",
                 "additionalInfo": "A balance transfer is when you request an amount owing on a personal Australian-bank issued credit card or store card to be transferred to your Commonwealth Bank credit card. This can help you save on interest charges and enables you to manage your finances in one spot. There is no fee charged to transfer the balance, however, interest will apply from the date of the transfer. From 1 December 2023, we will no longer accept new balance transfer requests on our credit cards."
@@ -23,6 +29,12 @@
                 "additionalValue": "BPAY View",
                 "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
                 "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Lock, Block, Limit",
+                "additionalInfo": "Instantly lock, block or limit your credit card for extra control through the CommBank app or NetBank.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/credit-cards/lock-block-limit.html"
             },
             {
                 "featureType": "COMPLEMENTARY_PRODUCT_DISCOUNTS",
@@ -73,10 +85,10 @@
                 "additionalInfoUri": "https://www.commbank.com.au/digital-banking/mobile-payments-wearables/samsung-pay.html"
             },
             {
-                "featureType": "INSTALMENT_PLAN",
-                "additionalValue": "SurePay instalment plans",
-                "additionalInfo": "Pay off eligible purchases or credit card balances in fixed monthly instalments. A set-up fee of 2%-5% of the purchase amount may apply on purchase plans depending on the term. Otherwise interest is charged on the plan amount.",
-                "additionalInfoUri": "https://www.commbank.com.au/credit-cards/surepay-instalment-plans.html"
+                "featureType": "OTHER",
+                "additionalValue": "Spend Tracker & Insights",
+                "additionalInfo": "We help you stay on track with your credit card spending in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/spend-tracker-insights.html"
             },
             {
                 "featureType": "INTEREST_FREE",
@@ -96,22 +108,10 @@
                 "additionalInfoUri": "https://www.commbank.com.au/digital-banking/transaction-notifications.html"
             },
             {
-                "featureType": "OTHER",
-                "additionalValue": "Automatic Bank Feeds",
-                "additionalInfo": "Streamline your business banking and save time with automatic data feeds from your online banking to your accounting software.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/accounting-software-integration.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Lock, Block, Limit",
-                "additionalInfo": "Instantly lock, block or limit your credit card for extra control through the CommBank app or NetBank.",
-                "additionalInfoUri": "https://www.commbank.com.au/personal/credit-cards/lock-block-limit.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Spend Tracker & Insights",
-                "additionalInfo": "We help you stay on track with your credit card spending in the CommBank app.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/spend-tracker-insights.html"
+                "featureType": "INSTALMENT_PLAN",
+                "additionalValue": "SurePay instalment plans",
+                "additionalInfo": "Pay off eligible purchases or credit card balances in fixed monthly instalments. A set-up fee of 2%-5% of the purchase amount may apply on purchase plans depending on the term. Otherwise interest is charged on the plan amount.",
+                "additionalInfoUri": "https://www.commbank.com.au/credit-cards/surepay-instalment-plans.html"
             }
         ],
         "constraints": [
@@ -151,6 +151,21 @@
         ],
         "fees": [
             {
+                "name": "Additional cardholder fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Payable at the same time as your annual fee if you'd like to share the convenience of your card with someone else."
+            },
+            {
+                "name": "Annual Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y"
+            },
+            {
                 "name": "Late payment fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
@@ -172,40 +187,11 @@
                 "additionalInfo": "When you need an emergency replacement card delivered to you."
             },
             {
-                "name": "Additional cardholder fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Payable at the same time as your annual fee if you'd like to share the convenience of your card with someone else."
-            },
-            {
-                "name": "Annual Fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1Y"
-            },
-            {
-                "name": "Cash equivalent items or cash substitutes cash advance charge",
-                "feeType": "PURCHASE",
-                "transactionRate": "0.015",
-                "currency": "AUD",
-                "additionalInfo": "Charge applies to purchases of items we consider equivalent to cash, such as gambling, lottery tickets, money transfers or travellers cheques, including transactions which merchants tell us are for such items. 1.5% of the cash advance amount.  A maximum charge of $150.00 applies (or a flat fee of $2.50 if your closing balance on the previous day was in credit)."
-            },
-            {
                 "name": "International transaction fee (Mastercard and Visa transactions)",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.03",
                 "currency": "AUD",
                 "additionalInfo": "When you make a transaction that is converted by Mastercard or Visa from a foreign currency to Australian dollars."
-            },
-            {
-                "name": "International transaction fee (Transactions in Australian dollars but with an overseas connection)",
-                "feeType": "TRANSACTION",
-                "transactionRate": "0.03",
-                "currency": "AUD",
-                "additionalInfo": "When you make a purchase or obtain a cash advance in Australian dollars while overseas, or while in Australia (for example online) where the merchant, or the financial institution or entity processing the transaction, is located overseas."
             },
             {
                 "name": "ATM cash advance charge",
@@ -262,9 +248,33 @@
                 "amount": "4.00",
                 "currency": "AUD",
                 "additionalInfo": "$4.00 or 1.5% of the cash advance amount(whichever is greater). A maximum charge of $150.00 applies (or a flat fee of $2.50 if your closing balance on the previous day was in credit)."
+            },
+            {
+                "name": "Cash equivalent items or cash substitutes cash advance charge",
+                "feeType": "PURCHASE",
+                "transactionRate": "0.015",
+                "currency": "AUD",
+                "additionalInfo": "Charge applies to purchases of items we consider equivalent to cash, such as gambling, lottery tickets, money transfers or travellers cheques, including transactions which merchants tell us are for such items. 1.5% of the cash advance amount.  A maximum charge of $150.00 applies (or a flat fee of $2.50 if your closing balance on the previous day was in credit)."
+            },
+            {
+                "name": "International transaction fee (Transactions in Australian dollars but with an overseas connection)",
+                "feeType": "TRANSACTION",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "When you make a purchase or obtain a cash advance in Australian dollars while overseas, or while in Australia (for example online) where the merchant, or the financial institution or entity processing the transaction, is located overseas."
             }
         ],
         "lendingRates": [
+            {
+                "lendingRateType": "CASH_ADVANCE",
+                "rate": "0.1455",
+                "calculationFrequency": "P1D"
+            },
+            {
+                "lendingRateType": "PURCHASE",
+                "rate": "0.1455",
+                "calculationFrequency": "P1D"
+            },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0599",
@@ -279,22 +289,12 @@
                 ],
                 "additionalValue": "P5M",
                 "additionalInfo": "Balance transfer rate"
-            },
-            {
-                "lendingRateType": "CASH_ADVANCE",
-                "rate": "0.1455",
-                "calculationFrequency": "P1D"
-            },
-            {
-                "lendingRateType": "PURCHASE",
-                "rate": "0.1455",
-                "calculationFrequency": "P1D"
             }
         ],
         "productId": "4002561833054353a1fe48d27be120aa",
         "effectiveFrom": "2014-10-30T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-22T15:15:18.292619Z",
+        "lastUpdated": "2023-11-23T17:45:16.056011Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Low Rate credit card",
         "description": "Ideal for small business owners looking for a line of credit with a competitive interest rate and no annual fee. Note, this product does not include an interest free day period.",

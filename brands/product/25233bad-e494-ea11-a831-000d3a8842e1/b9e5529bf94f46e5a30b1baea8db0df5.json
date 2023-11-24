@@ -2,15 +2,15 @@
     "data": {
         "features": [
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Simply manage accounts",
-                "additionalInfo": "View and transact on your accounts in real-time through CommBiz, the CommBiz mobile app or NetBank, wherever you are.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/international/international-payments/foreign-currency-accounts.html#features"
-            },
-            {
                 "featureType": "OTHER",
                 "additionalValue": "Save on conversion costs",
                 "additionalInfo": "Avoid conversion fees when making and receiving payments in foreign currency without having to convert in and out of Australian dollars.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/international/international-payments/foreign-currency-accounts.html#features"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Simply manage accounts",
+                "additionalInfo": "View and transact on your accounts in real-time through CommBiz, the CommBiz mobile app or NetBank, wherever you are.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/international/international-payments/foreign-currency-accounts.html#features"
             },
             {
@@ -112,6 +112,15 @@
                 "amount": "25.00",
                 "additionalInfo": "Investigation of sent International Money Transfer (trace). This is a request only and is dependent on the overseas bank obtaining the relevant debit authority to be able to return funds. Returned funds will be converted back to the currency of the funding account at the published Banks buys IMT rate on the day it is credited to the funding account. Overseas bank charges (Which may vary from country to country) could apply in addition to the charges listed above. $25.00 per investigation includes any subsequent follow up request.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB1784.pdf"
+            },
+            {
+                "name": "Account Keeping Fees",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "No account-keeping fees. A Business Foreign Currency Account must be linked to an eligible CommBank Australian Dollar (AUD) transaction or savings account. Fees may apply to the linked account.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/international/international-payments/foreign-currency-accounts.html"
             },
             {
                 "name": "Deposits of foreign currency notes in branch",
@@ -296,15 +305,6 @@
                 "amount": "33.00",
                 "additionalInfo": "United Kingdom. The option to pay an additional fee to cover charges by overseas banks is available for International Money Transfers sent via Branch, CommBiz or by prior arrangement with your Relationship Manager. This option is not available via Netbank and the CommBank app. The additional fee must be paid in Australian dollars.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB1784.pdf"
-            },
-            {
-                "name": "Account Keeping Fees",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "No account-keeping fees. A Business Foreign Currency Account must be linked to an eligible CommBank Australian Dollar (AUD) transaction or savings account. Fees may apply to the linked account.",
-                "additionalInfoUri": "https://www.commbank.com.au/business/international/international-payments/foreign-currency-accounts.html"
             }
         ],
         "depositRates": [
@@ -361,56 +361,6 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.02125",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 250000.0,
-                        "maximumValue": 499999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Applicable to currency ZAR",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.03125",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 500000.0,
-                        "maximumValue": 2499999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Applicable to currency ZAR",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.04125",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 2500000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Applicable to currency ZAR",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
-            },
-            {
-                "depositRateType": "VARIABLE",
                 "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -441,6 +391,56 @@
                 ],
                 "additionalInfo": "Applicable to currency NZD",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.07225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.0,
+                        "maximumValue": 499999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Applicable to currency ZAR",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.08225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.0,
+                        "maximumValue": 2499999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Applicable to currency ZAR",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.09225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 2500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Applicable to currency ZAR",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
             }
         ],
         "lendingRates": [
@@ -462,7 +462,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.1075",
+                "rate": "0.1085",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency CHF",
@@ -470,7 +470,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.10899",
+                "rate": "0.10896",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency CNY",
@@ -502,14 +502,6 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.12675",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Applicable to currency SGD",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
-            },
-            {
-                "lendingRateType": "VARIABLE",
                 "rate": "0.12685",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -518,7 +510,15 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.13",
+                "rate": "0.12725",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Applicable to currency SGD",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1295",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency EUR",
@@ -526,7 +526,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.132",
+                "rate": "0.1325",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency NOK",
@@ -534,15 +534,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.13355",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Applicable to currency CAD",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.1369",
+                "rate": "0.1375",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency ILS",
@@ -550,18 +542,18 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.1371",
+                "rate": "0.13975",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalInfo": "Applicable to currency HKD",
+                "additionalInfo": "Applicable to currency CAD",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.14125",
+                "rate": "0.1404",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalInfo": "Applicable to currency ZAR",
+                "additionalInfo": "Applicable to currency HKD",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
             },
             {
@@ -590,7 +582,7 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.148966",
+                "rate": "0.148803",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency IDR",
@@ -606,7 +598,15 @@
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.214",
+                "rate": "0.19225",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Applicable to currency ZAR",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/business/pds/International-foreign-currency-rates.pdf"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.2",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Applicable to currency HUF",
@@ -616,7 +616,7 @@
         "productId": "b9e5529bf94f46e5a30b1baea8db0df5",
         "effectiveFrom": "2013-12-31T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-23T00:30:38.708843Z",
+        "lastUpdated": "2023-11-24T00:30:38.343564Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Foreign Currency Account (Business)",
         "description": "Make and receive payments easily if your business regularly deals in foreign currencies.",

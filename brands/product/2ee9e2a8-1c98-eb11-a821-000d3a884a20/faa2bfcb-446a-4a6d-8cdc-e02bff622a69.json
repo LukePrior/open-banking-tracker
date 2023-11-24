@@ -70,10 +70,10 @@
         "fees": [
             {
                 "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
+                "name": "Legal Fees",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "A hourly fee applies plus any expenses incurred",
+                "additionalInfo": "At cost",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": null,
@@ -84,10 +84,10 @@
             },
             {
                 "feeType": "VARIABLE",
-                "name": "Legal Fees",
+                "name": "Archive retrieval fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "At cost",
+                "additionalInfo": "A hourly fee applies plus any expenses incurred",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": null,
@@ -111,6 +111,20 @@
                 "transactionRate": null
             },
             {
+                "feeType": "EVENT",
+                "name": "Copies of statements (over 12 months) per page",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "VARIABLE",
                 "name": "Fixed Rate Prepayment Cost",
                 "accrualFrequency": null,
@@ -125,14 +139,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Consent fee",
+                "feeType": "VARIABLE",
+                "name": "Stamp Duty",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfo": "At cost",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -174,14 +188,28 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Stamp Duty",
+                "feeType": "EVENT",
+                "name": "Arrears notice fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "At cost",
+                "additionalInfo": "2nd and subsequent reminders by letter or phone",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": null,
+                "amount": "20.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Audit Certificate Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Per audit certificate requested",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -202,20 +230,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Arrears notice fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "2nd and subsequent reminders by letter or phone",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "DEPOSIT",
                 "name": "Other Bank Deposit Fee",
                 "accrualFrequency": null,
@@ -224,20 +238,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "6.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Copies of statements (over 12 months) per page",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -273,6 +273,20 @@
             },
             {
                 "feeType": "EVENT",
+                "name": "Consent fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "250.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Mortgage discharge fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -294,20 +308,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": "P3M",
                 "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Audit Certificate Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Per audit certificate requested",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "50.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -346,7 +346,7 @@
         ]
     },
     "links": {
-        "self": "https://amb-haas-prod-prd-api/cds-au/v1/banking/products/faa2bfcb-446a-4a6d-8cdc-e02bff622a69"
+        "self": "https://public.open.australianmilitarybank.com.au/cds-au/v1/banking/products/faa2bfcb-446a-4a6d-8cdc-e02bff622a69"
     },
     "meta": {}
 }

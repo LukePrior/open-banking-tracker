@@ -2,12 +2,6 @@
     "data": {
         "features": [
             {
-                "featureType": "BILL_PAYMENT",
-                "additionalValue": "BPAY View",
-                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
-            },
-            {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Link to Existing Card"
             },
@@ -26,6 +20,30 @@
                 "additionalValue": "Debit Mastercard",
                 "additionalInfo": "Use instore, online and withdraw local currency at millions of locations, everywhere Mastercard is accepted. Choose a Debit Mastercard with your CommBank account and pay for things using your card, smartphone or wearable.",
                 "additionalInfoUri": "https://www.commbank.com.au/banking/debit-mastercard.html"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalValue": "Yes",
+                "additionalInfo": "Get faster payments between participating banks, anytime with a PayID.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/pay-id.html"
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY View",
+                "additionalInfo": "See, track and easily pay your bills online in NetBank or on the go in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/bpay-view.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Cardless Cash",
+                "additionalInfo": "Use Cardless Cash in the CommBank app to get money out without having to use your card.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/cardless-cash.html"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Lock & Block",
+                "additionalInfo": "Securely lock your debit card in the CommBank app when you need to. And unlock it again when you don't.",
+                "additionalInfoUri": "https://www.commbank.com.au/personal/online-banking/commbank-app/debit-lock.html"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -70,6 +88,12 @@
                 "additionalInfoUri": "https://www.commbank.com.au/digital-banking/mobile-payments-wearables/samsung-pay.html"
             },
             {
+                "featureType": "OTHER",
+                "additionalValue": "Spend Tracker & Insights",
+                "additionalInfo": "We help you stay on track with your debit and credit card spending in the CommBank app.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/spend-tracker-insights.html"
+            },
+            {
                 "featureType": "NOTIFICATIONS",
                 "additionalValue": "Overdraw notifications",
                 "additionalInfo": "Notifications are available in the CommBank app or via SMS to inform you if your account overdraws. This allows you to bring your account back into credit by midnight Sydney/Melbourne time to avoid fees and interest charges that may apply. You can choose to turn these notifications on or off any time in NetBank or the CommBank app."
@@ -83,30 +107,6 @@
             {
                 "featureType": "NPP_ENABLED",
                 "additionalValue": "Yes"
-            },
-            {
-                "featureType": "NPP_PAYID",
-                "additionalValue": "Yes",
-                "additionalInfo": "Get faster payments between participating banks, anytime with a PayID.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/pay-id.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Cardless Cash",
-                "additionalInfo": "Use Cardless Cash in the CommBank app to get money out without having to use your card.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/cardless-cash.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Lock & Block",
-                "additionalInfo": "Securely lock your debit card in the CommBank app when you need to. And unlock it again when you don't.",
-                "additionalInfoUri": "https://www.commbank.com.au/personal/online-banking/commbank-app/debit-lock.html"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Spend Tracker & Insights",
-                "additionalInfo": "We help you stay on track with your debit and credit card spending in the CommBank app.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking/spend-tracker-insights.html"
             },
             {
                 "featureType": "OTHER",
@@ -165,13 +165,6 @@
                 "amount": "15.00",
                 "currency": "AUD",
                 "additionalInfo": "A fee charged when you exceed the available funds in your account or any agreed overdraft limit on a given day. Additional interest may apply on overdrawn amounts."
-            },
-            {
-                "name": "CBA ATM cash withdrawals in Australia",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "Free."
             },
             {
                 "name": "Account fee",
@@ -290,74 +283,6 @@
                 "additionalInfo": "There is no charge for paper statements issued within our standard cycle (six months, or three months if you have a Personal Overdraft)."
             },
             {
-                "name": "Access fee - Overseas purchases",
-                "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "currency": "AUD",
-                "additionalInfo": "Purchases made overseas or in Australia (e.g. online), where the merchant is located overseas or the financial institution or entity processing transaction is located overseas."
-            },
-            {
-                "name": "Cheque negotiated fee",
-                "feeType": "TRANSACTION",
-                "amount": "3.00",
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalValue": "50000.00",
-                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.",
-                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
-                            }
-                        ],
-                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
-                    },
-                    {
-                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "MAX_AGE",
-                                "additionalValue": "25",
-                                "additionalInfo": "You're under 25, then we won't charge you a cheque negotiated fee."
-                            }
-                        ],
-                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
-                    },
-                    {
-                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "You have a disability that requires you to use a branch (visit a branch to apply), then we won't charge you a cheque negotiated fee."
-                            }
-                        ],
-                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
-                    },
-                    {
-                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "3.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "STUDENT",
-                                "additionalInfo": "You are a tertiary student at an educational institution located in Australia or are undertaking an Australian Apprenticeship on the Student Options, then student discount apply and we won't charge you a cheque negotiated fee.",
-                                "additionalInfoUri": "https://www.commbank.com.au/banking/students.html"
-                            }
-                        ],
-                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
-                    }
-                ],
-                "additionalInfo": "When you write a cheque that needs to be negotiated through the clearing system."
-            },
-            {
                 "name": "Access fee - Overseas ATMs",
                 "feeType": "WITHDRAWAL",
                 "amount": "2.00",
@@ -377,6 +302,13 @@
                 "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Any other cash withdrawals overseas will incur a $5.00 fee plus 3% of the transaction value."
+            },
+            {
+                "name": "Access fee - Overseas purchases",
+                "feeType": "PURCHASE",
+                "transactionRate": "0.03",
+                "currency": "AUD",
+                "additionalInfo": "Purchases made overseas or in Australia (e.g. online), where the merchant is located overseas or the financial institution or entity processing transaction is located overseas."
             },
             {
                 "name": "Staff assisted withdrawals",
@@ -449,6 +381,74 @@
                     }
                 ],
                 "additionalInfo": "A fee charged on some accounts when you take money out: At a CommBank branch, a post office, agency, with telephone banking if using an operator or by cashing a cheque."
+            },
+            {
+                "name": "CBA ATM cash withdrawals in Australia",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalInfo": "Free."
+            },
+            {
+                "name": "Cheque negotiated fee",
+                "feeType": "TRANSACTION",
+                "amount": "3.00",
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalValue": "50000.00",
+                                "additionalInfo": "Your Relationship Balance is $50,000 or more, then we won't charge you a cheque negotiated fee.",
+                                "additionalInfoUri": "https://www.commbank.com.au/personal/accounts/relationship-balance.html"
+                            }
+                        ],
+                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
+                    },
+                    {
+                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "MAX_AGE",
+                                "additionalValue": "25",
+                                "additionalInfo": "You're under 25, then we won't charge you a cheque negotiated fee."
+                            }
+                        ],
+                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
+                    },
+                    {
+                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "You have a disability that requires you to use a branch (visit a branch to apply), then we won't charge you a cheque negotiated fee."
+                            }
+                        ],
+                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
+                    },
+                    {
+                        "description": "You may qualify for a waiver of cheque negotiated fees if.",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "3.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "STUDENT",
+                                "additionalInfo": "You are a tertiary student at an educational institution located in Australia or are undertaking an Australian Apprenticeship on the Student Options, then student discount apply and we won't charge you a cheque negotiated fee.",
+                                "additionalInfoUri": "https://www.commbank.com.au/banking/students.html"
+                            }
+                        ],
+                        "additionalInfoUri": "https://www.commbank.com.au/important-info/personal.html#pii-bank-accounts."
+                    }
+                ],
+                "additionalInfo": "When you write a cheque that needs to be negotiated through the clearing system."
             }
         ],
         "lendingRates": [
@@ -463,7 +463,7 @@
         "productId": "33557e367d324529b38813adfc655b55",
         "effectiveFrom": "2010-07-14T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-23T00:32:29.656359Z",
+        "lastUpdated": "2023-11-24T00:32:29.923684Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Smart Access",
         "description": "An everyday bank account, giving you access to unlimited electronic transactions and features to help your spending and bills stay on track. Plus if you meet certain criteria, we'll waive your $4 monthly account fee.",
