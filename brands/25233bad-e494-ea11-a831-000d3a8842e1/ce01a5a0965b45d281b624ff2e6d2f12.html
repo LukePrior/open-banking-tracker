@@ -26,6 +26,12 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/bpay-view.html&quot;
         },
         {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Lock, Block, Limit&quot;,
+            &quot;additionalInfo&quot;: &quot;Instantly lock, block or limit your card for extra control through the CommBank app or NetBank.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/credit-cards/lock-block-limit.html&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;COMPLEMENTARY_PRODUCT_DISCOUNTS&quot;,
             &quot;additionalValue&quot;: &quot;Priceless Cities&quot;,
             &quot;additionalInfo&quot;: &quot;A program available exclusively to Mastercard cardholders that provides access to unforgettable experiences in the cities where you live and travel.&quot;,
@@ -74,6 +80,24 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/mobile-payments-wearables/samsung-pay.html&quot;
         },
         {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Bill Sense&quot;,
+            &quot;additionalInfo&quot;: &quot;With Bill Sense, you can see how much you'll need to cover bills each month - up to 12 months in advance - on one simple timeline in the CommBank app. We predict your bills based on patterns in your transactions, how much you pay and when. We may not predict all of your bills.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/bill-sense.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;CommBank Rewards&quot;,
+            &quot;additionalInfo&quot;: &quot;Get cashback when you activate and redeem your CommBank Rewards. Available to eligible Mastercard cardholders in the CommBank app.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/rewards.html&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Spend Tracker &amp; Insights&quot;,
+            &quot;additionalInfo&quot;: &quot;We help you stay on track with your card spending in the CommBank app.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/spend-tracker-insights.html&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
             &quot;additionalValue&quot;: &quot;Billing notifications&quot;,
             &quot;additionalInfo&quot;: &quot;We'll tell you when your online bill payment is due.&quot;,
@@ -94,30 +118,6 @@
             &quot;additionalValue&quot;: &quot;Transaction Notifications&quot;,
             &quot;additionalInfo&quot;: &quot;Turn Transaction Notifications on in the CommBank app and we'll instantly alert you when you pay using your CommBank Neo card, and when you receive money into your everyday account.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/transaction-notifications.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Lock, Block, Limit&quot;,
-            &quot;additionalInfo&quot;: &quot;Instantly lock, block or limit your card for extra control through the CommBank app or NetBank.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/personal/credit-cards/lock-block-limit.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Bill Sense&quot;,
-            &quot;additionalInfo&quot;: &quot;With Bill Sense, you can see how much you'll need to cover bills each month - up to 12 months in advance - on one simple timeline in the CommBank app. We predict your bills based on patterns in your transactions, how much you pay and when. We may not predict all of your bills.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/bill-sense.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;CommBank Rewards&quot;,
-            &quot;additionalInfo&quot;: &quot;Get cashback when you activate and redeem your CommBank Rewards. Available to eligible Mastercard cardholders in the CommBank app.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/rewards.html&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Spend Tracker &amp; Insights&quot;,
-            &quot;additionalInfo&quot;: &quot;We help you stay on track with your card spending in the CommBank app.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking/spend-tracker-insights.html&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -163,6 +163,14 @@
     ],
     &quot;fees&quot;: [
         {
+            &quot;name&quot;: &quot;Additional cardholder fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Pay no additional cardholder fee to share the convenience of your card with someone else.&quot;
+        },
+        {
             &quot;name&quot;: &quot;Late payment fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
@@ -177,12 +185,11 @@
             &quot;additionalInfo&quot;: &quot;When you need an emergency replacement card delivered to you.&quot;
         },
         {
-            &quot;name&quot;: &quot;Additional cardholder fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;International transaction fee (Mastercard transactions)&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Pay no additional cardholder fee to share the convenience of your card with someone else.&quot;
+            &quot;additionalInfo&quot;: &quot;Pay no international transaction fees for purchases you make overseas or online.&quot;
         },
         {
             &quot;name&quot;: &quot;Monthly fee&quot;,
@@ -246,13 +253,6 @@
             ],
             &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;Monthly fee of $12, $18 or $22 depending on your credit limit. $12 per month for a $1,000 credit limit, $18 per month for a $2,000 credit limit or $22 per month for a $3,000 credit limit. If you do not have any processed transactions in a given statement period and pay your previous statement closing balance in full by the due date, you will not be charged a monthly fee for that statement period.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;International transaction fee (Mastercard transactions)&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Pay no international transaction fees for purchases you make overseas or online.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -264,7 +264,7 @@
     &quot;productId&quot;: &quot;ce01a5a0965b45d281b624ff2e6d2f12&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-10-15T13:00:00Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-22T15:15:18.296143Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-23T17:45:16.058451Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;CommBank Neo Card&quot;,
     &quot;description&quot;: &quot;It's a new way to pay! An interest-free credit card without any late fees or surprise charges - just a flat monthly fee. Say goodbye to complex percentages and calculations.&quot;,
