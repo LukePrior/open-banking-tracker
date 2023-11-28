@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;585&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-20T22:20:58Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-27T10:04:26Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Fair Dinkum Home Loan&quot;,
     &quot;description&quot;: &quot;Our Fair Dinkum home loan is a basic home loan with a lower variable rate, no ongoing fees and unlimited additional repayments without the extras like a redraw facility and offset account.&quot;,
@@ -123,6 +123,15 @@
             &quot;rate&quot;: &quot;0.0674&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &gt;80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;comparisonRate&quot;: &quot;0.0674&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -137,13 +146,14 @@
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR &gt;70% to &lt;=80% discount&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 70.01,
+                    &quot;maximumValue&quot;: 80,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;comparisonRate&quot;: &quot;0.0614&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -157,13 +167,14 @@
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR &gt;60% to &lt;=70% discount&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 70,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;comparisonRate&quot;: &quot;0.0604&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
@@ -177,13 +188,14 @@
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;LVR &lt;=60% discount &quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 20000,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 60,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
                 }
             ],
-            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;comparisonRate&quot;: &quot;0.0594&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
