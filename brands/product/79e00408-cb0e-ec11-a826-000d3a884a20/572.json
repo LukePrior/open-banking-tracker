@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "572",
-        "lastUpdated": "2023-11-20T22:16:12Z",
+        "lastUpdated": "2023-11-27T09:25:52Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Mortgage Breaker Owner Occupied",
         "description": "Our Mortgage Breaker Owner Occupier variable home loan gives you the flexibility to make unlimited additional repayments and have access to free redraw. You can also save on interest while having access to your money with our 100% offset account.",
@@ -143,13 +143,14 @@
                 "tiers": [
                     {
                         "name": "LVR >60% to <=70% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0641",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -159,6 +160,15 @@
                 "rate": "0.0848",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "LVR >80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0855",
                 "interestPaymentDue": "IN_ARREARS",
@@ -173,13 +183,14 @@
                 "tiers": [
                     {
                         "name": "LVR >70% to <=80% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0651",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -204,13 +215,14 @@
                 "tiers": [
                     {
                         "name": "LVR <=60% discount ",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 60,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0631",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",

@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "594",
-        "lastUpdated": "2023-11-20T23:30:44Z",
+        "lastUpdated": "2023-11-27T10:02:20Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "3 Year Fixed Home Loan Owner Occupier",
         "description": "Our fixed rate home loans provide security of fixed repayments and allows for additional repayments up to $10,000 per annum.",
@@ -156,6 +156,15 @@
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalValue": "P3Y",
+                "tiers": [
+                    {
+                        "name": "LVR >80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "lendingRateType": "FIXED",
                 "comparisonRate": "0.0679",
                 "interestPaymentDue": "IN_ARREARS",
@@ -166,16 +175,18 @@
                 "rate": "0.0584",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR between >70% to <=80% only.",
+                "additionalValue": "P3Y",
                 "tiers": [
                     {
                         "name": "LVR >70% to <=80% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "FIXED",
                 "comparisonRate": "0.0662",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -185,16 +196,18 @@
                 "rate": "0.0574",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR between >60% to <=70% only.",
+                "additionalValue": "P3Y",
                 "tiers": [
                     {
                         "name": "LVR >60% to <=70% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "FIXED",
                 "comparisonRate": "0.0659",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -204,17 +217,18 @@
                 "rate": "0.0564",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "Available for new RACQ Bank home loans with an eligible LVR of <=60% only.",
+                "additionalValue": "P3Y",
                 "tiers": [
                     {
                         "name": "LVR <=60% discount ",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 60,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "FIXED",
                 "comparisonRate": "0.0656",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",

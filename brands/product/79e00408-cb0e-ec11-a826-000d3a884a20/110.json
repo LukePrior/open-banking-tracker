@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "110",
-        "lastUpdated": "2023-11-20T23:45:41Z",
+        "lastUpdated": "2023-11-27T10:05:09Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Fair Dinkum Investment Home Loan",
         "description": "Our Fair Dinkum Investment Home Loan is a basic home loan with a lower variable rate, no ongoing fees and unlimited additional repayments without the extras like a redraw facility and offset account.",
@@ -117,6 +117,15 @@
                 "rate": "0.0704",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "LVR >80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
                 "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0704",
                 "interestPaymentDue": "IN_ARREARS",
@@ -131,13 +140,14 @@
                 "tiers": [
                     {
                         "name": "LVR >70% to <=80% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0644",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -151,13 +161,14 @@
                 "tiers": [
                     {
                         "name": "LVR >60% to <=70% discount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 60.01,
+                        "maximumValue": 70,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0634",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -171,13 +182,14 @@
                 "tiers": [
                     {
                         "name": "LVR <=60% discount ",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 60,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
                 ],
-                "lendingRateType": "DISCOUNT",
+                "lendingRateType": "VARIABLE",
                 "comparisonRate": "0.0624",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
