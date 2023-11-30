@@ -2,7 +2,7 @@
     "data": {
         "productId": "6f2bc818-9144-4e2a-90da-eab63d9d0c71",
         "effectiveFrom": "2020-09-30T00:00:00+00:00",
-        "lastUpdated": "2023-10-16T04:35:51+00:00",
+        "lastUpdated": "2023-11-23T22:06:16+00:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "First Home Loan",
         "description": "We\u2019re proudly supporting the Government\u2019s initiative to help Australians purchase their first home sooner. Heritage Isle Bank  will help you get into your first home with our low rates and great features.",
@@ -34,54 +34,46 @@
         ],
         "eligibility": [
             {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Citizen"
+            },
+            {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen"
+                "eligibilityType": "NATURAL_PERSON"
             },
             {
                 "eligibilityType": "OTHER",
                 "additionalValue": "First Home Loan Deposit Scheme",
                 "additionalInfo": "Must be eligible for the First Home Loan Deposit Scheme",
                 "additionalInfoUri": "https://www.heritageisle.com.au/first-home-loan-deposit-scheme/?utm_source=siss"
-            },
-            {
-                "eligibilityType": "NATURAL_PERSON"
             }
         ],
         "fees": [
             {
-                "name": "Dishonoured Cheque fee",
+                "name": "Excess Valuation Fee",
                 "feeType": "EVENT",
-                "amount": "9.00",
-                "currency": "AUD",
-                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Arrears Letter Fee",
-                "feeType": "EVENT",
-                "amount": "6.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Substituting Securities fee",
-                "feeType": "UPFRONT",
-                "amount": "315.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Legal/Securities fees",
-                "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Second Mortgage Consent Fee",
+                "feeType": "UPFRONT",
+                "amount": "75.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Substituting of Security Legal fee",
+                "feeType": "UPFRONT",
+                "amount": "605.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -94,19 +86,41 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Second Mortgage Consent Fee",
+                "name": "RTGS Transfer Fee",
                 "feeType": "UPFRONT",
-                "amount": "75.00",
+                "amount": "10.50",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to consent to a second mortgage",
+                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Dishonoured Member Cheque fee",
-                "feeType": "PERIODIC",
-                "amount": "9.00",
+                "name": "Additional Valuation Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalValue": "Per cheque dishonoured.",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Stamp Duty",
+                "feeType": "UPFRONT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Establishment fee",
+                "feeType": "UPFRONT",
+                "amount": "600.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "General Consent Fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -115,6 +129,30 @@
                 "amount": "110.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable to our solicitors when you ask us to produce the certificate of title of your property to enable registration of a plan or any document dealing with your property",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Substituting Securities fee",
+                "feeType": "UPFRONT",
+                "amount": "315.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -135,75 +173,35 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Early Repayment Fee",
+                "name": "Arrears Letter Fee",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "6.50",
                 "currency": "AUD",
-                "additionalValue": "At cost",
-                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
+                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "General Consent Fee",
+                "name": "Dishonoured Cheque fee",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "9.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
+                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Additional Valuation Fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
+                "name": "Dishonoured Member Cheque fee",
+                "feeType": "PERIODIC",
+                "amount": "9.00",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
+                "additionalValue": "Per cheque dishonoured.",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
+                "name": "Mortgage Discharge Fee",
+                "feeType": "EXIT",
+                "amount": "294.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "RTGS Transfer Fee",
-                "feeType": "UPFRONT",
-                "amount": "10.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Bank Cheque",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Excess Valuation Fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Substituting of Security Legal fee",
-                "feeType": "UPFRONT",
-                "amount": "605.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Stamp Duty",
-                "feeType": "UPFRONT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
+                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -215,49 +213,85 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Establishment fee",
+                "name": "Legal/Securities fees",
                 "feeType": "UPFRONT",
-                "amount": "600.00",
-                "currency": "AUD"
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Mortgage Discharge Fee",
-                "feeType": "EXIT",
-                "amount": "294.00",
+                "name": "Early Repayment Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
-                "additionalInfoUri": "https://www.heritageisle.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+                "additionalValue": "At cost",
+                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0609",
-                "comparisonRate": "0.0581",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied P&I LVR>90% 1 Yr C4",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.0579",
+                "rate": "0.0599",
+                "comparisonRate": "0.0595",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied P&I LVR>90% 2 Yr C4",
+                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 2 Yr C1",
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0559",
-                "comparisonRate": "0.0567",
+                "rate": "0.0594",
+                "comparisonRate": "0.0595",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied IO LVR 80%-90% C2",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0629",
+                "comparisonRate": "0.0605",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 3 Yr C1",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "comparisonRate": "0.0607",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied IO LVR 80%-90% 3 Yr C2",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0604",
+                "comparisonRate": "0.0605",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied IO LVR>90% C5",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0584",
+                "comparisonRate": "0.0592",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -268,79 +302,19 @@
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0609",
-                "comparisonRate": "0.0572",
+                "comparisonRate": "0.0605",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied IO LVR 80%-90% 1 Yr C2",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.057",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied IO LVR 80%-90% 2 Yr C2",
+                "additionalInfo": "Owner Occupied P&I LVR>90% 2 Yr C4",
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0585",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied P&I LVR>90% 3 Yr C4",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0577",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied IO LVR 80%-90% 3 Yr C2",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0589",
-                "comparisonRate": "0.058",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 5 Yr C1",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.059",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied P&I LVR>90% 5 Yr C4",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0609",
-                "comparisonRate": "0.0587",
+                "rate": "0.0649",
+                "comparisonRate": "0.0617",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -351,8 +325,8 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0571",
+                "rate": "0.0629",
+                "comparisonRate": "0.0596",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
@@ -363,64 +337,44 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0589",
-                "comparisonRate": "0.0575",
+                "rate": "0.0639",
+                "comparisonRate": "0.0606",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied P&I LVR>90% 1 Yr C4",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "comparisonRate": "0.0615",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 3 Yr C1",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0569",
-                "comparisonRate": "0.0577",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Owner Occupied P&I LVR>90% C4",
+                "additionalInfo": "Owner Occupied P&I LVR>90% 3 Yr C4",
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0569",
-                "comparisonRate": "0.0569",
+                "rate": "0.0609",
+                "comparisonRate": "0.0596",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 2 Yr C1",
+                "additionalInfo": "Owner Occupied IO LVR 80%-90% 2 Yr C2",
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0619",
-                "comparisonRate": "0.0582",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied IO LVR>90% 1 Yr C5",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0579",
-                "comparisonRate": "0.0568",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO LVR>90% C5",
-                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0589",
-                "comparisonRate": "0.058",
+                "comparisonRate": "0.0606",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
@@ -430,14 +384,60 @@
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0569",
-                "comparisonRate": "0.057",
+                "lendingRateType": "FIXED",
+                "rate": "0.0649",
+                "comparisonRate": "0.0607",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO LVR 80%-90% C2",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied IO LVR>90% 1 Yr C5",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0669",
+                "comparisonRate": "0.0629",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied P&I LVR 80%-90% 5 Yr C1",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "comparisonRate": "0.0597",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied IO LVR 80%-90% 1 Yr C2",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0679",
+                "comparisonRate": "0.0639",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied P&I LVR>90% 5 Yr C4",
+                "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0594",
+                "comparisonRate": "0.0602",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Owner Occupied P&I LVR>90% C4",
                 "additionalInfoUri": "https://www.heritageisle.com.au/interest-rates/#"
             }
         ]
