@@ -78,7 +78,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0",
+                "rate": "0.0025",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -86,34 +86,68 @@
                         "name": "Amount",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
-                        "maximumValue": 9999.99,
+                        "maximumValue": 49999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalInfo": "Interest is calculated daily and paid monthly on the full balance when $10,000 or more is held in the account.",
+                "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/business-online-saver.html#Rates"
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0135",
+                "rate": "0.005",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Amount",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000.0,
+                        "minimumValue": 50000.0,
+                        "maximumValue": 249999.99,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalInfo": "Interest is calculated daily and paid monthly on the full balance when $10,000 or more is held in the account.",
+                "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/business-online-saver.html#Rates"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0095",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.0,
+                        "maximumValue": 999999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
+                "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/business-online-saver.html#Rates"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0125",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
                 "additionalInfoUri": "https://www.commbank.com.au/business/bank-accounts/business-online-saver.html#Rates"
             }
         ],
         "productId": "b31f8ddfc16b4121a0522fdc4af6cf7e",
         "effectiveFrom": "2011-05-10T14:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-30T00:32:13.929455Z",
+        "lastUpdated": "2023-12-01T00:32:18.157612Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Business Online Saver",
         "description": "A business savings account that can help you manage cash flow and set aside money for tax payments.",

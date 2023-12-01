@@ -11,7 +11,7 @@
         "description": "Manage your savings online with our high interest savings account.",
         "effectiveFrom": "2020-08-31T14:00:00.000Z",
         "isTailored": false,
-        "lastUpdated": "2023-06-30T14:00:22.594Z",
+        "lastUpdated": "2023-11-30T14:00:24.829Z",
         "name": "Online Saver Account",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "productId": "02901be8-7e53-49c8-ae99-097c55c11074",
@@ -55,8 +55,8 @@
             },
             {
                 "name": "Overdraft Reference Fee",
-                "amount": "10.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "Payroll Processing",
@@ -86,13 +86,13 @@
             },
             {
                 "name": "Direct Debit Dishonour Fee",
-                "amount": "10.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "RTGS payment/transfer to your account",
-                "amount": "10.00",
-                "feeType": "TRANSACTION"
+                "feeType": "TRANSACTION",
+                "amount": "10.00"
             }
         ],
         "eligibility": [
@@ -115,28 +115,27 @@
             {
                 "tiers": [
                     {
+                        "name": "$1 or more",
                         "minimumValue": 1,
                         "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {},
-                        "name": "$1 or more",
                         "maximumValue": 0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
                 "depositRateType": "VARIABLE",
                 "calculationFrequency": "P1D",
-                "rate": "0.034",
+                "rate": "0.0345",
                 "applicationFrequency": "P1M"
             },
             {
                 "tiers": [
                     {
+                        "name": "Bonus (conditions apply)",
                         "minimumValue": 1,
                         "unitOfMeasure": "DOLLAR",
                         "applicabilityConditions": {
                             "additionalInfo": "*The Bonus Intro Rate is the current standard variable rate plus a 4 month Bonus Intro Rate, and applies only on balances up to $100,000. The standard variable rate applies to amounts over $100,000.To qualify, new members must open an Online Saver account with a linked eligible account within sixty (60) days of membership opening. An eligible account means a Simply Access (S1), Pension Plus (S65) or Business Cheque (S13) account. The Bonus Intro Rate applies for 4 months starting on the day the online saver account is opened, after which the Bonus Intro Rate will no longer apply. The Bonus Intro Rate is available only to new members, and is limited to one (1) online saver (S26) account per member (either as a joint or single account holder)."
                         },
-                        "name": "Bonus (conditions apply)",
                         "maximumValue": 100000,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }

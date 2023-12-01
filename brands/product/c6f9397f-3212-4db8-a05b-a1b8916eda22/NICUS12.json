@@ -2,7 +2,7 @@
     "data": {
         "productId": "NICUS12",
         "effectiveFrom": "2020-06-30T14:00:00Z",
-        "lastUpdated": "2023-08-31T00:11:15Z",
+        "lastUpdated": "2023-11-30T06:50:11Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Savings account",
         "description": "The Bonus Savings account rewards savings with monthly bonus interest rate when you deposit a minimum of $1 and make no withdrawals during the month.",
@@ -58,42 +58,6 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Cheque Deposit Dishonour Fee",
-                "amount": "9.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Staff Manual Transfer of Funds between Accounts",
-                "amount": "10.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "PURCHASE",
-                "name": "NAB Bank Cheque",
-                "amount": "20.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "PURCHASE",
-                "name": "Copy of Member or Corporate Cheque",
-                "amount": "25.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Stop Payment Corporate Cheque",
-                "amount": "10.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Stop Payment Corporate Cheque - if presented",
-                "amount": "40.00",
-                "currency": "AUD"
-            },
-            {
-                "feeType": "EVENT",
                 "name": "SMS Alerts Fee",
                 "amount": "0.25",
                 "currency": "AUD",
@@ -101,30 +65,10 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Traces, Recalls & Recovery Action Fee",
-                "amount": "28.00",
-                "currency": "AUD",
-                "additionalInfo": "Refunded if Credit Union is at fault."
-            },
-            {
-                "feeType": "EVENT",
                 "name": "Retrieval of Electronically Held Documents",
                 "amount": "1.50",
                 "currency": "AUD",
                 "additionalInfo": "Per page."
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Retrieval all Other Documents",
-                "amount": "50.00",
-                "currency": "AUD",
-                "additionalInfo": "Per hour."
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Bank Confirmation/Audit Certificate",
-                "amount": "30.00",
-                "currency": "AUD"
             },
             {
                 "feeType": "DEPOSIT",
@@ -231,6 +175,29 @@
                     }
                 ],
                 "depositRateType": "VARIABLE"
+            },
+            {
+                "rate": "0.0033",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Variable Base Rate, no Bonus interest rate for amounts $500000 and over",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            },
+            {
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "No Bonus rate for amounts over $500000.",
+                "depositRateType": "BONUS"
             }
         ],
         "lendingRates": [

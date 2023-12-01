@@ -1,18 +1,18 @@
 {
     "data": {
-        "productId": "smartnet_account",
-        "effectiveTo": "2023-11-30T13:00:14Z",
-        "lastUpdated": "2023-12-01T00:05:27Z",
+        "productId": "business_saver",
+        "effectiveFrom": "2023-11-30T23:57:48Z",
+        "lastUpdated": "2023-12-01T00:02:33Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "SmartNet Account",
-        "description": "Access your money when needed with this online transaction account that earns you interest every month.",
+        "name": "Business Saver",
+        "description": "A savings account for businesses offering a competitive interest rate and at-call access to funds.",
         "brand": "Bank of Sydney",
         "brandName": "Bank of Sydney",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.banksyd.com.au/business/smartnet-account",
+            "overviewUri": "https://www.banksyd.com.au/business-saver-account",
             "termsUri": "https://www.banksyd.com.au/important-product-information",
-            "eligibilityUri": "https://www.banksyd.com.au/business/smartnet-account",
+            "eligibilityUri": "https://www.banksyd.com.au/business-saver-account",
             "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
         },
         "features": [
@@ -24,20 +24,6 @@
                 "featureType": "ADDITIONAL_CARDS",
                 "additionalValue": "Null",
                 "additionalInfo": "Additional card holders must be verified as per KYC standards"
-            },
-            {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "3",
-                "additionalInfo": "3 free ATM transactions per month"
-            },
-            {
-                "featureType": "UNLIMITED_TXNS",
-                "additionalInfo": "Unlimited POS transactions are allowed"
-            },
-            {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "3",
-                "additionalInfo": "3 free ATM Balance inquiries per month"
             },
             {
                 "featureType": "DIGITAL_BANKING",
@@ -68,13 +54,7 @@
         ],
         "eligibility": [
             {
-                "eligibilityType": "BUSINESS",
-                "additionalInfo": "Business entities to supply business identification documents. Search fees may apply."
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Business Signatories",
-                "additionalInfo": "All the signatories must be identified as per KYC requirements"
+                "eligibilityType": "BUSINESS"
             }
         ],
         "fees": [
@@ -91,24 +71,11 @@
                 "currency": "AUD"
             },
             {
-                "feeType": "WITHDRAWAL",
+                "feeType": "TRANSACTION",
                 "name": "Transaction Fees",
                 "amount": "2.00",
-                "currency": "AUD",
-                "additionalInfo": "Applicable if number of ATM transactions exceeds 3 per month"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Balance Inquiry Fee",
-                "amount": "1.50",
-                "currency": "AUD",
-                "additionalInfo": "Applicable if number of ATM balance inquiries exceeds 3 per month"
-            },
-            {
-                "feeType": "WITHDRAWAL",
-                "name": "Bank Cheque Fee",
-                "amount": "5.00",
-                "currency": "AUD"
+                "additionalInfo": "5 free transactions per month, then $2.00 per subsequent transaction",
+                "additionalInfoUri": "https://www.banksyd.com.au/globalassets/documents/pdfs/pds/pds02-fees--charges.pdf"
             },
             {
                 "feeType": "TRANSACTION",
@@ -122,34 +89,6 @@
                 "amount": "35.00",
                 "currency": "AUD",
                 "additionalInfo": "RTGS transaction"
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Monthly Account Fee",
-                "amount": "10.00",
-                "additionalValue": "P1M",
-                "discounts": [
-                    {
-                        "discountType": "BALANCE",
-                        "description": "Account Balance",
-                        "amount": "10.0000",
-                        "balanceRate": "0.0",
-                        "transactionRate": "0.0",
-                        "accruedRate": "0.0",
-                        "feeRate": "0.0",
-                        "additionalValue": "5000",
-                        "additionalInfo": "Fee waived if the account's monthly average balance is equal to or higher than $5,000"
-                    },
-                    {
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "description": "Customer related products",
-                        "amount": "10.0000",
-                        "balanceRate": "0.0",
-                        "transactionRate": "0.0",
-                        "accruedRate": "0.0",
-                        "feeRate": "0.0"
-                    }
-                ]
             }
         ],
         "depositRates": [
@@ -231,6 +170,6 @@
         ]
     },
     "links": {
-        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/smartnet_account"
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/business_saver"
     }
 }

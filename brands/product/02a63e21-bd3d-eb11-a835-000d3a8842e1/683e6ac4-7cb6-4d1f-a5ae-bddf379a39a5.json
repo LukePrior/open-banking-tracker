@@ -11,15 +11,15 @@
         "description": "Earn bonus interest when you make regular desposits and no withdrawals with a Heritage Target Bonus Account",
         "effectiveFrom": "2020-09-30T14:00:00.000Z",
         "isTailored": false,
-        "lastUpdated": "2023-06-30T14:00:24.735Z",
+        "lastUpdated": "2023-11-30T14:00:22.667Z",
         "name": "Target Bonus Account",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "productId": "683e6ac4-7cb6-4d1f-a5ae-bddf379a39a5",
         "fees": [
             {
                 "name": "Audit Certificate",
-                "amount": "15.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "15.00"
             },
             {
                 "name": "Business internet banking security token",
@@ -35,13 +35,13 @@
             },
             {
                 "name": "Cheque in Foreign Currency",
-                "amount": "10.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "Direct Debit Dishonour",
-                "amount": "10.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "Document/Record search fee",
@@ -76,8 +76,8 @@
             },
             {
                 "name": "Overdraft Reference Fee",
-                "amount": "10.00",
-                "feeType": "EVENT"
+                "feeType": "EVENT",
+                "amount": "10.00"
             },
             {
                 "name": "Payroll Processing",
@@ -107,18 +107,18 @@
             },
             {
                 "name": "Manual transfer to another Heritage Account",
-                "amount": "2.50",
-                "feeType": "TRANSACTION"
+                "feeType": "TRANSACTION",
+                "amount": "2.50"
             },
             {
                 "name": "Manual transfer to another financial institution",
-                "amount": "4.00",
-                "feeType": "TRANSACTION"
+                "feeType": "TRANSACTION",
+                "amount": "4.00"
             },
             {
                 "name": "Telegraphic transfer within Australia",
-                "amount": "30.00",
-                "feeType": "TRANSACTION"
+                "feeType": "TRANSACTION",
+                "amount": "30.00"
             },
             {
                 "name": "Telegraphic transfer",
@@ -134,8 +134,8 @@
             },
             {
                 "name": "RTGS payment/transfer to your account",
-                "amount": "10.00",
-                "feeType": "TRANSACTION"
+                "feeType": "TRANSACTION",
+                "amount": "10.00"
             }
         ],
         "constraints": [
@@ -152,10 +152,9 @@
             {
                 "tiers": [
                     {
+                        "name": "$1 or more",
                         "minimumValue": 1,
                         "unitOfMeasure": "DOLLAR",
-                        "applicabilityConditions": {},
-                        "name": "$1 or more",
                         "maximumValue": 0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
@@ -166,24 +165,24 @@
                 "applicationFrequency": "P1M"
             },
             {
+                "additionalValue": "bonus interest will be applied to all balances if at least one deposit and no withdrawals are made",
                 "tiers": [
                     {
+                        "name": "Bonus (conditions apply)",
                         "minimumValue": 1,
                         "unitOfMeasure": "DOLLAR",
                         "applicabilityConditions": {
                             "additionalInfo": "Bonus Interest applied if at least one deposit and no withdrawals are made during the month. Bonus Interest is calculated on minimum monthly balance.",
                             "additionalInfoUri": "https://www.heritage.com.au/banking/accounts/target-bonus"
                         },
-                        "name": "Bonus (conditions apply)",
                         "maximumValue": 0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "rate": "0.0424",
-                "applicationFrequency": "P1M",
-                "additionalValue": "bonus interest will be applied to all balances if at least one deposit and no withdrawals are made",
                 "depositRateType": "BONUS",
-                "calculationFrequency": "P1D"
+                "calculationFrequency": "P1D",
+                "rate": "0.0439",
+                "applicationFrequency": "P1M"
             }
         ],
         "features": [
