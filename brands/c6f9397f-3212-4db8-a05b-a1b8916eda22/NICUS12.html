@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;NICUS12&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-06-30T14:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-08-31T00:11:15Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-30T06:50:11Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Bonus Savings account&quot;,
     &quot;description&quot;: &quot;The Bonus Savings account rewards savings with monthly bonus interest rate when you deposit a minimum of $1 and make no withdrawals during the month.&quot;,
@@ -64,42 +64,6 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Cheque Deposit Dishonour Fee&quot;,
-            &quot;amount&quot;: &quot;9.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Staff Manual Transfer of Funds between Accounts&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;PURCHASE&quot;,
-            &quot;name&quot;: &quot;NAB Bank Cheque&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;PURCHASE&quot;,
-            &quot;name&quot;: &quot;Copy of Member or Corporate Cheque&quot;,
-            &quot;amount&quot;: &quot;25.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Stop Payment Corporate Cheque&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Stop Payment Corporate Cheque - if presented&quot;,
-            &quot;amount&quot;: &quot;40.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;SMS Alerts Fee&quot;,
             &quot;amount&quot;: &quot;0.25&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -107,30 +71,10 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Traces, Recalls &amp; Recovery Action Fee&quot;,
-            &quot;amount&quot;: &quot;28.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Refunded if Credit Union is at fault.&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Retrieval of Electronically Held Documents&quot;,
             &quot;amount&quot;: &quot;1.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Per page.&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Retrieval all Other Documents&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per hour.&quot;
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Bank Confirmation/Audit Certificate&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;feeType&quot;: &quot;DEPOSIT&quot;,
@@ -237,6 +181,29 @@
                 }
             ],
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0033&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;Variable Base Rate, no Bonus interest rate for amounts $500000 and over&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Amount&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;No Bonus rate for amounts over $500000.&quot;,
+            &quot;depositRateType&quot;: &quot;BONUS&quot;
         }
     ],
     &quot;lendingRates&quot;: [

@@ -17,15 +17,15 @@
     &quot;description&quot;: &quot;Earn bonus interest when you make regular desposits and no withdrawals with a Heritage Target Bonus Account&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-09-30T14:00:00.000Z&quot;,
     &quot;isTailored&quot;: false,
-    &quot;lastUpdated&quot;: &quot;2023-06-30T14:00:24.735Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-11-30T14:00:22.667Z&quot;,
     &quot;name&quot;: &quot;Target Bonus Account&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;productId&quot;: &quot;683e6ac4-7cb6-4d1f-a5ae-bddf379a39a5&quot;,
     &quot;fees&quot;: [
         {
             &quot;name&quot;: &quot;Audit Certificate&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;
         },
         {
             &quot;name&quot;: &quot;Business internet banking security token&quot;,
@@ -41,13 +41,13 @@
         },
         {
             &quot;name&quot;: &quot;Cheque in Foreign Currency&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;
         },
         {
             &quot;name&quot;: &quot;Direct Debit Dishonour&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;
         },
         {
             &quot;name&quot;: &quot;Document/Record search fee&quot;,
@@ -82,8 +82,8 @@
         },
         {
             &quot;name&quot;: &quot;Overdraft Reference Fee&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;
         },
         {
             &quot;name&quot;: &quot;Payroll Processing&quot;,
@@ -113,18 +113,18 @@
         },
         {
             &quot;name&quot;: &quot;Manual transfer to another Heritage Account&quot;,
-            &quot;amount&quot;: &quot;2.50&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;
         },
         {
             &quot;name&quot;: &quot;Manual transfer to another financial institution&quot;,
-            &quot;amount&quot;: &quot;4.00&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.00&quot;
         },
         {
             &quot;name&quot;: &quot;Telegraphic transfer within Australia&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;
         },
         {
             &quot;name&quot;: &quot;Telegraphic transfer&quot;,
@@ -140,8 +140,8 @@
         },
         {
             &quot;name&quot;: &quot;RTGS payment/transfer to your account&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -158,10 +158,9 @@
         {
             &quot;tiers&quot;: [
                 {
+                    &quot;name&quot;: &quot;$1 or more&quot;,
                     &quot;minimumValue&quot;: 1,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;applicabilityConditions&quot;: {},
-                    &quot;name&quot;: &quot;$1 or more&quot;,
                     &quot;maximumValue&quot;: 0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
@@ -172,24 +171,24 @@
             &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
         {
+            &quot;additionalValue&quot;: &quot;bonus interest will be applied to all balances if at least one deposit and no withdrawals are made&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;name&quot;: &quot;Bonus (conditions apply)&quot;,
                     &quot;minimumValue&quot;: 1,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;applicabilityConditions&quot;: {
                         &quot;additionalInfo&quot;: &quot;Bonus Interest applied if at least one deposit and no withdrawals are made during the month. Bonus Interest is calculated on minimum monthly balance.&quot;,
                         &quot;additionalInfoUri&quot;: &quot;https://www.heritage.com.au/banking/accounts/target-bonus&quot;
                     },
-                    &quot;name&quot;: &quot;Bonus (conditions apply)&quot;,
                     &quot;maximumValue&quot;: 0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;rate&quot;: &quot;0.0424&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;bonus interest will be applied to all balances if at least one deposit and no withdrawals are made&quot;,
             &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;rate&quot;: &quot;0.0439&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;
         }
     ],
     &quot;features&quot;: [

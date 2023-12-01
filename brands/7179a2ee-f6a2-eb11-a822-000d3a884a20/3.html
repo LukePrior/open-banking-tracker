@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;3&quot;,
     &quot;effectiveFrom&quot;: &quot;2015-06-30T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-23T00:00:24.0455405Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-23T06:00:27.7551014Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Cash Management&quot;,
     &quot;description&quot;: &quot;Full accessibility to your funds plus the opportunity to earn interest on your balance.  A fantastic solution during times when money needs to be parked between purchases or investments.&quot;,
@@ -25,7 +25,7 @@
         },
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
-            &quot;additionalValue&quot;: &quot;Visa Debit Card&quot;
+            &quot;additionalValue&quot;: &quot;Choice of Visa Debit card or CueCard&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
@@ -52,6 +52,20 @@
     ],
     &quot;fees&quot;: [
         {
+            &quot;name&quot;: &quot;Dormant Account&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Coin Deposit Greater $100&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;transactionRate&quot;: &quot;0.05&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A fee of 5% of total coin deposit may be charged on coin deposits over $100&quot;
+        },
+        {
             &quot;name&quot;: &quot;Disputed Transaction Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;35.00&quot;,
@@ -76,24 +90,12 @@
                     &quot;eligibility&quot;: [
                         {
                             &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;100&quot;,
                             &quot;additionalInfo&quot;: &quot;Monthly Account Service Fee is waived for accounts in a dormant status&quot;
                         }
                     ]
                 }
             ]
-        },
-        {
-            &quot;name&quot;: &quot;Monthly Account Service Fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Dormant Account Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
         },
         {
             &quot;name&quot;: &quot;Other Service Fees&quot;,
@@ -107,7 +109,7 @@
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.016&quot;,
+            &quot;rate&quot;: &quot;0.009&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -122,7 +124,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;rate&quot;: &quot;0.0105&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -137,7 +139,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0185&quot;,
+            &quot;rate&quot;: &quot;0.0115&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -152,7 +154,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0195&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
