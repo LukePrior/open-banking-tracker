@@ -69,14 +69,14 @@
         "features": [],
         "fees": [
             {
-                "feeType": "DEPOSIT",
-                "name": "Other Bank Deposit Fee",
+                "feeType": "EVENT",
+                "name": "Consent fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "6.50",
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -97,14 +97,91 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Consent fee",
+                "feeType": "UPFRONT",
+                "name": "Processing fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "For 2nd or subsequent mortgages or lease registration",
+                "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "250.00",
+                "amount": "500.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "DHOAS eligible applicants",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "50.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
+                                "additionalInfoUri": null,
+                                "additionalValue": ""
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Audit Certificate Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Per audit certificate requested",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Stamp Duty",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "At cost",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "DEPOSIT",
+                "name": "Other Bank Deposit Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Cash and cheque deposit at NAB Branch",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "6.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Copies of statements (up to 12 months) at branch",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -126,62 +203,6 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Audit Certificate Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Per audit certificate requested",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "50.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "RateSaver Switch fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "To switch to a RateSaver Loan",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Stamp Duty",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) at branch",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
                 "name": "Mortgage discharge fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -189,6 +210,20 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "300.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Copies of statements (over 12 months) per page",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -251,20 +286,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Copies of statements (over 12 months) per page",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "5.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "VARIABLE",
                 "name": "Legal Fees",
                 "accrualFrequency": null,
@@ -293,38 +314,17 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "Processing fee",
+                "feeType": "EVENT",
+                "name": "RateSaver Switch fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": null,
+                "additionalInfo": "To switch to a RateSaver Loan",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "500.00",
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "DHOAS eligible applicants",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": null,
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "50.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "DHOAS eligible applicants pay a reduced application fee of $450",
-                                "additionalInfoUri": null,
-                                "additionalValue": ""
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
+                "discounts": [],
                 "transactionRate": null
             }
         ],
