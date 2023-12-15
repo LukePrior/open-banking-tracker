@@ -24,50 +24,33 @@
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;To be 18 or over&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;additionalInfo&quot;: &quot;Applications are for individuals and personal use purposes only.&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Resident&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
-            &quot;additionalValue&quot;: &quot;Applications are for individuals and personal use purposes only&quot;
-        },
-        {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Credit Approval&quot;,
             &quot;additionalInfo&quot;: &quot;Applications\u00a0for\u00a0Personal Loans\u00a0are\u00a0subject\u00a0to\u00a0credit\u00a0approval.&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;5000&quot;
+            &quot;additionalValue&quot;: &quot;5000.00&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;75000&quot;
+            &quot;additionalValue&quot;: &quot;75000.00&quot;
         }
     ],
     &quot;features&quot;: [
-        {
-            &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalInfo&quot;: &quot;Enjoy access to your additional  loan repayments with redraw, so you can use it whenever you need some breathing space.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
-            &quot;additionalInfo&quot;: &quot;Unlimited free extra repayments&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;$0 Monthly fees&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Yes&quot;,
-            &quot;additionalInfo&quot;: &quot;Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.&quot;
-        },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Flexible repayment options - choose to make either monthly, fortnightly or weekly repayments to suit your income and budget.&quot;
@@ -75,47 +58,70 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;No penalties for early payout, pay off sooner without being charged a fee.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;$0 Monthly or annual fees.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/digital-banking&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;Enjoy access to your additional  loan repayments with redraw, so you can use it whenever you need some breathing space. A $200 minimum withdrawal amount applies for redraws conducted in-branch.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;Unlimited free extra repayments.&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Account information fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer fee within Australia&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request the following: \u2022 an annual audit certificate on a Great Southern Bank account; or \u2022 a copy of a cheque or Visa voucher; or \u2022 personal information, traces, document copies (other than those specified above) and/or information pertaining to an account.&quot;
+            &quot;additionalInfo&quot;: &quot;Local telegraphic transfer to an account at a financial institution within Australia. Payable where you request a local telegraphic transfer to an account at a financial institution within Australia.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Account Information Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable where you request a local telegraphic transfer to an account at a financial institution within Australia.&quot;
+            &quot;additionalInfo&quot;: &quot;Account informaton fee is payable when customer request the following:\n- An annual audit certificate on a Great Southern Bank account\n- A copy of a cheque or Visa voucher\n- Personal information, traces, document copies (other than those specified above) and/or information pertaining to an account\nWhere further investigation is required an additional hourly rate of $20 per hour will apply. An estimate of the costs involved will be provided prior to the work being undertaken.&quot;
         },
         {
-            &quot;name&quot;: &quot;Establishment fee&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;175.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;An establishment fee includes the cost of processing the application and the preparation of loan documentation.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Arrears letter fee&quot;,
+            &quot;name&quot;: &quot;Arrears Letter Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;22.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a letter in relation to arrears on your account.&quot;
         },
         {
-            &quot;name&quot;: &quot;Default notice fee&quot;,
+            &quot;name&quot;: &quot;Default Notice Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;33.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account.&quot;
+            &quot;additionalInfo&quot;: &quot;Default notice fee is payable where Great Southern Bank sends you a default notice in relation to outstanding arrears on your account.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Debt Collection Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is \&quot;out of order\&quot;.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Establishment Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;175.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;An establishment fee includes the cost of processing the application and the preparation of loan documentation.&quot;
         },
         {
             &quot;name&quot;: &quot;Switch variation fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;120.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable if you request, and we agree to switch your personal loan product to another personal loan product.&quot;
@@ -124,64 +130,12 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0749&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0774&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;Equifax Score 1000-1200&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 12.0,
-                    &quot;maximumValue&quot;: 84.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 1000-1200&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.1319&quot;,
-            &quot;comparisonRate&quot;: &quot;0.1345&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;Equifax Score 675-799&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 12.0,
-                    &quot;maximumValue&quot;: 84.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 675-799&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0919&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0944&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;Equifax Score 800-999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
-                    &quot;minimumValue&quot;: 12.0,
-                    &quot;maximumValue&quot;: 84.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 800-999&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.1999&quot;,
+            &quot;rate&quot;: &quot;0.17&quot;,
             &quot;comparisonRate&quot;: &quot;0.2027&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;Equifax Score 500-674&quot;,
@@ -191,7 +145,151 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
             &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 500-674&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;PENALTY&quot;,
+            &quot;rate&quot;: &quot;0.0299&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 500-674&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 500-674&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.17&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0774&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 1000-1200&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 1000-1200&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;rate&quot;: &quot;-0.0951&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 1000-1200&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 1000-1200&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;rate&quot;: &quot;-0.0781&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 800-999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 800-999&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.17&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0944&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 800-999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 800-999&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.17&quot;,
+            &quot;comparisonRate&quot;: &quot;0.1345&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 675-799&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 675-799&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;DISCOUNT&quot;,
+            &quot;rate&quot;: &quot;-0.0381&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Equifax Score 675-799&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
+                    &quot;minimumValue&quot;: 12.0,
+                    &quot;maximumValue&quot;: 84.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P84M&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate is available for customers with Equifax score between 675-799&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.greatsouthernbank.com.au/personal-loans/unsecured-fixed-rate&quot;
         }
     ]
