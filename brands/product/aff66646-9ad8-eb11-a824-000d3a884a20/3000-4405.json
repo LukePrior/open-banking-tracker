@@ -18,53 +18,36 @@
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "additionalValue": "18",
+                "additionalInfo": "To be 18 or over"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "Applications are for individuals and personal use purposes only."
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Resident"
             },
             {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalValue": "Applications are for individuals and personal use purposes only"
-            },
-            {
                 "eligibilityType": "OTHER",
-                "additionalValue": "Credit Approval",
                 "additionalInfo": "Applications\u00a0for\u00a0Personal Loans\u00a0are\u00a0subject\u00a0to\u00a0credit\u00a0approval."
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "5000"
+                "additionalValue": "5000.00"
             },
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalValue": "100000"
+                "additionalValue": "100000.00"
             }
         ],
         "features": [
             {
-                "featureType": "EXTRA_REPAYMENTS",
-                "additionalInfo": "Unlimited free extra repayments"
-            },
-            {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Yes",
-                "additionalInfo": "Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want."
-            },
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Enjoy access to your additional car loan repayments with redraw, so you can use it whenever you need some breathing space."
-            },
-            {
                 "featureType": "OTHER",
                 "additionalInfo": "Available for new and used vehicles up to 7 years old."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "No penalties for early payout, pay off sooner without being charged a fee."
             },
             {
                 "featureType": "OTHER",
@@ -72,110 +55,99 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "$0 Monthly fees"
+                "additionalInfo": "No penalties for early payout, pay off sooner without being charged a fee."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "$0 Monthly or annual fees."
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/digital-banking"
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Enjoy access to your additional car loan repayments with redraw, so you can use it whenever you need some breathing space. A $200 minimum withdrawal amount applies for redraws conducted in-branch."
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalInfo": "Unlimited free extra repayments."
             }
         ],
         "fees": [
             {
-                "name": "Account information fee",
-                "feeType": "TRANSACTION",
+                "name": "Telegraphic transfer fee within Australia",
+                "feeType": "EVENT",
                 "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request the following: \u2022 an annual audit certificate on a Great Southern Bank account; or \u2022 a copy of a cheque or Visa voucher; or \u2022 personal information, traces, document copies (other than those specified above) and/or information pertaining to an account."
+                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia. Payable where you request a local telegraphic transfer to an account at a financial institution within Australia."
             },
             {
-                "name": "Substitute security variation fee",
-                "feeType": "TRANSACTION",
-                "amount": "100.00",
+                "name": "Account Information Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable if you request, and we agree to re-arrange and/or substitute a security on a personal loan."
+                "additionalInfo": "Account informaton fee is payable when customer request the following:\n- An annual audit certificate on a Great Southern Bank account\n- A copy of a cheque or Visa voucher\n- Personal information, traces, document copies (other than those specified above) and/or information pertaining to an account\nWhere further investigation is required an additional hourly rate of $20 per hour will apply. An estimate of the costs involved will be provided prior to the work being undertaken."
             },
             {
-                "name": "Switch variation fee",
-                "feeType": "TRANSACTION",
-                "amount": "120.00",
+                "name": "Arrears Letter Fee",
+                "feeType": "EVENT",
+                "amount": "22.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable if you request, and we agree to switch your personal loan product to another personal loan product."
+                "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
             },
             {
-                "name": "Security admin Fee",
-                "feeType": "UPFRONT",
-                "amount": "90.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable upfront when Great Southern Bank needs to register a financial interest in the vehicle that is being secured against the loan."
-            },
-            {
-                "name": "Default notice fee",
+                "name": "Default Notice Fee",
                 "feeType": "EVENT",
                 "amount": "33.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account."
+                "additionalInfo": "Default notice fee is payable where Great Southern Bank sends you a default notice in relation to outstanding arrears on your account."
             },
             {
-                "name": "Establishment fee",
+                "name": "Debt Collection Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is \"out of order\"."
+            },
+            {
+                "name": "Establishment Fee",
                 "feeType": "UPFRONT",
                 "amount": "175.00",
                 "currency": "AUD",
                 "additionalInfo": "An establishment fee includes the cost of processing the application and the preparation of loan documentation."
             },
             {
-                "name": "Telegraphic transfer fee",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
+                "name": "Security Admin Fee",
+                "feeType": "UPFRONT",
+                "amount": "90.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable where you request a local telegraphic transfer to an account at a financial institution within Australia."
+                "additionalInfo": "Payable upfront when Great Southern Bank needs to register a financial interest in the vehicle that is being secured against the loan."
             },
             {
-                "name": "Arrears letter fee",
+                "name": "Substitute Security Variation Fee",
                 "feeType": "EVENT",
-                "amount": "22.00",
+                "amount": "100.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
+                "additionalInfo": "Payable if you request, and we agree to re-arrange and/or substitute a security on a personal loan."
+            },
+            {
+                "name": "Switch variation fee",
+                "feeType": "EVENT",
+                "amount": "120.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you request, and we agree to switch your personal loan product to another personal loan product."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0636",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Equifax Score 1000-1200",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12.0,
-                        "maximumValue": 84.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Interest rate is available for customers with Equifax score between 1000-1200",
-                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0894",
-                "comparisonRate": "0.0932",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Equifax Score 675-799",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 12.0,
-                        "maximumValue": 84.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalInfo": "Interest rate is available for customers with Equifax score between 675-799",
-                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.1429",
+                "rate": "0.15",
                 "comparisonRate": "0.1469",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
                         "name": "Equifax Score 500-674",
@@ -185,15 +157,79 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 500-674",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0071",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 500-674",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
                 "additionalInfo": "Interest rate is available for customers with Equifax score between 500-674",
                 "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0724",
+                "rate": "0.15",
+                "comparisonRate": "0.0636",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 1000-1200",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 1000-1200",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0901",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 1000-1200",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 1000-1200",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.15",
                 "comparisonRate": "0.0761",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "tiers": [
                     {
                         "name": "Equifax Score 800-999",
@@ -203,7 +239,69 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
+                "additionalValue": "P84M",
                 "additionalInfo": "Interest rate is available for customers with Equifax score between 800-999",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0776",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 800-999",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 800-999",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.15",
+                "comparisonRate": "0.0932",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 675-799",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 675-799",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0606",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "tiers": [
+                    {
+                        "name": "Equifax Score 675-799",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 84.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P84M",
+                "additionalInfo": "Interest rate is available for customers with Equifax score between 675-799",
                 "additionalInfoUri": "https://www.greatsouthernbank.com.au/personal-loans/electric-car-loan"
             }
         ]

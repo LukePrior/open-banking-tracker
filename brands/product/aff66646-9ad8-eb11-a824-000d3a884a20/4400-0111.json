@@ -18,140 +18,150 @@
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": "18"
+                "additionalValue": "18",
+                "additionalInfo": "To be 18 or over"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "Applications are for individuals and personal use purposes only."
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Resident"
-            },
-            {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalValue": "Applications are for individuals and personal use purposes only"
             }
         ],
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "10000",
+                "additionalValue": "100000.00",
                 "additionalInfo": "Minimum application amount of $100,000; or  switching or restructuring of the home loan you already have with us when it includes new borrowing of at least $10,000."
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "5000000.00"
             }
         ],
         "features": [
             {
+                "featureType": "REDRAW",
+                "additionalInfo": "Enjoy free redraw.  Access your additional home loan repayments with redraw, so you can use it whenever you need some breathing space. A $200 minimum withdrawal amount applies for redraws conducted in-branch."
+            },
+            {
                 "featureType": "OFFSET",
-                "additionalInfo": "Offset your interest to save.  Save on the amount of interest you pay and reduce your loan term by offsetting the combined balances of your Great Southern Bank everyday accounts with a free 100% Multi-Account Offset facility."
+                "additionalInfo": "Offset your interest to save.  Save on the amount of interest you pay and reduce your loan term by offsetting the combined balances of your Great Southern Bank everyday accounts with a free 100% Multi-Account Offset facility. You must maintain a minimum balance of $500 in each offset account to obtain the benefit of the offset from that account. Your offset account will not earn any interest."
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "No on-going fees.  With no annual or monthly account keeping fees you can save money for the other important things in your life."
-            },
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Enjoy free redraw.  Access your additional home loan repayments with redraw, so you can use it whenever you need some breathing space."
-            },
-            {
-                "featureType": "CASHBACK_OFFER",
-                "additionalInfo": "Eligible customers receive $3000 cashback if they refinance their home loan over to Great Southern Bank.",
-                "additionalInfoUri": "https://www.greatsouthernbank.com.au/refinance-terms"
+                "additionalInfo": "$0 Monthly or annual fees."
             },
             {
                 "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Yes",
-                "additionalInfo": "Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want."
+                "additionalInfo": "Wherever\u00a0you\u00a0are\u00a0in\u00a0the\u00a0world,\u00a0Great Southern Bank\u00a0gives\u00a0you\u00a0the\u00a0choice\u00a0and\u00a0control\u00a0to\u00a0securely\u00a0manage\u00a0all\u00a0of\u00a0your\u00a0accounts\u00a0on\u00a0a\u00a0range\u00a0of\u00a0devices,\u00a0the\u00a0way\u00a0you\u00a0want.",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/digital-banking"
             },
             {
                 "featureType": "GUARANTOR",
-                "additionalInfo": "A  guarantor is someone who promises to repay money that is  owed to us under a loan, if for some reason the borrower doesn\u2019t."
+                "additionalInfo": "A  guarantor is someone who promises to repay money that is owed to us under a loan, if for some reason the borrower doesn\u2019t."
             },
             {
                 "featureType": "EXTRA_REPAYMENTS",
-                "additionalInfo": "Reach your property goal sooner.  Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
+                "additionalInfo": "Reach your property goal sooner. Enjoy the flexibility of being able to make unlimited extra repayments without penalty."
             }
         ],
         "fees": [
             {
-                "name": "Account information fee",
-                "feeType": "EVENT",
-                "amount": "20.00",
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "600.00",
                 "currency": "AUD",
-                "additionalInfo": "Account informaton fee is payable when customer request the following:                                                                                  - An annual audit certificate on a Great Southern Bank account                                                                                               - A copy of a cheque or Visa voucher                                                                                                - Personal information, traces, document copies (other than those specified above) and/or information pertaining to an account  Where further investigation is required an additional hourly rate of $20 per hour will apply. An estimate of the costs involved will be provided prior to the work being undertaken."
+                "additionalInfo": "An establishment fee applies to all credit facilities and includes the cost of processing the application and the preparation of the Great Southern Bank loan\ndocumentation.",
+                "discounts": [
+                    {
+                        "description": "Establishment fee waived when applying online",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "600.00",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Offer includes $0 Establishment Fee and is open to new or existing customers applying for a minimum application amount of $100,000 or more. Excludes applications for Internal Refinance of existing facilities. Applications must be received between 31/08/2022 and 29/02/2024 and settled by 31/05/2024. To be eligible to apply online you must be at least 18 years of age, a permanent resident of Australia, applying for yourself or as a married/defacto couple and buying an existing property or refinancing. Great Southern Bank may withdraw or amend this offer at any time without notice."
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "Telegraphic transfer fee within Australia",
                 "feeType": "EVENT",
                 "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia."
+                "additionalInfo": "Local telegraphic transfer to an account at a financial institution within Australia. Payable where you request a local telegraphic transfer to an account at a financial institution within Australia."
             },
             {
-                "name": "Security Adminstration fee",
-                "feeType": "UPFRONT",
-                "amount": "235.00",
+                "name": "Account Information Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
                 "currency": "AUD",
-                "additionalInfo": "A securities administration fee applies to all secured credit facilities. The securities administration fee represents the average cost based on typical charges incurred in settling loans, including:  \u2022 Progressive drawdowns  \u2022 Bank cheque fee  \u2022 Agent fee  \u2022 Land title search  \u2022 Credit reference fee  \u2022 PPSR searches  \u2022 PPSR charges"
+                "additionalInfo": "Account informaton fee is payable when customer request the following:\n- An annual audit certificate on a Great Southern Bank account\n- A copy of a cheque or Visa voucher\n- Personal information, traces, document copies (other than those specified above) and/or information pertaining to an account\nWhere further investigation is required an additional hourly rate of $20 per hour will apply. An estimate of the costs involved will be provided prior to the work being undertaken."
             },
             {
-                "name": "Monthly fee",
-                "feeType": "PERIODIC",
-                "amount": "0.00",
+                "name": "Valuation fee",
+                "feeType": "VARIABLE",
                 "currency": "AUD",
-                "additionalValue": "P1M"
+                "additionalInfo": "The establishment fee for non Rate Breaker home loans covers the cost of one valuation. A valuation fee may be payable in the future if Great Southern Bank considers it necessary to revalue the property at any time. The amount of the fee will be subject to the Great Southern Bank panel valuers scale of fees current at that time."
             },
             {
-                "name": "Arrears letter fee",
+                "name": "Home Guarantee Scheme LMI Premium",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Applicable only to eligible loans participating in the Home Guarantee \nSchemes including the First Home Guarantee (previously know as the \nFirst Home Loan Deposit Scheme), New Home Guarantee, Family Home \nGuarantee or Regional First Home Buyer Guarantee. If the Guarantee Certificate expires or is otherwise discharged due to an act or omission undertaken by you or a guarantor, Great Southern Bank may seek to obtain lenders\u2019 mortgage insurance (LMI) in respect of the Loan and in that case, you must pay this fee to reimburse Great Southern Bank for the cost incurred in obtaining LMI. For Contracts entered into prior to 22 June 2022, the applicable premium amount is referred to as a FHLDS LMI Premium or Family Home Guarantee LMI Premium."
+            },
+            {
+                "name": "Arrears Letter Fee",
                 "feeType": "EVENT",
                 "amount": "22.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
             },
             {
-                "name": "Redraw Fee",
-                "feeType": "WITHDRAWAL",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "($200 minimum withdrawal applies in branch)"
-            },
-            {
-                "name": "Default notice fee",
+                "name": "Default Notice Fee",
                 "feeType": "EVENT",
                 "amount": "33.00",
                 "currency": "AUD",
-                "additionalInfo": "Default notice fee is payable where Great Southern Bank sends a default notice in relation to arrears or an over limit amount on the customer's account."
+                "additionalInfo": "Default notice fee is payable where Great Southern Bank sends you a default notice in relation to outstanding arrears on your account."
             },
             {
-                "name": "Variation fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "AUD",
-                "additionalInfo": "A variation fee is payable if you request any changes to the Credit Contract or Security - for example: - Re-arrange and/or substitute a security on a mortgage - Consent to any dealings in relation to property - Switch from one interest rate product to another, at the request of the borrower - Where a fixed interest rate has decreased between loan approval and loan funding, at the request of the borrower"
-            },
-            {
-                "name": "Establishment Fee",
-                "feeType": "UPFRONT",
-                "amount": "600.00",
-                "currency": "AUD",
-                "additionalInfo": "An establishment fee applies to all credit facilities and includes the cost of processing the application and the preparation of the Great Southern Bank loan documentation."
-            },
-            {
-                "name": "Re-documentation fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "currency": "AUD",
-                "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
-            },
-            {
-                "name": "Split loan fee",
+                "name": "Split Loan Fee",
                 "feeType": "EVENT",
                 "amount": "300.00",
                 "currency": "AUD",
                 "additionalInfo": "Split loan fee is payable a split involves two or more separate facilities (accounts). Customers can elect to split their loan facility at time of application."
             },
             {
-                "name": "Production fee",
-                "feeType": "EVENT",
-                "amount": "100.00",
+                "name": "Monthly Account Keeping Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
+                "additionalValue": "P1M"
+            },
+            {
+                "name": "Annual Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1Y"
+            },
+            {
+                "name": "Debt Collection Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is \"out of order\"."
+            },
+            {
+                "name": "Security Adminstration Fee",
+                "feeType": "UPFRONT",
+                "amount": "235.00",
+                "currency": "AUD",
+                "additionalInfo": "For each security offered to the Great Southern Bank loan. A securities administration fee applies to all secured credit facilities. The securities administration fee represents the average cost based on typical charges incurred in settling loans, including: \n\u2022 Progressive drawdowns \n\u2022 Bank cheque fee \n\u2022 Agent fee \n\u2022 Land title search \n\u2022 Credit reference fee \n\u2022 PPSR searches \n\u2022 PPSR charges"
             },
             {
                 "name": "Discharge Fee",
@@ -161,20 +171,74 @@
                 "additionalInfo": "If you pay out the loan partially or in full where a discharge of security is required, or you request a discharge of a security, a discharge fee is payable (per release or transaction)."
             },
             {
-                "name": "Annual fee",
-                "feeType": "PERIODIC",
+                "name": "Redraw Fee",
+                "feeType": "WITHDRAWAL",
                 "amount": "0.00",
                 "currency": "AUD",
-                "additionalValue": "P1Y"
+                "additionalInfo": "$200 minimum withdrawal applies in branch."
+            },
+            {
+                "name": "Production Fee",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "currency": "AUD",
+                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
+            },
+            {
+                "name": "Re-documentation Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
+            },
+            {
+                "name": "Variation Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "A variation fee is payable if you request any changes to the Credit Contract or Security - for example:\n- Re-arrange and/or substitute a security on a mortgage\n- Consent to any dealings in relation to property\n- Switch from one interest rate product to another, at the request of the borrower\n- Where a fixed interest rate has decreased between loan approval and loan funding, at the request of the borrower."
+            },
+            {
+                "name": "Government fees and charges",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Government fees and charges relating to stamp duty and registration are payable on an event causing a change or variation to the transaction and/or security being taken in the applicable state or territory. The amount of the fee will be subject to the relevant government scale of fees current at that time."
+            },
+            {
+                "name": "Solicitors costs",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Solicitors costs are payable where they are engaged to prepare documents or provide advice relating to your matter on Great Southern Bank\u2019s behalf."
             }
         ],
         "lendingRates": [
             {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0224",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Offset Variable LVR  >70% <=80%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 70.01,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "A margin discount is a rate increment off the reference rate. The products reference rate less a margin discount determines a customer\u2019s net interest rate.",
+                "additionalInfo": "Interest Only Repayment: 80% maximum Loan to Value (LVR) ratio"
+            },
+            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0674",
+                "rate": "0.0898",
                 "comparisonRate": "0.0663",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
                 "tiers": [
@@ -189,11 +253,32 @@
                 "additionalInfo": "Interest Only Repayment: 80% maximum Loan to Value (LVR) ratio"
             },
             {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0234",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Offset Variable LVR <=70%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 70.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "A margin discount is a rate increment off the reference rate. The products reference rate less a margin discount determines a customer\u2019s net interest rate.",
+                "additionalInfo": "Interest Only Repayment:70% maximum Loan to Value (LVR) ratio"
+            },
+            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0714",
+                "rate": "0.0898",
                 "comparisonRate": "0.0698",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
                 "tiers": [
@@ -205,15 +290,15 @@
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "Interest\u00a0on\u00a0balance",
                 "additionalInfo": "Interest Only Repayment: 90% maximum Loan to Valuation Ratio (LVR) inclusive of Lenders Mortgage Insurance (LMI)."
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0664",
+                "rate": "0.0898",
                 "comparisonRate": "0.0654",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
                 "tiers": [
@@ -226,6 +311,26 @@
                     }
                 ],
                 "additionalInfo": "Interest Only Repayment:70% maximum Loan to Value (LVR) ratio"
+            },
+            {
+                "lendingRateType": "DISCOUNT",
+                "rate": "-0.0184",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Offset Variable LVR >80% <=90%",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "A margin discount is a rate increment off the reference rate. The products reference rate less a margin discount determines a customer\u2019s net interest rate.",
+                "additionalInfo": "Interest Only Repayment: 90% maximum Loan to Valuation Ratio (LVR) inclusive of Lenders Mortgage Insurance (LMI)."
             }
         ]
     },
