@@ -33,7 +33,7 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalInfo": "All individuals, directors, guarantors, trustees, members must be an Australian Resident."
+                "additionalValue": "All individuals, directors, guarantors, trustees, members must be an Australian Resident."
             },
             {
                 "eligibilityType": "OTHER",
@@ -42,93 +42,151 @@
         ],
         "constraints": [
             {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "20000"
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "250000.00"
             },
             {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "250000"
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "20000.00"
             }
         ],
         "features": [
             {
                 "featureType": "OVERDRAFT",
-                "additionalValue": "Overdraft approval amount = overdraft limit",
-                "additionalInfo": "Once approved the overdraft limit is loaded on to an Everyday Business Account."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "$0 Monthly service fees",
-                "additionalInfo": "No overdraft service fees.  With no annual or monthly service fees you can save money for the other important things in your life."
+                "additionalInfo": "Overdraft approval amount = overdraft limit. Once approved the overdraft limit is loaded on to an Everyday Business Account."
             },
             {
                 "featureType": "RELATIONSHIP_MANAGEMENT",
-                "additionalInfo": "All overdraft accounts come with a dedicated Relationship Manager"
+                "additionalInfo": "All business overdraft accounts come with a dedicated Relationship Manager."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "$0 Monthly service fees. Leaving you with more money to invest in your business."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Only pay interest on your debit balances. No line fees or facility fees."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "If the debit balance on your account doesn't exceed the approved limit there's no need for monthly repayment."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Overdrafts can be secured through residential or commercial property."
             }
         ],
         "fees": [
             {
+                "name": "Account Information Fee",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "currency": "AUD",
+                "additionalInfo": "Account informaton fee is payable when customer request the following:\n- An annual audit certificate on a Great Southern Bank account\n- A copy of a cheque or Visa voucher\n- Personal information, traces, document copies (other than those specified above) and/or information pertaining to an account\nWhere further investigation is required an additional hourly rate of $20 per hour will apply. An estimate of the costs involved will be provided prior to the work being undertaken."
+            },
+            {
+                "name": "Arrears Letter Fee",
+                "feeType": "EVENT",
+                "amount": "22.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "33.00",
+                "currency": "AUD",
+                "additionalInfo": "Default notice fee is payable where Great Southern Bank sends you a default notice in relation to outstanding arrears on your account."
+            },
+            {
                 "name": "Property Valuation Fee",
                 "feeType": "VARIABLE",
-                "additionalInfo": "Payable upfront where an independent property valuer nominated by Great Southern Bank must provide a market value the security property offered."
-            },
-            {
-                "name": "Redocumentation or Variation  Fee",
-                "feeType": "EVENT",
-                "amount": "300.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable if the security held for the overdraft is to be substituted for another property."
+                "additionalInfo": "A property valuation fee is payable for each commercial property offered as security. The fee is payable at loan settlement and will be included in your Credit Contract. The amount of the fee will be subject to the Great Southern Bank panel valuers scale of fees current at that time. A property valuation fee may also be charged if Great Southern Bank considers it necessary to revalue the property at any time."
             },
             {
-                "name": "Discharge Security Fee",
+                "name": "Monthly\u00a0Service\u00a0Fee",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "$0 monthly account keeping fees",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/sof"
+            },
+            {
+                "name": "Overdrawn or Over limit fee",
                 "feeType": "EVENT",
+                "amount": "6.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable where you exceed the actual balance or authorised limit of your overdraft facility and the debt is caused by a cheque withdrawal or electronic transaction (including ATM, EFTPOS and Bank@Post transactions and Visa purchases).",
+                "additionalInfoUri": "https://www.greatsouthernbank.com.au/sof"
+            },
+            {
+                "name": "Debt Collection Fee",
+                "feeType": "VARIABLE",
+                "currency": "AUD",
+                "additionalInfo": "Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is \"out of order\"."
+            },
+            {
+                "name": "Security Adminstration Fee",
+                "feeType": "UPFRONT",
+                "amount": "235.00",
+                "currency": "AUD",
+                "additionalInfo": "For each security offered to the Great Southern Bank loan. A securities administration fee applies to all secured credit facilities. The securities administration fee represents the average cost based on typical charges incurred in settling loans, including: \n\u2022 Progressive drawdowns \n\u2022 Bank cheque fee \n\u2022 Agent fee \n\u2022 Land title search \n\u2022 Credit reference fee \n\u2022 PPSR searches \n\u2022 PPSR charges"
+            },
+            {
+                "name": "Discharge Fee",
+                "feeType": "EXIT",
                 "amount": "500.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when the security held for the overdraft is to be released and the overdraft limit removed from the Everyday Business transaction account."
+                "additionalInfo": "If you pay out the loan partially or in full where a discharge of security is required, or you request a discharge of a security, a discharge fee is payable (per release or transaction)."
             },
             {
-                "name": "Establishment fee",
+                "name": "Establishment Fee",
                 "feeType": "UPFRONT",
+                "amount": "750.00",
                 "currency": "AUD",
-                "additionalInfo": "$750 irrespective of loan amount.  An establishment fee includes the cost of processing the application and the preparation of loan documentation."
+                "additionalInfo": "Establishment Fee irrespective of total loan amount applied for. In some instances, where business loan applications are complex, an application fee may be required before a loan is considered. In these instances, we will advise the borrower of the applicable fee prior to commencement of the application."
             },
             {
                 "name": "Production Fee",
                 "feeType": "EVENT",
                 "amount": "100.00",
-                "additionalInfo": "If a title held by Great Southern Bank has to be presented to the state's land titles office for any purpose."
+                "currency": "AUD",
+                "additionalInfo": "If you request a title held by Great Southern Bank to be produced to a relevant state\u2019s land titles office for any purpose, a production fee is payable."
             },
             {
-                "name": "Debt Collection Fee",
+                "name": "Re-documentation Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "Where a borrower requests, and Great Southern Bank agrees, to a restructure of a loan between approval and funding and that change requires amended documentation to be prepared, a fee will be payable."
+            },
+            {
+                "name": "Variation Fee",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "currency": "AUD",
+                "additionalInfo": "A variation fee is payable if you request any changes to the Credit Contract or Security - for example:\n- Re-arrange and/or substitute a security on a mortgage\n- Consent to any dealings in relation to property\n- Switch from one interest rate product to another, at the request of the borrower\n- Where a fixed interest rate has decreased between loan approval and loan funding, at the request of the borrower."
+            },
+            {
+                "name": "Increase to an existing Business Term Loan or Overdraft",
+                "feeType": "EVENT",
+                "balanceRate": "0.0015",
+                "currency": "AUD",
+                "additionalInfo": "As a guide, an establishment fee of 0.15% of the total additional loan amount / limit applied for will apply, subject to a minimum fee of $400."
+            },
+            {
+                "name": "Government fees and charges",
                 "feeType": "VARIABLE",
-                "additionalInfo": "Costs incurred in the recovery of outstanding debts vary depending on the nature of the default.  These costs are applied by the Solicitors or independent contractors engaged to undertake action to recover the funds and are debited to the account that is out of order."
-            },
-            {
-                "name": "Overlimit Fee",
-                "feeType": "EVENT",
-                "amount": "6.00",
-                "additionalInfo": "Where the balance on the Everyday Business Account exceeds the authorised overdraft limit."
-            },
-            {
-                "name": "Default notice fee",
-                "feeType": "EVENT",
-                "amount": "33.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable where Great Southern Bank sends you a default notice in relation to arrears or an over limit amount on your account."
+                "additionalInfo": "Government fees and charges relating to stamp duty and registration are payable on an event causing a change or variation to the transaction and/or security being taken in the applicable state or territory. The amount of the fee will be subject to the relevant government scale of fees current at that time."
             },
             {
-                "name": "Securities Administration Fee",
-                "feeType": "UPFRONT",
-                "amount": "235.00",
+                "name": "Solicitors costs",
+                "feeType": "VARIABLE",
                 "currency": "AUD",
-                "additionalInfo": "For each security offrered to Great Southern Bank for the overdraft."
-            },
-            {
-                "name": "Arrears letter fee",
-                "feeType": "EVENT",
-                "amount": "22.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable where Great Southern Bank sends you a letter in relation to arrears on your account."
+                "additionalInfo": "Solicitors costs are payable where they are engaged to prepare documents or provide advice relating to your matter on Great Southern Bank\u2019s behalf."
             }
         ],
         "lendingRates": [
@@ -137,6 +195,7 @@
                 "rate": "0.092",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
                 "additionalInfoUri": "https://www.greatsouthernbank.com.au/business-finance/business-banking-overdraft#rates"
             }
         ]
