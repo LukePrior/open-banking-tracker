@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;5aee7d43-7685-43c7-849b-d1cdba21c895&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-08-07T14:59:17.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-05-02T11:12:14.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Credit Card&quot;,
     &quot;description&quot;: &quot;Use your credit card for shopping, travelling overseas or even to consolidate other credit or store card debt.&quot;,
@@ -105,6 +105,14 @@
     ],
     &quot;fees&quot;: [
         {
+            &quot;name&quot;: &quot;ELECTRONIC_STATEMENTS&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;No fee for electronic statements.&quot;
+        },
+        {
             &quot;name&quot;: &quot;ARREARS_ADMINISTRATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;10.00&quot;,
@@ -117,6 +125,20 @@
             &quot;amount&quot;: &quot;10.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable by debit to your account when the minimum payment on a Credit Card account is not received by the due date. Charged once per statement period.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;MEMBER_TRACE_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable by debit to your account, each time we undertake a search to locate you following a payment default if you changed your address without notifying us.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DOCUMENT_COPIES&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$25 per copy or $50 per hour (minimum charge $25). Copy of cheque or deposit, recently presented cheque and/or deposit and any copy of any other document/archival search.&quot;
         },
         {
             &quot;name&quot;: &quot;CARD_REPLACEMENT_FEE&quot;,
@@ -134,7 +156,7 @@
         {
             &quot;name&quot;: &quot;INTERNATIONAL_CONVERSION_FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;transactionRate&quot;: &quot;0.029&quot;,
+            &quot;transactionRate&quot;: &quot;0.02900&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;2.90% of transaction value in $AUD collected by Cuscal Limited - 0.90% paid to Us; 1.00% retained by Cuscal; 1.00% paid to Visa International. Payable when you transact in a foreign currency using your Visa card either online or at a merchant point of sale (irrespective of where the transaction occurs; performed not in Australian Dollar; or overseas merchants transact in a foreign currency.)&quot;
         },
@@ -173,24 +195,38 @@
                     ]
                 }
             ]
+        },
+        {
+            &quot;name&quot;: &quot;STATEMENTS-REPLACEMENT_AND_ADDITIONAL_STATEMENTS&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Replacement and additional statements&quot;
+        },
+        {
+            &quot;name&quot;: &quot;STATEMENTS-TRANSACTIONAL_LISTINGS_FOR_CURRENT_MONTH&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Transactional listings for current month (on request or sent more frequently than monthly)&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
-            &quot;rate&quot;: &quot;0.115&quot;,
+            &quot;rate&quot;: &quot;0.11500&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
-            &quot;rate&quot;: &quot;0.115&quot;,
+            &quot;rate&quot;: &quot;0.11500&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;INTRODUCTORY&quot;,
-            &quot;rate&quot;: &quot;0.079&quot;,
+            &quot;rate&quot;: &quot;0.07900&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P6M&quot;
