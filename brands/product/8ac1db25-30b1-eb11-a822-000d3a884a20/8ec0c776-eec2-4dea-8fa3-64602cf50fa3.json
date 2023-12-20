@@ -1,9 +1,107 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Response correlation does not match Request. (1.0)"
-        }
-    ]
+    "data": {
+        "productId": "8ec0c776-eec2-4dea-8fa3-64602cf50fa3",
+        "lastUpdated": "2023-10-11T17:41:46.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Mighty Saver account",
+        "description": "Mighty Saver Account is a high interest savings account for Under 18 year olds that rewards savings.",
+        "brand": "UB",
+        "brandName": "UniBank",
+        "applicationUri": "https://www.unibank.com.au/mighty-saver-apply",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.unibank.com.au/mighty-saver-overview",
+            "termsUri": "https://www.unibank.com.au/savings-terms-and-conditions",
+            "eligibilityUri": "https://www.unibank.com.au/savings-eligibility",
+            "feesAndPricingUri": "https://www.unibank.com.au/savings-fees-and-charges"
+        },
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Bonus interest earned for each month you deposit a minimum of $10, make no withdrawals during the month and the account has a credit balance at all times during that month."
+            },
+            {
+                "featureType": "FREE_TXNS",
+                "additionalValue": "1",
+                "additionalInfo": "One free withdrawal per month (when you withdraw in a month you lose the additional interest for that month)."
+            },
+            {
+                "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NPP_PAYID"
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Track payments with SMS and email alerts."
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "You must be a member. Membership is open to current or retired employees, graduates and post-graduates and current students of an Australian university or family members of members (i.e. shareholders) of the Bank.",
+                "additionalInfoUri": "https://www.unibank.com.au/savings-eligibility"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "18"
+            }
+        ],
+        "fees": [
+            {
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "1.50",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "This fee applies when you have elected to receive a paper statement by post in addition to a statement available to view and download in internet banking. It is in addition to fees for replacement and additional statements. For credit cards, this fee is debited to credit card account on the 7th day of the month after the end of a statement period. For all other accounts, this fee is debited to transaction, savings or loan account in that order on the 15th day of the month after the end of a statement period. Exceptions apply. For more information please refer to our Fees and Charges brochure.",
+                "additionalInfoUri": "https://www.unibank.com.au/savings-fees-and-charges",
+                "discounts": [
+                    {
+                        "description": "Paper Statement fee waiver",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "1.50",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "The Paper Statement fee does not apply if you were a member and have not resigned your membership or the Bank has not terminated your membership before 1 November 2018; you opened an account with us and have not closed that account before 1 November 2018; or you are under 18 years of age."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "ACCOUNT_FUNCTIONS",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "currency": "AUD",
+                "additionalInfo": "$50 per hour (minimum charge $25). Additional accounting services on your account at your request."
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.011",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalValue": "Bonus interest earned for each month you deposit a minimum of $10, make no withdrawals during the month and the account has a credit balance at all times during that month."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://ob.tmbl.com.au/unibank/cds-au/v1/banking/products/8ec0c776-eec2-4dea-8fa3-64602cf50fa3"
+    }
 }
