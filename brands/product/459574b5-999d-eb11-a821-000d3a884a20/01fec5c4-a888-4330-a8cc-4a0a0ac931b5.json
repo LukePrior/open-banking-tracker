@@ -1,421 +1,421 @@
 {
-    "links": {
-        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/01fec5c4-a888-4330-a8cc-4a0a0ac931b5"
-    },
     "data": {
         "effectiveFrom": "2022-05-02T14:30:00.000Z",
-        "lastUpdated": "2023-11-16T13:31:23.705Z",
+        "lastUpdated": "2023-12-20T13:32:25.266Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "constraints": [
+        "name": "Bendigo Express Home Loan",
+        "description": "The Bendigo Express is an online home loan which enables a customer to apply and be approved for a home loan digitally. The application form will be hosted by our partner Tic Toc.",
+        "productId": "01fec5c4-a888-4330-a8cc-4a0a0ac931b5",
+        "brandName": "Bendigo Bank",
+        "applicationUri": "https://applyonline.bendigobank.com.au/Application",
+        "isTailored": true,
+        "bundles": [],
+        "cardArt": [],
+        "fees": [
             {
-                "additionalValue": "5000",
-                "constraintType": "OPENING_BALANCE"
+                "name": "Monthly Fee",
+                "feeType": "PERIODIC",
+                "amount": "10.000000",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "discounts": []
             },
             {
-                "additionalValue": "1",
-                "constraintType": "MIN_LIMIT"
+                "name": "Discharge Administration Fee",
+                "feeType": "EXIT",
+                "amount": "350.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "508.200000",
+                "currency": "AUD",
+                "additionalInfo": "Incorporates all standard upfront fees into this amount (That is, Settlement Fee $100, Agent Lodgement Fee $125, Title Search Fee $50, Standard Valuation Fee $233.20)",
+                "discounts": []
+            },
+            {
+                "name": "Variation Fee - Simple",
+                "feeType": "EVENT",
+                "amount": "150.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Variation Fee - Complex",
+                "feeType": "EVENT",
+                "amount": "300.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Switch Loan type fee",
+                "feeType": "VARIABLE",
+                "amount": "150.000000",
+                "currency": "AUD",
+                "additionalInfo": "Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.",
+                "discounts": []
+            },
+            {
+                "name": "Guarantee Administration Fee",
+                "feeType": "UPFRONT",
+                "amount": "250.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Rate Variation Fee (to renegotiate Rate)",
+                "feeType": "EVENT",
+                "amount": "100.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Repayment Recalculation Fee",
+                "feeType": "EVENT",
+                "amount": "50.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Interest Prepayment Fee",
+                "feeType": "EVENT",
+                "amount": "85.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Default Fee",
+                "feeType": "EVENT",
+                "amount": "35.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Duplicate Fee",
+                "feeType": "EVENT",
+                "amount": "16.500000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Bank Cheque Fee",
+                "feeType": "EVENT",
+                "amount": "10.000000",
+                "currency": "AUD",
+                "discounts": []
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply"
             }
         ],
         "features": [
             {
-                "additionalInfo": "Online redraw available",
-                "featureType": "REDRAW"
+                "featureType": "REDRAW",
+                "additionalInfo": "Online redraw available"
             },
             {
-                "additionalInfo": "Weekly, fortnightly or monthly repayments",
-                "featureType": "OTHER"
+                "featureType": "OTHER",
+                "additionalInfo": "Weekly, fortnightly or monthly repayments"
             },
             {
-                "additionalInfo": "Up to six offset accounts can be connected to the product",
-                "featureType": "OFFSET"
+                "featureType": "OFFSET",
+                "additionalInfo": "Up to six offset accounts can be connected to the product"
             },
             {
-                "additionalInfo": "Unlimited additional repayments if variable, otherwise 20% of loan balance when fixed",
-                "featureType": "OTHER"
+                "featureType": "OTHER",
+                "additionalInfo": "Unlimited additional repayments if variable, otherwise 20% of loan balance when fixed"
             }
         ],
-        "brandName": "Bendigo Bank",
-        "applicationUri": "https://applyonline.bendigobank.com.au/Application",
-        "isTailored": true,
-        "cardArt": [],
+        "depositRates": [],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "5000"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0597000000000000",
+                "comparisonRate": "0.0612000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0629000000000000",
+                "comparisonRate": "0.0615000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599000000000000",
+                "comparisonRate": "0.0612000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0614000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0614000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0604000000000000",
+                "comparisonRate": "0.0615000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0622000000000000",
+                "comparisonRate": "0.0637000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0664000000000000",
+                "comparisonRate": "0.0641000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0634000000000000",
+                "comparisonRate": "0.0639000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639000000000000",
+                "comparisonRate": "0.0642000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639000000000000",
+                "comparisonRate": "0.0643000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639000000000000",
+                "comparisonRate": "0.0644000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0672000000000000",
+                "comparisonRate": "0.0643000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0679000000000000",
+                "comparisonRate": "0.0643000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649000000000000",
+                "comparisonRate": "0.0638000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0654000000000000",
+                "comparisonRate": "0.0638000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0654000000000000",
+                "comparisonRate": "0.0636000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0654000000000000",
+                "comparisonRate": "0.0635000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0642000000000000",
+                "comparisonRate": "0.0644000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0674000000000000",
+                "comparisonRate": "0.0647000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0644000000000000",
+                "comparisonRate": "0.0644000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649000000000000",
+                "comparisonRate": "0.0646000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649000000000000",
+                "comparisonRate": "0.0647000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P4Y",
+                "tiers": []
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649000000000000",
+                "comparisonRate": "0.0647000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "tiers": []
+            }
+        ],
         "additionalInformation": {
             "overviewUri": "https://www.bendigobank.com.au/personal/home-loans/express-home-loan/",
             "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/home-loan-booklet.pdf",
             "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf"
         },
-        "description": "The Bendigo Express is an online home loan which enables a customer to apply and be approved for a home loan digitally. The application form will be hosted by our partner Tic Toc.",
-        "bundles": [],
-        "fees": [
-            {
-                "discounts": [],
-                "additionalValue": "P1M",
-                "feeType": "PERIODIC",
-                "name": "Monthly Fee",
-                "currency": "AUD",
-                "amount": "10.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EXIT",
-                "name": "Discharge Administration Fee",
-                "currency": "AUD",
-                "amount": "350.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "UPFRONT",
-                "name": "Establishment Fee",
-                "currency": "AUD",
-                "additionalInfo": "Incorporates all standard upfront fees into this amount (That is, Settlement Fee $100, Agent Lodgement Fee $125, Title Search Fee $50, Standard Valuation Fee $233.20)",
-                "amount": "508.200000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Variation Fee - Simple",
-                "currency": "AUD",
-                "amount": "150.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Variation Fee - Complex",
-                "currency": "AUD",
-                "amount": "300.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "VARIABLE",
-                "name": "Switch Loan type fee",
-                "currency": "AUD",
-                "additionalInfo": "Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.",
-                "amount": "150.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "UPFRONT",
-                "name": "Guarantee Administration Fee",
-                "currency": "AUD",
-                "amount": "250.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Rate Variation Fee (to renegotiate Rate)",
-                "currency": "AUD",
-                "amount": "100.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Repayment Recalculation Fee",
-                "currency": "AUD",
-                "amount": "50.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Interest Prepayment Fee",
-                "currency": "AUD",
-                "amount": "85.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Default Fee",
-                "currency": "AUD",
-                "amount": "35.000000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Duplicate Fee",
-                "currency": "AUD",
-                "amount": "16.500000"
-            },
-            {
-                "discounts": [],
-                "feeType": "EVENT",
-                "name": "Bank Cheque Fee",
-                "currency": "AUD",
-                "amount": "10.000000"
-            }
-        ],
-        "brand": "BENDIGO",
-        "lendingRates": [
-            {
-                "comparisonRate": "0.0612000000000000",
-                "rate": "0.0597000000000000",
-                "calculationFrequency": "P1D",
-                "tiers": [],
-                "interestPaymentDue": "IN_ARREARS",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "lendingRateType": "VARIABLE",
-                "repaymentType": "PRINCIPAL_AND_INTEREST"
-            },
-            {
-                "comparisonRate": "0.0618000000000000",
-                "rate": "0.0659000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0622000000000000",
-                "rate": "0.0649000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0627000000000000",
-                "rate": "0.0649000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0631000000000000",
-                "rate": "0.0649000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P4Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0637000000000000",
-                "rate": "0.0654000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0637000000000000",
-                "rate": "0.0622000000000000",
-                "calculationFrequency": "P1D",
-                "tiers": [],
-                "interestPaymentDue": "IN_ARREARS",
-                "loanPurpose": "INVESTMENT",
-                "lendingRateType": "VARIABLE",
-                "repaymentType": "PRINCIPAL_AND_INTEREST"
-            },
-            {
-                "comparisonRate": "0.0643000000000000",
-                "rate": "0.0684000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0647000000000000",
-                "rate": "0.0674000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0652000000000000",
-                "rate": "0.0674000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0656000000000000",
-                "rate": "0.0674000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P4Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0662000000000000",
-                "rate": "0.0679000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0643000000000000",
-                "rate": "0.0672000000000000",
-                "calculationFrequency": "P1D",
-                "tiers": [],
-                "interestPaymentDue": "IN_ARREARS",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "lendingRateType": "VARIABLE",
-                "repaymentType": "INTEREST_ONLY"
-            },
-            {
-                "comparisonRate": "0.0646000000000000",
-                "rate": "0.0704000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0646000000000000",
-                "rate": "0.0689000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0647000000000000",
-                "rate": "0.0689000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0649000000000000",
-                "rate": "0.0689000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P4Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0652000000000000",
-                "rate": "0.0694000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0644000000000000",
-                "rate": "0.0642000000000000",
-                "calculationFrequency": "P1D",
-                "tiers": [],
-                "interestPaymentDue": "IN_ARREARS",
-                "loanPurpose": "INVESTMENT",
-                "lendingRateType": "VARIABLE",
-                "repaymentType": "INTEREST_ONLY"
-            },
-            {
-                "comparisonRate": "0.0650000000000000",
-                "rate": "0.0699000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0652000000000000",
-                "rate": "0.0684000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0656000000000000",
-                "rate": "0.0684000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0659000000000000",
-                "rate": "0.0684000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P4Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            },
-            {
-                "comparisonRate": "0.0664000000000000",
-                "rate": "0.0689000000000000",
-                "calculationFrequency": "P1D",
-                "interestPaymentDue": "IN_ARREARS",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "tiers": [],
-                "lendingRateType": "FIXED"
-            }
-        ],
-        "depositRates": [],
-        "productId": "01fec5c4-a888-4330-a8cc-4a0a0ac931b5",
-        "name": "Bendigo Express Home Loan",
-        "eligibility": [
-            {
-                "additionalValue": "18",
-                "eligibilityType": "MIN_AGE"
-            },
-            {
-                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply",
-                "eligibilityType": "OTHER"
-            }
-        ]
+        "brand": "BENDIGO"
+    },
+    "links": {
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/01fec5c4-a888-4330-a8cc-4a0a0ac931b5"
     }
 }

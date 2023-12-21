@@ -1,9 +1,33 @@
 {
     "data": {
+        "effectiveFrom": "2019-12-31T13:30:00.000Z",
+        "lastUpdated": "2023-12-20T02:02:22.399Z",
+        "productCategory": "PERS_LOANS",
+        "name": "Bendigo Unsecured Personal Loan ",
+        "description": "A personal loan for a number of purposes not requiring security to be offered",
+        "productId": "c98688d8-055d-494e-8866-b406374bdaf5",
+        "brandName": "Bendigo Bank",
+        "applicationUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan",
         "isTailored": true,
         "bundles": [],
         "cardArt": [],
-        "brand": "BENDIGO",
+        "features": [
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "Manual & Online redraw available"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Weekly, fortnightly or monthly repayments"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalInfo": "Minimum Loan Amount",
+                "additionalValue": "2000"
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -26,83 +50,57 @@
                 "additionalValue": "Australian Resident"
             }
         ],
+        "depositRates": [],
         "fees": [
             {
-                "additionalValue": "P1M",
                 "name": "Monthly Fee",
-                "currency": "AUD",
                 "feeType": "PERIODIC",
-                "discounts": [],
-                "amount": "5.000000"
+                "amount": "5.000000",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "discounts": []
             },
             {
-                "discounts": [],
                 "name": "Early Repayment Fee ",
-                "currency": "AUD",
                 "feeType": "EXIT",
-                "amount": "20.000000"
+                "amount": "20.000000",
+                "currency": "AUD",
+                "discounts": []
             },
             {
-                "discounts": [],
                 "name": "Establishment Fee",
-                "currency": "AUD",
                 "feeType": "UPFRONT",
-                "amount": "150.000000"
+                "amount": "260.000000",
+                "currency": "AUD",
+                "additionalInfo": "Incorporates all standard upfront fees into this amount (That is, Application Fee $150, Documentation Fee $100, Security Processing Fee $10)",
+                "discounts": []
             },
             {
-                "discounts": [],
                 "name": "Default Fee",
-                "currency": "AUD",
                 "feeType": "EVENT",
-                "amount": "35.000000"
+                "amount": "35.000000",
+                "currency": "AUD",
+                "discounts": []
             }
         ],
-        "effectiveFrom": "2019-12-31T13:30:00.000Z",
-        "depositRates": [],
-        "additionalInformation": {
-            "overviewUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan",
-            "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf",
-            "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-personal-loan-terms-conditions.pdf"
-        },
         "lendingRates": [
             {
-                "comparisonRate": "0.1489000000000000",
-                "tiers": [],
-                "interestPaymentDue": "IN_ARREARS",
-                "rate": "0.1279000000000000",
-                "additionalValue": "P7Y",
-                "additionalInfo": "Unsecured",
                 "lendingRateType": "FIXED",
-                "calculationFrequency": "P1D"
+                "rate": "0.1279000000000000",
+                "comparisonRate": "0.1489000000000000",
+                "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalInfo": "Unsecured",
+                "additionalValue": "P7Y",
+                "tiers": []
             }
         ],
-        "description": "A personal loan for a number of purposes not requiring security to be offered",
-        "features": [
-            {
-                "featureType": "REDRAW",
-                "additionalInfo": "Online redraw available"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Weekly, fortnightly or monthly repayments"
-            }
-        ],
-        "productCategory": "PERS_LOANS",
-        "constraints": [
-            {
-                "constraintType": "OPENING_BALANCE",
-                "additionalValue": "2000"
-            },
-            {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "1"
-            }
-        ],
-        "productId": "c98688d8-055d-494e-8866-b406374bdaf5",
-        "name": "Bendigo Unsecured Personal Loan ",
-        "brandName": "Bendigo Bank",
-        "lastUpdated": "2023-04-20T14:30:22.195Z",
-        "applicationUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan"
+        "additionalInformation": {
+            "overviewUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=personal-loan&applicationType=personalLoan",
+            "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/bendigo-personal-loan-terms-conditions.pdf",
+            "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf"
+        },
+        "brand": "BENDIGO"
     },
     "links": {
         "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/c98688d8-055d-494e-8866-b406374bdaf5"
