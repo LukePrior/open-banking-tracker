@@ -1,9 +1,9 @@
 {
     "data": {
         "brand": "AMB",
-        "description": "If you\u2019re looking for a personal loan with set repayments, our Fixed Rate Personal Loan gives you the peace of mind in knowing what your repayments will be for the life of your loan.",
+        "description": "If you\u2019re looking for a personal loan with set repayments, our Personal Loan gives you the peace of mind in knowing what your repayments will be for the life of your loan.",
         "isTailored": false,
-        "lastUpdated": "2023-07-24T02:39:00.125553Z",
+        "lastUpdated": "2024-01-03T05:18:27.950316Z",
         "name": "Personal Loan",
         "productCategory": "PERS_LOANS",
         "productId": "72ec4ee7-7b70-4376-b921-f9eb1a06bb75",
@@ -34,15 +34,15 @@
             },
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalInfo": null,
-                "additionalInfoUri": null,
-                "additionalValue": "80000.00"
-            },
-            {
-                "constraintType": "MAX_LIMIT",
                 "additionalInfo": "A maximum of $40,000 for debt consolidation",
                 "additionalInfoUri": null,
                 "additionalValue": "40000.00"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalInfo": null,
+                "additionalInfoUri": null,
+                "additionalValue": "75000.00"
             }
         ],
         "depositRates": [],
@@ -82,20 +82,6 @@
         ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P1M",
-                "amount": "2.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Arrears notice fee",
                 "accrualFrequency": null,
@@ -111,6 +97,20 @@
             },
             {
                 "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P1M",
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
                 "name": "Loan service fee - Personal, Green & Car Loans",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -118,34 +118,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": "P1M",
                 "amount": "10.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "DEPOSIT",
-                "name": "Other Bank Deposit Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Cash and cheque deposit at NAB Branch",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "6.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Copies of statements (over 12 months) per page",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "5.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -194,20 +166,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "A hourly fee applies plus any expenses incurred",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "UPFRONT",
                 "name": "Personal Property security admin fee",
                 "accrualFrequency": null,
@@ -234,15 +192,43 @@
                 "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "A $50 hourly fee applies plus any expenses incurred",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Copies of statements (over 12 months) at branch",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "per page",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0999000000000000",
-                "additionalInfo": null,
+                "additionalInfo": "Fixed for life of loan",
                 "additionalInfoUri": null,
-                "additionalValue": "P5Y",
+                "additionalValue": null,
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
                 "comparisonRate": "0.1093000000000000",
