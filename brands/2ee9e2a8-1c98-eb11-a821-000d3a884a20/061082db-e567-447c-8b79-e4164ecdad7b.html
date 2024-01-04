@@ -9,7 +9,7 @@
     &quot;brand&quot;: &quot;AMB&quot;,
     &quot;description&quot;: &quot;A Fixed Rate Home Loan gives you the best of both worlds - peace of mind with the certainty of fixed rates, without being locked in for a long period of time.\n\nThe 3 Year Fixed Rate Home Loan is also available for DHOAS eligible applicants&quot;,
     &quot;isTailored&quot;: false,
-    &quot;lastUpdated&quot;: &quot;2023-12-29T00:07:48.146598Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-04T00:25:57.508608Z&quot;,
     &quot;name&quot;: &quot;3 Year Fixed Rate Home Loan&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;productId&quot;: &quot;061082db-e567-447c-8b79-e4164ecdad7b&quot;,
@@ -25,7 +25,7 @@
         &quot;additionalFeesAndPricingUris&quot;: null,
         &quot;additionalBundleUris&quot;: null
     },
-    &quot;applicationUri&quot;: &quot;https://ib.australianmilitarybank.com.au/AMBOnlineBanking/apps/services/www/AMBBankingApp/desktopbrowser/default/AMBAppIndex.html?pd=HLENQ&quot;,
+    &quot;applicationUri&quot;: null,
     &quot;brandName&quot;: &quot;Australian Military Bank&quot;,
     &quot;cardArt&quot;: [],
     &quot;effectiveFrom&quot;: &quot;2022-06-30T14:00:00Z&quot;,
@@ -33,16 +33,16 @@
     &quot;bundles&quot;: [],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;2000000.00&quot;
-        },
-        {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalInfo&quot;: null,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: &quot;150000.00&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalInfo&quot;: null,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: &quot;5000000.00&quot;
         }
     ],
     &quot;depositRates&quot;: [],
@@ -75,6 +75,20 @@
     &quot;features&quot;: [],
     &quot;fees&quot;: [
         {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;name&quot;: &quot;Processing fee&quot;,
             &quot;accrualFrequency&quot;: null,
@@ -85,28 +99,21 @@
             &quot;amount&quot;: &quot;500.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;DHOAS eligible applicants&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;accruedRate&quot;: null,
-                    &quot;additionalInfo&quot;: null,
-                    &quot;additionalInfoUri&quot;: null,
-                    &quot;additionalValue&quot;: null,
-                    &quot;amount&quot;: &quot;50.00000000&quot;,
-                    &quot;balanceRate&quot;: null,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalInfo&quot;: &quot;DHOAS eligible applicants pay a reduced application fee of $450&quot;,
-                            &quot;additionalInfoUri&quot;: null,
-                            &quot;additionalValue&quot;: &quot;&quot;
-                        }
-                    ],
-                    &quot;feeRate&quot;: null,
-                    &quot;transactionRate&quot;: null
-                }
-            ],
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;name&quot;: &quot;Archive retrieval fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Per hour fee applies plus any expenses incurred&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;XXX&quot;,
+            &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
         },
         {
@@ -153,20 +160,6 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Mortgage discharge fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;300.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Consent fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
@@ -198,7 +191,7 @@
             &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfo&quot;: &quot;per page&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;amount&quot;: &quot;2.50&quot;,
@@ -216,20 +209,6 @@
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;amount&quot;: &quot;250.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Copies of statements (over 12 months) per page&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;+ $1 postage&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -258,6 +237,20 @@
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Copies of statements (over 12 months) at branch&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;per page&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
