@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;07ddb3f7-4488-4fef-bba9-d0566b410302&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-09-24T12:02:00+00:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-09-13T02:09:35+00:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-04T03:14:16+00:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Bonus Saver Account&quot;,
     &quot;description&quot;: &quot;This is a special purpose savings account created to enable you to earn extra interest if you do not withdraw funds. Funds are available at call. You can use Internet and Redidial Phone Banking on the account. &quot;,
@@ -22,15 +22,14 @@
     },
     &quot;features&quot;: [
         {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Contributes to Reduced Fees Program&quot;,
+            &quot;additionalInfo&quot;: &quot;Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates.&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
             &quot;additionalValue&quot;: &quot;Phone banking&quot;,
             &quot;additionalInfo&quot;: &quot;You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/financial_services_guide_BB.pdf&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Direct Credits&quot;,
-            &quot;additionalInfo&quot;: &quot;Make regular credits like your pay into this account&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/financial_services_guide_BB.pdf&quot;
         },
         {
@@ -43,11 +42,6 @@
             &quot;additionalValue&quot;: &quot;Bonus Interest Rate available&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum of $100 to be deposited each month in order to achieve bonus interest. If a withdrawal is made in a month then no bonus interest will be paid. &quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/financial_services_guide_BB.pdf&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Contributes to Reduced Fees Program&quot;,
-            &quot;additionalInfo&quot;: &quot;Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates.&quot;
         },
         {
             &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
@@ -63,32 +57,30 @@
             &quot;additionalValue&quot;: &quot;Internet banking&quot;,
             &quot;additionalInfo&quot;: &quot;You can check your account details or make transfers anytime or anywhere using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/financial_services_guide_BB.pdf&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Direct Credits&quot;,
+            &quot;additionalInfo&quot;: &quot;Make regular credits like your pay into this account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/financial_services_guide_BB.pdf&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;None&quot;
-        },
-        {
             &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
             &quot;additionalValue&quot;: &quot;0&quot;,
             &quot;additionalInfo&quot;: &quot;When you apply to become a Border Bank Member, you do not have to pay a membership fee. All we ask is that you guarantee to pay $10 if Border Bank ever ceases to operate to the person/s looking after our winding up.&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;None&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Australian Residents&quot;
-        },
-        {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Core Members&quot;,
             &quot;additionalInfo&quot;: &quot;Bonus Saver Account is only available to Australian Customs and Border Protection Services and Australian Quarantine Inspection Services (Core Members)&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
-            &quot;additionalValue&quot;: &quot;Individuals&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
@@ -97,22 +89,32 @@
         {
             &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Citizen&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
+            &quot;additionalValue&quot;: &quot;Individuals&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Residents&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Special Cheque clearance fee for Personal Accounts&quot;,
+            &quot;name&quot;: &quot;Additional Statement Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;16.50&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;$1.50 per page&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if and when you request an additional statement.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Overdrawn Savings Account Fee&quot;,
+            &quot;name&quot;: &quot;Dormant Accounts fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate&quot;,
+            &quot;additionalInfo&quot;: &quot;After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -125,27 +127,27 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Additional Statement Fee&quot;,
+            &quot;name&quot;: &quot;Third Party Costs&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;$1.50 per page&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if and when you request an additional statement.&quot;,
+            &quot;additionalValue&quot;: &quot;At Cost&quot;,
+            &quot;additionalInfo&quot;: &quot;Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Counter Cash withdrawal $25,000 and over&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;name&quot;: &quot;Overdrawn Savings Account Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when any Savings Account is overdrawn by $75 or more within a calendar month\r\nInterest will also be charged at the then current Overdraft interest rate&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Dormant Accounts fee&quot;,
+            &quot;name&quot;: &quot;Special Cheque clearance fee for Personal Accounts&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;amount&quot;: &quot;16.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;After 3 years an account is classed as dormant if no Member transactions occur. Interest, fees\r\nand government charges are not classed as transactions.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         },
         {
@@ -164,41 +166,14 @@
             &quot;additionalValue&quot;: &quot;First 3 free if part of Reduced Fees program&quot;
         },
         {
-            &quot;name&quot;: &quot;Third Party Costs&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;name&quot;: &quot;Counter Cash withdrawal $25,000 and over&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;50.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;At Cost&quot;,
-            &quot;additionalInfo&quot;: &quot;Any costs charged to us from a third party will be passed on to you. Information on these costs is\r\navailable on request.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf&quot;
         }
     ],
     &quot;depositRates&quot;: [
-        {
-            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0005&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;S23 T1&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 500,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;Balance $0 to $499&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0425&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;Whole Balance Monthly. Bonus Interest rate applies if no withdrawals and a minimum deposit of $100 are made within a month&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
-        },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0005&quot;,
@@ -217,6 +192,14 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
         },
         {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;Whole Balance Monthly. Bonus Interest rate applies if no withdrawals and a minimum deposit of $100 are made within a month&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
+        },
+        {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0005&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
@@ -231,6 +214,23 @@
                 }
             ],
             &quot;additionalValue&quot;: &quot;Balance $500 to $10,000&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0005&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;S23 T1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 500,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;Balance $0 to $499&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.borderbank.com.au/interest-rates/#&quot;
         }
     ],
