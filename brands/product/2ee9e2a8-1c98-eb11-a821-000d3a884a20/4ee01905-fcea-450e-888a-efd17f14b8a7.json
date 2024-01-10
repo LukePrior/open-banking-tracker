@@ -3,7 +3,7 @@
         "brand": "AMB",
         "description": "A Fixed Rate Home Loan gives you the best of both worlds - peace of mind with the certainty of fixed rates, without being locked in for a long period of time.\n\nThe 2 Year Fixed Rate Home Loan is also available for DHOAS eligible applicants",
         "isTailored": false,
-        "lastUpdated": "2024-01-08T23:01:00.607853Z",
+        "lastUpdated": "2024-01-09T06:47:41.183496Z",
         "name": "2 Year Fixed Rate Home Loan",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "4ee01905-fcea-450e-888a-efd17f14b8a7",
@@ -69,14 +69,14 @@
         "features": [],
         "fees": [
             {
-                "feeType": "EVENT",
-                "name": "Audit Certificate Fee",
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Per audit certificate requested",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "50.00",
+                "additionalValue": "P3M",
+                "amount": "2.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -112,6 +112,20 @@
             },
             {
                 "feeType": "EVENT",
+                "name": "Copies of statements (up to 12 months) at branch",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Mortgage discharge fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -125,16 +139,16 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
+                "feeType": "EVENT",
+                "name": "Audit Certificate Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Per hour fee applies plus any expenses incurred",
+                "additionalInfo": "Per audit certificate requested",
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "50.00",
                 "balanceRate": null,
-                "currency": "XXX",
+                "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
             },
@@ -147,20 +161,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -196,20 +196,6 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) at branch",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.50",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
                 "name": "RateSaver Switch fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -233,6 +219,20 @@
                 "amount": "20.00",
                 "balanceRate": null,
                 "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Per hour fee applies plus any expenses incurred",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
+                "balanceRate": null,
+                "currency": "XXX",
                 "discounts": [],
                 "transactionRate": null
             },
@@ -264,7 +264,21 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": []
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "LVR <=90% inc LMI",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

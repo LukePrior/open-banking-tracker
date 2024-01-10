@@ -3,7 +3,7 @@
         "brand": "AMB",
         "description": "Standard Variable Home Loan with the benefit of 100% offset facility\n\nThe Standard Variable Home Loan is also available for DHOAS eligible applicants",
         "isTailored": false,
-        "lastUpdated": "2024-01-08T05:56:00.43725Z",
+        "lastUpdated": "2024-01-09T06:27:17.09317Z",
         "name": "Standard Variable Home Loan",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "c4bb4d2a-b1aa-42a4-ae78-226829f2bb62",
@@ -83,6 +83,20 @@
         "fees": [
             {
                 "feeType": "EVENT",
+                "name": "Mortgage discharge fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "300.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Audit Certificate Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -139,15 +153,15 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Mortgage discharge fee",
+                "name": "Copies of statements (up to 12 months) posted",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "per page",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "300.00",
+                "amount": "1.00",
                 "balanceRate": null,
-                "currency": "AUD",
+                "currency": "XXX",
                 "discounts": [],
                 "transactionRate": null
             },
@@ -195,20 +209,6 @@
             },
             {
                 "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) posted",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "per page",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "1.00",
-                "balanceRate": null,
-                "currency": "XXX",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
                 "name": "Copies of statements (up to 12 months) at branch",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -237,20 +237,6 @@
             },
             {
                 "feeType": "VARIABLE",
-                "name": "Property valuation fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "250.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
                 "name": "Archive retrieval fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -264,14 +250,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "Paper statement fee (per statement)",
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "At cost. Minimum is $250.00",
                 "additionalInfoUri": null,
-                "additionalValue": "P3M",
-                "amount": "2.00",
+                "additionalValue": null,
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -290,6 +276,20 @@
                 "currency": null,
                 "discounts": [],
                 "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "Paper statement fee (per statement)",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": "P3M",
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             }
         ],
         "lendingRates": [
@@ -305,7 +305,21 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": []
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "LVR <=95% inc LMI",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 95.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

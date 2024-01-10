@@ -3,7 +3,7 @@
         "brand": "AMB",
         "description": "A Fixed Rate Home Loan gives you the best of both worlds - peace of mind with the certainty of fixed rates, without being locked in for a long period of time.\n\nThe 3 Year Fixed Rate Home Loan is also available for DHOAS eligible applicants",
         "isTailored": false,
-        "lastUpdated": "2024-01-08T22:44:45.286679Z",
+        "lastUpdated": "2024-01-09T06:46:02.257946Z",
         "name": "3 Year Fixed Rate Home Loan",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "061082db-e567-447c-8b79-e4164ecdad7b",
@@ -69,14 +69,14 @@
         "features": [],
         "fees": [
             {
-                "feeType": "EVENT",
-                "name": "Mortgage discharge fee",
+                "feeType": "VARIABLE",
+                "name": "Property valuation fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "At cost. Minimum is $250.00",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "300.00",
+                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -91,20 +91,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "500.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Copies of statements (up to 12 months) at branch",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -153,6 +139,34 @@
                 "transactionRate": null
             },
             {
+                "feeType": "VARIABLE",
+                "name": "Archive retrieval fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Per hour fee applies plus any expenses incurred",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "50.00",
+                "balanceRate": null,
+                "currency": "XXX",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Mortgage discharge fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "300.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
                 "feeType": "EVENT",
                 "name": "Consent fee",
                 "accrualFrequency": null,
@@ -175,20 +189,6 @@
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "amount": "50.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "VARIABLE",
-                "name": "Property valuation fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "At cost. Minimum is $250.00",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "250.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -237,16 +237,16 @@
                 "transactionRate": null
             },
             {
-                "feeType": "VARIABLE",
-                "name": "Archive retrieval fee",
+                "feeType": "EVENT",
+                "name": "Copies of statements (up to 12 months) at branch",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Per hour fee applies plus any expenses incurred",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "50.00",
+                "amount": "2.50",
                 "balanceRate": null,
-                "currency": "XXX",
+                "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
             },
@@ -278,7 +278,21 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": []
+                "tiers": [
+                    {
+                        "minimumValue": 0.0,
+                        "name": "LVR <=90% inc LMI",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },
