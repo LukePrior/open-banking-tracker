@@ -9,7 +9,7 @@
     &quot;brand&quot;: &quot;AMB&quot;,
     &quot;description&quot;: &quot;Our simple vanilla loan with a super-low variable rate, unlimited additional repayments as well as the ability to redraw.\n\nThe RateSaver Home Loan is also available for DHOAS eligible applicants&quot;,
     &quot;isTailored&quot;: false,
-    &quot;lastUpdated&quot;: &quot;2024-01-08T05:44:50.435909Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-09T06:25:07.206944Z&quot;,
     &quot;name&quot;: &quot;RateSaver Home Loan&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;productId&quot;: &quot;fd4ed454-477c-4723-bda8-8c03e4331393&quot;,
@@ -96,28 +96,14 @@
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Copies of statements (over 12 months) at branch or posted&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;per page&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;amount&quot;: &quot;2.00&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -139,27 +125,41 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Copies of statements (up to 12 months) posted&quot;,
+            &quot;name&quot;: &quot;Default notice fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;per page&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
             &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;XXX&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
         },
         {
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;name&quot;: &quot;Paper statement fee (per statement)&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;name&quot;: &quot;Redraw fee (per redraw)&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: &quot;P3M&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;2.50&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -195,6 +195,20 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Copies of statements (over 12 months) at branch or posted&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;per page&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;Arrears notice fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
@@ -223,6 +237,34 @@
         },
         {
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Copies of statements (up to 12 months) posted&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;per page&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;XXX&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
+            &quot;accrualFrequency&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;discounts&quot;: [],
+            &quot;transactionRate&quot;: null
+        },
+        {
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;name&quot;: &quot;RateSaver Switch fee&quot;,
             &quot;accrualFrequency&quot;: null,
             &quot;accruedRate&quot;: null,
@@ -230,34 +272,6 @@
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;amount&quot;: &quot;500.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Default notice fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Payable when a notice is issued regarding a default under the contract&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Copies of statements (up to 12 months) at branch&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;2.50&quot;,
             &quot;balanceRate&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
@@ -276,27 +290,13 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;discounts&quot;: [],
             &quot;transactionRate&quot;: null
-        },
-        {
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;name&quot;: &quot;Audit Certificate Fee&quot;,
-            &quot;accrualFrequency&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Per audit certificate requested&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;amount&quot;: &quot;50.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;discounts&quot;: [],
-            &quot;transactionRate&quot;: null
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0643000000000000&quot;,
-            &quot;additionalInfo&quot;: &quot;&lt;=70% LVR &quot;,
+            &quot;additionalInfo&quot;: null,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
@@ -305,26 +305,26 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;tiers&quot;: []
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0723000000000000&quot;,
-            &quot;additionalInfo&quot;: &quot;90% &lt;=95%&quot;,
-            &quot;additionalInfoUri&quot;: null,
-            &quot;additionalValue&quot;: null,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0727000000000000&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;tiers&quot;: []
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;name&quot;: &quot;LVR &lt;=70% &quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: null,
+                        &quot;additionalInfoUri&quot;: null
+                    },
+                    &quot;maximumValue&quot;: 70.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0668000000000000&quot;,
-            &quot;additionalInfo&quot;: &quot;LVR 70% &lt;=90%&quot;,
+            &quot;additionalInfo&quot;: null,
             &quot;additionalInfoUri&quot;: null,
             &quot;additionalValue&quot;: null,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
@@ -333,7 +333,49 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;tiers&quot;: []
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 71.0,
+                    &quot;name&quot;: &quot;LVR 71% &lt;=90% inc LMI&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: null,
+                        &quot;additionalInfoUri&quot;: null
+                    },
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ]
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0723000000000000&quot;,
+            &quot;additionalInfo&quot;: null,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;additionalValue&quot;: null,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0727000000000000&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;minimumValue&quot;: 91.0,
+                    &quot;name&quot;: &quot;LVR 91% &lt;=95% inc LMI&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;additionalInfo&quot;: null,
+                    &quot;additionalInfoUri&quot;: null,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: null,
+                        &quot;additionalInfoUri&quot;: null
+                    },
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ]
         }
     ]
 }</textarea>
