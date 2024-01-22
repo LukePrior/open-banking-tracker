@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;STGPLUnsecuredVariable&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-11-22T18:47:52Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-10T00:30:09Z&quot;,
     &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
     &quot;name&quot;: &quot;Unsecured Variable Personal Loan&quot;,
     &quot;description&quot;: &quot;Our unsecured loan offering to meet your requirement for car, renovation, consolidation of debt or something else.&quot;,
@@ -39,6 +39,18 @@
         {
             &quot;featureType&quot;: &quot;REDRAW&quot;,
             &quot;additionalInfo&quot;: &quot;Redraw facility on variable rate loans : Redraw money from the amount you've repaid if you need to, provided you're at least $500 ahead on your repayments. Each request is subject to approval.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;The product has EXTRA_REPAYMENTS option available.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FRAUD_PROTECTION&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes FRAUD_PROTECTION features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;RELATIONSHIP_MANAGEMENT is available for eligible customers.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -79,25 +91,64 @@
         {
             &quot;name&quot;: &quot;Lending Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;195.00&quot;
+            &quot;amount&quot;: &quot;150.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Monthly loan account fee&quot;,
+            &quot;name&quot;: &quot;Monthly Loan Account Fee&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;12.00&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Monthly Loan Account Fee Waiver&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;2.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;T&amp;Cs apply&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
-            &quot;name&quot;: &quot;Loan discharge fee - Within 12 Months&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Discharge Fee - Within 12 Months&quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
             &quot;amount&quot;: &quot;150.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Loan discharge fee if you fully repay the loan within the first 12 months&quot;
+            &quot;additionalInfo&quot;: &quot;Loan discharge fee if you fully repay the loan within the first 12 months&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Loan Discharge Fee Waiver - Within 12 Months&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;150.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;T&amp;Cs apply&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
-            &quot;name&quot;: &quot;Loan discharge fees - After 12 Months&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;name&quot;: &quot;Loan Discharge Fee - After 12 Months&quot;,
+            &quot;feeType&quot;: &quot;EXIT&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Loan discharge fees if you fully repay the loan after the first 12 months and before the end of the loan term&quot;
+            &quot;additionalInfo&quot;: &quot;Loan discharge fees if you fully repay the loan after the first 12 months and before the end of the loan term&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Loan Discharge Fee Waiver - After 12 Months&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;100.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;T&amp;Cs apply&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Redraw Fee&quot;,
@@ -105,43 +156,10 @@
             &quot;amount&quot;: &quot;0.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Overseas Withdrawal Fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;additionalInfo&quot;: &quot;The fee is Nil ($0) for cash withdrawals from Global ATM Alliance and Westpac Group partner ATMs. To find an overseas ATM visit the link below&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Foreign Currency Conversion Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;transactionRate&quot;: &quot;0.03&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Bank cheque fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;
-        },
-        {
             &quot;name&quot;: &quot;Missed Payment Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
             &quot;additionalInfo&quot;: &quot;Payable when we send you an arrears letter relating to an overdue amount.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Payment dishonour fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable whenever a direct debit order for payment from another institution is dishonoured.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Safe custody of your title deeds&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Per lodgement (inclusive of GST)&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Copy of withdrawal or deposit form&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;10.50&quot;
         },
         {
             &quot;name&quot;: &quot;Processing fee&quot;,
@@ -153,44 +171,50 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0799&quot;,
-            &quot;comparisonRate&quot;: &quot;0.091&quot;,
+            &quot;rate&quot;: &quot;0.0689&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0781&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;2000 to 50000&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 2000,
-                    &quot;maximumValue&quot;: 50000
+                    &quot;maximumValue&quot;: 50000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;12 to 84 MONTH&quot;,
                     &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
                     &quot;minimumValue&quot;: 12,
-                    &quot;maximumValue&quot;: 84
+                    &quot;maximumValue&quot;: 84,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;1-7 years of flexible loan term&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.189&quot;,
-            &quot;comparisonRate&quot;: &quot;0.1993&quot;,
+            &quot;rate&quot;: &quot;0.1999&quot;,
+            &quot;comparisonRate&quot;: &quot;0.2083&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;2000 to 50000&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 2000,
-                    &quot;maximumValue&quot;: 50000
+                    &quot;maximumValue&quot;: 50000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;12 to 84 MONTH&quot;,
                     &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
                     &quot;minimumValue&quot;: 12,
-                    &quot;maximumValue&quot;: 84
+                    &quot;maximumValue&quot;: 84,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Maximum Interest rate charged for the product. 1-7 years of flexible loan term&quot;

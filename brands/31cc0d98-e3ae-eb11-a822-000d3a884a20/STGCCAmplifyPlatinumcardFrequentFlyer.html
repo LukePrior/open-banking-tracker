@@ -7,10 +7,10 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;STGCCAmplifyPlatinumcardFrequentFlyer&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-11-19T03:52:09Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-12-06T01:30:06Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Amplify Qantas Platinum&quot;,
-    &quot;description&quot;: &quot;Our mid tier credit card for qantas point lover&quot;,
+    &quot;description&quot;: &quot;Our mid tier credit card for Qantas Point lovers&quot;,
     &quot;brand&quot;: &quot;St. George Bank&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -70,7 +70,7 @@
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Phone and Internet Banking&quot;
+            &quot;additionalInfo&quot;: &quot;Phone and Internet Banking&quot;
         },
         {
             &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
@@ -81,8 +81,16 @@
             &quot;additionalInfo&quot;: &quot;Feel confident using our cards, with 24/7 fraud monitoring, Secure Online Shopping Service, and the St George Fraud Money Back Guarantee.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Up to 3 months' complimentary cover for overseas travel, plus extended warranty, purchase security and transit accident cover. &quot;
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes extra repayment features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FRAUD_PROTECTION&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes fraud protection features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;INSTALMENT_PLAN&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes instalment plans.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -123,6 +131,10 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Autopay facility is available. With Autopay, you can choose to pay off your Minimum Payment Due or your full closing balance each month.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Customers can access their eligible Westpac cards and Apple?s ID&amp;V security features within Apple Wallet. T&amp;Cs apply.&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -154,8 +166,32 @@
         {
             &quot;name&quot;: &quot;Annual Card Fee&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;99.00&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;
+            &quot;amount&quot;: &quot;124.00&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Reduced First year Annual Card Fee&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;25.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;A reduced first year annual card fee of $99 ($124 thereafter)&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;description&quot;: &quot;Reduced First year Annual Card Fee - New card&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;75.00&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Already with St.George? Sign in and apply to get a $49 card fee for the first year (reverts to $124). Offer not available if you?ve held a St.George, Bank of Melbourne or BankSA rewards card in the last 12 months. New cards only. T&amp;Cs Apply.&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
             &quot;name&quot;: &quot;Missed Payment Fee&quot;,
@@ -163,7 +199,13 @@
             &quot;amount&quot;: &quot;15.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Cash Advance fee&quot;,
+            &quot;name&quot;: &quot;Direct Earn Rewards Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;75.00&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.03&quot;
         },
@@ -182,7 +224,7 @@
         {
             &quot;name&quot;: &quot;Overlimit Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
             &quot;additionalInfo&quot;: &quot;$15.00 once per statement period if your credit card account was opened before 4 June 2012. No overlimit fee will be charged for personal credit card accounts opened on or after 4 June 2012.&quot;
         },
         {
@@ -202,14 +244,14 @@
             &quot;rate&quot;: &quot;0.1949&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;19.74% p.a. variable interest rate on purchases&quot;
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
             &quot;rate&quot;: &quot;0.2149&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;21.49% p.a. variable cash advance interest rate&quot;
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;
         }
     ]
 }</textarea>
