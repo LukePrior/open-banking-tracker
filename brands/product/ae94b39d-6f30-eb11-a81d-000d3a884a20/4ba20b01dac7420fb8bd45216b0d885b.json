@@ -2,9 +2,15 @@
     "data": {
         "features": [
             {
+                "featureType": "OTHER",
+                "additionalValue": "Phone Banking",
+                "additionalInfo": "You can bank over the phone.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Bankwest Online Banking",
-                "additionalInfo": "Bank on the go with the Bankwest App. Use Bankwest Online Banking (BOB) to access your money and manage your everyday banking subject to conditions of use.",
+                "additionalInfo": "Bank on the go with the Bankwest App. Use Bankwest Online Banking (BOB) to access your money and manage your everyday banking subject to conditions of use. Limits may apply.",
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
             },
             {
@@ -12,12 +18,6 @@
                 "additionalValue": "Online Business Banking",
                 "additionalInfo": "If you want to access your account in Online Business Banking, you will be provided with a separate Product Disclosure Statement and your use of the service will be a matter of separate agreement with us. Separate fees are applicable for this service.",
                 "additionalInfoUri": "https://www.bankwest.com.au/terms-conditions/business-products#content-btc-19753488"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Phone Banking",
-                "additionalInfo": "You can bank over the phone.",
-                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
             },
             {
                 "featureType": "OTHER",
@@ -70,6 +70,12 @@
         ],
         "constraints": [
             {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "0.00",
+                "additionalInfo": "No minimum monthly deposit required.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
+            },
+            {
                 "constraintType": "MAX_BALANCE",
                 "additionalValue": "5000000.99",
                 "additionalInfo": "Earn variable interest on balances up to $5,000,000.99",
@@ -79,12 +85,6 @@
                 "constraintType": "MAX_LIMIT",
                 "additionalValue": "2000000.00",
                 "additionalInfo": "The maximum aggregate amount of Linked Account Transfers to your Linked Account which you may instruct us to make on any business day is $2,000,000.",
-                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
-            },
-            {
-                "constraintType": "MIN_BALANCE",
-                "additionalValue": "0.00",
-                "additionalInfo": "No minimum monthly deposit required.",
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
             },
             {
@@ -143,6 +143,23 @@
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
             },
             {
+                "depositRateType": "VARIABLE",
+                "rate": "0.01",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Amount",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 5000000.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "For every month you do make a withdrawal, you'll receive our standard variable interest rate.",
+                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
+            },
+            {
                 "depositRateType": "BONUS",
                 "rate": "0.0",
                 "calculationFrequency": "P1M",
@@ -176,23 +193,6 @@
                 "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
             },
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.01",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Amount",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
-                        "maximumValue": 5000000.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ],
-                "additionalInfo": "For every month you do make a withdrawal, you'll receive our standard variable interest rate.",
-                "additionalInfoUri": "https://www.bankwest.com.au/personal/bank-and-save/savings-accounts/smart-esaver"
-            },
-            {
                 "depositRateType": "BONUS",
                 "rate": "0.0145",
                 "calculationFrequency": "P1M",
@@ -213,7 +213,7 @@
         "productId": "4ba20b01dac7420fb8bd45216b0d885b",
         "effectiveFrom": "2009-02-12T13:00:00Z",
         "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-11-16T23:22:06.413231Z",
+        "lastUpdated": "2024-01-22T23:07:59.411564Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bankwest Smart eSaver",
         "description": "An online savings account that rewards you for every month you don't make a withdrawal. It's available to customers aged 12 years or over.",
