@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;3YFP&quot;,
     &quot;effectiveFrom&quot;: &quot;2023-10-26T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-01-24T00:46:40.876Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-25T00:36:19.567Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;3 Year Fixed (Package)&quot;,
     &quot;description&quot;: &quot;3 Year Fixed rate on the Home Loan Package&quot;,
@@ -66,35 +66,136 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Package Fee&quot;,
+            &quot;name&quot;: &quot;Establishment Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;600.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;\&quot;When we processes a customers loan application. Waived during campaign\&quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Settlement Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;\&quot;When a customers loan is first drawn. Waived during campaign\&quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;PEXA electronic transaction service fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;\&quot;When we settle the customers new loan or discharge. The amount the electronic settlement operator charges us, which we will charge to the customer.\&quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.pexa.com.au/pricing/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Valuation fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;\&quot;When any valuation is required as part of the customers loan application. This is the amount the valuer charges HSBC, which we will then charge the customer. Waived during campaign up to $200\&quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Loan Splitting Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;For a fourth loan account or more.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Home Loan Package Fee&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;390.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;The package fee will be deducted from the loan proceeds at settlement, and charged to the package home loan on the first business day of the loan anniversary month annually.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/package/&quot;
+            &quot;additionalValue&quot;: &quot;Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when the home loan package has been selected, and the customer first draws on the loan, or enter the package through a variation; and annually in advance on the second business day of each settlement anniversary month of their loan. It is payable in addition to the monthly loan repayment.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Home Loan Package Fee Discount&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;balanceRate&quot;: &quot;0.5&quot;,
+                    &quot;additionalInfo&quot;: &quot;Discounted HSBC Home Loan Package annual fee for eligible Premier customers.&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/premier/&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalInfo&quot;: &quot;Eligible HSBC Premier or Global Premier customers receive discounts.&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/premier/&quot;
+                        }
+                    ]
+                }
+            ]
         },
         {
-            &quot;name&quot;: &quot;Rate Lock Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;750.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Optional fee to lock in your fixed rate&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/fixed-rate/&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Break Cost&quot;,
+            &quot;name&quot;: &quot;Lenders Mortgage Insurance&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;You'll have to pay us break costs if:   you make more than $10,000 in additional payments in any one year above the  minimum repayments allowed under your agreement; o you want to vary your loan; or  you want to discharge your mortgage or no longer want your fixed rate&quot;,
+            &quot;additionalInfo&quot;: &quot;For mortgage insured loans and when a customer first draws on their loan. This is the amount the insurer charges us, which we will charge to the customer.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Search Fees&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When we conduct searches (e.g. Land Titles Office). This is the amount charged for title searches on the property.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Guarantor preparation fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When there is a guarantor and we prepare a guarantee document&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Multiple security property fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When we prepare each mortgage for the third security or more. Payable in addition to any other security preparation fees.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Fixed Rate Lock Fee&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;amount&quot;: &quot;750.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When a fixed loan is first drawn, or is fixed through a variation; and the customer opts for fixed rate lock. https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/home-loans/fixed-rate-handout.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Discharge Fee&quot;,
+            &quot;name&quot;: &quot;Discharge fee&quot;,
             &quot;feeType&quot;: &quot;EXIT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When HSBC discharge any mortgages relating to your security&quot;
+            &quot;additionalInfo&quot;: &quot;When we discharge the mortgage over the security property&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Break costs&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;\&quot;Payable if during tany fixed interest period the customer:- switches to a different interest rate; or- the customer switches product for any reason (including because we have required repayment under your loan contract);- prepay more than $10,000, during any 12-month period starting on the date the interest rate was first fixed or in any following consecutive 12-month  period.\&quot; https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/home-loans/fixed-rate-handout.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Consent / Production of title fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When we consider a request the customer makes for us to consent to something or where we produce a certificate of title.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Loan Variation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;300.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When we agree to vary the customers loan agreement.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/pdf/hl-fees-charges.pdf&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -107,6 +208,19 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 99.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR&gt;80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR&gt;80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
@@ -120,8 +234,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 80,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR 60-80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR&lt;=80%)&quot;,
+            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR 60-80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -133,8 +260,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 80,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR 60&lt;=80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR&lt;=80%)&quot;,
+            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR 60&lt;=80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -146,6 +286,19 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 99.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR&gt;80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR&gt;80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
@@ -159,8 +312,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 80,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR 60-80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR&lt;=80%)&quot;,
+            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR 60-80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -172,6 +338,19 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 99.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR&gt;80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
             &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR&gt;80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
@@ -185,8 +364,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 60.01,
+                    &quot;maximumValue&quot;: 80,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR 60-80%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR&lt;=80%)&quot;,
+            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR 60-80%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -198,8 +390,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR &lt;=60%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR&lt;=60%)&quot;,
+            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year P&amp;I (LVR &lt;=60%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -211,8 +416,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR &lt;=60%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR&lt;=60%)&quot;,
+            &quot;additionalInfo&quot;: &quot;O/O Package Fixed 3 Year IO (LVR &lt;=60%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -224,8 +442,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR &lt;=60%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR&lt;=60%)&quot;,
+            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year IO (LVR &lt;=60%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         },
         {
@@ -237,8 +468,21 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 60,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR &lt;=60%)&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR&lt;=60%)&quot;,
+            &quot;additionalInfo&quot;: &quot;INV Package Fixed 3 Year P&amp;I (LVR &lt;=60%)&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/home-loans/products/rates/&quot;
         }
     ]
