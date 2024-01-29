@@ -11,6 +11,11 @@
                 "additionalValue": "No-obligation quotes for insurance (with an option of 90 days free building insurance cover during settlement period)",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
             }
         ],
         "eligibility": [
@@ -22,13 +27,13 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen",
+                "additionalValue": "Australian citizen",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "BankVic Member",
+                "additionalInfo": "Member of BankVic",
                 "additionalInfoUri": ""
             },
             {
@@ -44,6 +49,24 @@
             }
         ],
         "fees": [
+            {
+                "name": "MORTGAGE_ESTABLISHMENT_FEE",
+                "feeType": "UPFRONT",
+                "amount": "600.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Covers the valuation, title search & mortgage preperation costs",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "MORTGAGE_ESTABLISHMENT_FEE_EXISTING_LOAN",
+                "feeType": "UPFRONT",
+                "amount": "300.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "New Mortgage and no Valuation required",
+                "additionalInfoUri": ""
+            },
             {
                 "name": "VALUATION_FEE",
                 "feeType": "UPFRONT",
@@ -79,45 +102,38 @@
                 "currency": "AUD",
                 "additionalInfo": "",
                 "additionalInfoUri": ""
-            },
-            {
-                "name": "MORTGAGE_ESTABLISHMENT_FEE",
-                "feeType": "UPFRONT",
-                "amount": "600.00",
-                "accrualFrequency": "D",
-                "currency": "AUD",
-                "additionalInfo": "Covers the valuation, title search & mortgage preperation costs",
-                "additionalInfoUri": ""
-            },
-            {
-                "name": "MORTGAGE_ESTABLISHMENT_FEE_EXISTING_LOAN",
-                "feeType": "UPFRONT",
-                "amount": "300.00",
-                "accrualFrequency": "D",
-                "currency": "AUD",
-                "additionalInfo": "New Mortgage and no Valuation required",
-                "additionalInfoUri": ""
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0629",
+                "rate": "0.0604",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Maximum 30 year loan term",
+                "additionalInfoUri": "",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0604",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0604",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "",
                 "additionalInfoUri": "",
                 "interestPaymentDue": "IN_ARREARS",
-                "comparisonRate": "0.0609",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "L7_Investment_Police_Variable_Rate_IC66",
-        "lastUpdated": "2023-11-28T16:01:49.000+11:00",
+        "productId": "L6_Police_2Yr_Variable_IO_IC73",
+        "lastUpdated": "2024-01-29T09:21:35.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Police Investor Variable Home Loan",
-        "description": "Police Investor Variable Home Loan",
+        "name": "Police Home Loan IO Variable Construction 2 Years",
+        "description": "A low Interest Only variable rate for Police to get into your dream home sooner",
         "brand": "BankVic",
         "brandName": "BankVic",
         "applicationUri": "https://www.bankvic.com.au/apply-home-loan",
@@ -131,7 +147,7 @@
         }
     },
     "links": {
-        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L7_Investment_Police_Variable_Rate_IC66"
+        "self": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/L6_Police_2Yr_Variable_IO_IC73"
     },
     "meta": {}
 }
