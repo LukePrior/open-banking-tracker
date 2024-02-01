@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;5f5dfdb4-43b1-41e6-923e-546bb801e026&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-06-27T23:59:59+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-30T23:59:59+10:00&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;NAB Business Card&quot;,
     &quot;description&quot;: &quot;Manage your employee's business expenses by giving them their own charge card.&quot;,
@@ -20,6 +20,123 @@
         &quot;eligibilityUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.nab.com.au/business/tools/rates-fees-and-charges#commercial&quot;
     },
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;5000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Account limit&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Card limit&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;18000000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_TURNOVER&quot;,
+            &quot;additionalValue&quot;: &quot;75000.00&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Must be an Australian citizen or permanent resident&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Have 12 months of business financial data.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Registered for GST&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Have a valid\u2028 ABN/ACN&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        }
+    ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
+            &quot;rate&quot;: &quot;0.155&quot;,
+            &quot;comparisonRate&quot;: null,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
+            &quot;rate&quot;: &quot;0.155&quot;,
+            &quot;comparisonRate&quot;: null,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Monthly Card Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;9.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;International Transaction Multi-Currency&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
+            &quot;accruedRate&quot;: null
+        },
+        {
+            &quot;name&quot;: &quot;International Transaction Single Currency&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: &quot;0.03&quot;,
+            &quot;accruedRate&quot;: null
+        },
+        {
+            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: null,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: &quot;0.02&quot;,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalValue&quot;: &quot;Minimum of $2.50&quot;
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
@@ -90,123 +207,6 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Fraud protection\r\nNAB Defence detects fraudulent transactions. If fraud occurs, we\u2019ll give back all your money.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        }
-    ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;5000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Account limit&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;1000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Card limit&quot;
-        },
-        {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;18000000.00&quot;
-        }
-    ],
-    &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;MIN_TURNOVER&quot;,
-            &quot;additionalValue&quot;: &quot;75000.00&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
-            &quot;additionalValue&quot;: &quot;Must be an Australian citizen or permanent resident&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Have 12 months of business financial data.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Registered for GST&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Have a valid\u2028 ABN/ACN&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        }
-    ],
-    &quot;fees&quot;: [
-        {
-            &quot;name&quot;: &quot;Monthly Card Fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;9.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Late Payment Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;International Transaction Multi-Currency&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: null,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: &quot;0.03&quot;,
-            &quot;accruedRate&quot;: null
-        },
-        {
-            &quot;name&quot;: &quot;International Transaction Single Currency&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: null,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: &quot;0.03&quot;,
-            &quot;accruedRate&quot;: null
-        },
-        {
-            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: null,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: &quot;0.02&quot;,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalValue&quot;: &quot;Minimum of $2.50&quot;
-        }
-    ],
-    &quot;lendingRates&quot;: [
-        {
-            &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
-            &quot;rate&quot;: &quot;0.155&quot;,
-            &quot;comparisonRate&quot;: null,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
-            &quot;rate&quot;: &quot;0.155&quot;,
-            &quot;comparisonRate&quot;: null,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/business/business-cards/nab-business-card&quot;
         }
     ]

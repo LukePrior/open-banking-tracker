@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;872ab7a8-5f9f-4d1a-b79f-84d7abf69393&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-11-03T23:59:59+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-01-30T23:59:59+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;NAB Now Pay Later&quot;,
     &quot;description&quot;: &quot;Your no interest, fee-free way to split the cost of your purchases into four simple repayments over six weeks.&quot;,
@@ -20,6 +20,42 @@
         &quot;eligibilityUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later/terms-conditions&quot;
     },
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Account limit of $1,000\r\nAccount limits of up to $1,000 are available subject to credit assessments for eligible customers.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;Confirm you\u2019re over 18 years old\r\nNAB Now Pay Later is only available for NAB customers 18 years or older.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: &quot;Mandatory- must have NAB Transaction account&quot;,
+            &quot;additionalInfo&quot;: &quot;Open a no-fee NAB transaction account\r\nTo make NAB Now Pay Later repayments you'll need a NAB transaction account. If you don't have one, you can easily open a transaction account in the NAB app or online.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Late Payment Fee&quot;,
+            &quot;feeType&quot;: &quot;PAYMENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;balanceRate&quot;: null,
+            &quot;transactionRate&quot;: null,
+            &quot;accruedRate&quot;: null,
+            &quot;additionalInfo&quot;: &quot;No late payment fees&quot;
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
@@ -55,42 +91,6 @@
         {
             &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
             &quot;additionalValue&quot;: &quot;Payment reminder notifications&quot;
-        }
-    ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;1000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Account limit of $1,000\r\nAccount limits of up to $1,000 are available subject to credit assessments for eligible customers.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
-        }
-    ],
-    &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;18&quot;,
-            &quot;additionalInfo&quot;: &quot;Confirm you\u2019re over 18 years old\r\nNAB Now Pay Later is only available for NAB customers 18 years or older.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Mandatory- must have NAB Transaction account&quot;,
-            &quot;additionalInfo&quot;: &quot;Open a no-fee NAB transaction account\r\nTo make NAB Now Pay Later repayments you'll need a NAB transaction account. If you don't have one, you can easily open a transaction account in the NAB app or online.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.nab.com.au/personal/buy-now-pay-later&quot;
-        }
-    ],
-    &quot;fees&quot;: [
-        {
-            &quot;name&quot;: &quot;Late Payment Fee&quot;,
-            &quot;feeType&quot;: &quot;PAYMENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;additionalInfo&quot;: &quot;No late payment fees&quot;
         }
     ]
 }</textarea>
