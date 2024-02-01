@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "872ab7a8-5f9f-4d1a-b79f-84d7abf69393",
-        "lastUpdated": "2022-11-03T23:59:59+10:00",
+        "lastUpdated": "2024-01-30T23:59:59+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "NAB Now Pay Later",
         "description": "Your no interest, fee-free way to split the cost of your purchases into four simple repayments over six weeks.",
@@ -14,6 +14,42 @@
             "eligibilityUri": "https://www.nab.com.au/personal/buy-now-pay-later",
             "feesAndPricingUri": "https://www.nab.com.au/personal/buy-now-pay-later/terms-conditions"
         },
+        "constraints": [
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Account limit of $1,000\r\nAccount limits of up to $1,000 are available subject to credit assessments for eligible customers.",
+                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "Confirm you\u2019re over 18 years old\r\nNAB Now Pay Later is only available for NAB customers 18 years or older.",
+                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalValue": "Mandatory- must have NAB Transaction account",
+                "additionalInfo": "Open a no-fee NAB transaction account\r\nTo make NAB Now Pay Later repayments you'll need a NAB transaction account. If you don't have one, you can easily open a transaction account in the NAB app or online.",
+                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Late Payment Fee",
+                "feeType": "PAYMENT",
+                "amount": "0.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "additionalInfo": "No late payment fees"
+            }
+        ],
         "features": [
             {
                 "featureType": "CARD_ACCESS",
@@ -49,42 +85,6 @@
             {
                 "featureType": "NOTIFICATIONS",
                 "additionalValue": "Payment reminder notifications"
-            }
-        ],
-        "constraints": [
-            {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "1000.00",
-                "additionalInfo": "Account limit of $1,000\r\nAccount limits of up to $1,000 are available subject to credit assessments for eligible customers.",
-                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
-            }
-        ],
-        "eligibility": [
-            {
-                "eligibilityType": "NATURAL_PERSON"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18",
-                "additionalInfo": "Confirm you\u2019re over 18 years old\r\nNAB Now Pay Later is only available for NAB customers 18 years or older.",
-                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalValue": "Mandatory- must have NAB Transaction account",
-                "additionalInfo": "Open a no-fee NAB transaction account\r\nTo make NAB Now Pay Later repayments you'll need a NAB transaction account. If you don't have one, you can easily open a transaction account in the NAB app or online.",
-                "additionalInfoUri": "https://www.nab.com.au/personal/buy-now-pay-later"
-            }
-        ],
-        "fees": [
-            {
-                "name": "Late Payment Fee",
-                "feeType": "PAYMENT",
-                "amount": "0.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "additionalInfo": "No late payment fees"
             }
         ]
     },

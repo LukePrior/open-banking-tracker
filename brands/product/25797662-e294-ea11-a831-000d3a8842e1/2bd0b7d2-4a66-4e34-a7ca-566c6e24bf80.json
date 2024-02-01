@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "2bd0b7d2-4a66-4e34-a7ca-566c6e24bf80",
-        "lastUpdated": "2024-01-02T23:59:59+10:00",
+        "lastUpdated": "2024-01-30T23:59:59+10:00",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Qantas Business Signature Card",
         "description": "Get more from your business credit card purchases. Maximise your Qantas Points.",
@@ -14,6 +14,126 @@
             "eligibilityUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card",
             "feesAndPricingUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
         },
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "5000.00",
+                "additionalInfo": "Facility limit"
+            },
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "1000.00",
+                "additionalInfo": "Card limit"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "18000000.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "MIN_TURNOVER",
+                "additionalValue": "75000.00",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian citizen or permanent resident",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Have 12 months of business financial data.",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Registered for GST",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Have a valid\u2028 ABN/ACN",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "PURCHASE",
+                "rate": "0.185",
+                "comparisonRate": null,
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            },
+            {
+                "lendingRateType": "CASH_ADVANCE",
+                "rate": "0.2174",
+                "comparisonRate": null,
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
+            }
+        ],
+        "fees": [
+            {
+                "name": "Annual card Fee",
+                "feeType": "PERIODIC",
+                "amount": "295.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "currency": "AUD",
+                "additionalValue": "P1Y",
+                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
+            },
+            {
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "balanceRate": null,
+                "transactionRate": null,
+                "accruedRate": null,
+                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
+            },
+            {
+                "name": "International Transaction Fee Single Currency",
+                "feeType": "TRANSACTION",
+                "amount": null,
+                "balanceRate": null,
+                "transactionRate": "0.03",
+                "accruedRate": null,
+                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
+            },
+            {
+                "name": "International Transaction Fee Multi-Currency",
+                "feeType": "TRANSACTION",
+                "amount": null,
+                "balanceRate": null,
+                "transactionRate": "0.03",
+                "accruedRate": null,
+                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
+            },
+            {
+                "name": "Cash Advance Fee",
+                "feeType": "WITHDRAWAL",
+                "amount": null,
+                "balanceRate": null,
+                "transactionRate": "0.02",
+                "accruedRate": null,
+                "additionalInfo": "Minimum fee is $2.50",
+                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
+            }
+        ],
         "features": [
             {
                 "featureType": "CARD_ACCESS",
@@ -103,126 +223,6 @@
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Fraud protection\r\nProvided you operate your account responsibly, if fraud occurs you'll be reimbursed for the fraudulent transaction.",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            }
-        ],
-        "constraints": [
-            {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "5000.00",
-                "additionalInfo": "Facility limit"
-            },
-            {
-                "constraintType": "MIN_LIMIT",
-                "additionalValue": "1000.00",
-                "additionalInfo": "Card limit"
-            },
-            {
-                "constraintType": "MAX_LIMIT",
-                "additionalValue": "18000000.00"
-            }
-        ],
-        "eligibility": [
-            {
-                "eligibilityType": "BUSINESS",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "MIN_AGE",
-                "additionalValue": "18",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "MIN_TURNOVER",
-                "additionalValue": "75000.00",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Must be an Australian citizen or permanent resident",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": "Have 12 months of business financial data.",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": "Registered for GST",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "eligibilityType": "OTHER",
-                "additionalInfo": "Have a valid\u2028 ABN/ACN",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            }
-        ],
-        "fees": [
-            {
-                "name": "Annual card Fee",
-                "feeType": "PERIODIC",
-                "amount": "295.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "currency": "AUD",
-                "additionalValue": "P1Y",
-                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
-            },
-            {
-                "name": "Late Payment Fee",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "balanceRate": null,
-                "transactionRate": null,
-                "accruedRate": null,
-                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
-            },
-            {
-                "name": "International Transaction Fee Single Currency",
-                "feeType": "TRANSACTION",
-                "amount": null,
-                "balanceRate": null,
-                "transactionRate": "0.03",
-                "accruedRate": null,
-                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
-            },
-            {
-                "name": "International Transaction Fee Multi-Currency",
-                "feeType": "TRANSACTION",
-                "amount": null,
-                "balanceRate": null,
-                "transactionRate": "0.03",
-                "accruedRate": null,
-                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
-            },
-            {
-                "name": "Cash Advance Fee",
-                "feeType": "WITHDRAWAL",
-                "amount": null,
-                "balanceRate": null,
-                "transactionRate": "0.02",
-                "accruedRate": null,
-                "additionalInfo": "Minimum fee is $2.50",
-                "additionalInfoUri": "https://www.nab.com.au/business/tools/rates-fees-and-charges/business-banking-fees-and-charges?own_cid=shortURL:feesandcharges#section-3"
-            }
-        ],
-        "lendingRates": [
-            {
-                "lendingRateType": "PURCHASE",
-                "rate": "0.185",
-                "comparisonRate": null,
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
-            },
-            {
-                "lendingRateType": "CASH_ADVANCE",
-                "rate": "0.2174",
-                "comparisonRate": null,
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
                 "additionalInfoUri": "https://www.nab.com.au/business/business-cards/nab-qantas-business-signature-card"
             }
         ]

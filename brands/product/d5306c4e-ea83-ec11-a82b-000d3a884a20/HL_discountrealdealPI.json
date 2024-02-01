@@ -3,7 +3,7 @@
         "productId": "HL_discountrealdealPI",
         "effectiveFrom": "2011-09-19T00:00:00.000+10:00",
         "effectiveTo": "9999-12-30T00:00:00.000+11:00",
-        "lastUpdated": "2023-11-17T00:00:00.000+11:00",
+        "lastUpdated": "2024-02-01T00:00:00.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Discounted Real Deal Home Loan Principal and Interest",
         "description": "3 year discounted rate with redraw and allows additional repayments",
@@ -207,7 +207,7 @@
         "depositRates": [],
         "lendingRates": [
             {
-                "lendingRateType": "INTRODUCTORY",
+                "lendingRateType": "VARIABLE",
                 "rate": "0.0785000000",
                 "comparisonRate": "0.0807000000",
                 "calculationFrequency": "P1D",
@@ -217,7 +217,15 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P3Y",
                 "additionalInfo": "Offer available for new mortgage owner occupied home loan applications. 3 year discount of 0.25% off the Real Deal variable interest rate. Rate reverts to Real Deal variable interest rate at end of 3 year discount period. ",
-                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates"
+                "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/home-loan-interest-rates",
+                "tiers": [
+                    {
+                        "name": "3 Year Discounted Real Deal ",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 36.0
+                    }
+                ]
             }
         ],
         "isTailored": true
