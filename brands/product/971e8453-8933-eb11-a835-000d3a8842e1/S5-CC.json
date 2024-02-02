@@ -159,16 +159,41 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.03",
+                "rate": "0.05",
                 "calculationFrequency": "P1M",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "CHRISTMAS CRACKER ACCOUNT_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "Interest payable on balances up to $1 million",
+                "additionalInfoUri": "https://www.communityfirst.com.au/products/christmas-cracker-account"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "CHRISTMAS CRACKER ACCOUNT_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
                 "additionalInfo": "Interest payable on balances up to $1 million",
                 "additionalInfoUri": "https://www.communityfirst.com.au/products/christmas-cracker-account"
             }
         ],
         "productId": "S5-CC",
         "effectiveFrom": "2024-02-01T00:00:00.000+11:00",
-        "lastUpdated": "2024-02-01T09:25:18.000+11:00",
+        "lastUpdated": "2024-02-01T13:37:00.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "CHRISTMAS CRACKER ACCOUNT",
         "description": "A savings account that helps you save for Christmas throughout the year and stops you dipping in to your savings by only allowing access to funds between 1 November and 31 January each year.",
