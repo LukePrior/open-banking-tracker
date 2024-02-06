@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;SSP&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-05T00:28:47.437Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-05T03:10:57.599Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;HSBC Everyday Savings Account&quot;,
     &quot;description&quot;: &quot;The HSBC Everyday Savings Account is an online savings account with a great 3 month introductory variable interest rate and must be linked to your nominated transaction account to enable you to move money in and out.&quot;,
@@ -29,14 +29,6 @@
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
             &quot;additionalValue&quot;: &quot;Introductory variable interest rate for the first 3 months from account opening, then an ongoing variable rate&quot;
-        }
-    ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;Introductory and ongoing variable interest rate paid on balances up to $1,000,000&quot;,
-            &quot;additionalInfo&quot;: &quot;Must be linked to an HSBC transaction account or a transaction account you hold with another Australian financial institution&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/everyday-savings/&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -168,6 +160,19 @@
             &quot;rate&quot;: &quot;0.0515&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Introductory variable rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 1000000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;Introductory interest rate paid on balances up to $1,000,000 AUD&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/everyday-savings/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;3 Month Introductory Variable Rate&quot;,
             &quot;additionalInfo&quot;: &quot;Available only for the first 3 months upon account opening.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/everyday-savings/&quot;
@@ -177,6 +182,19 @@
             &quot;rate&quot;: &quot;0.033&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Ongoing variable rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 1000000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;Ongoing variable interest rate paid on balances on up to $1,000,000 AUD&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/everyday-savings/&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;Ongoing Variable Rate&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/everyday-savings/&quot;
         }
