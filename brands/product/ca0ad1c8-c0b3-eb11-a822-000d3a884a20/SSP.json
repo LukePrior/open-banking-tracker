@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "SSP",
-        "lastUpdated": "2024-02-05T00:28:47.437Z",
+        "lastUpdated": "2024-02-05T03:10:57.599Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "HSBC Everyday Savings Account",
         "description": "The HSBC Everyday Savings Account is an online savings account with a great 3 month introductory variable interest rate and must be linked to your nominated transaction account to enable you to move money in and out.",
@@ -23,14 +23,6 @@
             {
                 "featureType": "UNLIMITED_TXNS",
                 "additionalValue": "Introductory variable interest rate for the first 3 months from account opening, then an ongoing variable rate"
-            }
-        ],
-        "constraints": [
-            {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "Introductory and ongoing variable interest rate paid on balances up to $1,000,000",
-                "additionalInfo": "Must be linked to an HSBC transaction account or a transaction account you hold with another Australian financial institution",
-                "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
             }
         ],
         "eligibility": [
@@ -162,6 +154,19 @@
                 "rate": "0.0515",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Introductory variable rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 1000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Introductory interest rate paid on balances up to $1,000,000 AUD",
+                            "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
+                        }
+                    }
+                ],
                 "additionalValue": "3 Month Introductory Variable Rate",
                 "additionalInfo": "Available only for the first 3 months upon account opening.",
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
@@ -171,6 +176,19 @@
                 "rate": "0.033",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Ongoing variable rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 1000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Ongoing variable interest rate paid on balances on up to $1,000,000 AUD",
+                            "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
+                        }
+                    }
+                ],
                 "additionalValue": "Ongoing Variable Rate",
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/everyday-savings/"
             }
