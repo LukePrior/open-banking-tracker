@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;ACSCNY&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-14T03:25:45.997Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-16T05:18:45.036Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;HSBC Bonus Savings Account - CNY&quot;,
     &quot;description&quot;: &quot;Build your foreign currency savings with the benefit of easy access to your money via branch, phone, internet or mobile banking.&quot;,
@@ -28,13 +28,6 @@
             &quot;additionalInfo&quot;: &quot;Available for 10 foreign currencies.&quot;
         }
     ],
-    &quot;constraints&quot;: [
-        {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;35,000,000&quot;,
-            &quot;additionalInfo&quot;: &quot;CNY&quot;
-        }
-    ],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
@@ -52,7 +45,7 @@
     &quot;fees&quot;: [
         {
             &quot;name&quot;: &quot;TT credited to existing HSBC account&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;PAYMENT&quot;,
             &quot;amount&quot;: &quot;10.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/ways-to-bank/personal-banking-booklet.pdf&quot;
@@ -108,7 +101,7 @@
         },
         {
             &quot;name&quot;: &quot;Periodical Payments Dishonour&quot;,
-            &quot;feeType&quot;: &quot;PAYMENT&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/ways-to-bank/personal-banking-booklet.pdf&quot;
@@ -157,6 +150,19 @@
             &quot;rate&quot;: &quot;0.0125&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Variable interest base rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 35000000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;Variable interest paid on balances up to CNY35,000,000&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/archive/transaction-savings-terms-and-conditions.pdf&quot;
+                    }
+                }
+            ],
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/foreign-currency-bonus-savings/&quot;
         },
         {
@@ -164,6 +170,19 @@
             &quot;rate&quot;: &quot;0.03&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Monthly variable bonus interest rate&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 35000000,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;,
+                    &quot;applicabilityConditions&quot;: {
+                        &quot;additionalInfo&quot;: &quot;Monthly variable bonus interest rate paid if closing account balance at the end of the month has increased by an amount greater than the applicable minimum monthly amount.&quot;,
+                        &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/content/dam/hsbc/au/docs/archive/transaction-savings-terms-and-conditions.pdf&quot;
+                    }
+                }
+            ],
             &quot;additionalValue&quot;: &quot;Monthly bonus rate&quot;,
             &quot;additionalInfo&quot;: &quot;To receive the Monthly Bonus, ensure the closing account balance of the month is  \u00a52,000 CNY higher (excluding interest paid during the month) than the opening balance of that month.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.hsbc.com.au/accounts/products/foreign-currency-bonus-savings/&quot;
