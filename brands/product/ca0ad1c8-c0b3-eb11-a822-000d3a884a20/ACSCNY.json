@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "ACSCNY",
-        "lastUpdated": "2024-02-14T03:25:45.997Z",
+        "lastUpdated": "2024-02-16T05:18:45.036Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "HSBC Bonus Savings Account - CNY",
         "description": "Build your foreign currency savings with the benefit of easy access to your money via branch, phone, internet or mobile banking.",
@@ -22,13 +22,6 @@
                 "additionalInfo": "Available for 10 foreign currencies."
             }
         ],
-        "constraints": [
-            {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "35,000,000",
-                "additionalInfo": "CNY"
-            }
-        ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -46,7 +39,7 @@
         "fees": [
             {
                 "name": "TT credited to existing HSBC account",
-                "feeType": "TRANSACTION",
+                "feeType": "PAYMENT",
                 "amount": "10.00",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/ways-to-bank/personal-banking-booklet.pdf"
@@ -102,7 +95,7 @@
             },
             {
                 "name": "Periodical Payments Dishonour",
-                "feeType": "PAYMENT",
+                "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/ways-to-bank/personal-banking-booklet.pdf"
@@ -151,6 +144,19 @@
                 "rate": "0.0125",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Variable interest base rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 35000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Variable interest paid on balances up to CNY35,000,000",
+                            "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/archive/transaction-savings-terms-and-conditions.pdf"
+                        }
+                    }
+                ],
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/foreign-currency-bonus-savings/"
             },
             {
@@ -158,6 +164,19 @@
                 "rate": "0.03",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Monthly variable bonus interest rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 35000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Monthly variable bonus interest rate paid if closing account balance at the end of the month has increased by an amount greater than the applicable minimum monthly amount.",
+                            "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/archive/transaction-savings-terms-and-conditions.pdf"
+                        }
+                    }
+                ],
                 "additionalValue": "Monthly bonus rate",
                 "additionalInfo": "To receive the Monthly Bonus, ensure the closing account balance of the month is  \u00a52,000 CNY higher (excluding interest paid during the month) than the opening balance of that month.",
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/foreign-currency-bonus-savings/"
