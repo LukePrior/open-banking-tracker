@@ -1,9 +1,368 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Apple Pay",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "ADDITIONAL_CARDS",
+                "additionalInfo": "$10 per addtional card per customer",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalValue": "Visa Debit Card",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Google Pay",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Earn higher interest for balances over $50,000",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Samsung Wallet",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalValue": "Garmin Pay",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Chequebook access available",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Electronic or paper statements",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly access fee",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "PENSION_RECIPIENT",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Self funded retirees may apply",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "ARCH",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Retrieval of account information - $50/per hour. Min $10",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEADDCARD",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Payable for the second and any subsequent card",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEBILLCOLL",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you deposit a foreign currency cheque of $5000 or more",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEECOINDEP",
+                "feeType": "DEPOSIT",
+                "amount": "10.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When you deposit large amounts of coin. Greater of $10 of 1% of the value deposited",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEDDHON",
+                "feeType": "TRANSACTION",
+                "amount": "15.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Insufficient cleared funds in your account to meet debit request",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEINACT",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "accrualFrequency": "Y",
+                "currency": "AUD",
+                "additionalInfo": "Where your account has not been transacted upon for a period of 24 months or more",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEFORCASH",
+                "feeType": "DEPOSIT",
+                "balanceRate": "0.01",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEMANRET",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Payable each time you request us to manually return a direct debit payment without cancelling the direct debit arrangement",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEPPALT",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Each additional alteration after a total of four consecutive alterations",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEECHQSPECCL",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Special request for priorty clearance on a cheque deposited to your account",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEETT",
+                "feeType": "TRANSACTION",
+                "amount": "15.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When you send money overseas in a foreign currency online, $30 in branch",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEETTAUD",
+                "feeType": "EVENT",
+                "amount": "50.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When you send money overseas in Australian Dollars",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEDETRACE",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When you request a external transaction to be traced",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEDDDIS",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Insufficient cleared funds in your account",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEFORCHQ",
+                "feeType": "DEPOSIT",
+                "amount": "20.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When you deposit a foreign currency cheque of under $5000 to your account",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEERTGS",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Where you request a transaction to be processed via RTGS",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEESTATREQ",
+                "feeType": "EVENT",
+                "amount": "2.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "A request to provide a copy statement or a statement on a passbook account",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEECARDREP",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Request replacement card",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEECHQDIS",
+                "feeType": "EVENT",
+                "amount": "20.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "When a business or personal cheque dishonours",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEESTOPCHQ",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "Stop cheque when you ask us.",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "FEEMEMCHQ",
+                "feeType": "DEPOSIT",
+                "amount": "0.80",
+                "accrualFrequency": "M",
+                "currency": "AUD",
+                "additionalInfo": "Payable when a cheque is deposited into an account",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0135",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Retirement Account_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 49999.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0165",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Retirement Account_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 49999.01,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0255",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "Retirement Account_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "S12V1",
+        "effectiveFrom": "2020-09-24T00:00:00.000+10:00",
+        "lastUpdated": "2023-11-15T09:08:22.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Retirement Account",
+        "description": "An account specifically for age pensioners",
+        "brand": "HUME BANK LIMITED",
+        "brandName": "HUME BANK LIMITED",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.humebank.com.au/everyday/retirement-account/",
+            "termsUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "eligibilityUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "feesAndPricingUri": "https://www.humebank.com.au/everyday/retirement-account/",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/S12V1"
+    },
+    "meta": {}
 }

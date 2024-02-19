@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "ACSAUD",
-        "lastUpdated": "2024-02-14T03:20:42.327Z",
+        "lastUpdated": "2024-02-16T05:23:04.484Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "HSBC Bonus Savings Account - AUD",
         "description": "The HSBC Bonus Savings Account is a savings account with no monthly account fee that gives you the flexibility of unlimited transactions, with a competitive interest rate.",
@@ -104,7 +104,7 @@
             },
             {
                 "name": "Periodical Payments Dishonour",
-                "feeType": "PAYMENT",
+                "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfoUri": "https://www.hsbc.com.au/content/dam/hsbc/au/docs/ways-to-bank/personal-banking-booklet.pdf"
@@ -153,6 +153,19 @@
                 "rate": "0.0225",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Standard variable rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 5000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Variable interest rate paid on balances up to AUD $5,000,000",
+                            "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/bonus-savings/"
+                        }
+                    }
+                ],
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/bonus-savings/"
             },
             {
@@ -160,6 +173,19 @@
                 "rate": "0.0225",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus variable interest rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 5000000,
+                        "rateApplicationMethod": "PER_TIER",
+                        "applicabilityConditions": {
+                            "additionalInfo": "Monthly bonus variable interest applicable to AUD and major foreign currencies accounts. The monthly variable bonus eligibility resets every month. No bonus interest is applied in the month the account is closed as eligibility criteria can't be established.",
+                            "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/bonus-savings/"
+                        }
+                    }
+                ],
                 "additionalValue": "Monthly bonus rate ",
                 "additionalInfo": "To receive the Monthly Bonus, ensure the closing account balance of the month is $300 higher (excluding interest paid during the month) than the opening balance of that month.",
                 "additionalInfoUri": "https://www.hsbc.com.au/accounts/products/bonus-savings/"
