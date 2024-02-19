@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Everyday Transaction</title>
+  </head>
+  <body>
+    <div>
+      <textarea style="width:90vw;height:90vh">{
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
+            &quot;additionalValue&quot;: &quot;Visa Debit with payWave&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Apple Pay&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_WALLET&quot;,
+            &quot;additionalValue&quot;: &quot;Google Pay&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
+            &quot;additionalInfo&quot;: &quot;Make and receive payments instantly via the New Payments platform using Osko&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
+            &quot;additionalInfo&quot;: &quot;Make fast, easy payments with PayID without the need for your BSB and account number&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
+            &quot;additionalValue&quot;: &quot;BPAY&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Pay no transaction fees when you deposit at least $1500 per month into this account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Access to Australia Post's Bank@Post network to deposit funds to and withdraw funds from your MOVE Bank accounts&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;1.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;2000000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Individuals must be citizens or permanent residents of Australia&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;FLAT_$5_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;BANK_CHEQUE_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;COUNTER_CHEQUE_WITHDRAWAL_FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;ELECTRONIC_TRANSFER_-_URGENT&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EXPRESS_MONEY_ORDER&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;25.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;MEMBER_CHEQUE_BOOK&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;OVERSEAS_ATM_WITHDRAWAL&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;OVERSEAS_CURRENCY_FEE&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;transactionRate&quot;: &quot;0.02&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;REPLACEMENT_CARD_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;SPECIAL_CLEARANCE_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;
+        }
+    ],
+    &quot;depositRates&quot;: [
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;lendingRates&quot;: [
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;productId&quot;: &quot;Everyday_Transaction&quot;,
+    &quot;effectiveFrom&quot;: &quot;2024-02-19T00:00:00.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-16T16:37:01.000+10:00&quot;,
+    &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
+    &quot;name&quot;: &quot;Everyday Transaction&quot;,
+    &quot;description&quot;: &quot;Everyday Transaction&quot;,
+    &quot;brand&quot;: &quot;MOVE Bank (Railways Credit Union Lt&quot;,
+    &quot;brandName&quot;: &quot;MOVE Bank (Railways Credit Union Lt&quot;,
+    &quot;applicationUri&quot;: &quot;https://movebank.com.au/top-menu/join-us/&quot;,
+    &quot;isTailored&quot;: false,
+    &quot;additionalInformation&quot;: {
+        &quot;overviewUri&quot;: &quot;https://movebank.com.au/banking-savings/savings-accounts/savings-transaction-accounts/&quot;,
+        &quot;termsUri&quot;: &quot;https://movebank.com.au/tools-support/product-membership-documents/important-documents/&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://movebank.com.au/banking-savings/savings-accounts/savings-transaction-accounts/&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://movebank.com.au/tools-support/fees-charges/&quot;,
+        &quot;bundleUri&quot;: &quot;&quot;
+    }
+}</textarea>
+    </div>
+  </body>
+</html>
