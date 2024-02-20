@@ -1,9 +1,241 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "CARD_ACCESS",
+                "additionalInfo": "Visa Debit Card",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "ADDITIONAL_CARDS",
+                "additionalInfo": "Additional Visa Debit Cards available",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Unlimited in branch transactions",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": "100% mortgage offset available",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_WALLET",
+                "additionalInfo": "Apple Pay and Google Pay",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Internet Banking and WCU Connect App",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "Osko PayID supported",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "Osko PayID and BSB and Account Number supported",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Personal Cheque Book facility",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "PENSION_RECIPIENT",
+                "additionalInfo": "You must be receiving a pension or allowance from Centrelink or Veteran Affairs and the pension or allowance must be paid directly into the account",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalInfo": "Individuals must be citizens or permanent residents of Australia",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Must be a member of the Credit Union",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "ATM_TRANSACTION_FEE_BALANCE_ENQUIRY",
+                "feeType": "EVENT",
+                "amount": "1.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "ATM Fees are debited to the account with which the card is linked as part of end of day processing",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "ATM_TRANSACTION_FEE_OTHER_ATM_WITHDRAWALS",
+                "feeType": "TRANSACTION",
+                "amount": "1.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "ATM Fees are debited to the account with which the card is linked as part of end of day processing",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "CHEQUE_BOOK_ISSUE_100_CHQS",
+                "feeType": "PAYMENT",
+                "amount": "32.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Fee payable every time a cheque book is supplied to a customer",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "CHEQUE_BOOK_ISSUE_200_CHQS",
+                "feeType": "PAYMENT",
+                "amount": "65.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Fee payable every time a cheque book is supplied to a customer",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "CHEQUE_BOOK_ISSUE_25_CHQS",
+                "feeType": "PAYMENT",
+                "amount": "8.25",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Fee payable every time a cheque book is supplied to a customer.",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "ENCODED_DEPOSIT_BOOK_ISSUED",
+                "feeType": "PAYMENT",
+                "amount": "3.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Fee payable ever time an encoded deposit book has been issued to a customer",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "MEMBERSHIP_FEE",
+                "feeType": "PERIODIC",
+                "amount": "5.00",
+                "accrualFrequency": "M",
+                "currency": "AUD",
+                "additionalInfo": "Charged when becoming a customer of WCU",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PERIODIC_PAYMENT_FEE_BRANCH_ACTIONED",
+                "feeType": "TRANSACTION",
+                "amount": "6.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Transfers to a non-WCU Account.  WCU to WCU are free",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PHONE_ASSISTED_TRANSFERS",
+                "feeType": "TRANSACTION",
+                "amount": "2.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Only charged when staff assistance is required to transfer funds over the phone",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "2.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "When paper statements are requested - charged on statement cycle",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "VISA_DEBIT_CARD_REPLACEMENT",
+                "feeType": "EVENT",
+                "amount": "12.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Charged unless proven compromised or stolen",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.005",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "PENSIONER CHOICE_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 1999.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.013",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "PENSIONER CHOICE_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 2000.0,
+                        "maximumValue": 46601.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.018",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "PENSIONER CHOICE_Tier_3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 46601.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "S10",
+        "lastUpdated": "2023-12-01T12:43:12.000+10:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "PENSIONER CHOICE",
+        "description": "PENSIONER CHOICE",
+        "brand": "WARWICK CREDIT UNION",
+        "brandName": "WARWICK CREDIT UNION",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "",
+            "termsUri": "",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://openbanking.wcu.com.au/OpenBanking/cds-au/v1/banking/products/S10"
+    },
+    "meta": {}
 }

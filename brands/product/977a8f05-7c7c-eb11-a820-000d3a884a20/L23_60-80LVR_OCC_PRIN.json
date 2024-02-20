@@ -43,12 +43,12 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Lenders Mortgage Insurance will be required if you borrow over 80% of the value of your home (or borrow an additional amount on your existing mortgage that brings the overall loan amount over 80% LVR). LMI is a one-off cost added to the total loan amount and is not a bank fee or an establishment fee.",
+                "additionalInfo": "Lenders Mortgage Insurance will be required if you borrow over 75% of the value of your home (or borrow an additional amount on your existing mortgage that brings the overall loan amount over 75% LVR). LMI is a one-off cost added to the total loan amount and is not a bank fee or an establishment fee.",
                 "additionalInfoUri": ""
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Interest Only - monthly due 1st day of each month",
+                "additionalInfo": "Flexible repayment options weekly, fortnightly or monthly",
                 "additionalInfoUri": ""
             },
             {
@@ -63,7 +63,7 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "This loan can be used for the purposes of refinancing your investment property from an another lender only, with the interest rate based on LVR tiers.",
+                "additionalInfo": "This loan can be used for the purposes of refinancing your owner occupier property from an another lender only, with the interest rate based on LVR tiers.",
                 "additionalInfoUri": ""
             }
         ],
@@ -112,6 +112,42 @@
             }
         ],
         "fees": [
+            {
+                "name": "LOAN_ESTABLISHMENT_FEE_-_MORTGAGE_LOAN_(NEW)",
+                "feeType": "UPFRONT",
+                "amount": "500.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged to set up a new home loan",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "LOAN_ESTABLISHMENT_FEE_-_MORTGAGE_LOAN_(TOP_UP)",
+                "feeType": "UPFRONT",
+                "amount": "200.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged to vary the value of an existing home loan",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "LOAN_ESTABLISHMENT_FEE_-_SECOND_MORTGAGE_LOAN_(NEW)",
+                "feeType": "UPFRONT",
+                "amount": "400.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged for consent to a subsequent new mortgage",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "LOAN_ESTABLISHMENT_FEE_-_SECOND_MORTGAGE_LOAN_(TOP_UP)",
+                "feeType": "UPFRONT",
+                "amount": "200.00",
+                "accrualFrequency": "D",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged for consent to a subsequent mortgage to vary the value of an existing home loan",
+                "additionalInfoUri": ""
+            },
             {
                 "name": "LOAN_SWITCH_FEE",
                 "feeType": "EVENT",
@@ -269,47 +305,36 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.065",
+                "rate": "0.06",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "Comparison rate based on $150,000 loan over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.",
                 "additionalInfoUri": "NULL",
                 "interestPaymentDue": "IN_ARREARS",
-                "comparisonRate": "0.0652",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.065",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "",
-                "additionalInfoUri": "NULL",
-                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0603",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT"
+                "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "L23_80LVR_INV_INTOSO12",
-        "lastUpdated": "2024-02-19T14:10:40.000+11:00",
+        "productId": "L23_60-80LVR_OCC_PRIN",
+        "lastUpdated": "2024-02-19T14:50:43.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Momentum Home Loan 80LVR - Property Investor - Variable - I/O SO",
-        "description": "Your lifestyle, family or financial situation may have changed since you purchased your property. Our Momentum Home Loan was designed to make refinancing from another financial institution easy.",
+        "name": "Momentum Home Loan 60-80LVR - Owner Occupier - Variable - P&I SO",
+        "description": "If you purchased your home a few years ago, your lifestyle, family or financial situation may have changed. Make your move and refinance with our Momentum Home Loan.",
         "brand": "GC MUTUAL BANK",
         "brandName": "GC MUTUAL BANK",
-        "applicationUri": "https://gcmutualbank.mpowerdigitalonboarding.com.au/campaign?utm_source=GC&utm_medium=HML002&utm_campaign=GC002",
+        "applicationUri": "https://gcmutualbank.mpowerdigitalonboarding.com.au/campaign?utm_source=OwnedChannels&utm_medium=HML001&utm_campaign=MHL",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.gcmutual.bank/products/home-loans/momentum-home-loan-property-investor/",
+            "overviewUri": "https://www.gcmutual.bank/products/home-loans/momentum-home-loan-owner-occupied-special-offer/",
             "termsUri": "https://www.gcmutual.bank/disclosures/qm1001_account-and-access-facility-terms-conditions/",
-            "eligibilityUri": "https://www.gcmutual.bank/products/home-loans/momentum-home-loan-property-investor/",
+            "eligibilityUri": "https://www.gcmutual.bank/products/home-loans/momentum-home-loan-owner-occupied-special-offer/",
             "feesAndPricingUri": "https://www.gcmutual.bank/tools/rates-fees/",
             "bundleUri": ""
         }
     },
     "links": {
-        "self": "https://ibank.gcmutualbank.com.au/OpenBanking/cds-au/v1/banking/products/L23_80LVR_INV_INTOSO12"
+        "self": "https://ibank.gcmutualbank.com.au/OpenBanking/cds-au/v1/banking/products/L23_60-80LVR_OCC_PRIN"
     },
     "meta": {}
 }
