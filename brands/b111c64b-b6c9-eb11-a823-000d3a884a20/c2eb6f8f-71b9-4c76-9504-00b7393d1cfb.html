@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;c2eb6f8f-71b9-4c76-9504-00b7393d1cfb&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-20T13:31:40.814Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-26T01:20:45.25Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Basic Variable Investment Construction&quot;,
     &quot;description&quot;: &quot;Our Basic Variable Home &amp; Investment Construction Loans offers our lowest rate with no upfront or no ongoing monthly fee which enables you to make unlimited extra repayments to pay off your loan quicker.&quot;,
@@ -65,7 +65,7 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;50000&quot;,
+            &quot;additionalValue&quot;: &quot;50000.00&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum loan size is $50,000.00&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/borrowing-and-credit/home-loans/basic-variable-home-loan&quot;
         }
@@ -147,6 +147,24 @@
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Basic Variable Investment Loan (Min)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 149999.99,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;Minimum $50,000 balance. LVR &gt;80%.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Basic Variable Investment Loan (&gt;80% LVR)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;Minimum $50,000 balance. LVR &gt;80%.&quot;
+                }
+            ],
             &quot;additionalValue&quot;: &quot;Basic Variable Investment Loan Rate.&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum $50,000 balance.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/rates/investment-loan-rates&quot;
@@ -162,13 +180,19 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Basic Variable Investment Loan (&lt;80% LVR)&quot;,
+                    &quot;name&quot;: &quot;Basic Variable Investment Loan (Min)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000,
+                    &quot;maximumValue&quot;: 149999.99,
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;=80%. Minimum $50,000 balance.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Basic Variable Investment Loan (&lt;=80% LVR)&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
                     &quot;maximumValue&quot;: 80,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;80%. Minimum $50,000 balance.&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/rates/investment-loan-rates&quot;
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;=80%. Minimum $50,000 balance.&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate.&quot;,
@@ -186,13 +210,20 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (&lt;70% LVR)&quot;,
+                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (Min)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 150000,
+                    &quot;maximumValue&quot;: 2000000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;=70%. Minimum $150,000 balance. New Business only.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (&lt;=70% LVR)&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
                     &quot;maximumValue&quot;: 70,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;70%. Minimum $150,000 balance. New Business only.&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/rates/investment-loan-rates&quot;
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &lt;=70%. Minimum $150,000 balance. New Business only.&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;Discount applied to Basic Variable Investment Loan rate.&quot;,
@@ -210,13 +241,20 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (70%-80% LVR)&quot;,
+                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (Min)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 150000,
+                    &quot;maximumValue&quot;: 2000000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only.&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (70.01%-80% LVR)&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 70,
+                    &quot;minimumValue&quot;: 70.01,
                     &quot;maximumValue&quot;: 80,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only.&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/rates/investment-loan-rates&quot;
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only.&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate.&quot;,
@@ -234,13 +272,20 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (Min)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 150000,
+                    &quot;maximumValue&quot;: 2000000,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &gt;80%. Minimum $150,000 balance. New Business only.&quot;
+                },
+                {
                     &quot;name&quot;: &quot;Basic Variable New Business Investment Loan (&gt;80% LVR)&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 80,
-                    &quot;maximumValue&quot;: 95,
+                    &quot;minimumValue&quot;: 80.01,
+                    &quot;maximumValue&quot;: 90,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &gt;80%. Minimum $150,000 balance. New Business only.&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://www.peopleschoice.com.au/rates/investment-loan-rates&quot;
+                    &quot;additionalInfo&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate. LVR &gt;80%. Minimum $150,000 balance. New Business only.&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;Discount applied to Basic Variable Investment Loan Rate.&quot;,
