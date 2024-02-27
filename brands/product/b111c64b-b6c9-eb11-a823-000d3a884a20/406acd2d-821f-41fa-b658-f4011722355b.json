@@ -2,7 +2,7 @@
     "data": {
         "productId": "406acd2d-821f-41fa-b658-f4011722355b",
         "effectiveTo": "9999-12-31T00:00:00Z",
-        "lastUpdated": "2023-11-20T13:31:43.154Z",
+        "lastUpdated": "2024-02-26T01:20:45.558Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Basic Variable Home Loan",
         "description": "Our Basic Variable Home & Investment Loans offers our lowest rate with no upfront or no ongoing monthly fee which enables you to make unlimited extra repayments to pay off your loan quicker.",
@@ -66,7 +66,7 @@
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "50000",
+                "additionalValue": "50000.00",
                 "additionalInfo": "Minimum loan size is $50,000.00",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/borrowing-and-credit/home-loans/basic-variable-home-loan"
             }
@@ -155,6 +155,23 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Basic Variable Home Loan (Min)",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 149999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "LVR >80%. Minimum $50,000 balance."
+                    },
+                    {
+                        "name": "Basic Variable Home Loan (LVR >80%)",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.01,
+                        "maximumValue": 95,
+                        "additionalInfo": "LVR >80%. Minimum $50,000 balance."
+                    }
+                ],
                 "additionalValue": "Basic Variable Home Loan Rate",
                 "additionalInfo": "Minimum $50,000 balance.",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
@@ -170,13 +187,20 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable Home Loan (<80% LVR)",
+                        "name": "Basic Variable Home Loan (Min)",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000,
+                        "maximumValue": 149999.99,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <80%. Minimum $50,000 balance."
+                    },
+                    {
+                        "name": "Basic Variable Home Loan (<=80% LVR)",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 1,
+                        "minimumValue": 0,
                         "maximumValue": 80,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <80%. Minimum $50,000 balance.",
-                        "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <=80%. Minimum $50,000 balance."
                     }
                 ],
                 "additionalValue": "Discount applied to Basic Variable Home Loan Rate.",
@@ -194,17 +218,24 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable New Business Home Loan (<70% LVR)",
+                        "name": "Basic Variable New Business Home Loan (Min)",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 2000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <=70%. Minimum $150,000 balance. New Business only."
+                    },
+                    {
+                        "name": "Basic Variable New Business Home Loan (<=70% LVR)",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 1,
+                        "minimumValue": 0,
                         "maximumValue": 70,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <70%. Minimum $150,000 balance. New Business only.",
-                        "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR <=70%. Minimum $150,000 balance. New Business only."
                     }
                 ],
                 "additionalValue": "Discount Applied to Basic Variable Home Loan Rate",
-                "additionalInfo": "LVR <70%. Minimum $150,000 balance. New Business only.",
+                "additionalInfo": "LVR <=70%. Minimum $150,000 balance. New Business only.",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
             },
             {
@@ -218,13 +249,20 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
-                        "name": "Basic Variable New Business Home Loan (70%-80% LVR)",
+                        "name": "Basic Variable New Business Home Loan (Min)",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 2000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only."
+                    },
+                    {
+                        "name": "Basic Variable New Business Home Loan (70.01%-80% LVR)",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 70,
+                        "minimumValue": 70.01,
                         "maximumValue": 80,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only.",
-                        "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR 70.01% - 80.00%. Minimum $150,000 balance. New Business only."
                     }
                 ],
                 "additionalValue": "Discount applied to Basic Variable Home Loan Rate.",
@@ -242,13 +280,20 @@
                 "loanPurpose": "OWNER_OCCUPIED",
                 "tiers": [
                     {
+                        "name": "Basic Variable New Business Home Loan (Min)",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 150000,
+                        "maximumValue": 2000000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR >80%. Minimum $150,000 balance. New Business Only."
+                    },
+                    {
                         "name": "Basic Variable New Business Home Loan (>80% LVR)",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": 80,
+                        "minimumValue": 80.01,
                         "maximumValue": 95,
                         "rateApplicationMethod": "WHOLE_BALANCE",
-                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR >80%. Minimum $150,000 balance. New Business Only.",
-                        "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
+                        "additionalInfo": "Discount applied to Basic Variable Home Loan Rate. LVR >80%. Minimum $150,000 balance. New Business Only."
                     }
                 ],
                 "additionalValue": "Discount applied to Basic Variable Home Loan Rate.",
