@@ -9,12 +9,11 @@
     &quot;productId&quot;: &quot;STV&quot;,
     &quot;effectiveFrom&quot;: &quot;2018-12-31T13:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-16T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-15T14:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Standard Variable Rate&quot;,
     &quot;description&quot;: &quot;A full featured Home Loan for lending less than $150,000&quot;,
     &quot;brand&quot;: &quot;Suncorp&quot;,
-    &quot;brandName&quot;: &quot;Null&quot;,
     &quot;applicationUri&quot;: &quot;https://www.suncorp.com.au/banking/loans/home-loans/get-started-online.html&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -59,13 +58,13 @@
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;10000.00&quot;,
+            &quot;additionalValue&quot;: &quot;10000&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum Loan Balance of $10,000&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;3750000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum Loan Balance of $3,750,000&quot;
+            &quot;additionalValue&quot;: &quot;3250000&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum Loan Balance of $3,250,000&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -108,7 +107,7 @@
         {
             &quot;name&quot;: &quot;Guarantor Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;amount&quot;: &quot;200.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies if a guarantor is included in the loan. Fee is per guarantor.&quot;
         },
         {
@@ -146,20 +145,13 @@
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;990.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies to loans where borrowings are greater than or equal to 90% of the property value, waived for loans over $150,000&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Monthly Account Keeping Fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;Please refer to your Credit Contract for detail on when Ongoing Fees are charged.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.1012&quot;,
-            &quot;comparisonRate&quot;: &quot;0.1005&quot;,
+            &quot;rate&quot;: &quot;0.0812&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0803&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -169,24 +161,16 @@
                 {
                     &quot;name&quot;: &quot;LVR &lt;90%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
                 }
             ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0923&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0941&quot;,
+            &quot;rate&quot;: &quot;0.0723&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0741&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -196,24 +180,16 @@
                 {
                     &quot;name&quot;: &quot;LVR &lt;95%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.95,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 95.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
                 }
             ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.094&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0945&quot;,
+            &quot;rate&quot;: &quot;0.074&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0745&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -223,24 +199,16 @@
                 {
                     &quot;name&quot;: &quot;LVR &lt;90%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
                 }
             ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.097&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0985&quot;,
+            &quot;rate&quot;: &quot;0.077&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0785&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1D&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -250,17 +218,9 @@
                 {
                     &quot;name&quot;: &quot;LVR &lt;90%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
                 }
             ]
         }
