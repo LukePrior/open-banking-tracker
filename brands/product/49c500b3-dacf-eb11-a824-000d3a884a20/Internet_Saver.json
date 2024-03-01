@@ -162,7 +162,7 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0",
+                "rate": "0.02",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
@@ -170,8 +170,8 @@
                         "name": "Internet Saver_Tier_1",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
-                        "maximumValue": 4999.99,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "maximumValue": 25000.0,
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -179,16 +179,16 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.02",
+                "rate": "0.03",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Internet Saver_Tier_2",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 5000.0,
-                        "maximumValue": 2000000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "minimumValue": 25000.01,
+                        "maximumValue": 50000.0,
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -196,15 +196,32 @@
             },
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.0175",
+                "rate": "0.045",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
                         "name": "Internet Saver_Tier_3",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 2000000.01,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "minimumValue": 50000.01,
+                        "maximumValue": 100000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Internet Saver_Tier_4",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.01,
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
                 "additionalInfo": "",
@@ -222,7 +239,7 @@
             }
         ],
         "productId": "Internet_Saver",
-        "lastUpdated": "2024-02-01T10:26:23.000+11:00",
+        "lastUpdated": "2024-02-29T19:36:12.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Internet Saver",
         "description": "Internet Saver Account allows you to earn interest while being able to access your funds 24 hours a day, 7 days a week (subject to system availability).",
