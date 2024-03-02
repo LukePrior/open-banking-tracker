@@ -18,6 +18,11 @@
         ],
         "features": [
             {
+                "featureType": "OFFSET",
+                "additionalInfo": "Your choice of Loan Saver Account or 100% Offset Account",
+                "additionalInfoUri": ""
+            },
+            {
                 "featureType": "REDRAW",
                 "additionalInfo": "Redraw permitted",
                 "additionalInfoUri": ""
@@ -34,7 +39,7 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Additional repayments up to $20k during fixed rate term without penalty",
+                "additionalInfo": "Additional repayments without penalty",
                 "additionalInfoUri": ""
             },
             {
@@ -43,8 +48,18 @@
                 "additionalInfoUri": ""
             },
             {
+                "featureType": "OTHER",
+                "additionalInfo": "Construction option available",
+                "additionalInfoUri": ""
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Split loan option available",
                 "additionalInfoUri": ""
             }
         ],
@@ -75,11 +90,6 @@
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "Security property must be for owner occupation",
-                "additionalInfoUri": ""
-            },
-            {
-                "eligibilityType": "OTHER",
                 "additionalInfo": "Residential or Rural Lifestyle security up to 40 hectares",
                 "additionalInfoUri": ""
             }
@@ -92,15 +102,6 @@
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Not ascertainable, and payable to us or our solicitor or our or their agent",
-                "additionalInfoUri": ""
-            },
-            {
-                "name": "BREAK_COSTS_ADMINISTRATION_FEE",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Paybale to us in addition to Break Costs",
                 "additionalInfoUri": ""
             },
             {
@@ -231,21 +232,21 @@
                 "additionalInfoUri": ""
             },
             {
+                "name": "PROGRESS_PAYMENT_FEE",
+                "feeType": "VARIABLE",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Minimum $100 per progress payment on a building or construction loan. Payable whenever a progress payment is made on a building or construction loan.",
+                "additionalInfoUri": ""
+            },
+            {
                 "name": "RENEGOTIATION_FEE",
                 "feeType": "EVENT",
                 "amount": "300.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalInfo": "Per renegotiation. Payable to us whenever we agree to renegotiate or vary conditions on your loan other than altering interest rate options",
-                "additionalInfoUri": ""
-            },
-            {
-                "name": "ROLLOVER_FEE",
-                "feeType": "EVENT",
-                "amount": "200.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Per rollover. Payable to us when a loan goes from one fixed period to another",
                 "additionalInfoUri": ""
             },
             {
@@ -285,44 +286,43 @@
                 "additionalInfoUri": ""
             },
             {
-                "name": "VALUATION_FEE",
-                "feeType": "EVENT",
+                "name": "VALUATION_FEE_(PROGESS_VALUATION)",
+                "feeType": "VARIABLE",
                 "amount": "0.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Valuation fees are available upon enquiry and payable in relation to each property to which a loan is secured",
+                "additionalInfo": "Progress Valuation fees are available upon enquiry and payable in relation to each property to which a loan is secured",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "VALUATION_FEE_(PROGESS_VALUATION)",
+                "feeType": "VARIABLE",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Progress Valuation fees are available upon enquiry and payable in relation to each property to which a loan is secured",
                 "additionalInfoUri": ""
             }
         ],
         "lendingRates": [
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalValue": "P24M",
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.themutual.com.au/tools/interest-rates/home-loan-interest-rates/",
-                "comparisonRate": "0.0773",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED"
-            },
-            {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0773",
+                "rate": "0.0698",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "additionalInfo": "",
                 "additionalInfoUri": "https://www.themutual.com.au/tools/interest-rates/home-loan-interest-rates/",
+                "interestPaymentDue": "IN_ARREARS",
+                "comparisonRate": "0.0731",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED"
             }
         ],
-        "productId": "Owner_Occupied_Package_Home_Loan_2YR_FR",
-        "lastUpdated": "2023-11-17T09:39:50.000+11:00",
+        "productId": "Package_Home_Loan_First_Home_Buyer_Discount",
+        "lastUpdated": "2024-03-01T15:28:09.000+11:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
-        "name": "Owner Occupied Package Home Loan-2 Year Fixed Rate",
-        "description": "A flexible home loan with a great low interest rate, plus a range of best value inclusions",
+        "name": "Owner Occupied Package Home Loan-Variable Rate",
+        "description": "A flexible home loan with a great loan interest rate, plus a range of best value inclusions.",
         "brand": "TheMutualBank",
         "brandName": "The Mutual Bank",
         "applicationUri": "",
@@ -336,7 +336,7 @@
         }
     },
     "links": {
-        "self": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Owner_Occupied_Package_Home_Loan_2YR_FR"
+        "self": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Package_Home_Loan_First_Home_Buyer_Discount"
     },
     "meta": {}
 }
