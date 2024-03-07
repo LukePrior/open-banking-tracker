@@ -9,11 +9,13 @@
     &quot;productId&quot;: &quot;FMDATD&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-06-24T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-14T14:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-29T13:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;Farm Management Term Deposit&quot;,
     &quot;description&quot;: &quot;A Farm Management Deposit Account (FMDA) Term Deposit is for primary producers who can take advantage of the tax benefits available under the Farm Management Deposits (FMD) scheme. The FMDA Term Deposit allows you to lock away an amount of money at a fixed interest rate for a nominated time period.  During the fixed term, no deposits or withdrawals are permitted.&quot;,
     &quot;brand&quot;: &quot;Suncorp&quot;,
+    &quot;brandName&quot;: &quot;null&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.suncorp.com.au/banking/business/bank-accounts/agribusiness.html&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.suncorp.com.au/banking/business/bank-accounts/agribusiness.html&quot;,
@@ -27,26 +29,26 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Monthly interest payments are available on terms 2, 3, 6, 9, 12 and 24 months at 0.05% p.a. below carded rates for interest at maturity (terms 2, 3, 6, 9, 12 and 24 months).&quot;
+            &quot;additionalInfo&quot;: &quot;Monthly interest payments are available on terms 2, 3, 6, 9, 12 and 24 months at 0.30% p.a. below carded rates for interest at maturity (terms 2, 3, 6, 9, 12 and 24 months).&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Quarterly interest payments are available on terms 6, 9, 12 and 24 months at 0.05% p.a. below carded rates for interest at maturity (terms 6, 9, 12 and 24 months).&quot;
+            &quot;additionalInfo&quot;: &quot;Quarterly interest payments are available on terms 6, 9, 12 and 24 months at 0.25% p.a. below carded rates for interest at maturity (terms 6, 9, 12 and 24 months).&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Semi-annual interest payments are available on terms 12 and 24 months at 0.05% p.a. below carded rates for interest at maturity (terms 12 and 24 months).&quot;
+            &quot;additionalInfo&quot;: &quot;Semi-annual interest payments are available on terms 12 and 24 months at 0.15% p.a. below carded rates for interest at maturity (terms 12 and 24 months).&quot;
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;1000&quot;,
+            &quot;additionalValue&quot;: &quot;1000.00&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum Balance of $1,000&quot;
         },
         {
             &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;800000&quot;,
+            &quot;additionalValue&quot;: &quot;800000.00&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum Balance of $800,000&quot;
         }
     ],
@@ -106,31 +108,20 @@
             &quot;amount&quot;: &quot;30.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;per certificate&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Statements requests&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
         }
     ],
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.005&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.005&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
@@ -140,284 +131,318 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.005&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.008&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2M&quot;,
-            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.008&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2M&quot;,
-            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.008&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2M&quot;,
-            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.018&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3M&quot;,
-            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.018&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3M&quot;,
-            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.018&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3M&quot;,
-            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.025&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.025&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.025&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P6M&quot;,
-            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0285&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P9M&quot;,
-            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0285&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P9M&quot;,
-            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0285&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P9M&quot;,
-            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0325&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 800000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0325&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000.0,
-                    &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0325&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P12M&quot;,
-            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
+            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalInfo&quot;: &quot;24 Month TD Interest Annually&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;01 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0365&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0365&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0365&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P2M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2M&quot;,
+            &quot;additionalInfo&quot;: &quot;02 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.039&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.039&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.039&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P3M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3M&quot;,
+            &quot;additionalInfo&quot;: &quot;03 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0425&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0425&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0425&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P6M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P6M&quot;,
+            &quot;additionalInfo&quot;: &quot;06 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P9M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P9M&quot;,
+            &quot;additionalInfo&quot;: &quot;09 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0475&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $800,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 800000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0475&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1,000 to $49,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0475&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P12M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
+            &quot;additionalInfo&quot;: &quot;12 Month TD Interest at Maturity&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;tiers&quot;: [
@@ -434,7 +459,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;rate&quot;: &quot;0.045&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
             &quot;tiers&quot;: [
@@ -443,23 +468,6 @@
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 1000.0,
                     &quot;maximumValue&quot;: 49999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
-            &quot;additionalInfo&quot;: &quot;24 Month TD Interest Annually&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.035&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1Y&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$50,000 to $99,999&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 99999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
