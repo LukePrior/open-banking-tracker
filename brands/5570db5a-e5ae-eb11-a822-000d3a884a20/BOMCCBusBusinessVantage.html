@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;BOMCCBusBusinessVantage&quot;,
-    &quot;lastUpdated&quot;: &quot;2021-11-22T11:03:06Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2023-12-27T09:08:28Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Business Vantage&quot;,
     &quot;description&quot;: &quot;A low interest rate on purchases to help manage your business cash flow&quot;,
@@ -60,6 +60,18 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Automatic Payment Plan : If the principal has an Automatic Payment Plan, we debit the payment specified on statement to the account selected for debiting under the Plan. We debit the payment 25 days after the statement date (or if that is not a banking day, then the next banking day).&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;The product has EXTRA_REPAYMENTS option available.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FRAUD_PROTECTION&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes FRAUD_PROTECTION features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;RELATIONSHIP_MANAGEMENT is available for eligible customers.&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -69,11 +81,11 @@
         },
         {
             &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalValue&quot;: &quot;Intend to use the card predominantly for business expenditure&quot;
+            &quot;additionalInfo&quot;: &quot;Intend to use the card predominantly for business expenditure&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalValue&quot;: &quot;Should have business registered in Australia&quot;
+            &quot;additionalInfo&quot;: &quot;Should have business registered in Australia&quot;
         }
     ],
     &quot;fees&quot;: [
@@ -81,7 +93,8 @@
             &quot;name&quot;: &quot;Card Fee&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;55.00&quot;,
-            &quot;additionalValue&quot;: &quot;P1Y&quot;
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
+            &quot;additionalInfo&quot;: &quot;Per card.&quot;
         },
         {
             &quot;name&quot;: &quot;Foreign Transaction Fee&quot;,
@@ -90,7 +103,7 @@
             &quot;additionalInfo&quot;: &quot;3% of the Australian dollar value of any Foreign Transaction.&quot;
         },
         {
-            &quot;name&quot;: &quot;Cash advance Fee&quot;,
+            &quot;name&quot;: &quot;Cash Advance Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.03&quot;
         },
@@ -107,7 +120,7 @@
             &quot;additionalInfo&quot;: &quot;Courier costs may apply&quot;
         },
         {
-            &quot;name&quot;: &quot;Overlimit fee&quot;,
+            &quot;name&quot;: &quot;Overlimit Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;additionalInfo&quot;: &quot;$0 applied once per statement period if a transaction is made for an amount exceeding the available credit at the date the transaction is debited to your credit card account.&quot;
@@ -137,10 +150,11 @@
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;lendingRateType&quot;: &quot;PURCHASE&quot;,
             &quot;rate&quot;: &quot;0.0999&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalInfo&quot;: &quot;Purchase Rate&quot;
         },
         {
@@ -148,6 +162,7 @@
             &quot;rate&quot;: &quot;0.1715&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalInfo&quot;: &quot;Cash advances&quot;
         }
     ]
