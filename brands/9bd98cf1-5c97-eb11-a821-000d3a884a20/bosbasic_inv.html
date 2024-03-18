@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;bosbasic_inv&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-23T01:49:38Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-01T06:26:57Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;BOS Basic Investment Home Loan&quot;,
     &quot;description&quot;: &quot;Make an investment in property simply with our straight-forward, low interest BOS Basic Investment Home Loan.&quot;,
@@ -20,22 +20,31 @@
         &quot;eligibilityUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.banksyd.com.au/important-product-information&quot;
     },
+    &quot;features&quot;: [
+        {
+            &quot;featureType&quot;: &quot;REDRAW&quot;,
+            &quot;additionalInfo&quot;: &quot;Redraw facility is available&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+        }
+    ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;250000&quot;
+            &quot;additionalValue&quot;: &quot;100000&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;MINAGE&quot;,
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;18&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;NATURALPERSON&quot;
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;
         },
         {
-            &quot;eligibilityType&quot;: &quot;RESIDENCYSTATUS&quot;,
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
             &quot;additionalValue&quot;: &quot;Australian Permanent Resident or Citizen. Residential address must be in Australia.&quot;
         },
         {
@@ -77,66 +86,155 @@
     ],
     &quot;lendingRates&quot;: [
         {
-            &quot;rate&quot;: &quot;0.0545&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;&gt;70% to 80% LVR&quot;,
             &quot;additionalInfo&quot;: &quot;Investment Property, Principal and Interest&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.7,
+                    &quot;maximumValue&quot;: 0.8,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0645&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0659&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;additionalInfo&quot;: &quot;Investment Property, Interest Only&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 80%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.7,
+                    &quot;maximumValue&quot;: 0.8,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0647&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0649&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;additionalInfo&quot;: &quot;Investment Property, Interest Only&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 70%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.6,
+                    &quot;maximumValue&quot;: 0.7,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0637&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0649&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;additionalInfo&quot;: &quot;Investment Property, Interest Only&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 60%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.5,
+                    &quot;maximumValue&quot;: 0.6,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0637&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0649&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;P4Y&quot;,
+            &quot;additionalValue&quot;: &quot;P1Y&quot;,
             &quot;additionalInfo&quot;: &quot;Investment Property, Interest Only&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 50%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 0.5
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0637&quot;
         },
         {
-            &quot;rate&quot;: &quot;0.0565&quot;,
+            &quot;rate&quot;: &quot;0.0629&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Property, Interest Only&quot;,
+            &quot;additionalValue&quot;: &quot;&gt;60% to 70% LVR&quot;,
+            &quot;additionalInfo&quot;: &quot;Investment Property, Principal and Interest&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
-            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;
-        }
-    ],
-    &quot;features&quot;: [
-        {
-            &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalInfo&quot;: &quot;Redraw facility is available&quot;
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 70%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.6,
+                    &quot;maximumValue&quot;: 0.7,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0635&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;
+            &quot;rate&quot;: &quot;0.0629&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;&gt;50% to 60% LVR&quot;,
+            &quot;additionalInfo&quot;: &quot;Investment Property, Principal and Interest&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 60%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.5,
+                    &quot;maximumValue&quot;: 0.6,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0635&quot;
+        },
+        {
+            &quot;rate&quot;: &quot;0.0629&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;additionalValue&quot;: &quot;LVR up to 50%&quot;,
+            &quot;additionalInfo&quot;: &quot;Investment Property, Principal and Interest&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.banksyd.com.au/bos-basic-investment-home-loan&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;up to 50%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0,
+                    &quot;maximumValue&quot;: 0.5,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0635&quot;
         }
     ]
 }</textarea>

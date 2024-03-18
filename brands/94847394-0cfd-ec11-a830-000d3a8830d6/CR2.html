@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;CR2&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-10-01T00:49:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-15T01:19:41.211Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-03-18T00:43:12.255Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;HSBC Corporate or Purchasing Card&quot;,
     &quot;description&quot;: &quot;Corporate or Purchasing cards for corporate expenditure including T&amp;E and  Procurement spend&quot;,
@@ -30,7 +30,7 @@
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
-            &quot;additionalValue&quot;: &quot;Physical plastic. Chip, contactless, e-commerce, Apple and Google Pay available.&quot;,
+            &quot;additionalValue&quot;: &quot;Physical, Chip, Contactless, Apple Wallet, Google Wallet&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.business.hsbc.com.au/en-au/solutions/corporate-card&quot;
         },
         {
@@ -40,19 +40,12 @@
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;Unlimited transactions up to credit limit &quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;No per transaction charge for domestic purchases&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS_ALLOWANCE&quot;,
-            &quot;additionalValue&quot;: &quot;No per transaction charge for domestic purchases&quot;
+            &quot;additionalValue&quot;: &quot;N/A&quot;
         },
         {
             &quot;featureType&quot;: &quot;INSURANCE&quot;,
-            &quot;additionalValue&quot;: &quot;Complimentary travel &amp; unauthorised transaction insurance &quot;
+            &quot;additionalValue&quot;: &quot;Complimentary travel &amp; unauthorised transaction insurance &quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.business.hsbc.com.au/en-au/form-downloads-and-interest-rates&quot;
         },
         {
             &quot;featureType&quot;: &quot;INTEREST_FREE&quot;,
@@ -74,7 +67,7 @@
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalValue&quot;: &quot;Corporate applicants only.&quot;,
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
             &quot;additionalInfo&quot;: &quot;Corporate applicants only. Company Liability.&quot;
         }
     ],
@@ -84,35 +77,49 @@
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;40.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Annual fee per card&quot;
+            &quot;additionalValue&quot;: &quot;A&quot;,
+            &quot;additionalInfo&quot;: &quot;Annual fee per card&quot;
         },
         {
-            &quot;name&quot;: &quot;Cash advance interest&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;balanceRate&quot;: &quot;0.1575&quot;,
-            &quot;accrualFrequency&quot;: &quot;P1D&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Cash advance interest rate&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Foreign transaction fee&quot;,
+            &quot;name&quot;: &quot;Overseas transaction fee&quot;,
             &quot;feeType&quot;: &quot;PURCHASE&quot;,
             &quot;transactionRate&quot;: &quot;0.03&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
-            &quot;name&quot;: &quot;Overseas ATM cash advance fee&quot;,
+            &quot;name&quot;: &quot;Overseas cash advance fee&quot;,
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;4.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Overseas ATM cash advance fee&quot;
+            &quot;additionalValue&quot;: &quot;Overseas cash advance and quasi cash fee&quot;
         },
         {
-            &quot;name&quot;: &quot;Domestic ATM cash advance fee&quot;,
+            &quot;name&quot;: &quot;Domestic cash advance fee&quot;,
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;2.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Domestic ATM cash advance fee&quot;
+            &quot;additionalValue&quot;: &quot;Domestic cash advance and quasi cash fee&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Reminder Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;payable on or after the day an amount is due for payment and has not been paid&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Overlimit Arrangement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;payable when your informal request for a Facility Limit increase is agreed&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Disputed Transaction Charge&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per item disputed where the resultant investigation confirms liability for the transaction is with the cardholder&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -120,12 +127,17 @@
             &quot;lendingRateType&quot;: &quot;CASH_ADVANCE&quot;,
             &quot;rate&quot;: &quot;0.1575&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;additionalValue&quot;: &quot;Interest rate applied to cash advances&quot;
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest rate applied to cash advances&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;PENALTY&quot;,
             &quot;rate&quot;: &quot;0.1575&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;Purchases interest rate for purchases not paid off in full by payment due date&quot;
         }
     ]

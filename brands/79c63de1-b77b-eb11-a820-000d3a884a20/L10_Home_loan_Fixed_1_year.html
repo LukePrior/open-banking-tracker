@@ -9,13 +9,38 @@
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalValue&quot;: &quot;100% offset available&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;featureType&quot;: &quot;REDRAW&quot;,
-            &quot;additionalValue&quot;: &quot;one free redraw each month&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;10000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
+        {
+            &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;RESIDENCY_STATUS&quot;,
+            &quot;additionalValue&quot;: &quot;Australian Citizen&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         }
@@ -25,188 +50,140 @@
             &quot;name&quot;: &quot;ACCOUNT_KEEPING_FEE&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;12.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;accrualFrequency&quot;: &quot;M&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;ADDITIONAL_REDRAW_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable in respect of each redraw in a month after the first free redraw&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;APPLICATION_FEE&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;200.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;ARREARS_FEE&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
             &quot;amount&quot;: &quot;25.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;For loans in arrears two month or more&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;BANK_CHEQUE_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;12.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable for each cheque from a Bank (other than Cairns Bank) you request&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;BREAK_COST_ADMINISTRATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;400.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable when the whole of a fixed rate loan is repaid during any fixed rate period and any other break costs do not exceed $400&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;CORPORATE_CHEQUE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;10.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://cairnsbank.com.au/information-and-support/disclosure/fees-and-charges&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;https://cairnsbank.com.au/information-and-support/disclosure/fees-and-charges&quot;
         },
         {
             &quot;name&quot;: &quot;DISCHARGE_PREPARATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;60.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When the balance is repaid in full and a Form 3 is prepared&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;DISCHARGE_SETTLEMENT_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When required to attend at settlement&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;REFIXING_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable when changing from one fixed rate to another&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;SUBSEQUENT_DEALING_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;200.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;When you apply for consent to a subsequent dealing with the mortgaged property&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         },
         {
             &quot;name&quot;: &quot;VARIATION_OF_LOAN_CONTRACT_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;200.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable when you apply to vary a loan contract&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.05600&quot;,
+            &quot;rate&quot;: &quot;0.0654&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;P24M&quot;,
+            &quot;additionalValue&quot;: &quot;P12M&quot;,
             &quot;additionalInfo&quot;: &quot;The comparison rate is calculated on a loan amount of $150,000 over 25 years with monthly repayments.  WARNING: This comparison rate is true only for the example given and may not include all fees and charges.  Different terms, fees or other loan amounts may result in a different comparison rate&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;interestPaymentDue&quot;: null,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: null
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.06500&quot;,
+            &quot;rate&quot;: &quot;0.0734&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;,
-            &quot;interestPaymentDue&quot;: null,
-            &quot;comparisonRate&quot;: &quot;0.04330&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;comparisonRate&quot;: &quot;0.07482&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: null
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         }
     ],
     &quot;productId&quot;: &quot;L10_Home_loan_Fixed_1_year&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-02-25T00:00:00.000+10:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-09-26T10:11:13.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-02-28T15:42:34.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Home loan Fixed 1 year&quot;,
     &quot;description&quot;: &quot;A flexible loan to assist in the purchase of a home to live in with the rate fixed for 1 year. Includes a 100% offset account.&quot;,
@@ -215,10 +192,10 @@
     &quot;applicationUri&quot;: &quot;&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;&quot;,
-        &quot;termsUri&quot;: &quot;&quot;,
+        &quot;overviewUri&quot;: &quot;https://cairnsbank.com.au/loans/home-loans&quot;,
+        &quot;termsUri&quot;: &quot;https://cairnsbank.com.au/information-and-support/disclosure/terms-conditions&quot;,
         &quot;eligibilityUri&quot;: &quot;&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://cairnsbank.com.au/loans/home-loans/interest-rates&quot;,
         &quot;bundleUri&quot;: &quot;&quot;
     }
 }</textarea>

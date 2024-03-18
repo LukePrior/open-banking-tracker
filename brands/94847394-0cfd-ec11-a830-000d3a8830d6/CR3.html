@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;CR3&quot;,
     &quot;effectiveFrom&quot;: &quot;2019-01-31T00:41:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-03-15T01:20:08.576Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-03-18T00:43:04.055Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;HSBC Virtual Card&quot;,
     &quot;description&quot;: &quot;Single and multi use virtual cards for corporate expenditure&quot;,
@@ -35,19 +35,13 @@
         },
         {
             &quot;featureType&quot;: &quot;ADDITIONAL_CARDS&quot;,
-            &quot;additionalValue&quot;: &quot;Additional cards can be issued under the facility&quot;
+            &quot;additionalValue&quot;: &quot;Unlimited&quot;,
+            &quot;additionalInfo&quot;: &quot;Additional cards can be issued under the facility&quot;
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;Unlimited transactions up to credit limit &quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;No per transaction charge for domestic purchases&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;FREE_TXNS_ALLOWANCE&quot;,
-            &quot;additionalValue&quot;: &quot;No per transaction charge for domestic purchases&quot;
+            &quot;additionalValue&quot;: &quot;Unlimited&quot;,
+            &quot;additionalInfo&quot;: &quot;Unlimited transactions up to credit limit&quot;
         },
         {
             &quot;featureType&quot;: &quot;INTEREST_FREE&quot;,
@@ -55,11 +49,13 @@
         },
         {
             &quot;featureType&quot;: &quot;INSURANCE&quot;,
-            &quot;additionalValue&quot;: &quot;Complimentary unauthorised transaction insurance &quot;
+            &quot;additionalValue&quot;: &quot;Complimentary unauthorised transaction insurance &quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.business.hsbc.com.au/en-au/form-downloads-and-interest-rates&quot;
         },
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Online card management portal available&quot;
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
+            &quot;additionalInfo&quot;: &quot;Online card management portal available&quot;
         },
         {
             &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
@@ -71,23 +67,44 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: &quot;Company Liability&quot;,
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
             &quot;additionalInfo&quot;: &quot;Company Liability only&quot;
         }
     ],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalValue&quot;: &quot;Business / Corporate applicants only&quot;
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
+            &quot;additionalInfo&quot;: &quot;Business / Corporate applicants only&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Foreign Transaction Fee&quot;,
+            &quot;name&quot;: &quot;Overseas Transaction Fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.03&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;Foreign Transaction Fee per foreign transaction&quot;
+            &quot;additionalValue&quot;: &quot;N/A&quot;,
+            &quot;additionalInfo&quot;: &quot;Overseas Transaction Fee per foreign transaction&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Late Payment Reminder Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Overlimit Arrangement Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Disputed transaction charge&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;10.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per item disputed where the resultant investigation confirms liability for the transaction is with the cardholder&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -95,6 +112,8 @@
             &quot;lendingRateType&quot;: &quot;PENALTY&quot;,
             &quot;rate&quot;: &quot;0.1575&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;additionalValue&quot;: &quot;Purchases interest rate for purchases not paid off in full by payment due date&quot;
         }
     ]
