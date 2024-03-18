@@ -1,12 +1,69 @@
 {
-    "errors": [
-        {
-            "code": "EBCS003",
-            "title": "Resource not found",
-            "detail": "Error while fetching the Products from the data holder; invalid client endpoint supplied",
-            "meta": {
-                "urn": "urn:au-cds:error:cds-all:Resource/NotFound"
+    "data": {
+        "productId": "superrate_account",
+        "effectiveTo": "2019-10-01T23:47:18Z",
+        "lastUpdated": "2022-07-25T03:59:22Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "Superrate Account",
+        "description": "Account used to manage ones' funds and save for future via Internet Banking or the mobile app.",
+        "brand": "Bank of Sydney",
+        "brandName": "Bank of Sydney",
+        "isTailored": false,
+        "additionalInformation": {
+            "termsUri": "https://www.banksyd.com.au/important-product-information",
+            "feesAndPricingUri": "https://www.banksyd.com.au/important-product-information"
+        },
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING"
             }
-        }
-    ]
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Not for sale"
+            }
+        ],
+        "fees": [
+            {
+                "feeType": "TRANSACTION",
+                "name": "Staff Assisted Transaction Fee",
+                "amount": "5.00",
+                "currency": "AUD"
+            }
+        ],
+        "depositRates": [
+            {
+                "rate": "0.0015",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "0 to 250000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 250000,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    },
+                    {
+                        "name": "250001 to 99999999999",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250001,
+                        "maximumValue": 99999999999,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "applicabilityConditions": {}
+                    }
+                ],
+                "depositRateType": "VARIABLE"
+            }
+        ]
+    },
+    "links": {
+        "self": "https://openbank.api.banksyd.com.au/cds-au/v1/banking/products/superrate_account"
+    }
 }

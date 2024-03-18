@@ -2,7 +2,7 @@
     "data": {
         "productId": "CR2",
         "effectiveFrom": "2020-10-01T00:49:00.000Z",
-        "lastUpdated": "2023-03-15T01:19:41.211Z",
+        "lastUpdated": "2024-03-18T00:43:12.255Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "HSBC Corporate or Purchasing Card",
         "description": "Corporate or Purchasing cards for corporate expenditure including T&E and  Procurement spend",
@@ -24,7 +24,7 @@
         "features": [
             {
                 "featureType": "CARD_ACCESS",
-                "additionalValue": "Physical plastic. Chip, contactless, e-commerce, Apple and Google Pay available.",
+                "additionalValue": "Physical, Chip, Contactless, Apple Wallet, Google Wallet",
                 "additionalInfoUri": "https://www.business.hsbc.com.au/en-au/solutions/corporate-card"
             },
             {
@@ -34,19 +34,12 @@
             },
             {
                 "featureType": "UNLIMITED_TXNS",
-                "additionalValue": "Unlimited transactions up to credit limit "
-            },
-            {
-                "featureType": "FREE_TXNS",
-                "additionalValue": "No per transaction charge for domestic purchases"
-            },
-            {
-                "featureType": "FREE_TXNS_ALLOWANCE",
-                "additionalValue": "No per transaction charge for domestic purchases"
+                "additionalValue": "N/A"
             },
             {
                 "featureType": "INSURANCE",
-                "additionalValue": "Complimentary travel & unauthorised transaction insurance "
+                "additionalValue": "Complimentary travel & unauthorised transaction insurance ",
+                "additionalInfoUri": "https://www.business.hsbc.com.au/en-au/form-downloads-and-interest-rates"
             },
             {
                 "featureType": "INTEREST_FREE",
@@ -68,7 +61,7 @@
         "eligibility": [
             {
                 "eligibilityType": "BUSINESS",
-                "additionalValue": "Corporate applicants only.",
+                "additionalValue": "N/A",
                 "additionalInfo": "Corporate applicants only. Company Liability."
             }
         ],
@@ -78,35 +71,49 @@
                 "feeType": "PERIODIC",
                 "amount": "40.00",
                 "currency": "AUD",
-                "additionalValue": "Annual fee per card"
+                "additionalValue": "A",
+                "additionalInfo": "Annual fee per card"
             },
             {
-                "name": "Cash advance interest",
-                "feeType": "EVENT",
-                "balanceRate": "0.1575",
-                "accrualFrequency": "P1D",
-                "currency": "AUD",
-                "additionalValue": "Cash advance interest rate"
-            },
-            {
-                "name": "Foreign transaction fee",
+                "name": "Overseas transaction fee",
                 "feeType": "PURCHASE",
                 "transactionRate": "0.03",
                 "currency": "AUD"
             },
             {
-                "name": "Overseas ATM cash advance fee",
+                "name": "Overseas cash advance fee",
                 "feeType": "WITHDRAWAL",
                 "amount": "4.50",
                 "currency": "AUD",
-                "additionalValue": "Overseas ATM cash advance fee"
+                "additionalValue": "Overseas cash advance and quasi cash fee"
             },
             {
-                "name": "Domestic ATM cash advance fee",
+                "name": "Domestic cash advance fee",
                 "feeType": "WITHDRAWAL",
                 "amount": "2.50",
                 "currency": "AUD",
-                "additionalValue": "Domestic ATM cash advance fee"
+                "additionalValue": "Domestic cash advance and quasi cash fee"
+            },
+            {
+                "name": "Late Payment Reminder Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "payable on or after the day an amount is due for payment and has not been paid"
+            },
+            {
+                "name": "Overlimit Arrangement Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "payable when your informal request for a Facility Limit increase is agreed"
+            },
+            {
+                "name": "Disputed Transaction Charge",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "Per item disputed where the resultant investigation confirms liability for the transaction is with the cardholder"
             }
         ],
         "lendingRates": [
@@ -114,12 +121,17 @@
                 "lendingRateType": "CASH_ADVANCE",
                 "rate": "0.1575",
                 "calculationFrequency": "P1D",
-                "additionalValue": "Interest rate applied to cash advances"
+                "applicationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "additionalValue": "N/A",
+                "additionalInfo": "Interest rate applied to cash advances"
             },
             {
                 "lendingRateType": "PENALTY",
                 "rate": "0.1575",
                 "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
                 "additionalValue": "Purchases interest rate for purchases not paid off in full by payment due date"
             }
         ]
