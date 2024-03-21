@@ -1,0 +1,206 @@
+{
+    "data": {
+        "productId": "103",
+        "effectiveFrom": "2001-07-02T14:30:00.0000000Z",
+        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "mySaver",
+        "description": "A savings account for the under 25s which rewards savers with bonus interest if at least $10 per month is deposited and no withdrawals are made.",
+        "brand": "Bank Australia",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.bankaust.com.au/banking/savings-accounts/mysaver/",
+            "termsUri": "https://www.bankaust.com.au/support/disclosures",
+            "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures"
+        },
+        "features": [
+            {
+                "featureType": "BILL_PAYMENT",
+                "additionalValue": "BPAY"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "You can self-serve your day-to-day banking needs via Bank Australia's App or Internet Banking.\r\n\r\n"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Account Notifications",
+                "additionalInfo": "Notifications can be enabled in the App or through Internet Banking, allowing you to be alerted either by email, sms or through the App about your account activity."
+            },
+            {
+                "featureType": "NPP_ENABLED"
+            },
+            {
+                "featureType": "NPP_PAYID",
+                "additionalInfo": "With PayID you can forget your BSB and account number - simply use your mobile, email or ABN to receive payments. This account can be linked to a PayID."
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from your transaction account into your nominatedSavings account or Credit Card. This account can receive Round Up credits."
+            },
+            {
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "24",
+                "additionalInfo": "Under 25 years of age"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "13",
+                "additionalInfo": "13+years"
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "Natural Person or In trust for a Natural Person"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Personal, joint and Trust."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "AU",
+                "additionalInfo": "Must be an Australian citizen, permanent resident or have a valid Visa."
+            }
+        ],
+        "fees": [
+            {
+                "name": "Exceeding available funds fee",
+                "feeType": "EVENT",
+                "amount": "10.00",
+                "currency": "AUD",
+                "additionalInfo": "A fee charged on accounts when your balance falls below zero or your negative balance exceeds any agreed overdraft limit. Additional interest is charged on overdrawn amounts."
+            },
+            {
+                "name": "Dishonour fee",
+                "feeType": "EVENT",
+                "amount": "12.00",
+                "currency": "AUD",
+                "additionalInfo": "When we dishonour a debit presented to us because there aren't enough available funds in your account"
+            },
+            {
+                "name": "Staff-assisted transaction fee",
+                "feeType": "WITHDRAWAL",
+                "amount": "2.50",
+                "currency": "AUD",
+                "additionalInfo": "This fee is charged for withdrawals from your account that are processed by a staff member in a branch.",
+                "discounts": [
+                    {
+                        "description": "We won't charge the fee if this criteria is met.",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "amount": "2.50",
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "We waive the staff-assisted fee if at the time the transaction is undertaken you hold a Premium Loan Package or if the account owner is a school or a not-for-profit entity."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "tiers": [
+                    {
+                        "name": "Base Variable Rate",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.01
+                    }
+                ],
+                "additionalInfo": "The standard variable rate applies if the bonus conditions are not met. If the bonus conditions are met then the bonus rate applies which is inclusive of the variable rate . The interest rate is calculated daily on whole of balance and credited monthly."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0495",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$0.01 to $50,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 50000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0445",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$1,000,000.01 and above",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000000.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0465",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$250,000.01 to $500,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "maximumValue": 500000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0475",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$50,000.01 to $250,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.01,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0455",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$500,000.01 to $1,000,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500000.01,
+                        "maximumValue": 1000000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month."
+            }
+        ]
+    },
+    "links": {
+        "self": "https://public.cdr-api.bankaust.com.au/cds-au/v1/banking/products/103"
+    },
+    "meta": {}
+}

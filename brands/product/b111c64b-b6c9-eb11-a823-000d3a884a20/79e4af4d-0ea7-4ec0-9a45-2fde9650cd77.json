@@ -2,7 +2,7 @@
     "data": {
         "productId": "79e4af4d-0ea7-4ec0-9a45-2fde9650cd77",
         "effectiveTo": "9999-12-31T00:00:00Z",
-        "lastUpdated": "2023-11-20T13:31:46.316Z",
+        "lastUpdated": "2024-03-20T22:36:01.002Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Bridging Loan",
         "description": "A short-term home loan to help you buy your new home, before you've sold your old one.",
@@ -54,7 +54,7 @@
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "20000",
+                "additionalValue": "20000.00",
                 "additionalInfo": "Minimum loan size is $20,000.00",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/borrowing-and-credit/home-loans/standard-variable-home-loan"
             }
@@ -171,6 +171,16 @@
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
+                "tiers": [
+                    {
+                        "name": "Bridging LVR",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0,
+                        "maximumValue": 80,
+                        "rateApplicationMethod": "WHOLE_BALANCE",
+                        "additionalInfo": "Maximum LVR is 80.00%"
+                    }
+                ],
                 "additionalValue": "Standard Variable Interest Only Rate",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/rates/home-loan-rates"
             }
