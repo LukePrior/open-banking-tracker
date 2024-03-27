@@ -1,187 +1,174 @@
 {
-    "links": {
-        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/b0e53612-1ba1-4f76-a5be-7ead098d6c39"
-    },
     "data": {
+        "effectiveFrom": "2023-11-16T13:31:00.000Z",
+        "lastUpdated": "2024-03-26T05:30:22.392Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
+        "name": "Bendigo Bridging Home Loan",
+        "description": "A Bridging home loan offers you an easy way to purchase a new home before you sell your existing home. \n\n",
+        "productId": "b0e53612-1ba1-4f76-a5be-7ead098d6c39",
         "brandName": "Bendigo Bank",
         "applicationUri": "https://apply.bendigobank.com.au/bendigoapply/servlet/SmartForm.html?formCode=home-loan-pq",
         "isTailored": false,
         "bundles": [],
-        "description": "A Bridging home loan offers you an easy way to purchase a new home before you sell your existing home. \n\n",
-        "name": "Bendigo Bridging Home Loan",
-        "additionalInformation": {
-            "feesAndPricingUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/lending-fees-and-charges.pdf",
-            "overviewUri": "https://www.bendigobank.com.au/globalassets/documents/personal/homeloans/bridging-finance-fact-sheet.pdf",
-            "termsUri": "https://www.bendigobank.com.au/globalassets/documents/disclosures/home-loan-booklet.pdf"
-        },
-        "brand": "BENDIGO",
         "cardArt": [],
+        "features": [
+            {
+                "featureType": "OFFSET",
+                "additionalInfo": " 100% Offset Account per loan"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Unlimited additional repayments if variable"
+            }
+        ],
         "constraints": [
             {
                 "constraintType": "OPENING_BALANCE",
-                "additionalValue": "5000"
+                "additionalValue": "5000.00"
             },
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "1"
+                "additionalValue": "1.00"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "eligibilityType": "OTHER",
+                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply"
             }
         ],
         "fees": [
             {
-                "amount": "10.000000",
-                "currency": "AUD",
                 "name": "Monthly Fee",
                 "feeType": "PERIODIC",
+                "amount": "10.000000",
+                "currency": "AUD",
                 "additionalValue": "every month",
                 "discounts": []
             },
             {
-                "amount": "350.000000",
-                "currency": "AUD",
                 "name": "Discharge Administration Fee",
                 "feeType": "EXIT",
+                "amount": "350.000000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
                 "amount": "784.000000",
                 "currency": "AUD",
-                "name": "Establishment Fee",
                 "additionalInfo": "Incorporates all standard upfront fees into this amount (That is, Application Fee $150, Standard Documentation Fee $250, Settlement Fee $100, Title Search Fee $50, Standard Valuation Fee $234)",
-                "feeType": "UPFRONT",
                 "discounts": []
             },
             {
-                "amount": "150.000000",
-                "currency": "AUD",
                 "name": "Variation Fee - Simple",
                 "feeType": "EVENT",
-                "discounts": []
-            },
-            {
-                "amount": "300.000000",
-                "currency": "AUD",
-                "name": "Variation Fee - Complex",
-                "feeType": "EVENT",
-                "discounts": []
-            },
-            {
                 "amount": "150.000000",
                 "currency": "AUD",
-                "name": "Switch Loan Type Fee",
-                "additionalInfo": "Fee is either $150 or $300 depending on whether the switch loan involves substituting one security for another.",
-                "feeType": "VARIABLE",
                 "discounts": []
             },
             {
-                "amount": "100.000000",
+                "name": "Variation Fee - Complex",
+                "feeType": "EVENT",
+                "amount": "300.000000",
                 "currency": "AUD",
+                "discounts": []
+            },
+            {
                 "name": "Building Loan Fee - Contract Builder",
                 "feeType": "UPFRONT",
-                "discounts": []
-            },
-            {
-                "amount": "200.000000",
-                "currency": "AUD",
-                "name": "Building Loan Fee - Owner Builder",
-                "feeType": "UPFRONT",
-                "discounts": []
-            },
-            {
-                "amount": "250.000000",
-                "currency": "AUD",
-                "name": "Guarantee Administration Fee",
-                "feeType": "UPFRONT",
-                "discounts": []
-            },
-            {
                 "amount": "100.000000",
                 "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Building Loan Fee - Owner Builder",
+                "feeType": "UPFRONT",
+                "amount": "200.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
+                "name": "Guarantee Administration Fee",
+                "feeType": "UPFRONT",
+                "amount": "250.000000",
+                "currency": "AUD",
+                "discounts": []
+            },
+            {
                 "name": "Rate Variation Fee (to renegotiate Rate)",
                 "feeType": "EVENT",
+                "amount": "100.000000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
-                "amount": "50.000000",
-                "currency": "AUD",
                 "name": "Repayment Recalculation Fee",
                 "feeType": "EVENT",
+                "amount": "50.000000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
-                "amount": "85.000000",
-                "currency": "AUD",
                 "name": "Interest Prepayment Fee",
                 "feeType": "PAYMENT",
+                "amount": "85.000000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
-                "amount": "35.000000",
-                "currency": "AUD",
                 "name": "Default Fee",
                 "feeType": "EVENT",
+                "amount": "35.000000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
-                "amount": "16.500000",
-                "currency": "AUD",
                 "name": "Duplicate Fee",
                 "feeType": "EVENT",
+                "amount": "16.500000",
+                "currency": "AUD",
                 "discounts": []
             },
             {
-                "amount": "10.000000",
-                "currency": "AUD",
                 "name": "Bank Cheque Fee",
                 "feeType": "EVENT",
+                "amount": "10.000000",
+                "currency": "AUD",
                 "discounts": []
-            }
-        ],
-        "productId": "b0e53612-1ba1-4f76-a5be-7ead098d6c39",
-        "features": [
-            {
-                "additionalInfo": " 100% Offset Account per loan",
-                "featureType": "OFFSET"
-            },
-            {
-                "additionalInfo": "Unlimited additional repayments if variable",
-                "featureType": "OTHER"
             }
         ],
         "depositRates": [],
         "lendingRates": [
             {
+                "lendingRateType": "VARIABLE",
                 "rate": "0.1024000000000000",
-                "tiers": [],
+                "comparisonRate": "0.1089000000000000",
                 "calculationFrequency": "P1D",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "interestPaymentDue": "IN_ARREARS",
-                "lendingRateType": "VARIABLE",
-                "repaymentType": "INTEREST_ONLY",
-                "comparisonRate": "0.1089000000000000"
+                "tiers": []
             },
             {
+                "lendingRateType": "VARIABLE",
                 "rate": "0.1024000000000000",
-                "tiers": [],
+                "comparisonRate": "0.1089000000000000",
                 "calculationFrequency": "P1D",
-                "loanPurpose": "INVESTMENT",
                 "interestPaymentDue": "IN_ARREARS",
-                "lendingRateType": "VARIABLE",
                 "repaymentType": "INTEREST_ONLY",
-                "comparisonRate": "0.1089000000000000"
+                "loanPurpose": "INVESTMENT",
+                "tiers": []
             }
         ],
-        "effectiveFrom": "2023-11-16T13:31:00.000Z",
-        "eligibility": [
-            {
-                "additionalValue": "18",
-                "eligibilityType": "MIN_AGE"
-            },
-            {
-                "additionalInfo": "Credit and Lending Criteria, Fees and Charges Apply",
-                "eligibilityType": "OTHER"
-            }
-        ],
-        "lastUpdated": "2023-11-16T13:31:24.881Z"
+        "brand": "BENDIGO"
+    },
+    "links": {
+        "self": "https://api.cdr.bendigobank.com.au/cds-au/v1/banking/products/b0e53612-1ba1-4f76-a5be-7ead098d6c39"
     }
 }
