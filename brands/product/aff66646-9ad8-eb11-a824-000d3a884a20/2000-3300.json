@@ -3,7 +3,7 @@
         "productId": "2000-3300",
         "effectiveFrom": "2022-07-09T21:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2023-11-06T14:00:00.00000Z",
+        "lastUpdated": "2024-03-27T14:01:00.00000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Advantage Saver",
         "description": "Receive a stepped bonus rate if the balance of the Advantage Saver account increases by $250 by the end of each calendar month",
@@ -27,7 +27,7 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "You must be an Australian citizen or permanent resident to hold an account with Great Southern Bank",
+                "additionalValue": "You must be an Australian citizen or Australian resident to hold an account with Great Southern Bank",
                 "additionalInfoUri": "https://www.greatsouthernbank.com.au/gitc"
             }
         ],
@@ -86,6 +86,22 @@
         "depositRates": [
             {
                 "depositRateType": "BONUS",
+                "rate": "0.0475",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Advantage Saver bonus interest balances under $100,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 99999.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalValue": "Rate applies on a stepped basis. Bonus interest is applied on top of the base rate if the balance of the Advantage Saver account increases by $250 by the end of each calendar month (excluding interest payments, withholding tax and fees)."
+            },
+            {
+                "depositRateType": "BONUS",
                 "rate": "0.039",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -99,6 +115,13 @@
                     }
                 ],
                 "additionalValue": "Rate applies on a stepped basis. Bonus interest is applied on top of the base rate if the balance of the Advantage Saver account increases by $250 by the end of each calendar month (excluding interest payments, withholding tax and fees)."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Interest is calculated daily on whole balances and paid monthly. The base rate of interest is payable on the whole balance held in your account."
             },
             {
                 "depositRateType": "BONUS",
@@ -115,29 +138,6 @@
                     }
                 ],
                 "additionalValue": "Rate applies on a stepped basis. Bonus interest is applied on top of the base rate if the balance of the Advantage Saver account increases by $250 by the end of each calendar month (excluding interest payments, withholding tax and fees)."
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.0475",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Advantage Saver bonus interest balances under $100,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
-                        "maximumValue": 99999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ],
-                "additionalValue": "Rate applies on a stepped basis. Bonus interest is applied on top of the base rate if the balance of the Advantage Saver account increases by $250 by the end of each calendar month (excluding interest payments, withholding tax and fees)."
-            },
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "additionalInfo": "Interest is calculated daily on whole balances and paid monthly. The base rate of interest is payable on the whole balance held in your account."
             }
         ]
     },

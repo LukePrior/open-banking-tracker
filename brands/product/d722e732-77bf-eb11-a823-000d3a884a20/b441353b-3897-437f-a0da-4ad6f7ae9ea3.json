@@ -116,14 +116,14 @@
         ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_GREATER_THAN_$250000",
-                "accrualFrequency": "P1M",
+                "feeType": "UPFRONT",
+                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_GREATER_THAN_$250000",
+                "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "50.00",
+                "amount": "1000.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -193,14 +193,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_GREATER_THAN_$250000",
-                "accrualFrequency": null,
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_GREATER_THAN_$250000",
+                "accrualFrequency": "P1M",
                 "accruedRate": null,
-                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "1000.00",
+                "amount": "50.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -221,42 +221,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "UPFRONT",
-                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_$20000_TO_$100000",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "600.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "UPFRONT",
-                "name": "ESTABLISHMENT_FEE_COMMERCIAL_OVERDRAFT_TOPUP",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "400.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "TRANSACTION",
-                "name": "EFTPOS_INCLUDING_DECLINED_TRANSACTIONS",
+                "name": "BPAY_BRANCH",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "0.70",
+                "amount": "3.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
@@ -284,14 +256,49 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$5001_TO_$100000",
+                "feeType": "TRANSACTION",
+                "name": "CHEQUE_DEPOSITS",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "20.00",
+                "amount": "0.30",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "Transaction Fee Rebate",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": null,
+                        "additionalValue": null,
+                        "amount": "15.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.",
+                                "additionalInfoUri": null,
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "UPFRONT",
+                "name": "ESTABLISHMENT_FEE_COMMERCIAL_OVERDRAFT_TOPUP",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "400.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -347,41 +354,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "BPAY_BRANCH",
-                "accrualFrequency": "P1M",
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": null,
-                "additionalValue": null,
-                "amount": "3.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "Transaction Fee Rebate",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": null,
-                        "additionalValue": null,
-                        "amount": "15.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "For members who old at least 2000 Capricornian Investment Shares for the entire month are entitled to a transaction fee rebate of up to $15 per month. The rebate only applies to accounts conducted under the membership as the investment.",
-                                "additionalInfoUri": null,
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
                 "feeType": "UPFRONT",
                 "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_$100001_TO_$250000",
                 "accrualFrequency": null,
@@ -396,14 +368,28 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "CHEQUE_DEPOSITS",
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
                 "accrualFrequency": "P1M",
                 "accruedRate": null,
                 "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "0.30",
+                "amount": "5.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "TRANSACTION",
+                "name": "EFTPOS_INCLUDING_DECLINED_TRANSACTIONS",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "0.70",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [
@@ -428,6 +414,20 @@
                         "transactionRate": null
                     }
                 ],
+                "transactionRate": null
+            },
+            {
+                "feeType": "PERIODIC",
+                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_$5001_TO_$100000",
+                "accrualFrequency": "P1M",
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": null,
+                "additionalValue": null,
+                "amount": "20.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
                 "transactionRate": null
             },
             {
@@ -466,14 +466,14 @@
                 "transactionRate": null
             },
             {
-                "feeType": "PERIODIC",
-                "name": "COMMERCIAL_LOAN_AND_OVERDRAFT_SERVICE_FEE_UNDER_$5000",
-                "accrualFrequency": "P1M",
+                "feeType": "UPFRONT",
+                "name": "ESTABLISHMENT_FEE_COMMERCIAL_LOANS_AND_OVERDRAFTS_$20000_TO_$100000",
+                "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "",
+                "additionalInfo": "Excludes solicitors costs in mortgage and security preparation, valuation/s and settlement fees.",
                 "additionalInfoUri": null,
                 "additionalValue": null,
-                "amount": "5.00",
+                "amount": "600.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],

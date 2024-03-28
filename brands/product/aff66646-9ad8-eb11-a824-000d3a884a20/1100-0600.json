@@ -3,7 +3,7 @@
         "productId": "1100-0600",
         "effectiveFrom": "2019-12-31T14:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2024-03-07T12:00:00.00000Z",
+        "lastUpdated": "2024-03-26T12:00:00.00000Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Platinum Plus Term Deposit 13-60 Months",
         "description": "Term Deposit (for customers aged 55 or over) between 13-60 months with interest paid annually.",
@@ -26,12 +26,12 @@
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Resident"
+                "additionalValue": "You must be an Australian citizen or Australian resident to hold an account with Great Southern Bank"
             }
         ],
         "constraints": [
             {
-                "constraintType": "MIN_LIMIT",
+                "constraintType": "MIN_BALANCE",
                 "additionalValue": "5000.00",
                 "additionalInfo": "Minimum Investment $5,000"
             }
@@ -51,6 +51,22 @@
             }
         ],
         "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.024",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term Deposit Fifteen Month",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 15.0,
+                        "maximumValue": 16.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P1Y"
+            },
             {
                 "depositRateType": "FIXED",
                 "rate": "0.039",
@@ -74,10 +90,10 @@
                 "applicationFrequency": "P1Y",
                 "tiers": [
                     {
-                        "name": "Term Deposit Fifteen Month",
+                        "name": "Term Deposit Fourteen Month",
                         "unitOfMeasure": "MONTH",
-                        "minimumValue": 15.0,
-                        "maximumValue": 16.0,
+                        "minimumValue": 14.0,
+                        "maximumValue": 15.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -106,10 +122,10 @@
                 "applicationFrequency": "P1Y",
                 "tiers": [
                     {
-                        "name": "Term Deposit Fourteen Month",
+                        "name": "Term Deposit Thirteen Month",
                         "unitOfMeasure": "MONTH",
-                        "minimumValue": 14.0,
-                        "maximumValue": 15.0,
+                        "minimumValue": 13.0,
+                        "maximumValue": 14.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -126,22 +142,6 @@
                         "unitOfMeasure": "MONTH",
                         "minimumValue": 24.0,
                         "maximumValue": 36.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.024",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1Y",
-                "tiers": [
-                    {
-                        "name": "Term Deposit Thirteen Month",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 13.0,
-                        "maximumValue": 14.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -261,22 +261,6 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.039",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1Y",
-                "tiers": [
-                    {
-                        "name": "Term Deposit Five Year",
-                        "unitOfMeasure": "MONTH",
-                        "minimumValue": 60.0,
-                        "maximumValue": 60.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P1Y"
-            },
-            {
-                "depositRateType": "FIXED",
                 "rate": "0.024",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1Y",
@@ -286,6 +270,22 @@
                         "unitOfMeasure": "MONTH",
                         "minimumValue": 16.0,
                         "maximumValue": 17.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P1Y"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "Term Deposit Five Year",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 60.0,
+                        "maximumValue": 60.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],

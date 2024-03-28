@@ -79,6 +79,22 @@
         ],
         "fees": [
             {
+                "name": "Settlement Fee",
+                "feeType": "UPFRONT",
+                "amount": "350.00",
+                "currency": "AUD",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/lending_fees_charges.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Establishment Fee",
+                "feeType": "UPFRONT",
+                "amount": "450.00",
+                "currency": "AUD",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/lending_fees_charges.pdf",
+                "discounts": []
+            },
+            {
                 "name": "Additional Valuation Fee",
                 "feeType": "EVENT",
                 "amount": "200.00",
@@ -203,22 +219,6 @@
                 "additionalInfo": "Payable upon a request to produce the certificate of title.",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/lending_fees_charges.pdf",
                 "discounts": []
-            },
-            {
-                "name": "Settlement Fee",
-                "feeType": "UPFRONT",
-                "amount": "350.00",
-                "currency": "AUD",
-                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/lending_fees_charges.pdf",
-                "discounts": []
-            },
-            {
-                "name": "Establishment Fee",
-                "feeType": "UPFRONT",
-                "amount": "450.00",
-                "currency": "AUD",
-                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/lending_fees_charges.pdf",
-                "discounts": []
             }
         ],
         "depositRates": [],
@@ -236,8 +236,8 @@
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": "0.00001",
-                        "maximumValue": "0.7",
+                        "minimumValue": 1e-05,
+                        "maximumValue": 0.7,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
@@ -259,8 +259,8 @@
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": "0.70001",
-                        "maximumValue": "0.8",
+                        "minimumValue": 0.70001,
+                        "maximumValue": 0.8,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
@@ -282,8 +282,8 @@
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": "0.80001",
-                        "maximumValue": "0.9",
+                        "minimumValue": 0.80001,
+                        "maximumValue": 0.9,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     }
@@ -305,16 +305,16 @@
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": "0.00001",
-                        "maximumValue": "0.7",
+                        "minimumValue": 1e-05,
+                        "maximumValue": 0.7,
                         "rateApplicationMethod": "WHOLE_BALANCE",
                         "applicabilityConditions": {}
                     },
                     {
                         "name": "LVR",
                         "unitOfMeasure": "PERCENT",
-                        "minimumValue": "0.70001",
-                        "maximumValue": "0.8",
+                        "minimumValue": 0.70001,
+                        "maximumValue": 0.8,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
