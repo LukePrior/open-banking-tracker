@@ -1,10 +1,11 @@
 {
     "data": {
-        "productId": "26712a67-cfc0-4a66-a63a-e1b80cfbc735",
-        "lastUpdated": "2024-03-01T04:41:25.000+11:00",
+        "productId": "10be43c3-9144-40ab-bdbc-261f02d0697b",
+        "effectiveFrom": "2021-07-02T00:00:00.000+10:00",
+        "lastUpdated": "2024-03-28T13:34:35.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
-        "name": "Target Saver account",
-        "description": "The Target Saver account rewards savings with an ongoing bonus interest rate when you deposit a minimum of $1000 and make no withdrawals during the month.",
+        "name": "Saver Account",
+        "description": "An interest bearing online savings account",
         "brand": "HVR",
         "brandName": "Hiver Bank",
         "applicationUri": "www.hiver.bank/products/saver-account",
@@ -27,8 +28,7 @@
                 "additionalInfoUri": "www.hiver.bank/products/saver-account"
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalInfo": " ."
+                "featureType": "DIGITAL_BANKING"
             },
             {
                 "featureType": "NPP_PAYID",
@@ -60,8 +60,7 @@
             },
             {
                 "featureType": "NOTIFICATIONS",
-                "additionalValue": "Push notifications via Hiver mobile application",
-                "additionalInfo": " ."
+                "additionalValue": "Push notifications via Hiver mobile application"
             },
             {
                 "featureType": "OTHER",
@@ -89,23 +88,36 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": " ."
+                "additionalInfo": "EFT"
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "EFT"
+                "additionalInfo": "Available"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "0.00"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "0.00"
+            },
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "0.00"
             }
         ],
         "eligibility": [
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "Membership is open to citizens or permanent residents of Australia who are current or retired employees or volunteers in the Australian emergency services sector or are family members of members (i.e. shareholders) of the Bank.",
+                "additionalInfo": "You must be a member. Membership is open to citizens of Australia over age of 18 and are current or retired employees or volunteers in Education, Health Care or Emergency Services sectors or are family members of members (i.e. shareholders) of the Bank",
                 "additionalInfoUri": "www.hiver.bank/about/who-can-join"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Individuals must be citizens of Australia.",
-                "additionalInfo": " ."
+                "additionalValue": "Individuals must be citizens of Australia."
             }
         ],
         "fees": [
@@ -123,15 +135,28 @@
                 "additionalInfo": "Interest will be charged on the amount overdrawn, calculated for each day that the account is overdrawn and debited at the end of the month"
             },
             {
-                "name": "TELE_TRANSFER_FEE",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
+                "name": "TELE_TRANSFER_PROCESSING_FEE",
+                "feeType": "VARIABLE",
                 "currency": "AUD",
-                "additionalInfo": "Transfers within Australia to an account at another financial institution. Fees may also be applied by receiving institutions and these charges may be deducted from amount being transferred.  At cost per receiving bank."
+                "additionalInfo": "At Cost - Cuscal fee for processing payments and receipts of real time irrevocable cleared funds."
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.004",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0185",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M"
             }
         ]
     },
     "links": {
-        "self": "https://ob.tmbl.com.au/hiver/cds-au/v1/banking/products/26712a67-cfc0-4a66-a63a-e1b80cfbc735"
+        "self": "https://ob.tmbl.com.au/hiver/cds-au/v1/banking/products/10be43c3-9144-40ab-bdbc-261f02d0697b"
     }
 }
