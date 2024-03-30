@@ -1,9 +1,115 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "REDRAW",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Additional Repayments allowed",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "10000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "80000.00",
+                "additionalInfo": "Higher loan amounts may be accepted subject to approval",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Must be an Australian citizen or permanent resident",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "PERSONAL_LOAN_ESTABLISHMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "200.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PERSONAL_LOAN_ADMINISTRATION_FEE",
+                "feeType": "PERIODIC",
+                "amount": "5.00",
+                "accrualFrequency": "P1M",
+                "currency": "AUD",
+                "additionalValue": "P5M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "name": "PERSONAL_PROPERTY_SECURITY_REGISTER_FEE",
+                "feeType": "UPFRONT",
+                "amount": "20.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0699",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "Rates starting from 6.99%p.a for vehicles up to 2 years old, 8.95%p.a up to 5 years & 10.7%p.a up to 10 years old",
+                "additionalInfoUri": "https://www.macquariecu.com.au/ratesfees-loan-interest-rates.html",
+                "comparisonRate": "0.0765"
+            }
+        ],
+        "productId": "L30_SECURED_CAR_LOANS",
+        "lastUpdated": "2024-02-26T11:56:13.000+11:00",
+        "productCategory": "PERS_LOANS",
+        "name": "SECURED CAR LOANS",
+        "description": "SECURED CAR LOANS",
+        "brand": "MACQUARIE CREDIT UNION LIMITED",
+        "brandName": "MACQUARIE CREDIT UNION LIMITED",
+        "applicationUri": "https://www.macquariecu.com.au/loans-car-loans.html",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.macquariecu.com.au/loans-car-loans.html",
+            "termsUri": "https://www.macquariecu.com.au/about-us-disclosure-statements.html",
+            "eligibilityUri": "https://www.macquariecu.com.au/about-us-disclosure-statements.html",
+            "feesAndPricingUri": "https://www.macquariecu.com.au/ratesfees-fees-and-charges.html",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://banking.macquariecu.com.au/OpenBanking/cds-au/v1/banking/products/L30_SECURED_CAR_LOANS"
+    },
+    "meta": {}
 }
