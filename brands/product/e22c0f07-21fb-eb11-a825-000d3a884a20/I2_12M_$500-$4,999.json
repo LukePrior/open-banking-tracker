@@ -1,9 +1,72 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Internet Banking and WCU Connect App - Deposits and balance enquires only",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "OPENING_BALANCE",
+                "additionalValue": "500.00",
+                "additionalInfo": "Minimum Balance $500",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "4999.00",
+                "additionalInfo": "Maximum Balance $4,999",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0275",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "FIXED TERM DEPOSITS_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 500.0,
+                        "maximumValue": 4999.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "FIXED TERM DEPOSITS_Tier",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 12.0,
+                        "maximumValue": 12.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M",
+                "additionalInfo": "Applies on early redemption of TD",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "I2_12M_$500-$4,999",
+        "lastUpdated": "2024-02-26T08:58:52.000+10:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "FIXED TERM DEPOSITS",
+        "description": "FIXED TERM DEPOSITS",
+        "brand": "WARWICK CREDIT UNION",
+        "brandName": "WARWICK CREDIT UNION",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "",
+            "termsUri": "",
+            "eligibilityUri": "",
+            "feesAndPricingUri": "",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://openbanking.wcu.com.au/OpenBanking/cds-au/v1/banking/products/I2_12M_$500-$4,999"
+    },
+    "meta": {}
 }

@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "501d1af4-4a3a-4b5f-a90f-c5a0933fb4a5",
-        "lastUpdated": "2023-10-11T17:41:46.000+11:00",
+        "lastUpdated": "2024-03-31T00:01:29.000+11:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Mighty Saver account",
         "description": "Mighty Saver Account is a high interest savings account for Under 18 year olds that rewards savings.",
@@ -60,9 +60,9 @@
             {
                 "name": "ACCOUNT_FUNCTIONS",
                 "feeType": "EVENT",
-                "amount": "50.00",
+                "amount": "2.50",
                 "currency": "AUD",
-                "additionalInfo": "$50 per hour (minimum charge $25). Additional accounting services on your account at your request."
+                "additionalInfo": "$2.50 for each increment up to 3 minutes. Payable at the time the service is provided."
             },
             {
                 "name": "PAPER_STATEMENT_FEE",
@@ -90,16 +90,34 @@
         "depositRates": [
             {
                 "depositRateType": "VARIABLE",
-                "rate": "0.001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.011",
+                "rate": "0.05",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "additionalValue": "Bonus interest earned for each month you deposit a minimum of $10, make no withdrawals during the month and the account has a credit balance at all times during that month."
+                "tiers": [
+                    {
+                        "name": "Mighty Saver account_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0,
+                        "maximumValue": 20000,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.03",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Mighty Saver account_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
             }
         ]
     },
