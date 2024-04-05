@@ -2,7 +2,7 @@
     "data": {
         "productId": "ef54bfdb-5db3-4ce7-b678-25492785377a",
         "effectiveTo": "9999-12-31T00:00:00Z",
-        "lastUpdated": "2023-08-29T00:06:59.322Z",
+        "lastUpdated": "2024-04-04T06:06:18.903Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Visa Credit Card (Low Rate)",
         "description": "The People's Choice Credit Union Visa Credit card offers you the flexibility of more interest free days than most other cards. You can use it for anything from day to day purchases to paying bills or even withdrawing cash.",
@@ -87,14 +87,15 @@
         "constraints": [
             {
                 "constraintType": "MIN_LIMIT",
-                "additionalValue": "1,000.00",
+                "additionalValue": "1000.00",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/borrowing-and-credit/low-rate-credit-card"
             }
         ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalValue": "18 years and over",
+                "additionalValue": "18",
+                "additionalInfo": "18 years and over",
                 "additionalInfoUri": "https://www.peopleschoice.com.au/borrowing-and-credit/borrowing-for-a-life-event/buying-a-home/the-home-loan-requirements-you-need-to-apply"
             },
             {
@@ -226,7 +227,15 @@
                 "additionalInfoUri": "https://www.peopleschoice.com.au/rates/credit-card-rates"
             },
             {
-                "lendingRateType": "VARIABLE",
+                "lendingRateType": "PURCHASE",
+                "rate": "0.1295",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "The applicable variable interest rate will be determined by the information you provide and the assessment of your application. The interest rate will be confirmed in your loan contract.",
+                "additionalInfoUri": "https://www.peopleschoice.com.au/rates/credit-card-rates"
+            },
+            {
+                "lendingRateType": "CASH_ADVANCE",
                 "rate": "0.1295",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",

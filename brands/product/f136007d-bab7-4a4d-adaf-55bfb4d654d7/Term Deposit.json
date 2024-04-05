@@ -2,7 +2,7 @@
     "data": {
         "productId": "Term Deposit",
         "effectiveFrom": "2023-01-20T07:00:00+00:00",
-        "lastUpdated": "2023-09-21T00:01:27+00:00",
+        "lastUpdated": "2024-04-04T04:08:32+00:00",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Deposit",
         "description": "Term Deposit",
@@ -14,6 +14,12 @@
         },
         "features": [
             {
+                "featureType": "OTHER",
+                "additionalValue": "Contributes to Reduced Fees Program",
+                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates.",
+                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
+            },
+            {
                 "featureType": "DIGITAL_BANKING",
                 "additionalValue": "Internet Banking",
                 "additionalInfo": "You can check your account details using our Redidial Telephone Banking service or online with Internet Banking \u2013 both services are free.",
@@ -23,12 +29,6 @@
                 "featureType": "OTHER",
                 "additionalValue": "Resist temptation to dip into funds by locking funds away",
                 "additionalInfoUri": "https://www.policebank.com.au/investments/term-deposits/"
-            },
-            {
-                "featureType": "OTHER",
-                "additionalValue": "Contributes to Reduced Fees Program",
-                "additionalInfo": "Simply maintain a combined monthly balance of $5000 or more worth of savings, investments or loans and you will receive more fee free ATM and EFTPOS transactions as well as qualify for fee rebates.",
-                "additionalInfoUri": "https://www.policebank.com.au/pdf/Schedule_of_fees_and_charges.pdf"
             },
             {
                 "featureType": "OTHER",
@@ -62,38 +62,20 @@
         "depositRates": [
             {
                 "depositRateType": "FIXED",
-                "rate": "0.035",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P3M",
-                "tiers": [
-                    {
-                        "name": "I1",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000,
-                        "maximumValue": 10000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P3M",
-                "additionalInfo": "Balance $1,000 to $9,999 - I1 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.0405",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "I31",
+                        "name": "I32",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000,
                         "maximumValue": 500000,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P36M",
-                "additionalInfo": "Balance $10,000 or more - I31 Interest Paid Every 6 Months",
+                "additionalValue": "P48M",
+                "additionalInfo": "Balance $10,000 or more - I32 Interest Paid Every 6 Months",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
@@ -116,20 +98,74 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0475",
+                "rate": "0.04",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P12M",
+                "applicationFrequency": "P6M",
                 "tiers": [
                     {
-                        "name": "I12",
+                        "name": "I31",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000,
                         "maximumValue": 500000,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P12M",
-                "additionalInfo": "Balance $10,000-$500,000 - I12 Interest Paid at Maturity",
+                "additionalValue": "P36M",
+                "additionalInfo": "Balance $10,000 or more - I31 Interest Paid Every 6 Months",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0345",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 10000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P3M",
+                "additionalInfo": "Balance $1,000 to $9,999 - I2 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0395",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I10 6M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P6M",
+                "additionalInfo": "Balance $10,000 or more - I10 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.014",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P2M",
+                "tiers": [
+                    {
+                        "name": "I60",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 20000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P2M",
+                "additionalInfo": "Balance $20,000 or more - I60 Interest Paid at Maturity",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
@@ -152,6 +188,42 @@
             },
             {
                 "depositRateType": "FIXED",
+                "rate": "0.0405",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I55",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P60M",
+                "additionalInfo": "Balance $10,000 or more - I55 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I54",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P48M",
+                "additionalInfo": "Balance $10,000 or more - I54 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
                 "rate": "0.037",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
@@ -170,12 +242,30 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0395",
+                "rate": "0.03",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "applicationFrequency": "P5M",
                 "tiers": [
                     {
-                        "name": "I10 6M",
+                        "name": "I5 5M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P5M",
+                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P6M",
+                "tiers": [
+                    {
+                        "name": "I25",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000,
                         "maximumValue": 500000,
@@ -183,7 +273,97 @@
                     }
                 ],
                 "additionalValue": "P6M",
-                "additionalInfo": "Balance $10,000 or more - I10 Interest Paid Every Month",
+                "additionalInfo": "Balance $10,000 or more - I25 Interest Paid at Maturity",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0395",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I52",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "Balance $10,000-$500,000 - I52 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.035",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "I1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 10000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P3M",
+                "additionalInfo": "Balance $1,000 to $9,999 - I1 Interest Paid at Maturity",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0475",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P12M",
+                "tiers": [
+                    {
+                        "name": "I12",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P12M",
+                "additionalInfo": "Balance $10,000-$500,000 - I12 Interest Paid at Maturity",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0345",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "I3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P3M",
+                "additionalInfo": "Balance $10,000 or more - I3 Interest Paid Every Month",
+                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0375",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P4M",
+                "tiers": [
+                    {
+                        "name": "I5 4M",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 10000,
+                        "maximumValue": 500000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P4M",
+                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
@@ -224,60 +404,6 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0345",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "I2",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000,
-                        "maximumValue": 10000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P3M",
-                "additionalInfo": "Balance $1,000 to $9,999 - I2 Interest Paid Every Month",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0375",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P9M",
-                "tiers": [
-                    {
-                        "name": "I5 9M",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P9M",
-                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.014",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P2M",
-                "tiers": [
-                    {
-                        "name": "I60",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 20000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P2M",
-                "additionalInfo": "Balance $20,000 or more - I60 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
                 "rate": "0.04",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
@@ -292,96 +418,6 @@
                 ],
                 "additionalValue": "P24M",
                 "additionalInfo": "Balance $10,000 or more - I29 Interest Paid Every 6 months",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.035",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P3M",
-                "tiers": [
-                    {
-                        "name": "I5 3M",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P3M",
-                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.04",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "I25",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P6M",
-                "additionalInfo": "Balance $10,000 or more - I25 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P6M",
-                "tiers": [
-                    {
-                        "name": "I32",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P48M",
-                "additionalInfo": "Balance $10,000 or more - I32 Interest Paid Every 6 Months",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.03",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P5M",
-                "tiers": [
-                    {
-                        "name": "I5 5M",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P5M",
-                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0395",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "I52",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P24M",
-                "additionalInfo": "Balance $10,000-$500,000 - I52 Interest Paid Every Month",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
@@ -404,12 +440,12 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.0345",
+                "rate": "0.035",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "applicationFrequency": "P3M",
                 "tiers": [
                     {
-                        "name": "I3",
+                        "name": "I5 3M",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000,
                         "maximumValue": 500000,
@@ -417,60 +453,24 @@
                     }
                 ],
                 "additionalValue": "P3M",
-                "additionalInfo": "Balance $10,000 or more - I3 Interest Paid Every Month",
+                "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.04",
+                "rate": "0.0375",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
+                "applicationFrequency": "P9M",
                 "tiers": [
                     {
-                        "name": "I54",
+                        "name": "I5 9M",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 10000,
                         "maximumValue": 500000,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
-                "additionalValue": "P48M",
-                "additionalInfo": "Balance $10,000 or more - I54 Interest Paid Every Month",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.0405",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "I55",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P60M",
-                "additionalInfo": "Balance $10,000 or more - I55 Interest Paid Every Month",
-                "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
-            },
-            {
-                "depositRateType": "FIXED",
-                "rate": "0.035",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P4M",
-                "tiers": [
-                    {
-                        "name": "I5 4M",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 10000,
-                        "maximumValue": 500000,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "P4M",
+                "additionalValue": "P9M",
                 "additionalInfo": "Balance $10,000 or more - I5 Interest Paid at Maturity",
                 "additionalInfoUri": "https://www.policebank.com.au/interest-rates/#"
             }
