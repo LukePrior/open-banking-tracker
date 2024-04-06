@@ -1,9 +1,150 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Sorry, an unexpected error has occurred."
+    "data": {
+        "features": [
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalInfo": "Secure banking 24/7 from your computer or mobile with Online Banking",
+                "additionalInfoUri": "https://nicu.com.au/help-support/online-banking"
+            },
+            {
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "Send and receive real-time payments via Osko from your Online Banking and NICU smartPay App",
+                "additionalInfoUri": "https://www.nicu.com.au/help-support/osko-fast-payments"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "25000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "AU",
+                "additionalInfo": "Individuals must be citizens or permanent residents of Australia.",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "MAX_AGE",
+                "additionalValue": "12",
+                "additionalInfo": "For children up to 12 years old. A parent or legal guardian will need to open the account in the childs name",
+                "additionalInfoUri": ""
+            }
+        ],
+        "fees": [
+            {
+                "name": "CHEQUE_DEPOSIT",
+                "feeType": "DEPOSIT",
+                "amount": "1.25",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx"
+            },
+            {
+                "name": "DIRECT_DEBITS",
+                "feeType": "EVENT",
+                "amount": "0.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx"
+            },
+            {
+                "name": "IN_BRANCH_TRANSACTION",
+                "feeType": "TRANSACTION",
+                "amount": "2.50",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx"
+            },
+            {
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "7.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx"
+            },
+            {
+                "name": "ALERTS",
+                "feeType": "EVENT",
+                "amount": "0.25",
+                "accrualFrequency": "M",
+                "currency": "AUD",
+                "additionalInfo": "First 8 free",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx"
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.04",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "SUPER SAVER_Tier_1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 24999.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/pfs_InterestRatesSavings.pdf.aspx"
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0001",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1Y",
+                "tiers": [
+                    {
+                        "name": "SUPER SAVER_Tier_2",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 25000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.nicu.com.au/ArticleDocuments/305/pfs_InterestRatesSavings.pdf.aspx"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1575",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "NICUS7",
+        "lastUpdated": "2024-01-29T14:23:50.000+11:00",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "SUPER SAVER",
+        "description": "Savings account for young savers aged up to 12 years. Enjoy a competitive interest rate for all balances up to $25,000. No withdrawal penalties or minimum deposits required. Funds available at call.",
+        "brand": "NORTHERN INLAND CREDIT UNION LTD.",
+        "brandName": "NORTHERN INLAND CREDIT UNION LTD.",
+        "applicationUri": "https://www.nicu.com.au/banking/banking-enquiry",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.nicu.com.au/banking/savings-accounts/super-saver",
+            "termsUri": "https://www.nicu.com.au/ArticleDocuments/305/pfs_S7S8.pdf.aspx",
+            "eligibilityUri": "https://www.nicu.com.au/ArticleDocuments/305/pfs_S7S8.pdf.aspx",
+            "feesAndPricingUri": "https://www.nicu.com.au/ArticleDocuments/305/NICU_Fees_Charges_MemberLoyaltyProgram.pdf.aspx",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://secure.nicu.com.au/OpenBanking/cds-au/v1/banking/products/NICUS7"
+    },
+    "meta": {}
 }
