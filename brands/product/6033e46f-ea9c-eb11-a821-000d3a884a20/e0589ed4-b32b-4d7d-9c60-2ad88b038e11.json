@@ -54,14 +54,14 @@
         ],
         "features": [
             {
-                "featureType": "UNLIMITED_TXNS",
-                "additionalInfo": "For the following transactions are free: Purchases on Visa Debit Card by pressing    credit   ,  purchases over the phone or Internet, Purchases on Visa Debit Card by pressing    savings    or    cheque', Electronic payments - quoting a valid BSB and account number, Bpay transactions, NPP including Osko payments. PayID and Bank@Post withdrawals.",
+                "featureType": "NPP_ENABLED",
+                "additionalInfo": "",
                 "additionalInfoUri": null,
                 "additionalValue": null
             },
             {
-                "featureType": "NPP_ENABLED",
-                "additionalInfo": "",
+                "featureType": "UNLIMITED_TXNS",
+                "additionalInfo": "For the following transactions are free: Purchases on Visa Debit Card by pressing    credit   ,  purchases over the phone or Internet, Purchases on Visa Debit Card by pressing    savings    or    cheque', Electronic payments - quoting a valid BSB and account number, Bpay transactions, NPP including Osko payments. PayID and Bank@Post withdrawals.",
                 "additionalInfoUri": null,
                 "additionalValue": null
             },
@@ -122,18 +122,39 @@
         ],
         "fees": [
             {
-                "feeType": "EVENT",
-                "name": "Statement Request",
+                "feeType": "TRANSACTION",
+                "name": "Currency Conversion Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
-                "additionalInfo": "Fee charged $2 per month applies.",
+                "additionalInfo": "",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
-                "amount": "2.00",
+                "amount": null,
                 "balanceRate": null,
                 "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
+                "discounts": [
+                    {
+                        "description": "This fee is waived for Premier/Rewards Package Home Loan customers",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
+                        "additionalValue": null,
+                        "amount": "0.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "This fee is waived for Premier/Rewards Package Home Loan customers",
+                                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": "0.0300000000000000"
+                    }
+                ],
+                "transactionRate": "0.0300000000000000"
             },
             {
                 "feeType": "EVENT",
@@ -147,6 +168,69 @@
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "WITHDRAWAL",
+                "name": "Visa Debit Over The Counter Cash Advance",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "2.50",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Issue Card Or Pin Internationally By Registered Mail",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "$15 dollars per item",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "15.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Emergency Overseas Replacement Card Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "150.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [
+                    {
+                        "description": "This Fee is waived for Platinum credit card holders",
+                        "discountType": "ELIGIBILITY_ONLY",
+                        "accruedRate": null,
+                        "additionalInfo": "",
+                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
+                        "additionalValue": null,
+                        "amount": "150.00000000",
+                        "balanceRate": null,
+                        "eligibility": [
+                            {
+                                "discountEligibilityType": "OTHER",
+                                "additionalInfo": "Fee is waived for Platinum credit card holders",
+                                "additionalInfoUri": null,
+                                "additionalValue": null
+                            }
+                        ],
+                        "feeRate": null,
+                        "transactionRate": null
+                    }
+                ],
                 "transactionRate": null
             },
             {
@@ -179,6 +263,20 @@
             },
             {
                 "feeType": "EVENT",
+                "name": "Statement Request",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Fee charged $2 per month applies.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "2.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
                 "name": "Overdrawn Account Fee",
                 "accrualFrequency": null,
                 "accruedRate": null,
@@ -186,20 +284,6 @@
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
                 "amount": "15.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "WITHDRAWAL",
-                "name": "Visa Debit Over The Counter Cash Advance",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "2.50",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
@@ -248,46 +332,11 @@
                 "transactionRate": null
             },
             {
-                "feeType": "TRANSACTION",
-                "name": "Currency Conversion Fee",
+                "feeType": "EVENT",
+                "name": "Express Posting Of Card Or Pin In Australia",
                 "accrualFrequency": null,
                 "accruedRate": null,
                 "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "This fee is waived for Premier/Rewards Package Home Loan customers",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
-                        "additionalValue": null,
-                        "amount": "0.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "This fee is waived for Premier/Rewards Package Home Loan customers",
-                                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": "0.0300000000000000"
-                    }
-                ],
-                "transactionRate": "0.0300000000000000"
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Issue Card Or Pin Internationally By Registered Mail",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "$15 dollars per item",
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": null,
                 "amount": "15.00",
@@ -311,41 +360,6 @@
                 "transactionRate": null
             },
             {
-                "feeType": "EVENT",
-                "name": "Emergency Overseas Replacement Card Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "150.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [
-                    {
-                        "description": "This Fee is waived for Platinum credit card holders",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "accruedRate": null,
-                        "additionalInfo": "",
-                        "additionalInfoUri": "https://www.bankfirst.com.au/disclosure-documents",
-                        "additionalValue": null,
-                        "amount": "150.00000000",
-                        "balanceRate": null,
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Fee is waived for Platinum credit card holders",
-                                "additionalInfoUri": null,
-                                "additionalValue": null
-                            }
-                        ],
-                        "feeRate": null,
-                        "transactionRate": null
-                    }
-                ],
-                "transactionRate": null
-            },
-            {
                 "feeType": "PERIODIC",
                 "name": "Account Keeping Fees",
                 "accrualFrequency": null,
@@ -354,20 +368,6 @@
                 "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
                 "additionalValue": "P1M",
                 "amount": "0.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
-                "feeType": "EVENT",
-                "name": "Express Posting Of Card Or Pin In Australia",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "15.00",
                 "balanceRate": null,
                 "currency": "AUD",
                 "discounts": [],
