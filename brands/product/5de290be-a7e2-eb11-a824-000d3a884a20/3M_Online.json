@@ -1,9 +1,94 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Response correlation does not match Request. (1.0)"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No Account Keeping Fee",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We'll notify you before your deposit matures",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "If you wish to withdraw your Term deposit before it matures, a reduced interest rate may apply",
+                "additionalInfoUri": "https://www.humebank.com.au/tools-help/product-tcs/"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "1000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "250000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0335",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P3M",
+                "tiers": [
+                    {
+                        "name": "Term Deposit Online 3M (Interest at Maturity)_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term Deposit Online 3M (Interest at Maturity)_Tier",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 3.0,
+                        "maximumValue": 3.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P3M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "3M_Online",
+        "lastUpdated": "2024-03-22T10:40:32.000+11:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Term Deposit Online 3M (Interest at Maturity)",
+        "description": "TERM DEPOSIT - 3 month Online",
+        "brand": "HUME BANK LIMITED",
+        "brandName": "HUME BANK LIMITED",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "termsUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "eligibilityUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "feesAndPricingUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/3M_Online"
+    },
+    "meta": {}
 }

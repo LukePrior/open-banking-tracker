@@ -1,9 +1,93 @@
 {
-    "errors": [
-        {
-            "code": "urn:au-cds:error:cds-all:GeneralError/Unexpected",
-            "title": "Unexpected Error Encountered",
-            "detail": "Response correlation does not match Request. (1.0)"
+    "data": {
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No account keeping fees",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "We'll notify you before your deposit matures",
+                "additionalInfoUri": ""
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "If you wish to withdraw your term deposit before it matures, a reduced interest rate may apply",
+                "additionalInfoUri": "https://www.humebank.com.au/tools-help/product-tcs/"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Negotiated rates for balances above $250,000",
+                "additionalInfoUri": ""
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_BALANCE",
+                "additionalValue": "5000.00",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            },
+            {
+                "eligibilityType": "BUSINESS",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "depositRates": [
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0395",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P28D",
+                "tiers": [
+                    {
+                        "name": "Term Deposit 24M (Interest Paid Monthly)_Tier",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 5000.0,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "Term Deposit 24M (Interest Paid Monthly)_Tier",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24.0,
+                        "maximumValue": 24.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "",
+                "additionalInfoUri": ""
+            }
+        ],
+        "productId": "24M28D",
+        "lastUpdated": "2024-02-26T19:56:49.000+11:00",
+        "productCategory": "TERM_DEPOSITS",
+        "name": "Term Deposit 24M (Interest Paid Monthly)",
+        "description": "TERM DEPOSIT - 24 month",
+        "brand": "HUME BANK LIMITED",
+        "brandName": "HUME BANK LIMITED",
+        "applicationUri": "",
+        "isTailored": false,
+        "additionalInformation": {
+            "overviewUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "termsUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "eligibilityUri": "https://www.humebank.com.au/tools-help/product-tcs/",
+            "feesAndPricingUri": "https://www.humebank.com.au/savings/term-deposits/",
+            "bundleUri": ""
         }
-    ]
+    },
+    "links": {
+        "self": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/24M28D"
+    },
+    "meta": {}
 }
