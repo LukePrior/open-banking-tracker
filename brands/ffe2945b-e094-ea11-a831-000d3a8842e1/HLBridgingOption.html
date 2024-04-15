@@ -7,7 +7,7 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;HLBridgingOption&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-04-27T09:22:42Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-04-10T06:59:53Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Bridging Home Loan&quot;,
     &quot;description&quot;: &quot;Apart from buying an existing property, bridging loans are also an option if you want to stay in your current property while you build a new property. It saves you the hassle of selling your property and renting somewhere short-term, not to mention having to pay for the costs of moving twice.&quot;,
@@ -16,10 +16,10 @@
     &quot;applicationUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/bridging-loan/&quot;,
     &quot;isTailored&quot;: true,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/bridging-loan/&quot;,
-        &quot;termsUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/bridging-loan/&quot;,
-        &quot;eligibilityUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/bridging-loan/&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/bridging-loan/&quot;
+        &quot;overviewUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/financing-your-next-home/&quot;,
+        &quot;termsUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/financing-your-next-home/&quot;,
+        &quot;eligibilityUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/financing-your-next-home/&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.westpac.com.au/personal-banking/home-loans/next-home/financing-your-next-home/&quot;
     },
     &quot;features&quot;: [
         {
@@ -53,6 +53,22 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Building Loan Feature: A specialised lending option that is available on selected Westpac loan products. Allows the customer to progressively draw down what is needed to cover the build of their residential property over the construction period. This option is only available for Interest Only repayment type.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes extra repayment features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;FRAUD_PROTECTION&quot;,
+            &quot;additionalInfo&quot;: &quot;The product includes fraud protection features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;GUARANTOR&quot;,
+            &quot;additionalInfo&quot;: &quot;Subject to terms and conditions, this product includes guarantor features.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;additionalInfo&quot;: &quot;Relationship management is available for eligible customers.&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -70,11 +86,6 @@
             &quot;name&quot;: &quot;Lending Establishment Fee&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;600.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Guarantor Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;200.00&quot;
         },
         {
             &quot;name&quot;: &quot;Bank Cheque Issuance Fee&quot;,
@@ -104,16 +115,6 @@
             &quot;amount&quot;: &quot;85.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Mortgage Insurance Administration Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;90.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Outward Dishonour Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;
-        },
-        {
             &quot;name&quot;: &quot;Account Overdrawn Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;
@@ -132,10 +133,11 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0732&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0745&quot;,
+            &quot;rate&quot;: &quot;0.0932&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0945&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -143,23 +145,26 @@
                     &quot;name&quot;: &quot;LVR up to 70%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 70
+                    &quot;maximumValue&quot;: 70,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;First Three Months&quot;,
                     &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 3
+                    &quot;maximumValue&quot;: 3,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;After 3 months, the rates increases by 1% for the remainder Bridging loan term.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0742&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0755&quot;,
+            &quot;rate&quot;: &quot;0.0942&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0955&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -167,13 +172,15 @@
                     &quot;name&quot;: &quot;LVR above 70%&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 70,
-                    &quot;maximumValue&quot;: 95
+                    &quot;maximumValue&quot;: 95,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;First Three Months&quot;,
                     &quot;unitOfMeasure&quot;: &quot;MONTH&quot;,
                     &quot;minimumValue&quot;: 0,
-                    &quot;maximumValue&quot;: 3
+                    &quot;maximumValue&quot;: 3,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Maximum LVR for Non Mortgage Insured Loan: 80%, Maximum LVR for Mortgage Insured Loan: 95% inclusive of any capitalised mortgaged insurance (MI) premium (if available). After 3 months, the rates increases by 1% for the remainder Bridging loan term.&quot;
