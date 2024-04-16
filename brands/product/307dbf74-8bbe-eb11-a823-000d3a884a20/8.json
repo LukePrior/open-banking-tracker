@@ -2,7 +2,7 @@
     "data": {
         "productId": "8",
         "effectiveFrom": "2019-03-31T13:30:00.0000000Z",
-        "lastUpdated": "2024-03-14T04:00:38.1303375Z",
+        "lastUpdated": "2024-04-15T04:00:37.7420630Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Flex - Variable INV IO",
         "description": "Flex home loan variable investment, interest only",
@@ -11,12 +11,21 @@
         "isTailored": false,
         "additionalInformation": {
             "overviewUri": "https://www.ubank.com.au/home-loans/flex-variable-rate-home-loans",
-            "eligibilityUri": "https://www.ubank.com.au/home-loans/get-in-touch",
+            "termsUri": "https://cms.ubank.com.au/wp-content/uploads/home-loan-terms.pdf",
+            "eligibilityUri": "https://www.ubank.com.au/home-loans/home-loan-eligibility",
             "feesAndPricingUri": "https://www.ubank.com.au/home-loans/interest-rates-and-fees"
         },
         "features": [
             {
                 "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "NOTIFICATIONS",
+                "additionalValue": "Customers can configure notifications for incoming payments, services disruptions and updates, and account access.",
+                "additionalInfo": "Customers can configure notifications for incoming payments, services disruptions and updates, and account access."
+            },
+            {
+                "featureType": "NPP_ENABLED"
             },
             {
                 "featureType": "OFFSET"
@@ -39,24 +48,27 @@
         "eligibility": [
             {
                 "eligibilityType": "EMPLOYMENT_STATUS",
-                "additionalValue": "PAYG income"
+                "additionalValue": "Applicants must be a PAYG employee.",
+                "additionalInfo": "Applicants must be a PAYG employee."
             },
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "NATURAL_PERSON",
-                "additionalInfo": "Max. 2 borrowers"
+                "eligibilityType": "NATURAL_PERSON"
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "Credit criteria, fees and charges apply."
+                "additionalInfo": "- Max 2 borrowers.\r\n- Be applying either individually, or jointly with their spouse or de facto partner that they currently live with or intend to live with after settlement in the same household (You won't be able to apply with a sibling or parent).\r\n-Credit criteria, fees and charges apply."
+            },
+            {
+                "eligibilityType": "PENSION_RECIPIENT"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Must be an Australian citizen or permanent resident",
-                "additionalInfo": "Must be an Australian citizen or permanent resident"
+                "additionalValue": "Be an Australian or New Zealand citizen, or a permanent resident of Australia.",
+                "additionalInfo": "Be an Australian or New Zealand citizen, or a permanent resident of Australia."
             }
         ],
         "fees": [
@@ -73,7 +85,7 @@
                 "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "Free for first valuation if under $300. If first valuation cost is over $300, we'll cover the first $300 and any additional amount is charged at cost. Second or further valuations are at cost.",
+                "additionalInfo": "First Valuation Fee covered up to $360. Second or further valuations are at cost.",
                 "additionalInfoUri": "https://www.ubank.com.au/home-loans/flex-variable-rate-home-loans"
             },
             {
@@ -82,14 +94,6 @@
                 "amount": "100.00",
                 "currency": "AUD",
                 "additionalInfo": "To issue a new set of loan documents if your requirements change.",
-                "additionalInfoUri": "https://www.ubank.com.au/home-loans/flex-variable-rate-home-loans"
-            },
-            {
-                "name": "Valuation fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalInfo": "If a new valuation is required at any time during the term of the loan.",
                 "additionalInfoUri": "https://www.ubank.com.au/home-loans/flex-variable-rate-home-loans"
             },
             {
@@ -114,7 +118,7 @@
                 "amount": "250.00",
                 "currency": "AUD",
                 "additionalValue": "P1Y",
-                "additionalInfo": "$250 per year (after year 1). Covers up to 5 Flex home loans.",
+                "additionalInfo": "Fee debited every year on the anniversary of the date we first give you the funds. Covers up to 5 Flex home loan accounts.",
                 "additionalInfoUri": "https://www.ubank.com.au/home-loans/flex-variable-rate-home-loans"
             }
         ],
@@ -123,6 +127,8 @@
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0674",
                 "comparisonRate": "0.0676",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
@@ -142,6 +148,8 @@
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0679",
                 "comparisonRate": "0.0681",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
@@ -161,6 +169,8 @@
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0679",
                 "comparisonRate": "0.0681",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
