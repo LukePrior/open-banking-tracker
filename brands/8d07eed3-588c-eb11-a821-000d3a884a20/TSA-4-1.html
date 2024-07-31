@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;TSA-4-1&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-10-01T00:00:00+10:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-20T09:00:00+11:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-05T10:00:00+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Everyday Account&quot;,
     &quot;description&quot;: &quot;The IMB Everyday Account comes with a great range of access options and no monthly account keeping fee, you'll just pay for the transactions you do.&quot;,
@@ -18,7 +18,20 @@
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.imb.com.au/banking/transaction-accounts/everyday-account&quot;,
         &quot;termsUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        &quot;feesAndPricingUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;,
+        &quot;bundleUri&quot;: &quot;Opening a Term Deposit online will also open an Everyday Online Term Link Account for you to deposit funds, if you don't already have one, which is an Everyday Account with added benefits.&quot;,
+        &quot;additionalOverviewUris&quot;: [
+            {
+                &quot;description&quot;: &quot;Opening a Term Deposit online will also open an Everyday Online Term Link Account for you to deposit funds, if you don't already have one, which is an Everyday Account with added benefits.&quot;,
+                &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+            }
+        ],
+        &quot;additionalBundleUris&quot;: [
+            {
+                &quot;description&quot;: &quot;Opening a Term Deposit online will also open an Everyday Online Term Link Account for you to deposit funds, if you don't already have one, which is an Everyday Account with added benefits.&quot;,
+                &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+            }
+        ]
     },
     &quot;cardArt&quot;: [
         {
@@ -30,11 +43,23 @@
             &quot;imageUri&quot;: &quot;https://assets.www.imb.com.au/images/open-banking/cashcardimage.jpg&quot;
         }
     ],
+    &quot;bundles&quot;: [
+        {
+            &quot;name&quot;: &quot;Online Term Deposit&quot;,
+            &quot;description&quot;: &quot;Opening a Term Deposit online will also open an Everyday Online Term Link Account for you to deposit funds, if you don't already have one, which is an Everyday Account with added benefits.&quot;,
+            &quot;additionalInfo&quot;: &quot;An Everyday Online Term Link Account is an Everyday Account with the added benefit of a transaction fee free period. Not all product options are available online. Other interest rates, investment terms, minimum deposit amounts, interest payment frequencies, and interest payment options are available.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;,
+            &quot;productIds&quot;: [
+                &quot;TSA-4-1&quot;,
+                &quot;TD-1-1&quot;
+            ]
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalValue&quot;: &quot;IMB Visa Debit Card and Cashcard available &quot;,
-            &quot;additionalInfo&quot;: &quot;Visa Debit Card is not available to individuals under 18&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa Debit Card is not available to individuals under 15&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/ways-to-bank/imb-visa-debit-card&quot;
         },
         {
@@ -184,222 +209,6 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
         },
         {
-            &quot;name&quot;: &quot;Phone Banking - Operator Assisted \u2013 Purchase Financial Institution Cheque&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Phone Banking - Operator Assisted \u2013 Cheque bill payments&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Phone Banking - Operator Assisted - All other financial transactions&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Excludes phone enquiry, Cheque withdrawal/cheque bill payment.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Visa Debit Card - EFTPOS transaction, cash-out &amp; decline&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.85&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee payable if the transaction is processed via EFTPOS at the merchant\u2019s election, including contactless Visa debit card transactions.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Visa Debit Card - International purchase&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;transactionRate&quot;: &quot;0.025&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;A transaction fee of the higher of $5 or 2.5% is charged for any international purchase made using a Visa Debit Card in: a) a currency other than $AUD (after conversion to $AUD); or b) $AUD (or any other currency) where either the merchant or the entity processing the transaction is located outside Australia. Note: it may not always be clear to you that the merchant or entity processing the transaction is located outside Australia.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Visa Debit Card - Cash advances (domestic &amp; international)&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;transactionRate&quot;: &quot;0.025&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Card in: a) a currency other than $AUD (after conversion to $AUD); or b) $AUD (or any other currency) where either the merchant or the entity processing the transaction is located outside Australia. Note: it may not always be clear to you that the merchant or entity processing the transaction is located outside Australia.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Cashcard - EFTPOS transaction, cash-out &amp; decline&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.85&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;IMB ATM - Cheque deposit&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;1.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;IMB ATM - ATM withdrawal (including Visa Debit Card)&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.70&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;IMB ATM - balance enquiry or failed transaction&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.25&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;IMB ATM - Transfer to an IMB Account&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.25&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other ATM - International ATM&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Direct charge as determined by ATM Operator may also apply&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Cheque deposit&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;1.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Branch cash withdrawal&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;2.25&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Transfer to an IMB account&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - BPAY&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Purchase Financial Institution Cheque&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Cheque bill payments&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Single direct credit to another financial institution&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Over the counter - Scheduled direct credit to another financial institution&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other facilities - Direct debit by another institution or entity &quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other facilities - Personal cheque withdrawal&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;1.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other facilities - Cheque deposit&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;1.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other facilities - Scheduled cheque withdrawal&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;6.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Other facilities - Scheduled electronic withdrawal&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;0.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Australia Post - Bank@Post withdrawal transaction&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;4.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Australia Post - Bank@Post deposit, enquiry &amp; failed transactions&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;4.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Australia Post - Deposit card \u2013 cash or cheque deposit&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;2.90&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
             &quot;name&quot;: &quot;Regular payment setup&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
@@ -483,15 +292,6 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Visa Cardholder Facility Fee&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;1.60&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee will be charged on the first day of each month for each Visa Card on issue.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
         },
         {
@@ -725,6 +525,724 @@
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Per alert&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Phone Banking - Operator Assisted \u2013 Purchase Financial Institution Cheque&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Phone Banking - Operator Assisted \u2013 Purchase Financial Institution Cheque&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;6.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Phone Banking - Operator Assisted \u2013 Cheque bill payments&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Phone Banking - Operator Assisted \u2013 Cheque bill payments&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;6.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Phone Banking - Operator Assisted - All other financial transactions&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Excludes phone enquiry, Cheque withdrawal/cheque bill payment.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Phone Banking - Operator Assisted - All other financial transactions&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Visa Debit Card - EFTPOS transaction, cash-out &amp; decline&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.85&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee payable if the transaction is processed via EFTPOS at the merchant\u2019s election, including contactless Visa debit card transactions.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Visa Debit Card - EFTPOS transaction, cash-out &amp; decline&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.85&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Visa Debit Card - International purchase&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;transactionRate&quot;: &quot;0.025&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A transaction fee of the higher of $5 or 2.5% is charged for any international purchase made using a Visa Debit Card in: a) a currency other than $AUD (after conversion to $AUD); or b) $AUD (or any other currency) where either the merchant or the entity processing the transaction is located outside Australia. Note: it may not always be clear to you that the merchant or entity processing the transaction is located outside Australia.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Visa Debit Card - International purchase&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;5.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Cashcard - EFTPOS transaction, cash-out &amp; decline&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.85&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Cashcard - EFTPOS transaction, cash-out &amp; decline&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.85&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;IMB ATM - Cheque deposit&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;IMB ATM - Cheque deposit&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;1.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;IMB ATM - ATM withdrawal (including Visa Debit Card)&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.70&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;IMB ATM - ATM withdrawal (including Visa Debit Card)&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.70&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;IMB ATM - balance enquiry or failed transaction&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.25&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;IMB ATM - balance enquiry or failed transaction&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.25&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;IMB ATM - Transfer to an IMB Account&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.25&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;IMB ATM - Transfer to an IMB Account&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.25&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other ATM - International ATM&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Direct charge as determined by ATM Operator may also apply&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other ATM - International ATM&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;5.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Cheque deposit&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Cheque deposit&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;1.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Branch cash withdrawal&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;2.25&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Branch cash withdrawal&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;2.25&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Transfer to an IMB account&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Transfer to an IMB account&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - BPAY&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - BPAY&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Single direct credit to another financial institution&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Single direct credit to another financial institution&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Scheduled direct credit to another financial institution&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Scheduled direct credit to another financial institution&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other facilities - Direct debit by another institution or entity &quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other facilities - Direct debit by another institution or entity &quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other facilities - Personal cheque withdrawal&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other facilities - Personal cheque withdrawal&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;1.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other facilities - Cheque deposit&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;1.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee applies to each account that a cheque is deposited into. If a cheque deposit is split across multiple accounts, the fee is applied to each account separately.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other facilities - Cheque deposit&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;1.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other facilities - Scheduled cheque withdrawal&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other facilities - Scheduled cheque withdrawal&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;6.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Other facilities - Scheduled electronic withdrawal&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Other facilities - Scheduled electronic withdrawal&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;0.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Australia Post - Bank@Post withdrawal transaction&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Australia Post - Bank@Post withdrawal transaction&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;4.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Australia Post - Bank@Post deposit, enquiry &amp; failed transactions&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;4.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Australia Post - Bank@Post deposit, enquiry &amp; failed transactions&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;4.50&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Australia Post - Deposit card \u2013 cash or cheque deposit&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;2.90&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Service availablility is at the discretion of the Australia post outlet&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Australia Post - Deposit card \u2013 cash or cheque deposit&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;2.90&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Visa Cardholder Facility Fee&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;1.60&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Fee will be charged on the first day of each month for each Visa Card on issue.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Visa Cardholder Facility Fee&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;1.60&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Purchase Financial Institution Cheque&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Purchase Financial Institution Cheque&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;6.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Visa Debit Card - Cash advances (domestic &amp; international)&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;transactionRate&quot;: &quot;0.025&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Card in: a) a currency other than $AUD (after conversion to $AUD); or b) $AUD (or any other currency) where either the merchant or the entity processing the transaction is located outside Australia. Note: it may not always be clear to you that the merchant or entity processing the transaction is located outside Australia.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Visa Debit Card - Cash advances (domestic &amp; international)&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;5.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;name&quot;: &quot;Over the counter - Cheque bill payments&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;6.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per cheque&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/pdfs/fees-charges-and-limits-pds&quot;,
+            &quot;discounts&quot;: [
+                {
+                    &quot;description&quot;: &quot;Over the counter - Cheque bill payments&quot;,
+                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
+                    &quot;amount&quot;: &quot;6.00&quot;,
+                    &quot;additionalInfo&quot;: &quot;Not applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                    &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;,
+                    &quot;eligibility&quot;: [
+                        {
+                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
+                            &quot;additionalValue&quot;: &quot;Fee discounts applicable to an Everyday Online Term Link Account for the period that an investment amount is held in an Online Term Deposit or Reinvested Online Term Deposit (refer to the Product Disclosure Statement (PDS)).&quot;,
+                            &quot;additionalInfo&quot;: &quot;For the period that an amount is held in a Term Deposit opened online (including as a Reinvested Online Term Deposit), transaction fees and the monthly fee for a Visa Debit Card (if requested) are not payable in relation to an Everyday Online Term Link Account.  Otherwise, these fees are payable.  We'll give you 30 days notice before these fees apply.  To understand more - refer to the Product Disclosure Statement (PDS).&quot;,
+                            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/term-deposits/term-deposits-opened-online&quot;
+                        }
+                    ]
+                }
+            ]
         }
     ],
     &quot;depositRates&quot;: [

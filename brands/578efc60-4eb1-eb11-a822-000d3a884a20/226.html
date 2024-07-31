@@ -8,17 +8,17 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;226&quot;,
     &quot;effectiveFrom&quot;: &quot;2022-01-23T13:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-21T00:17:11.3935140Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-30T02:00:23.5151423Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Basic Investment Loan Fixed IO&quot;,
-    &quot;description&quot;: &quot;Our Basic Investment Loan is anything but with low fees and feel-good features. With Interest Only repayments and the certainty of a fixed rate.&quot;,
+    &quot;description&quot;: &quot;Our Basic Investment Loan is anything but, with low fees and feel-good features. With Interest Only repayments and the certainty of a fixed rate.&quot;,
     &quot;brand&quot;: &quot;Bank Australia&quot;,
     &quot;applicationUri&quot;: &quot;https://online.bankaust.com.au/internetlending/public/start.aspx&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/home-loans/premium-home-loan-package&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/basic-home-loan&quot;,
         &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;
+        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/basic-home-loan&quot;
     },
     &quot;features&quot;: [
         {
@@ -28,13 +28,19 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;We protect an equivalent amount of land on the Bank Australia Conservation Reserve as is being constructed to help offset the environmental impact of land clearing&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Make your loan repayments weekly, fortnightly or monthly&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;10000.00&quot;
         }
     ],
     &quot;eligibility&quot;: [
-        {
-            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalInfo&quot;: &quot;Includes Non-trading Companies and/or Family/Unit/Hybrid Trusts&quot;
-        },
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;18&quot;,
@@ -64,10 +70,10 @@
         },
         {
             &quot;name&quot;: &quot;Break Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;You may be required to pay a break fee if you pay your fixed loan off in full, make an early repayment or make certain other changes to your loan during any fixed period. The fee is calculated at the time of the event and is specifically related to yourindividual loan. More information is found in the loan fees and charges document.&quot;
+            &quot;additionalInfo&quot;: &quot;You may be required to pay a break fee if you pay your fixed loan off in full, make an early repayment or make certain other changes to your loan during any fixed period. The fee is calculated at the time of the event and is specifically related to your individual loan. More information is found in the loan fees and charges document.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://cdn.bfldr.com/1R31Y8GR/as/5pxcb6tz9n83psz2k2knqtk/Loan_fees_schedule&quot;
         },
         {
             &quot;name&quot;: &quot;Home Loan Establishment Fee - Existing Mortgage&quot;,
@@ -93,9 +99,9 @@
         {
             &quot;name&quot;: &quot;Mortgage Discharge Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply.  Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office.&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when you discharge the mortgage. Statutory government registration fees will still apply&quot;
         },
         {
             &quot;name&quot;: &quot;Portability Fee- Existing Mortgage&quot;,
@@ -117,6 +123,13 @@
             &quot;amount&quot;: &quot;250.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;If you request a loan variation, Bank Australia may need to revalue your property before approving the request.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Rate Lock&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;transactionRate&quot;: &quot;0.001&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you choose to lock in the fixed rate at application. 0.10% of the total fixed loan amount for approved home loan applications (minimum fee $50). This applies to 1, 2, 3 and 5 year Fixed Rate home loans only and is a non-refundable fee.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -138,8 +151,7 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;60%&quot;
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -159,8 +171,7 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;70%&quot;
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -180,13 +191,52 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;80%&quot;
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0641&quot;,
+            &quot;rate&quot;: &quot;0.0674&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0665&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;1 year - LVR 90% or less&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.1,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0664&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0665&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;2 year - LVR 90% or less&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.1,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -201,13 +251,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;60%&quot;
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0641&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -222,13 +271,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;70%&quot;
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0641&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -243,13 +291,32 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;80%&quot;
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0643&quot;,
+            &quot;rate&quot;: &quot;0.0664&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0665&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;3 year - LVR 90% or less&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 80.1,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -264,13 +331,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;60%&quot;
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0643&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -285,13 +351,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;70%&quot;
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0643&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -306,13 +371,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;80%&quot;
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0674&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0656&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -327,13 +391,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;60%&quot;
+            &quot;additionalValue&quot;: &quot;P5Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0674&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0656&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -348,8 +411,7 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Investment Loan with Interest Only repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of &lt;70%&quot;
+            &quot;additionalValue&quot;: &quot;P5Y&quot;
         }
     ]
 }</textarea>

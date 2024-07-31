@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;3215&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-07-01T00:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-31T00:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-05T00:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-05-14T00:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;CRED_AND_CHRG_CARDS&quot;,
     &quot;name&quot;: &quot;Business Visa Credit Card&quot;,
     &quot;description&quot;: &quot;Credit card for small business&quot;,
@@ -93,56 +93,57 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Information fee - Search &quot;,
+            &quot;name&quot;: &quot;Information fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;additionalInfo&quot;: &quot;$20 per request, plus $1 per page copied. Payable when we provide information or copies to you or a third party that relates to a security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain under the National Consumer Credit Code).&quot;
+            &quot;additionalInfo&quot;: &quot;$20.00 plus $1.00 per page copied. Payable when we provide information or copies to you or a third party that relates to a Security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain free of charge under the National Credit Code (where applicable)).&quot;
         },
         {
             &quot;name&quot;: &quot;Information fee - Per Page&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;1.00&quot;,
-            &quot;additionalInfo&quot;: &quot;$20 per request, plus $1 per page copied. Payable when we provide information or copies to you or a third party that relates to a security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain under the National Consumer Credit Code).&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when we provide information or copies to you or a third party that relates to a Security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain free of charge under the National Credit Code (where applicable)).&quot;
         },
         {
             &quot;name&quot;: &quot;Bank transfer fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When any amount is debited or credited to a bank account in our name as a result of which it is necessary for us to debit or credit monies to your loan&quot;
         },
         {
-            &quot;name&quot;: &quot;Bulk coin purchase fee&quot;,
+            &quot;name&quot;: &quot;Bulk coin purchase fee - In branch&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.02&quot;,
-            &quot;additionalInfo&quot;: &quot;Minimum fee $2.00&quot;
+            &quot;additionalInfo&quot;: &quot;2.00% of value (minimum $2.00)&quot;
         },
         {
-            &quot;name&quot;: &quot;Bulk coin purchase fee - Sourced Externally&quot;,
+            &quot;name&quot;: &quot;Bulk coin purchase fee - External&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;8.00&quot;,
             &quot;additionalInfo&quot;: &quot;$8.00 per bag&quot;
         },
         {
             &quot;name&quot;: &quot;Foreign currency deposit fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;
         },
         {
             &quot;name&quot;: &quot;Foreign currency conversion fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.03&quot;,
-            &quot;additionalInfo&quot;: &quot;3.00% of the Australian Dollar equivalent is payable for transactions made in a foreign currency. &quot;
+            &quot;additionalInfo&quot;: &quot;3.00% of the value of the transaction in AUD debited to your account when you make a transaction in a foreign currency or in AUD when you are outside of Australia; or in Australia where the merchant or financial institution that processes the transaction is located outside of Australia&quot;
         },
         {
-            &quot;name&quot;: &quot;Replacement card fee - In Australia&quot;,
+            &quot;name&quot;: &quot;Replacement card fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;7.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months.&quot;
+            &quot;additionalInfo&quot;: &quot;For each replacement card issued in Australia. Payable for each replacement card issued within the expiry period, if a replacement card has been previously requested in the preceding 12 months.&quot;
         },
         {
-            &quot;name&quot;: &quot;Replacement card fee - International&quot;,
+            &quot;name&quot;: &quot;Replacement card fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;100.00&quot;,
-            &quot;additionalInfo&quot;: &quot;For any replacement card issued overseas&quot;
+            &quot;additionalInfo&quot;: &quot;For any replacement card issued overseas. Payable for each replacement card issued within the expiry period, if a replacement card has been previously requested in the preceding 12 months&quot;
         },
         {
             &quot;name&quot;: &quot;SMS alert fee&quot;,
@@ -157,34 +158,21 @@
         },
         {
             &quot;name&quot;: &quot;EFT transaction fee (RTGS)&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Transfer funds on the same day to an account at another financial institution&quot;
         },
         {
-            &quot;name&quot;: &quot;International currency draft&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;47.50&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Telegraphic transfer trace&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;80.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee is estimate only&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Scheduled BPAY payment fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;1.00&quot;
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
             &quot;name&quot;: &quot;Establishment fee&quot;,
@@ -241,12 +229,6 @@
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;amount&quot;: &quot;0.00&quot;,
             &quot;additionalInfo&quot;: &quot;Fee amount will be variable, calculated if and when applicable. Payable for costs we have to pay to a government body to register any documents in relation to a security.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Security substitution fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;350.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you ask us to substitute a Security.&quot;
         },
         {
             &quot;name&quot;: &quot;Title insurance premium&quot;,

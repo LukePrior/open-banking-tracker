@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;3045&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-07-01T00:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-31T00:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-05T00:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-06-11T00:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Lifesaver&quot;,
     &quot;description&quot;: &quot;Conditional savings account for under 25 year olds&quot;,
@@ -85,7 +85,7 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Information fee - Search &quot;,
+            &quot;name&quot;: &quot;Information fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;additionalInfo&quot;: &quot;$20.00 plus $1.00 per page&quot;
@@ -99,19 +99,19 @@
         {
             &quot;name&quot;: &quot;Bank transfer fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when an amount is processed on your behalf to an account in our name from another financial institution to enable us to credit your account.&quot;
         },
         {
-            &quot;name&quot;: &quot;Bulk coin purchase fee&quot;,
+            &quot;name&quot;: &quot;Bulk coin purchase fee - Exising branch stock &quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;transactionRate&quot;: &quot;0.02&quot;,
-            &quot;additionalInfo&quot;: &quot;Minimum fee $2.00&quot;
+            &quot;additionalInfo&quot;: &quot;Existing branch stock 2.00% of total value (minimum $2.00)&quot;
         },
         {
-            &quot;name&quot;: &quot;Bulk coin purchase fee - Sourced Externally&quot;,
+            &quot;name&quot;: &quot;Bulk coin purchase fee - External order&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;,
-            &quot;additionalInfo&quot;: &quot;$8.00 per bag&quot;
+            &quot;amount&quot;: &quot;8.00&quot;
         },
         {
             &quot;name&quot;: &quot;Direct debit dishonour fee&quot;,
@@ -120,14 +120,14 @@
         },
         {
             &quot;name&quot;: &quot;Foreign currency deposit fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;
         },
         {
-            &quot;name&quot;: &quot;Inactive account fee&quot;,
+            &quot;name&quot;: &quot;Dormant account fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Charged six monthly if account has no transactions (other than government charges or interest) processed during the preceding 24 months.&quot;
+            &quot;additionalInfo&quot;: &quot;$15.00 six monthly if an account has no transactions (other than government charges or interest) processed during the preceding 24 months&quot;
         },
         {
             &quot;name&quot;: &quot;SMS alert fee&quot;,
@@ -148,29 +148,27 @@
         },
         {
             &quot;name&quot;: &quot;EFT transaction fee (RTGS)&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Transfer funds on the same day to an account at another financial institution&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Stop payment fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged to stop payment of a cheque you have drawn or a bank cheque.&quot;
         },
         {
-            &quot;name&quot;: &quot;International currency draft&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;47.50&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Telegraphic transfer trace&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;80.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee is estimate only&quot;
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
             &quot;name&quot;: &quot;EasyPay notification fee - SMS&quot;,

@@ -51,7 +51,7 @@
     &quot;fees&quot;: [
         {
             &quot;name&quot;: &quot;ESTABLISHMENT_FEE_-_BASIC_HOME_LOAN&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -59,12 +59,12 @@
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
-            &quot;name&quot;: &quot;PRINCIPAL_INCREASE_FEE&quot;,
+            &quot;name&quot;: &quot;PRINCIPAL_INCREASE_FEE_-_HOME_LOAN&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we process your request to increase the principal amount of your loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we process your request to increase the principal amount of your loan. Waived for Freedom Package loans&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
@@ -73,7 +73,16 @@
             &quot;amount&quot;: &quot;450.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable on the first drawdown after settlement to cover the administration costs of progress payments for your construction or home renovation.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable on the first drawdown after settlement to cover the administration costs of progress payments for your construction or home renovation&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;SETTLEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;100.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we process the settlement of your loan. Waived for Freedom Package loans&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
@@ -91,7 +100,7 @@
             &quot;amount&quot;: &quot;300.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we process your request that varaies your product, security, interest rate or repayment type, unless switching to Principal &amp; Interest payments.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we process your request that varaies your product, security, interest rate or repayment type, unless switching to Principal &amp; Interest payments. Waived for Freedom Package loans when changing interest rate and or interest type&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
@@ -100,7 +109,7 @@
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we manually process your request (eg: in Branch) to redraw available advance funds from your loan account. Excluse online redraws.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we manually process your request (eg: in Branch) to redraw available advance funds from your loan account. Excludes online redraws&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
@@ -109,41 +118,61 @@
             &quot;amount&quot;: &quot;40.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if there is an event of default under the terms of your loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if you fail to make a payment by the due date&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
-            &quot;name&quot;: &quot;RTGS_''SAME_DAY''_PAYMENT&quot;,
+            &quot;name&quot;: &quot;RTGS_OUTWARD_PAYMENT_FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \&quot;same day\&quot; payment&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable each time you request a high value, time critical payment from your account to another financial institution on a real time basis for    same day    payment&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;E-STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we issue you with an electronic statement of account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;PAPER_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we issue you with your statement of account in paper&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;ADDITIONAL_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you request us to issue you an additional statement of account&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
             &quot;name&quot;: &quot;MORTGAGE_RELEASE_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;400.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;D&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;&quot;
-        },
-        {
-            &quot;name&quot;: &quot;SETTLEMENT_FEE&quot;,
-            &quot;feeType&quot;: &quot;UPFRONT&quot;,
-            &quot;amount&quot;: &quot;100.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when we process the settlement of your loan.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable per mortgage when we process your request to release a security from your loan, including a partial release. Third party costs may also be payable&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0609&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -162,13 +191,13 @@
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/interest-rates/&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0612&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0602&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0614&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -187,13 +216,13 @@
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/interest-rates/&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0617&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0602&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0619&quot;,
+            &quot;rate&quot;: &quot;0.0599&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -212,7 +241,7 @@
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/interest-rates/&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0622&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0602&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;
         },
@@ -443,7 +472,7 @@
         }
     ],
     &quot;productId&quot;: &quot;524add2a-ea86-4639-b084-abde1082801e&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-04-10T08:36:00.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-25T16:54:50.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;BASIC HOME LOAN&quot;,
     &quot;description&quot;: &quot;A home loan with a competitive variable interest rate and no monthly fees. Suitable for customers who don't require the benefits of an offset account.&quot;,

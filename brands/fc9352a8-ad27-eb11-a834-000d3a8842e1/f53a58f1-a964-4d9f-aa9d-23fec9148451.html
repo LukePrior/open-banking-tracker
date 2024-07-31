@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;f53a58f1-a964-4d9f-aa9d-23fec9148451&quot;,
     &quot;effectiveFrom&quot;: &quot;2000-05-21T23:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-31T01:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-22T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-06-20T09:04:56.640Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Mortgage Simplifier&quot;,
     &quot;description&quot;: &quot;Low variable interest rate home loan with no ongoing monthly or annual fees.&quot;,
@@ -65,11 +65,11 @@
     ],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;50000.00&quot;
         },
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;3000000.00&quot;
         }
     ],
@@ -105,7 +105,7 @@
         },
         {
             &quot;name&quot;: &quot;Settlement fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;299.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;For each loan application and is charged at settlement.&quot;
@@ -218,6 +218,11 @@
             &quot;amount&quot;: &quot;40.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;$40 for each letter.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Valuation Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;A valuation fee is payable. ING will cover up to $225 of the valuation fee (GST inclusive) for the first valuation/property only.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -227,6 +232,7 @@
             &quot;comparisonRate&quot;: &quot;0.0838&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -234,7 +240,8 @@
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 149999.0
+                    &quot;maximumValue&quot;: 149999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -245,6 +252,7 @@
             &quot;comparisonRate&quot;: &quot;0.0822&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -252,7 +260,8 @@
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 149999.0
+                    &quot;maximumValue&quot;: 149999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
@@ -263,6 +272,7 @@
             &quot;comparisonRate&quot;: &quot;0.0833&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -270,7 +280,8 @@
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 149999.0
+                    &quot;maximumValue&quot;: 149999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
@@ -281,6 +292,7 @@
             &quot;comparisonRate&quot;: &quot;0.0844&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -288,7 +300,8 @@
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 50000.0,
-                    &quot;maximumValue&quot;: 149999.0
+                    &quot;maximumValue&quot;: 149999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
@@ -299,6 +312,7 @@
             &quot;comparisonRate&quot;: &quot;0.0617&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -306,13 +320,15 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -323,20 +339,23 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 150000.0,
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -347,20 +366,23 @@
             &quot;comparisonRate&quot;: &quot;0.0672&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
-                },
-                {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 91.0,
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -371,20 +393,23 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
-                },
-                {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
@@ -395,6 +420,7 @@
             &quot;comparisonRate&quot;: &quot;0.0632&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
@@ -402,13 +428,15 @@
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
@@ -419,20 +447,23 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 150000.0,
-                    &quot;maximumValue&quot;: 499999.0
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 150000.0,
+                    &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
@@ -443,20 +474,23 @@
             &quot;comparisonRate&quot;: &quot;0.0617&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0,
-                    &quot;maximumValue&quot;: 999999.0
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0,
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -467,19 +501,22 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0
+                    &quot;minimumValue&quot;: 500000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -490,19 +527,22 @@
             &quot;comparisonRate&quot;: &quot;0.0672&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -513,20 +553,23 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
-                },
-                {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 500000.0,
-                    &quot;maximumValue&quot;: 999999.0
+                    &quot;maximumValue&quot;: 999999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
@@ -537,19 +580,22 @@
             &quot;comparisonRate&quot;: &quot;0.0632&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
-                },
-                {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Principal &amp; Interest.&quot;
@@ -560,19 +606,22 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
-                },
-                {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Investor - Interest only.&quot;
@@ -583,19 +632,22 @@
             &quot;comparisonRate&quot;: &quot;0.0617&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000000.0
+                    &quot;minimumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Principal &amp; Interest.&quot;
@@ -606,19 +658,22 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000000.0
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
@@ -634,17 +689,17 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
                     &quot;name&quot;: &quot;Total borrowing&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 150000.0,
                     &quot;maximumValue&quot;: 499999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 81.0,
+                    &quot;maximumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
@@ -714,16 +769,16 @@
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;Total borrowing&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
                     &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total borrowing&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 500000.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],

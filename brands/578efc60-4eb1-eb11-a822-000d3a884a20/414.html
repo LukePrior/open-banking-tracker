@@ -8,22 +8,26 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;414&quot;,
     &quot;effectiveFrom&quot;: &quot;2015-04-28T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-21T00:17:11.3935140Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-04T00:00:23.9401105Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Basic Home Loan&quot;,
-    &quot;description&quot;: &quot;Our Basic Home Loan is anything but, low fees and feel-good features.&quot;,
+    &quot;description&quot;: &quot;Our Basic Home Loan is anything but, with a low rate, low fees and feel-good features.&quot;,
     &quot;brand&quot;: &quot;Bank Australia&quot;,
     &quot;applicationUri&quot;: &quot;https://online.bankaust.com.au/internetlending/public/start.aspx&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/home-loans/home-loan-rates-and-fees&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/basic-home-loan&quot;,
         &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;
+        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/basic-home-loan&quot;
     },
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
             &quot;additionalInfo&quot;: &quot;You can self-serve your day-to-day banking needs via Bank Australia's App or Internet Banking.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
+            &quot;additionalInfo&quot;: &quot;You can make extra repayments on variable rate loans and access the cash when you need it at no cost with our redraw.&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -48,11 +52,13 @@
             &quot;additionalInfo&quot;: &quot;If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed&quot;
         }
     ],
-    &quot;eligibility&quot;: [
+    &quot;constraints&quot;: [
         {
-            &quot;eligibilityType&quot;: &quot;BUSINESS&quot;,
-            &quot;additionalInfo&quot;: &quot;Non-individual borrowers: Includes Non-trading Companies and/or Family/Unit/Hybrid Trusts&quot;
-        },
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;10000.00&quot;
+        }
+    ],
+    &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
             &quot;additionalValue&quot;: &quot;18&quot;,
@@ -104,9 +110,9 @@
         {
             &quot;name&quot;: &quot;Mortgage Discharge Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply. Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office.&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when you discharge the mortgage. Statutory government registration fees will still apply&quot;
         },
         {
             &quot;name&quot;: &quot;Portability Fee- Existing Mortgage&quot;,
@@ -133,6 +139,27 @@
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0609&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0614&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;First Home Buyer Offer&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;T&amp;C's apply - see First homebuyer offer page for more info&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/first-homebuyer-offer&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.0614&quot;,
             &quot;comparisonRate&quot;: &quot;0.0619&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
@@ -148,9 +175,7 @@
                     &quot;maximumValue&quot;: 60.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
-            ],
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of &lt;60%&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/tools/rates#pane-537&quot;
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -169,9 +194,7 @@
                     &quot;maximumValue&quot;: 70.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
-            ],
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of &lt;70%&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/tools/rates#pane-537&quot;
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -190,9 +213,7 @@
                     &quot;maximumValue&quot;: 80.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
-            ],
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of &lt;80%&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/tools/rates#pane-537&quot;
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -211,9 +232,7 @@
                     &quot;maximumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
-            ],
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of &lt;90%&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/tools/rates#pane-537&quot;
+            ]
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
@@ -231,9 +250,28 @@
                     &quot;minimumValue&quot;: 90.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
+            ]
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0609&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0614&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Victorian Home Buyer Offer&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
             ],
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of &gt;90%&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/tools/rates#pane-537&quot;
+            &quot;additionalInfo&quot;: &quot;T&amp;C's apply - see First homebuyer offer page for more info&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/first-homebuyer-offer&quot;
         }
     ]
 }</textarea>

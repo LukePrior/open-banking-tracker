@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;240&quot;,
     &quot;effectiveFrom&quot;: &quot;2022-01-17T13:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-21T00:17:11.3935140Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-01T00:00:23.8072951Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Clean Energy HL Package: Fixed&quot;,
     &quot;description&quot;: &quot;Bank Australia's reduced rate home loan for green upgrades and property purchases. With the certainty of a fixed rate.&quot;,
@@ -16,15 +16,17 @@
     &quot;applicationUri&quot;: &quot;https://online.bankaust.com.au/internetlending/public/start.aspx&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/home-loans/premium-home-loan-package&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan&quot;,
         &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;
+        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan&quot;,
+        &quot;bundleUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan&quot;
     },
     &quot;bundles&quot;: [
         {
             &quot;name&quot;: &quot;Clean Energy home loan&quot;,
             &quot;description&quot;: &quot;Clean Energy home loan&quot;,
-            &quot;additionalInfo&quot;: &quot;Clean Energy Home loans include an annual fee waiver for the platinum credit card, everyday banking, no establishment fee for personal loans, and up to a 10% discount on insurance for eligible customers.&quot;,
+            &quot;additionalInfo&quot;: &quot;Clean Energy Home loans include an annual fee waiver for the platinum credit card, everyday banking and up to a 10% discount on insurance for eligible customers.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan&quot;,
             &quot;productIds&quot;: [
                 &quot;240&quot;,
                 &quot;401&quot;
@@ -57,6 +59,12 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;We protect an equivalent amount of land on the Bank Australia Conservation Reserve as is being constructed to help offset the environmental impact of land clearing&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
+            &quot;additionalValue&quot;: &quot;10000.00&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -94,10 +102,9 @@
         },
         {
             &quot;name&quot;: &quot;Break Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;You may be required to pay a break fee if you pay your fixed loan off in full, make an early repayment or make certain other changes to your loan during any fixed period. The fee is calculated at the time of the event and is specifically related to yourindividual loan. More information is found in the loan fees and charges document.&quot;
+            &quot;additionalInfo&quot;: &quot;You may be required to pay a break fee if you pay your fixed loan off in full, make an early repayment or make certain other changes to your loan during any fixed period. The fee is calculated at the time of the event and is specifically related to your individual loan. More information is found in the loan fees and charges document.&quot;
         },
         {
             &quot;name&quot;: &quot;Loan Package Fee&quot;,
@@ -105,17 +112,17 @@
             &quot;amount&quot;: &quot;350.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Annual fee payable on all Premium loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist&quot;
+            &quot;additionalInfo&quot;: &quot;Annual fee payable on all Premium Package loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist&quot;
         },
         {
             &quot;name&quot;: &quot;Mortgage Discharge Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;250.00&quot;,
+            &quot;amount&quot;: &quot;350.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply.  Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office.&quot;
+            &quot;additionalInfo&quot;: &quot;Payable when you discharge the mortgage. Statutory government registration fees will still apply&quot;
         },
         {
-            &quot;name&quot;: &quot;Portability Fee- Existing Mortgag&quot;,
+            &quot;name&quot;: &quot;Portability Fee- Existing Mortgage&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;150.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -134,13 +141,27 @@
             &quot;amount&quot;: &quot;250.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;If you request a loan variation, Bank Australia may need to revalue your property before approving the request.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Rate Lock Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;transactionRate&quot;: &quot;0.001&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you choose to lock in the fixed rate at application. 0.10% of the total fixed loan amount for approved home loan applications (minimum fee $50). This applies to 1, 2, 3 and 5 year Fixed Rate home loans only and is a non-refundable fee.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Loan Variation Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;150.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when transferring from a home loan product to a different home loan product. For example, transferring a variable rate product to a fixed rate product.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0579&quot;,
-            &quot;comparisonRate&quot;: &quot;0.064&quot;,
+            &quot;rate&quot;: &quot;0.0569&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0637&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -155,13 +176,12 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.&quot;
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0589&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0642&quot;,
+            &quot;rate&quot;: &quot;0.0579&quot;,
+            &quot;comparisonRate&quot;: &quot;0.064&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -176,8 +196,7 @@
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner Occupied with Principal and Interest repayment type.&quot;
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
         }
     ]
 }</textarea>

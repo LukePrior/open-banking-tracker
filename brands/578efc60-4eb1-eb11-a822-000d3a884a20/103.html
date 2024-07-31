@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;103&quot;,
     &quot;effectiveFrom&quot;: &quot;2001-07-02T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-21T00:17:11.3935140Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-01T00:00:23.8072951Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;mySaver&quot;,
     &quot;description&quot;: &quot;A savings account for the under 25s which rewards savers with bonus interest if at least $10 per month is deposited and no withdrawals are made.&quot;,
@@ -16,8 +16,8 @@
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
         &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/savings-accounts/mysaver/&quot;,
-        &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;
+        &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/banking/savings-accounts/mysaver&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://www.bankaust.com.au/banking/savings-accounts/mysaver&quot;
     },
     &quot;features&quot;: [
         {
@@ -42,7 +42,7 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from your transaction account into your nominatedSavings account or Credit Card. This account can receive Round Up credits.&quot;
+            &quot;additionalInfo&quot;: &quot;Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from your transaction account into your nominated Savings account or Credit Card. This account can receive Round Up credits.&quot;
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
@@ -83,13 +83,6 @@
             &quot;additionalInfo&quot;: &quot;A fee charged on accounts when your balance falls below zero or your negative balance exceeds any agreed overdraft limit. Additional interest is charged on overdrawn amounts.&quot;
         },
         {
-            &quot;name&quot;: &quot;Dishonour fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;12.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When we dishonour a debit presented to us because there aren't enough available funds in your account&quot;
-        },
-        {
             &quot;name&quot;: &quot;Staff-assisted transaction fee&quot;,
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;2.50&quot;,
@@ -115,18 +108,21 @@
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.001&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;Base Variable Rate&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 0.01
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 250000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalInfo&quot;: &quot;The standard variable rate applies if the bonus conditions are not met. If the bonus conditions are met then the bonus rate applies which is inclusive of the variable rate . The interest rate is calculated daily on whole of balance and credited monthly.&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0495&quot;,
+            &quot;rate&quot;: &quot;0.0515&quot;,
             &quot;calculationFrequency&quot;: &quot;P1M&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -135,37 +131,6 @@
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 0.0,
                     &quot;maximumValue&quot;: 50000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month.&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0445&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1,000,000.01 and above&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1000000.01,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month.&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0465&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$250,000.01 to $500,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 250000.01,
-                    &quot;maximumValue&quot;: 500000.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
@@ -182,22 +147,6 @@
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
                     &quot;minimumValue&quot;: 50000.01,
                     &quot;maximumValue&quot;: 250000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;Earn the base interest rate even if you withdraw your savings. Earn bonus interest for each month that you make at least one deposit of $10 each month with no withdrawals during that month.&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.0455&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1M&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$500,000.01 to $1,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 500000.01,
-                    &quot;maximumValue&quot;: 1000000.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],

@@ -9,17 +9,17 @@
     &quot;productId&quot;: &quot;FX&quot;,
     &quot;effectiveFrom&quot;: &quot;2018-12-31T13:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-11-16T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-06-17T14:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;1,2,3 or 5 Year Fixed Rate&quot;,
     &quot;description&quot;: &quot;1,2,3 or 5 Year Fixed Rate&quot;,
     &quot;brand&quot;: &quot;Suncorp&quot;,
-    &quot;brandName&quot;: &quot;Null&quot;,
-    &quot;applicationUri&quot;: &quot;https://www.suncorp.com.au/banking/loans/home-loans/get-started-online.html&quot;,
+    &quot;brandName&quot;: &quot;Suncorp Bank&quot;,
+    &quot;applicationUri&quot;: &quot;https://www.suncorpbank.com.au/home-loans/get-started-online.html&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.suncorp.com.au/banking/loans/home-loans/fixed.html&quot;,
-        &quot;termsUri&quot;: &quot;https://www.suncorp.com.au/content/dam/suncorp/bank/documents/product-information/personal-business-lending-fees-and-charges.pdf&quot;
+        &quot;overviewUri&quot;: &quot;https://www.suncorpbank.com.au/home-loans/fixed.html&quot;,
+        &quot;termsUri&quot;: &quot;https://www.suncorpbank.com.au/content/dam/suncorp/bank/documents/product-information/personal-business-lending-fees-and-charges.pdf&quot;
     },
     &quot;features&quot;: [
         {
@@ -48,12 +48,12 @@
     ],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;MIN_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;10000.00&quot;,
             &quot;additionalInfo&quot;: &quot;Minimum Loan Balance of $10,000&quot;
         },
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;3750000.00&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum Loan Balance of $3,750,000&quot;
         }
@@ -65,6 +65,18 @@
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Arrears Administration Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfo&quot;: &quot;The bank at its discretion will charge either an Arrears Administration Fee or Default Interest if an event of default in payment occurs.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Copy of Documents Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;35.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if we are required to obtain a copy of a document, including Mortgage or title search.&quot;
+        },
         {
             &quot;name&quot;: &quot;Additional Valuation Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
@@ -118,223 +130,9 @@
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;990.00&quot;,
             &quot;additionalInfo&quot;: &quot;Applies to loans where borrowings are greater than or equal to 90% of the property value&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Excess Cheque Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;,
-            &quot;additionalInfo&quot;: &quot;You can request 4 bank cheques for free. An extra 5 free bank cheques are available for progress payments on construction loans. After you have used the free cheques, a fee is payable for each bank cheque requested.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Arrears Administration Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;additionalInfo&quot;: &quot;The bank at its discretion will charge either an Arrears Administration Fee or Default Interest if an event of default in payment occurs.&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Copy of Documents Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;35.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if we are required to obtain a copy of a document, including Mortgage or title search.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0695&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0915&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0908&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P1Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0689&quot;,
-            &quot;comparisonRate&quot;: &quot;0.089&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0669&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0883&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P2Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0694&quot;,
-            &quot;comparisonRate&quot;: &quot;0.087&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0694&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0867&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.9,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P3Y&quot;
-        },
-        {
-            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0684&quot;,
-            &quot;comparisonRate&quot;: &quot;0.083&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
-            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
-            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
-            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.001,
-                    &quot;maximumValue&quot;: 0.95,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 10000.0,
-                    &quot;maximumValue&quot;: 3750000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P5Y&quot;
-        },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
             &quot;rate&quot;: &quot;0.0694&quot;,
@@ -574,6 +372,202 @@
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 0.001,
                     &quot;maximumValue&quot;: 0.9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P5Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0695&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0915&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.95,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0908&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P1Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0689&quot;,
+            &quot;comparisonRate&quot;: &quot;0.089&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.95,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0883&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P2Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0694&quot;,
+            &quot;comparisonRate&quot;: &quot;0.087&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.95,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0694&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0867&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;90%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.9,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Total Mortgage Lending (TML)&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 10000.0,
+                    &quot;maximumValue&quot;: 3750000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;additionalInfo&quot;: &quot;New home lending of &gt; $10,000&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P3Y&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.0684&quot;,
+            &quot;comparisonRate&quot;: &quot;0.083&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1D&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;LVR &lt;95%&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.001,
+                    &quot;maximumValue&quot;: 0.95,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 },
                 {

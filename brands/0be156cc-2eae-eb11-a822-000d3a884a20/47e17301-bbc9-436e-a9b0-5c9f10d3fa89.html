@@ -7,10 +7,10 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;47e17301-bbc9-436e-a9b0-5c9f10d3fa89&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-07-01T00:26:49.773Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-01T00:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Offset Account&quot;,
-    &quot;description&quot;: &quot;Our Offset Account is an everyday access account attached to your home loan. Your account balance is 100% offset against your linked Home Loan before the interest is calculated. So you pay less. The interest you save with an Offset Account can be huge over the life of the loan, and you can help shorten your loan term by years. &quot;,
+    &quot;description&quot;: &quot;Your account balance is 100% offset against a linked MyState Bank Home Loan. Monthly account fee of $8. \rLoaded with clever new banking tech that shows you where your money goes. Pay your way with ApplePay and Google Pay&quot;,
     &quot;brand&quot;: &quot;MyState Bank&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -58,26 +58,16 @@
             &quot;additionalValue&quot;: &quot;Apple Pay, Google Pay, Samsung Pay, Fitbit Pay, Garmin Pay.&quot;
         },
         {
-            &quot;featureType&quot;: &quot;NOTIFICATIONS&quot;,
-            &quot;additionalValue&quot;: &quot;With direct debit reminders for your automatic bill payments, and bill payment reminders for all those bills you pay manually.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/bank-accounts/ways-to-bank/digital-banking/personalised-banking/&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;NPP_ENABLED&quot;,
             &quot;additionalInfo&quot;: &quot;Send and receive money in less than 60 seconds.&quot;
         },
         {
+            &quot;featureType&quot;: &quot;OFFSET&quot;,
+            &quot;additionalInfo&quot;: &quot;100% Offset to the linked eligible MyState Bank loan account.&quot;
+        },
+        {
             &quot;featureType&quot;: &quot;NPP_PAYID&quot;,
             &quot;additionalInfo&quot;: &quot;Send and receive money in less than 60 seconds. Add your mobile number or email address as a PayID and use this in place of your BSB and Account number.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OFFSET&quot;,
-            &quot;additionalInfo&quot;: &quot;100% Offset to the linked loan account.&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Auto Savings\rAuto-Savings lets you choose to automatically move money across to your savings. It uses your day-to-day account activity to figure out how much you can safely squirrel away, then transfers that money from your transaction account over to your savings account, so you don't have to.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/bank-accounts/ways-to-bank/digital-banking/personalised-banking/&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -86,22 +76,31 @@
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalInfo&quot;: &quot;Unlimited Electronic Transactions. &quot;
+            &quot;additionalInfo&quot;: &quot;Unlimited Electronic Transactions  A separate fee is payable for each Bank@Post transaction.\rA direct ATM charge may be applied by the ATM owner at the time of the transaction. &quot;
         }
     ],
     &quot;constraints&quot;: [],
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/bank-accounts/transaction-accounts/offset-account/&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/legal/&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Can only be offset against MyState Bank home loan products as determined from time to time and only if the account and the home loan are in the name(s) of the same person(s);\r\rWe will switch your offset account to an alternate transaction account in circumstances where there is no active eligible loan to link the offset account to.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/bank-accounts/transaction-accounts/offset-account/&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/legal/&quot;
         }
     ],
     &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Voucher Retrieval Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Per Voucher Search&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/wp-content/uploads/fees_savings.pdf&quot;,
+            &quot;discounts&quot;: []
+        },
         {
             &quot;name&quot;: &quot;Monthly Account Fee&quot;,
             &quot;feeType&quot;: &quot;PERIODIC&quot;,
@@ -132,7 +131,7 @@
         {
             &quot;name&quot;: &quot;Cheques Deposited and Dishonoured&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;This fee is charged when a cheque, not your own, has been deposited in to your account and has been dishonoured by the other financial institution.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
@@ -141,10 +140,29 @@
         {
             &quot;name&quot;: &quot;Dishonour and Rejection Fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when any payment on your account is unable to be completed. Excluding a cheque written by you&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Dishonour and Rejection Fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;30.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when any payment on your account is unable to be completed.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
+            &quot;additionalInfo&quot;: &quot;This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when a cheque written against your account is unable to be completed.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://mystate.com.au/wp-content/uploads/fees_savings.pdf&quot;,
+            &quot;discounts&quot;: []
+        },
+        {
+            &quot;name&quot;: &quot;Overdrawn Account Interest&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;balanceRate&quot;: &quot;0.1395&quot;,
+            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Deposit accounts without overdraft arrangements must have a credit balance. We are under no obligation to honour cheques, or allow any withdrawal that would overdraw an\r account without an approved overdraft facility.\r\rIf we honour a cheque or debit which overdraws an account, the amount overdrawn (referred to as the credit provided) will attract debit interest charged to the account on the last\r day of the calendar month. This interest which\r will be charged to your account as 'Overdraft Interest' is calculated on the daily closing debit balance using the current 'Unarranged Borrowing Rate' shown in the Fees &amp; Charges Deposit Accounts. Any credit provided is short term credit and must be repaid\r within 7 days of being provided. In addition, Overdrawn Administration Fees will be applied.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/interest-rates/rates_lending.pdf&quot;,
             &quot;discounts&quot;: []
         },
         {
@@ -152,16 +170,7 @@
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Overdrawn Fee\r\rPer daily occurrence, for any savings or transaction account (with or without an pproved overdraft limit) where we honour a transaction that overdraws the account or exceeds\r the authorised overdraft limit.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Representation and Collection of Dishonoured Cheques&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;This fee is charged when a cheque previously deposited to your account is re-presented for payment.&quot;,
+            &quot;additionalInfo&quot;: &quot;Per daily occurrence, for any savings or transaction account (with or without an pproved overdraft limit) where we honour a transaction that overdraws the account or exceeds\r the authorised overdraft limit.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
             &quot;discounts&quot;: []
         },
@@ -175,17 +184,7 @@
             &quot;discounts&quot;: []
         },
         {
-            &quot;name&quot;: &quot;Overdrawn Account Interest&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;balanceRate&quot;: &quot;0.1395&quot;,
-            &quot;accrualFrequency&quot;: &quot;P1M&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Deposit accounts without overdraft arrangements must have a credit balance. We are under no obligation to honour cheques, or allow any withdrawal that would overdraw an\r account without an approved overdraft facility.\r\rIf we honour a cheque or debit which overdraws an account, the amount overdrawn (referred to as the credit provided will attract debit interest charged to the account on the last\r day of the calendar month. This interest which\r will be charged to your account as 'Overdraft Interest' is calculated on the daily closing debit balance using the current 'Unarranged Borrowing Rate'. Please refer to our\r Interest Rates for Household and Personal Lending brochure available from any branch or by contacting the Customer Care for the current 'Unarranged Borrowing Rate'. Any credit provided is short term credit and must be repaid\r within 7 days of being provided. In addition, Overdrawn Administration Fees will be applied.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/interest-rates/rates_lending.pdf&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;Transaction Verification Fee&quot;,
+            &quot;name&quot;: &quot;Transaction Verification Fee, Copy of Sales Voucher&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
@@ -205,7 +204,7 @@
         {
             &quot;name&quot;: &quot;Bank@Post withdrawal fee&quot;,
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;amount&quot;: &quot;3.00&quot;,
+            &quot;amount&quot;: &quot;4.30&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;This fee is debited on the last day of each month and is charged in addition to any electronic transaction fee which may apply.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
@@ -216,7 +215,7 @@
             &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
             &quot;amount&quot;: &quot;1.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;For each cheque that you write nd is presented for payment.&quot;,
+            &quot;additionalInfo&quot;: &quot;For each cheque that you write and is presented for payment.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf&quot;,
             &quot;discounts&quot;: []
         }

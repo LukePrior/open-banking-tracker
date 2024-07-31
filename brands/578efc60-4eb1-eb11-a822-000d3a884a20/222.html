@@ -8,14 +8,14 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;222&quot;,
     &quot;effectiveFrom&quot;: &quot;2001-07-02T14:30:00.0000000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-21T00:17:11.3935140Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-15T02:00:23.1852693Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;Monthly Term Deposit 12 months&quot;,
     &quot;description&quot;: &quot;Fixed term deposits offer a guaranteed rate of return on your money for the life of an investment. Choose the term or interest rate that best suits you.&quot;,
     &quot;brand&quot;: &quot;Bank Australia&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/term-deposits/term-deposits/&quot;,
+        &quot;overviewUri&quot;: &quot;https://www.bankaust.com.au/banking/term-deposits&quot;,
         &quot;termsUri&quot;: &quot;https://www.bankaust.com.au/support/disclosures&quot;
     },
     &quot;features&quot;: [
@@ -25,7 +25,7 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Early Withdrawal: If you want to withdraw your TD prior to maturity, you are required to provide 31 days' prior notice. You may incur a repayment adjustment.&quot;
+            &quot;additionalInfo&quot;: &quot;Monthly income term deposit redemptions prior to the expiry of the agreed term will be approved with 31 days' notice. During the notice period, no interest will be earned on the portion of the term deposit being withdrawn.&quot;
         }
     ],
     &quot;constraints&quot;: [
@@ -38,8 +38,8 @@
     &quot;eligibility&quot;: [
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;13&quot;,
-            &quot;additionalInfo&quot;: &quot;Customers must be aged 13+ to open a personal Term Deposit. Customers must be aged 18+ to open a non-personal Term Deposit. This term deposit cannot be opened through digital channels.&quot;
+            &quot;additionalValue&quot;: &quot;18&quot;,
+            &quot;additionalInfo&quot;: &quot;Customers must be aged 18+ to open a personal Term Deposit. Customers must be aged 18+ to open a non-personal Term Deposit. This term deposit cannot be opened through digital channels&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;NATURAL_PERSON&quot;,
@@ -51,10 +51,25 @@
             &quot;additionalInfo&quot;: &quot;Be an Australian citizen, permanent resident or have a valid visa; or entity be registered in Australia&quot;
         }
     ],
+    &quot;fees&quot;: [
+        {
+            &quot;name&quot;: &quot;Term Deposit early withdrawal&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Term Deposit early withdrawal admin fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;A fee charged for withdrawal of funds from the term deposit prior to its maturity.&quot;
+        }
+    ],
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.0475&quot;,
+            &quot;rate&quot;: &quot;0.049&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;additionalValue&quot;: &quot;P12M&quot;,

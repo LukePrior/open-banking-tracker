@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;3000&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-07-01T00:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-31T00:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-19T00:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-06-11T00:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TERM_DEPOSITS&quot;,
     &quot;name&quot;: &quot;Term Investment - Interest @ Maturity&quot;,
     &quot;description&quot;: &quot;Fixed amount, fixed term, fixed interest rate, with interest paid at maturity. Available for any customer.&quot;,
@@ -53,7 +53,7 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Information fee - Search &quot;,
+            &quot;name&quot;: &quot;Information fee&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;additionalInfo&quot;: &quot;$20.00 plus $1.00 per page&quot;
@@ -67,17 +67,19 @@
         {
             &quot;name&quot;: &quot;Bank transfer fee&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;
+            &quot;amount&quot;: &quot;8.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Applies when an amount is processed on your behalf to an account in our name from another financial institution to enable us to credit your account.&quot;
         },
         {
             &quot;name&quot;: &quot;Foreign currency deposit fee&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;feeType&quot;: &quot;DEPOSIT&quot;,
             &quot;amount&quot;: &quot;5.00&quot;
         },
         {
             &quot;name&quot;: &quot;EFT transaction fee (RTGS)&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;20.00&quot;
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;20.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Transfer funds on the same day to an account at another financial institution&quot;
         },
         {
             &quot;name&quot;: &quot;EFT interest payment elsewhere&quot;,
@@ -86,25 +88,28 @@
             &quot;additionalInfo&quot;: &quot;Charged for crediting interest to a non Greater Bank account. &quot;
         },
         {
-            &quot;name&quot;: &quot;International currency draft&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;15.00&quot;
+            &quot;name&quot;: &quot;Stop payment fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;7.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged to stop payment of a cheque you have drawn or a bank cheque.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Foreign Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;30.00&quot;
+            &quot;amount&quot;: &quot;30.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency&quot;,
+            &quot;name&quot;: &quot;Telegraphic transfer - Australian Currency (Outgoing International Payment)&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;47.50&quot;
+            &quot;amount&quot;: &quot;50.00&quot;,
+            &quot;additionalInfo&quot;: &quot;When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd.&quot;
         },
         {
-            &quot;name&quot;: &quot;Telegraphic transfer trace&quot;,
-            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
-            &quot;amount&quot;: &quot;80.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Fee is estimate only&quot;
+            &quot;name&quot;: &quot;Payment service creation fee&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;2.50&quot;,
+            &quot;additionalInfo&quot;: &quot;Charged when a customer requests we create an Easypay or Third Party Payment Service to other than a Greater Bank account.&quot;
         }
     ],
     &quot;depositRates&quot;: [
@@ -455,7 +460,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;rate&quot;: &quot;0.0375&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P3M&quot;,
             &quot;tiers&quot;: [
@@ -524,7 +529,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.046&quot;,
+            &quot;rate&quot;: &quot;0.0505&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P6M&quot;,
             &quot;tiers&quot;: [
@@ -662,7 +667,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;rate&quot;: &quot;0.048&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P12M&quot;,
             &quot;tiers&quot;: [
@@ -752,7 +757,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.035&quot;,
+            &quot;rate&quot;: &quot;0.0375&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P3M&quot;,
             &quot;tiers&quot;: [
@@ -818,7 +823,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.046&quot;,
+            &quot;rate&quot;: &quot;0.0505&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P6M&quot;,
             &quot;tiers&quot;: [
@@ -950,7 +955,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.045&quot;,
+            &quot;rate&quot;: &quot;0.048&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P12M&quot;,
             &quot;tiers&quot;: [

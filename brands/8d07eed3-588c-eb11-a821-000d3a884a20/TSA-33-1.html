@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;TSA-33-1&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-10-01T00:00:00+10:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-20T09:00:00+11:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-05T10:00:00+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Business Cash Management Account&quot;,
     &quot;description&quot;: &quot;IMB Business Cash Management Account is ideal for businesses looking for a higher interest account on cash investments or a place to park funds.&quot;,
@@ -34,7 +34,7 @@
         {
             &quot;featureType&quot;: &quot;CARD_ACCESS&quot;,
             &quot;additionalValue&quot;: &quot;IMB Visa Debit Card and Cashcard available &quot;,
-            &quot;additionalInfo&quot;: &quot;Visa Debit Card is not available to individuals under 18&quot;,
+            &quot;additionalInfo&quot;: &quot;Visa Debit Card is not available to individuals under 15&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/banking/ways-to-bank/imb-visa-debit-card&quot;
         },
         {
@@ -787,18 +787,10 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0195&quot;,
+            &quot;rate&quot;: &quot;0.02&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$100,000 to $249,999.99&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 100000.0,
-                    &quot;maximumValue&quot;: 249999.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
-                    &quot;applicabilityConditions&quot;: {}
-                },
                 {
                     &quot;name&quot;: &quot;$250,000 and over&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
@@ -811,7 +803,7 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.016&quot;,
+            &quot;rate&quot;: &quot;0.015&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -828,7 +820,41 @@
         },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0115&quot;,
+            &quot;rate&quot;: &quot;0.0125&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$20,000 to $49,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 20000.0,
+                    &quot;maximumValue&quot;: 49999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0175&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$100,000 to $249,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 249999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.01&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;tiers&quot;: [
@@ -839,7 +865,16 @@
                     &quot;maximumValue&quot;: 19999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
-                },
+                }
+            ],
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;INTRODUCTORY&quot;,
+            &quot;rate&quot;: &quot;0.025&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
                 {
                     &quot;name&quot;: &quot;$20,000 to $49,999.99&quot;,
                     &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
@@ -847,8 +882,33 @@
                     &quot;maximumValue&quot;: 49999.0,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;$50,000 to $99,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 50000.0,
+                    &quot;maximumValue&quot;: 99999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;$100,000 to $249,999.99&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 100000.0,
+                    &quot;maximumValue&quot;: 249999.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                },
+                {
+                    &quot;name&quot;: &quot;$250,000 and over&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 250000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
                 }
             ],
+            &quot;additionalValue&quot;: &quot;P4M&quot;,
+            &quot;additionalInfo&quot;: &quot;Introductory Fixed Bonus Interest Rate is payment for the first 4 interest payments for new accounts open from 8th May 2024, for new or existing Members who have not held a Business Cash Management account beofre. &quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
         }
     ]

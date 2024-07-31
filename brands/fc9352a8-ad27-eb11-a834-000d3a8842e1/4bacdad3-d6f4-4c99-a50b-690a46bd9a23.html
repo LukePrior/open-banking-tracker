@@ -9,7 +9,7 @@
     &quot;productId&quot;: &quot;4bacdad3-d6f4-4c99-a50b-690a46bd9a23&quot;,
     &quot;effectiveFrom&quot;: &quot;2000-05-21T23:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;9999-12-31T01:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-22T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-06-20T09:04:56.640Z&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Fixed Rate Loan&quot;,
     &quot;description&quot;: &quot;Fixed interest rate home loans for terms of one to five years.&quot;,
@@ -40,11 +40,11 @@
     ],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;OPENING_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MIN_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;50000.00&quot;
         },
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;3000000.00&quot;
         }
     ],
@@ -80,7 +80,7 @@
         },
         {
             &quot;name&quot;: &quot;Settlement fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;299.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;For each loan application and is charged at settlement.&quot;
@@ -197,7 +197,7 @@
         },
         {
             &quot;name&quot;: &quot;Fixed Rate Application Fee&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;499.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Applies for a standard fixed rate loan (where one security property is attached).&quot;,
@@ -221,6 +221,11 @@
             &quot;amount&quot;: &quot;749.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Charged to lock in your fixed rate prior to settlement and is charged per fixed rate loan account.&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Valuation Fee&quot;,
+            &quot;feeType&quot;: &quot;VARIABLE&quot;,
+            &quot;additionalInfo&quot;: &quot;A valuation fee is payable. ING will cover up to $225 of the valuation fee (GST inclusive) for the first valuation/property only.&quot;
         }
     ],
     &quot;lendingRates&quot;: [
@@ -230,6 +235,7 @@
             &quot;comparisonRate&quot;: &quot;0.0674&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -237,7 +243,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -249,6 +256,7 @@
             &quot;comparisonRate&quot;: &quot;0.0673&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -256,7 +264,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -268,6 +277,7 @@
             &quot;comparisonRate&quot;: &quot;0.0670&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -275,7 +285,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -287,6 +298,7 @@
             &quot;comparisonRate&quot;: &quot;0.0677&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -294,7 +306,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -306,6 +319,7 @@
             &quot;comparisonRate&quot;: &quot;0.0678&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -313,7 +327,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -325,6 +340,7 @@
             &quot;comparisonRate&quot;: &quot;0.0673&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -332,7 +348,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -344,6 +361,7 @@
             &quot;comparisonRate&quot;: &quot;0.0671&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -351,7 +369,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -363,6 +382,7 @@
             &quot;comparisonRate&quot;: &quot;0.0667&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -370,7 +390,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -382,6 +403,7 @@
             &quot;comparisonRate&quot;: &quot;0.0673&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -389,7 +411,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -401,6 +424,7 @@
             &quot;comparisonRate&quot;: &quot;0.0674&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -408,7 +432,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 91.0,
-                    &quot;maximumValue&quot;: 95.0
+                    &quot;maximumValue&quot;: 95.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -420,6 +445,7 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -431,6 +457,7 @@
             &quot;comparisonRate&quot;: &quot;0.0631&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -442,6 +469,7 @@
             &quot;comparisonRate&quot;: &quot;0.0627&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -453,6 +481,7 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -464,6 +493,7 @@
             &quot;comparisonRate&quot;: &quot;0.0634&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -475,6 +505,7 @@
             &quot;comparisonRate&quot;: &quot;0.0635&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -486,6 +517,7 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -497,6 +529,7 @@
             &quot;comparisonRate&quot;: &quot;0.0631&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -508,6 +541,7 @@
             &quot;comparisonRate&quot;: &quot;0.0638&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -519,6 +553,7 @@
             &quot;comparisonRate&quot;: &quot;0.0640&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;INVESTMENT&quot;,
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -530,6 +565,7 @@
             &quot;comparisonRate&quot;: &quot;0.0619&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -537,7 +573,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -549,6 +586,7 @@
             &quot;comparisonRate&quot;: &quot;0.0617&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -556,7 +594,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -568,6 +607,7 @@
             &quot;comparisonRate&quot;: &quot;0.0615&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -575,7 +615,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -587,6 +628,7 @@
             &quot;comparisonRate&quot;: &quot;0.0622&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -594,7 +636,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -606,6 +649,7 @@
             &quot;comparisonRate&quot;: &quot;0.0623&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -613,7 +657,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -625,6 +670,7 @@
             &quot;comparisonRate&quot;: &quot;0.0618&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -632,7 +678,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -644,6 +691,7 @@
             &quot;comparisonRate&quot;: &quot;0.0616&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -651,7 +699,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -663,6 +712,7 @@
             &quot;comparisonRate&quot;: &quot;0.0612&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -670,7 +720,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -682,6 +733,7 @@
             &quot;comparisonRate&quot;: &quot;0.0618&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -689,7 +741,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -701,6 +754,7 @@
             &quot;comparisonRate&quot;: &quot;0.0619&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -708,7 +762,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 80.0
+                    &quot;maximumValue&quot;: 80.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -720,6 +775,7 @@
             &quot;comparisonRate&quot;: &quot;0.0643&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -727,7 +783,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -739,6 +796,7 @@
             &quot;comparisonRate&quot;: &quot;0.0640&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -746,7 +804,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -758,6 +817,7 @@
             &quot;comparisonRate&quot;: &quot;0.0636&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -765,7 +825,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -777,6 +838,7 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -784,7 +846,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -796,6 +859,7 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -803,7 +867,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -815,6 +880,7 @@
             &quot;comparisonRate&quot;: &quot;0.0642&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -822,7 +888,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
@@ -834,6 +901,7 @@
             &quot;comparisonRate&quot;: &quot;0.0638&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -841,7 +909,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
@@ -853,6 +922,7 @@
             &quot;comparisonRate&quot;: &quot;0.0633&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -860,7 +930,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
@@ -872,6 +943,7 @@
             &quot;comparisonRate&quot;: &quot;0.0638&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -879,7 +951,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
@@ -891,6 +964,7 @@
             &quot;comparisonRate&quot;: &quot;0.0637&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
             &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
@@ -898,7 +972,8 @@
                     &quot;name&quot;: &quot;Loan to Value Ratio&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
                     &quot;minimumValue&quot;: 81.0,
-                    &quot;maximumValue&quot;: 90.0
+                    &quot;maximumValue&quot;: 90.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
                 }
             ],
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
@@ -974,7 +1049,7 @@
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;P1Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -986,7 +1061,7 @@
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;P2Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -998,7 +1073,7 @@
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;P3Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -1010,7 +1085,7 @@
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;P4Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
         },
         {
             &quot;lendingRateType&quot;: &quot;FIXED&quot;,
@@ -1022,7 +1097,7 @@
             &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;additionalValue&quot;: &quot;P5Y&quot;,
-            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only.&quot;
+            &quot;additionalInfo&quot;: &quot;Owner occupier - Interest only. Where an owner occupier Fixed Rate Loan is combined with an Orange Advantage (100% interest Offset) home loan, a fixed interest rate discount of 0.10% p.a. will apply to our advertised fixed interest rates.&quot;
         }
     ]
 }</textarea>

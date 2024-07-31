@@ -14,12 +14,6 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/travel/travel-money-card.html&quot;
         },
         {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: &quot;Convenient&quot;,
-            &quot;additionalInfo&quot;: &quot;Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking.html&quot;
-        },
-        {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Convenient&quot;,
             &quot;additionalInfo&quot;: &quot;Use NetBank and the CommBank app to reload, transfer between currencies and cards, check your balance, set up SMS alerts, view your transaction history, change your currency order, lock or unlock your card.&quot;,
@@ -39,9 +33,20 @@
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
+            &quot;additionalInfo&quot;: &quot;Access a range of travel benefits through Travel Booking (provided by Hopper) for eligible customers.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/travelbooking&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: &quot;Concierge Service&quot;,
             &quot;additionalInfo&quot;: &quot; Worldwide access to a concierge service, 24 hours a day. Get help with everything from tickets to a special event, taking care of travel bookings or finding a special gift.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB3781.pdf&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
+            &quot;additionalValue&quot;: &quot;Convenient&quot;,
+            &quot;additionalInfo&quot;: &quot;Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/digital-banking.html&quot;
         },
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
@@ -88,15 +93,15 @@
     ],
     &quot;constraints&quot;: [
         {
-            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
-            &quot;additionalValue&quot;: &quot;50000.00&quot;,
-            &quot;additionalInfo&quot;: &quot;Maximum balance per Travel Money Card at any one time. The value is AUD or foreign currency equivalent.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
-        },
-        {
             &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
             &quot;additionalValue&quot;: &quot;2500.00&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum amount you can withdraw from ATMs per day: AUD 2,500 or foreign currency equivalent.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
+        },
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;50000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum balance per Travel Money Card at any one time. The value is AUD or foreign currency equivalent.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
         },
         {
@@ -206,11 +211,19 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;Card replacement&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;name&quot;: &quot;Cash withdrawal fee for AUD currency&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.50&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When you request a replacement card(s) for a lost, stolen or damaged card.&quot;,
+            &quot;additionalInfo&quot;: &quot;When you withdraw cash outside of Australia in any currency using your loaded AUD.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
+        },
+        {
+            &quot;name&quot;: &quot;Cash withdrawal fee in foreign currency&quot;,
+            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
+            &quot;amount&quot;: &quot;3.50&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When you withdraw cash outside of Australia in any currency using your loaded foreign currency. The Visa exchange rate at the time of withdrawal will be used to calculate the $3.50 AUD value of the foreign currency, and this will be applied as the fee.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
         },
         {
@@ -235,26 +248,16 @@
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
         },
         {
-            &quot;name&quot;: &quot;Cash withdrawal fee for AUD currency&quot;,
-            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;amount&quot;: &quot;3.50&quot;,
+            &quot;name&quot;: &quot;Card replacement&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When you withdraw cash outside of Australia in any currency using your loaded AUD.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Cash withdrawal fee in foreign currency&quot;,
-            &quot;feeType&quot;: &quot;WITHDRAWAL&quot;,
-            &quot;amount&quot;: &quot;3.50&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;When you withdraw cash outside of Australia in any currency using your loaded foreign currency. The Visa exchange rate at the time of withdrawal will be used to calculate the $3.50 AUD value of the foreign currency, and this will be applied as the fee.&quot;,
+            &quot;additionalInfo&quot;: &quot;When you request a replacement card(s) for a lost, stolen or damaged card.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf&quot;
         }
     ],
     &quot;productId&quot;: &quot;0f55775f416844b19c1f0cebb8d157a1&quot;,
-    &quot;effectiveFrom&quot;: &quot;2009-06-29T14:00:00Z&quot;,
-    &quot;effectiveTo&quot;: &quot;9999-12-30T13:00:00Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-08-01T00:37:39.354257Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-09T00:07:53Z&quot;,
     &quot;productCategory&quot;: &quot;TRAVEL_CARDS&quot;,
     &quot;name&quot;: &quot;Travel Money Card&quot;,
     &quot;description&quot;: &quot;The Travel Money Card is a prepaid Visa card. You can load and reload up to 13 available currencies onto your card for your personal use when you travel.&quot;,

@@ -8,7 +8,7 @@
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;RM-1-1&quot;,
     &quot;effectiveFrom&quot;: &quot;2021-02-01T00:00:00+11:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-04-05T00:00:00+11:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-03T00:00:00+10:00&quot;,
     &quot;productCategory&quot;: &quot;RESIDENTIAL_MORTGAGES&quot;,
     &quot;name&quot;: &quot;Budget Home Loan&quot;,
     &quot;description&quot;: &quot;A low cost home loan option, the Budget Home Loan has a discount off IMB\u2019s standard variable rate for the life of the loan, so you\u2019ll always pay less. No monthly fees, unrestricted additional repayments and free Internet and Mobile Banking redraw&quot;,
@@ -81,8 +81,8 @@
         },
         {
             &quot;featureType&quot;: &quot;CASHBACK_OFFER&quot;,
-            &quot;additionalValue&quot;: &quot;$2,000&quot;,
-            &quot;additionalInfo&quot;: &quot;Enjoy $2,000 cashback when you switch your eligible home loan to IMB Bank. Settle within 90 days. Lending and eligibility criteria, T&amp;Cs apply.&quot;,
+            &quot;additionalValue&quot;: &quot;$4,000&quot;,
+            &quot;additionalInfo&quot;: &quot;Enjoy up to $4,000 cashback when you switch your eligible home loan to IMB Bank. Settle within 90 days. Lending and eligibility criteria, T&amp;Cs apply.&quot;,
             &quot;additionalInfoUri&quot;: &quot;www.imb.com.au/cashback&quot;
         }
     ],
@@ -172,7 +172,7 @@
         {
             &quot;name&quot;: &quot;PEXA Fee - Single Title &quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;61.81&quot;,
+            &quot;amount&quot;: &quot;63.96&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable to the Property Exchange Australia for electronic lodgement of any transaction on title.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;
@@ -180,7 +180,7 @@
         {
             &quot;name&quot;: &quot;PEXA Fee - Multiple Title &quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;79.75&quot;,
+            &quot;amount&quot;: &quot;82.62&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Payable to the Property Exchange Australia for electronic lodgement of any transaction on titles.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/important-information&quot;
@@ -242,15 +242,59 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;&lt;80% LVR&quot;,
+                    &quot;name&quot;: &quot;70-80% LVR&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.01,
+                    &quot;minimumValue&quot;: 0.71,
                     &quot;maximumValue&quot;: 0.8,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
                 }
             ],
             &quot;additionalInfo&quot;: &quot;For Owner Occupier loans purpose with Principal and Interest repayments.The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0604&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0607&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;PRINCIPAL_AND_INTEREST&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;&lt;70% LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 0.7,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;For Owner Occupier loans purpose with Principal and Interest repayments.The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.\u00a0&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
+        },
+        {
+            &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0634&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0623&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
+            &quot;repaymentType&quot;: &quot;INTEREST_ONLY&quot;,
+            &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;&lt;70% LVR&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
+                    &quot;minimumValue&quot;: 0.01,
+                    &quot;maximumValue&quot;: 0.7,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
+                    &quot;applicabilityConditions&quot;: {}
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;For Owner Occupier loan purpose with Interest Only repayments. The comparison rate is based on a $150,000 secured loan for a term of twenty five years for all home loans. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.imb.com.au/help-centre/rates-and-fees&quot;
         },
         {
@@ -264,9 +308,9 @@
             &quot;loanPurpose&quot;: &quot;OWNER_OCCUPIED&quot;,
             &quot;tiers&quot;: [
                 {
-                    &quot;name&quot;: &quot;&lt;80% LVR&quot;,
+                    &quot;name&quot;: &quot;70-80% LVR&quot;,
                     &quot;unitOfMeasure&quot;: &quot;PERCENT&quot;,
-                    &quot;minimumValue&quot;: 0.01,
+                    &quot;minimumValue&quot;: 0.71,
                     &quot;maximumValue&quot;: 0.8,
                     &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;,
                     &quot;applicabilityConditions&quot;: {}
@@ -299,8 +343,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0649&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0655&quot;,
+            &quot;rate&quot;: &quot;0.0639&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0645&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -321,8 +365,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0634&quot;,
-            &quot;comparisonRate&quot;: &quot;0.064&quot;,
+            &quot;rate&quot;: &quot;0.0629&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0635&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -343,8 +387,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0664&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0654&quot;,
+            &quot;rate&quot;: &quot;0.0659&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0649&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,
@@ -365,8 +409,8 @@
         },
         {
             &quot;lendingRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.0679&quot;,
-            &quot;comparisonRate&quot;: &quot;0.0669&quot;,
+            &quot;rate&quot;: &quot;0.0669&quot;,
+            &quot;comparisonRate&quot;: &quot;0.0659&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
             &quot;interestPaymentDue&quot;: &quot;IN_ARREARS&quot;,

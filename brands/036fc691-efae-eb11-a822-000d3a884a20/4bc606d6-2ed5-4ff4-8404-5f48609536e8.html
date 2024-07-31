@@ -43,25 +43,135 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;REJECT_FEE&quot;,
+            &quot;name&quot;: &quot;ACCOUNT_SERVICE_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable for managing your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;BPAY_FEE_-_ELECTRONIC&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you make an electronic BPAY payment&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DIRECT_DEBIT_FEE_-_ELECTRONIC&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if we process a direct debit to your account (including payments you initiate electronically)&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EXTERNAL_PAYMENT_FEE_-_ELECTRONIC&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if you request us to process an electronic payment to an account at another Australian Bank or financial institution&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;BPAY_FEE_-_INTERNET_AND_MOBILE_BANKING&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you make a BPAY payment through internet or mobile banking&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EXTERNAL_PAYMENT_FEE_-_INTERNET_AND_MOBILE_BANKING&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if you request us to process an electronic payment to another Australian bank or financial institution&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;BPAY_FEE_-_PHONE_BANKING&quot;,
+            &quot;feeType&quot;: &quot;TRANSACTION&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you make a BPAY payment through phone banking&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;PAPER_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we issue you with your statement of account in paper&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;ADDITIONAL_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you request us to issue you an additional statement of account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;E-STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we issue you with an electronic statement of account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DIRECT_DEBIT_DISHONOUR_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;15.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you arrange for a payment to another account or by direct debit and there are insufficient clear funds in your account.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you   ve arranged a direct debit payment to an account at another financial institution but there are insu   cient clear funds in your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;EXTERNAL_PAYMENT_DISHONOUR_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you   ve arranged an external payment to an account at another financial institution but there are insu   cient clear funds in your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;INTERNET_AND_MOBILE_BANKING_EXTERNAL_PAYMENT_DISHONOUR_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;15.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you   ve arranged an internet or mobile banking external payment to an account at another financial institution but there are insu   cient clear funds in your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;NON-RESIDENT_WITHHOLDING_TAX&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;accrualFrequency&quot;: &quot;M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Levied on accounts held by a non resident of Australia and where an Australian Tax File Number had not been quoted to us&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         }
     ],
     &quot;depositRates&quot;: [
-        {
-            &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.035&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
-            &quot;additionalValue&quot;: &quot;VARIABLE&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/interest-rates/&quot;
-        },
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
             &quot;rate&quot;: &quot;0.015&quot;,
@@ -72,7 +182,7 @@
         }
     ],
     &quot;productId&quot;: &quot;4bc606d6-2ed5-4ff4-8404-5f48609536e8&quot;,
-    &quot;lastUpdated&quot;: &quot;2023-09-11T08:25:05.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-25T16:54:50.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;ONLINE SAVER&quot;,
     &quot;description&quot;: &quot;An online savings account&quot;,

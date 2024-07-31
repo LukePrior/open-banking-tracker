@@ -50,32 +50,6 @@
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;ACCOUNT_SERVICE_FEE_-_PERSONAL_LOAN&quot;,
-            &quot;feeType&quot;: &quot;PERIODIC&quot;,
-            &quot;amount&quot;: &quot;5.00&quot;,
-            &quot;accrualFrequency&quot;: &quot;M&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: &quot;P1M&quot;,
-            &quot;additionalInfo&quot;: &quot;Payble to levy costs we incur in provding your account and its service&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;,
-            &quot;discounts&quot;: [
-                {
-                    &quot;description&quot;: &quot;Hold an Auswide Bank Mortgage&quot;,
-                    &quot;discountType&quot;: &quot;ELIGIBILITY_ONLY&quot;,
-                    &quot;feeRate&quot;: &quot;1.0&quot;,
-                    &quot;eligibility&quot;: [
-                        {
-                            &quot;discountEligibilityType&quot;: &quot;OTHER&quot;,
-                            &quot;additionalInfo&quot;: &quot;Must hold Auswide Bank mortgage&quot;,
-                            &quot;additionalInfoUri&quot;: &quot;&quot;
-                        }
-                    ],
-                    &quot;additionalInfo&quot;: &quot;FEE WAIVED&quot;,
-                    &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
-                }
-            ]
-        },
-        {
             &quot;name&quot;: &quot;ESTABLISHMENT_FEE_-_PERSONAL_LOAN&quot;,
             &quot;feeType&quot;: &quot;UPFRONT&quot;,
             &quot;amount&quot;: &quot;250.00&quot;,
@@ -85,21 +59,86 @@
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
+            &quot;name&quot;: &quot;ACCOUNT_SERVICE_FEE_-_PERSONAL_LOAN&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;5.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;M&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable for managing your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
             &quot;name&quot;: &quot;DEFAULT_ADMINISTRATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;40.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable if there is an event of default under the terms of your loan&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable if you fail to make a payment by the due date&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
-            &quot;name&quot;: &quot;RTGS_''SAME_DAY''_PAYMENT&quot;,
+            &quot;name&quot;: &quot;INVESTIGATION/CORRECTION_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we process your request to trace, reverse or correct a payment or where you ask us to investigate a disputed transaction on your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;AUDIT_CERTIFICATE_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;When you request us to prepare an Audit Certificate on your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DOCUMENT_RECOVERY_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we process your request to obtain a copy of a deposited cheque, a sales voucher or any deposit, withdrawal or transfer form associated with your account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;DOCUMENT_SEARCH_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;May apply when you request us to conduct a search for documents associated with your account other than documents charged for under the Document recovery fee&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;PAPER_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;PERIODIC&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when we issue you with your statement of account in paper&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;ADDITIONAL_STATEMENT_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable when you request us to issue you an additional statement of account&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;RTGS_OUTWARD_PAYMENT_FEE&quot;,
             &quot;feeType&quot;: &quot;TRANSACTION&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \&quot;same day\&quot; payment&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable each time you request a high value, time critical payment from your account to another financial institution on a real time basis for    same day    payment&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         },
         {
@@ -108,7 +147,7 @@
             &quot;amount&quot;: &quot;50.00&quot;,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Payable to us when your loan is repaid, or you refinance the loan through another credit provider, prior to the end of your loan term. Not appicable for loan refinanced internally.&quot;,
+            &quot;additionalInfo&quot;: &quot;Payable to us when your loan is repaid, or you refinance the loan through another credit provider, prior to the end of your loan term. Not appicable for loan refinanced internally. Not applicable if repaid within the last month of the loan term.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://auswidebank.com.au/help/resources/fees-and-charges/&quot;
         }
     ],
@@ -163,7 +202,7 @@
         }
     ],
     &quot;productId&quot;: &quot;95d2834d-50bd-467f-857e-c48f9217ce3e&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-03-12T09:27:01.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-07-25T16:56:14.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;PERS_LOANS&quot;,
     &quot;name&quot;: &quot;UNSECURED PERSONAL LOANS&quot;,
     &quot;description&quot;: &quot;An unsecured loan with a competitive interest rate and low monthly fee for any worthwhile purpose&quot;,

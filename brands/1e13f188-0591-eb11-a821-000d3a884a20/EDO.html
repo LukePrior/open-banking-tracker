@@ -9,12 +9,12 @@
     &quot;productId&quot;: &quot;EDO&quot;,
     &quot;effectiveFrom&quot;: &quot;2020-04-30T14:00:00.000Z&quot;,
     &quot;effectiveTo&quot;: &quot;2999-12-30T13:00:00.000Z&quot;,
-    &quot;lastUpdated&quot;: &quot;2024-02-29T13:00:00.000Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-05-19T14:00:00.000Z&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Everyday Options Account&quot;,
     &quot;description&quot;: &quot;An easy, everyday bank account packed with extras to help you spend, save and budget better.&quot;,
     &quot;brand&quot;: &quot;Suncorp&quot;,
-    &quot;brandName&quot;: &quot;null&quot;,
+    &quot;brandName&quot;: &quot;Suncorp Bank&quot;,
     &quot;applicationUri&quot;: &quot;https://www.suncorp.com.au/banking/bank-accounts/everyday-accounts/options.html#application&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
@@ -25,7 +25,7 @@
     },
     &quot;cardArt&quot;: [
         {
-            &quot;title&quot;: &quot;null&quot;,
+            &quot;title&quot;: &quot;Visa Debit&quot;,
             &quot;imageUri&quot;: &quot;https://www.suncorp.com.au/banking/bank-accounts/everyday-accounts/_jcr_content/par/canvas_769587125_cop_93408127/pars/content_container/cc-parsys/flexible_table_copy_/cell_11/data_par/content_container/cc-parsys/adaptiveimage_copy.img.full.high.png/1674023108958.png&quot;
         }
     ],
@@ -37,10 +37,6 @@
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;The flexiRate self-service feature lets you lock in a fixed interest rate for terms up to 12 months. Available in Suncorp App or Internet Banking for main account and optional sub-accounts.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
-        },
-        {
-            &quot;featureType&quot;: &quot;OTHER&quot;,
-            &quot;additionalInfo&quot;: &quot;Personal Cheques&quot;
         },
         {
             &quot;featureType&quot;: &quot;BILL_PAYMENT&quot;,
@@ -119,6 +115,11 @@
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalInfo&quot;: &quot;Pay bills directly from optional sub-accounts at no additional cost.&quot;
+        },
+        {
+            &quot;featureType&quot;: &quot;LOYALTY_PROGRAM&quot;,
+            &quot;additionalValue&quot;: &quot;Feel Good Rewards&quot;,
+            &quot;additionalInfo&quot;: &quot;Feel Good Rewards is a rewards program which provides cashback paid into your Eligible Account when you meet the Eligibility Criteria as set out in the Account Terms and Conditions.&quot;
         }
     ],
     &quot;eligibility&quot;: [
@@ -154,12 +155,6 @@
             &quot;name&quot;: &quot;Copy of personal or bank cheque&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;12.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Bank Cheque Purchase&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
@@ -234,12 +229,6 @@
             &quot;name&quot;: &quot;Real Time Gross Settlements (RTGS) - outward&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;35.00&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Bank Cheque Replacement&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;8.00&quot;,
             &quot;currency&quot;: &quot;AUD&quot;
         },
         {
@@ -376,6 +365,24 @@
             ],
             &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: &quot;1 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;FIXED&quot;,
+            &quot;rate&quot;: &quot;0.036&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P10M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 1.0,
+                    &quot;maximumValue&quot;: 1000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
+                }
+            ],
+            &quot;additionalValue&quot;: &quot;P10M&quot;,
+            &quot;additionalInfo&quot;: &quot;10 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         },
         {
@@ -520,24 +527,6 @@
             ],
             &quot;additionalValue&quot;: &quot;P9M&quot;,
             &quot;additionalInfo&quot;: &quot;9 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
-        },
-        {
-            &quot;depositRateType&quot;: &quot;FIXED&quot;,
-            &quot;rate&quot;: &quot;0.036&quot;,
-            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
-            &quot;applicationFrequency&quot;: &quot;P10M&quot;,
-            &quot;tiers&quot;: [
-                {
-                    &quot;name&quot;: &quot;$1 to $1,000,000&quot;,
-                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
-                    &quot;minimumValue&quot;: 1.0,
-                    &quot;maximumValue&quot;: 1000000.0,
-                    &quot;rateApplicationMethod&quot;: &quot;WHOLE_BALANCE&quot;
-                }
-            ],
-            &quot;additionalValue&quot;: &quot;P10M&quot;,
-            &quot;additionalInfo&quot;: &quot;10 Month FlexiRate. Optional flexirate feature with main and optional sub-accounts.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.suncorp.com.au/banking/investments/flexirates.html?intCMP=SUN:BK:PD:NPS:OSL:20181118:2995#flexirates&quot;
         }
     ]
