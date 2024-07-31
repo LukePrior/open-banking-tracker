@@ -59,37 +59,15 @@
         ],
         "fees": [
             {
-                "name": "ACCOUNT_SERVICE_FEE_-_PERSONAL_BANK_ACCOUNTS",
+                "name": "ACCOUNT_SERVICE_FEE_-_CASH_MANAGEMENT",
                 "feeType": "PERIODIC",
                 "amount": "5.00",
-                "accrualFrequency": "M",
+                "accrualFrequency": "",
                 "currency": "AUD",
                 "additionalValue": "P1M",
-                "additionalInfo": "Payble to levy costs we incur in provding your account and its service",
+                "additionalInfo": "Payable for managing your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/",
                 "discounts": [
-                    {
-                        "description": "Regular payroll credits",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0",
-                        "additionalInfo": "Fee waived",
-                        "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-                    },
-                    {
-                        "description": "Student ID Card",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "STUDENT",
-                                "additionalValue": "School, univesity, TAFE, college",
-                                "additionalInfo": "",
-                                "additionalInfoUri": "https://auswidebank.com.au/info/fees-and-charges/"
-                            }
-                        ],
-                        "additionalInfo": "Fee waived",
-                        "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-                    },
                     {
                         "description": "Balance falls below $5,000.00 in month",
                         "discountType": "BALANCE",
@@ -113,20 +91,6 @@
                         "additionalInfoUri": "https://auswidebank.com.au/corporate/shareholder-information/shareholder-advantage/"
                     },
                     {
-                        "description": "Hold an Auswide Bank Mortgage",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Must hold Auswide Bank mortgage",
-                                "additionalInfoUri": ""
-                            }
-                        ],
-                        "additionalInfo": "FEE WAIVED",
-                        "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-                    },
-                    {
                         "description": "Hold an Auswide Bank Term Deposit",
                         "discountType": "ELIGIBILITY_ONLY",
                         "feeRate": "1.0",
@@ -143,48 +107,138 @@
                 ]
             },
             {
-                "name": "BANK_CHEQUE",
+                "name": "CASH_DEPOSIT_FEE",
+                "feeType": "DEPOSIT",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you deposit cash over the counter at an Auswide Bank branch/agency",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "CASH_WITHDRAWAL_FEE_-",
+                "feeType": "WITHDRAWAL",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you withdrawal cash over the counter at an Auswide Bank branch/agency",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "INTERNAL_TRANSFER_FEE_-",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable for any transfer between two Auswide Bank accounts at an Auswide Bank branch/agency",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "CHEQUE_DEPOSIT_PROCESSING_FEE",
+                "feeType": "DEPOSIT",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable per cheque deposited at an Auswide Bank branch or by mail",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "BANK_CHEQUE_FEE",
                 "feeType": "EVENT",
                 "amount": "12.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "When you request a bank cheque",
+                "additionalInfo": "Payable charged per cheque requested for a one off purchase",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "FOREIGN_CURRENCY_CHEQUE_PURCHASE",
-                "feeType": "EVENT",
-                "amount": "12.50",
+                "name": "CHEQUE_WITHDRAWAL_USING_CHEQUE_BOOK",
+                "feeType": "WITHDRAWAL",
+                "amount": "2.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you purchase a cheque in a foreign currency",
+                "additionalInfo": "Payable when you write a cheque and it is presented on your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "RTGS_''SAME_DAY''_PAYMENT",
+                "name": "DEPOSIT_FOREIGN_CURRENCY_CHEQUE_DRAFT_FEE",
+                "feeType": "DEPOSIT",
+                "amount": "5.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable each time a foreign currency/draft is deposited. If cheque is greater than $5,000 or issuing bank is required to clear and settle cheque fee is $50",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "BPAY_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you make an electronic BPAY payment",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "DIRECT_DEBIT_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if we process a direct debit to your account (including payments you initiate electronically)",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "EXTERNAL_PAYMENT_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you request us to process an electronic payment to an account at another Australian Bank or financial institution",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "RTGS_OUTWARD_PAYMENT_FEE",
                 "feeType": "TRANSACTION",
                 "amount": "20.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \"same day\" payment",
+                "additionalInfo": "Payable each time you request a high value, time critical payment from your account to another financial institution on a real time basis for    same day    payment",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "TELEGRAPHIC_TRANSFER_$AU",
+                "name": "TELEGPRAPHIC_TRANSFER_FEE",
                 "feeType": "PAYMENT",
                 "amount": "50.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "An electronic transmission of funds to a nominated account at an overseas bank",
+                "additionalInfo": "payable each time you request an electronic transmission of funds to an account at an overseas bank. $AU cuurency $50 per transfer OR foreign currency $30 per transfer",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "TELEGRAPHIC_TRANSFER_$FOREIGN",
-                "feeType": "PAYMENT",
-                "amount": "30.00",
+                "name": "BPAY_FEE_-_INTERNET_AND_MOBILE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "An electronic transmission of funds to a nominated account at an overseas bank",
+                "additionalInfo": "Payable when you make a BPAY payment through internet or mobile banking",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "EXTERNAL_PAYMENT_FEE_-_INTERNET_AND_MOBILE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you request us to process an electronic payment to another Australian bank or financial institution",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "BPAY_FEE_-_PHONE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you make a BPAY payment through phone banking",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -193,7 +247,7 @@
                 "amount": "5.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you use your Visa Debit Card at any oversas ATM to withdraw from your account.",
+                "additionalInfo": "Payable when you use your Visa Debit Card at any oversas ATM to withdraw from your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -206,21 +260,67 @@
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "REJECT_FEE",
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable when we issue you with your statement of account in paper",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "ADDITIONAL_STATEMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you request us to issue you an additional statement of account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "E-STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable when we issue you with an electronic statement of account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "DIRECT_DEBIT_DISHONOUR_FEE",
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you arrange for a payment to another account or by direct debit and there are insufficient clear funds in your account.",
+                "additionalInfo": "Payable when you   ve arranged a direct debit payment to an account at another financial institution but there are insu   cient clear funds in your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "CHEQUE_WITHDRAWAL_USING_CHEQUE_BOOK",
-                "feeType": "TRANSACTION",
-                "amount": "2.00",
+                "name": "EXTERNAL_PAYMENT_DISHONOUR_FEE",
+                "feeType": "EVENT",
+                "amount": "15.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "",
+                "additionalInfo": "Payable when you   ve arranged an external payment to an account at another financial institution but there are insu   cient clear funds in your account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "INTERNET_AND_MOBILE_BANKING_EXTERNAL_PAYMENT_DISHONOUR_FEE",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you   ve arranged an internet or mobile banking external payment to an account at another financial institution but there are insu   cient clear funds in your account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "NON-RESIDENT_WITHHOLDING_TAX",
+                "feeType": "EVENT",
+                "accrualFrequency": "M",
+                "currency": "AUD",
+                "additionalInfo": "Levied on accounts held by a non resident of Australia and where an Australian Tax File Number had not been quoted to us",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             }
         ],
@@ -345,7 +445,7 @@
             }
         ],
         "productId": "60f02256-3125-4a50-964f-bdb862efdd4e",
-        "lastUpdated": "2024-03-12T13:10:54.000+10:00",
+        "lastUpdated": "2024-07-25T16:54:50.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "CASH MANAGEMENT",
         "description": "A cash management account",

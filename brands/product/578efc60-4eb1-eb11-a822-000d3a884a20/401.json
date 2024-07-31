@@ -2,7 +2,7 @@
     "data": {
         "productId": "401",
         "effectiveFrom": "2013-08-15T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-01T00:00:23.8072951Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Clean Energy Home Loan Package",
         "description": "Bank Australia's reduced rate home loan for green upgrades and property purchases.",
@@ -12,13 +12,15 @@
             "overviewUri": "https://www.bankaust.com.au/home-loans/clean-energy-home-loan",
             "termsUri": "https://www.bankaust.com.au/support/disclosures",
             "eligibilityUri": "https://cdn.bfldr.com/1R31Y8GR/as/csc63ptqm6j9v3qt9v4mk4/Clean_Energy_Home_Loan_Fact_Sheet",
-            "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures"
+            "feesAndPricingUri": "https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan",
+            "bundleUri": "https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan"
         },
         "bundles": [
             {
                 "name": "Clean Energy home loan",
                 "description": "Clean Energy home loan",
-                "additionalInfo": "Clean Energy Home loans include an annual fee waiver for the platinum credit card, everyday banking, no establishment fee for personal loans, and up to a 10% discount on insurance for eligible customers.",
+                "additionalInfo": "Clean Energy Home loans include an annual fee waiver for the platinum credit card, everyday banking and up to a 10% discount on insurance for eligible customers.",
+                "additionalInfoUri": "https://www.bankaust.com.au/banking/home-loans/clean-energy-home-loan",
                 "productIds": [
                     "240",
                     "401"
@@ -57,6 +59,12 @@
                 "additionalInfo": "If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed"
             }
         ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "10000.00"
+            }
+        ],
         "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
@@ -86,9 +94,9 @@
             {
                 "name": "Mortgage Discharge Fee",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "350.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply. Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office."
+                "additionalInfo": "Payable when you discharge the mortgage. Statutory government registration fees will still apply"
             },
             {
                 "name": "Valuation Administration Fee",
@@ -103,7 +111,7 @@
                 "amount": "350.00",
                 "currency": "AUD",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Annual fee payable on all Premium loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist"
+                "additionalInfo": "Annual fee payable on all Premium Package loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist"
             },
             {
                 "name": "Portability Fee- New Mortgage",
@@ -125,6 +133,13 @@
                 "amount": "150.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable when a property securing a loan is replaced with a property that is already registered with a Bank Australia mortgage."
+            },
+            {
+                "name": "Loan Variation Fee",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when transferring from a home loan product to a different home loan product. For example, transferring a variable rate product to a fixed rate product."
             }
         ],
         "lendingRates": [
@@ -145,8 +160,7 @@
                         "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type."
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -165,8 +179,7 @@
                         "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type."
+                ]
             }
         ]
     },

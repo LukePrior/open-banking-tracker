@@ -49,7 +49,17 @@
         ],
         "fees": [
             {
-                "name": "BRANCH_DEPOSIT_FEE",
+                "name": "ACCOUNT_SERVICE_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable for managing your account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "BRANCH_CASH_DEPOSIT_FEE",
                 "feeType": "DEPOSIT",
                 "amount": "2.50",
                 "accrualFrequency": "",
@@ -85,48 +95,93 @@
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "BANK_CHEQUE",
+                "name": "BANK_CHEQUE_FEE",
                 "feeType": "EVENT",
                 "amount": "12.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "When you request a bank cheque",
+                "additionalInfo": "Payable charged per cheque requested for a one off purchase",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "BRANCH_BPAY_FEE",
-                "feeType": "TRANSACTION",
-                "amount": "2.50",
+                "name": "DEPOSIT_FOREIGN_CURRENCY_CHEQUE_DRAFT_FEE",
+                "feeType": "DEPOSIT",
+                "amount": "5.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you pay your bills over the counter at an Auswide Bank branch/agency",
+                "additionalInfo": "Payable each time a foreign currency/draft is deposited. If cheque is greater than $5,000 or issuing bank is required to clear and settle cheque fee is $50",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "RTGS_''SAME_DAY''_PAYMENT",
+                "name": "BPAY_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you make an electronic BPAY payment",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "DIRECT_DEBIT_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if we process a direct debit to your account (including payments you initiate electronically)",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "EXTERNAL_PAYMENT_FEE_-_ELECTRONIC",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you request us to process an electronic payment to an account at another Australian Bank or financial institution",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "RTGS_OUTWARD_PAYMENT_FEE",
                 "feeType": "TRANSACTION",
                 "amount": "20.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \"same day\" payment",
+                "additionalInfo": "Payable each time you request a high value, time critical payment from your account to another financial institution on a real time basis for    same day    payment",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "TELEGRAPHIC_TRANSFER_$AU",
+                "name": "TELEGPRAPHIC_TRANSFER_FEE",
                 "feeType": "PAYMENT",
                 "amount": "50.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "An electronic transmission of funds to a nominated account at an overseas bank",
+                "additionalInfo": "payable each time you request an electronic transmission of funds to an account at an overseas bank. $AU cuurency $50 per transfer OR foreign currency $30 per transfer",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "TELEGRAPHIC_TRANSFER_$FOREIGN",
-                "feeType": "PAYMENT",
-                "amount": "30.00",
+                "name": "BPAY_FEE_-_INTERNET_AND_MOBILE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "An electronic transmission of funds to a nominated account at an overseas bank",
+                "additionalInfo": "Payable when you make a BPAY payment through internet or mobile banking",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "EXTERNAL_PAYMENT_FEE_-_INTERNET_AND_MOBILE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable if you request us to process an electronic payment to another Australian bank or financial institution",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "BPAY_FEE_-_PHONE_BANKING",
+                "feeType": "TRANSACTION",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you make a BPAY payment through phone banking",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -135,7 +190,7 @@
                 "amount": "5.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you use your Visa Debit Card at any oversas ATM to withdraw from your account.",
+                "additionalInfo": "Payable when you use your Visa Debit Card at any oversas ATM to withdraw from your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -154,30 +209,58 @@
                 "accrualFrequency": "M",
                 "currency": "AUD",
                 "additionalValue": "P1M",
-                "additionalInfo": "Payable when we issue you wit a paper statemnt of your account",
+                "additionalInfo": "Payable when we issue you with a paper statement of your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "ADDITIONAL_STATEMENT_FEE",
+                "name": "ADDITIONAL_STATEMENT_FEE_-_INSTANT_ACCESS_ACCOUNT",
                 "feeType": "EVENT",
                 "amount": "2.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request any statement in addition to your account type's free limits",
+                "additionalInfo": "Payable when you request us to issue you an additional statement of account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "REJECT_FEE",
+                "name": "E-STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable when we issue you with an electronic statement of account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "DIRECT_DEBIT_DISHONOUR_FEE",
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you arrange for a payment to another account or by direct debit and there are insufficient clear funds in your account.",
+                "additionalInfo": "Payable when you   ve arranged a direct debit payment to an account at another financial institution but there are insu   cient clear funds in your account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "EXTERNAL_PAYMENT_DISHONOUR_FEE",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you   ve arranged an external payment to an account at another financial institution but there are insu   cient clear funds in your account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "INTERNET_AND_MOBILE_BANKING_EXTERNAL_PAYMENT_DISHONOUR_FEE",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you   ve arranged an internet or mobile banking external payment to an account at another financial institution but there are insu   cient clear funds in your account",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             }
         ],
         "productId": "6a57ef7d-c05c-4177-8dbb-9e0ce5f55d5f",
-        "lastUpdated": "2024-03-14T15:11:50.000+10:00",
+        "lastUpdated": "2024-07-25T16:54:50.000+10:00",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "INSTANT ACCESS ACCOUNT",
         "description": "An everyday transaction account with no monthly fee and some transaction fees",

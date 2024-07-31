@@ -2,7 +2,7 @@
     "data": {
         "productId": "196",
         "effectiveFrom": "2005-07-12T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-05-16T00:00:24.0373570Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Visa Credit Card",
         "description": "A Visa Credit Card with a competitive rate, no annual fee and up to 55 days interest free.",
@@ -16,7 +16,6 @@
         "features": [
             {
                 "featureType": "ADDITIONAL_CARDS",
-                "additionalValue": "NULL",
                 "additionalInfo": "For greater convenience and flexibility you can share you Bank Australia credit card with 1 additional card holder provided they are at least 18 years old. The card will be in their name but you will remain responsible for the account."
             },
             {
@@ -61,6 +60,10 @@
         ],
         "eligibility": [
             {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
                 "eligibilityType": "NATURAL_PERSON",
                 "additionalInfo": "Natural Person or In trust for a Natural Person or Non-Individual entity"
             },
@@ -76,12 +79,6 @@
         ],
         "fees": [
             {
-                "name": "Cash Advance Fee",
-                "feeType": "TRANSACTION",
-                "amount": "0.00",
-                "currency": "AUD"
-            },
-            {
                 "name": "International Transaction fee",
                 "feeType": "PURCHASE",
                 "transactionRate": "0.03",
@@ -94,20 +91,6 @@
                 "amount": "175.00",
                 "currency": "USD",
                 "additionalInfo": "A fee charged when you need an emergency replacement card or cash delivered to you on an urgent basis to an address overseas."
-            },
-            {
-                "name": "Exceeding available funds fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "A fee charged on accounts when your balance falls below zero or your negative balance exceeds any agreed overdraft limit. Additional interest is charged on overdrawn amounts."
-            },
-            {
-                "name": "Delivery fee for an urgent replacement of lost, stolen or damaged Visa card in Australia",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "A fee charged when you need an emergency replacement card or cash delivered to you on an urgent basis to an Australian address."
             },
             {
                 "name": "Cash Advance Fee - Domestic",
@@ -123,19 +106,12 @@
                 "transactionRate": "0.03",
                 "currency": "AUD",
                 "additionalInfo": "Applies to any cash advance made outside Australia, $3.50 plus Foreign Currency Conversion Fee is applicable."
-            },
-            {
-                "name": "Dishonour fee",
-                "feeType": "EVENT",
-                "amount": "12.00",
-                "currency": "AUD",
-                "additionalInfo": "When we dishonour a debit presented to us because there aren't enough available funds in your account"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "CASH_ADVANCE",
-                "rate": "0.1239",
+                "rate": "0.1974",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -143,7 +119,7 @@
             },
             {
                 "lendingRateType": "PURCHASE",
-                "rate": "0.1239",
+                "rate": "0.1974",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",

@@ -2,7 +2,7 @@
     "data": {
         "productId": "490",
         "effectiveFrom": "2015-05-20T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-01T00:00:23.8072951Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premium Home Loan Package",
         "description": "The full-featured home loan packed with positives for future generations.",
@@ -12,14 +12,14 @@
         "additionalInformation": {
             "overviewUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
             "termsUri": "https://www.bankaust.com.au/support/disclosures",
-            "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures",
+            "feesAndPricingUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
             "bundleUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package"
         },
         "bundles": [
             {
                 "name": "Premium Package Home Loan Package",
                 "description": "Premium Package",
-                "additionalInfo": "Premium Package Home loans include an annual fee waiver for the platinum credit card, everyday banking, no establishment fee for personal loans, and up to a 10% discount on insurance for eligible customers.",
+                "additionalInfo": "Premium Package Home loans include an annual fee waiver for the platinum credit card, everyday banking and up to a 10% discount on insurance for eligible customers.",
                 "additionalInfoUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
                 "productIds": [
                     "194",
@@ -36,6 +36,10 @@
             {
                 "featureType": "DIGITAL_BANKING",
                 "additionalInfo": "You can self-serve your day-to-day banking needs via Bank Australia's App or Internet Banking."
+            },
+            {
+                "featureType": "EXTRA_REPAYMENTS",
+                "additionalInfo": "You can make extra repayments on variable rate loans and access the cash when you need it at no cost with our redraw."
             },
             {
                 "featureType": "OFFSET",
@@ -64,11 +68,13 @@
                 "additionalInfo": "If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed"
             }
         ],
-        "eligibility": [
+        "constraints": [
             {
-                "eligibilityType": "BUSINESS",
-                "additionalInfo": "Non-individual borrowers: Includes Non-trading Companies and/or Family/Unit/Hybrid Trusts"
-            },
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "10000.00"
+            }
+        ],
+        "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18",
@@ -95,14 +101,14 @@
                 "amount": "350.00",
                 "currency": "AUD",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Annual fee payable on all Premium loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist"
+                "additionalInfo": "Annual fee payable on all Premium Package loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist."
             },
             {
                 "name": "Mortgage Discharge Fee",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "350.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply. Additional fees may apply and should be paid direct to out agent if settlement is requested in a location other than a Bank Australia office."
+                "additionalInfo": "Payable when you discharge the mortgage. Statutory government registration fees will still apply"
             },
             {
                 "name": "Portability Fee- Existing Mortgage",
@@ -124,6 +130,20 @@
                 "amount": "500.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable when you request that a property securing a loan is replaced with a property that is a new security to Bank Australia."
+            },
+            {
+                "name": "Loan Variation Fee",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when transferring from a home loan product to a different home loan product. For example, transferring a variable rate product to a fixed rate product."
+            },
+            {
+                "name": "Additional Valuation",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "The establishment fee covers a standard loan, which includes one valuation. This fee applies for any additional standard residential valuation required."
             }
         ],
         "lendingRates": [
@@ -144,9 +164,7 @@
                         "maximumValue": 60.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <60%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -165,9 +183,7 @@
                         "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <70%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -186,9 +202,7 @@
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <80%",
-                "additionalInfoUri": "https://www.bankaust.com.au/bank-australia-rates-and-fees"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -207,9 +221,7 @@
                         "maximumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <90%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -227,9 +239,7 @@
                         "minimumValue": 90.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Owner Occupied with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of >90%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             }
         ]
     },

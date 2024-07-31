@@ -2,7 +2,7 @@
     "data": {
         "productId": "123",
         "effectiveFrom": "2005-12-12T13:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-01T00:00:23.8072951Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Bonus Saver",
         "description": "A savings account which helps you reach your financial goals faster by rewarding you with bonus interest where monthly savings of at least $100  and no withdrawals are made.",
@@ -36,7 +36,7 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from your transaction account into your nominatedSavings account or Credit Card. This account can receive Round Up credits."
+                "additionalInfo": "Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from your transaction account into your nominated Savings account or Credit Card. This account can receive Round Up credits."
             },
             {
                 "featureType": "UNLIMITED_TXNS",
@@ -85,13 +85,6 @@
                 ]
             },
             {
-                "name": "Dishonour fee",
-                "feeType": "EVENT",
-                "amount": "12.00",
-                "currency": "AUD",
-                "additionalInfo": "When we dishonour a debit presented to us because there aren't enough available funds in your account"
-            },
-            {
                 "name": "Exceeding available funds fee",
                 "feeType": "EVENT",
                 "amount": "10.00",
@@ -116,30 +109,15 @@
             },
             {
                 "depositRateType": "BONUS",
-                "rate": "0.0475",
-                "calculationFrequency": "P1M",
+                "rate": "0.0515",
+                "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "$0.01 to $250,000",
+                        "name": "$0.01 to $100,000",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
-                        "maximumValue": 250000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
-                    }
-                ],
-                "additionalValue": "The standard variable rate applies if the bonus conditions are not met. If the bonus conditions are met then the bonus rate applies which is inclusive of the variable rate . The interest rate is calculated daily on whole of balance and credited monthly"
-            },
-            {
-                "depositRateType": "BONUS",
-                "rate": "0.0445",
-                "calculationFrequency": "P1M",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "$1,000,000.01 and over",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 1000000.01,
+                        "minimumValue": 0.01,
+                        "maximumValue": 100000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],
@@ -148,11 +126,27 @@
             {
                 "depositRateType": "BONUS",
                 "rate": "0.0465",
-                "calculationFrequency": "P1M",
+                "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "$250,000.01 to $500,000",
+                        "name": "$100,000.01 to $250,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 100000.01,
+                        "maximumValue": 250000.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "The standard variable rate applies if the bonus conditions are not met. If the bonus conditions are met then the bonus rate applies which is inclusive of the variable rate . The interest rate is calculated daily on whole of balance and credited monthly"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.042",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "$250,000.01 to $500,000.",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 250000.01,
                         "maximumValue": 500000.0,
@@ -163,15 +157,14 @@
             },
             {
                 "depositRateType": "BONUS",
-                "rate": "0.0455",
-                "calculationFrequency": "P1M",
+                "rate": "0.039",
+                "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "$500,000.01 to $1,000,000",
+                        "name": "$500,000.01 and above",
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 500000.01,
-                        "maximumValue": 1000000.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
                 ],

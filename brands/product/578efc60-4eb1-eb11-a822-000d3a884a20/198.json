@@ -2,7 +2,7 @@
     "data": {
         "productId": "198",
         "effectiveFrom": "2006-08-08T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-05-16T08:00:23.3294819Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Low Rate Visa Credit Card",
         "description": "A Visa Credit Card with our lowest interest rate.",
@@ -14,6 +14,10 @@
             "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures"
         },
         "features": [
+            {
+                "featureType": "BALANCE_TRANSFERS",
+                "additionalInfo": "0% for 6 months. You can request to transfer the balance of another Banks's credit card to your Bank Australia Low Rate Visa Credit Card, to help you reduce interest charges."
+            },
             {
                 "featureType": "CARD_ACCESS",
                 "additionalValue": "Visa Credit Card",
@@ -51,6 +55,10 @@
         ],
         "eligibility": [
             {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
                 "eligibilityType": "NATURAL_PERSON",
                 "additionalInfo": "Natural Person or In trust for a Natural Person or Non-Individual entity"
             },
@@ -65,12 +73,6 @@
             }
         ],
         "fees": [
-            {
-                "name": "Cash Advance Fee",
-                "feeType": "TRANSACTION",
-                "amount": "0.00",
-                "currency": "AUD"
-            },
             {
                 "name": "Cash Advance Fee - Domestic",
                 "feeType": "WITHDRAWAL",
@@ -101,27 +103,6 @@
                 "additionalInfo": "The International Transaction fee applies to Visa transactions where there is a currency conversion and/or the transaction is processed overseas"
             },
             {
-                "name": "Dishonour fee",
-                "feeType": "EVENT",
-                "amount": "12.00",
-                "currency": "AUD",
-                "additionalInfo": "When we dishonour a debit presented to us because there aren't enough available funds in your account"
-            },
-            {
-                "name": "Delivery fee for an urgent replacement of lost, stolen or damaged Visa card in Australia",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "A fee charged when you need an emergency replacement card or cash delivered to you on an urgent basis to an Australian address."
-            },
-            {
-                "name": "Exceeding available funds fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "A fee charged on accounts when your balance falls below zero or your negative balance exceeds any agreed overdraft limit. Additional interest is charged on overdrawn amounts."
-            },
-            {
                 "name": "Annual Fee",
                 "feeType": "PERIODIC",
                 "amount": "59.00",
@@ -133,18 +114,17 @@
         "lendingRates": [
             {
                 "lendingRateType": "CASH_ADVANCE",
-                "rate": "0.0939",
+                "rate": "0.1299",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS"
             },
             {
                 "lendingRateType": "PURCHASE",
-                "rate": "0.0939",
+                "rate": "0.1299",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "interestPaymentDue": "IN_ARREARS",
-                "additionalInfo": "Up to 55 days interest free days for purchases and up to 12 months interest free on balance transfers."
+                "interestPaymentDue": "IN_ARREARS"
             }
         ]
     },

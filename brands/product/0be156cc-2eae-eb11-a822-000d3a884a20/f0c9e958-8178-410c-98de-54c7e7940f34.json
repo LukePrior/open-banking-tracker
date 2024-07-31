@@ -1,10 +1,10 @@
 {
     "data": {
         "productId": "f0c9e958-8178-410c-98de-54c7e7940f34",
-        "lastUpdated": "2023-07-01T00:00:00.000Z",
+        "lastUpdated": "2024-07-01T00:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Access Assist",
-        "description": "Our Access Assist Account is an everyday 'at-call' account that has no Monthly Account Fee and unlimited transactions and pays interest. Designed as a transaction fee-free account for customers who are aged 55 years of age or older.",
+        "description": "Our Access Assist Account is an everyday \ufffdat-call\ufffd account that has no monthly account fee. Aged 55 years of age or older. Pay your way with ApplePay and Google Pay",
         "brand": "MyState Bank",
         "isTailored": false,
         "additionalInformation": {
@@ -58,34 +58,21 @@
             {
                 "featureType": "NPP_PAYID",
                 "additionalInfo": "Send and receive money in less than 60 seconds. Add your mobile number or email address as a PayID and use this in place of your BSB and Account number."
-            },
-            {
-                "featureType": "OTHER",
-                "additionalInfo": "Can have multiple Access Assist Accounts."
             }
         ],
         "constraints": [],
         "eligibility": [
             {
                 "eligibilityType": "NATURAL_PERSON",
-                "additionalInfoUri": "https://mystate.com.au/bank-accounts/transaction-accounts/access-assist-account/"
+                "additionalInfoUri": "https://mystate.com.au/legal/"
             },
             {
                 "eligibilityType": "MIN_AGE",
-                "additionalInfo": "A customer is or older than 55 years of age.",
-                "additionalInfoUri": "https://mystate.com.au/bank-accounts/transaction-accounts/access-assist-account/"
+                "additionalInfo": "A customer is 55 years of age or older.",
+                "additionalInfoUri": "https://mystate.com.au/legal/"
             }
         ],
         "fees": [
-            {
-                "name": "Cheque Book Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalInfo": "Per 50 page Cheque Book issued.",
-                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
-                "discounts": []
-            },
             {
                 "name": "BPay Query Fee",
                 "feeType": "EVENT",
@@ -96,9 +83,18 @@
                 "discounts": []
             },
             {
+                "name": "Cheque Book Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalInfo": "Per 50 page Cheque Book issued.",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
+                "discounts": []
+            },
+            {
                 "name": "Cheques Deposited and Dishonoured",
                 "feeType": "EVENT",
-                "amount": "20.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "This fee is charged when a cheque, not your own, has been deposited in to your account and has been dishonoured by the other financial institution.",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
@@ -109,7 +105,16 @@
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when any payment on your account is unable to be completed.",
+                "additionalInfo": "This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when any payment on your account is unable to be completed. Excluding a cheque written by you",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Dishonour and Rejection Fee",
+                "feeType": "EVENT",
+                "amount": "30.00",
+                "currency": "AUD",
+                "additionalInfo": "This fee will be debited to your account on the day of the dishonour or rejection. This fee is charged when a cheque written against your account is unable to be completed.",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
                 "discounts": []
             },
@@ -119,7 +124,7 @@
                 "balanceRate": "0.1395",
                 "accrualFrequency": "P1M",
                 "currency": "AUD",
-                "additionalInfo": "Deposit accounts without overdraft arrangements must have a credit balance. We are under no obligation to honour cheques, or allow any withdrawal that would overdraw an\raccount without an approved overdraft facility.\r\rIf we honour a cheque or debit which overdraws an account, the amount overdrawn (referred to as the credit provided will attract debit interest charged to the account on the last\r day of the calendar month. This interest which\r will be charged to your account as 'Overdraft Interest' is calculated on the daily closing debit balance using the current 'Unarranged Borrowing Rate'. Please refer to our\r Interest Rates for Household and Personal Lending brochure available from any branch or by contacting the Customer Care for the current 'Unarranged Borrowing Rate'. Any credit provided is short term credit and must be repaid\r within 7 days of being provided. In addition, Overdrawn Administration Fees will be applied.",
+                "additionalInfo": "Deposit accounts without overdraft arrangements must have a credit balance. We are under no obligation to honour cheques, or allow any withdrawal that would overdraw an\r account without an approved overdraft facility.\r\rIf we honour a cheque or debit which overdraws an account, the amount overdrawn (referred to as the credit provided) will attract debit interest charged to the account on the last\r day of the calendar month. This interest which\r will be charged to your account as 'Overdraft Interest' is calculated on the daily closing debit balance using the current 'Unarranged Borrowing Rate' shown in the Fees & Charges Deposit Accounts. Any credit provided is short term credit and must be repaid\r within 7 days of being provided. In addition, Overdrawn Administration Fees will be applied.",
                 "additionalInfoUri": "https://www.mystate.com.au/Portals/0/documents/interest-rates/rates_lending.pdf",
                 "discounts": []
             },
@@ -128,16 +133,7 @@
                 "feeType": "EVENT",
                 "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "Overdrawn Fee\r\rPer daily occurrence, for any savings or transaction account (with or without an pproved overdraft limit) where we honour a transaction that overdraws the account or exceeds\r\r the authorised overdraft limit.",
-                "discounts": []
-            },
-            {
-                "name": "Representation and Collection of Dishonoured Cheques",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "This fee is charged when a cheque previously deposited to your account is re-presented for payment.",
-                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
+                "additionalInfo": "Per daily occurrence, for any savings or transaction account (with or without an pproved overdraft limit) where we honour a transaction that overdraws the account or exceeds\r the authorised overdraft limit.",
                 "discounts": []
             },
             {
@@ -150,11 +146,20 @@
                 "discounts": []
             },
             {
-                "name": "Transaction Verification Fee",
+                "name": "Transaction Verification Fee, Copy of Sales Voucher",
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "currency": "AUD",
                 "additionalInfo": "Charged when we are requested to investigate a\r transaction. The fee will not be charged if we find that the transaction is incorrect.",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
+                "discounts": []
+            },
+            {
+                "name": "Voucher Retrieval Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "Per Voucher Search",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
                 "discounts": []
             },
@@ -170,7 +175,7 @@
             {
                 "name": "Bank@Post withdrawal fee",
                 "feeType": "WITHDRAWAL",
-                "amount": "3.00",
+                "amount": "4.30",
                 "currency": "AUD",
                 "additionalInfo": "This fee is debited on the last day of each month and is charged in addition to any electronic transaction fee which may apply.",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
@@ -181,7 +186,7 @@
                 "feeType": "WITHDRAWAL",
                 "amount": "1.00",
                 "currency": "AUD",
-                "additionalInfo": "For each cheque that you write nd is presented for payment.",
+                "additionalInfo": "For each cheque that you write and is presented for payment.",
                 "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
                 "discounts": []
             }

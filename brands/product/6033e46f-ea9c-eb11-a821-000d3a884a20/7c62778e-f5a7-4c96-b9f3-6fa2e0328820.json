@@ -3,7 +3,7 @@
         "brand": "Bank First",
         "description": "Basic Home Loan Variable LVR 60-80%",
         "isTailored": false,
-        "lastUpdated": "2024-04-08T06:29:20.187803Z",
+        "lastUpdated": "2024-07-09T06:33:33.7795Z",
         "name": "Basic Home Loan Variable LVR 60-80%",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "7c62778e-f5a7-4c96-b9f3-6fa2e0328820",
@@ -69,20 +69,6 @@
         ],
         "fees": [
             {
-                "feeType": "PERIODIC",
-                "name": "Arrears Fee",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies when a loan is 7 and 30 calendar days in arrears",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
-                "additionalValue": null,
-                "amount": "20.00",
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Discharge Of Mortgage Fee",
                 "accrualFrequency": null,
@@ -109,22 +95,50 @@
                 "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
+            },
+            {
+                "feeType": "EVENT",
+                "name": "Arrears Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when a loan is 7 and 30 calendar days in arrears",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf?la=en&hash=172D55D317D95FDB13F24CDFDE6D3B6B2E7C7F37",
+                "additionalValue": null,
+                "amount": "20.00",
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0624000000000000",
+                "rate": "0.0619000000000000",
                 "additionalInfo": null,
                 "additionalInfoUri": null,
                 "additionalValue": null,
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
-                "comparisonRate": "0.0627000000000000",
+                "comparisonRate": "0.0622000000000000",
                 "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": []
+                "tiers": [
+                    {
+                        "minimumValue": 60.01,
+                        "name": "LVR above 60% - 80%",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

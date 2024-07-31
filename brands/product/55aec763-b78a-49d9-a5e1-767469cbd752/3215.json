@@ -3,7 +3,7 @@
         "productId": "3215",
         "effectiveFrom": "2020-07-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2024-02-05T00:00:00.000Z",
+        "lastUpdated": "2024-05-14T00:00:00.000Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Business Visa Credit Card",
         "description": "Credit card for small business",
@@ -87,56 +87,57 @@
         ],
         "fees": [
             {
-                "name": "Information fee - Search ",
+                "name": "Information fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
-                "additionalInfo": "$20 per request, plus $1 per page copied. Payable when we provide information or copies to you or a third party that relates to a security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain under the National Consumer Credit Code)."
+                "additionalInfo": "$20.00 plus $1.00 per page copied. Payable when we provide information or copies to you or a third party that relates to a Security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain free of charge under the National Credit Code (where applicable))."
             },
             {
                 "name": "Information fee - Per Page",
                 "feeType": "EVENT",
                 "amount": "1.00",
-                "additionalInfo": "$20 per request, plus $1 per page copied. Payable when we provide information or copies to you or a third party that relates to a security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain under the National Consumer Credit Code)."
+                "additionalInfo": "Payable when we provide information or copies to you or a third party that relates to a Security, dealing document, or any record relating to your Contract or loan account (other than information you are entitled to obtain free of charge under the National Credit Code (where applicable))."
             },
             {
                 "name": "Bank transfer fee",
                 "feeType": "TRANSACTION",
-                "amount": "8.00"
+                "amount": "8.00",
+                "additionalInfo": "When any amount is debited or credited to a bank account in our name as a result of which it is necessary for us to debit or credit monies to your loan"
             },
             {
-                "name": "Bulk coin purchase fee",
+                "name": "Bulk coin purchase fee - In branch",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.02",
-                "additionalInfo": "Minimum fee $2.00"
+                "additionalInfo": "2.00% of value (minimum $2.00)"
             },
             {
-                "name": "Bulk coin purchase fee - Sourced Externally",
+                "name": "Bulk coin purchase fee - External",
                 "feeType": "TRANSACTION",
                 "amount": "8.00",
                 "additionalInfo": "$8.00 per bag"
             },
             {
                 "name": "Foreign currency deposit fee",
-                "feeType": "TRANSACTION",
+                "feeType": "DEPOSIT",
                 "amount": "5.00"
             },
             {
                 "name": "Foreign currency conversion fee",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.03",
-                "additionalInfo": "3.00% of the Australian Dollar equivalent is payable for transactions made in a foreign currency. "
+                "additionalInfo": "3.00% of the value of the transaction in AUD debited to your account when you make a transaction in a foreign currency or in AUD when you are outside of Australia; or in Australia where the merchant or financial institution that processes the transaction is located outside of Australia"
             },
             {
-                "name": "Replacement card fee - In Australia",
+                "name": "Replacement card fee",
                 "feeType": "EVENT",
                 "amount": "7.00",
-                "additionalInfo": "Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months."
+                "additionalInfo": "For each replacement card issued in Australia. Payable for each replacement card issued within the expiry period, if a replacement card has been previously requested in the preceding 12 months."
             },
             {
-                "name": "Replacement card fee - International",
+                "name": "Replacement card fee",
                 "feeType": "EVENT",
                 "amount": "100.00",
-                "additionalInfo": "For any replacement card issued overseas"
+                "additionalInfo": "For any replacement card issued overseas. Payable for each replacement card issued within the expiry period, if a replacement card has been previously requested in the preceding 12 months"
             },
             {
                 "name": "SMS alert fee",
@@ -151,34 +152,21 @@
             },
             {
                 "name": "EFT transaction fee (RTGS)",
-                "feeType": "EVENT",
-                "amount": "20.00"
+                "feeType": "WITHDRAWAL",
+                "amount": "20.00",
+                "additionalInfo": "Transfer funds on the same day to an account at another financial institution"
             },
             {
-                "name": "International currency draft",
+                "name": "Telegraphic transfer - Foreign Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "15.00"
+                "amount": "30.00",
+                "additionalInfo": "When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
-                "name": "Telegraphic transfer - Foreign Currency",
+                "name": "Telegraphic transfer - Australian Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "30.00"
-            },
-            {
-                "name": "Telegraphic transfer - Australian Currency",
-                "feeType": "TRANSACTION",
-                "amount": "47.50"
-            },
-            {
-                "name": "Telegraphic transfer trace",
-                "feeType": "TRANSACTION",
-                "amount": "80.00",
-                "additionalInfo": "Fee is estimate only"
-            },
-            {
-                "name": "Scheduled BPAY payment fee",
-                "feeType": "EVENT",
-                "amount": "1.00"
+                "amount": "50.00",
+                "additionalInfo": "When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
                 "name": "Establishment fee",
@@ -235,12 +223,6 @@
                 "feeType": "VARIABLE",
                 "amount": "0.00",
                 "additionalInfo": "Fee amount will be variable, calculated if and when applicable. Payable for costs we have to pay to a government body to register any documents in relation to a security."
-            },
-            {
-                "name": "Security substitution fee",
-                "feeType": "EVENT",
-                "amount": "350.00",
-                "additionalInfo": "Payable when you ask us to substitute a Security."
             },
             {
                 "name": "Title insurance premium",

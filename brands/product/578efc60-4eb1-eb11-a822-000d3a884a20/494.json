@@ -2,7 +2,7 @@
     "data": {
         "productId": "494",
         "effectiveFrom": "2015-05-24T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-30T02:00:23.5151423Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Premium Investment Package",
         "description": "The full-featured investment loan packed with positives for future generations.",
@@ -10,15 +10,16 @@
         "applicationUri": "https://online.bankaust.com.au/internetlending/public/start.aspx",
         "isTailored": false,
         "additionalInformation": {
+            "overviewUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
             "termsUri": "https://www.bankaust.com.au/support/disclosures",
-            "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures",
-            "bundleUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package"
+            "feesAndPricingUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
+            "bundleUri": "https://www.bankaust.com.au/banking/home-loans/premium-home-loan-package"
         },
         "bundles": [
             {
                 "name": "Premium Package Home Loan Package",
                 "description": "Premium Package",
-                "additionalInfo": "Premium Package Home loans include an annual fee waiver for the platinum credit card, everyday banking, no establishment fee for personal loans, and up to a 10% discount on insurance for eligible customers.",
+                "additionalInfo": "Premium Package Home loans include an annual fee waiver for the platinum credit card, everyday banking and up to a 10% discount on insurance for eligible customers.",
                 "additionalInfoUri": "https://www.bankaust.com.au/home-loans/premium-home-loan-package",
                 "productIds": [
                     "194",
@@ -53,11 +54,13 @@
                 "additionalInfo": "If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed"
             }
         ],
-        "eligibility": [
+        "constraints": [
             {
-                "eligibilityType": "BUSINESS",
-                "additionalInfo": "Non-individual borrowers: Includes Non-trading Companies and/or Family/Unit/Hybrid Trusts"
-            },
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "10000.00"
+            }
+        ],
+        "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18",
@@ -81,9 +84,9 @@
             {
                 "name": "Mortgage Discharge Fee",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "350.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply. Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office."
+                "additionalInfo": "Payable when you discharge the mortgage. Statutory government registration fees will still apply"
             },
             {
                 "name": "Valuation Administration Fee",
@@ -113,14 +116,49 @@
                 "amount": "350.00",
                 "currency": "AUD",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Annual fee payable on all Premium loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist"
+                "additionalInfo": "Annual fee payable on all Premium Package loans. The fee is debited to the loan annually on the anniversary date of funding and is non refundable. Only one annual package fee applies per customer where multiple package loans exist."
+            },
+            {
+                "name": "Loan Variation Fee",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when transferring from a home loan product to a different home loan product. For example, transferring a variable rate product to a fixed rate product."
+            },
+            {
+                "name": "Additional Valuation",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "The establishment fee covers a standard loan, which includes one valuation. This fee applies for any additional standard residential valuation required."
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
+                "rate": "0.0619",
+                "comparisonRate": "0.0652",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "Investor Offer P & I",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 0.0,
+                        "maximumValue": 80.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "T&C's apply - see website for more detail",
+                "additionalInfoUri": "https://www.bankaust.com.au/banking/home-loans/premium-home-loan-package"
+            },
+            {
+                "lendingRateType": "VARIABLE",
                 "rate": "0.0634",
-                "comparisonRate": "0.0666",
+                "comparisonRate": "0.0667",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -134,14 +172,12 @@
                         "maximumValue": 60.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of <60%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0634",
-                "comparisonRate": "0.0666",
+                "comparisonRate": "0.0667",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -155,14 +191,12 @@
                         "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of <70%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0634",
-                "comparisonRate": "0.0666",
+                "comparisonRate": "0.0667",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "interestPaymentDue": "IN_ARREARS",
@@ -176,9 +210,26 @@
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type. For home loans with new lending at 'Loan to Valuation Ratio' of <80%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0669",
+                "comparisonRate": "0.0701",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "LVR 90% or less",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.1,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

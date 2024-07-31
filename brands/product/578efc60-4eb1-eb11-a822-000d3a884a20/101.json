@@ -2,7 +2,7 @@
     "data": {
         "productId": "101",
         "effectiveFrom": "2001-07-02T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-01T06:00:23.4768752Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Everyday Access",
         "description": "The full-featured, clean money transaction account for your pay or pocket money.",
@@ -46,14 +46,11 @@
             },
             {
                 "featureType": "OTHER",
-                "additionalInfo": "Card Controls: Decide the features you want enabled on your card including card lock, digital wallet, pay wave, international transactions, ATM withdrawals or online/instoretransactions and simply switch them on or off from your App or Internet Banking."
+                "additionalInfo": "Card Controls: Decide the features you want enabled on your card including card lock, digital wallet, pay wave, international transactions, ATM withdrawals or online/in store transactions and simply switch them on or off from your App or Internet Banking."
             },
             {
                 "featureType": "OTHER",
                 "additionalInfo": "Round Up: When you make a transaction with your Visa debit card, you can decide whether you want the amount to be rounded to the nearest whole dollar amount, with the round up being credited from this account into your nominated Savings accountor Credit Card*."
-            },
-            {
-                "featureType": "OVERDRAFT"
             },
             {
                 "featureType": "UNLIMITED_TXNS",
@@ -82,6 +79,12 @@
         ],
         "fees": [
             {
+                "name": "Term Deposit early withdrawal",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD"
+            },
+            {
                 "name": "Domestic (\"press credit\") cash withdrawal fee",
                 "feeType": "WITHDRAWAL",
                 "amount": "3.50",
@@ -97,13 +100,6 @@
                 "additionalInfo": "A fee that applies to any cash withdrawal transaction made with your Bank Australia Visa Debit Card outside Australia."
             },
             {
-                "name": "Dishonour fee",
-                "feeType": "EVENT",
-                "amount": "12.00",
-                "currency": "AUD",
-                "additionalInfo": "When we dishonour a debit presented to us because there aren't enough available funds in your account"
-            },
-            {
                 "name": "Exceeding available funds fee",
                 "feeType": "EVENT",
                 "amount": "10.00",
@@ -116,46 +112,6 @@
                 "transactionRate": "0.03",
                 "currency": "AUD",
                 "additionalInfo": "The International Transaction fee applies to Visa transactions where there is a currency conversion and/or the transaction is processed overseas"
-            },
-            {
-                "name": "Monthly account fee",
-                "feeType": "PERIODIC",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "Monthly account fee",
-                "discounts": [
-                    {
-                        "description": "We won't charge you a monthly account fee if this criteria is met",
-                        "discountType": "BALANCE",
-                        "amount": "5.00",
-                        "additionalValue": "50000.00",
-                        "additionalInfo": "100% waived for customers who have a total of $50,000 or more in Bank Australia loans, savings and investments."
-                    },
-                    {
-                        "description": "Only customers younger than a maximum age receive the discount",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "5.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "MAX_AGE",
-                                "additionalValue": "25",
-                                "additionalInfo": "You're under 25 years old"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "We won't charge you a monthly account fee if this criteria is met",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "amount": "5.00",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "You have a Bank Australia Premium Home Loan package"
-                            }
-                        ]
-                    }
-                ]
             }
         ],
         "depositRates": [

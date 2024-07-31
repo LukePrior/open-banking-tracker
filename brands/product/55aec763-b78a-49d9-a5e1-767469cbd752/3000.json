@@ -3,7 +3,7 @@
         "productId": "3000",
         "effectiveFrom": "2020-07-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2024-02-19T00:00:00.000Z",
+        "lastUpdated": "2024-06-11T00:00:00.000Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Term Investment - Interest @ Maturity",
         "description": "Fixed amount, fixed term, fixed interest rate, with interest paid at maturity. Available for any customer.",
@@ -47,7 +47,7 @@
         ],
         "fees": [
             {
-                "name": "Information fee - Search ",
+                "name": "Information fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
                 "additionalInfo": "$20.00 plus $1.00 per page"
@@ -61,17 +61,19 @@
             {
                 "name": "Bank transfer fee",
                 "feeType": "TRANSACTION",
-                "amount": "8.00"
+                "amount": "8.00",
+                "additionalInfo": "Applies when an amount is processed on your behalf to an account in our name from another financial institution to enable us to credit your account."
             },
             {
                 "name": "Foreign currency deposit fee",
-                "feeType": "TRANSACTION",
+                "feeType": "DEPOSIT",
                 "amount": "5.00"
             },
             {
                 "name": "EFT transaction fee (RTGS)",
-                "feeType": "EVENT",
-                "amount": "20.00"
+                "feeType": "WITHDRAWAL",
+                "amount": "20.00",
+                "additionalInfo": "Transfer funds on the same day to an account at another financial institution"
             },
             {
                 "name": "EFT interest payment elsewhere",
@@ -80,25 +82,28 @@
                 "additionalInfo": "Charged for crediting interest to a non Greater Bank account. "
             },
             {
-                "name": "International currency draft",
-                "feeType": "TRANSACTION",
-                "amount": "15.00"
+                "name": "Stop payment fee",
+                "feeType": "EVENT",
+                "amount": "7.00",
+                "additionalInfo": "Charged to stop payment of a cheque you have drawn or a bank cheque."
             },
             {
-                "name": "Telegraphic transfer - Foreign Currency",
+                "name": "Telegraphic transfer - Foreign Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "30.00"
+                "amount": "30.00",
+                "additionalInfo": "When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
-                "name": "Telegraphic transfer - Australian Currency",
+                "name": "Telegraphic transfer - Australian Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "47.50"
+                "amount": "50.00",
+                "additionalInfo": "When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
-                "name": "Telegraphic transfer trace",
-                "feeType": "TRANSACTION",
-                "amount": "80.00",
-                "additionalInfo": "Fee is estimate only"
+                "name": "Payment service creation fee",
+                "feeType": "EVENT",
+                "amount": "2.50",
+                "additionalInfo": "Charged when a customer requests we create an Easypay or Third Party Payment Service to other than a Greater Bank account."
             }
         ],
         "depositRates": [
@@ -449,7 +454,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.035",
+                "rate": "0.0375",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -518,7 +523,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.046",
+                "rate": "0.0505",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
@@ -656,7 +661,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.045",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P12M",
                 "tiers": [
@@ -746,7 +751,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.035",
+                "rate": "0.0375",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P3M",
                 "tiers": [
@@ -812,7 +817,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.046",
+                "rate": "0.0505",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P6M",
                 "tiers": [
@@ -944,7 +949,7 @@
             },
             {
                 "depositRateType": "FIXED",
-                "rate": "0.045",
+                "rate": "0.048",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P12M",
                 "tiers": [

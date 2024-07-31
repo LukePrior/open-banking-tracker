@@ -3,7 +3,7 @@
         "productId": "3015",
         "effectiveFrom": "2020-07-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2024-02-05T00:00:00.000Z",
+        "lastUpdated": "2024-05-14T00:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Access",
         "description": "Personal transactional account",
@@ -79,42 +79,6 @@
                 "name": "Over-the-counter withdrawals",
                 "feeType": "WITHDRAWAL",
                 "amount": "2.25",
-                "discounts": [
-                    {
-                        "description": "Fee Allowance",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month."
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Greater Bank ATM withdrawal",
-                "feeType": "WITHDRAWAL",
-                "amount": "0.70",
-                "discounts": [
-                    {
-                        "description": "Fee Allowance",
-                        "discountType": "ELIGIBILITY_ONLY",
-                        "feeRate": "1.0",
-                        "eligibility": [
-                            {
-                                "discountEligibilityType": "OTHER",
-                                "additionalInfo": "Account has a Transaction Fee Allowance of $3 per month, plus a Transaction Fee Rebate of $3 per $1,000 Minimum Monthly Balance. E.g. $15 rebate for $5,000 Minimum Monthly Balance, plus $3 Transaction Fee Allowance.  Charity and community based accounts may attract an increased Transaction Fee Allowance of $20 per month."
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Greater Bank ATM balance enquiry",
-                "feeType": "TRANSACTION",
-                "amount": "0.50",
                 "discounts": [
                     {
                         "description": "Fee Allowance",
@@ -241,6 +205,7 @@
                 "name": "Overseas ATM",
                 "feeType": "WITHDRAWAL",
                 "amount": "5.00",
+                "additionalInfo": "$5.00 plus Foreign Currency Conversion Fee",
                 "discounts": [
                     {
                         "description": "Fee Allowance",
@@ -274,7 +239,7 @@
                 ]
             },
             {
-                "name": "Information fee - Search ",
+                "name": "Information fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
                 "additionalInfo": "$20.00 plus $1.00 per page"
@@ -288,19 +253,19 @@
             {
                 "name": "Bank transfer fee",
                 "feeType": "TRANSACTION",
-                "amount": "8.00"
+                "amount": "8.00",
+                "additionalInfo": "Applies when an amount is processed on your behalf to an account in our name from another financial institution to enable us to credit your account."
             },
             {
-                "name": "Bulk coin purchase fee",
+                "name": "Bulk coin purchase fee - Exising branch stock ",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.02",
-                "additionalInfo": "Minimum fee $2.00"
+                "additionalInfo": "Existing branch stock 2.00% of total value (minimum $2.00)"
             },
             {
-                "name": "Bulk coin purchase fee - Sourced Externally",
+                "name": "Bulk coin purchase fee - External order",
                 "feeType": "TRANSACTION",
-                "amount": "8.00",
-                "additionalInfo": "$8.00 per bag"
+                "amount": "8.00"
             },
             {
                 "name": "Direct debit dishonour fee",
@@ -309,31 +274,32 @@
             },
             {
                 "name": "Foreign currency deposit fee",
-                "feeType": "TRANSACTION",
+                "feeType": "DEPOSIT",
                 "amount": "5.00"
             },
             {
                 "name": "Foreign currency conversion fee",
                 "feeType": "TRANSACTION",
-                "transactionRate": "0.03"
+                "transactionRate": "0.03",
+                "additionalInfo": "3.00% of the value of the transaction in AUD debited to your account when you make a transaction in a foreign currency or in AUD when you are outside of Australia; or in Australia where the merchant or financial institution that processes the transaction is located outside of Australia"
             },
             {
-                "name": "Inactive account fee",
+                "name": "Dormant account fee",
                 "feeType": "EVENT",
                 "amount": "15.00",
-                "additionalInfo": "Charged six monthly if account has no transactions (other than government charges or interest) processed during the preceding 24 months."
+                "additionalInfo": "$15.00 six monthly if an account has no transactions (other than government charges or interest) processed during the preceding 24 months"
             },
             {
-                "name": "Replacement card fee - In Australia",
+                "name": "Replacement card fee ",
                 "feeType": "EVENT",
                 "amount": "7.00",
-                "additionalInfo": "Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months."
+                "additionalInfo": "Domestic $7.00"
             },
             {
-                "name": "Replacement card fee - International",
+                "name": "Replacement card fee",
                 "feeType": "EVENT",
                 "amount": "100.00",
-                "additionalInfo": "For any replacement card issued overseas"
+                "additionalInfo": "International: for any replacement card issued overseas"
             },
             {
                 "name": "SMS alert fee",
@@ -370,11 +336,12 @@
             },
             {
                 "name": "EFT transaction fee (RTGS)",
-                "feeType": "EVENT",
-                "amount": "20.00"
+                "feeType": "WITHDRAWAL",
+                "amount": "20.00",
+                "additionalInfo": "Transfer funds on the same day to an account at another financial institution"
             },
             {
-                "name": "Cheque notify fee - Letter/Phone",
+                "name": "Cheque notify fee - Customer Service",
                 "feeType": "EVENT",
                 "amount": "20.00"
             },
@@ -385,25 +352,16 @@
                 "additionalInfo": "Charged to stop payment of a cheque you have drawn or a bank cheque."
             },
             {
-                "name": "International currency draft",
+                "name": "Telegraphic transfer - Foreign Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "15.00"
+                "amount": "30.00",
+                "additionalInfo": "When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
-                "name": "Telegraphic transfer - Foreign Currency",
+                "name": "Telegraphic transfer - Australian Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "30.00"
-            },
-            {
-                "name": "Telegraphic transfer - Australian Currency",
-                "feeType": "TRANSACTION",
-                "amount": "47.50"
-            },
-            {
-                "name": "Telegraphic transfer trace",
-                "feeType": "TRANSACTION",
-                "amount": "80.00",
-                "additionalInfo": "Fee is estimate only"
+                "amount": "50.00",
+                "additionalInfo": "When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
                 "name": "Payment service creation fee",
@@ -412,12 +370,12 @@
                 "additionalInfo": "Charged when a customer requests we create an Easypay or Third Party Payment Service to other than a Greater Bank account."
             },
             {
-                "name": "Scheduled BPAY payment fee",
+                "name": "EasyPay notification fee - SMS",
                 "feeType": "EVENT",
-                "amount": "1.00"
+                "amount": "0.20"
             },
             {
-                "name": "EasyPay notification fee - SMS",
+                "name": "Cheque notify fee - SMS",
                 "feeType": "EVENT",
                 "amount": "0.20"
             }

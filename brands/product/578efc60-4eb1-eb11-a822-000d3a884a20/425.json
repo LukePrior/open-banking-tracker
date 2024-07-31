@@ -2,17 +2,17 @@
     "data": {
         "productId": "425",
         "effectiveFrom": "2015-04-28T14:30:00.0000000Z",
-        "lastUpdated": "2024-03-21T00:17:11.3935140Z",
+        "lastUpdated": "2024-07-30T02:00:23.5151423Z",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Basic Investment Loan",
-        "description": "Our Basic Investment Loan is anything but, low fees and feel-good features.",
+        "description": "Our Basic Investment  Loan is anything but, with a low rate, low fees and feel-good features.",
         "brand": "Bank Australia",
         "applicationUri": "https://online.bankaust.com.au/internetlending/public/start.aspx",
         "isTailored": false,
         "additionalInformation": {
-            "overviewUri": "https://www.bankaust.com.au/home-loans/home-loan-rates-and-fees",
+            "overviewUri": "https://www.bankaust.com.au/banking/home-loans/basic-home-loan",
             "termsUri": "https://www.bankaust.com.au/support/disclosures",
-            "feesAndPricingUri": "https://www.bankaust.com.au/support/disclosures"
+            "feesAndPricingUri": "https://www.bankaust.com.au/banking/home-loans/basic-home-loan"
         },
         "features": [
             {
@@ -32,11 +32,13 @@
                 "additionalInfo": "If you're ahead of your repayments, you may be able to redraw fee free, with restrictions if your loan is fixed"
             }
         ],
-        "eligibility": [
+        "constraints": [
             {
-                "eligibilityType": "BUSINESS",
-                "additionalInfo": "Non-individual borrowers: Includes Non-trading Companies and/or Family/Unit/Hybrid Trusts"
-            },
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "10000.00"
+            }
+        ],
+        "eligibility": [
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18",
@@ -95,9 +97,9 @@
             {
                 "name": "Mortgage Discharge Fee",
                 "feeType": "EVENT",
-                "amount": "250.00",
+                "amount": "350.00",
                 "currency": "AUD",
-                "additionalInfo": "Payable when you request Bank Australia to arrange for the registration of discharge or Bank Australia is required to attend settlement. It covers preparation of the discharge of mortgage form. Statutory government registration fees will still apply. Additional fees may apply and should be paid direct to our agent if settlement is requested in a location other than a Bank Australia office."
+                "additionalInfo": "Payable when you discharge the mortgage. Statutory government registration fees will still apply"
             },
             {
                 "name": "Portability Fee- Existing Mortgage",
@@ -105,6 +107,13 @@
                 "amount": "150.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable when a property securing a loan is replaced with a property that is already registered with a Bank Australia mortgage."
+            },
+            {
+                "name": "Additional Valuation",
+                "feeType": "EVENT",
+                "amount": "150.00",
+                "currency": "AUD",
+                "additionalInfo": "The establishment fee covers a standard loan, which includes one valuation. This fee applies for any additional standard residential valuation required."
             }
         ],
         "lendingRates": [
@@ -125,9 +134,7 @@
                         "maximumValue": 60.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <60%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -146,9 +153,7 @@
                         "maximumValue": 70.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <70%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
             },
             {
                 "lendingRateType": "VARIABLE",
@@ -167,9 +172,26 @@
                         "maximumValue": 80.0,
                         "rateApplicationMethod": "WHOLE_BALANCE"
                     }
-                ],
-                "additionalInfo": "Investment Loan with Principal and Interest repayment type.For home loans with new lending at 'Loan to Valuation Ratio' of <80%",
-                "additionalInfoUri": "https://www.bankaust.com.au/tools/rates#pane-537"
+                ]
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0659",
+                "comparisonRate": "0.0664",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "interestPaymentDue": "IN_ARREARS",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "tiers": [
+                    {
+                        "name": "LVR 90% or less",
+                        "unitOfMeasure": "PERCENT",
+                        "minimumValue": 80.1,
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

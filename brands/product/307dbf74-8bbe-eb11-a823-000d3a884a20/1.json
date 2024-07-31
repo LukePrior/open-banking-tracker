@@ -2,7 +2,7 @@
     "data": {
         "productId": "1",
         "effectiveFrom": "2017-11-30T13:30:00.0000000Z",
-        "lastUpdated": "2024-04-12T06:00:37.4011409Z",
+        "lastUpdated": "2024-07-01T06:00:38.1678934Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Save account",
         "description": "Save account",
@@ -17,6 +17,9 @@
         "features": [
             {
                 "featureType": "DIGITAL_BANKING"
+            },
+            {
+                "featureType": "FRAUD_PROTECTION"
             },
             {
                 "featureType": "NOTIFICATIONS",
@@ -47,10 +50,21 @@
         ],
         "depositRates": [
             {
-                "depositRateType": "VARIABLE",
-                "rate": "0.001",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "depositRateType": "BONUS",
+                "rate": "0.055",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Balance Tier 1",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 100000.0,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalValue": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts",
+                "additionalInfo": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts"
             },
             {
                 "depositRateType": "BONUS",
@@ -59,15 +73,31 @@
                 "applicationFrequency": "P1M",
                 "tiers": [
                     {
-                        "name": "Bonus Balance Tier 1",
+                        "name": "Bonus Balance Tier 2",
                         "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 0.0,
+                        "minimumValue": 100000.01,
                         "maximumValue": 250000.0,
-                        "rateApplicationMethod": "WHOLE_BALANCE"
+                        "rateApplicationMethod": "PER_TIER"
                     }
                 ],
-                "additionalValue": "Customer must deposit at least $200 per month into any of their Spend or Save accounts",
-                "additionalInfo": "Customer must deposit at least $200 per month into any of their Spend or Save accounts\r\n"
+                "additionalValue": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts",
+                "additionalInfo": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts"
+            },
+            {
+                "depositRateType": "BONUS",
+                "rate": "0.0",
+                "calculationFrequency": "P1M",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Bonus Balance Tier 3",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 250000.01,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalValue": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts",
+                "additionalInfo": "Customer must deposit at least $500 per month into any of their Spend, Bills or Save accounts"
             }
         ]
     },

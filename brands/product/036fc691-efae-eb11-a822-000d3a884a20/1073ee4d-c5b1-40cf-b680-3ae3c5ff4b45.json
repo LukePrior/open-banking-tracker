@@ -60,22 +60,48 @@
         ],
         "fees": [
             {
-                "name": "ACCOUNT_SERVICE_FEE_-_HOME_LOAN_PLUS",
-                "feeType": "PERIODIC",
-                "amount": "10.00",
-                "accrualFrequency": "M",
-                "currency": "AUD",
-                "additionalValue": "P1M",
-                "additionalInfo": "Payble to levy costs we incur in provding your account and its service",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
                 "name": "ESTABLISHMENT_FEE_-_HOME_LOAN_PLUS",
-                "feeType": "UPFRONT",
+                "feeType": "EVENT",
                 "amount": "600.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "To cover our costs associated with establishing your loan",
+                "additionalInfo": "To cover costs associated with establishing your loan. Waived for Freedom Package loans",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "PRINCIPAL_INCREASE_FEE_-_HOME_LOAN",
+                "feeType": "EVENT",
+                "amount": "300.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we process your request to increase the principal amount of your loan. Waived for Freedom Package loans",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "PROGRESS_PAYMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "450.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable on the first drawdown after settlement to cover the administration costs of progress payments for your construction or home renovation",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "SETTLEMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "100.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we process the settlement of your loan. Waived for Freedom Package loans",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "RATE_LOCK_FEE",
+                "feeType": "EVENT",
+                "balanceRate": "0.0015",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "If you elect to lock-in a fixed interest rate prior to commencement of the fixed rate term. Minimum fee $250.00",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -85,7 +111,7 @@
                 "accrualFrequency": "Y",
                 "currency": "AUD",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Annual mortgage package fee entitles you to benefits such as discounts & fee waivers on your home loan or line of credit, transaction accounts, credit card, insurance etc.",
+                "additionalInfo": "Annual mortgage package fee entitles you to benefits such as discounts & fee waivers on your home loan or line of credit, transaction accounts, credit card etc.",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/",
                 "discounts": [
                     {
@@ -105,6 +131,25 @@
                 ]
             },
             {
+                "name": "ACCOUNT_SERVICE_FEE_-_HOME_LOAN_PLUS",
+                "feeType": "PERIODIC",
+                "amount": "10.00",
+                "accrualFrequency": "M",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payble for managing your account. Waived for Freedom Package loans",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "MORGAGE_OFFSET_ADMINISTRATION_FEE",
+                "feeType": "EVENT",
+                "amount": "75.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we link your qualifying loan to a qualifying deposit account to provide mortgage offset. Waived for Freedom Package",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
                 "name": "BASIC_VARIATION_FEE",
                 "feeType": "EVENT",
                 "amount": "150.00",
@@ -119,70 +164,7 @@
                 "amount": "300.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we process your request that varaies your product, security, interest rate or repayment type, unless switching to Principal & Interest payments.",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "PRINCIPAL_INCREASE_FEE",
-                "feeType": "EVENT",
-                "amount": "300.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we process your request to increase the principal amount of your loan",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "PROGRESS_PAYMENT_FEE",
-                "feeType": "EVENT",
-                "amount": "450.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Payable on the first drawdown after settlement to cover the administration costs of progress payments for your construction or home renovation.",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "RATE_LOCK_FEE",
-                "feeType": "UPFRONT",
-                "balanceRate": "0.0015",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "If you elect to lock-in a fixed interest rate prior to commencement of the fixed rate term",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "DEFAULT_ADMINISTRATION_FEE",
-                "feeType": "EVENT",
-                "amount": "40.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Payable if there is an event of default under the terms of your loan",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "MORTGAGE_RELEASE_FEE",
-                "feeType": "EVENT",
-                "amount": "400.00",
-                "accrualFrequency": "D",
-                "currency": "AUD",
-                "additionalInfo": "",
-                "additionalInfoUri": ""
-            },
-            {
-                "name": "MORTGAGE_OFFSET_ADMINISTRATION_FEE",
-                "feeType": "EVENT",
-                "amount": "75.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we link your qualifying loan to a qualifying deposit account to provide mortgage offset. Waived for Freedom Package.",
-                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
-            },
-            {
-                "name": "RTGS_''SAME_DAY''_PAYMENT",
-                "feeType": "TRANSACTION",
-                "amount": "20.00",
-                "accrualFrequency": "",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you request a high value, time critical payment from your account to another financial instituation on a real time basis for \"same day\" payment",
+                "additionalInfo": "Payable when we process your request that varaies your product, security, interest rate or repayment type, unless switching to Principal & Interest payments. Waived for Freedom Package loans when changing interest rate and or interest type",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
@@ -191,16 +173,63 @@
                 "amount": "20.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we manually process your request (eg: in Branch) to redraw available advance funds from your loan account. Excluse online redraws.",
+                "additionalInfo": "Payable when we manually process your request (eg: in Branch) to redraw available advance funds from your loan account. Excludes online redraws",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             },
             {
-                "name": "SETTLEMENT_FEE",
-                "feeType": "UPFRONT",
-                "amount": "100.00",
+                "name": "DEFAULT_ADMINISTRATION_FEE",
+                "feeType": "EVENT",
+                "amount": "40.00",
                 "accrualFrequency": "",
                 "currency": "AUD",
-                "additionalInfo": "Payable when we process the settlement of your loan.",
+                "additionalInfo": "Payable if you fail to make a payment by the due date",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "RTGS_OUTWARD_PAYMENT_FEE",
+                "feeType": "TRANSACTION",
+                "amount": "20.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable each time you request a high value, time critical payment from your account to another financial institution on a real time basis for    same day    payment",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "E-STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable when we issue you with an electronic statement of account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "PAPER_STATEMENT_FEE",
+                "feeType": "PERIODIC",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalValue": "P1M",
+                "additionalInfo": "Payable when we issue you with your statement of account in paper",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "ADDITIONAL_STATEMENT_FEE",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you request us to issue you an additional statement of account",
+                "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
+            },
+            {
+                "name": "MORTGAGE_RELEASE_FEE",
+                "feeType": "EVENT",
+                "amount": "400.00",
+                "accrualFrequency": "",
+                "currency": "AUD",
+                "additionalInfo": "Payable per mortgage when we process your request to release a security from your loan, including a partial release. Third party costs may also be payable",
                 "additionalInfoUri": "https://auswidebank.com.au/help/resources/fees-and-charges/"
             }
         ],
@@ -2385,7 +2414,7 @@
             }
         ],
         "productId": "1073ee4d-c5b1-40cf-b680-3ae3c5ff4b45",
-        "lastUpdated": "2024-04-10T09:21:25.000+10:00",
+        "lastUpdated": "2024-07-25T16:54:50.000+10:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "HOME LOAN PLUS",
         "description": "A home loan with considerable flexibility and exceptional features such as 100% offset and variable and fixed rate options.",

@@ -1,10 +1,10 @@
 {
     "data": {
         "productId": "991e0d87-2c2a-445b-83bc-47def5dc236f",
-        "lastUpdated": "2023-07-01T03:35:58.870Z",
+        "lastUpdated": "2024-04-17T00:00:00.000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Basic Account",
-        "description": "A bank account made a whole lot easier and whole lot more affordable for Concession card holders. ",
+        "description": "Simplify your life and get back to basics with our Basic Account. Have a Health Care Card or Pensioner Concession Card.\rUnlimited transactions, Reduced Fees",
         "brand": "MyState Bank",
         "isTailored": false,
         "additionalInformation": {
@@ -79,34 +79,42 @@
         "constraints": [],
         "eligibility": [
             {
-                "eligibilityType": "NATURAL_PERSON"
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalInfoUri": "https://mystate.com.au/legal/"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalInfo": "The minimum age to open a transaction or savings account in person is 13 years or to open an account online is 16 years",
+                "additionalInfoUri": "https://mystate.com.au/legal/"
             },
             {
                 "eligibilityType": "OTHER",
-                "additionalInfo": "To open an account, you need to be at least 13 years old, have an Australian residential address and hold a current Commonwealth Seniors Health Card, Health Care Card or Pensioner Concession Card.\r\rIf opening a joint account both customers will need to meet the above criteria"
+                "additionalInfo": "To open an account, you need to be at least 13 years old, have an Australian residential address and hold a current Commonwealth Seniors Health Card, Health Care Card, DVA Health Card or Pensioner Concession Card.\r\rIf opening a joint account both customers will need to meet the above criteria",
+                "additionalInfoUri": "https://mystate.com.au/legal/"
             },
             {
                 "eligibilityType": "RESIDENCY_STATUS",
                 "additionalValue": "Australian Resident",
-                "additionalInfo": "To open an account, you need to be at least 13 years old, have an Australian residential address and hold a current Commonwealth Seniors Health Card, Health Care Card or Pensioner Concession Card."
+                "additionalInfo": "To open an account, you need to be at least 13 years old, have an Australian residential address and hold a current Commonwealth Seniors Health Card, Health Care Card, DVA Health Card or Pensioner Concession Card.",
+                "additionalInfoUri": "https://mystate.com.au/legal/"
             }
         ],
         "fees": [
+            {
+                "name": "Voucher Retrieval Fee",
+                "feeType": "EVENT",
+                "amount": "15.00",
+                "currency": "AUD",
+                "additionalInfo": "Per Voucher Search",
+                "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/fees_savings.pdf",
+                "discounts": []
+            },
             {
                 "name": "BPay Query Fee",
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "currency": "AUD",
                 "additionalInfo": "This fee is charged when you request a trace of a BPAY transaction.",
-                "additionalInfoUri": "https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf",
-                "discounts": []
-            },
-            {
-                "name": "Representation and Collection of Dishonoured Cheques",
-                "feeType": "EVENT",
-                "amount": "15.00",
-                "currency": "AUD",
-                "additionalInfo": "This fee is charged when a cheque previously deposited to your account is re-presented for payment.",
                 "additionalInfoUri": "https://www.mystate.com.au/Portals/0/documents/legal/fees_savings.pdf",
                 "discounts": []
             },
@@ -120,7 +128,7 @@
                 "discounts": []
             },
             {
-                "name": "Transaction Verification Fee",
+                "name": "Transaction Verification Fee, Copy of Sales Voucher",
                 "feeType": "EVENT",
                 "amount": "15.00",
                 "currency": "AUD",

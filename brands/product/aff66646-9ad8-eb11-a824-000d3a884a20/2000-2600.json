@@ -3,7 +3,7 @@
         "productId": "2000-2600",
         "effectiveFrom": "2019-12-31T14:00:00.00000Z",
         "effectiveTo": "2030-12-31T13:59:59.00000Z",
-        "lastUpdated": "2024-03-27T14:01:00.00000Z",
+        "lastUpdated": "2024-04-18T14:01:00.00000Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Everyday 50+ Account",
         "description": "For those aged 50+",
@@ -337,12 +337,6 @@
                 "currency": "AUD"
             },
             {
-                "name": "Foreign currency cash orders through WeXchange",
-                "feeType": "VARIABLE",
-                "currency": "AUD",
-                "additionalInfo": "\u2022 $8 for orders between AUD $500 - $1,499.99, \u2022 $0 for orders AUD $1,500+"
-            },
-            {
                 "name": "Telegraphic Transfer inward",
                 "feeType": "VARIABLE",
                 "currency": "AUD",
@@ -350,22 +344,6 @@
             }
         ],
         "depositRates": [
-            {
-                "depositRateType": "VARIABLE",
-                "rate": "0.0295",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "tiers": [
-                    {
-                        "name": "Account balances portion over $50,000",
-                        "unitOfMeasure": "DOLLAR",
-                        "minimumValue": 50000.0,
-                        "maximumValue": 999999999.99,
-                        "rateApplicationMethod": "PER_TIER"
-                    }
-                ],
-                "additionalInfo": "Interest is calculated on daily balances and paid monthly. Rate applies on a stepped basis."
-            },
             {
                 "depositRateType": "VARIABLE",
                 "rate": "0.0185",
@@ -393,6 +371,22 @@
                         "unitOfMeasure": "DOLLAR",
                         "minimumValue": 0.0,
                         "maximumValue": 4999.99,
+                        "rateApplicationMethod": "PER_TIER"
+                    }
+                ],
+                "additionalInfo": "Interest is calculated on daily balances and paid monthly. Rate applies on a stepped basis."
+            },
+            {
+                "depositRateType": "VARIABLE",
+                "rate": "0.0295",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "Account balances portion over $50,000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 50000.0,
+                        "maximumValue": 999999999.99,
                         "rateApplicationMethod": "PER_TIER"
                     }
                 ],

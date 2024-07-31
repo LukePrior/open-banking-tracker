@@ -8,12 +8,6 @@
                 "additionalInfoUri": "https://www.commbank.com.au/travel/travel-money-card.html"
             },
             {
-                "featureType": "DIGITAL_BANKING",
-                "additionalValue": "Convenient",
-                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
-                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
-            },
-            {
                 "featureType": "OTHER",
                 "additionalValue": "Convenient",
                 "additionalInfo": "Use NetBank and the CommBank app to reload, transfer between currencies and cards, check your balance, set up SMS alerts, view your transaction history, change your currency order, lock or unlock your card.",
@@ -33,9 +27,20 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalInfo": "Access a range of travel benefits through Travel Booking (provided by Hopper) for eligible customers.",
+                "additionalInfoUri": "https://www.commbank.com.au/travelbooking"
+            },
+            {
+                "featureType": "OTHER",
                 "additionalValue": "Concierge Service",
                 "additionalInfo": " Worldwide access to a concierge service, 24 hours a day. Get help with everything from tickets to a special event, taking care of travel bookings or finding a special gift.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/apply-online/download-printed-forms/ADB3781.pdf"
+            },
+            {
+                "featureType": "DIGITAL_BANKING",
+                "additionalValue": "Convenient",
+                "additionalInfo": "Wherever you are in the world, CommBank gives you the choice and control to securely manage all of your accounts on a range of devices, the way you want.",
+                "additionalInfoUri": "https://www.commbank.com.au/digital-banking.html"
             },
             {
                 "featureType": "OTHER",
@@ -82,15 +87,15 @@
         ],
         "constraints": [
             {
-                "constraintType": "MAX_BALANCE",
-                "additionalValue": "50000.00",
-                "additionalInfo": "Maximum balance per Travel Money Card at any one time. The value is AUD or foreign currency equivalent.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
-            },
-            {
                 "constraintType": "MAX_LIMIT",
                 "additionalValue": "2500.00",
                 "additionalInfo": "Maximum amount you can withdraw from ATMs per day: AUD 2,500 or foreign currency equivalent.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
+            },
+            {
+                "constraintType": "MAX_BALANCE",
+                "additionalValue": "50000.00",
+                "additionalInfo": "Maximum balance per Travel Money Card at any one time. The value is AUD or foreign currency equivalent.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
             },
             {
@@ -200,11 +205,19 @@
         ],
         "fees": [
             {
-                "name": "Card replacement",
-                "feeType": "EVENT",
-                "amount": "0.00",
+                "name": "Cash withdrawal fee for AUD currency",
+                "feeType": "WITHDRAWAL",
+                "amount": "3.50",
                 "currency": "AUD",
-                "additionalInfo": "When you request a replacement card(s) for a lost, stolen or damaged card.",
+                "additionalInfo": "When you withdraw cash outside of Australia in any currency using your loaded AUD.",
+                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
+            },
+            {
+                "name": "Cash withdrawal fee in foreign currency",
+                "feeType": "WITHDRAWAL",
+                "amount": "3.50",
+                "currency": "AUD",
+                "additionalInfo": "When you withdraw cash outside of Australia in any currency using your loaded foreign currency. The Visa exchange rate at the time of withdrawal will be used to calculate the $3.50 AUD value of the foreign currency, and this will be applied as the fee.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
             },
             {
@@ -229,26 +242,16 @@
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
             },
             {
-                "name": "Cash withdrawal fee for AUD currency",
-                "feeType": "WITHDRAWAL",
-                "amount": "3.50",
+                "name": "Card replacement",
+                "feeType": "EVENT",
+                "amount": "0.00",
                 "currency": "AUD",
-                "additionalInfo": "When you withdraw cash outside of Australia in any currency using your loaded AUD.",
-                "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
-            },
-            {
-                "name": "Cash withdrawal fee in foreign currency",
-                "feeType": "WITHDRAWAL",
-                "amount": "3.50",
-                "currency": "AUD",
-                "additionalInfo": "When you withdraw cash outside of Australia in any currency using your loaded foreign currency. The Visa exchange rate at the time of withdrawal will be used to calculate the $3.50 AUD value of the foreign currency, and this will be applied as the fee.",
+                "additionalInfo": "When you request a replacement card(s) for a lost, stolen or damaged card.",
                 "additionalInfoUri": "https://www.commbank.com.au/content/dam/commbank/personal/international/download-printed-forms/CBT181_Travel_Money_websecure.pdf"
             }
         ],
         "productId": "0f55775f416844b19c1f0cebb8d157a1",
-        "effectiveFrom": "2009-06-29T14:00:00Z",
-        "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2023-08-01T00:37:39.354257Z",
+        "lastUpdated": "2024-07-09T00:07:53Z",
         "productCategory": "TRAVEL_CARDS",
         "name": "Travel Money Card",
         "description": "The Travel Money Card is a prepaid Visa card. You can load and reload up to 13 available currencies onto your card for your personal use when you travel.",

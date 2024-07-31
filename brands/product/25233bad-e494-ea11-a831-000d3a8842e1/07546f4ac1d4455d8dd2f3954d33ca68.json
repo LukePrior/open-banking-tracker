@@ -21,6 +21,11 @@
             },
             {
                 "featureType": "OTHER",
+                "additionalInfo": "Access a range of travel benefits through Travel Booking (provided by Hopper) for eligible customers.",
+                "additionalInfoUri": "https://www.commbank.com.au/travelbooking"
+            },
+            {
+                "featureType": "OTHER",
                 "additionalValue": "Yes",
                 "additionalInfo": "Obtain Cheque Books."
             },
@@ -79,9 +84,9 @@
             {
                 "name": "Paper Statement Fee",
                 "feeType": "EVENT",
-                "amount": "2.50",
+                "amount": "5.00",
                 "currency": "AUD",
-                "additionalInfo": "A paper statement fee applies to account when you request a paper copy of an account statement outside the standard cycle."
+                "additionalInfo": "A paper statement fee applies if you request a paper copy of an account statement at any time."
             },
             {
                 "name": "Overdraw Fee",
@@ -102,26 +107,26 @@
             {
                 "name": "Access fee - Overseas transactions",
                 "feeType": "WITHDRAWAL",
-                "transactionRate": "0.03",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value."
+                "transactionRate": "0.035",
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3.5% of the transaction value."
             },
             {
                 "name": "Access fee - Overseas transactions",
                 "feeType": "WITHDRAWAL",
                 "amount": "5.00",
-                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3% of the transaction value."
+                "additionalInfo": "Any other cash withdrawal overseas: AUD $5 plus 3.5% of the transaction value."
             },
             {
                 "name": "Access fee - Overseas transactions",
                 "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in Australian dollars: 3% of the transaction value."
+                "transactionRate": "0.035",
+                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in Australian dollars: 3.5% of the transaction value."
             },
             {
                 "name": "Access fee - Overseas transactions",
                 "feeType": "PURCHASE",
-                "transactionRate": "0.03",
-                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in foreign currency: 3% of the transaction value."
+                "transactionRate": "0.035",
+                "additionalInfo": "Maestro (EFTPOS) or Visa Debit Card or Debit MasterCard purchase in foreign currency: 3.5% of the transaction value."
             },
             {
                 "name": "Withdrawals or transfers made via telephone banking using an operator",
@@ -139,35 +144,35 @@
             {
                 "name": "Assisted transactions",
                 "feeType": "WITHDRAWAL",
-                "amount": "3.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Withdrawals made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post)."
             },
             {
                 "name": "Cheques transactions",
                 "feeType": "TRANSACTION",
-                "amount": "3.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Cheques written by you and negotiated through the clearing system."
             },
             {
                 "name": "Assisted transactions",
                 "feeType": "TRANSACTION",
-                "amount": "3.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Cheques drawn on your account and cashed over-the-counter at any Commonwealth Bank branch."
             },
             {
                 "name": "Assisted deposits",
                 "feeType": "DEPOSIT",
-                "amount": "3.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Deposits made over the counter at a Commonwealth Bank branch, Australia Post office or private agency (including EFTPOB/Bank@Post)."
             },
             {
                 "name": "Cheque transactions",
                 "feeType": "DEPOSIT",
-                "amount": "3.00",
+                "amount": "5.00",
                 "currency": "AUD",
                 "additionalInfo": "Cheques deposited to your account (including cheques deposited via Quick Deposits or QuickCash envelope banking)."
             },
@@ -213,15 +218,38 @@
         "lendingRates": [
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.1193",
+                "rate": "0.1643",
                 "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M"
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.01,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "For each day your account remains overdrawn, Excess Debit Interest will be applied. This does not apply to accounts with an overdraft limit."
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.1743",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "BALANCE",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 0.0,
+                        "maximumValue": 0.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalInfo": "For each day your account remains overdrawn, Excess Debit Interest will be applied. This does not apply to accounts with an overdraft limit."
             }
         ],
         "productId": "07546f4ac1d4455d8dd2f3954d33ca68",
-        "effectiveFrom": "2011-05-10T14:00:00Z",
-        "effectiveTo": "9999-12-30T13:00:00Z",
-        "lastUpdated": "2024-04-16T00:32:29.995655Z",
+        "lastUpdated": "2024-07-31T00:32:24.410911Z",
         "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
         "name": "Standard Business Cheque Account - Interest Bearing Option",
         "description": "Transaction accounts that pays interest above minimum balances.",

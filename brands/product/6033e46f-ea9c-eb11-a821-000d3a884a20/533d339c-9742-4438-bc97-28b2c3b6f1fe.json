@@ -3,7 +3,7 @@
         "brand": "Bank First",
         "description": "Premier Package Home Loan Investment 1 year fixed LVR >80%  <90%",
         "isTailored": false,
-        "lastUpdated": "2024-04-08T06:04:39.672098Z",
+        "lastUpdated": "2024-07-10T02:12:53.198676Z",
         "name": "Premier Package Home Loan Investment 1 year fixed LVR >80%  <90%",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "533d339c-9742-4438-bc97-28b2c3b6f1fe",
@@ -76,20 +76,6 @@
         ],
         "fees": [
             {
-                "feeType": "VARIABLE",
-                "name": "Break Cost Fees",
-                "accrualFrequency": null,
-                "accruedRate": null,
-                "additionalInfo": "Applies when during the fixed term the loan is repaid early, transferred to a variable loan or additional payments exceed $30,000 p.a.",
-                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf",
-                "additionalValue": null,
-                "amount": null,
-                "balanceRate": null,
-                "currency": "AUD",
-                "discounts": [],
-                "transactionRate": null
-            },
-            {
                 "feeType": "EVENT",
                 "name": "Discharge Of Mortgage Fee",
                 "accrualFrequency": null,
@@ -144,6 +130,20 @@
                 "currency": "AUD",
                 "discounts": [],
                 "transactionRate": null
+            },
+            {
+                "feeType": "VARIABLE",
+                "name": "Break Cost Fee",
+                "accrualFrequency": null,
+                "accruedRate": null,
+                "additionalInfo": "Applies when during the fixed term the loan is repaid early, transferred to a variable loan or additional payments exceed $30,000 p.a.",
+                "additionalInfoUri": "https://www.bankfirst.com.au/-/media/bankfirst/pdfs/termsandconditions/tc_part_b.pdf",
+                "additionalValue": null,
+                "amount": null,
+                "balanceRate": null,
+                "currency": "AUD",
+                "discounts": [],
+                "transactionRate": null
             }
         ],
         "lendingRates": [
@@ -155,11 +155,25 @@
                 "additionalValue": "P12M",
                 "applicationFrequency": "P1M",
                 "calculationFrequency": "P1D",
-                "comparisonRate": "0.0760000000000000",
+                "comparisonRate": "0.0768000000000000",
                 "interestPaymentDue": "IN_ARREARS",
                 "loanPurpose": "INVESTMENT",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "tiers": []
+                "tiers": [
+                    {
+                        "minimumValue": 80.01,
+                        "name": "LVR above 80 - 90%",
+                        "unitOfMeasure": "PERCENT",
+                        "additionalInfo": null,
+                        "additionalInfoUri": null,
+                        "applicabilityConditions": {
+                            "additionalInfo": null,
+                            "additionalInfoUri": null
+                        },
+                        "maximumValue": 90.0,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ]
             }
         ]
     },

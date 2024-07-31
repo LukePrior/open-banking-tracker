@@ -3,7 +3,7 @@
         "productId": "3220",
         "effectiveFrom": "2020-07-01T00:00:00.000Z",
         "effectiveTo": "9999-12-31T00:00:00.000Z",
-        "lastUpdated": "2024-02-05T00:00:00.000Z",
+        "lastUpdated": "2024-07-29T00:00:00.000Z",
         "productCategory": "CRED_AND_CHRG_CARDS",
         "name": "Visa Credit Card",
         "description": "Low rate, low fee, personal credit card",
@@ -55,7 +55,7 @@
         "constraints": [
             {
                 "constraintType": "MAX_LIMIT",
-                "additionalValue": "50000.00"
+                "additionalValue": "25000.00"
             },
             {
                 "constraintType": "MIN_LIMIT",
@@ -89,56 +89,57 @@
         ],
         "fees": [
             {
-                "name": "Information fee - Search ",
+                "name": "Information fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
-                "additionalInfo": "$20 per request, plus $1 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
+                "additionalInfo": "$20.00 plus $1.00 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
             },
             {
                 "name": "Information fee - Per Page",
                 "feeType": "EVENT",
                 "amount": "1.00",
-                "additionalInfo": "$20 per request, plus $1 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
+                "additionalInfo": "Information fee $20.00 plus $1.00 per page copied. Debited to your account when we provide information or copies of documents to you or someone else that relates to your credit card contract or any other record relating to the credit card contract."
             },
             {
                 "name": "Bank transfer fee",
                 "feeType": "TRANSACTION",
-                "amount": "8.00"
+                "amount": "8.00",
+                "additionalInfo": "When any amount is debited or credited to a bank account in our name as a result of which it is necessary for us to debit or credit monies to your loan"
             },
             {
-                "name": "Bulk coin purchase fee",
+                "name": "Bulk coin purchase fee - In branch",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.02",
-                "additionalInfo": "Minimum fee $2.00"
+                "additionalInfo": "2.00% of value (minimum $2.00)"
             },
             {
-                "name": "Bulk coin purchase fee - Sourced Externally",
+                "name": "Bulk coin purchase fee - External",
                 "feeType": "TRANSACTION",
                 "amount": "8.00",
                 "additionalInfo": "$8.00 per bag"
             },
             {
                 "name": "Foreign currency deposit fee",
-                "feeType": "TRANSACTION",
+                "feeType": "DEPOSIT",
                 "amount": "5.00"
             },
             {
                 "name": "Foreign currency conversion fee",
                 "feeType": "TRANSACTION",
                 "transactionRate": "0.03",
-                "additionalInfo": "3% of the value of the transaction converted into Australian dollars. This applies also when the merchant or financial institution that processes the transaction is located outside of Australia."
+                "additionalInfo": "3.00% of the value of the transaction in AUD debited to your account when you make a transaction in a foreign currency or in AUD when you are outside of Australia; or in Australia where the merchant or financial institution that processes the transaction is located outside of Australia"
             },
             {
-                "name": "Replacement card fee - In Australia",
+                "name": "Replacement card fee",
                 "feeType": "EVENT",
                 "amount": "7.00",
-                "additionalInfo": "Charged on any replacement card issued within the expiry period within Australia if a replacement card has been requested in the preceding 12 months."
+                "additionalInfo": "Payable if the card is sent to you in Australia. Payable when you or an additional cardholder request a replacement card before your card has expired, and you have already requested a replacement card in the period between the date on which the most recent annual fee is charged on your account (or if the annual fee is waived, the date on which it would be charged had it not been waived) and the date on which you request a second replacement card."
             },
             {
-                "name": "Replacement card fee - International",
+                "name": "Replacement card fee",
                 "feeType": "EVENT",
                 "amount": "100.00",
-                "additionalInfo": "For any replacement card issued overseas"
+                "additionalInfo": "Payable if the card is sent to you outside Australia. Payable when you or an additional cardholder request a replacement card before your card has expired, and you have already requested a replacement card in the period between the date on which the most recent annual fee is charged on your account (or if the annual fee is waived, the date on which it would be charged had it not been waived) and the date on which you request a second replacement card."
             },
             {
                 "name": "SMS alert fee",
@@ -153,34 +154,21 @@
             },
             {
                 "name": "EFT transaction fee (RTGS)",
-                "feeType": "EVENT",
-                "amount": "20.00"
+                "feeType": "WITHDRAWAL",
+                "amount": "20.00",
+                "additionalInfo": "Transfer funds on the same day to an account at another financial institution"
             },
             {
-                "name": "International currency draft",
+                "name": "Telegraphic transfer - Foreign Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "15.00"
+                "amount": "30.00",
+                "additionalInfo": "When transferring in a foreign currency. Fee is inclusive of $20.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
-                "name": "Telegraphic transfer - Foreign Currency",
+                "name": "Telegraphic transfer - Australian Currency (Outgoing International Payment)",
                 "feeType": "TRANSACTION",
-                "amount": "30.00"
-            },
-            {
-                "name": "Telegraphic transfer - Australian Currency",
-                "feeType": "TRANSACTION",
-                "amount": "47.50"
-            },
-            {
-                "name": "Telegraphic transfer trace",
-                "feeType": "TRANSACTION",
-                "amount": "80.00",
-                "additionalInfo": "Fee is estimate only"
-            },
-            {
-                "name": "Scheduled BPAY payment fee",
-                "feeType": "EVENT",
-                "amount": "1.00"
+                "amount": "50.00",
+                "additionalInfo": "When transferring in AUD. Fee is inclusive of $40.00 payable to the product issuer, Convera Australia Pty Ltd."
             },
             {
                 "name": "Default notice fee",
@@ -217,7 +205,7 @@
                 "name": "Late payment fee",
                 "feeType": "EVENT",
                 "amount": "20.00",
-                "additionalInfo": "Payable when you miss a payment. The fee will be\ndebited to your account on the last day of the second\nconsecutive statement period in which the minimum\nrepayment is not made and thereafter on the last day\nof each statement period that the minimum repayment\nis not made by the due date."
+                "additionalInfo": "Payable when you miss a payment. The fee will be debited to your account on the last day of the second consecutive statement period in which the minimum repayment is not made and thereafter on the last day of each statement period that the minimum repayment is not made by the due date."
             },
             {
                 "name": "EasyPay notification fee - SMS",

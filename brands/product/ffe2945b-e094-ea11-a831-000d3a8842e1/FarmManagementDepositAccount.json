@@ -1,7 +1,7 @@
 {
     "data": {
         "productId": "FarmManagementDepositAccount",
-        "lastUpdated": "2024-02-21T05:35:04Z",
+        "lastUpdated": "2024-07-15T07:00:34Z",
         "productCategory": "TERM_DEPOSITS",
         "name": "Farm Management Deposit account",
         "description": "As a primary producer, invest pre-tax income from high yield years to provide a cash reserve for the future.",
@@ -850,6 +850,54 @@
                 ],
                 "additionalValue": "P60M",
                 "additionalInfo": "Interest paid monthly"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "tiers": [
+                    {
+                        "name": "1000 to 800000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 800000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "24 Month",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "Interest paid monthly"
+            },
+            {
+                "depositRateType": "FIXED",
+                "rate": "0.0455",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P24M",
+                "tiers": [
+                    {
+                        "name": "1000 to 800000",
+                        "unitOfMeasure": "DOLLAR",
+                        "minimumValue": 1000,
+                        "maximumValue": 800000,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    },
+                    {
+                        "name": "24 Month",
+                        "unitOfMeasure": "MONTH",
+                        "minimumValue": 24,
+                        "maximumValue": 24,
+                        "rateApplicationMethod": "WHOLE_BALANCE"
+                    }
+                ],
+                "additionalValue": "P24M",
+                "additionalInfo": "Interest paid at maturity"
             }
         ]
     },
