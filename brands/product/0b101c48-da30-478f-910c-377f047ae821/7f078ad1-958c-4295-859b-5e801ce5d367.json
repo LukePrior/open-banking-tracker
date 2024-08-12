@@ -9,14 +9,53 @@
         "description": "Home Loans available to NRMA Insurance customers",
         "effectiveFrom": "2023-09-03T14:00:00.000Z",
         "isTailored": false,
-        "lastUpdated": "2024-07-22T02:35:22.765Z",
+        "lastUpdated": "2024-08-08T04:09:46.216Z",
         "name": "NRMA Insurance Home Loans",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "productId": "7f078ad1-958c-4295-859b-5e801ce5d367",
         "fees": [
             {
-                "name": "Loan Processing Fee",
+                "name": "Monthly Administration fee (No Offset)",
                 "amount": "0.00",
+                "additionalValue": "P1M",
+                "x-pc-feeId": "d4c637cc-26d6-4906-afe0-76832fc1b027",
+                "feeType": "PERIODIC"
+            },
+            {
+                "name": "Legal fees for establishing the\u00a0loan\u00a0",
+                "additionalInfo": "Payable for services including the preparation of\u00a0the security documents and/or attending to\u00a0settlement on our behalf and/or conducting all\u00a0title search enquiries necessary to effect\u00a0settlement. This fee is payable on the\u00a0Settlement Date\u00a0",
+                "x-pc-feeId": "803d08c8-7703-45d0-bca2-f24fe9a38c10",
+                "feeType": "VARIABLE"
+            },
+            {
+                "name": "Subsequent valuation fee",
+                "additionalInfo": "Payable for a valuation performed as the result of your request for us to deal with a security after settlement.",
+                "x-pc-feeId": "7a4aeed1-78a4-4bb5-93c0-70824284ce3f",
+                "feeType": "VARIABLE"
+            },
+            {
+                "name": "Fixed Rate Break Costs ",
+                "additionalInfo": "Break costs may be payable in certain circumstances during a fixed rate term, such as: converting to another annual percentage rate; or Prepaying part (currently more than $20,000 p.a) or all of the\u00a0outstanding loan",
+                "x-pc-feeId": "2d38ac75-4d24-44ea-9c6c-30fc95265452",
+                "feeType": "VARIABLE"
+            },
+            {
+                "name": "Arrears Administration Fee",
+                "additionalInfo": "This fee is debited to your Home Loan Account when you are in arrears. This fee is debited to your Home Loan Account every 28 days thereafter for so long as you remain in arrears.",
+                "amount": "35.00",
+                "x-pc-feeId": "2f5252d0-f84d-46dc-99b1-4b23cdde020e",
+                "feeType": "EVENT"
+            },
+            {
+                "name": "Direct Debit Dishonour Fee",
+                "additionalInfo": "When there are insufficient funds in your account to cover a direct debit, this fee is\u00a0charged",
+                "amount": "10.00",
+                "x-pc-feeId": "f41468bf-5c28-431a-adcf-546c2c49dd8c",
+                "feeType": "EVENT"
+            },
+            {
+                "name": "Loan Processing Fee",
+                "amount": "150.00",
                 "currency": "AUD",
                 "feeType": "UPFRONT"
             },
@@ -78,17 +117,23 @@
                 "feeType": "EVENT"
             },
             {
-                "name": "Offset Admin Fee",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalValue": "Monthly",
-                "feeType": "PERIODIC"
-            },
-            {
                 "name": "Application Fee",
                 "amount": "0.00",
                 "currency": "AUD",
                 "feeType": "UPFRONT"
+            },
+            {
+                "name": "Redraw",
+                "additionalInfo": "Payable when you redraw all or part of any repayments made on your loan (minimum $1).\n\n\n",
+                "amount": "50.00",
+                "feeType": "WITHDRAWAL"
+            },
+            {
+                "name": "Monthly Administration fee (Offset )",
+                "additionalInfo": "Monthly administration fee Payable each month for each loan with an offset:\u00a0100% Offset (per account)\n",
+                "amount": "10.00",
+                "additionalValue": "P1M",
+                "feeType": "PERIODIC"
             }
         ],
         "eligibility": [

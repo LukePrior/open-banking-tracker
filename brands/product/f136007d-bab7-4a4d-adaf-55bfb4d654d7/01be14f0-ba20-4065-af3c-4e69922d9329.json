@@ -2,7 +2,7 @@
     "data": {
         "productId": "01be14f0-ba20-4065-af3c-4e69922d9329",
         "effectiveFrom": "2021-09-30T00:00:00+00:00",
-        "lastUpdated": "2024-07-08T12:21:16+00:00",
+        "lastUpdated": "2024-08-07T04:57:23+00:00",
         "productCategory": "RESIDENTIAL_MORTGAGES",
         "name": "Customs Value Home Loan",
         "description": "Helping Border Officers with a low rate home loan that has a great range of features to help pay off your home sooner.",
@@ -15,15 +15,21 @@
         },
         "features": [
             {
-                "featureType": "OTHER",
-                "additionalValue": "Unlimited free additional repayments",
-                "additionalInfo": "Up to $5,000 over the Fixed Term period",
-                "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
-            },
-            {
                 "featureType": "REDRAW",
                 "additionalValue": "0",
                 "additionalInfo": "Fee Free redraw",
+                "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
+            },
+            {
+                "featureType": "OFFSET",
+                "additionalValue": "100% Offset",
+                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
+                "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalValue": "Unlimited free additional repayments",
+                "additionalInfo": "Up to $5,000 over the Fixed Term period",
                 "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
             },
             {
@@ -31,25 +37,20 @@
                 "additionalValue": "ACT Land Rent Scheme",
                 "additionalInfo": "Available for ACT Land Rent Scheme",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "featureType": "OFFSET",
-                "additionalValue": "100% Offset",
-                "additionalInfo": "Not Available for Fixed Loans or Interest Only",
-                "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
             }
         ],
         "eligibility": [
             {
                 "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Citizen"
+                "additionalValue": "Australian Residents"
             },
             {
                 "eligibilityType": "MIN_AGE",
                 "additionalValue": "18"
             },
             {
-                "eligibilityType": "NATURAL_PERSON"
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Australian Citizen"
             },
             {
                 "eligibilityType": "OTHER",
@@ -58,13 +59,20 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/loans/home-loans"
             },
             {
-                "eligibilityType": "RESIDENCY_STATUS",
-                "additionalValue": "Australian Residents"
+                "eligibilityType": "NATURAL_PERSON"
             }
         ],
         "fees": [
             {
-                "name": "Bank Cheque",
+                "name": "Mortgage Discharge Fee",
+                "feeType": "EXIT",
+                "amount": "294.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Excess Valuation fee",
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
@@ -72,8 +80,54 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Bridging Home Loan Establishment Fee",
+                "name": "Establishment fee",
                 "feeType": "UPFRONT",
+                "amount": "600.00",
+                "currency": "AUD"
+            },
+            {
+                "name": "Arrears Letter Fee",
+                "feeType": "EVENT",
+                "amount": "6.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "PPSR Fees (Personal Properties Security Register)",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+            },
+            {
+                "name": "RTGS Transfer Fee",
+                "feeType": "UPFRONT",
+                "amount": "10.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Substituting of Security Legal fee",
+                "feeType": "UPFRONT",
+                "amount": "605.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Other Government Duties & Taxes",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+            },
+            {
+                "name": "Bridging Home Loan Establishment Fee",
+                "feeType": "EVENT",
                 "amount": "880.00",
                 "currency": "AUD",
                 "additionalValue": "For Bridging Loans only",
@@ -87,20 +141,29 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
             },
             {
-                "name": "Stamp Duty Increase Fee",
+                "name": "Late Payment Fee",
                 "feeType": "EVENT",
-                "amount": "0.00",
+                "amount": "10.00",
                 "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+                "additionalInfo": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Border Bank loans and continuing credit accounts",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Insurance",
+                "name": "Additional Statement Fee",
+                "feeType": "EVENT",
+                "amount": "5.00",
+                "currency": "AUD",
+                "additionalValue": "$1.50 per page",
+                "additionalInfo": "Payable when you request an additional statement",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Stamp Duty",
                 "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
                 "name": "Other Legal/ Solicitors Fees",
@@ -111,7 +174,7 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
             },
             {
-                "name": "Future Legal Costs and Disbursements Relating to any Variations, Dealings, Discharges",
+                "name": "Pest & Building Inspections Fees",
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
@@ -119,15 +182,39 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
             },
             {
-                "name": "Monthly Product Split Fee",
-                "feeType": "PERIODIC",
-                "amount": "7.00",
+                "name": "Consent to Subdivision Fee",
+                "feeType": "EVENT",
+                "amount": "162.00",
                 "currency": "AUD",
-                "additionalValue": "$7 per additional product per month during the period of the split, debited to the account for the other product each month.",
+                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Third Party Costs",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfo": "Any other costs charged to us by a third party will be passed on to you. Some examples are as follows:\r\n\u2022 Title Change Fee\r\n\u2022 Land and Property Information Search Fees\r\n\u2022 Land and Property Information Registration Fees"
+            },
+            {
+                "name": "Independent Legal Advice/Interpreter Service",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
             },
             {
-                "name": "Pest & Building Inspections Fees",
+                "name": "Dishonoured Cheque fee",
+                "feeType": "EVENT",
+                "amount": "9.00",
+                "currency": "AUD",
+                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Future Legal Costs and Disbursements Relating to any Variations, Dealings, Discharges",
                 "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
@@ -143,40 +230,87 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
             },
             {
-                "name": "Independent Legal Advice/Interpreter Service",
-                "feeType": "EVENT",
+                "name": "Insurance",
+                "feeType": "UPFRONT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
-            },
-            {
-                "name": "PPSR Fees (Personal Properties Security Register)",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
-            },
-            {
-                "name": "Other Government Duties & Taxes",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
-            },
-            {
-                "name": "Arrears Letter Fee",
-                "feeType": "EVENT",
-                "amount": "6.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we send you an arrears letter asking you to remedy an arrears under a loan contract.",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
                 "name": "Legal/Securities fees",
                 "feeType": "UPFRONT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Mortgage Loan Top up/Increase in Credit Limit Fee",
+                "feeType": "EVENT",
+                "amount": "315.00",
+                "currency": "AUD",
+                "additionalValue": "Payable on application or funding. Applies to all Home Loan Applications"
+            },
+            {
+                "name": "Default Notice Fee",
+                "feeType": "EVENT",
+                "amount": "21.50",
+                "currency": "AUD",
+                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Stamp Duty Increase Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+            },
+            {
+                "name": "Bank Cheque",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At Cost",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Production of Title Fee",
+                "feeType": "UPFRONT",
+                "amount": "110.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable to our solicitors when you ask us to produce the certificate of title of your property to enable registration of a plan or any document dealing with your property",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "General Consent Fee",
+                "feeType": "EVENT",
+                "amount": "250.00",
+                "currency": "AUD",
+                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
+            },
+            {
+                "name": "Early Repayment Fee",
+                "feeType": "EVENT",
+                "amount": "0.00",
+                "currency": "AUD",
+                "additionalValue": "At cost",
+                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
+            },
+            {
+                "name": "Monthly Product Split Fee",
+                "feeType": "PERIODIC",
+                "amount": "7.00",
+                "currency": "AUD",
+                "additionalValue": "$7 per additional product per month during the period of the split, debited to the account for the other product each month.",
+                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2024/03/BB_Schedule_of_fees_and_charges_01.03.24.pdf"
+            },
+            {
+                "name": "Additional Valuation Fee",
+                "feeType": "EVENT",
                 "amount": "0.00",
                 "currency": "AUD",
                 "additionalValue": "At Cost",
@@ -191,99 +325,11 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
-                "name": "Production of Title Fee",
-                "feeType": "UPFRONT",
-                "amount": "110.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to our solicitors when you ask us to produce the certificate of title of your property to enable registration of a plan or any document dealing with your property",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Stamp Duty",
-                "feeType": "UPFRONT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "General Consent Fee",
-                "feeType": "EVENT",
-                "amount": "250.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to any matter relating to a loan contract or security (other than a matter for which a separate fee is payable).",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "RTGS Transfer Fee",
-                "feeType": "UPFRONT",
-                "amount": "10.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we are required to transfer settlement funds to an agent on behalf of our Solicitor.",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
                 "name": "Substituting Securities fee",
                 "feeType": "EVENT",
                 "amount": "315.00",
                 "currency": "AUD",
                 "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan.",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Excess Valuation fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Dishonoured Cheque fee",
-                "feeType": "EVENT",
-                "amount": "9.00",
-                "currency": "AUD",
-                "additionalValue": "Payable when a cheque or other payment to your account is dishonoured.",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Late Payment Fee",
-                "feeType": "EVENT",
-                "amount": "10.00",
-                "currency": "AUD",
-                "additionalInfo": "Charged where the whole or any part of your loan repayment remains unpaid after 14 days past the due date. Applies to all Border Bank loans and continuing credit accounts",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Early Repayment Fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At cost",
-                "additionalInfo": "Early Repayment Fee payable, if, during any fixed rate period, you:\r\n(a)\trepay the whole of your unpaid balance (full early repayment);\r\n(b)\tpay $5000 or more in repayments above the contractual repayments (partial early repayment); or\r\n(c)\tbecome obliged to repay the whole loan after you have defaulted (full early repayment)\r\n\r\nand the fixed rate that applied to the loan is more than the prevailing market interest rate at the time of the early repayment, as determined by us in our absolute discretion.\r\n"
-            },
-            {
-                "name": "Third Party Costs",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfo": "Any other costs charged to us by a third party will be passed on to you. Some examples are as follows:\r\n\u2022 Title Change Fee\r\n\u2022 Land and Property Information Search Fees\r\n\u2022 Land and Property Information Registration Fees"
-            },
-            {
-                "name": "Consent to Subdivision Fee",
-                "feeType": "EVENT",
-                "amount": "162.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask for our consent to register a subdivision or other plan or dealing.",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Default Notice Fee",
-                "feeType": "EVENT",
-                "amount": "21.50",
-                "currency": "AUD",
-                "additionalInfo": "Payable when we send you a default notice under a loan contract when an arrears remains unremedied after we have sent you an arrears letter.",
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             },
             {
@@ -293,205 +339,19 @@
                 "currency": "AUD",
                 "additionalInfo": "Payable when you ask us to consent to a second mortgage",
                 "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Mortgage Loan Top up/Increase in Credit Limit Fee",
-                "feeType": "EVENT",
-                "amount": "315.00",
-                "currency": "AUD",
-                "additionalValue": "Payable on application or funding. Applies to all Home Loan Applications"
-            },
-            {
-                "name": "Substituting of Security Legal fee",
-                "feeType": "UPFRONT",
-                "amount": "605.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable to us when you substitute an existing property with a new property as security for your home loan. ",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Additional Valuation Fee",
-                "feeType": "EVENT",
-                "amount": "0.00",
-                "currency": "AUD",
-                "additionalValue": "At Cost",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Establishment fee",
-                "feeType": "UPFRONT",
-                "amount": "600.00",
-                "currency": "AUD"
-            },
-            {
-                "name": "Additional Statement Fee",
-                "feeType": "EVENT",
-                "amount": "5.00",
-                "currency": "AUD",
-                "additionalValue": "$1.50 per page",
-                "additionalInfo": "Payable when you request an additional statement",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
-            },
-            {
-                "name": "Mortgage Discharge Fee",
-                "feeType": "EXIT",
-                "amount": "294.00",
-                "currency": "AUD",
-                "additionalInfo": "Payable when you ask us to prepare a discharge of mortgage. Note: This fee does not include registration costs for the land titles office",
-                "additionalInfoUri": "https://www.borderbank.com.au/wp-content/uploads/2023/07/Schedule_of_fees_and_charges.pdf"
             }
         ],
         "lendingRates": [
             {
                 "lendingRateType": "FIXED",
                 "rate": "0.0729",
-                "comparisonRate": "0.0712",
+                "comparisonRate": "0.0669",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied IO LVR=90% 3 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0724",
-                "comparisonRate": "0.072",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalInfo": "Investment IO 80% - 90%  C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0629",
-                "comparisonRate": "0.0697",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment PI 80% - 90% 2 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0694",
-                "comparisonRate": "0.0702",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied P&I LVR=90% C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0709",
-                "comparisonRate": "0.0705",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied IO 90-95% 2 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0659",
-                "comparisonRate": "0.0703",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment IO 80% - 90% 2 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0644",
-                "comparisonRate": "0.0659",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Investment PI Up to 60% 3 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0654",
-                "comparisonRate": "0.0644",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO Up to 60%  C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0669",
-                "comparisonRate": "0.0652",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied Up to 60% PI 5 Yr C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.0619",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied Up to 60% PI 3 Yr C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "comparisonRate": "0.0655",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment PI Up to 60% 2 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0664",
-                "comparisonRate": "0.0654",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO 60% - 90%  C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0674",
-                "comparisonRate": "0.0675",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Investment IO 60% - 80% 3 Yr C16",
+                "additionalInfo": "Owner Occupied IO 60% - 90%  3 Yr C14",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -506,452 +366,14 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0839",
-                "comparisonRate": "0.0733",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied IO 60% - 90%  5 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649",
-                "comparisonRate": "0.0662",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Investment PI Up to 60% 1 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0714",
-                "comparisonRate": "0.0695",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment PI 60% - 80% 5 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0627",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied Up to 60% PI 2 Yr C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0634",
-                "comparisonRate": "0.0642",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied PI 60% - 90%  1 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0744",
-                "comparisonRate": "0.0707",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment IO 60% - 80% 5 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0704",
-                "comparisonRate": "0.0656",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied IO 60% - 90%  2 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0844",
-                "comparisonRate": "0.0769",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied IO LVR=90 5 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0689",
-                "comparisonRate": "0.071",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Investment IO 80% - 90% 1 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0709",
-                "comparisonRate": "0.0625",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Bridging Loan IO C11",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0644",
-                "comparisonRate": "0.0666",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Investment PI 60% - 80% 3 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0674",
-                "comparisonRate": "0.066",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied PI 60% - 90%  5 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0659",
-                "comparisonRate": "0.0698",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied IO 90-95% 1 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0683",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied P&I LVR=90 2 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0619",
-                "comparisonRate": "0.0663",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment PI 60% - 80% 2 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0729",
-                "comparisonRate": "0.0661",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied IO Up to 60% 3 Yr  C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0719",
-                "comparisonRate": "0.0719",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment PI 80% - 90% 5 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0683",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied PI Up 90-95%  2 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0654",
-                "comparisonRate": "0.067",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment IO 60% - 80% 2 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0599",
-                "comparisonRate": "0.0635",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied PI 60% - 90%  2 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.0669",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied P&I LVR=90 3 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0694",
-                "comparisonRate": "0.0702",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied PI 90-95%  C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0659",
-                "comparisonRate": "0.0698",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied IO LVR=90 1 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0644",
-                "comparisonRate": "0.0695",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Investment PI 80% - 90% 3 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.0669",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied P&I 90-95%  3 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649",
-                "comparisonRate": "0.0661",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Investment IO Up to 60% 2 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0699",
-                "comparisonRate": "0.0646",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P2Y",
-                "additionalInfo": "Owner Occupied IO Up to 60% 2 Yr  C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0724",
-                "comparisonRate": "0.0715",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO 90-95%  C9"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0659",
-                "comparisonRate": "0.0707",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Investment PI 80% - 90% 1 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0709",
-                "comparisonRate": "0.0687",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment PI Up to 60% 5 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0684",
-                "comparisonRate": "0.0674",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Investment IO 60% - 80% 1 Yr C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0679",
-                "comparisonRate": "0.0695",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied PI 90-95%  5 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0834",
-                "comparisonRate": "0.0725",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied IO Up to 60% 5 Yr C13",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0724",
-                "comparisonRate": "0.0715",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO LVR=90% C3 ACT Land Rent Scheme Variable",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
                 "lendingRateType": "VARIABLE",
                 "rate": "0.0664",
-                "comparisonRate": "0.0672",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "INVESTMENT",
-                "additionalInfo": "Investment PI 60% - 80% C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0739",
-                "comparisonRate": "0.0699",
+                "comparisonRate": "0.0654",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Investment IO Up to 60% 5 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0684",
-                "comparisonRate": "0.068",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalInfo": "Investment IO 60% - 80%  C16",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0629",
-                "comparisonRate": "0.0632",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied Up to 60% PI 1 Yr C13",
+                "additionalInfo": "Owner Occupied IO 60% - 90%  C14",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -975,55 +397,30 @@
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied IO 90-95%  3 Yr C9",
+                "additionalInfo": "Owner Occupied IO LVR=90% 3 Yr C4 ACT Land Rent Scheme Fixed",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0844",
-                "comparisonRate": "0.0769",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied IO 90-95% 5 Yr C9",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0674",
-                "comparisonRate": "0.0703",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Investment IO 80% - 90% 3 Yr C17",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0679",
-                "comparisonRate": "0.0665",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "INVESTMENT",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Investment IO Up to 60% 1 Yr C15",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0639",
-                "comparisonRate": "0.0696",
+                "rate": "0.0579",
+                "comparisonRate": "0.0669",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied P&I 90-95%  1 Yr C9",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied P&I LVR=90 3 Yr C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0654",
+                "comparisonRate": "0.0644",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied IO Up to 60%  C13",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -1040,37 +437,61 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0679",
-                "comparisonRate": "0.0695",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P5Y",
-                "additionalInfo": "Owner Occupied P&I LVR=90 5 Yr C4 ACT Land Rent Scheme Fixed",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "FIXED",
-                "rate": "0.0729",
-                "comparisonRate": "0.0669",
-                "calculationFrequency": "P1D",
-                "applicationFrequency": "P1M",
-                "repaymentType": "INTEREST_ONLY",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied IO 60% - 90%  3 Yr C14",
-                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
-            },
-            {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0704",
-                "comparisonRate": "0.0712",
+                "rate": "0.0659",
+                "comparisonRate": "0.0707",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "INVESTMENT",
-                "additionalInfo": "Investment PI 80% - 90% C17",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Investment PI 80% - 90% 1 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0639",
+                "comparisonRate": "0.0696",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied P&I 90-95%  1 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "comparisonRate": "0.0683",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied P&I LVR=90 2 Yr C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0694",
+                "comparisonRate": "0.0702",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied PI 90-95%  C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0834",
+                "comparisonRate": "0.0725",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied IO Up to 60% 5 Yr C13",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -1085,25 +506,51 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0624",
-                "comparisonRate": "0.0632",
+                "lendingRateType": "FIXED",
+                "rate": "0.0654",
+                "comparisonRate": "0.067",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
-                "repaymentType": "PRINCIPAL_AND_INTEREST",
-                "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied PI Up to 60% C13",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment IO 60% - 80% 2 Yr C16",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
-                "lendingRateType": "VARIABLE",
-                "rate": "0.0634",
-                "comparisonRate": "0.0642",
+                "lendingRateType": "FIXED",
+                "rate": "0.0644",
+                "comparisonRate": "0.0666",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Investment PI 60% - 80% 3 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "comparisonRate": "0.0626",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied PI 60% - 90%  C14",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied PI 60% - 90%  3 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "comparisonRate": "0.0619",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied Up to 60% PI 3 Yr C13",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -1114,18 +561,77 @@
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
-                "additionalInfo": "Owner Occupied IO LVR=90% C4 ACT Land Rent Scheme Fixed",
+                "additionalInfo": "Owner Occupied IO LVR=90% C3 ACT Land Rent Scheme Variable",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0579",
+                "comparisonRate": "0.0669",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied P&I 90-95%  3 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0839",
+                "comparisonRate": "0.0733",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied IO 60% - 90%  5 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0669",
+                "comparisonRate": "0.0652",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied Up to 60% PI 5 Yr C13",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
                 "lendingRateType": "VARIABLE",
-                "rate": "0.0674",
-                "comparisonRate": "0.067",
+                "rate": "0.0724",
+                "comparisonRate": "0.0715",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied IO 90-95%  C9"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0679",
+                "comparisonRate": "0.0665",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "INVESTMENT",
-                "additionalInfo": "Investment IO Up to 60%  C15",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Investment IO Up to 60% 1 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0844",
+                "comparisonRate": "0.0769",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied IO 90-95% 5 Yr C9",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -1153,15 +659,144 @@
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
-                "lendingRateType": "FIXED",
-                "rate": "0.0649",
-                "comparisonRate": "0.0634",
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0724",
+                "comparisonRate": "0.0715",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "INTEREST_ONLY",
                 "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied IO LVR=90% C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0674",
+                "comparisonRate": "0.067",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Investment IO Up to 60%  C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "comparisonRate": "0.0683",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied PI Up 90-95%  2 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0619",
+                "comparisonRate": "0.0663",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment PI 60% - 80% 2 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0634",
+                "comparisonRate": "0.0642",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
                 "additionalValue": "P1Y",
-                "additionalInfo": "Owner Occupied IO Up to 60% 1 Yr  C13",
+                "additionalInfo": "Owner Occupied PI 60% - 90%  1 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649",
+                "comparisonRate": "0.0661",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment IO Up to 60% 2 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0664",
+                "comparisonRate": "0.0672",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Investment PI 60% - 80% C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649",
+                "comparisonRate": "0.0662",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Investment PI Up to 60% 1 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0709",
+                "comparisonRate": "0.0687",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Investment PI Up to 60% 5 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0699",
+                "comparisonRate": "0.0646",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied IO Up to 60% 2 Yr  C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0729",
+                "comparisonRate": "0.0661",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied IO Up to 60% 3 Yr  C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0729",
+                "comparisonRate": "0.0712",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Owner Occupied IO 90-95%  3 Yr C9",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
@@ -1178,14 +813,379 @@
             },
             {
                 "lendingRateType": "FIXED",
-                "rate": "0.0579",
-                "comparisonRate": "0.0626",
+                "rate": "0.0629",
+                "comparisonRate": "0.0632",
                 "calculationFrequency": "P1D",
                 "applicationFrequency": "P1M",
                 "repaymentType": "PRINCIPAL_AND_INTEREST",
                 "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied Up to 60% PI 1 Yr C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0739",
+                "comparisonRate": "0.0699",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Investment IO Up to 60% 5 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0689",
+                "comparisonRate": "0.071",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Investment IO 80% - 90% 1 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0674",
+                "comparisonRate": "0.0703",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
                 "additionalValue": "P3Y",
-                "additionalInfo": "Owner Occupied PI 60% - 90%  3 Yr C14",
+                "additionalInfo": "Investment IO 80% - 90% 3 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0629",
+                "comparisonRate": "0.0697",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment PI 80% - 90% 2 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0724",
+                "comparisonRate": "0.072",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Investment IO 80% - 90%  C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0674",
+                "comparisonRate": "0.0675",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Investment IO 60% - 80% 3 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0674",
+                "comparisonRate": "0.066",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied PI 60% - 90%  5 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0659",
+                "comparisonRate": "0.0698",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied IO LVR=90 1 Yr C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0644",
+                "comparisonRate": "0.0659",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Investment PI Up to 60% 3 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0659",
+                "comparisonRate": "0.0703",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment IO 80% - 90% 2 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0634",
+                "comparisonRate": "0.0642",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied PI 60% - 90%  C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0744",
+                "comparisonRate": "0.0707",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Investment IO 60% - 80% 5 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0719",
+                "comparisonRate": "0.0719",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Investment PI 80% - 90% 5 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0844",
+                "comparisonRate": "0.0769",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied IO LVR=90 5 Yr C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0644",
+                "comparisonRate": "0.0695",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P3Y",
+                "additionalInfo": "Investment PI 80% - 90% 3 Yr C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0704",
+                "comparisonRate": "0.0656",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied IO 60% - 90%  2 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0684",
+                "comparisonRate": "0.068",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Investment IO 60% - 80%  C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "comparisonRate": "0.0627",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied Up to 60% PI 2 Yr C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0679",
+                "comparisonRate": "0.0695",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied P&I LVR=90 5 Yr C4 ACT Land Rent Scheme Fixed",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0684",
+                "comparisonRate": "0.0674",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Investment IO 60% - 80% 1 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0709",
+                "comparisonRate": "0.0705",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied IO 90-95% 2 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0714",
+                "comparisonRate": "0.0695",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Investment PI 60% - 80% 5 Yr C16",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0659",
+                "comparisonRate": "0.0698",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied IO 90-95% 1 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0619",
+                "comparisonRate": "0.0655",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Investment PI Up to 60% 2 Yr C15",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0679",
+                "comparisonRate": "0.0695",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P5Y",
+                "additionalInfo": "Owner Occupied PI 90-95%  5 Yr C9",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0599",
+                "comparisonRate": "0.0635",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P2Y",
+                "additionalInfo": "Owner Occupied PI 60% - 90%  2 Yr C14",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0704",
+                "comparisonRate": "0.0712",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "INVESTMENT",
+                "additionalInfo": "Investment PI 80% - 90% C17",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0709",
+                "comparisonRate": "0.0625",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Bridging Loan IO C11",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0624",
+                "comparisonRate": "0.0632",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied PI Up to 60% C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "FIXED",
+                "rate": "0.0649",
+                "comparisonRate": "0.0634",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "INTEREST_ONLY",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalValue": "P1Y",
+                "additionalInfo": "Owner Occupied IO Up to 60% 1 Yr  C13",
+                "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
+            },
+            {
+                "lendingRateType": "VARIABLE",
+                "rate": "0.0694",
+                "comparisonRate": "0.0702",
+                "calculationFrequency": "P1D",
+                "applicationFrequency": "P1M",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "loanPurpose": "OWNER_OCCUPIED",
+                "additionalInfo": "Owner Occupied P&I LVR=90% C4 ACT Land Rent Scheme Fixed",
                 "additionalInfoUri": "https://www.borderbank.com.au/interest-rates/#"
             },
             {
