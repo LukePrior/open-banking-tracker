@@ -7,9 +7,9 @@
     <div>
       <textarea style="width:90vw;height:90vh">{
     &quot;productId&quot;: &quot;BB001MBLFDA001&quot;,
-    &quot;effectiveFrom&quot;: &quot;1991-06-12T00:01:00.001Z&quot;,
+    &quot;effectiveFrom&quot;: null,
     &quot;effectiveTo&quot;: null,
-    &quot;lastUpdated&quot;: &quot;2024-02-15T00:01:00.001Z&quot;,
+    &quot;lastUpdated&quot;: &quot;2022-09-29T00:01:00.001Z&quot;,
     &quot;productCategory&quot;: &quot;BUSINESS_LOANS&quot;,
     &quot;name&quot;: &quot;Fully Drawn Advance&quot;,
     &quot;description&quot;: &quot;Financing solution for business growth and development.&quot;,
@@ -22,20 +22,30 @@
         &quot;termsUri&quot;: null,
         &quot;eligibilityUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
         &quot;feesAndPricingUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
-        &quot;bundleUri&quot;: null,
-        &quot;additionalOverviewUris&quot;: null,
-        &quot;additionalTermsUris&quot;: null,
-        &quot;additionalEligibilityUris&quot;: null,
-        &quot;additionalFeesAndPricingUris&quot;: null,
-        &quot;additionalBundleUris&quot;: null
+        &quot;bundleUri&quot;: null
     },
-    &quot;cardArt&quot;: null,
-    &quot;bundles&quot;: null,
+    &quot;cardArt&quot;: [
+        {
+            &quot;title&quot;: null,
+            &quot;imageUri&quot;: null
+        }
+    ],
+    &quot;bundles&quot;: [
+        {
+            &quot;name&quot;: null,
+            &quot;description&quot;: null,
+            &quot;additionalInfo&quot;: null,
+            &quot;additionalInfoUri&quot;: null,
+            &quot;productIds&quot;: [
+                null
+            ]
+        }
+    ],
     &quot;features&quot;: [
         {
             &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Sub-accounts available. Set up multiple sub accounts to draw down on the overarching facility limit. All sub-accounts are required to be on the same interest rate and repayment type. All sub-accounts must have the same regulated/non-regulated loan purpose as the overarching facility.&quot;,
+            &quot;additionalInfo&quot;: &quot;Sub-accounts available. Set up multiple sub accounts to draw down on the overarching facility limit. All sub-accounts are required to be on the same interest rate and repayment type. Except for Global Facility Limits, all sub-accounts must have the same regulated/non-regulated loan purpose as the overarching facility.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
         },
         {
@@ -57,34 +67,16 @@
             &quot;additionalInfoUri&quot;: null
         },
         {
-            &quot;featureType&quot;: &quot;RELATIONSHIP_MANAGEMENT&quot;,
+            &quot;featureType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
             &quot;additionalInfo&quot;: &quot;Relationship servicing. Dedicated relationship team who specialise in different industries and can provide tailored solutions and industry information.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;GUARANTOR&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Subject to review, a guarantor may be required during the loan origination process.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;DIGITAL_BANKING&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Online banking access is available.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;featureType&quot;: &quot;EXTRA_REPAYMENTS&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Extra repayments can be made in addition to regular monthly loan repayments. Redraw of funds is not available.&quot;,
             &quot;additionalInfoUri&quot;: null
         }
     ],
     &quot;constraints&quot;: [
         {
             &quot;constraintType&quot;: &quot;MAX_LIMIT&quot;,
-            &quot;additionalValue&quot;: &quot;5.00&quot;,
+            &quot;additionalValue&quot;: &quot;5&quot;,
             &quot;additionalInfo&quot;: &quot;Maximum loan term of 5 years. Term can be extended up to 10 years subject to loan purpose, security and borrower type.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
         }
@@ -93,7 +85,7 @@
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Borrowers must be Individual, Company, Partnership or Trust.&quot;,
+            &quot;additionalInfo&quot;: &quot;Borrowers must be Individual, Company, Partnership, Trust.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
         },
         {
@@ -105,73 +97,25 @@
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
+            &quot;additionalInfo&quot;: &quot;Note, this information is only a guide. Each loan will be subject to individual assessment in accordance with our credit and other internal policies. Additional parameters may apply&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
+        },
+        {
+            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
+            &quot;additionalValue&quot;: null,
             &quot;additionalInfo&quot;: &quot;Industries we service. We specialise in accounting, architecture, engineering, financial services, healthcare, insolvency, insurance, legal, real estate, strata management, surveying, technology, High Net Worth, and Professional Property Investors industries.&quot;,
             &quot;additionalInfoUri&quot;: null
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Medical Professionals, General Practitioners, Day and Short Stay Hospitals, Diagnostic: Up to 3.5x EBITDA*, or 70% of external valuation. Up to 2 year interest only. Interest only ongoing up to 1.5x EBITDA*. Veterinary Clinic (Vet), Dental Services: Up to 3 x EBITDA*, or 70% of external valuation. Up to 2 year interest only. Interest only ongoing up to 1.5x EBITDA*. Up to 75% LVR for commercial owner-occupied property. Interest only terms also available.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Engineers, Architects, Planners, Surveyors, associated service providers in Built Environment: up to 3.0x EBITDA* subject to business turnover and number of guarantors. Legal: For 2 partners, up to 1x yearly stabilised earnings per partner (capped at $500k per partner). For 3 or more partners, up to 1x yearly stabilised earnings per partner (capped at $1m per partner).&quot;,
+            &quot;additionalInfo&quot;: &quot;Maximum LVR. Medical Professionals. General Practitioners: 3-3.5x EBITDA*, or 70% of external valuation. Up to 1 year interest only per new acquisition, amortising over 10 years. Day and Short Stay Hospitals: 3-3.5x EBITDA*, or 70% of external valuation. Up to 1 year interest only per new acquisition, amortising over 10 years. Diagnostic: 3-3.5x EBITDA*, or 70% of external valuation. Maximum repayment term of 10 years (or aligned to Medicare license/obsolescence of any key equipment/premises lease terms). Up to 1 year interest only per new acquisition, amortising over 10 years. Veterinary Clinic (Vet): 2.5-3 x EBITDA*, or 70% of external valuation. Loan term is 5 years but repayments are amortised over 10 years. Up to 1 year interest only per new acquisition, amortising over 10 years. Engineers, Architects, Planners, Surveyors, associated service providers in Built Environment: up to 3.0x EBITDA* subject to business turnover and number of guarantors. Legal: For 2 partners, up to 1x yearly stabilised earnings per partner (capped at $500k per partner). For 3 or more partners, up to 1x yearly stabilised earnings per partner (capped at $1m per partner). Accounting: The lower of: a. Up to 3.5x EBITDA* (additional debt to EBITDA limits apply above $1mil) b. Up to 70% of recurring fees c. Up to $2m debt per guarantor. Financial Planning: a. For Self-licensed Firms the lower of up to 3.75x EBITDA* or 67% loan to value ratio***. b.For Corporate Authorised Representatives the lower of up to 3.3x EBITDA* or 60% loan to value ratio***. Insurance Broking: a. For recurring revenue \u00e2\u2030\u00a4$750k, up to 67% of asset value determined by internal Macquarie Multiplier and amortising b. For recurring revenue &gt;$750k, up to 3.75x EBITDA*. Real Estate: Up to a maximum of 70% of rent roll value determined by internal Macquarie Multiplier (no cost to client) and must amortise to 60% within 3 years. Strata: a. Where lots under management \u00e2\u2030\u00a45,000, up to a maximum of 70% of strata roll value and must amortise to 60% within 3 years b. Where lots under management &gt;5,000, lower of 70% of the strata roll value or up to 4.5x EBITDA* and must amortise to 4x EBITDA* within 2 years and 60% within 3 years. c. Business Valuations determined by internal Macquarie Multiplier (no cost to client). IT Services. Managed Services: When revenue \u00e2\u2030\u00a5$30m: Maximum debt = 3x EBITDA* When revenue &lt;$30m: Maximum debt = 2x EBITDA*. IT Consultants: 2 x EBITDA* Software (SAAS): Maximum debt = 3x EBITDA** This is a guide only. EBITDA can be adjusted for items such as principal salaries, exceptional items and other factors based on individual borrower circumstances.*** LVR based on 2.3 x recurring wealth income plus 2.5 x recurring risk income.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
         },
         {
             &quot;eligibilityType&quot;: &quot;OTHER&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Legal: For 2 partners, up to 1x yearly stabilised earnings per partner (capped at $500k per partner). For 3 or more partners, up to 1x yearly stabilised earnings per partner (capped at $1m per partner).&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Accounting: The lower of: a. Up to 3.5x EBITDA* (additional debt to EBITDA limits apply above $1mil) b. Up to 70% of recurring fees c. Up to $2m debt per guarantor.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Financial Planning: a. For Self-licensed Firms the lower of up to 3.75x EBITDA* or 67% loan to value ratio***. b. For Corporate Authorised Representatives the lower of up to 3.3x EBITDA* or 60% loan to value ratio***. *** LVR based on 2.3 x recurring wealth income plus 2.5 x recurring risk income&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Insurance Broking: a. For recurring revenue \u2264$1m, up to 60% of asset value determined by internal Macquarie Multiplier and amortising b. For recurring revenue &gt;$1m, up to 4x EBITDA* amortising c. Interest Only (IO) terms may be considered for recurring revenue &gt;$1m, IO ongoing up to 3x EBITDA*.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Real Estate: Up to a maximum of 70% of rent roll value determined by internal Macquarie Multiplier (no cost to client) and must amortise to 60% within 3 years.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - Strata: a. Where lots under management &lt;5,000 and all WA based strata managers, up to a maximum of 70% of strata roll value b. Where lots under management \u22655,000 excluding all WA based strata managers, up to 4.5x EBITDA*. c. Business Valuations determined by internal Macquarie Multiplier (no cost to client) d. Ongoing Interest Only (IO) available at maximum LVR.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Maximum LVR - IT Services: Typically, revenue of &gt;$3m. When revenue \u2265$30m, maximum lending of 3x EBITDA*. When revenue &lt;$30m, maximum lending of 2x EBITDA*. Interest Only (IO) is available for up to 2 years. Longer terms may be considered. Software (SAAS): Typically, revenue of &gt;$3m. Maximum lending of 3x EBITDA*. Interest Only (IO) is available for up to 2 years. Longer terms may be considered.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;*Minimum loan sizes apply and will vary depending on a variety of factors. Contact us if you\u2019d like more information. This is a guide only. EBITDA can be adjusted for items such as principal salaries, exceptional items and other factors based on individual borrower circumstances.&quot;,
-            &quot;additionalInfoUri&quot;: null
-        },
-        {
-            &quot;eligibilityType&quot;: &quot;OTHER&quot;,
-            &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;**Note, this information is only a guide. Each loan will be subject to individual assessment in accordance with our credit and other internal policies. Additional parameters may apply.&quot;,
+            &quot;additionalInfo&quot;: &quot;Minimum loan sizes apply and will vary depending on a variety of factors. Contact us if you\u00e2\u20ac\u2122d like more information.&quot;,
             &quot;additionalInfoUri&quot;: null
         }
     ],
@@ -186,9 +130,9 @@
             &quot;accrualFrequency&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalValue&quot;: null,
-            &quot;additionalInfo&quot;: &quot;Individual: $1,000. Corporate Borrowers: \u2264$3m up to 0.50% of limit. &gt;$3m available (&amp; negotiable) on application&quot;,
+            &quot;additionalInfo&quot;: &quot;\u00e2\u2030\u00a4$3m up to 0.50% of limit &gt;$3m available (&amp; negotiable) on application&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
-            &quot;discounts&quot;: null
+            &quot;discounts&quot;: []
         },
         {
             &quot;name&quot;: &quot;Ongoing fees&quot;,
@@ -199,10 +143,10 @@
             &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: null,
             &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalValue&quot;: null,
+            &quot;additionalValue&quot;: &quot;P1M&quot;,
             &quot;additionalInfo&quot;: null,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
-            &quot;discounts&quot;: null
+            &quot;discounts&quot;: []
         },
         {
             &quot;name&quot;: &quot;Line fee&quot;,
@@ -216,7 +160,7 @@
             &quot;additionalValue&quot;: null,
             &quot;additionalInfo&quot;: null,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
-            &quot;discounts&quot;: null
+            &quot;discounts&quot;: []
         },
         {
             &quot;name&quot;: &quot;Valuation Fee&quot;,
@@ -230,12 +174,12 @@
             &quot;additionalValue&quot;: null,
             &quot;additionalInfo&quot;: &quot;Payable if any valuation is required in respect to any security property&quot;,
             &quot;additionalInfoUri&quot;: null,
-            &quot;discounts&quot;: null
+            &quot;discounts&quot;: []
         },
         {
             &quot;name&quot;: &quot;Other Fee&quot;,
             &quot;feeType&quot;: &quot;VARIABLE&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
+            &quot;amount&quot;: null,
             &quot;balanceRate&quot;: null,
             &quot;transactionRate&quot;: null,
             &quot;accruedRate&quot;: null,
@@ -244,11 +188,11 @@
             &quot;additionalValue&quot;: null,
             &quot;additionalInfo&quot;: &quot;Fees are current at time of publication of this guide and subject to change. Other additional fees and charges may apply. Please refer to loan documents.&quot;,
             &quot;additionalInfoUri&quot;: &quot;https://www.macquarie.com.au/assets/bfs/documents/broker/commercial-broker/commercial-lending-guide.pdf&quot;,
-            &quot;discounts&quot;: null
+            &quot;discounts&quot;: []
         }
     ],
-    &quot;depositRates&quot;: null,
-    &quot;lendingRates&quot;: null
+    &quot;depositRates&quot;: [],
+    &quot;lendingRates&quot;: []
 }</textarea>
     </div>
   </body>

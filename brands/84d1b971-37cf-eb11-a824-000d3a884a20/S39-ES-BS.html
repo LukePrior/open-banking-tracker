@@ -14,8 +14,15 @@
         },
         {
             &quot;featureType&quot;: &quot;UNLIMITED_TXNS&quot;,
-            &quot;additionalValue&quot;: &quot;Unlimited fee-free online transfers between Easy Street accounts&quot;,
             &quot;additionalInfo&quot;: &quot;Note: Bonus interest will not be earnt if bonus conditions are not met&quot;,
+            &quot;additionalInfoUri&quot;: &quot;&quot;
+        }
+    ],
+    &quot;constraints&quot;: [
+        {
+            &quot;constraintType&quot;: &quot;MAX_BALANCE&quot;,
+            &quot;additionalValue&quot;: &quot;3000000.00&quot;,
+            &quot;additionalInfo&quot;: &quot;Interest is only payable on balances up to and including $3 million&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
@@ -27,124 +34,132 @@
         },
         {
             &quot;eligibilityType&quot;: &quot;MIN_AGE&quot;,
-            &quot;additionalValue&quot;: &quot;Minimum age of 18&quot;,
+            &quot;additionalValue&quot;: &quot;18&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
             &quot;additionalInfoUri&quot;: &quot;&quot;
         }
     ],
     &quot;fees&quot;: [
         {
-            &quot;name&quot;: &quot;CREDIT_UNION_CHEQUE&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;0.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;Charged at cost&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;STAFF_ASSISTED_TRANSFER&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
             &quot;name&quot;: &quot;DORMANCY_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;20.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;Charged on all savings and transaction accounts. Charged in November each year.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;
         },
         {
             &quot;name&quot;: &quot;INACTIVE_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;2.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
-        },
-        {
-            &quot;name&quot;: &quot;COPY_OF_STATEMENT&quot;,
-            &quot;feeType&quot;: &quot;EVENT&quot;,
-            &quot;amount&quot;: &quot;3.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
-            &quot;accrualFrequency&quot;: &quot;&quot;,
-            &quot;currency&quot;: &quot;AUD&quot;,
-            &quot;additionalInfo&quot;: &quot;For subsequent statements the fee is $1.50 per page.&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;
         },
         {
             &quot;name&quot;: &quot;EFT_INVESTIGATION_FEE&quot;,
             &quot;feeType&quot;: &quot;EVENT&quot;,
             &quot;amount&quot;: &quot;35.00&quot;,
-            &quot;balanceRate&quot;: null,
-            &quot;transactionRate&quot;: null,
-            &quot;accruedRate&quot;: null,
             &quot;accrualFrequency&quot;: &quot;&quot;,
             &quot;currency&quot;: &quot;AUD&quot;,
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
-            &quot;discounts&quot;: []
+            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;
+        },
+        {
+            &quot;name&quot;: &quot;COPY_OF_PRINT_STATEMENT_-_FEE&quot;,
+            &quot;feeType&quot;: &quot;EVENT&quot;,
+            &quot;amount&quot;: &quot;1.50&quot;,
+            &quot;accrualFrequency&quot;: &quot;&quot;,
+            &quot;currency&quot;: &quot;AUD&quot;,
+            &quot;additionalInfo&quot;: &quot;$1.50 per page&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://easystreet.com.au/support/fees-and-charges&quot;
         }
     ],
     &quot;depositRates&quot;: [
         {
             &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
-            &quot;rate&quot;: &quot;0.00010&quot;,
+            &quot;rate&quot;: &quot;0.0001&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Bonus Saver account_Tier_1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 3000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/easy-street-interest-rates&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;VARIABLE&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Bonus Saver account_Tier_2&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 3000000.01,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;
         },
         {
             &quot;depositRateType&quot;: &quot;BONUS&quot;,
-            &quot;rate&quot;: &quot;0.02290&quot;,
+            &quot;rate&quot;: &quot;0.0509&quot;,
             &quot;calculationFrequency&quot;: &quot;P1D&quot;,
             &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Bonus Saver account_Tier_1&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 0.0,
+                    &quot;maximumValue&quot;: 3000000.0,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
             &quot;additionalInfo&quot;: &quot;&quot;,
-            &quot;additionalInfoUri&quot;: &quot;https://www.easystreet.com.au/easy-street-interest-rates&quot;
+            &quot;additionalInfoUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;
+        },
+        {
+            &quot;depositRateType&quot;: &quot;BONUS&quot;,
+            &quot;rate&quot;: &quot;0.0&quot;,
+            &quot;calculationFrequency&quot;: &quot;P1D&quot;,
+            &quot;applicationFrequency&quot;: &quot;P1M&quot;,
+            &quot;tiers&quot;: [
+                {
+                    &quot;name&quot;: &quot;Bonus Saver account_Tier_2&quot;,
+                    &quot;unitOfMeasure&quot;: &quot;DOLLAR&quot;,
+                    &quot;minimumValue&quot;: 3000000.01,
+                    &quot;rateApplicationMethod&quot;: &quot;PER_TIER&quot;
+                }
+            ],
+            &quot;additionalInfo&quot;: &quot;&quot;,
+            &quot;additionalInfoUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;
         }
     ],
     &quot;productId&quot;: &quot;S39-ES-BS&quot;,
-    &quot;effectiveFrom&quot;: &quot;2020-08-01T00:00:00.000+10:00&quot;,
-    &quot;lastUpdated&quot;: &quot;2022-10-01T17:37:07.000+10:00&quot;,
+    &quot;effectiveFrom&quot;: &quot;2024-08-01T00:00:00.000+10:00&quot;,
+    &quot;lastUpdated&quot;: &quot;2024-08-01T16:43:47.000+10:00&quot;,
     &quot;productCategory&quot;: &quot;TRANS_AND_SAVINGS_ACCOUNTS&quot;,
     &quot;name&quot;: &quot;Bonus Saver account&quot;,
     &quot;description&quot;: &quot;An online savings account that earns you bonus interest when you save at least $50 each month and make no withdrawals. Keep your savings goals on track with an automatic regular savings plan.&quot;,
     &quot;brand&quot;: &quot;E&quot;,
     &quot;brandName&quot;: &quot;Easystreet&quot;,
-    &quot;applicationUri&quot;: &quot;https://www.easystreet.com.au/high-interest-savings-account-application&quot;,
+    &quot;applicationUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;,
     &quot;isTailored&quot;: false,
     &quot;additionalInformation&quot;: {
-        &quot;overviewUri&quot;: &quot;https://www.easystreet.com.au/high-interest-savings-accounts/bonus-saver-account&quot;,
+        &quot;overviewUri&quot;: &quot;https://easystreet.com.au/bonus-saver&quot;,
         &quot;termsUri&quot;: &quot;https://www.easystreet.com.au/conditions-of-use&quot;,
         &quot;eligibilityUri&quot;: &quot;https://www.easystreet.com.au/conditions-of-use&quot;,
-        &quot;feesAndPricingUri&quot;: &quot;https://www.easystreet.com.au/everyday-access-account-fees-and-charges&quot;,
+        &quot;feesAndPricingUri&quot;: &quot;https://easystreet.com.au/support/fees-and-charges&quot;,
         &quot;bundleUri&quot;: &quot;&quot;
     }
 }</textarea>
